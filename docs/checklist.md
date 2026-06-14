@@ -128,6 +128,7 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] Seed veri alanları için temel validasyon ekle.
 - [x] Seed veri alanlarında `person/number/gender` doğrulaması ekle.
 - [ ] Veri modelleri için ayrı Dart unit test ekle.
+- [x] Pratik soru üreticisi için ayrı Dart unit test ekle.
 - [x] Çekim ve pratik ekranları için widget test ekle.
 - [x] Seçili sekme ekran eşleşmeleri için widget test ekle.
 - [x] Pratik cevap etkileşimleri için widget test ekle.

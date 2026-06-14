@@ -47,6 +47,7 @@ Kapsam:
 - Pratik: Yanlış cevap tıklaması "Tekrar Bak" geri bildirimini gösteriyor.
 - Pratik: Sonraki Soru butonu bir sonraki soruya geçiyor.
 - Test fixture'ları yeni `person/number/gender` veri modelini kullanıyor.
+- `PracticeQuestionGenerator` unit testleri aynı Arapça form tekrarlarında ayrı şahıs soruları üretildiğini doğruluyor.
 
 Test altyapısı:
 
@@ -111,7 +112,6 @@ Henüz yok:
 
 - Repository hata senaryosu testi (`EmsileRepository.load()` başarısız durumu).
 - Veri modelleri için ayrı Dart unit testi.
-- `PracticeQuestionGenerator` için ayrı Dart unit testi.
 - Form filtreleme mantığı için ayrı unit testi.
 - Ders detayından çekim tablosuna/pratiğe hedefli geçiş testi.
 - 360px ve 430px viewport genişlik testleri.
@@ -120,7 +120,6 @@ Henüz yok:
 ## 3. Önerilen Test Genişletmeleri
 
 - `assets/data/emsile_seed.json` için daha katı JSON Schema dosyası ekle (ajv ile).
-- `PracticeQuestionGenerator` için anlam ve şahıs seçeneklerini doğrulayan unit test ekle.
 - `EmsileRepository.load()` hata durumunu test edilebilir hale getir.
 - Form filtreleme mantığını ayrı unit test ile doğrula.
 - Widget testini 360px ve 430px viewport genişlikleriyle çalıştır.
