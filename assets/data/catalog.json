@@ -29,6 +29,41 @@
       "summary": "Etken ve edilgen çekim farkını karşılaştır.",
       "rule": "Meçhul çekimde hareke düzeni değişir ve işi yapan gizlenir.",
       "relatedCategory": "mazi"
+    },
+    {
+      "order": 5,
+      "title": "Masdarlar",
+      "summary": "Masdar-ı Gayr-ı Mîmî, Bina-i Merre ve Bina-i Nev' kuralları.",
+      "rule": "Masdarlar fiilin mastar (eylem) halini, yapılma sayısını veya tarzını bildirir.",
+      "relatedCategory": "masdar"
+    },
+    {
+      "order": 6,
+      "title": "İsm-i Fâil ve İsm-i Mef'ûl",
+      "summary": "Arapçada etken ve edilgen sıfat türetme kuralları.",
+      "rule": "İsm-i Fâil işi yapanı (etken), İsm-i Mef'ûl ise işten etkileneni (edilgen) gösterir.",
+      "relatedCategory": "ismFail"
+    },
+    {
+      "order": 7,
+      "title": "İsm-i Zaman/Mekân ve Âlet",
+      "summary": "Zaman, mekan ve alet isimlerinin vezinleri.",
+      "rule": "Fiilin gerçekleştiği zamanı, yeri ve gerçekleştirmek için kullanılan aleti ifade eder.",
+      "relatedCategory": "ismZamanMekan"
+    },
+    {
+      "order": 8,
+      "title": "İsm-i Tasğir ve İsm-i Mensub",
+      "summary": "Küçültme ismi ve aidiyet eki kuralları.",
+      "rule": "İsm-i Tasğir küçültme/sevgi anlamı katarken, İsm-i Mensub aitlik/nispet bildirir.",
+      "relatedCategory": "ismTasgir"
+    },
+    {
+      "order": 9,
+      "title": "İsm-i Tafdil ve Mübalağa",
+      "summary": "Karşılaştırma sıfatları ve abartılı sıfat formları.",
+      "rule": "İsm-i Tafdil en/daha anlamı katarken, Mübalağa İsm-i Fâil fiilin çokça yapıldığını belirtir.",
+      "relatedCategory": "ismTafdil"
     }
   ],
   "verbs": [

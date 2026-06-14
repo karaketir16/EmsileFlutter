@@ -22,7 +22,23 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
     gender: FormGender.masculine,
   );
 
+  @override
+  void initState() {
+    super.initState();
+    if (widget.data.forms.isNotEmpty) {
+      final hasCategory = widget.data.forms.any((f) => f.category == _category);
+      if (!hasCategory) {
+        _category = widget.data.forms.first.category;
+      }
+    }
+  }
+
   List<ConjugationForm> get _visibleForms {
+    if (_category.isNoun) {
+      return widget.data.forms
+          .where((form) => form.category == _category)
+          .toList();
+    }
     return widget.data.forms
         .where((form) => form.category == _category && form.voice == _voice)
         .toList();
@@ -61,7 +77,7 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
       _selectedForm = selectedForm ?? _selectedForm;
 
       final forms = _visibleForms;
-      if (!forms.any(_selectedForm.matches)) {
+      if (forms.isNotEmpty && !forms.any(_selectedForm.matches)) {
         _selectedForm = FormSelection.fromForm(forms.first);
       }
     });
@@ -80,26 +96,28 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
         children: [
           ArabicResultCard(form: activeForm),
           const SizedBox(height: 10),
-          SegmentedButton<Voice>(
-            expandedInsets: EdgeInsets.zero,
-            segments: const [
-              ButtonSegment(
-                value: Voice.malum,
-                icon: Icon(Icons.record_voice_over),
-                label: Text('Malum'),
-              ),
-              ButtonSegment(
-                value: Voice.mechul,
-                icon: Icon(Icons.visibility_off_outlined),
-                label: Text('Meçhul'),
-              ),
-            ],
-            selected: {_voice},
-            onSelectionChanged: (value) {
-              _updateSelection(voice: value.first);
-            },
-          ),
-          const SizedBox(height: 16),
+          if (_category.isVerb) ...[
+            SegmentedButton<Voice>(
+              expandedInsets: EdgeInsets.zero,
+              segments: const [
+                ButtonSegment(
+                  value: Voice.malum,
+                  icon: Icon(Icons.record_voice_over),
+                  label: Text('Malum'),
+                ),
+                ButtonSegment(
+                  value: Voice.mechul,
+                  icon: Icon(Icons.visibility_off_outlined),
+                  label: Text('Meçhul'),
+                ),
+              ],
+              selected: {_voice},
+              onSelectionChanged: (value) {
+                _updateSelection(voice: value.first);
+              },
+            ),
+            const SizedBox(height: 16),
+          ],
           Expanded(
             child: SingleChildScrollView(
               child: Column(
@@ -128,57 +146,83 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
                     },
                   ),
                   const SizedBox(height: 16),
-                  Text(
-                    'Şahıs Tablosu',
-                    style: Theme.of(context).textTheme.titleLarge,
-                  ),
-                  const SizedBox(height: 10),
-                  SelectionTable(
-                    forms: forms,
-                    selectedForm: _selectedForm,
-                    onSelect: (selection) =>
-                        _updateSelection(selectedForm: selection),
-                  ),
+                  if (_category.isVerb) ...[
+                    Text(
+                      'Şahıs Tablosu',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    const SizedBox(height: 10),
+                    SelectionTable(
+                      forms: forms,
+                      selectedForm: _selectedForm,
+                      onSelect: (selection) =>
+                          _updateSelection(selectedForm: selection),
+                    ),
+                    const SizedBox(height: 18),
+                    Text(
+                      'Seçili Tablo (${_category.label} - ${_voice.label})',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    const SizedBox(height: 10),
+                    FormsTable(
+                      forms: forms,
+                      selectedForm: _selectedForm,
+                      activeCategory: _category,
+                      activeVoice: _voice,
+                      onSelect: (selection) =>
+                          _updateSelection(selectedForm: selection),
+                    ),
+                  ] else ...[
+                    Text(
+                      'Çekim Tablosu',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    const SizedBox(height: 10),
+                    NounFormsTable(
+                      forms: forms,
+                      selectedForm: _selectedForm,
+                      onSelect: (selection) =>
+                          _updateSelection(selectedForm: selection),
+                    ),
+                  ],
                   const SizedBox(height: 18),
-                   Text(
-                    'Seçili Tablo (${_category.label} - ${_voice.label})',
-                    style: Theme.of(context).textTheme.titleLarge,
-                  ),
-                  const SizedBox(height: 10),
-                  FormsTable(
-                    forms: forms,
-                    selectedForm: _selectedForm,
-                    activeCategory: _category,
-                    activeVoice: _voice,
-                    onSelect: (selection) =>
-                        _updateSelection(selectedForm: selection),
-                  ),
-                  const SizedBox(height: 18),
                   Text(
-                    'Tüm Fiil Muttaride Tabloları',
+                    'Tüm Muttaride Tabloları',
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                   const SizedBox(height: 12),
                   for (final group in _groups) ...[
                     Text(
-                      '${group.category.label} (${group.voice.label})',
+                      group.category.isVerb
+                          ? '${group.category.label} (${group.voice.label})'
+                          : group.category.label,
                       style: Theme.of(context).textTheme.titleMedium?.copyWith(
                             color: Theme.of(context).colorScheme.primary,
                             fontWeight: FontWeight.w600,
                           ),
                     ),
                     const SizedBox(height: 6),
-                    FormsTable(
-                      forms: group.forms,
-                      selectedForm: _selectedForm,
-                      activeCategory: _category,
-                      activeVoice: _voice,
-                      onSelect: (selection) => _updateSelection(
-                        category: group.category,
-                        voice: group.voice,
-                        selectedForm: selection,
+                    if (group.category.isVerb)
+                      FormsTable(
+                        forms: group.forms,
+                        selectedForm: _selectedForm,
+                        activeCategory: _category,
+                        activeVoice: _voice,
+                        onSelect: (selection) => _updateSelection(
+                          category: group.category,
+                          voice: group.voice,
+                          selectedForm: selection,
+                        ),
+                      )
+                    else
+                      NounFormsTable(
+                        forms: group.forms,
+                        selectedForm: _selectedForm,
+                        onSelect: (selection) => _updateSelection(
+                          category: group.category,
+                          selectedForm: selection,
+                        ),
                       ),
-                    ),
                     const SizedBox(height: 16),
                   ],
                 ],
@@ -480,21 +524,27 @@ class FormSelection {
     required this.person,
     required this.number,
     required this.gender,
+    this.arabic,
   });
 
   final FormPerson person;
   final FormNumber number;
   final FormGender gender;
+  final String? arabic;
 
   factory FormSelection.fromForm(ConjugationForm form) {
     return FormSelection(
       person: form.person,
       number: form.number,
       gender: form.gender,
+      arabic: form.arabic,
     );
   }
 
   bool matches(ConjugationForm form) {
+    if (arabic != null && form.arabic == arabic) {
+      return true;
+    }
     return form.person == person &&
         form.number == number &&
         form.gender == gender;
@@ -508,11 +558,12 @@ class FormSelection {
     return other is FormSelection &&
         other.person == person &&
         other.number == number &&
-        other.gender == gender;
+        other.gender == gender &&
+        other.arabic == arabic;
   }
 
   @override
-  int get hashCode => Object.hash(person, number, gender);
+  int get hashCode => Object.hash(person, number, gender, arabic);
 }
 
 ConjugationForm? _findForm(
@@ -560,3 +611,179 @@ const pdfRows = [
     label: '1. Şahıs\nOrtak',
   ),
 ];
+
+class NounFormsTable extends StatelessWidget {
+  const NounFormsTable({
+    required this.forms,
+    required this.selectedForm,
+    required this.onSelect,
+    super.key,
+  });
+
+  final List<ConjugationForm> forms;
+  final FormSelection selectedForm;
+  final ValueChanged<FormSelection> onSelect;
+
+  @override
+  Widget build(BuildContext context) {
+    final hasGender = forms.any((f) => f.gender == FormGender.masculine) ||
+        forms.any((f) => f.gender == FormGender.feminine);
+
+    final List<PdfTableRowData> tableRows = [];
+
+    if (hasGender) {
+      // Müzekker row
+      final singularMasc = _findNounForm(forms, FormGender.masculine, FormNumber.singular);
+      final dualMasc = _findNounForm(forms, FormGender.masculine, FormNumber.dual);
+      final pluralMasc = _findNounForm(forms, FormGender.masculine, FormNumber.plural, isSound: true);
+      tableRows.add(PdfTableRowData(
+        rowLabel: 'Müzekker',
+        cells: [pluralMasc, dualMasc, singularMasc],
+      ));
+
+      // Müennes row
+      final singularFem = _findNounForm(forms, FormGender.feminine, FormNumber.singular);
+      final dualFem = _findNounForm(forms, FormGender.feminine, FormNumber.dual);
+      final pluralFem = _findNounForm(forms, FormGender.feminine, FormNumber.plural, isSound: true);
+      tableRows.add(PdfTableRowData(
+        rowLabel: 'Müennes',
+        cells: [pluralFem, dualFem, singularFem],
+      ));
+    } else {
+      // Ortak row
+      final singular = _findNounForm(forms, FormGender.common, FormNumber.singular);
+      final dual = _findNounForm(forms, FormGender.common, FormNumber.dual);
+      final plural = _findNounForm(forms, FormGender.common, FormNumber.plural);
+      tableRows.add(PdfTableRowData(
+        rowLabel: 'Ortak',
+        cells: [plural, dual, singular],
+      ));
+    }
+
+    // We also want to find if there are any other forms (broken plurals)
+    final mainFormsSet = tableRows.expand((r) => r.cells).whereType<ConjugationForm>().toSet();
+    final otherForms = forms.where((f) => !mainFormsSet.contains(f)).toList();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        PdfStyleTable(
+          headerTitle: forms.isNotEmpty ? forms.first.category.label.toUpperCase() : 'İSİM',
+          rows: tableRows,
+          cellBuilder: (context, data) {
+            final form = data as ConjugationForm?;
+            if (form == null) return const SizedBox.shrink();
+
+            final isSelected = selectedForm.matches(form);
+            final colorScheme = Theme.of(context).colorScheme;
+
+            return InkWell(
+              onTap: () => onSelect(FormSelection.fromForm(form)),
+              borderRadius: BorderRadius.circular(6),
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+                decoration: BoxDecoration(
+                  color: isSelected
+                      ? colorScheme.primaryContainer.withValues(alpha: 0.55)
+                      : null,
+                  borderRadius: BorderRadius.circular(6),
+                ),
+                child: Center(
+                  child: Directionality(
+                    textDirection: TextDirection.rtl,
+                    child: Text(
+                      form.arabic,
+                      textAlign: TextAlign.center,
+                      maxLines: 1,
+                      softWrap: false,
+                      style: arabicTextStyle(18),
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+        if (otherForms.isNotEmpty) ...[
+          const SizedBox(height: 12),
+          Text(
+            'Kırık Çoğullar (Cemi Mükesser)',
+            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+          ),
+          const SizedBox(height: 8),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: otherForms.map((form) {
+              final isSelected = selectedForm.matches(form);
+              final colorScheme = Theme.of(context).colorScheme;
+
+              return InkWell(
+                onTap: () => onSelect(FormSelection.fromForm(form)),
+                borderRadius: BorderRadius.circular(8),
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                  decoration: BoxDecoration(
+                    color: isSelected ? colorScheme.primaryContainer : Colors.white,
+                    border: Border.all(
+                      color: isSelected ? colorScheme.primary : const Color(0xFFD8D1C1),
+                    ),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Column(
+                    children: [
+                      Directionality(
+                        textDirection: TextDirection.rtl,
+                        child: Text(
+                          form.arabic,
+                          style: arabicTextStyle(20),
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        form.pronounLabel,
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            }).toList(),
+          ),
+        ],
+      ],
+    );
+  }
+
+  ConjugationForm? _findNounForm(
+    List<ConjugationForm> forms,
+    FormGender gender,
+    FormNumber number, {
+    bool? isSound,
+  }) {
+    for (final form in forms) {
+      if (form.gender == gender && form.number == number) {
+        if (isSound != null) {
+          final isSoundLabel = form.pronounLabel.contains('Sâlim') || !form.pronounLabel.contains('Kırık');
+          if (isSoundLabel != isSound) continue;
+        }
+        return form;
+      }
+    }
+    // Fallback: search ignoring sound/broken distinction if not specified
+    for (final form in forms) {
+      if (form.gender == gender && form.number == number) {
+        return form;
+      }
+    }
+    // Fallback for common gender
+    if (gender == FormGender.common) {
+      for (final form in forms) {
+        if (form.number == number) return form;
+      }
+    }
+    return null;
+  }
+}

@@ -166,7 +166,12 @@ class _PracticeScreenState extends State<PracticeScreen> {
       'O (kad.)', 'O ikisi (kad.)', 'Onlar (kad.)',
       'Sen (er.)', 'Siz ikiniz (er.)', 'Siz (er.)',
       'Sen (kad.)', 'Siz ikiniz (kad.)', 'Siz (kad.)',
-      'Ben', 'Biz'
+      'Ben', 'Biz',
+      'Tekil Müzekker', 'İkil Müzekker', 'Çoğul Müzekker (Sâlim)', 'Çoğul Müzekker',
+      'Kırık Çoğul Müzekker 1', 'Kırık Çoğul Müzekker 2', 'Kırık Çoğul Müzekker 3',
+      'Tekil Müennes', 'İkil Müennes', 'Çoğul Müennes (Sâlim)', 'Çoğul Müennes',
+      'Kırık Çoğul Müennes',
+      'Tekil', 'İkil', 'Çoğul', 'Kırık Çoğul', 'Kırık Çoğul (Emsile)'
     ];
     allPronouns.sort((a, b) {
       final indexA = pronounOrder.indexOf(a);

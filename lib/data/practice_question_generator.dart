@@ -34,18 +34,22 @@ class PracticeQuestionGenerator {
         arabic: form.arabic,
         options: _buildMeaningOptions(form, siblings, random),
         answer: form.meaning,
-        explanation:
-            '${form.arabic} ${form.category.label} ${form.voice.label} ${form.pronounLabel.toLowerCase()} formudur.',
+        explanation: form.category.isNoun
+            ? '${form.arabic} ${form.category.label} ${form.pronounLabel.toLowerCase()} formudur.'
+            : '${form.arabic} ${form.category.label} ${form.voice.label} ${form.pronounLabel.toLowerCase()} formudur.',
       );
     } else if (questionType == 1) {
       // Arapçadan Şahıs Sorusu
       return PracticeQuestion(
-        prompt: 'Bu form hangi şahsa aittir?',
+        prompt: form.category.isNoun
+            ? 'Bu formun dil bilgisi özelliği hangisidir?'
+            : 'Bu form hangi şahsa aittir?',
         arabic: form.arabic,
         options: _buildPronounOptions(form, siblings, random),
         answer: form.pronounLabel,
-        explanation:
-            '${form.arabic} ${form.pronounLabel.toLowerCase()} için kullanılır.',
+        explanation: form.category.isNoun
+            ? '${form.arabic} ${form.pronounLabel.toLowerCase()} özelliğine sahiptir.'
+            : '${form.arabic} ${form.pronounLabel.toLowerCase()} için kullanılır.',
       );
     } else {
       // Türkçeden Arapçaya Soru
@@ -78,19 +82,23 @@ class PracticeQuestionGenerator {
           arabic: form.arabic,
           options: _buildMeaningOptions(form, siblings, random),
           answer: form.meaning,
-          explanation:
-              '${form.arabic} ${form.category.label} ${form.voice.label} ${form.pronounLabel.toLowerCase()} formudur.',
+          explanation: form.category.isNoun
+              ? '${form.arabic} ${form.category.label} ${form.pronounLabel.toLowerCase()} formudur.'
+              : '${form.arabic} ${form.category.label} ${form.voice.label} ${form.pronounLabel.toLowerCase()} formudur.',
         ),
       );
 
       questions.add(
         PracticeQuestion(
-          prompt: 'Bu form hangi şahsa aittir?',
+          prompt: form.category.isNoun
+              ? 'Bu formun dil bilgisi özelliği hangisidir?'
+              : 'Bu form hangi şahsa aittir?',
           arabic: form.arabic,
           options: _buildPronounOptions(form, siblings, random),
           answer: form.pronounLabel,
-          explanation:
-              '${form.arabic} ${form.pronounLabel.toLowerCase()} için kullanılır.',
+          explanation: form.category.isNoun
+              ? '${form.arabic} ${form.pronounLabel.toLowerCase()} özelliğine sahiptir.'
+              : '${form.arabic} ${form.pronounLabel.toLowerCase()} için kullanılır.',
         ),
       );
     }

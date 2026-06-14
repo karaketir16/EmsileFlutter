@@ -52,6 +52,9 @@ class MuttarideGenerator {
       _addRestrictedCommandForms(forms, meta.letters, slot);
     }
 
+    _addNounForms(forms, meta.letters);
+    _addTaaccubForms(forms, meta.letters);
+
     return forms;
   }
 
@@ -632,3 +635,707 @@ const _slots = <_Slot>[
     muzariSuffixMechul: 'ُ',
   ),
 ];
+
+void _addNounForms(List<ConjugationForm> forms, List<String> letters) {
+  // 1. Masdar-ı Gayr-ı Mîmî (masdar)
+  forms.add(ConjugationForm(
+    category: FormCategory.masdar,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.common,
+    pronounLabel: 'Tekil',
+    arabic: '${letters[0]}َ${letters[1]}ْ${letters[2]}ًا',
+    meaning: 'Yardım etmek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.masdar,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.common,
+    pronounLabel: 'İkil',
+    arabic: '${letters[0]}َ${letters[1]}ْ${letters[2]}َانِ',
+    meaning: 'İki kere yardım etmek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.masdar,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.common,
+    pronounLabel: 'Çoğul',
+    arabic: '${letters[0]}َ${letters[1]}َ${letters[2]}َاتٌ',
+    meaning: 'Yardımlar.',
+  ));
+
+  // 2. İsm-i Fâil (ismFail)
+  // Müzekker
+  forms.add(ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.masculine,
+    pronounLabel: 'Tekil Müzekker',
+    arabic: '${letters[0]}َﺎ${letters[1]}ِ${letters[2]}ٌ',
+    meaning: 'Yardım eden bir erkek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.masculine,
+    pronounLabel: 'İkil Müzekker',
+    arabic: '${letters[0]}َﺎ${letters[1]}ِ${letters[2]}َانِ',
+    meaning: 'Yardım eden iki erkek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.masculine,
+    pronounLabel: 'Çoğul Müzekker (Sâlim)',
+    arabic: '${letters[0]}َﺎ${letters[1]}ِ${letters[2]}ُونَ',
+    meaning: 'Yardım eden erkekler.',
+  ));
+  // Müzekker Kırık Çoğullar
+  forms.add(ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.masculine,
+    pronounLabel: 'Kırık Çoğul Müzekker 1',
+    arabic: '${letters[0]}ُ${letters[1]}َّﺎ${letters[2]}ٌ',
+    meaning: 'Yardım eden erkekler (Kırık Çoğul).',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.masculine,
+    pronounLabel: 'Kırık Çoğul Müzekker 2',
+    arabic: '${letters[0]}ُ${letters[1]}َّ${letters[2]}ٌ',
+    meaning: 'Yardım eden erkekler (Kırık Çoğul).',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.masculine,
+    pronounLabel: 'Kırık Çoğul Müzekker 3',
+    arabic: '${letters[0]}َ${letters[1]}َ${letters[2]}َةٌ',
+    meaning: 'Yardım eden erkekler (Kırık Çoğul).',
+  ));
+  // Müennes
+  forms.add(ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.feminine,
+    pronounLabel: 'Tekil Müennes',
+    arabic: '${letters[0]}َﺎ${letters[1]}ِ${letters[2]}َةٌ',
+    meaning: 'Yardım eden bir kadın.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.feminine,
+    pronounLabel: 'İkil Müennes',
+    arabic: '${letters[0]}َﺎ${letters[1]}ِ${letters[2]}َتَانِ',
+    meaning: 'Yardım eden iki kadın.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.feminine,
+    pronounLabel: 'Çoğul Müennes (Sâlim)',
+    arabic: '${letters[0]}َﺎ${letters[1]}ِ${letters[2]}َاتٌ',
+    meaning: 'Yardım eden kadınlar.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.feminine,
+    pronounLabel: 'Kırık Çoğul Müennes',
+    arabic: '${letters[0]}َﻮَا${letters[1]}ِ${letters[2]}ُ',
+    meaning: 'Yardım eden kadınlar (Kırık Çoğul).',
+  ));
+
+  // 3. İsm-i Mef'ûl (ismMeful)
+  // Müzekker
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMeful,
+    voice: Voice.mechul,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.masculine,
+    pronounLabel: 'Tekil Müzekker',
+    arabic: 'مَ${letters[0]}ْ${letters[1]}ُو${letters[2]}ٌ',
+    meaning: 'Yardım edilen bir erkek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMeful,
+    voice: Voice.mechul,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.masculine,
+    pronounLabel: 'İkil Müzekker',
+    arabic: 'مَ${letters[0]}ْ${letters[1]}ُو${letters[2]}َانِ',
+    meaning: 'Yardım edilen iki erkek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMeful,
+    voice: Voice.mechul,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.masculine,
+    pronounLabel: 'Çoğul Müzekker (Sâlim)',
+    arabic: 'مَ${letters[0]}ْ${letters[1]}ُو${letters[2]}ُونَ',
+    meaning: 'Yardım edilen erkekler.',
+  ));
+  // Müennes
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMeful,
+    voice: Voice.mechul,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.feminine,
+    pronounLabel: 'Tekil Müennes',
+    arabic: 'مَ${letters[0]}ْ${letters[1]}ُو${letters[2]}َةٌ',
+    meaning: 'Yardım edilen bir kadın.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMeful,
+    voice: Voice.mechul,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.feminine,
+    pronounLabel: 'İkil Müennes',
+    arabic: 'مَ${letters[0]}ْ${letters[1]}ُو${letters[2]}َتَانِ',
+    meaning: 'Yardım edilen iki kadın.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMeful,
+    voice: Voice.mechul,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.feminine,
+    pronounLabel: 'Çoğul Müennes (Sâlim)',
+    arabic: 'مَ${letters[0]}ْ${letters[1]}ُو${letters[2]}َاتٌ',
+    meaning: 'Yardım edilen kadınlar.',
+  ));
+  // Kırık Çoğul
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMeful,
+    voice: Voice.mechul,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.common,
+    pronounLabel: 'Kırık Çoğul',
+    arabic: 'مَ${letters[0]}َﺎ${letters[1]}ِﻴ${letters[2]}ُ',
+    meaning: 'Yardım edilenler (Kırık Çoğul).',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMeful,
+    voice: Voice.mechul,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.common,
+    pronounLabel: 'Kırık Çoğul (Emsile)',
+    arabic: 'مَ${letters[0]}َﺎ${letters[1]}ِ${letters[2]}ُ',
+    meaning: 'Yardım edilenler (Kırık Çoğul).',
+  ));
+
+  // 4. İsm-i Zaman / Mekân / Masdar-ı Mîmî (ismZamanMekan)
+  forms.add(ConjugationForm(
+    category: FormCategory.ismZamanMekan,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.common,
+    pronounLabel: 'Tekil',
+    arabic: 'مَ${letters[0]}ْ${letters[1]}َ${letters[2]}ٌ',
+    meaning: 'Yardım etme zamanı, yeri veya yardım etmek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismZamanMekan,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.common,
+    pronounLabel: 'İkil',
+    arabic: 'مَ${letters[0]}ْ${letters[1]}َ${letters[2]}َانِ',
+    meaning: 'İki yardım zamanı / yeri.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismZamanMekan,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.common,
+    pronounLabel: 'Kırık Çoğul',
+    arabic: 'مَ${letters[0]}َﺎ${letters[1]}ِ${letters[2]}ُ',
+    meaning: 'Yardım etme zamanları / yerleri.',
+  ));
+
+  // 5. İsm-i Âlet (ismAlet)
+  forms.add(ConjugationForm(
+    category: FormCategory.ismAlet,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.common,
+    pronounLabel: 'Tekil',
+    arabic: 'مِ${letters[0]}ْ${letters[1]}َ${letters[2]}ٌ',
+    meaning: 'Yardım etme aleti.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismAlet,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.common,
+    pronounLabel: 'İkil',
+    arabic: 'مِ${letters[0]}ْ${letters[1]}َ${letters[2]}َانِ',
+    meaning: 'İki yardım aleti.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismAlet,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.common,
+    pronounLabel: 'Kırık Çoğul',
+    arabic: 'مَ${letters[0]}َﺎ${letters[1]}ِ${letters[2]}ُ',
+    meaning: 'Yardım etme aletleri.',
+  ));
+
+  // 6. Masdar Bina-i Merre (masdarMerre)
+  forms.add(ConjugationForm(
+    category: FormCategory.masdarMerre,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.common,
+    pronounLabel: 'Tekil',
+    arabic: '${letters[0]}َ${letters[1]}ْ${letters[2]}َةً',
+    meaning: 'Bir kere yardım etmek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.masdarMerre,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.common,
+    pronounLabel: 'İkil',
+    arabic: '${letters[0]}َ${letters[1]}ْ${letters[2]}َتَيْنِ',
+    meaning: 'İki kere yardım etmek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.masdarMerre,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.common,
+    pronounLabel: 'Çoğul',
+    arabic: '${letters[0]}َ${letters[1]}َ${letters[2]}َاتٌ',
+    meaning: 'Yardımlar.',
+  ));
+
+  // 7. Masdar Bina-i Nev' (masdarNev)
+  forms.add(ConjugationForm(
+    category: FormCategory.masdarNev,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.common,
+    pronounLabel: 'Tekil',
+    arabic: '${letters[0]}ِ${letters[1]}ْ${letters[2]}َةً',
+    meaning: 'Bir nevi yardım etmek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.masdarNev,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.common,
+    pronounLabel: 'İkil',
+    arabic: '${letters[0]}ِ${letters[1]}ْ${letters[2]}َتَيْنِ',
+    meaning: 'İki nevi yardım etmek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.masdarNev,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.common,
+    pronounLabel: 'Çoğul',
+    arabic: '${letters[0]}ِ${letters[1]}ْ${letters[2]}َاتٌ',
+    meaning: 'Yardım çeşitleri.',
+  ));
+
+  // 8. İsm-i Tasğir (ismTasgir)
+  // Müzekker
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTasgir,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.masculine,
+    pronounLabel: 'Tekil Müzekker',
+    arabic: '${letters[0]}ُ${letters[1]}َﻴْ${letters[2]}ٌ',
+    meaning: 'Küçük yardım eden erkek (yardımcık).',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTasgir,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.masculine,
+    pronounLabel: 'İkil Müzekker',
+    arabic: '${letters[0]}ُ${letters[1]}َﻴْ${letters[2]}َانِ',
+    meaning: 'Küçük yardım eden iki erkek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTasgir,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.masculine,
+    pronounLabel: 'Çoğul Müzekker',
+    arabic: '${letters[0]}ُ${letters[1]}َﻴْ${letters[2]}ُونَ',
+    meaning: 'Küçük yardım eden erkekler.',
+  ));
+  // Müennes
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTasgir,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.feminine,
+    pronounLabel: 'Tekil Müennes',
+    arabic: '${letters[0]}ُ${letters[1]}َﻴْ${letters[2]}َةٌ',
+    meaning: 'Küçük yardım eden kadın.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTasgir,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.feminine,
+    pronounLabel: 'İkil Müennes',
+    arabic: '${letters[0]}ُ${letters[1]}َﻴْ${letters[2]}َتَانِ',
+    meaning: 'Küçük yardım eden iki kadın.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTasgir,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.feminine,
+    pronounLabel: 'Çoğul Müennes',
+    arabic: '${letters[0]}ُ${letters[1]}َﻴْ${letters[2]}َاتٌ',
+    meaning: 'Küçük yardım eden kadınlar.',
+  ));
+
+  // 9. İsm-i Mensub (ismMensub)
+  // Müzekker
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMensub,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.masculine,
+    pronounLabel: 'Tekil Müzekker',
+    arabic: '${letters[0]}َ${letters[1]}ْ${letters[2]}ِيٌّ',
+    meaning: 'Yardımla ilgili / yardıma mensup erkek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMensub,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.masculine,
+    pronounLabel: 'İkil Müzekker',
+    arabic: '${letters[0]}َ${letters[1]}ْ${letters[2]}ِيَّانِ',
+    meaning: 'Yardımla ilgili iki erkek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMensub,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.masculine,
+    pronounLabel: 'Çoğul Müzekker',
+    arabic: '${letters[0]}َ${letters[1]}ْ${letters[2]}ِيُّونَ',
+    meaning: 'Yardımla ilgili erkekler.',
+  ));
+  // Müennes
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMensub,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.feminine,
+    pronounLabel: 'Tekil Müennes',
+    arabic: '${letters[0]}َ${letters[1]}ْ${letters[2]}ِيَّةٌ',
+    meaning: 'Yardımla ilgili kadın.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMensub,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.feminine,
+    pronounLabel: 'İkil Müennes',
+    arabic: '${letters[0]}َ${letters[1]}ْ${letters[2]}ِيَّتَانِ',
+    meaning: 'Yardımla ilgili iki kadın.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismMensub,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.feminine,
+    pronounLabel: 'Çoğul Müennes',
+    arabic: '${letters[0]}َ${letters[1]}ْ${letters[2]}ِيَّاتٌ',
+    meaning: 'Yardımla ilgili kadınlar.',
+  ));
+
+  // 10. Mübalağa İsm-i Fâil (mubalagaIsmFail)
+  // Müzekker
+  forms.add(ConjugationForm(
+    category: FormCategory.mubalagaIsmFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.masculine,
+    pronounLabel: 'Tekil Müzekker',
+    arabic: '${letters[0]}َ${letters[1]}َّﺎ${letters[2]}ٌ',
+    meaning: 'Çok yardım eden erkek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.mubalagaIsmFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.masculine,
+    pronounLabel: 'İkil Müzekker',
+    arabic: '${letters[0]}َ${letters[1]}َّﺎ${letters[2]}َانِ',
+    meaning: 'Çok yardım eden iki erkek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.mubalagaIsmFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.masculine,
+    pronounLabel: 'Çoğul Müzekker',
+    arabic: '${letters[0]}َ${letters[1]}َّﺎ${letters[2]}ُونَ',
+    meaning: 'Çok yardım eden erkekler.',
+  ));
+  // Müennes
+  forms.add(ConjugationForm(
+    category: FormCategory.mubalagaIsmFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.feminine,
+    pronounLabel: 'Tekil Müennes',
+    arabic: '${letters[0]}َ${letters[1]}َّﺎ${letters[2]}َةٌ',
+    meaning: 'Çok yardım eden kadın.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.mubalagaIsmFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.feminine,
+    pronounLabel: 'İkil Müennes',
+    arabic: '${letters[0]}َ${letters[1]}َّﺎ${letters[2]}َتَانِ',
+    meaning: 'Çok yardım eden iki kadın.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.mubalagaIsmFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.feminine,
+    pronounLabel: 'Çoğul Müennes',
+    arabic: '${letters[0]}َ${letters[1]}َّﺎ${letters[2]}َاتٌ',
+    meaning: 'Çok yardım eden kadınlar.',
+  ));
+
+  // 11. İsm-i Tafdil (ismTafdil)
+  // Müzekker
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTafdil,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.masculine,
+    pronounLabel: 'Tekil Müzekker',
+    arabic: 'أَ${letters[0]}ْ${letters[1]}َ${letters[2]}ُ',
+    meaning: 'En çok yardım eden erkek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTafdil,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.masculine,
+    pronounLabel: 'İkil Müzekker',
+    arabic: 'أَ${letters[0]}ْ${letters[1]}َ${letters[2]}َانِ',
+    meaning: 'En çok yardım eden iki erkek.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTafdil,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.masculine,
+    pronounLabel: 'Çoğul Müzekker (Sâlim)',
+    arabic: 'أَ${letters[0]}ْ${letters[1]}َ${letters[2]}ُونَ',
+    meaning: 'En çok yardım eden erkekler.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTafdil,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.masculine,
+    pronounLabel: 'Kırık Çoğul Müzekker',
+    arabic: 'أَ${letters[0]}َﺎ${letters[1]}ِ${letters[2]}ُ',
+    meaning: 'En çok yardım eden erkekler (Kırık Çoğul).',
+  ));
+  // Müennes
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTafdil,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.feminine,
+    pronounLabel: 'Tekil Müennes',
+    arabic: '${letters[0]}ُ${letters[1]}ْ${letters[2]}َى',
+    meaning: 'En çok yardım eden kadın.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTafdil,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.feminine,
+    pronounLabel: 'İkil Müennes',
+    arabic: '${letters[0]}ُ${letters[1]}ْ${letters[2]}َيَانِ',
+    meaning: 'En çok yardım eden iki kadın.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTafdil,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.feminine,
+    pronounLabel: 'Çoğul Müennes (Sâlim)',
+    arabic: '${letters[0]}ُ${letters[1]}ْ${letters[2]}َيَاتٌ',
+    meaning: 'En çok yardım eden kadınlar.',
+  ));
+  forms.add(ConjugationForm(
+    category: FormCategory.ismTafdil,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.feminine,
+    pronounLabel: 'Kırık Çoğul Müennes',
+    arabic: '${letters[0]}ُ${letters[1]}َ${letters[2]}ُ',
+    meaning: 'En çok yardım eden kadınlar (Kırık Çoğul).',
+  ));
+}
+
+void _addTaaccubForms(List<ConjugationForm> forms, List<String> letters) {
+  for (final slot in _slots) {
+    final evvelSuffix = _attachedPronounFor(slot.person, slot.number, slot.gender);
+    final evvelArabic = 'مَا أَ${letters[0]}ْ${letters[1]}َ${letters[2]}َ$evvelSuffix';
+
+    final saniSuffix = _saniSuffixFor(slot.person, slot.number, slot.gender);
+    final saniArabic = 'أَ${letters[0]}ْ${letters[1]}ِ${letters[2]}ْ $saniSuffix';
+
+    forms.add(ConjugationForm(
+      category: FormCategory.fiilTaaccubEvvel,
+      voice: Voice.malum,
+      person: slot.person,
+      number: slot.number,
+      gender: slot.gender,
+      pronounLabel: slot.pronounLabel,
+      arabic: evvelArabic,
+      meaning: 'O ne garip yardım etti (${slot.subjectPhrase.toLowerCase()}).',
+    ));
+
+    forms.add(ConjugationForm(
+      category: FormCategory.fiilTaaccubSani,
+      voice: Voice.malum,
+      person: slot.person,
+      number: slot.number,
+      gender: slot.gender,
+      pronounLabel: slot.pronounLabel,
+      arabic: saniArabic,
+      meaning: 'Ne acayip yardım etti (${slot.subjectPhrase.toLowerCase()}).',
+    ));
+  }
+}
+
+String _attachedPronounFor(FormPerson person, FormNumber number, FormGender gender) {
+  if (person == FormPerson.third) {
+    if (number == FormNumber.singular) {
+      return gender == FormGender.masculine ? 'هُ' : 'هَا';
+    } else if (number == FormNumber.dual) {
+      return 'هُمَا';
+    } else {
+      return gender == FormGender.masculine ? 'هُمْ' : 'هُنَّ';
+    }
+  } else if (person == FormPerson.second) {
+    if (number == FormNumber.singular) {
+      return gender == FormGender.masculine ? 'كَ' : 'كِ';
+    } else if (number == FormNumber.dual) {
+      return 'كُمَا';
+    } else {
+      return gender == FormGender.masculine ? 'كُمْ' : 'كُنَّ';
+    }
+  } else {
+    return number == FormNumber.singular ? 'نِي' : 'نَا';
+  }
+}
+
+String _saniSuffixFor(FormPerson person, FormNumber number, FormGender gender) {
+  if (person == FormPerson.third) {
+    if (number == FormNumber.singular) {
+      return gender == FormGender.masculine ? 'بِهِ' : 'بِهَا';
+    } else if (number == FormNumber.dual) {
+      return 'بِهِمَا';
+    } else {
+      return gender == FormGender.masculine ? 'بِهِمْ' : 'بِهِنَّ';
+    }
+  } else if (person == FormPerson.second) {
+    if (number == FormNumber.singular) {
+      return gender == FormGender.masculine ? 'بِكَ' : 'بِكِ';
+    } else if (number == FormNumber.dual) {
+      return 'بِكُمَا';
+    } else {
+      return gender == FormGender.masculine ? 'بِكُمْ' : 'بِكُنَّ';
+    }
+  } else {
+    return number == FormNumber.singular ? 'بِي' : 'بِنَا';
+  }
+}

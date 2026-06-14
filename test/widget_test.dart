@@ -52,7 +52,7 @@ void main() {
     );
 
     expect(find.text('Çekim Tablosu'), findsOneWidget);
-    expect(find.text('Mâzi'), findsOneWidget);
+    expect(find.text('Fiil-i Mâzi'), findsOneWidget);
     expect(find.text('Malum'), findsOneWidget);
     expect(find.text('Çoğul'), findsWidgets);
   });
@@ -113,7 +113,7 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('Çekim Tablosu'), findsOneWidget);
-    expect(find.text('Mâzi'), findsOneWidget);
+    expect(find.text('Fiil-i Mâzi'), findsOneWidget);
   });
 
   testWidgets('selected index 3 renders practice screen', (
@@ -184,7 +184,7 @@ void main() {
     notifier.value = 4; // Kaynak
     await tester.pumpAndSettle();
 
-    expect(find.textContaining('Zafer ESEN'), findsOneWidget);
+    expect(find.textContaining('arapcadiyari.blogspot.com'), findsOneWidget);
   });
 
   // ── Conjugation interactions ────────────────────────────────────────────────
@@ -226,7 +226,7 @@ void main() {
       ),
     );
 
-    await selectConjugationCategory(tester, 'Muzâri');
+    await selectConjugationCategory(tester, 'Fiil-i Muzâri');
 
     expect(find.text('يَنْصُرُ'), findsWidgets);
     expect(tester.takeException(), isNull);
@@ -325,7 +325,7 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('نَصَرْتَ'), findsWidgets);
 
-      await selectConjugationCategory(tester, 'Muzâri');
+      await selectConjugationCategory(tester, 'Fiil-i Muzâri');
 
       expect(find.text('تَنْصُرُ'), findsWidgets);
       expect(find.text('Sen (er.)'), findsWidgets);
@@ -358,7 +358,7 @@ void main() {
     final afterTop = tester.getTopLeft(find.byType(ArabicResultCard)).dy;
 
     expect(afterTop, beforeTop);
-    expect(find.text('Tüm Fiil Muttaride Tabloları'), findsOneWidget);
+    expect(find.text('Tüm Muttaride Tabloları'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
 
@@ -584,6 +584,130 @@ void main() {
     expect(tester.widget<FilledButton>(find.byType(FilledButton)).enabled, isFalse);
     expect(find.text('Soru üretilebilmesi için en az 5 farklı çekim formu eşleşmelidir. Lütfen seçimlerinizi artırın.'), findsOneWidget);
   });
+
+  testWidgets(
+    'conjugation: noun category hides voice selector and handles table/chip clicks',
+    (WidgetTester tester) async {
+      await tester.binding.setSurfaceSize(const Size(390, 844));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: SafeArea(child: ConjugationScreen(data: nounTestData)),
+          ),
+        ),
+      );
+
+      // Select 'İsm-i Fâil' from the dropdown
+      await selectConjugationCategory(tester, 'İsm-i Fâil');
+
+      // Voice segmented button (Malum/Meçhul) must NOT be present for nouns
+      expect(find.text('Malum'), findsNothing);
+      expect(find.text('Meçhul'), findsNothing);
+
+      // Table headers should be present
+      expect(find.text('Tekil'), findsWidgets);
+      expect(find.text('İkil'), findsWidgets);
+      expect(find.text('Çoğul'), findsWidgets);
+      expect(find.text('Müzekker'), findsWidgets);
+      expect(find.text('Müennes'), findsWidgets);
+
+      // Tap on the singular feminine cell ('نَاصِرَةٌ')
+      await tester.tap(find.text('نَاصِرَةٌ').first);
+      await tester.pumpAndSettle();
+
+      // ArabicResultCard should display the selected word and rule details
+      expect(find.text('نَاصِرَةٌ'), findsWidgets);
+      expect(find.textContaining('müennes tekil İsm-i Fâil formudur.'), findsWidgets);
+
+      // Broken plural chip 'نُصَّارٌ' should be visible at the bottom
+      expect(find.text('نُصَّارٌ'), findsWidgets);
+
+      // Scroll to the broken plural chip
+      await tester.ensureVisible(find.text('نُصَّارٌ').last);
+      await tester.pumpAndSettle();
+
+      // Tap on the broken plural chip
+      await tester.tap(find.text('نُصَّارٌ').last);
+      await tester.pumpAndSettle();
+
+      // Result card should update to 'نُصَّارٌ'
+      expect(find.text('نُصَّارٌ'), findsWidgets);
+      expect(find.textContaining('müzekker çoğul İsm-i Fâil formudur.'), findsWidgets);
+      expect(tester.takeException(), isNull);
+    },
+  );
+
+  testWidgets(
+    'practice: setup view lists noun categories and starts practice for nouns',
+    (WidgetTester tester) async {
+      await tester.binding.setSurfaceSize(const Size(500, 1000));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: SafeArea(child: PracticeScreen(data: nounTestData, random: Random(1))),
+          ),
+        ),
+      );
+
+      // Initially, ismFail is selected by default in filters, and we have 7 forms matching.
+      expect(find.text('7'), findsOneWidget);
+      expect(tester.widget<FilledButton>(find.byType(FilledButton)).enabled, isTrue);
+
+      // Clear all categories
+      await tester.tap(find.descendant(
+        of: find.byType(Row),
+        matching: find.text('Temizle').first,
+      ).first);
+      await tester.pumpAndSettle();
+
+      expect(find.text('0'), findsOneWidget);
+      expect(tester.widget<FilledButton>(find.byType(FilledButton)).enabled, isFalse);
+
+      // Tap on the 'İsm-i Fâil' chip to select it again
+      await tester.tap(find.text('İsm-i Fâil'));
+      await tester.pumpAndSettle();
+
+      expect(find.text('7'), findsOneWidget);
+      expect(tester.widget<FilledButton>(find.byType(FilledButton)).enabled, isTrue);
+
+      // Start the practice
+      await startPractice(tester);
+
+      // Confirm we transition to the Practice view
+      expect(find.text('Pratik'), findsOneWidget);
+
+      // Check for prompt
+      final promptFinder = find.byWidgetPredicate((w) => w is Text && w.data != null && w.data!.contains('?'));
+      expect(promptFinder, findsOneWidget);
+
+      final promptText = (tester.widget(promptFinder.first) as Text).data!;
+      
+      String correctAnswer = '';
+      if (promptText.contains('anlamı hangisi')) {
+        final arabicText = (tester.widget(find.byWidgetPredicate((w) => w is Text && w.data != '?' && w.data!.runes.any((r) => r > 1000)).first) as Text).data!;
+        final matchedForm = nounTestFormsList.firstWhere((f) => f.arabic == arabicText);
+        correctAnswer = matchedForm.meaning;
+      } else if (promptText.contains('dil bilgisi özelliği')) {
+        final arabicText = (tester.widget(find.byWidgetPredicate((w) => w is Text && w.data != '?' && w.data!.runes.any((r) => r > 1000)).first) as Text).data!;
+        final matchedForm = nounTestFormsList.firstWhere((f) => f.arabic == arabicText);
+        correctAnswer = matchedForm.pronounLabel;
+      } else {
+        final meaning = promptText.split('"')[1];
+        final matchedForm = nounTestFormsList.firstWhere((f) => f.meaning == meaning);
+        correctAnswer = matchedForm.arabic;
+      }
+
+      await tester.tap(find.text(correctAnswer));
+      await tester.pumpAndSettle();
+
+      expect(find.text('Doğru'), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    },
+  );
 }
 
 Future<void> selectConjugationCategory(
@@ -599,8 +723,7 @@ Future<void> selectConjugationCategory(
 }
 
 Future<void> startPractice(WidgetTester tester) async {
-  final scrollable = find.byType(CustomScrollView).first;
-  await tester.drag(scrollable, const Offset(0, -650));
+  await tester.ensureVisible(find.text('Pratiğe Başla'));
   await tester.pumpAndSettle();
   await tester.tap(find.text('Pratiğe Başla'));
   await tester.pumpAndSettle();
@@ -675,6 +798,86 @@ const testData = AppData(
   lessons: [],
   muhtelifeEntries: [],
   forms: testFormsList,
+  practiceQuestions: [],
+);
+
+const nounTestFormsList = [
+  ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.masculine,
+    pronounLabel: 'Tekil Müzekker',
+    arabic: 'نَاصِرٌ',
+    meaning: 'Yardım eden bir erkek.',
+  ),
+  ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.masculine,
+    pronounLabel: 'İkil Müzekker',
+    arabic: 'نَاصِرَانِ',
+    meaning: 'Yardım eden iki erkek.',
+  ),
+  ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.masculine,
+    pronounLabel: 'Çoğul Müzekker (Sâlim)',
+    arabic: 'نَاصِرُونَ',
+    meaning: 'Yardım eden erkekler.',
+  ),
+  ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.singular,
+    gender: FormGender.feminine,
+    pronounLabel: 'Tekil Müennes',
+    arabic: 'نَاصِرَةٌ',
+    meaning: 'Yardım eden bir kadın.',
+  ),
+  ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.dual,
+    gender: FormGender.feminine,
+    pronounLabel: 'İkil Müennes',
+    arabic: 'نَاصِرَتَانِ',
+    meaning: 'Yardım eden iki kadın.',
+  ),
+  ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.feminine,
+    pronounLabel: 'Çoğul Müennes (Sâlim)',
+    arabic: 'نَاصِرَاتٌ',
+    meaning: 'Yardım eden kadınlar.',
+  ),
+  ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.masculine,
+    pronounLabel: 'Kırık Çoğul Müzekker 1',
+    arabic: 'نُصَّارٌ',
+    meaning: 'Yardım eden erkekler (Kırık Çoğul 1).',
+  ),
+];
+
+const nounTestData = AppData(
+  lessons: [],
+  muhtelifeEntries: [],
+  forms: nounTestFormsList,
   practiceQuestions: [],
 );
 

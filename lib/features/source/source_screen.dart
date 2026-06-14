@@ -1,32 +1,61 @@
 import 'package:emsile_flutter/shared/widgets/app_page.dart';
-import 'package:emsile_flutter/shared/widgets/info_panel.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SourceScreen extends StatelessWidget {
   const SourceScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const AppPage(
+    return AppPage(
       title: 'Kaynak',
-      subtitle: 'İçerik kaynağı ve yerel PDF bilgisi.',
       child: Column(
         children: [
-          InfoPanel(
-            title: 'Kaynak',
-            body:
-                'Zafer ESEN tarafından hazırlanan Emsile Ders Notu temel alınmıştır. Güncelleme tarihi: 01.01.2025.',
-          ),
-          SizedBox(height: 12),
-          InfoPanel(
-            title: 'Yerel PDF',
-            body: 'docs/Emsile_Ders_Notu_Zafer_ESEN_01.01.2025.pdf',
-          ),
-          SizedBox(height: 12),
-          InfoPanel(
-            title: 'Kullanım Notu',
-            body:
-                'Uygulamada kaynak gösterimi korunmalı; içerik genişletilirken PDF verileri elle kontrol edilmelidir.',
+          Card(
+            child: InkWell(
+              onTap: () async {
+                final url = Uri.parse('https://arapcadiyari.blogspot.com');
+                if (await canLaunchUrl(url)) {
+                  await launchUrl(url, mode: LaunchMode.externalApplication);
+                }
+              },
+              borderRadius: BorderRadius.circular(12),
+              child: const Padding(
+                padding: EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.link, color: Colors.blue),
+                        SizedBox(width: 8),
+                        Text(
+                          'Kaynak',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 12),
+                    Text(
+                      'Zafer ESEN tarafından hazırlanan Emsile Ders Notu temel alınmıştır.',
+                      style: TextStyle(fontSize: 14),
+                    ),
+                    SizedBox(height: 12),
+                    Text(
+                      'https://arapcadiyari.blogspot.com',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.blue,
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ),
         ],
       ),

@@ -1,6 +1,6 @@
 enum FormCategory {
-  mazi('Mâzi'),
-  muzari('Muzâri'),
+  mazi('Fiil-i Mâzi'),
+  muzari('Fiil-i Muzâri'),
   cahdMutlak('Cahd-ı Mutlak'),
   cahdMustagrak('Cahd-ı Mustağrak'),
   nefyHal('Nefy-i Hâl'),
@@ -9,10 +9,41 @@ enum FormCategory {
   emrGaib('Emr-i Gâib'),
   nehyGaib('Nehy-i Gâib'),
   emrHazir('Emr-i Hâzır'),
-  nehyHazir('Nehy-i Hâzır');
+  nehyHazir('Nehy-i Hâzır'),
+  masdar('Masdar-ı Gayr-ı Mîmî'),
+  ismFail('İsm-i Fâil'),
+  ismMeful('İsm-i Mef’ul'),
+  ismZamanMekan('İsm-i Zaman / Mekân'),
+  ismAlet('İsm-i Âlet'),
+  masdarMerre('Masdar Bina-i Merre'),
+  masdarNev('Masdar Bina-i Nev’'),
+  ismTasgir('İsm-i Tasğir'),
+  ismMensub('İsm-i Mensub'),
+  mubalagaIsmFail('Mübalağa İsm-i Fâil'),
+  ismTafdil('İsm-i Tafdil'),
+  fiilTaaccubEvvel('Fiil-i Taaccübü Evvel'),
+  fiilTaaccubSani('Fiil-i Taaccübü Sânî');
 
   const FormCategory(this.label);
   final String label;
+
+  bool get isVerb {
+    return this == FormCategory.mazi ||
+        this == FormCategory.muzari ||
+        this == FormCategory.cahdMutlak ||
+        this == FormCategory.cahdMustagrak ||
+        this == FormCategory.nefyHal ||
+        this == FormCategory.nefyIstikbal ||
+        this == FormCategory.tekidNefyIstikbal ||
+        this == FormCategory.emrGaib ||
+        this == FormCategory.nehyGaib ||
+        this == FormCategory.emrHazir ||
+        this == FormCategory.nehyHazir ||
+        this == FormCategory.fiilTaaccubEvvel ||
+        this == FormCategory.fiilTaaccubSani;
+  }
+
+  bool get isNoun => !isVerb;
 
   static FormCategory fromJson(String value) {
     return FormCategory.values.firstWhere((category) => category.name == value);
@@ -158,15 +189,25 @@ class ConjugationForm {
   final String meaning;
 
   String get rule {
-    final parts = <String>[
-      person.label,
-      number.label,
-      if (gender != FormGender.common) gender.label,
-      category.label,
-      voice.label,
-      'formudur.',
-    ];
-    return parts.join(' ');
+    if (category.isNoun) {
+      final parts = <String>[
+        if (gender != FormGender.common) gender.label,
+        number.label,
+        category.label,
+        'formudur.',
+      ];
+      return parts.join(' ');
+    } else {
+      final parts = <String>[
+        person.label,
+        number.label,
+        if (gender != FormGender.common) gender.label,
+        category.label,
+        voice.label,
+        'formudur.',
+      ];
+      return parts.join(' ');
+    }
   }
 
   factory ConjugationForm.fromJson(Map<String, dynamic> json) {
@@ -212,7 +253,8 @@ class PracticeQuestion {
 enum FormPerson {
   first('1. şahıs'),
   second('2. şahıs'),
-  third('3. şahıs');
+  third('3. şahıs'),
+  none('şahıs yok');
 
   const FormPerson(this.label);
   final String label;

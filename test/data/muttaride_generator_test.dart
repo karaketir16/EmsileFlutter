@@ -15,7 +15,7 @@ void main() {
 
       final forms = MuttarideGenerator.fromVerbEntry(entry);
 
-      expect(forms, hasLength(252));
+      expect(forms, hasLength(339));
       expect(
         FormCategory.values.every(
           (category) => forms.any((form) => form.category == category),
@@ -145,6 +145,61 @@ void main() {
           number: FormNumber.singular,
           gender: FormGender.feminine,
           arabic: 'لَمْ تَنْصُرْ',
+        ),
+        isTrue,
+      );
+
+      // İsm-i Fail (noun) checks
+      expect(
+        _hasForm(
+          forms,
+          category: FormCategory.ismFail,
+          voice: Voice.malum,
+          person: FormPerson.none,
+          number: FormNumber.singular,
+          gender: FormGender.masculine,
+          arabic: 'ن' + 'َ' + '\ufe8e' + 'ص' + 'ِ' + 'ر' + 'ٌ',
+        ),
+        isTrue,
+      );
+
+      expect(
+        _hasForm(
+          forms,
+          category: FormCategory.ismFail,
+          voice: Voice.malum,
+          person: FormPerson.none,
+          number: FormNumber.plural,
+          gender: FormGender.masculine,
+          arabic: 'ن' + 'َ' + '\ufe8e' + 'ص' + 'ِ' + 'ر' + 'ُ' + 'و' + 'ن' + 'َ',
+        ),
+        isTrue,
+      );
+
+      // Masdar Bina-i Merre checks (checking dual accusative casing as per Emsile rule: نَصْرَتَيْنِ)
+      expect(
+        _hasForm(
+          forms,
+          category: FormCategory.masdarMerre,
+          voice: Voice.malum,
+          person: FormPerson.none,
+          number: FormNumber.dual,
+          gender: FormGender.common,
+          arabic: 'ن' + 'َ' + 'ص' + 'ْ' + 'ر' + 'َ' + 'ت' + 'َ' + 'ي' + 'ْ' + 'ن' + 'ِ',
+        ),
+        isTrue,
+      );
+
+      // Taaccub (fiilTaaccubEvvel) checks
+      expect(
+        _hasForm(
+          forms,
+          category: FormCategory.fiilTaaccubEvvel,
+          voice: Voice.malum,
+          person: FormPerson.second,
+          number: FormNumber.singular,
+          gender: FormGender.masculine,
+          arabic: 'م' + 'َ' + 'ا' + ' ' + 'أ' + 'َ' + 'ن' + 'ْ' + 'ص' + 'َ' + 'ر' + 'َ' + 'ك' + 'َ',
         ),
         isTrue,
       );
