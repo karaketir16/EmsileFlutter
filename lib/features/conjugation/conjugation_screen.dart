@@ -261,8 +261,28 @@ class SelectionTable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dataColumnWidths = _measureDataColumnWidths(
+      context,
+      rows: [
+        for (final row in pdfRows)
+          PdfTableRowData(
+            rowLabel: row.label,
+            cells: [
+              for (final number in pdfColumns)
+                _SelectionCellData(
+                  form: _findForm(forms, row.selectionFor(number.number)),
+                  selection: row.selectionFor(number.number),
+                ),
+            ],
+          ),
+      ],
+      textForCell: (data) => (data as _SelectionCellData).form?.pronounLabel,
+      textStyle: Theme.of(context).textTheme.labelMedium,
+    );
+
     return PdfStyleTable(
       headerTitle: 'ŞAHIS ZAMİRLERİ',
+      dataColumnWidths: dataColumnWidths,
       rows: [
         for (final row in pdfRows)
           PdfTableRowData(
@@ -289,7 +309,7 @@ class SelectionTable extends StatelessWidget {
           onTap: () => onSelect(selectionCell.selection),
           borderRadius: BorderRadius.circular(6),
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 3),
             decoration: BoxDecoration(
               color: isSelected ? colorScheme.primaryContainer : Colors.white,
               borderRadius: BorderRadius.circular(6),
@@ -329,18 +349,29 @@ class FormsTable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final rows = [
+      for (final row in pdfRows)
+        PdfTableRowData(
+          rowLabel: row.label,
+          cells: [
+            for (final number in pdfColumns)
+              _findForm(forms, row.selectionFor(number.number)),
+          ],
+        ),
+    ];
+
+    final dataColumnWidths = _measureDataColumnWidths(
+      context,
+      rows: rows,
+      textForCell: (data) => (data as ConjugationForm?)?.arabic,
+      textStyle: arabicTextStyle(17),
+      textDirection: TextDirection.rtl,
+    );
+
     return PdfStyleTable(
+      dataColumnWidths: dataColumnWidths,
       headerTitle: '${forms.first.category.label} ${forms.first.voice.label}',
-      rows: [
-        for (final row in pdfRows)
-          PdfTableRowData(
-            rowLabel: row.label,
-            cells: [
-              for (final number in pdfColumns)
-                _findForm(forms, row.selectionFor(number.number)),
-            ],
-          ),
-      ],
+      rows: rows,
       cellBuilder: (context, data) {
         final form = data as ConjugationForm?;
         if (form == null) {
@@ -357,7 +388,7 @@ class FormsTable extends StatelessWidget {
           onTap: () => onSelect(selection),
           borderRadius: BorderRadius.circular(6),
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 3),
             decoration: BoxDecoration(
               color: isSelected
                   ? colorScheme.primaryContainer.withValues(alpha: 0.55)
@@ -371,7 +402,7 @@ class FormsTable extends StatelessWidget {
                 textAlign: TextAlign.center,
                 maxLines: 1,
                 softWrap: false,
-                style: arabicTextStyle(18),
+                style: arabicTextStyle(17),
               ),
             ),
           ),
@@ -386,12 +417,14 @@ class PdfStyleTable extends StatelessWidget {
     required this.headerTitle,
     required this.rows,
     required this.cellBuilder,
+    this.dataColumnWidths,
     super.key,
   });
 
   final String headerTitle;
   final List<PdfTableRowData> rows;
   final Widget Function(BuildContext context, Object? data) cellBuilder;
+  final List<double>? dataColumnWidths;
 
   @override
   Widget build(BuildContext context) {
@@ -399,54 +432,56 @@ class PdfStyleTable extends StatelessWidget {
     final labelStyle = Theme.of(
       context,
     ).textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w700);
+    final dataWidths = dataColumnWidths ?? const [56, 56, 56];
 
-    return Center(
-      child: Card(
-        clipBehavior: Clip.antiAlias,
-        child: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Table(
-            border: TableBorder.all(color: borderColor),
-            columnWidths: const {
-              0: IntrinsicColumnWidth(),
-              1: IntrinsicColumnWidth(),
-              2: IntrinsicColumnWidth(),
-              3: FixedColumnWidth(94),
-            },
-            defaultVerticalAlignment: TableCellVerticalAlignment.middle,
-            children: [
+    return Card(
+      clipBehavior: Clip.antiAlias,
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Table(
+          border: TableBorder.all(color: borderColor),
+          columnWidths: {
+            0: FixedColumnWidth(dataWidths[0]),
+            1: FixedColumnWidth(dataWidths[1]),
+            2: FixedColumnWidth(dataWidths[2]),
+            3: const FixedColumnWidth(80),
+          },
+          defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+          children: [
+            TableRow(
+              decoration: const BoxDecoration(color: Color(0xFFF4F0E6)),
+              children: [
+                _HeaderCell(text: pdfColumns[0].label, width: dataWidths[0]),
+                _HeaderCell(text: pdfColumns[1].label, width: dataWidths[1]),
+                _HeaderCell(text: pdfColumns[2].label, width: dataWidths[2]),
+                _HeaderCell(text: headerTitle),
+              ],
+            ),
+            for (final row in rows)
               TableRow(
-                decoration: const BoxDecoration(color: Color(0xFFF4F0E6)),
                 children: [
-                  _HeaderCell(text: pdfColumns[0].label),
-                  _HeaderCell(text: pdfColumns[1].label),
-                  _HeaderCell(text: pdfColumns[2].label),
-                  _HeaderCell(text: headerTitle),
-                ],
-              ),
-              for (final row in rows)
-                TableRow(
-                  children: [
-                    for (final cell in row.cells)
-                      Padding(
-                        padding: const EdgeInsets.all(4),
-                        child: SizedBox(
-                          height: 40,
-                          child: Center(child: cellBuilder(context, cell)),
-                        ),
-                      ),
+                  for (final cell in row.cells)
                     Padding(
-                      padding: const EdgeInsets.all(8),
-                      child: Text(
-                        row.rowLabel,
-                        textAlign: TextAlign.center,
-                        style: labelStyle,
+                      padding: const EdgeInsets.all(1),
+                      child: SizedBox(
+                        height: 30,
+                        child: Center(child: cellBuilder(context, cell)),
                       ),
                     ),
-                  ],
-                ),
-            ],
-          ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 4,
+                      vertical: 5,
+                    ),
+                    child: Text(
+                      row.rowLabel,
+                      textAlign: TextAlign.center,
+                      style: labelStyle,
+                    ),
+                  ),
+                ],
+              ),
+          ],
         ),
       ),
     );
@@ -454,23 +489,62 @@ class PdfStyleTable extends StatelessWidget {
 }
 
 class _HeaderCell extends StatelessWidget {
-  const _HeaderCell({required this.text});
+  const _HeaderCell({required this.text, this.width});
 
   final String text;
+  final double? width;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 10),
-      child: Text(
-        text,
-        textAlign: TextAlign.center,
-        style: Theme.of(
-          context,
-        ).textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w800),
+      padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 7),
+      child: SizedBox(
+        width: width,
+        child: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            text,
+            textAlign: TextAlign.center,
+            style: Theme.of(
+              context,
+            ).textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w800),
+          ),
+        ),
       ),
     );
   }
+}
+
+List<double> _measureDataColumnWidths(
+  BuildContext context, {
+  required List<PdfTableRowData> rows,
+  required String? Function(Object? data) textForCell,
+  required TextStyle? textStyle,
+  TextDirection textDirection = TextDirection.ltr,
+}) {
+  final widths = [0.0, 0.0, 0.0];
+
+  for (final row in rows) {
+    for (var index = 0; index < row.cells.length && index < 3; index++) {
+      final text = textForCell(row.cells[index]);
+      if (text == null || text.isEmpty) {
+        continue;
+      }
+      final painter = TextPainter(
+        text: TextSpan(text: text, style: textStyle),
+        textDirection: textDirection,
+        maxLines: 1,
+      )..layout();
+      final width = painter.width + 12;
+      if (width > widths[index]) {
+        widths[index] = width;
+      }
+    }
+  }
+
+  return [
+    for (final width in widths) width < 54 ? 54 : width,
+  ];
 }
 
 class PdfTableRowData {
@@ -654,11 +728,19 @@ class NounFormsTable extends StatelessWidget {
     // We also want to find if there are any other forms (broken plurals)
     final mainFormsSet = tableRows.expand((r) => r.cells).whereType<ConjugationForm>().toSet();
     final otherForms = forms.where((f) => !mainFormsSet.contains(f)).toList();
+    final dataColumnWidths = _measureDataColumnWidths(
+      context,
+      rows: tableRows,
+      textForCell: (data) => (data as ConjugationForm?)?.arabic,
+      textStyle: arabicTextStyle(17),
+      textDirection: TextDirection.rtl,
+    );
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         PdfStyleTable(
+          dataColumnWidths: dataColumnWidths,
           headerTitle: forms.isNotEmpty ? forms.first.category.label.toUpperCase() : 'İSİM',
           rows: tableRows,
           cellBuilder: (context, data) {
@@ -672,7 +754,7 @@ class NounFormsTable extends StatelessWidget {
               onTap: () => onSelect(FormSelection.fromForm(form)),
               borderRadius: BorderRadius.circular(6),
               child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 3),
                 decoration: BoxDecoration(
                   color: isSelected
                       ? colorScheme.primaryContainer.withValues(alpha: 0.55)
@@ -686,7 +768,7 @@ class NounFormsTable extends StatelessWidget {
                     textAlign: TextAlign.center,
                     maxLines: 1,
                     softWrap: false,
-                    style: arabicTextStyle(18),
+                    style: arabicTextStyle(17),
                   ),
                 ),
               ),
