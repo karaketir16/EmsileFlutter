@@ -52,12 +52,13 @@ Kapsam:
 - Pratik: Yanlış cevap tıklaması "Tekrar Bak" geri bildirimini gösteriyor.
 - Pratik: Sonraki Soru butonu bir sonraki soruya geçiyor.
 - Pratik: Ayarlar ekranında kategori filtrelerinin sıfırlanabilmesi ve 5 form sınırının kontrolü.
+- Pratik: Çatı filtresi ve isim çekimlerinin birlikte filtrelenebilmesi.
 - Pratik: Ayarlar ekranında sütun başlıkları ve satır etiketlerine tıklanarak şahıs/zamir gruplarının toplu seçilip kaldırılabilmesi.
 - Pratik: İsim çekim kategorileri için filtreleme ve isim pratiği başlatılabilmesi.
 - Çekim tablosu: İsim kategorisi (İsm-i Fâil vb.) seçildiğinde çatı seçicinin gizlenmesi, isim tablosunda hücre seçimi ve kırık çoğul çipi tıklamaları.
 - Test fixture'ları yeni `person/number/gender` veri modelini kullanıyor.
 - `PracticeQuestionGenerator` unit testleri aynı Arapça form tekrarlarında ayrı şahıs soruları üretildiğini doğruluyor.
-- `MuttarideGenerator` unit testleri generated conjugation kaynağından tüm fiil ve isim/taaccüb çekimlerinin (toplam 339 form) doğru ve harekeli üretildiğini test ediyor.
+- `MuttarideGenerator` unit testleri generated conjugation kaynağından tüm fiil, isim ve taaccüb çekimlerinin toplam `339` form olarak doğru ve harekeli üretildiğini test ediyor.
 
 Test altyapısı:
 
@@ -65,6 +66,7 @@ Test altyapısı:
 - `_IndexedAppShell`: AppShell ile aynı ekran eşleme mantığını kullanarak seçili index'e göre doğru ekranın render edildiğini doğrular.
 - `richTestData`: Çekim testleri için birden fazla kategori/bina/şahıs içeren yerel veri seti.
 - `multiQuestionData`: "Sonraki Soru" akışını test eden iki soruluk yerel veri seti.
+- `Random(0)` benzeri sabit rastgelelik ile pratik testleri deterministik tutulur.
 
 Not:
 
@@ -147,6 +149,7 @@ Henüz yok:
 ## 3. Önerilen Test Genişletmeleri
 
 - `assets/data/emsile_seed.json` için daha katı JSON Schema dosyası ekle (ajv ile).
+- `assets/data/catalog.json` ve `assets/data/verbs/*.json` için şema tabanlı doğrulamayı sıkılaştır.
 - `EmsileRepository.load()` hata durumunu test edilebilir hale getir.
 - Form filtreleme mantığını ayrı unit test ile doğrula.
 - Widget testini 360px ve 430px viewport genişlikleriyle çalıştır.

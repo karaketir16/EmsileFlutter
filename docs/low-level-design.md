@@ -24,8 +24,11 @@ lib/
     emsile_app.dart
     app_shell.dart
   data/
+    catalog_models.dart
     emsile_repository.dart
     models.dart
+    muttaride_generator.dart
+    practice_question_generator.dart
   features/
     home/
     lessons/
@@ -158,6 +161,7 @@ Repository, bu kaynaktan `muttarideForms` listesini üretir. Runtime form listes
 - `verbClass`
 - `bab`
 - `lemma`
+- şu an desteklenen profil: `sulasi_mujarrad / sahih_salim / nasara_yansuru`
 
 `Lesson`
 
@@ -173,8 +177,9 @@ Repository, bu kaynaktan `muttarideForms` listesini üretir. Runtime form listes
 
 `MuttarideGenerator`
 
-- `nasara` için 252 fiil formu üretir.
+- `nasara` için toplam 339 form üretir.
 - Temel mâzi/muzâri, nefy, cahd, emir ve nehy gruplarını malum/meçhul kırılımlarıyla kurar.
+- İsim türevleri ve taaccüb kategorilerini de aynı runtime listeye ekler.
 - PDF'te çekilmeyen şahıslar için form üretmez; tablo hücreleri bu yüzden boş kalır.
 
 `PracticeQuestion`
@@ -202,6 +207,8 @@ Ana ekranlar:
 - `ConjugationScreen`
 - `PracticeScreen`
 - `SourceScreen`
+
+`AppShell`, bu ekranları `IndexedStack` içinde tutar. Böylece alt sekme değişiminde her ekranın state'i korunur.
 
 Paylaşılan widgetlar:
 
@@ -256,6 +263,7 @@ Etkileşim:
 - Şahıs tablosundaki bir hücreye dokunmak aktif formu değiştirir.
 - Tüm formlar tablosundaki bir hücreye dokunmak da aynı seçimi yapar.
 - Aktif hücre her iki tabloda da vurgulanır.
+- İsim kategorilerinde ayrı `NounFormsTable` kullanılır ve çatı seçici gizlenir.
 
 Yerleşim:
 
@@ -281,11 +289,13 @@ Mevcut durum:
 
 - JSON yükleme hatasında `LoadErrorScreen` gösterilir.
 - Boş form listeleri için özel UI henüz yoktur.
+- Pratik ekranında filtre sonucu 5 formun altına düşülürse soru yerine ayar moduna geri dönülür.
 
 Sıradaki iyileştirme:
 
 - `forms.isEmpty` durumunda çekim tablosunda açıklayıcı boş durum göster.
 - JSON parse hatalarında hangi alanın eksik olduğunu daha okunur raporla.
+- Repository hata senaryolarını testte izole edebilmek için asset yüklemeyi enjekte edilebilir hale getir.
 
 ## 10. Refactor Notu
 

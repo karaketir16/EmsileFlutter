@@ -1,8 +1,17 @@
 # Emsile Flutter Geliştirme Checklist
 
-Son güncelleme: İsim çekimleri ve taaccüb fiilleri entegrasyonu tamamlandı. Pratik ayar ekranında filtreler sadeleştirilerek tablo görünümüne geçirildi, sütun ve satır başlıklarından toplu seçim yapılması sağlandı.
+Son güncelleme: `nasara` için runtime generated muttaride akışı aktif. Fiil grupları, isim türevleri ve taaccüb formları aynı çekim ekranında gösteriliyor; pratik ekranı ise kategori, çatı ve şahıs/zamir filtreleriyle soru üretiyor.
 
 Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya tamamlanma durumu değiştiğinde aynı değişiklikle birlikte güncel tutulmalıdır.
+
+## 0. Durum Özeti
+
+- [x] Uygulama `catalog.json + verbs/<id>.json + repository composition` yapısına geçti.
+- [x] Varsayılan fiil `nasara` için generated çekim üretimi çalışıyor.
+- [x] Fiil muttaride grupları, isim türevleri ve taaccüb formları tek çekim ekranında erişilebilir.
+- [x] Dersler ekranı katalogdan geliyor; Muhtelife dersi iki sütunlu tabloyla gösteriliyor.
+- [x] Pratik ekranı soru başlamadan önce filtrelenebilir ayar modu sunuyor.
+- [ ] Hâlâ tek fiilli MVP durumundayız; çok fiilli katalog ve fiil seçici henüz yok.
 
 ## 1. Proje Hazırlığı
 
@@ -46,6 +55,7 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] `nasara` için `muttarideForms` verisini rule-based üretime taşı.
 - [x] `nasara` için muhtelife satırlarını PDF'teki sıra ve eşleşmelere göre tamamla.
 - [x] `nasara` için fiil çekimli tüm muttaride gruplarını generate et.
+- [x] `nasara` için isim ve taaccüb türevlerini generated forma taşı.
 - [ ] Şahıs zamirleri veri modelini ayrıca oluştur.
 - [x] JSON seed veri validasyon script'i ekle.
 - [x] Catalog/verb veri validasyon script'ini yeni yapıya göre güncelle.
@@ -97,6 +107,7 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] Tüm fiil muttaride tablolarını tek ekrandan erişilebilir yap.
 - [x] Sağdan sola yazım davranışını Playwright screenshot ile test et.
 - [x] İsim ve masdar türev tablolarını çekim ekranına ayrı bölüm olarak ekle.
+- [x] Taaccüb fiillerini çekim ekranına ayrı kategori olarak ekle.
 - [x] Sayı/cinsiyet seçiciyi ayrı filtre olarak modelle.
 - [ ] Boş veri durumlarını tasarla.
 
@@ -108,6 +119,8 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] Doğru/yanlış geri bildirimlerini tasarla.
 - [x] Sonraki soru akışını ekle.
 - [x] İlk alıştırma veri setini `نصر` üzerinden otomatik üret.
+- [x] Alıştırma öncesi kategori/çatı/şahıs-zamir filtreleme ekranını ekle.
+- [x] Satır ve sütun başlıklarından toplu seçim yapılmasını ekle.
 - [ ] Boşluk doldurma alıştırmasını ekle.
 - [ ] Eşleştirme alıştırmasını ekle.
 - [ ] Skor/ilerleme modelini ekle.
@@ -131,6 +144,7 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] Buton metinlerinin kritik ekranlarda sığdığını doğrula.
 - [x] Alt navigasyonun küçük ekranlarda kullanılabilir olduğunu doğrula.
 - [x] Playwright screenshot çıktıları üret: `docs/screenshots`.
+- [x] Codex in-app browser ile canlı yüzey kontrolü yap.
 
 ## 11. Teknik Kalite
 
@@ -144,6 +158,7 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] Seed veri alanlarında `person/number/gender` doğrulaması ekle.
 - [ ] Veri modelleri için ayrı Dart unit test ekle.
 - [x] Pratik soru üreticisi için ayrı Dart unit test ekle.
+- [x] `MuttarideGenerator` için generated form kapsam testi ekle.
 - [x] Çekim ve pratik ekranları için widget test ekle.
 - [x] Seçili sekme ekran eşleşmeleri için widget test ekle.
 - [x] Pratik cevap etkileşimleri için widget test ekle.
