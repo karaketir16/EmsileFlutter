@@ -9,7 +9,7 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] Flutter proje iskeletini oluştur.
 - [x] Web hedefini çalıştır.
 - [x] Android/iOS hedeflerinin ileride desteklenebileceğini doğrula.
-- [ ] Temel klasör yapısını oluştur: `lib/features`, `lib/shared`, `lib/data`.
+- [x] Temel klasör yapısını oluştur: `lib/features`, `lib/shared`, `lib/data`.
 - [x] Lint ve format ayarlarını ekle.
 - [x] Playwright görsel kontrol altyapısını ekle.
 - [x] İlk commit'i at.
@@ -22,7 +22,7 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] Mobil öncelikli spacing değerlerini ilk MVP ekranlarında uygula.
 - [ ] Türkçe metin fontunu netleştir.
 - [ ] Arapça metin fontunu netleştir.
-- [ ] Tasarım token'larını `lib/shared` altına ayır.
+- [x] Tema ve ortak widgetları `lib/shared` altına ayır.
 
 ## 3. Veri Hazırlığı
 
@@ -50,7 +50,7 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] Çekim Tablosu rotasını oluştur.
 - [x] Alıştırma rotasını oluştur.
 - [x] Kaynak rotasını oluştur.
-- [ ] Route yapısını ayrı dosyaya taşı.
+- [x] Uygulama kabuğunu `lib/app` altına taşı.
 
 ## 5. Ana Sayfa
 
@@ -138,7 +138,7 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 
 ## 13. Sıradaki Mantıklı İşler
 
-- [ ] Kod organizasyonunu `lib/data`, `lib/features`, `lib/shared` klasörlerine böl.
+- [x] Kod organizasyonunu `lib/data`, `lib/features`, `lib/shared` klasörlerine böl.
 - [ ] JSON veri şemasını büyütmeden önce alan adlarını sabitle.
 - [ ] PDF'teki şahıs zamirleri tablosunu JSON'a taşı.
 - [ ] Fiil-i mâzi ve muzâri için 14 şahıslık tam tabloyu tamamla.

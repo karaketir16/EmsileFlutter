@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:emsile_flutter/main.dart';
+import 'package:emsile_flutter/app/emsile_app.dart';
+import 'package:emsile_flutter/data/models.dart';
+import 'package:emsile_flutter/features/conjugation/conjugation_screen.dart';
+import 'package:emsile_flutter/features/practice/practice_screen.dart';
 
 Future<void> pumpLoadedApp(WidgetTester tester) async {
   await tester.binding.setSurfaceSize(const Size(390, 844));

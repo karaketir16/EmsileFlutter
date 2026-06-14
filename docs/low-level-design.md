@@ -14,7 +14,7 @@ test/widget_test.dart
 docs/screenshots/
 ```
 
-Şu an uygulama küçük olduğu için ana kod tek dosyada tutuluyor. Bir sonraki refactor aşamasında hedef yapı:
+Mevcut uygulama kodu feature ve katman sınırlarına göre ayrılmıştır:
 
 ```text
 lib/
@@ -31,9 +31,12 @@ lib/
     practice/
     source/
   shared/
-    theme.dart
+    theme/
+      app_theme.dart
     widgets/
 ```
+
+`shared/widgets` altında ortak sayfa, bilgi paneli ve Arapça sonuç kartı gibi tekrar kullanılan bileşenler bulunur.
 
 ## 2. Uygulama Başlatma Akışı
 
@@ -176,9 +179,17 @@ Sıradaki iyileştirme:
 
 ## 10. Refactor Notu
 
-Bir sonraki teknik borç adımı, `lib/main.dart` dosyasını parçalamaktır. Şu sırayla yapılması önerilir:
+İlk kod organizasyonu refactor'ı tamamlandı. `lib/main.dart` artık sadece uygulamayı başlatır.
 
-1. Model ve repository sınıflarını `lib/data/` altına taşı.
-2. Tema ve ortak widgetları `lib/shared/` altına taşı.
-3. Her ekranı `lib/features/<feature>/` altına taşı.
-4. Testlerde import yollarını güncelle.
+Tamamlanan taşıma:
+
+1. Model ve repository sınıfları `lib/data/` altına taşındı.
+2. Tema ve ortak widgetlar `lib/shared/` altına taşındı.
+3. Ekranlar `lib/features/<feature>/` altına taşındı.
+4. App shell ve bootstrap kodu `lib/app/` altına taşındı.
+5. Test import yolları güncellendi.
+
+Sıradaki teknik borç:
+
+- Feature içindeki küçük bileşenleri ayrı dosyalara böl.
+- Route/nav kararlarını ihtiyaç büyüdükçe ayrı bir navigation katmanına taşı.
