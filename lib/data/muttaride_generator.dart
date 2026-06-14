@@ -47,60 +47,267 @@ class MuttarideGenerator {
     final forms = <ConjugationForm>[];
 
     for (final slot in _slots) {
-      forms.add(
-        ConjugationForm(
-          category: FormCategory.mazi,
-          voice: Voice.malum,
-          person: slot.person,
-          number: slot.number,
-          gender: slot.gender,
-          pronounLabel: slot.pronounLabel,
-          arabic: _maziMalum(meta.letters, slot),
-          meaning: '${slot.subjectPhrase} yardim etti.',
-        ),
-      );
-
-      forms.add(
-        ConjugationForm(
-          category: FormCategory.mazi,
-          voice: Voice.mechul,
-          person: slot.person,
-          number: slot.number,
-          gender: slot.gender,
-          pronounLabel: slot.pronounLabel,
-          arabic: _maziMechul(meta.letters, slot),
-          meaning: '${slot.objectPhrase} icin yardim edildi.',
-        ),
-      );
-
-      forms.add(
-        ConjugationForm(
-          category: FormCategory.muzari,
-          voice: Voice.malum,
-          person: slot.person,
-          number: slot.number,
-          gender: slot.gender,
-          pronounLabel: slot.pronounLabel,
-          arabic: _muzariMalum(meta.letters, slot),
-          meaning: '${slot.subjectPhrase} yardim ediyor.',
-        ),
-      );
-
-      forms.add(
-        ConjugationForm(
-          category: FormCategory.muzari,
-          voice: Voice.mechul,
-          person: slot.person,
-          number: slot.number,
-          gender: slot.gender,
-          pronounLabel: slot.pronounLabel,
-          arabic: _muzariMechul(meta.letters, slot),
-          meaning: '${slot.objectPhrase} icin yardim ediliyor.',
-        ),
-      );
+      _addCoreForms(forms, meta.letters, slot);
+      _addPrefixedMuzariForms(forms, meta.letters, slot);
+      _addRestrictedCommandForms(forms, meta.letters, slot);
     }
 
     return forms;
+  }
+
+  static void _addCoreForms(
+    List<ConjugationForm> forms,
+    List<String> letters,
+    _Slot slot,
+  ) {
+    forms
+      ..add(
+        _form(
+          category: FormCategory.mazi,
+          voice: Voice.malum,
+          slot: slot,
+          arabic: _maziMalum(letters, slot),
+          meaning: '${slot.subjectPhrase} yardim etti.',
+        ),
+      )
+      ..add(
+        _form(
+          category: FormCategory.mazi,
+          voice: Voice.mechul,
+          slot: slot,
+          arabic: _maziMechul(letters, slot),
+          meaning: '${slot.objectPhrase} icin yardim edildi.',
+        ),
+      )
+      ..add(
+        _form(
+          category: FormCategory.muzari,
+          voice: Voice.malum,
+          slot: slot,
+          arabic: _muzariMalum(letters, slot, _MuzariMood.marfu),
+          meaning: '${slot.subjectPhrase} yardim ediyor.',
+        ),
+      )
+      ..add(
+        _form(
+          category: FormCategory.muzari,
+          voice: Voice.mechul,
+          slot: slot,
+          arabic: _muzariMechul(letters, slot, _MuzariMood.marfu),
+          meaning: '${slot.objectPhrase} icin yardim ediliyor.',
+        ),
+      );
+  }
+
+  static void _addPrefixedMuzariForms(
+    List<ConjugationForm> forms,
+    List<String> letters,
+    _Slot slot,
+  ) {
+    final specs = [
+      _PrefixedMuzariSpec(
+        category: FormCategory.nefyHal,
+        prefix: 'مَا ',
+        mood: _MuzariMood.marfu,
+        activeMeaning: '${slot.subjectPhrase} yardim etmiyor.',
+        passiveMeaning: '${slot.objectPhrase} icin yardim edilmiyor.',
+      ),
+      _PrefixedMuzariSpec(
+        category: FormCategory.nefyIstikbal,
+        prefix: 'لا ',
+        mood: _MuzariMood.marfu,
+        activeMeaning: '${slot.subjectPhrase} yardim etmeyecek.',
+        passiveMeaning: '${slot.objectPhrase} icin yardim edilmeyecek.',
+      ),
+      _PrefixedMuzariSpec(
+        category: FormCategory.cahdMutlak,
+        prefix: 'لَمْ ',
+        mood: _MuzariMood.majzum,
+        activeMeaning: '${slot.subjectPhrase} yardim etmedi.',
+        passiveMeaning: '${slot.objectPhrase} icin yardim edilmedi.',
+      ),
+      _PrefixedMuzariSpec(
+        category: FormCategory.cahdMustagrak,
+        prefix: 'لَمَّا ',
+        mood: _MuzariMood.majzum,
+        activeMeaning: '${slot.subjectPhrase} henuz yardim etmedi.',
+        passiveMeaning: '${slot.objectPhrase} icin henuz yardim edilmedi.',
+      ),
+      _PrefixedMuzariSpec(
+        category: FormCategory.tekidNefyIstikbal,
+        prefix: 'لَنْ ',
+        mood: _MuzariMood.mansub,
+        activeMeaning: '${slot.subjectPhrase} asla yardim etmeyecek.',
+        passiveMeaning: '${slot.objectPhrase} icin asla yardim edilmeyecek.',
+      ),
+    ];
+
+    for (final spec in specs) {
+      forms
+        ..add(
+          _form(
+            category: spec.category,
+            voice: Voice.malum,
+            slot: slot,
+            arabic: spec.prefix + _muzariMalum(letters, slot, spec.mood),
+            meaning: spec.activeMeaning,
+          ),
+        )
+        ..add(
+          _form(
+            category: spec.category,
+            voice: Voice.mechul,
+            slot: slot,
+            arabic: spec.prefix + _muzariMechul(letters, slot, spec.mood),
+            meaning: spec.passiveMeaning,
+          ),
+        );
+    }
+  }
+
+  static void _addRestrictedCommandForms(
+    List<ConjugationForm> forms,
+    List<String> letters,
+    _Slot slot,
+  ) {
+    if (slot.isThirdPerson) {
+      forms
+        ..add(
+          _form(
+            category: FormCategory.emrGaib,
+            voice: Voice.malum,
+            slot: slot,
+            arabic: 'لِ${_muzariMalum(letters, slot, _MuzariMood.majzum)}',
+            meaning: '${slot.subjectPhrase} yardim etsin.',
+          ),
+        )
+        ..add(
+          _form(
+            category: FormCategory.nehyGaib,
+            voice: Voice.malum,
+            slot: slot,
+            arabic: 'لا ${_muzariMalum(letters, slot, _MuzariMood.majzum)}',
+            meaning: '${slot.subjectPhrase} yardim etmesin.',
+          ),
+        )
+        ..add(
+          _form(
+            category: FormCategory.emrGaib,
+            voice: Voice.mechul,
+            slot: slot,
+            arabic: 'لِ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
+            meaning: '${slot.objectPhrase} icin yardim edilsin.',
+          ),
+        )
+        ..add(
+          _form(
+            category: FormCategory.nehyGaib,
+            voice: Voice.mechul,
+            slot: slot,
+            arabic: 'لا ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
+            meaning: '${slot.objectPhrase} icin yardim edilmesin.',
+          ),
+        );
+    }
+
+    if (slot.isSecondPerson) {
+      forms
+        ..add(
+          _form(
+            category: FormCategory.emrHazir,
+            voice: Voice.malum,
+            slot: slot,
+            arabic: _emrHazirMalum(letters, slot),
+            meaning: '${slot.subjectPhrase} yardim et.',
+          ),
+        )
+        ..add(
+          _form(
+            category: FormCategory.nehyHazir,
+            voice: Voice.malum,
+            slot: slot,
+            arabic: 'لا ${_muzariMalum(letters, slot, _MuzariMood.majzum)}',
+            meaning: '${slot.subjectPhrase} yardim etme.',
+          ),
+        )
+        ..add(
+          _form(
+            category: FormCategory.emrHazir,
+            voice: Voice.mechul,
+            slot: slot,
+            arabic: 'لِ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
+            meaning: '${slot.objectPhrase} icin yardim edilsin.',
+          ),
+        )
+        ..add(
+          _form(
+            category: FormCategory.nehyHazir,
+            voice: Voice.mechul,
+            slot: slot,
+            arabic: 'لا ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
+            meaning: '${slot.objectPhrase} icin yardim edilmesin.',
+          ),
+        );
+    }
+
+    if (slot.isFirstPerson) {
+      forms
+        ..add(
+          _form(
+            category: FormCategory.emrGaib,
+            voice: Voice.mechul,
+            slot: slot,
+            arabic: 'لِ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
+            meaning: '${slot.objectPhrase} icin yardim edilsin.',
+          ),
+        )
+        ..add(
+          _form(
+            category: FormCategory.nehyGaib,
+            voice: Voice.mechul,
+            slot: slot,
+            arabic: 'لا ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
+            meaning: '${slot.objectPhrase} icin yardim edilmesin.',
+          ),
+        )
+        ..add(
+          _form(
+            category: FormCategory.emrHazir,
+            voice: Voice.mechul,
+            slot: slot,
+            arabic: 'لِ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
+            meaning: '${slot.objectPhrase} icin yardim edilsin.',
+          ),
+        )
+        ..add(
+          _form(
+            category: FormCategory.nehyHazir,
+            voice: Voice.mechul,
+            slot: slot,
+            arabic: 'لا ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
+            meaning: '${slot.objectPhrase} icin yardim edilmesin.',
+          ),
+        );
+    }
+  }
+
+  static ConjugationForm _form({
+    required FormCategory category,
+    required Voice voice,
+    required _Slot slot,
+    required String arabic,
+    required String meaning,
+  }) {
+    return ConjugationForm(
+      category: category,
+      voice: voice,
+      person: slot.person,
+      number: slot.number,
+      gender: slot.gender,
+      pronounLabel: slot.pronounLabel,
+      arabic: arabic,
+      meaning: meaning,
+    );
   }
 
   static String _maziMalum(List<String> letters, _Slot slot) {
@@ -111,14 +318,44 @@ class MuttarideGenerator {
     return '${letters[0]}ُ${letters[1]}ِ${letters[2]}${slot.maziSuffixMechul}';
   }
 
-  static String _muzariMalum(List<String> letters, _Slot slot) {
-    return '${slot.muzariPrefixMalum}${letters[0]}ْ${letters[1]}ُ${letters[2]}${slot.muzariSuffixMalum}';
+  static String _muzariMalum(
+    List<String> letters,
+    _Slot slot,
+    _MuzariMood mood,
+  ) {
+    return '${slot.muzariPrefixMalum}${letters[0]}ْ${letters[1]}ُ${letters[2]}${slot.muzariSuffixMalumFor(mood)}';
   }
 
-  static String _muzariMechul(List<String> letters, _Slot slot) {
-    return '${slot.muzariPrefixMechul}${letters[0]}ْ${letters[1]}َ${letters[2]}${slot.muzariSuffixMechul}';
+  static String _muzariMechul(
+    List<String> letters,
+    _Slot slot,
+    _MuzariMood mood,
+  ) {
+    return '${slot.muzariPrefixMechul}${letters[0]}ْ${letters[1]}َ${letters[2]}${slot.muzariSuffixMechulFor(mood)}';
+  }
+
+  static String _emrHazirMalum(List<String> letters, _Slot slot) {
+    return 'اُ${letters[0]}ْ${letters[1]}ُ${letters[2]}${slot.commandSuffix}';
   }
 }
+
+class _PrefixedMuzariSpec {
+  const _PrefixedMuzariSpec({
+    required this.category,
+    required this.prefix,
+    required this.mood,
+    required this.activeMeaning,
+    required this.passiveMeaning,
+  });
+
+  final FormCategory category;
+  final String prefix;
+  final _MuzariMood mood;
+  final String activeMeaning;
+  final String passiveMeaning;
+}
+
+enum _MuzariMood { marfu, majzum, mansub }
 
 class _Slot {
   const _Slot({
@@ -148,6 +385,53 @@ class _Slot {
   final String muzariPrefixMechul;
   final String muzariSuffixMalum;
   final String muzariSuffixMechul;
+
+  bool get isThirdPerson => person == FormPerson.third;
+  bool get isSecondPerson => person == FormPerson.second;
+  bool get isFirstPerson => person == FormPerson.first;
+
+  String muzariSuffixMalumFor(_MuzariMood mood) {
+    return _muzariSuffixFor(mood, muzariSuffixMalum);
+  }
+
+  String muzariSuffixMechulFor(_MuzariMood mood) {
+    return _muzariSuffixFor(mood, muzariSuffixMechul);
+  }
+
+  String get commandSuffix {
+    if (gender == FormGender.feminine && number == FormNumber.plural) {
+      return 'ْنَ';
+    }
+    if (number == FormNumber.dual) {
+      return 'َا';
+    }
+    if (number == FormNumber.plural && gender == FormGender.masculine) {
+      return 'ُوا';
+    }
+    if (number == FormNumber.singular && gender == FormGender.feminine) {
+      return 'ِي';
+    }
+    return 'ْ';
+  }
+
+  String _muzariSuffixFor(_MuzariMood mood, String marfuSuffix) {
+    if (mood == _MuzariMood.marfu) {
+      return marfuSuffix;
+    }
+    if (gender == FormGender.feminine && number == FormNumber.plural) {
+      return 'ْنَ';
+    }
+    if (number == FormNumber.dual) {
+      return 'َا';
+    }
+    if (number == FormNumber.plural && gender == FormGender.masculine) {
+      return mood == _MuzariMood.majzum ? 'ُوا' : 'ُوا';
+    }
+    if (number == FormNumber.singular && gender == FormGender.feminine) {
+      return 'ِي';
+    }
+    return mood == _MuzariMood.mansub ? 'َ' : 'ْ';
+  }
 }
 
 const _slots = <_Slot>[

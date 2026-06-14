@@ -1,6 +1,6 @@
 # Emsile Flutter Geliştirme Checklist
 
-Son güncelleme: `nasara` için `Emsile-i Muhtelife` tablosu PDF sırasına göre tamamlandı ve ders detayında tablo görünümüne bağlandı; `muttarideForms` ise `conjugationSource` tabanlı rule-based generate akışında kalıyor.
+Son güncelleme: `nasara` için fiil çekimli muttaride grupları PDF kurallarına göre rule-based üretildi ve çekim ekranında tüm tablolar erişilebilir hale getirildi.
 
 Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya tamamlanma durumu değiştiğinde aynı değişiklikle birlikte güncel tutulmalıdır.
 
@@ -45,6 +45,7 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] İlk generated `conjugationSource` profilini ekle.
 - [x] `nasara` için `muttarideForms` verisini rule-based üretime taşı.
 - [x] `nasara` için muhtelife satırlarını PDF'teki sıra ve eşleşmelere göre tamamla.
+- [x] `nasara` için fiil çekimli tüm muttaride gruplarını generate et.
 - [ ] Şahıs zamirleri veri modelini ayrıca oluştur.
 - [x] JSON seed veri validasyon script'i ekle.
 - [x] Catalog/verb veri validasyon script'ini yeni yapıya göre güncelle.
@@ -92,8 +93,10 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] Şahıs seçimini PDF düzenine yakın tablo görünümüne taşı.
 - [x] Tüm formları PDF düzenine yakın tablo görünümüne taşı.
 - [x] Üst seçim alanını sabitle, tabloları ayrı scroll alanında göster.
+- [x] Nefy, cahd, emir ve nehy fiil gruplarını çekim ekranına ekle.
+- [x] Tüm fiil muttaride tablolarını tek ekrandan erişilebilir yap.
 - [x] Sağdan sola yazım davranışını Playwright screenshot ile test et.
-- [ ] Nefy, Emir ve İsimler kategorilerini ekle.
+- [ ] İsim ve masdar türev tablolarını çekim ekranına ayrı bölüm olarak ekle.
 - [ ] Sayı/cinsiyet seçiciyi ayrı filtre olarak modelle.
 - [ ] Boş veri durumlarını tasarla.
 
@@ -166,6 +169,7 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [ ] `daraba`, `fataha` gibi yeni bablar için generated conjugation profilleri ekle.
 - [ ] Muhtelife explorer için ders detayından ayrı, filtrelenebilir bağımsız ekran ekle.
 - [ ] Fiil listesi/katalog ekranını ekle.
-- [ ] Nefy, emir ve isim kategorileri için aynı tablo genişletmesini yap.
+- [x] Nefy, cahd, emir ve nehy fiil kategorileri için aynı tablo genişletmesini yap.
+- [ ] İsim/masdar türevleri için sayı-cinsiyet tablolarını ayrı muttaride bölümü olarak ekle.
 - [ ] Üretilen pratik sorularına zorluk/karıştırma stratejisi ekle.
 - [ ] Playwright testini 360px ve 430px viewportlarla genişlet.

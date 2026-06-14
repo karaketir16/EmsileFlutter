@@ -1,6 +1,15 @@
 enum FormCategory {
   mazi('Mâzi'),
-  muzari('Muzâri');
+  muzari('Muzâri'),
+  cahdMutlak('Cahd-ı Mutlak'),
+  cahdMustagrak('Cahd-ı Mustağrak'),
+  nefyHal('Nefy-i Hâl'),
+  nefyIstikbal('Nefy-i İstikbâl'),
+  tekidNefyIstikbal("Te'kid-i Nefy-i İstikbâl"),
+  emrGaib('Emr-i Gâib'),
+  nehyGaib('Nehy-i Gâib'),
+  emrHazir('Emr-i Hâzır'),
+  nehyHazir('Nehy-i Hâzır');
 
   const FormCategory(this.label);
   final String label;

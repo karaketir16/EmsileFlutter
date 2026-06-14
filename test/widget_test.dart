@@ -198,9 +198,6 @@ void main() {
       ),
     );
 
-    // Default is Malum — Meçhul form should not be visible yet.
-    expect(find.text('نُصِرَ'), findsNothing);
-
     await tester.tap(find.text('Meçhul'));
     await tester.pumpAndSettle();
 
@@ -224,8 +221,7 @@ void main() {
       ),
     );
 
-    await tester.tap(find.text('Muzâri'));
-    await tester.pumpAndSettle();
+    await selectConjugationCategory(tester, 'Muzâri');
 
     expect(find.text('يَنْصُرُ'), findsWidgets);
     expect(tester.takeException(), isNull);
@@ -267,8 +263,8 @@ void main() {
       ),
     );
 
-    await tester.ensureVisible(find.text('نَصَرْتَ'));
-    await tester.tap(find.text('نَصَرْتَ'));
+    await tester.ensureVisible(find.text('نَصَرْتَ').first);
+    await tester.tap(find.text('نَصَرْتَ').first);
     await tester.pumpAndSettle();
 
     expect(find.text('Sen (er.)'), findsWidgets);
@@ -323,8 +319,7 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('نَصَرْتَ'), findsWidgets);
 
-      await tester.tap(find.text('Muzâri'));
-      await tester.pumpAndSettle();
+      await selectConjugationCategory(tester, 'Muzâri');
 
       expect(find.text('تَنْصُرُ'), findsWidgets);
       expect(find.text('Sen (er.)'), findsWidgets);
@@ -357,7 +352,7 @@ void main() {
     final afterTop = tester.getTopLeft(find.text('Mâzi').first).dy;
 
     expect(afterTop, beforeTop);
-    expect(find.text('Tüm Formlar'), findsOneWidget);
+    expect(find.text('Tüm Fiil Muttaride Tabloları'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
 
@@ -438,6 +433,16 @@ void main() {
     expect(find.text('Doğru'), findsNothing);
     expect(tester.takeException(), isNull);
   });
+}
+
+Future<void> selectConjugationCategory(
+  WidgetTester tester,
+  String categoryLabel,
+) async {
+  await tester.tap(find.byType(DropdownButtonFormField<FormCategory>));
+  await tester.pumpAndSettle();
+  await tester.tap(find.text(categoryLabel).last);
+  await tester.pumpAndSettle();
 }
 
 // ── Shared test data ──────────────────────────────────────────────────────────

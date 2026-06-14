@@ -104,7 +104,7 @@ Kök yapı:
 
 Repository, bu kaynaktan `muttarideForms` listesini üretir. Runtime form listesi şu seçimlerle filtrelenir:
 
-- `category`: `mazi`, `muzari`
+- `category`: `mazi`, `muzari`, `cahdMutlak`, `cahdMustagrak`, `nefyHal`, `nefyIstikbal`, `tekidNefyIstikbal`, `emrGaib`, `nehyGaib`, `emrHazir`, `nehyHazir`
 - `voice`: `malum`, `mechul`
 - `person`: `first`, `second`, `third`
 - `number`: `singular`, `dual`, `plural`
@@ -171,6 +171,12 @@ Repository, bu kaynaktan `muttarideForms` listesini üretir. Runtime form listes
 - Arapça form ve Türkçe anlamı taşır.
 - Kısa kural notu `rule` getter'ı ile bu alanlardan türetilir.
 
+`MuttarideGenerator`
+
+- `nasara` için 252 fiil formu üretir.
+- Temel mâzi/muzâri, nefy, cahd, emir ve nehy gruplarını malum/meçhul kırılımlarıyla kurar.
+- PDF'te çekilmeyen şahıslar için form üretmez; tablo hücreleri bu yüzden boş kalır.
+
 `PracticeQuestion`
 
 - Pratik ekranındaki soru, seçenekler, doğru cevap ve açıklamayı taşır.
@@ -215,7 +221,7 @@ Varsayılan olarak sayfa gövdesini `CustomScrollView` içinde render eder. Anca
 
 State:
 
-- `_category`: Mâzi veya Muzâri
+- `_category`: seçili fiil çekim grubu
 - `_voice`: Malum veya Meçhul
 - `_selectedForm`: seçili şahsın `person + number + gender` kimliği
 
@@ -226,6 +232,12 @@ forms.where((form) => form.category == _category && form.voice == _voice)
 ```
 
 Kategori veya bina değiştiğinde seçili şahıs indeksle değil kimlikle korunur. Yeni görünür grupta aynı `person + number + gender` eşleşmesi varsa o form aktif kalır; yoksa ilk görünür forma düşülür.
+
+Bazı gruplar PDF gereği tüm şahıslarda çekilmez:
+
+- `Emr-i Gâib` ve `Nehy-i Gâib` malum: sadece gâib/gâibe satırları
+- `Emr-i Hâzır` ve `Nehy-i Hâzır` malum: sadece muhatab/muhataba satırları
+- Bu grupların meçhul çekimleri ayrıca mütekellim satırlarını da içerir.
 
 Şahıs seçimi ve tüm formlar görünümü artık seed sırasına bırakılmaz; PDF'deki muttaride düzenini izleyen sabit bir tablo şeması ile çizilir:
 
@@ -247,8 +259,8 @@ Etkileşim:
 
 Yerleşim:
 
-- `Mâzi/Muzâri` seçici, `Malum/Meçhul` seçici ve üstteki sonuç kartı sabittir.
-- `Şahıs Tablosu` ve `Tüm Formlar` alanı alttaki bağımsız scroll bölgesinde akar.
+- `Çekim Grubu` seçici, `Malum/Meçhul` seçici ve üstteki sonuç kartı sabittir.
+- `Şahıs Tablosu`, `Seçili Tablo` ve `Tüm Fiil Muttaride Tabloları` alanı alttaki bağımsız scroll bölgesinde akar.
 - Böylece kullanıcı aşağıdaki tabloyu incelerken üst kontrol alanı ekranda kalır.
 
 ## 8. Arapça Metin Davranışı

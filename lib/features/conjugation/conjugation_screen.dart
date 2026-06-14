@@ -28,6 +28,23 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
         .toList();
   }
 
+  List<_ConjugationGroup> get _groups {
+    final groups = <_ConjugationGroup>[];
+    for (final category in FormCategory.values) {
+      for (final voice in Voice.values) {
+        final forms = widget.data.forms
+            .where((form) => form.category == category && form.voice == voice)
+            .toList();
+        if (forms.isNotEmpty) {
+          groups.add(
+            _ConjugationGroup(category: category, voice: voice, forms: forms),
+          );
+        }
+      }
+    }
+    return groups;
+  }
+
   ConjugationForm get _activeForm {
     final forms = _visibleForms;
     return forms.firstWhere(_selectedForm.matches, orElse: () => forms.first);
@@ -62,22 +79,22 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SegmentedButton<FormCategory>(
-            segments: const [
-              ButtonSegment(
-                value: FormCategory.mazi,
-                icon: Icon(Icons.history),
-                label: Text('Mâzi'),
-              ),
-              ButtonSegment(
-                value: FormCategory.muzari,
-                icon: Icon(Icons.update),
-                label: Text('Muzâri'),
-              ),
+          DropdownButtonFormField<FormCategory>(
+            initialValue: _category,
+            isExpanded: true,
+            decoration: const InputDecoration(
+              labelText: 'Çekim Grubu',
+              prefixIcon: Icon(Icons.view_list_outlined),
+              border: OutlineInputBorder(),
+            ),
+            items: [
+              for (final category in FormCategory.values)
+                DropdownMenuItem(value: category, child: Text(category.label)),
             ],
-            selected: {_category},
-            onSelectionChanged: (value) {
-              _updateSelection(category: value.first);
+            onChanged: (value) {
+              if (value != null) {
+                _updateSelection(category: value);
+              }
             },
           ),
           const SizedBox(height: 12),
@@ -120,7 +137,7 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
                   ),
                   const SizedBox(height: 18),
                   Text(
-                    'Tüm Formlar',
+                    'Seçili Tablo',
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                   const SizedBox(height: 10),
@@ -130,6 +147,24 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
                     onSelect: (selection) =>
                         _updateSelection(selectedForm: selection),
                   ),
+                  const SizedBox(height: 18),
+                  Text(
+                    'Tüm Fiil Muttaride Tabloları',
+                    style: Theme.of(context).textTheme.titleLarge,
+                  ),
+                  const SizedBox(height: 10),
+                  for (final group in _groups) ...[
+                    FormsTable(
+                      forms: group.forms,
+                      selectedForm: _selectedForm,
+                      onSelect: (selection) => _updateSelection(
+                        category: group.category,
+                        voice: group.voice,
+                        selectedForm: selection,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                  ],
                 ],
               ),
             ),
@@ -138,6 +173,18 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
       ),
     );
   }
+}
+
+class _ConjugationGroup {
+  const _ConjugationGroup({
+    required this.category,
+    required this.voice,
+    required this.forms,
+  });
+
+  final FormCategory category;
+  final Voice voice;
+  final List<ConjugationForm> forms;
 }
 
 class SelectionTable extends StatelessWidget {

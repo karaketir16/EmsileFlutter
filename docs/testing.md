@@ -41,18 +41,19 @@ Kapsam:
 - Uygulama JSON asset'i yükleyip ana ekranı render ediyor.
 - Seçili sekme index'ine göre Tablo, Pratik, Dersler ve Kaynak ekranları doğru render oluyor.
 - Çekim tablosu: Meçhul segment tıklaması doğru formu gösteriyor.
-- Çekim tablosu: Muzâri segment tıklaması doğru formu gösteriyor.
+- Çekim tablosu: Çekim grubu menüsünden Muzâri seçimi doğru formu gösteriyor.
 - Çekim tablosu: Şahıs tablosundaki hücre tıklaması sonuç kartını güncelliyor.
 - Çekim tablosu: Tüm formlar tablosundaki hücre tıklaması sonuç kartını güncelliyor.
 - Çekim tablosu: Bina değişiminde seçili şahıs korunuyor.
 - Çekim tablosu: Kategori değişiminde seçili şahıs korunuyor.
 - Çekim tablosu: Üst kontroller sabit kalırken alt tablolar ayrı scroll alanında akıyor.
+- Çekim tablosu: Tüm fiil muttaride tabloları aynı ekrandan erişilebilir oluyor.
 - Pratik: Doğru cevap tıklaması "Doğru" geri bildirimini gösteriyor.
 - Pratik: Yanlış cevap tıklaması "Tekrar Bak" geri bildirimini gösteriyor.
 - Pratik: Sonraki Soru butonu bir sonraki soruya geçiyor.
 - Test fixture'ları yeni `person/number/gender` veri modelini kullanıyor.
 - `PracticeQuestionGenerator` unit testleri aynı Arapça form tekrarlarında ayrı şahıs soruları üretildiğini doğruluyor.
-- `MuttarideGenerator` unit testleri generated conjugation kaynağından 56 form üretildiğini ve temel `nasara` örneklerinin doğru geldiğini doğruluyor.
+- `MuttarideGenerator` unit testleri generated conjugation kaynağından 252 fiil formu üretildiğini, temel `nasara` örneklerini, nefy/cahd/emir/nehy formlarını ve PDF'te boş kalan komut hücrelerini doğruluyor.
 
 Test altyapısı:
 
