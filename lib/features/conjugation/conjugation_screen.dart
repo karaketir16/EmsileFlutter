@@ -78,27 +78,7 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          DropdownButtonFormField<FormCategory>(
-            initialValue: _category,
-            isExpanded: true,
-            decoration: const InputDecoration(
-              labelText: 'Çekim Grubu',
-              prefixIcon: Icon(Icons.view_list_outlined),
-              border: OutlineInputBorder(),
-            ),
-            items: [
-              for (final category in FormCategory.values)
-                DropdownMenuItem(
-                  value: category,
-                  child: Text(category.label),
-                ),
-            ],
-            onChanged: (value) {
-              if (value != null) {
-                _updateSelection(category: value);
-              }
-            },
-          ),
+          ArabicResultCard(form: activeForm),
           const SizedBox(height: 10),
           SegmentedButton<Voice>(
             expandedInsets: EdgeInsets.zero,
@@ -120,13 +100,34 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
             },
           ),
           const SizedBox(height: 16),
-          ArabicResultCard(form: activeForm),
-          const SizedBox(height: 16),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  const SizedBox(height: 8),
+                  DropdownButtonFormField<FormCategory>(
+                    initialValue: _category,
+                    isExpanded: true,
+                    decoration: const InputDecoration(
+                      labelText: 'Çekim Grubu',
+                      prefixIcon: Icon(Icons.view_list_outlined),
+                      border: OutlineInputBorder(),
+                    ),
+                    items: [
+                      for (final category in FormCategory.values)
+                        DropdownMenuItem(
+                          value: category,
+                          child: Text(category.label),
+                        ),
+                    ],
+                    onChanged: (value) {
+                      if (value != null) {
+                        _updateSelection(category: value);
+                      }
+                    },
+                  ),
+                  const SizedBox(height: 16),
                   Text(
                     'Şahıs Tablosu',
                     style: Theme.of(context).textTheme.titleLarge,

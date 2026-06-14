@@ -8,6 +8,7 @@ import 'package:emsile_flutter/features/home/home_screen.dart';
 import 'package:emsile_flutter/features/lessons/lessons_screen.dart';
 import 'package:emsile_flutter/features/practice/practice_screen.dart';
 import 'package:emsile_flutter/features/source/source_screen.dart';
+import 'package:emsile_flutter/shared/widgets/arabic_result_card.dart';
 
 Future<void> pumpLoadedApp(WidgetTester tester) async {
   await tester.binding.setSurfaceSize(const Size(390, 844));
@@ -291,6 +292,7 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('نَصَرْتَ'), findsWidgets);
 
+      await tester.ensureVisible(find.text('Meçhul'));
       await tester.tap(find.text('Meçhul'));
       await tester.pumpAndSettle();
 
@@ -341,7 +343,7 @@ void main() {
       ),
     );
 
-    final beforeTop = tester.getTopLeft(find.text('Mâzi').first).dy;
+    final beforeTop = tester.getTopLeft(find.byType(ArabicResultCard)).dy;
 
     await tester.drag(
       find.byType(SingleChildScrollView).first,
@@ -349,7 +351,7 @@ void main() {
     );
     await tester.pumpAndSettle();
 
-    final afterTop = tester.getTopLeft(find.text('Mâzi').first).dy;
+    final afterTop = tester.getTopLeft(find.byType(ArabicResultCard)).dy;
 
     expect(afterTop, beforeTop);
     expect(find.text('Tüm Fiil Muttaride Tabloları'), findsOneWidget);
@@ -490,7 +492,9 @@ Future<void> selectConjugationCategory(
   WidgetTester tester,
   String categoryLabel,
 ) async {
-  await tester.tap(find.byType(DropdownButtonFormField<FormCategory>));
+  final dropdown = find.byType(DropdownButtonFormField<FormCategory>);
+  await tester.ensureVisible(dropdown);
+  await tester.tap(dropdown);
   await tester.pumpAndSettle();
   await tester.tap(find.text(categoryLabel).last);
   await tester.pumpAndSettle();
