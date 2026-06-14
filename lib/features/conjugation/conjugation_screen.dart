@@ -147,6 +147,8 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
                   FormsTable(
                     forms: forms,
                     selectedForm: _selectedForm,
+                    activeCategory: _category,
+                    activeVoice: _voice,
                     onSelect: (selection) =>
                         _updateSelection(selectedForm: selection),
                   ),
@@ -168,6 +170,8 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
                     FormsTable(
                       forms: group.forms,
                       selectedForm: _selectedForm,
+                      activeCategory: _category,
+                      activeVoice: _voice,
                       onSelect: (selection) => _updateSelection(
                         category: group.category,
                         voice: group.voice,
@@ -266,12 +270,16 @@ class FormsTable extends StatelessWidget {
   const FormsTable({
     required this.forms,
     required this.selectedForm,
+    required this.activeCategory,
+    required this.activeVoice,
     required this.onSelect,
     super.key,
   });
 
   final List<ConjugationForm> forms;
   final FormSelection selectedForm;
+  final FormCategory activeCategory;
+  final Voice activeVoice;
   final ValueChanged<FormSelection> onSelect;
 
   @override
@@ -294,7 +302,9 @@ class FormsTable extends StatelessWidget {
           return const SizedBox.shrink();
         }
 
-        final isSelected = selectedForm.matches(form);
+        final isSelected = activeCategory == form.category &&
+            activeVoice == form.voice &&
+            selectedForm.matches(form);
         final colorScheme = Theme.of(context).colorScheme;
         final selection = FormSelection.fromForm(form);
 
