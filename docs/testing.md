@@ -2,7 +2,7 @@
 
 Bu doküman uygulamanın nasıl test edildiğini ve hangi komutların hangi riski azalttığını açıklar.
 
-Bu dosya yaşayan test kaydıdır. Test komutları, kapsam, Playwright akışı, screenshot çıktıları veya doğrulama kriterleri değiştiğinde aynı değişiklikle birlikte güncel tutulmalıdır.
+Bu dosya yaşayan test kaydıdır. Test komutları, kapsam, screenshot çıktıları veya doğrulama kriterleri değiştiğinde aynı değişiklikle birlikte güncel tutulmalıdır.
 
 ## 1. Çalıştırılan Kontroller
 
@@ -28,7 +28,7 @@ Amaç:
 - Import, lint, tip ve Flutter API kullanım hatalarını yakalamak.
 - Asset refactor sonrası kullanılmayan import veya kırık referansları görmek.
 
-### Widget Testleri
+### Widget Testleri (Etkileşimli)
 
 ```bash
 flutter test
@@ -37,12 +37,26 @@ flutter test
 Kapsam:
 
 - Uygulama JSON asset'i yükleyip ana ekranı render ediyor.
-- Çekim tablosu ekranı mobil genişlikte render oluyor.
-- Pratik ekranı mobil genişlikte render oluyor.
+- Seçili sekme index'ine göre Tablo, Pratik, Dersler ve Kaynak ekranları doğru render oluyor.
+- Çekim tablosu: Meçhul segment tıklaması doğru formu gösteriyor.
+- Çekim tablosu: Muzâri segment tıklaması doğru formu gösteriyor.
+- Çekim tablosu: Şahıs chip tıklaması sonuç kartını güncelliyor.
+- Pratik: Doğru cevap tıklaması "Doğru" geri bildirimini gösteriyor.
+- Pratik: Yanlış cevap tıklaması "Tekrar Bak" geri bildirimini gösteriyor.
+- Pratik: Sonraki Soru butonu bir sonraki soruya geçiyor.
+
+Test altyapısı:
+
+- `pumpLoadedApp`: EmsileApp'i gerçek JSON asset'iyle yükler ve ana ekranın hazır olmasını bekler.
+- `_IndexedAppShell`: AppShell ile aynı ekran eşleme mantığını kullanarak seçili index'e göre doğru ekranın render edildiğini doğrular.
+- `richTestData`: Çekim testleri için birden fazla kategori/bina/şahıs içeren yerel veri seti.
+- `multiQuestionData`: "Sonraki Soru" akışını test eden iki soruluk yerel veri seti.
 
 Not:
 
-Alt navigasyon davranışı widget test yerine Playwright ile doğrulanıyor. Flutter web/canvas ve Material NavigationBar yapısı widget finder ile her zaman pratik test ergonomisi vermediği için bu ayrım yapıldı.
+Widget testleri Playwright'ın yerini tamamen almaz. `flutter test` etkileşim ve durum değişimini doğrular; `npm run visual-check` ise release web çıktısında görsel akışı ve layout'u kontrol eder.
+
+Widget testleri ChromeDriver veya Playwright kurulumu gerektirmez; tüm platformlarda `flutter test` ile çalışır.
 
 ### Seed Veri Validasyonu
 
@@ -81,64 +95,27 @@ python3 -m http.server 8090 -d build/web
 
 veya aynı portta `build/web` servis ediliyor olmalı.
 
-Kapsam:
+Amaç:
 
-- Uygulama 390x844 mobil viewport ile açılır.
-- Ana ekran screenshot alınır.
-- Alt navigasyondan çekim tablosuna geçilir.
-- Meçhul seçimi yapılır.
-- Çekim tablosu screenshot alınır.
-- Pratik ekranına geçilir.
-- İlk cevap seçilir.
-- Doğru cevap geri bildirimi screenshot alınır.
-- Console error veya page error varsa test başarısız olur.
+- Release web çıktısında ana akışın gerçekten açıldığını doğrulamak.
+- Mobil viewport'ta ana ekran, çekim tablosu ve pratik ekranı screenshot'larını üretmek.
+- Console error veya page error durumlarını yakalamak.
 
-Çıktılar:
-
-```text
-docs/screenshots/01-home-mobile.png
-docs/screenshots/02-table-mobile.png
-docs/screenshots/03-practice-mobile.png
-```
-
-## 2. Neden Playwright Kullanıyoruz?
-
-Chrome'un harici diskten headless kullanımı bu ortamda kırılgan davrandı. Playwright kendi Chromium runtime'ını indirip kullandığı için daha tekrarlanabilir sonuç verdi.
-
-Playwright ayrıca sadece screenshot değil, gerçek tıklama akışını da test ediyor. Bu yüzden alt navigasyon, segment kontrol ve pratik cevabı gibi mobil etkileşimler için daha uygun.
-
-## 3. Mevcut Test Sınırları
+## 2. Mevcut Test Sınırları
 
 Henüz yok:
 
-- JSON şema testi
-- Daha kapsamlı JSON schema testi
-- Repository hata senaryosu testi
-- Tüm viewport matrisi: 360, 390, 430
-- Alt navigasyon için semantik finder tabanlı test
-- Ders detayından hedefli tablo/pratik geçiş testi
+- Repository hata senaryosu testi (`EmsileRepository.load()` başarısız durumu).
+- Veri modelleri için ayrı Dart unit testi.
+- Form filtreleme mantığı için ayrı unit testi.
+- Ders detayından çekim tablosuna/pratiğe hedefli geçiş testi.
+- 360px ve 430px viewport genişlik testleri.
+- Gerçek `AppShell` alt navigasyon tap akışı için daha doğrudan widget testi.
 
-## 4. Manuel Görsel İnceleme
+## 3. Önerilen Test Genişletmeleri
 
-Playwright screenshot'ları üretildikten sonra görüntüler elle kontrol edildi.
-
-Kontrol edilenler:
-
-- Ana ekran kartları taşmıyor.
-- Arapça formlar büyük ve okunaklı.
-- Alt navigasyon erişilebilir ve ekran değiştiriyor.
-- Çekim tablosunda Meçhul seçimi doğru veri gösteriyor.
-- Pratik ekranında doğru cevap sonrası geri bildirim görünüyor.
-
-Bulunan ve düzeltilen örnek sorun:
-
-- Çekim tablosu alt başlığında Arapça kök ve backtick kullanımı RTL nedeniyle garip görünüyordu. Metin `Nasara örneği üzerinden seç, gör, karşılaştır.` olarak değiştirildi.
-
-## 5. Önerilen Test Genişletmeleri
-
-- `assets/data/emsile_seed.json` için JSON schema validation script'i ekle.
-- `assets/data/emsile_seed.json` için daha katı JSON Schema dosyası ekle.
-- Playwright script'ini 360px, 390px ve 430px viewportlarda çalıştır.
-- Her screenshot için temel piksel/boş ekran kontrolü ekle.
+- `assets/data/emsile_seed.json` için daha katı JSON Schema dosyası ekle (ajv ile).
 - `EmsileRepository.load()` hata durumunu test edilebilir hale getir.
 - Form filtreleme mantığını ayrı unit test ile doğrula.
+- Widget testini 360px ve 430px viewport genişlikleriyle çalıştır.
+- Ders detayından çekim tablosuna/pratiğe hedefli geçiş testleri ekle.

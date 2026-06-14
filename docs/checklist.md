@@ -1,6 +1,6 @@
 # Emsile Flutter Geliştirme Checklist
 
-Son güncelleme: MVP iskeleti, JSON veri ayrımı, Flutter testleri ve Playwright görsel kontrolü tamamlandı.
+Son güncelleme: Widget test kapsamı genişletildi; Playwright görsel kontrol korunurken etkileşim kapsamı `flutter test` ile büyütüldü.
 
 Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya tamamlanma durumu değiştiğinde aynı değişiklikle birlikte güncel tutulmalıdır.
 
@@ -126,6 +126,8 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] Seed veri alanları için temel validasyon ekle.
 - [ ] Veri modelleri için ayrı Dart unit test ekle.
 - [x] Çekim ve pratik ekranları için widget test ekle.
+- [x] Seçili sekme ekran eşleşmeleri için widget test ekle.
+- [x] Pratik cevap etkileşimleri için widget test ekle.
 - [ ] Repository hata durumları için test ekle.
 
 ## 12. MVP Tamamlanma Kriterleri
