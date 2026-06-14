@@ -697,7 +697,13 @@ class _PracticeScreenState extends State<PracticeScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text(question.prompt),
+                  Text(
+                    question.prompt,
+                    style: const TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
                   const SizedBox(height: 14),
                   Directionality(
                     textDirection: TextDirection.rtl,
@@ -797,7 +803,13 @@ class AnswerButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
           border: Border.all(color: borderColor),
         ),
-        child: Text(text, style: const TextStyle(fontWeight: FontWeight.w700)),
+        child: Text(
+          text,
+          style: const TextStyle(
+            fontWeight: FontWeight.w700,
+            fontSize: 20,
+          ),
+        ),
       ),
     );
   }
