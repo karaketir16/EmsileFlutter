@@ -1,24 +1,46 @@
+import 'dart:math';
 import 'package:emsile_flutter/data/models.dart';
+import 'package:emsile_flutter/data/practice_question_generator.dart';
 import 'package:emsile_flutter/shared/widgets/app_page.dart';
 import 'package:emsile_flutter/shared/widgets/arabic_text.dart';
 import 'package:emsile_flutter/shared/widgets/info_panel.dart';
 import 'package:flutter/material.dart';
 
 class PracticeScreen extends StatefulWidget {
-  const PracticeScreen({required this.data, super.key});
+  const PracticeScreen({required this.data, this.random, super.key});
 
   final AppData data;
+  final Random? random;
 
   @override
   State<PracticeScreen> createState() => _PracticeScreenState();
 }
 
 class _PracticeScreenState extends State<PracticeScreen> {
-  int _questionIndex = 0;
+  late PracticeQuestion _question;
   String? _selectedAnswer;
 
-  PracticeQuestion get _question =>
-      widget.data.practiceQuestions[_questionIndex];
+  @override
+  void initState() {
+    super.initState();
+    _generateQuestion();
+  }
+
+  @override
+  void didUpdateWidget(covariant PracticeScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.data != widget.data) {
+      _generateQuestion();
+    }
+  }
+
+  void _generateQuestion() {
+    _question = PracticeQuestionGenerator.generateSingleQuestion(
+      widget.data.forms,
+      widget.random,
+    );
+    _selectedAnswer = null;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -26,17 +48,16 @@ class _PracticeScreenState extends State<PracticeScreen> {
     final isAnswered = _selectedAnswer != null;
     final isCorrect = _selectedAnswer == question.answer;
 
+    // Türkçeden Arapçaya sorularda '؟' (Arapça soru işareti) yerine normal soru işareti 
+    // veya soru promptunda belirtilen Arapça karakterleri normal fontta göstermek isteyebiliriz.
+    // Ancak formun Arapça kelimesi sorulurken arabicTextStyle(42) gayet güzel duracaktır.
+    // Eğer soru tipi '؟' ise onu ortada büyük gösteriyoruz.
+    
     return AppPage(
       title: 'Pratik',
-      subtitle: 'Formu gör, anlamı hatırla.',
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            '${_questionIndex + 1}/${widget.data.practiceQuestions.length}',
-            style: Theme.of(context).textTheme.labelLarge,
-          ),
-          const SizedBox(height: 10),
           Card(
             child: Padding(
               padding: const EdgeInsets.all(18),
@@ -83,10 +104,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
             FilledButton.icon(
               onPressed: () {
                 setState(() {
-                  _questionIndex =
-                      (_questionIndex + 1) %
-                      widget.data.practiceQuestions.length;
-                  _selectedAnswer = null;
+                  _generateQuestion();
                 });
               },
               icon: const Icon(Icons.arrow_forward),

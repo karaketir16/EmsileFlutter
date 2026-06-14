@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -61,14 +62,14 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(
-      const MaterialApp(
+      MaterialApp(
         home: Scaffold(
-          body: SafeArea(child: PracticeScreen(data: testData)),
+          body: SafeArea(child: PracticeScreen(data: testData, random: Random(1))),
         ),
       ),
     );
 
-    expect(find.text('Formu gör, anlamı hatırla.'), findsOneWidget);
+    expect(find.text('Pratik'), findsOneWidget);
     expect(find.text('Yardım etti.'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
@@ -124,7 +125,7 @@ void main() {
     notifier.value = 3; // Pratik
     await tester.pumpAndSettle();
 
-    expect(find.text('Formu gör, anlamı hatırla.'), findsOneWidget);
+    expect(find.text('Pratik'), findsAtLeastNWidgets(1));
   });
 
   testWidgets('selected index 1 renders lessons screen', (
@@ -404,7 +405,6 @@ void main() {
         }
       }
       
-      // Tüm testler geçmeli
       expect(tester.takeException(), isNull);
     },
   );
@@ -418,15 +418,32 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(
-      const MaterialApp(
+      MaterialApp(
         home: Scaffold(
-          body: SafeArea(child: PracticeScreen(data: testData)),
+          body: SafeArea(child: PracticeScreen(data: testData, random: Random(1))),
         ),
       ),
     );
 
-    // Tap the correct answer.
-    await tester.tap(find.text('Yardım etti.'));
+    final promptFinder = find.byWidgetPredicate((w) => w is Text && w.data != null && w.data!.contains('?'));
+    final promptText = (tester.widget(promptFinder.first) as Text).data!;
+    
+    String correctAnswer = '';
+    if (promptText.contains('anlamı hangisi')) {
+      final arabicText = (tester.widget(find.byWidgetPredicate((w) => w is Text && w.data != '?' && w.data!.runes.any((r) => r > 1000)).first) as Text).data!;
+      final matchedForm = testFormsList.firstWhere((f) => f.arabic == arabicText);
+      correctAnswer = matchedForm.meaning;
+    } else if (promptText.contains('şahsa aittir')) {
+      final arabicText = (tester.widget(find.byWidgetPredicate((w) => w is Text && w.data != '?' && w.data!.runes.any((r) => r > 1000)).first) as Text).data!;
+      final matchedForm = testFormsList.firstWhere((f) => f.arabic == arabicText);
+      correctAnswer = matchedForm.pronounLabel;
+    } else {
+      final meaning = promptText.split('"')[1];
+      final matchedForm = testFormsList.firstWhere((f) => f.meaning == meaning);
+      correctAnswer = matchedForm.arabic;
+    }
+
+    await tester.tap(find.text(correctAnswer));
     await tester.pumpAndSettle();
 
     expect(find.text('Doğru'), findsOneWidget);
@@ -441,15 +458,41 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(
-      const MaterialApp(
+      MaterialApp(
         home: Scaffold(
-          body: SafeArea(child: PracticeScreen(data: testData)),
+          body: SafeArea(child: PracticeScreen(data: testData, random: Random(1))),
         ),
       ),
     );
 
-    // Tap a wrong answer.
-    await tester.tap(find.text('Yardım ediyor.'));
+    final promptFinder = find.byWidgetPredicate((w) => w is Text && w.data != null && w.data!.contains('?'));
+    final promptText = (tester.widget(promptFinder.first) as Text).data!;
+    
+    String correctAnswer = '';
+    if (promptText.contains('anlamı hangisi')) {
+      final arabicText = (tester.widget(find.byWidgetPredicate((w) => w is Text && w.data != '?' && w.data!.runes.any((r) => r > 1000)).first) as Text).data!;
+      final matchedForm = testFormsList.firstWhere((f) => f.arabic == arabicText);
+      correctAnswer = matchedForm.meaning;
+    } else if (promptText.contains('şahsa aittir')) {
+      final arabicText = (tester.widget(find.byWidgetPredicate((w) => w is Text && w.data != '?' && w.data!.runes.any((r) => r > 1000)).first) as Text).data!;
+      final matchedForm = testFormsList.firstWhere((f) => f.arabic == arabicText);
+      correctAnswer = matchedForm.pronounLabel;
+    } else {
+      final meaning = promptText.split('"')[1];
+      final matchedForm = testFormsList.firstWhere((f) => f.meaning == meaning);
+      correctAnswer = matchedForm.arabic;
+    }
+
+    final wrongOptionFinder = find.byWidgetPredicate((widget) {
+      return widget is InkWell &&
+          widget.child is Container &&
+          find.descendant(
+            of: find.byWidget(widget),
+            matching: find.text(correctAnswer),
+          ).evaluate().isEmpty;
+    });
+
+    await tester.tap(wrongOptionFinder.first);
     await tester.pumpAndSettle();
 
     expect(find.text('Tekrar Bak'), findsOneWidget);
@@ -464,25 +507,40 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(
-      const MaterialApp(
+      MaterialApp(
         home: Scaffold(
-          body: SafeArea(child: PracticeScreen(data: multiQuestionData)),
+          body: SafeArea(child: PracticeScreen(data: multiQuestionData, random: Random(1))),
         ),
       ),
     );
 
-    // Answer the first question.
-    await tester.tap(find.text('Yardım etti.'));
+    // İlk sorunun doğru cevabını bulalım
+    final promptFinder = find.byWidgetPredicate((w) => w is Text && w.data != null && w.data!.contains('?'));
+    final firstPromptText = (tester.widget(promptFinder.first) as Text).data!;
+    
+    String firstCorrectAnswer = '';
+    if (firstPromptText.contains('anlamı hangisi')) {
+      final arabicText = (tester.widget(find.byWidgetPredicate((w) => w is Text && w.data != '?' && w.data!.runes.any((r) => r > 1000)).first) as Text).data!;
+      final matchedForm = testFormsList.firstWhere((f) => f.arabic == arabicText);
+      firstCorrectAnswer = matchedForm.meaning;
+    } else if (firstPromptText.contains('şahsa aittir')) {
+      final arabicText = (tester.widget(find.byWidgetPredicate((w) => w is Text && w.data != '?' && w.data!.runes.any((r) => r > 1000)).first) as Text).data!;
+      final matchedForm = testFormsList.firstWhere((f) => f.arabic == arabicText);
+      firstCorrectAnswer = matchedForm.pronounLabel;
+    } else {
+      final meaning = firstPromptText.split('"')[1];
+      final matchedForm = testFormsList.firstWhere((f) => f.meaning == meaning);
+      firstCorrectAnswer = matchedForm.arabic;
+    }
+
+    await tester.tap(find.text(firstCorrectAnswer));
     await tester.pumpAndSettle();
 
-    expect(find.text('1/2'), findsOneWidget);
+    expect(find.text('Doğru'), findsOneWidget);
 
-    // Advance to the next question.
+    // Sonraki soruya geçelim.
     await tester.tap(find.text('Sonraki Soru'));
     await tester.pumpAndSettle();
-
-    expect(find.text('2/2'), findsOneWidget);
-    // Feedback panel is gone for the new question.
     expect(find.text('Doğru'), findsNothing);
     expect(tester.takeException(), isNull);
   });
@@ -502,98 +560,81 @@ Future<void> selectConjugationCategory(
 
 // ── Shared test data ──────────────────────────────────────────────────────────
 
+const testFormsList = [
+  ConjugationForm(
+    category: FormCategory.mazi,
+    voice: Voice.malum,
+    person: FormPerson.third,
+    number: FormNumber.singular,
+    gender: FormGender.masculine,
+    pronounLabel: 'O (er.)',
+    arabic: 'نَصَرَ',
+    meaning: 'Yardım etti.',
+  ),
+  ConjugationForm(
+    category: FormCategory.mazi,
+    voice: Voice.malum,
+    person: FormPerson.second,
+    number: FormNumber.singular,
+    gender: FormGender.masculine,
+    pronounLabel: 'Sen (er.)',
+    arabic: 'نَصَرْتَ',
+    meaning: 'Yardım ettin.',
+  ),
+  ConjugationForm(
+    category: FormCategory.mazi,
+    voice: Voice.mechul,
+    person: FormPerson.third,
+    number: FormNumber.singular,
+    gender: FormGender.masculine,
+    pronounLabel: 'O (er.)',
+    arabic: 'نُصِرَ',
+    meaning: 'Yardım edildi.',
+  ),
+  ConjugationForm(
+    category: FormCategory.mazi,
+    voice: Voice.mechul,
+    person: FormPerson.second,
+    number: FormNumber.singular,
+    gender: FormGender.masculine,
+    pronounLabel: 'Sen (er.)',
+    arabic: 'نُصِرْتَ',
+    meaning: 'Yardım edildin.',
+  ),
+  ConjugationForm(
+    category: FormCategory.muzari,
+    voice: Voice.malum,
+    person: FormPerson.third,
+    number: FormNumber.singular,
+    gender: FormGender.masculine,
+    pronounLabel: 'O (er.)',
+    arabic: 'يَنْصُرُ',
+    meaning: 'Yardım ediyor.',
+  ),
+  ConjugationForm(
+    category: FormCategory.muzari,
+    voice: Voice.malum,
+    person: FormPerson.second,
+    number: FormNumber.singular,
+    gender: FormGender.masculine,
+    pronounLabel: 'Sen (er.)',
+    arabic: 'تَنْصُرُ',
+    meaning: 'Yardım ediyorsun.',
+  ),
+];
+
 const testData = AppData(
   lessons: [],
   muhtelifeEntries: [],
-  forms: [
-    ConjugationForm(
-      category: FormCategory.mazi,
-      voice: Voice.malum,
-      person: FormPerson.third,
-      number: FormNumber.singular,
-      gender: FormGender.masculine,
-      pronounLabel: 'O (er.)',
-      arabic: 'نَصَرَ',
-      meaning: 'Yardım etti.',
-    ),
-  ],
-  practiceQuestions: [
-    PracticeQuestion(
-      prompt: 'Bu formun anlamı hangisi?',
-      arabic: 'نَصَرَ',
-      options: ['Yardım etti.', 'Yardım ediyor.', 'Yardım edilen.'],
-      answer: 'Yardım etti.',
-      explanation: 'نَصَرَ fiil-i mâzi bina-i malumdur.',
-    ),
-  ],
+  forms: testFormsList,
+  practiceQuestions: [],
 );
 
 /// Richer dataset for interaction tests that need multiple forms.
 const richTestData = AppData(
   lessons: [],
   muhtelifeEntries: [],
-  forms: [
-    ConjugationForm(
-      category: FormCategory.mazi,
-      voice: Voice.malum,
-      person: FormPerson.third,
-      number: FormNumber.singular,
-      gender: FormGender.masculine,
-      pronounLabel: 'O (er.)',
-      arabic: 'نَصَرَ',
-      meaning: 'Yardım etti.',
-    ),
-    ConjugationForm(
-      category: FormCategory.mazi,
-      voice: Voice.malum,
-      person: FormPerson.second,
-      number: FormNumber.singular,
-      gender: FormGender.masculine,
-      pronounLabel: 'Sen (er.)',
-      arabic: 'نَصَرْتَ',
-      meaning: 'Yardım ettin.',
-    ),
-    ConjugationForm(
-      category: FormCategory.mazi,
-      voice: Voice.mechul,
-      person: FormPerson.third,
-      number: FormNumber.singular,
-      gender: FormGender.masculine,
-      pronounLabel: 'O (er.)',
-      arabic: 'نُصِرَ',
-      meaning: 'Yardım edildi.',
-    ),
-    ConjugationForm(
-      category: FormCategory.mazi,
-      voice: Voice.mechul,
-      person: FormPerson.second,
-      number: FormNumber.singular,
-      gender: FormGender.masculine,
-      pronounLabel: 'Sen (er.)',
-      arabic: 'نُصِرْتَ',
-      meaning: 'Yardım edildin.',
-    ),
-    ConjugationForm(
-      category: FormCategory.muzari,
-      voice: Voice.malum,
-      person: FormPerson.third,
-      number: FormNumber.singular,
-      gender: FormGender.masculine,
-      pronounLabel: 'O (er.)',
-      arabic: 'يَنْصُرُ',
-      meaning: 'Yardım ediyor.',
-    ),
-    ConjugationForm(
-      category: FormCategory.muzari,
-      voice: Voice.malum,
-      person: FormPerson.second,
-      number: FormNumber.singular,
-      gender: FormGender.masculine,
-      pronounLabel: 'Sen (er.)',
-      arabic: 'تَنْصُرُ',
-      meaning: 'Yardım ediyorsun.',
-    ),
-  ],
+  forms: testFormsList,
   practiceQuestions: [],
 );
 
@@ -601,23 +642,8 @@ const richTestData = AppData(
 const multiQuestionData = AppData(
   lessons: [],
   muhtelifeEntries: [],
-  forms: [],
-  practiceQuestions: [
-    PracticeQuestion(
-      prompt: 'Bu formun anlamı hangisi?',
-      arabic: 'نَصَرَ',
-      options: ['Yardım etti.', 'Yardım ediyor.', 'Yardım edilen.'],
-      answer: 'Yardım etti.',
-      explanation: 'نَصَرَ fiil-i mâzi bina-i malumdur.',
-    ),
-    PracticeQuestion(
-      prompt: 'Bu form hangi zamana aittir?',
-      arabic: 'يَنْصُرُ',
-      options: ['Geçmiş', 'Şimdiki/Gelecek', 'Emir'],
-      answer: 'Şimdiki/Gelecek',
-      explanation: 'يَنْصُرُ fiil-i muzâridir.',
-    ),
-  ],
+  forms: testFormsList,
+  practiceQuestions: [],
 );
 
 const muhtelifeLesson = Lesson(
@@ -693,7 +719,7 @@ class _IndexedAppShell extends StatelessWidget {
       HomeScreen(data: data),
       LessonsScreen(data: data),
       ConjugationScreen(data: data),
-      PracticeScreen(data: data),
+      PracticeScreen(data: data, random: Random(1)),
       const SourceScreen(),
     ];
 
