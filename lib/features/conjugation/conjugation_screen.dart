@@ -765,17 +765,20 @@ class PdfStyleTable extends StatelessWidget {
                             child: Center(child: cellBuilder(context, cell)),
                           ),
                         ),
-                      Container(
-                        color: const Color(0xFFF4F0E6),
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 4,
-                          vertical: 5,
-                        ),
-                        alignment: Alignment.center,
-                        child: Text(
-                          row.rowLabel,
-                          textAlign: TextAlign.center,
-                          style: labelStyle,
+                      TableCell(
+                        verticalAlignment: TableCellVerticalAlignment.fill,
+                        child: Container(
+                          color: const Color(0xFFF4F0E6),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 4,
+                            vertical: 5,
+                          ),
+                          alignment: Alignment.center,
+                          child: Text(
+                            row.rowLabel,
+                            textAlign: TextAlign.center,
+                            style: labelStyle,
+                          ),
                         ),
                       ),
                     ],
