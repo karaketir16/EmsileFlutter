@@ -299,9 +299,18 @@ class _PracticeScreenState extends State<PracticeScreen> {
   }) {
     return TableRow(
       children: [
-        _buildPronounCell(plural),
-        _buildPronounCell(dual),
-        _buildPronounCell(singular),
+        TableCell(
+          verticalAlignment: TableCellVerticalAlignment.fill,
+          child: _buildPronounCell(plural),
+        ),
+        TableCell(
+          verticalAlignment: TableCellVerticalAlignment.fill,
+          child: _buildPronounCell(dual),
+        ),
+        TableCell(
+          verticalAlignment: TableCellVerticalAlignment.fill,
+          child: _buildPronounCell(singular),
+        ),
         _buildLabelCell(label, onTap: onLabelTap),
       ],
     );
@@ -441,9 +450,11 @@ class _PracticeScreenState extends State<PracticeScreen> {
                 ),
                 children: [
                   TableRow(
-                    children: Voice.values.map((voice) {
+                    children: Voice.values.asMap().entries.map((entry) {
+                      final index = entry.key;
+                      final voice = entry.value;
                       final isSelected = _selectedVoices.contains(voice);
-                      return _buildSelectableTableCell(
+                      final cell = _buildSelectableTableCell(
                         text: voice.label,
                         isSelected: isSelected,
                         onTap: () {
@@ -455,6 +466,13 @@ class _PracticeScreenState extends State<PracticeScreen> {
                             }
                           });
                         },
+                      );
+                      if (index == 0) {
+                        return cell;
+                      }
+                      return TableCell(
+                        verticalAlignment: TableCellVerticalAlignment.fill,
+                        child: cell,
                       );
                     }).toList(),
                   ),
@@ -614,10 +632,19 @@ class _PracticeScreenState extends State<PracticeScreen> {
                 children: [
                   TableRow(
                     children: [
-                      _buildNounOptionCell('Kırık Çoğul'),
+                      TableCell(
+                        verticalAlignment: TableCellVerticalAlignment.fill,
+                        child: _buildNounOptionCell('Kırık Çoğul'),
+                      ),
                       _buildNounOptionCell('Çoğul (Kurallı)'),
-                      _buildNounOptionCell('İkil'),
-                      _buildNounOptionCell('Tekil'),
+                      TableCell(
+                        verticalAlignment: TableCellVerticalAlignment.fill,
+                        child: _buildNounOptionCell('İkil'),
+                      ),
+                      TableCell(
+                        verticalAlignment: TableCellVerticalAlignment.fill,
+                        child: _buildNounOptionCell('Tekil'),
+                      ),
                     ],
                   ),
                 ],
