@@ -39,7 +39,7 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] Fiil-i muzâri meçhul çekimlerini yapılandır.
 - [x] Her form için Türkçe anlam alanı ekle.
 - [ ] Şahıs zamirleri veri modelini ayrıca oluştur.
-- [ ] JSON şema/validasyon testi ekle.
+- [x] JSON seed veri validasyon script'i ekle.
 - [ ] PDF'ten taşınacak sonraki tabloları elle kontrol et.
 
 ## 4. Navigasyon
@@ -121,8 +121,10 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 - [x] `flutter analyze` çalıştır.
 - [x] `flutter test` çalıştır.
 - [x] `flutter build web` çalıştır.
+- [x] `npm run validate-seed` çalıştır.
 - [x] `npm run visual-check` çalıştır.
-- [ ] Veri modelleri için ayrı unit test ekle.
+- [x] Seed veri alanları için temel validasyon ekle.
+- [ ] Veri modelleri için ayrı Dart unit test ekle.
 - [x] Çekim ve pratik ekranları için widget test ekle.
 - [ ] Repository hata durumları için test ekle.
 
@@ -139,7 +141,7 @@ Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya 
 ## 13. Sıradaki Mantıklı İşler
 
 - [x] Kod organizasyonunu `lib/data`, `lib/features`, `lib/shared` klasörlerine böl.
-- [ ] JSON veri şemasını büyütmeden önce alan adlarını sabitle.
+- [x] JSON veri şemasını büyütmeden önce temel alan adlarını sabitle.
 - [ ] PDF'teki şahıs zamirleri tablosunu JSON'a taşı.
 - [ ] Fiil-i mâzi ve muzâri için 14 şahıslık tam tabloyu tamamla.
 - [ ] Playwright testini 360px ve 430px viewportlarla genişlet.

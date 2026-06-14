@@ -9,6 +9,7 @@
     "test": "test"
   },
   "scripts": {
+    "validate-seed": "node scripts/validate-seed-data.js",
     "visual-check": "node scripts/visual-check.js"
   },
   "keywords": [],

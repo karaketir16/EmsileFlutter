@@ -44,6 +44,18 @@ Not:
 
 Alt navigasyon davranışı widget test yerine Playwright ile doğrulanıyor. Flutter web/canvas ve Material NavigationBar yapısı widget finder ile her zaman pratik test ergonomisi vermediği için bu ayrım yapıldı.
 
+### Seed Veri Validasyonu
+
+```bash
+npm run validate-seed
+```
+
+Amaç:
+
+- `assets/data/emsile_seed.json` dosyasının beklenen kök alanları taşıdığını doğrulamak.
+- Ders, çekim ve pratik sorusu alanlarının boş olmadığını kontrol etmek.
+- `category`, `voice` ve pratik doğru cevabı gibi alanlarda temel tutarlılığı yakalamak.
+
 ### Web Build
 
 ```bash
@@ -100,6 +112,7 @@ Playwright ayrıca sadece screenshot değil, gerçek tıklama akışını da tes
 Henüz yok:
 
 - JSON şema testi
+- Daha kapsamlı JSON schema testi
 - Repository hata senaryosu testi
 - Tüm viewport matrisi: 360, 390, 430
 - Alt navigasyon için semantik finder tabanlı test
@@ -124,6 +137,7 @@ Bulunan ve düzeltilen örnek sorun:
 ## 5. Önerilen Test Genişletmeleri
 
 - `assets/data/emsile_seed.json` için JSON schema validation script'i ekle.
+- `assets/data/emsile_seed.json` için daha katı JSON Schema dosyası ekle.
 - Playwright script'ini 360px, 390px ve 430px viewportlarda çalıştır.
 - Her screenshot için temel piksel/boş ekran kontrolü ekle.
 - `EmsileRepository.load()` hata durumunu test edilebilir hale getir.
