@@ -248,6 +248,8 @@ class SelectionTable extends StatelessWidget {
             child: Text(
               selectionCell.form!.pronounLabel,
               textAlign: TextAlign.center,
+              maxLines: 1,
+              softWrap: false,
               style: Theme.of(context).textTheme.labelMedium?.copyWith(
                 fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
                 color: isSelected ? colorScheme.onPrimaryContainer : null,
@@ -313,7 +315,9 @@ class FormsTable extends StatelessWidget {
                 child: Text(
                   form.arabic,
                   textAlign: TextAlign.center,
-                  style: arabicTextStyle(16),
+                  maxLines: 1,
+                  softWrap: false,
+                  style: arabicTextStyle(18),
                 ),
               ),
             ),
@@ -345,47 +349,59 @@ class PdfStyleTable extends StatelessWidget {
 
     return Card(
       clipBehavior: Clip.antiAlias,
-      child: Table(
-        border: TableBorder.all(color: borderColor),
-        columnWidths: const {
-          0: FlexColumnWidth(),
-          1: FlexColumnWidth(),
-          2: FlexColumnWidth(),
-          3: FixedColumnWidth(94),
-        },
-        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
-        children: [
-          TableRow(
-            decoration: const BoxDecoration(color: Color(0xFFF4F0E6)),
-            children: [
-              _HeaderCell(text: pdfColumns[0].label),
-              _HeaderCell(text: pdfColumns[1].label),
-              _HeaderCell(text: pdfColumns[2].label),
-              _HeaderCell(text: headerTitle),
-            ],
-          ),
-          for (final row in rows)
-            TableRow(
-              children: [
-                for (final cell in row.cells)
-                  Padding(
-                    padding: const EdgeInsets.all(4),
-                    child: SizedBox(
-                      height: 40,
-                      child: Center(child: cellBuilder(context, cell)),
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          return SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                minWidth: constraints.maxWidth,
+              ),
+              child: Table(
+                border: TableBorder.all(color: borderColor),
+                columnWidths: const {
+                  0: IntrinsicColumnWidth(),
+                  1: IntrinsicColumnWidth(),
+                  2: IntrinsicColumnWidth(),
+                  3: FixedColumnWidth(94),
+                },
+                defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+                children: [
+                  TableRow(
+                    decoration: const BoxDecoration(color: Color(0xFFF4F0E6)),
+                    children: [
+                      _HeaderCell(text: pdfColumns[0].label),
+                      _HeaderCell(text: pdfColumns[1].label),
+                      _HeaderCell(text: pdfColumns[2].label),
+                      _HeaderCell(text: headerTitle),
+                    ],
+                  ),
+                  for (final row in rows)
+                    TableRow(
+                      children: [
+                        for (final cell in row.cells)
+                          Padding(
+                            padding: const EdgeInsets.all(4),
+                            child: SizedBox(
+                              height: 40,
+                              child: Center(child: cellBuilder(context, cell)),
+                            ),
+                          ),
+                        Padding(
+                          padding: const EdgeInsets.all(8),
+                          child: Text(
+                            row.rowLabel,
+                            textAlign: TextAlign.center,
+                            style: labelStyle,
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
-                Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Text(
-                    row.rowLabel,
-                    textAlign: TextAlign.center,
-                    style: labelStyle,
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
-        ],
+          );
+        },
       ),
     );
   }
