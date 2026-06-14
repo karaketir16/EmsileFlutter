@@ -344,7 +344,7 @@ void main() {
     final beforeTop = tester.getTopLeft(find.text('Mâzi').first).dy;
 
     await tester.drag(
-      find.byType(SingleChildScrollView),
+      find.byType(SingleChildScrollView).first,
       const Offset(0, -300),
     );
     await tester.pumpAndSettle();

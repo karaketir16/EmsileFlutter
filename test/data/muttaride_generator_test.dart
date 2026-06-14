@@ -134,6 +134,20 @@ void main() {
         ),
         isTrue,
       );
+
+      // 3. Şahıs Müfred Müennes Cehd-i Mutlak çekimi testi
+      expect(
+        _hasForm(
+          forms,
+          category: FormCategory.cahdMutlak,
+          voice: Voice.malum,
+          person: FormPerson.third,
+          number: FormNumber.singular,
+          gender: FormGender.feminine,
+          arabic: 'لَمْ تَنْصُرْ',
+        ),
+        isTrue,
+      );
     });
 
     test('does not generate unavailable command cells', () {

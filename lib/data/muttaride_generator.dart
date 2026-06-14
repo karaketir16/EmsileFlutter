@@ -427,7 +427,7 @@ class _Slot {
     if (number == FormNumber.plural && gender == FormGender.masculine) {
       return mood == _MuzariMood.majzum ? 'ُوا' : 'ُوا';
     }
-    if (number == FormNumber.singular && gender == FormGender.feminine) {
+    if (isSecondPerson && number == FormNumber.singular && gender == FormGender.feminine) {
       return 'ِي';
     }
     return mood == _MuzariMood.mansub ? 'َ' : 'ْ';
