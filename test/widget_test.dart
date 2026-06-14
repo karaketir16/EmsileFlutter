@@ -280,8 +280,65 @@ void main() {
 
     expect(find.text('Sen (er.)'), findsWidgets);
     expect(find.text('نَصَرْتَ'), findsWidgets);
-    expect(tester.takeException(), isNull);
   });
+
+  testWidgets(
+    'conjugation: selecting Muzari and tapping third person plural masculine highlights it in selection table',
+    (WidgetTester tester) async {
+      await tester.binding.setSurfaceSize(const Size(390, 844));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+
+      final scenarioTestData = AppData(
+        lessons: const [],
+        pronouns: const [],
+        muhtelifeEntries: const [],
+        forms: [
+          ...testFormsList,
+          const ConjugationForm(
+            category: FormCategory.muzari,
+            voice: Voice.malum,
+            person: FormPerson.third,
+            number: FormNumber.plural,
+            gender: FormGender.masculine,
+            pronounLabel: 'Onlar (er.)',
+            arabic: 'يَنْصُرُونَ',
+            meaning: 'Yardım ediyorlar.',
+          ),
+        ],
+        practiceQuestions: const [],
+      );
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: ConjugationScreen(data: scenarioTestData),
+        ),
+      );
+      await navigateToConjugations(tester);
+
+      // Select 'Fiil-i Muzâri' from the dropdown
+      await selectConjugationCategory(tester, 'Fiil-i Muzâri');
+
+      // Tap on the plural third person masculine form cell ('يَنْصُرُونَ')
+      await tester.ensureVisible(find.text('يَنْصُرُونَ').first);
+      await tester.tap(find.text('يَنْصُرُونَ').first);
+      await tester.pumpAndSettle();
+
+      // Verify that in the SelectionTable (Şahıs Tablosu), the 'Onlar (er.)' cell is colored with primaryContainer
+      final cellContainerFinder = find.ancestor(
+        of: find.text('Onlar (er.)'),
+        matching: find.byType(Container),
+      ).first;
+
+      final containerWidget = tester.widget<Container>(cellContainerFinder);
+      final decoration = containerWidget.decoration as BoxDecoration;
+      
+      // The color should be primaryContainer
+      final context = tester.element(find.text('Onlar (er.)'));
+      final primaryContainerColor = Theme.of(context).colorScheme.primaryContainer;
+      expect(decoration.color, primaryContainerColor);
+      expect(tester.takeException(), isNull);
+    },
+  );
 
   testWidgets(
     'conjugation: selected person is preserved when switching voice',

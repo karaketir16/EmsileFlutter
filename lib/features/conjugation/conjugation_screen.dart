@@ -435,7 +435,9 @@ class SelectionTable extends StatelessWidget {
           return const SizedBox.shrink();
         }
 
-        final isSelected = selectedForm == selectionCell.selection;
+        final isSelected = selectedForm.person == selectionCell.selection.person &&
+            selectedForm.number == selectionCell.selection.number &&
+            selectedForm.gender == selectionCell.selection.gender;
         final colorScheme = Theme.of(context).colorScheme;
 
         return InkWell(
