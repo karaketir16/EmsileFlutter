@@ -69,6 +69,9 @@ void main() {
       ),
     );
 
+    expect(find.text('Pratik Ayarları'), findsOneWidget);
+    await startPractice(tester);
+
     expect(find.text('Pratik'), findsOneWidget);
     expect(find.text('Yardım etti.'), findsOneWidget);
     expect(tester.takeException(), isNull);
@@ -125,7 +128,7 @@ void main() {
     notifier.value = 3; // Pratik
     await tester.pumpAndSettle();
 
-    expect(find.text('Pratik'), findsAtLeastNWidgets(1));
+    expect(find.text('Pratik Ayarları'), findsOneWidget);
   });
 
   testWidgets('selected index 1 renders lessons screen', (
@@ -425,6 +428,8 @@ void main() {
       ),
     );
 
+    await startPractice(tester);
+
     final promptFinder = find.byWidgetPredicate((w) => w is Text && w.data != null && w.data!.contains('?'));
     final promptText = (tester.widget(promptFinder.first) as Text).data!;
     
@@ -464,6 +469,8 @@ void main() {
         ),
       ),
     );
+
+    await startPractice(tester);
 
     final promptFinder = find.byWidgetPredicate((w) => w is Text && w.data != null && w.data!.contains('?'));
     final promptText = (tester.widget(promptFinder.first) as Text).data!;
@@ -514,6 +521,8 @@ void main() {
       ),
     );
 
+    await startPractice(tester);
+
     // İlk sorunun doğru cevabını bulalım
     final promptFinder = find.byWidgetPredicate((w) => w is Text && w.data != null && w.data!.contains('?'));
     final firstPromptText = (tester.widget(promptFinder.first) as Text).data!;
@@ -544,6 +553,37 @@ void main() {
     expect(find.text('Doğru'), findsNothing);
     expect(tester.takeException(), isNull);
   });
+
+  testWidgets('practice: setup view allows filtering and disables button when matching < 5', (
+    WidgetTester tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(500, 1000));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: SafeArea(child: PracticeScreen(data: testData, random: Random(1))),
+        ),
+      ),
+    );
+
+    // Başlangıçta 6 form eşleştiği için canStart true olmalı
+    expect(find.text('Eşleşen Form Sayısı:'), findsOneWidget);
+    expect(find.text('6'), findsOneWidget);
+    expect(tester.widget<FilledButton>(find.byType(FilledButton)).enabled, isTrue);
+
+    // Çekim Tablolarını temizle diyelim -> Eşleşen 0 olur, buton kilitlenir
+    await tester.tap(find.descendant(
+      of: find.byType(Row),
+      matching: find.text('Temizle'),
+    ).first);
+    await tester.pumpAndSettle();
+
+    expect(find.text('0'), findsOneWidget);
+    expect(tester.widget<FilledButton>(find.byType(FilledButton)).enabled, isFalse);
+    expect(find.text('Soru üretilebilmesi için en az 5 farklı çekim formu eşleşmelidir. Lütfen seçimlerinizi artırın.'), findsOneWidget);
+  });
 }
 
 Future<void> selectConjugationCategory(
@@ -555,6 +595,14 @@ Future<void> selectConjugationCategory(
   await tester.tap(dropdown);
   await tester.pumpAndSettle();
   await tester.tap(find.text(categoryLabel).last);
+  await tester.pumpAndSettle();
+}
+
+Future<void> startPractice(WidgetTester tester) async {
+  final scrollable = find.byType(CustomScrollView).first;
+  await tester.drag(scrollable, const Offset(0, -650));
+  await tester.pumpAndSettle();
+  await tester.tap(find.text('Pratiğe Başla'));
   await tester.pumpAndSettle();
 }
 
@@ -724,7 +772,12 @@ class _IndexedAppShell extends StatelessWidget {
     ];
 
     return Scaffold(
-      body: SafeArea(child: screens[selectedIndex]),
+      body: SafeArea(
+        child: IndexedStack(
+          index: selectedIndex,
+          children: screens,
+        ),
+      ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: selectedIndex,
         onDestinationSelected: onSelect,
