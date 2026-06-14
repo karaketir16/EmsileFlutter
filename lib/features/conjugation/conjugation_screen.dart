@@ -202,23 +202,6 @@ class _ConjugationsPageState extends State<_ConjugationsPage> {
         .toList();
   }
 
-  List<_ConjugationGroup> get _groups {
-    final groups = <_ConjugationGroup>[];
-    for (final category in FormCategory.values) {
-      for (final voice in Voice.values) {
-        final forms = widget.data.forms
-            .where((form) => form.category == category && form.voice == voice)
-            .toList();
-        if (forms.isNotEmpty) {
-          groups.add(
-            _ConjugationGroup(category: category, voice: voice, forms: forms),
-          );
-        }
-      }
-    }
-    return groups;
-  }
-
   ConjugationForm get _activeForm {
     final forms = _visibleForms;
     return forms.firstWhere(_selectedForm.matches, orElse: () => forms.first);
@@ -354,47 +337,25 @@ class _ConjugationsPageState extends State<_ConjugationsPage> {
                                 _updateSelection(selectedForm: selection),
                           ),
                         ],
-                        const SizedBox(height: 18),
-                        Text(
-                          'Tüm Muttaride Tabloları',
-                          style: Theme.of(context).textTheme.titleLarge,
-                        ),
-                        const SizedBox(height: 12),
-                        for (final group in _groups) ...[
-                          Text(
-                            group.category.isVerb
-                                ? '${group.category.label} (${group.voice.label})'
-                                : group.category.label,
-                            style: Theme.of(context).textTheme.titleMedium
-                                ?.copyWith(
-                                  color: Theme.of(context).colorScheme.primary,
-                                  fontWeight: FontWeight.w600,
+                        const SizedBox(height: 24),
+                        OutlinedButton.icon(
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute<void>(
+                                builder: (_) => _AllMuttarideTablesPage(
+                                  data: widget.data,
+                                  selectedForm: _selectedForm,
+                                  onSelect: _updateSelection,
                                 ),
+                              ),
+                            );
+                          },
+                          icon: const Icon(Icons.table_rows_outlined),
+                          label: const Text('Tüm Muttaride Tablolarını Gör'),
+                          style: OutlinedButton.styleFrom(
+                            minimumSize: const Size.fromHeight(48),
                           ),
-                          const SizedBox(height: 6),
-                          if (group.category.isVerb)
-                            FormsTable(
-                              forms: group.forms,
-                              selectedForm: _selectedForm,
-                              activeCategory: _category,
-                              activeVoice: _voice,
-                              onSelect: (selection) => _updateSelection(
-                                category: group.category,
-                                voice: group.voice,
-                                selectedForm: selection,
-                              ),
-                            )
-                          else
-                            NounFormsTable(
-                              forms: group.forms,
-                              selectedForm: _selectedForm,
-                              onSelect: (selection) => _updateSelection(
-                                category: group.category,
-                                selectedForm: selection,
-                              ),
-                            ),
-                          const SizedBox(height: 16),
-                        ],
+                        ),
                       ],
                     ),
                   ),
@@ -1249,5 +1210,99 @@ class NounFormsTable extends StatelessWidget {
       }
     }
     return null;
+  }
+}
+
+class _AllMuttarideTablesPage extends StatelessWidget {
+  const _AllMuttarideTablesPage({
+    required this.data,
+    required this.selectedForm,
+    required this.onSelect,
+  });
+
+  final AppData data;
+  final FormSelection selectedForm;
+  final Function({
+    FormCategory? category,
+    Voice? voice,
+    FormSelection? selectedForm,
+  }) onSelect;
+
+  List<_ConjugationGroup> get _groups {
+    final groups = <_ConjugationGroup>[];
+    for (final category in FormCategory.values) {
+      for (final voice in Voice.values) {
+        final forms = data.forms
+            .where((form) => form.category == category && form.voice == voice)
+            .toList();
+        if (forms.isNotEmpty) {
+          groups.add(
+            _ConjugationGroup(category: category, voice: voice, forms: forms),
+          );
+        }
+      }
+    }
+    return groups;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Tüm Muttaride Tabloları'),
+        centerTitle: false,
+      ),
+      body: SafeArea(
+        child: AppPage(
+          title: 'Tüm Tablolar',
+          scrollable: true,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              for (final group in _groups) ...[
+                Text(
+                  group.category.isVerb
+                      ? '${group.category.label} (${group.voice.label})'
+                      : group.category.label,
+                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                        color: Theme.of(context).colorScheme.primary,
+                        fontWeight: FontWeight.w600,
+                      ),
+                ),
+                const SizedBox(height: 6),
+                if (group.category.isVerb)
+                  FormsTable(
+                    forms: group.forms,
+                    selectedForm: selectedForm,
+                    activeCategory: group.category,
+                    activeVoice: group.voice,
+                    onSelect: (selection) {
+                      onSelect(
+                        category: group.category,
+                        voice: group.voice,
+                        selectedForm: selection,
+                      );
+                      Navigator.of(context).pop();
+                    },
+                  )
+                else
+                  NounFormsTable(
+                    forms: group.forms,
+                    selectedForm: selectedForm,
+                    onSelect: (selection) {
+                      onSelect(
+                        category: group.category,
+                        selectedForm: selection,
+                      );
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                const SizedBox(height: 16),
+              ],
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }

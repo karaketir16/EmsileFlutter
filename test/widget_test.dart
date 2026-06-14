@@ -361,7 +361,7 @@ void main() {
     final afterTop = tester.getTopLeft(find.byType(ArabicResultCard)).dy;
 
     expect(afterTop, beforeTop);
-    expect(find.text('Tüm Muttaride Tabloları'), findsOneWidget);
+    expect(find.text('Tüm Muttaride Tablolarını Gör'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
 
