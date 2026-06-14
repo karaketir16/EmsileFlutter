@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppPage extends StatelessWidget {
   const AppPage({
     required this.title,
-    required this.subtitle,
+    this.subtitle,
     required this.child,
     this.leading,
     this.scrollable = true,
@@ -11,7 +11,7 @@ class AppPage extends StatelessWidget {
   });
 
   final String title;
-  final String subtitle;
+  final String? subtitle;
   final Widget child;
   final Widget? leading;
   final bool scrollable;
@@ -28,9 +28,16 @@ class AppPage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(title, style: Theme.of(context).textTheme.headlineMedium),
-                const SizedBox(height: 4),
-                Text(subtitle, style: Theme.of(context).textTheme.bodyMedium),
+                Text(
+                  title,
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                ),
+                if (subtitle != null && subtitle!.isNotEmpty) ...[
+                  const SizedBox(height: 4),
+                  Text(subtitle!, style: Theme.of(context).textTheme.bodyMedium),
+                ],
               ],
             ),
           ),

@@ -74,7 +74,6 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
 
     return AppPage(
       title: 'Çekim Tablosu',
-      subtitle: 'Nasara örneği üzerinden seç, gör, karşılaştır.',
       scrollable: false,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -89,7 +88,10 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
             ),
             items: [
               for (final category in FormCategory.values)
-                DropdownMenuItem(value: category, child: Text(category.label)),
+                DropdownMenuItem(
+                  value: category,
+                  child: Text(category.label),
+                ),
             ],
             onChanged: (value) {
               if (value != null) {
@@ -97,8 +99,9 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
               }
             },
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 10),
           SegmentedButton<Voice>(
+            expandedInsets: EdgeInsets.zero,
             segments: const [
               ButtonSegment(
                 value: Voice.malum,
@@ -136,8 +139,8 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
                         _updateSelection(selectedForm: selection),
                   ),
                   const SizedBox(height: 18),
-                  Text(
-                    'Seçili Tablo',
+                   Text(
+                    'Seçili Tablo (${_category.label} - ${_voice.label})',
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                   const SizedBox(height: 10),
@@ -152,8 +155,16 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
                     'Tüm Fiil Muttaride Tabloları',
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 12),
                   for (final group in _groups) ...[
+                    Text(
+                      '${group.category.label} (${group.voice.label})',
+                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                            color: Theme.of(context).colorScheme.primary,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
+                    const SizedBox(height: 6),
                     FormsTable(
                       forms: group.forms,
                       selectedForm: _selectedForm,
@@ -163,7 +174,7 @@ class _ConjugationScreenState extends State<ConjugationScreen> {
                         selectedForm: selection,
                       ),
                     ),
-                    const SizedBox(height: 12),
+                    const SizedBox(height: 16),
                   ],
                 ],
               ),
@@ -302,7 +313,7 @@ class FormsTable extends StatelessWidget {
                 child: Text(
                   form.arabic,
                   textAlign: TextAlign.center,
-                  style: arabicTextStyle(24),
+                  style: arabicTextStyle(16),
                 ),
               ),
             ),
@@ -360,7 +371,7 @@ class PdfStyleTable extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(4),
                     child: SizedBox(
-                      height: 60,
+                      height: 40,
                       child: Center(child: cellBuilder(context, cell)),
                     ),
                   ),

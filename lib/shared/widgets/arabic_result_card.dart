@@ -9,39 +9,64 @@ class ArabicResultCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(18),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              '${form.category.label} · ${form.voice.label} · ${form.pronounLabel}',
-              style: Theme.of(context).textTheme.labelLarge,
-            ),
-            const SizedBox(height: 10),
-            Directionality(
-              textDirection: TextDirection.rtl,
-              child: Text(
-                form.arabic,
-                textAlign: TextAlign.center,
-                style: arabicTextStyle(44),
+    final textTheme = Theme.of(context).textTheme;
+    final colorScheme = Theme.of(context).colorScheme;
+
+    return SizedBox(
+      height: 88,
+      child: Card(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              // Sol: Arapça metin
+              Directionality(
+                textDirection: TextDirection.rtl,
+                child: Text(
+                  form.arabic,
+                  style: arabicTextStyle(30),
+                ),
               ),
-            ),
-            const SizedBox(height: 10),
-            Text(
-              form.meaning,
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.titleMedium,
-            ),
-            const SizedBox(height: 8),
-            Text(
-              form.rule,
-              textAlign: TextAlign.center,
-              softWrap: true,
-              overflow: TextOverflow.visible,
-            ),
-          ],
+              const SizedBox(width: 16),
+              VerticalDivider(
+                thickness: 1,
+                width: 1,
+                color: colorScheme.outlineVariant,
+              ),
+              const SizedBox(width: 16),
+              // Sağ: Bilgiler (scroll edilebilir)
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        '${form.category.label} · ${form.voice.label} · ${form.pronounLabel}',
+                        style: textTheme.labelSmall?.copyWith(
+                          color: colorScheme.primary,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        form.meaning,
+                        style: textTheme.titleSmall,
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        form.rule,
+                        style: textTheme.bodySmall?.copyWith(
+                          color: colorScheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
