@@ -356,6 +356,73 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
+  testWidgets(
+    'conjugation: selection coloring is only applied to the active table',
+    (WidgetTester tester) async {
+      await tester.binding.setSurfaceSize(const Size(500, 1000));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: SafeArea(child: ConjugationScreen(data: richTestData)),
+          ),
+        ),
+      );
+
+      // Başlangıçta Mazi Malum aktiftir.
+      // 'نَصَرَ' (Mazi Malum Hüve) hücresini saran Container'ın Container rengini bulalım.
+      // testData içinde birden fazla 'نَصَرَ' ve 'يَنْصُرُ' olabilir (hem Seçili Tablo hem de Tüm Tablolar altında).
+      // Seçili Tablo altındaki 'نَصَرَ' aktif olmalı.
+      // Tüm Tablolar altındaki 'يَنْصُرُ' (Muzari Malum) ise o an aktif olmadığı için boyanmamalı.
+
+      // Container bulucu ile boyanan kutuları bulalım.
+      // BoxDecoration color'ı primaryContainer olan kutular seçilidir.
+      final primaryColor = const Color(0xFFEADDFF); // Standart primaryContainer rengi (varsayılan ThemeData için)
+      
+      // Testimizde renklendirmeyi ThemeData üzerinden çekiyor: colorScheme.primaryContainer.withValues(alpha: 0.55) veya primaryContainer
+      // Dolayısıyla Container'ları BoxDecoration renklerine göre test etmek için Finder yazabiliriz.
+      Finder findSelectedContainer() {
+        return find.byWidgetPredicate((widget) {
+          if (widget is Container && widget.decoration is BoxDecoration) {
+            final decoration = widget.decoration as BoxDecoration;
+            return decoration.color != null;
+          }
+          return false;
+        });
+      }
+
+      // Seçili tek bir hücre olmalı (Seçili Tablo altındaki Hüve hücresi).
+      // Şahıs Tablosunda ise pronounLabel olan hücre seçilidir (primaryContainer ile).
+      // FormsTable içinde sadece bir hücre boyanmalıdır (Mazi Malum Hüve).
+      // Eğer düzeltmemiz çalışıyorsa, Tüm Tablolar altındaki diğer pasif tabloların (Muzari Malum gibi) Hüve hücresi boyanmamıştır.
+      // Testi doğrudan text üzerinden veya widget ağacından doğrulayalım:
+      
+      expect(find.text('نَصَرَ'), findsAtLeastNWidgets(1));
+      
+      // Tüm Tablolar altındaki 'يَنْصُرُ' (Muzari Malum Hüve) hücresinin (o an Mazi aktifken) 
+      // arka planının boyanmadığını doğrula.
+      final yansuruContainerFinder = find.ancestor(
+        of: find.text('يَنْصُرُ'),
+        matching: find.byType(Container),
+      );
+
+      // yansuruContainer'lardan hiçbirinin arka planı primaryContainer olmamalı (yani decoration.color null olmalı)
+      final contexts = tester.elementList(yansuruContainerFinder);
+      for (final element in contexts) {
+        final container = element.widget as Container;
+        if (container.decoration is BoxDecoration) {
+          final deco = container.decoration as BoxDecoration;
+          // Eğer boyanmış olsaydı null olmazdı
+          expect(deco.color, isNull);
+        }
+      }
+      
+      // Tüm testler geçmeli
+      expect(tester.takeException(), isNull);
+    },
+  );
+
   // ── Practice interactions ───────────────────────────────────────────────────
 
   testWidgets('practice: tapping correct answer shows Doğru feedback', (
