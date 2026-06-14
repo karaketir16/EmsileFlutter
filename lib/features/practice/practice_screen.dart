@@ -200,35 +200,82 @@ class _PracticeScreenState extends State<PracticeScreen> {
     );
   }
 
-  Widget _buildHeaderCell(String text) {
+  void _togglePronounsGroup(List<String> pronouns) {
+    final allSelected = pronouns.every((p) => _selectedPronouns.contains(p));
+    setState(() {
+      if (allSelected) {
+        _selectedPronouns.removeAll(pronouns);
+      } else {
+        _selectedPronouns.addAll(pronouns);
+      }
+    });
+  }
+
+  Widget _buildHeaderCell(String text, {VoidCallback? onTap}) {
+    final hasTap = onTap != null;
+    Widget content = Center(
+      child: Text(
+        text,
+        textAlign: TextAlign.center,
+        style: Theme.of(context).textTheme.labelSmall?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: hasTap ? Theme.of(context).colorScheme.primary : null,
+            ),
+      ),
+    );
+
+    if (hasTap) {
+      content = InkWell(
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 4),
+          child: content,
+        ),
+      );
+    } else {
+      content = Padding(
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 4),
+        child: content,
+      );
+    }
+
     return Container(
       color: const Color(0xFFF4F0E6),
-      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 10),
-      child: Center(
-        child: Text(
-          text,
-          textAlign: TextAlign.center,
-          style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
-        ),
-      ),
+      child: content,
     );
   }
 
-  Widget _buildLabelCell(String text) {
+  Widget _buildLabelCell(String text, {VoidCallback? onTap}) {
+    final hasTap = onTap != null;
+    Widget content = Center(
+      child: Text(
+        text,
+        textAlign: TextAlign.center,
+        style: Theme.of(context).textTheme.labelSmall?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: hasTap ? Theme.of(context).colorScheme.primary : null,
+            ),
+      ),
+    );
+
+    if (hasTap) {
+      content = InkWell(
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 4),
+          child: content,
+        ),
+      );
+    } else {
+      content = Padding(
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 4),
+        child: content,
+      );
+    }
+
     return Container(
       color: const Color(0xFFF4F0E6),
-      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 10),
-      child: Center(
-        child: Text(
-          text,
-          textAlign: TextAlign.center,
-          style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
-        ),
-      ),
+      child: content,
     );
   }
 
@@ -237,13 +284,14 @@ class _PracticeScreenState extends State<PracticeScreen> {
     required String plural,
     required String dual,
     required String singular,
+    required VoidCallback onLabelTap,
   }) {
     return TableRow(
       children: [
         _buildPronounCell(plural),
         _buildPronounCell(dual),
         _buildPronounCell(singular),
-        _buildLabelCell(label),
+        _buildLabelCell(label, onTap: onLabelTap),
       ],
     );
   }
@@ -437,9 +485,36 @@ class _PracticeScreenState extends State<PracticeScreen> {
                   TableRow(
                     decoration: const BoxDecoration(color: Color(0xFFF4F0E6)),
                     children: [
-                      _buildHeaderCell('Çoğul'),
-                      _buildHeaderCell('İkil'),
-                      _buildHeaderCell('Tekil'),
+                      _buildHeaderCell(
+                        'Çoğul',
+                        onTap: () => _togglePronounsGroup(const [
+                          'Onlar (er.)',
+                          'Onlar (kad.)',
+                          'Siz (er.)',
+                          'Siz (kad.)',
+                          'Biz',
+                        ]),
+                      ),
+                      _buildHeaderCell(
+                        'İkil',
+                        onTap: () => _togglePronounsGroup(const [
+                          'O ikisi (er.)',
+                          'O ikisi (kad.)',
+                          'Siz ikiniz (er.)',
+                          'Siz ikiniz (kad.)',
+                          'Biz',
+                        ]),
+                      ),
+                      _buildHeaderCell(
+                        'Tekil',
+                        onTap: () => _togglePronounsGroup(const [
+                          'O (er.)',
+                          'O (kad.)',
+                          'Sen (er.)',
+                          'Sen (kad.)',
+                          'Ben',
+                        ]),
+                      ),
                       _buildHeaderCell('Şahıs'),
                     ],
                   ),
@@ -448,30 +523,35 @@ class _PracticeScreenState extends State<PracticeScreen> {
                     plural: 'Onlar (er.)',
                     dual: 'O ikisi (er.)',
                     singular: 'O (er.)',
+                    onLabelTap: () => _togglePronounsGroup(const ['Onlar (er.)', 'O ikisi (er.)', 'O (er.)']),
                   ),
                   _buildPronounRow(
                     label: '3. Şh. Müennes\n(Gâibe)',
                     plural: 'Onlar (kad.)',
                     dual: 'O ikisi (kad.)',
                     singular: 'O (kad.)',
+                    onLabelTap: () => _togglePronounsGroup(const ['Onlar (kad.)', 'O ikisi (kad.)', 'O (kad.)']),
                   ),
                   _buildPronounRow(
                     label: '2. Şh. Müzekker\n(Muhatab)',
                     plural: 'Siz (er.)',
                     dual: 'Siz ikiniz (er.)',
                     singular: 'Sen (er.)',
+                    onLabelTap: () => _togglePronounsGroup(const ['Siz (er.)', 'Siz ikiniz (er.)', 'Sen (er.)']),
                   ),
                   _buildPronounRow(
                     label: '2. Şh. Müennes\n(Muhataba)',
                     plural: 'Siz (kad.)',
                     dual: 'Siz ikiniz (kad.)',
                     singular: 'Sen (kad.)',
+                    onLabelTap: () => _togglePronounsGroup(const ['Siz (kad.)', 'Siz ikiniz (kad.)', 'Sen (kad.)']),
                   ),
                   _buildPronounRow(
                     label: '1. Şh. Ortak\n(Mütekellim)',
                     plural: 'Biz',
                     dual: 'Biz',
                     singular: 'Ben',
+                    onLabelTap: () => _togglePronounsGroup(const ['Biz', 'Ben']),
                   ),
                 ],
               ),

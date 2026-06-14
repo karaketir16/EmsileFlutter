@@ -586,6 +586,42 @@ void main() {
   });
 
   testWidgets(
+    'practice: clicking column headers and row labels toggles selection groups',
+    (WidgetTester tester) async {
+      await tester.binding.setSurfaceSize(const Size(500, 1000));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: SafeArea(child: PracticeScreen(data: testData, random: Random(1))),
+          ),
+        ),
+      );
+
+      // Verify column deselect/select via 'Tekil' header
+      await tester.ensureVisible(find.text('Tekil').first);
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Tekil').first);
+      await tester.pumpAndSettle();
+      expect(find.text('0'), findsOneWidget);
+
+      await tester.ensureVisible(find.text('Tekil').first);
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Tekil').first);
+      await tester.pumpAndSettle();
+      expect(find.text('6'), findsOneWidget);
+
+      // Verify row deselect/select via '3. Şh. Müzekker\n(Gâib)' label
+      await tester.ensureVisible(find.text('3. Şh. Müzekker\n(Gâib)'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('3. Şh. Müzekker\n(Gâib)'));
+      await tester.pumpAndSettle();
+      expect(find.text('3'), findsOneWidget);
+    },
+  );
+
+  testWidgets(
     'conjugation: noun category hides voice selector and handles table/chip clicks',
     (WidgetTester tester) async {
       await tester.binding.setSurfaceSize(const Size(390, 844));
