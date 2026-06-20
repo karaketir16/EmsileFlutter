@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:emsile_flutter/data/models.dart';
 import 'package:emsile_flutter/data/practice_question_generator.dart';
 import 'package:emsile_flutter/features/practice/table_fill_practice_screen.dart';
+import 'package:emsile_flutter/features/practice/matching_practice_screen.dart';
 import 'package:emsile_flutter/shared/widgets/app_page.dart';
 import 'package:emsile_flutter/shared/widgets/arabic_text.dart';
 import 'package:flutter/material.dart';
@@ -49,6 +50,21 @@ class PracticeScreen extends StatelessWidget {
                   body: SafeArea(
                     child: TableFillPracticeScreen(data: data, random: random),
                   ),
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
+          _PracticeModeCard(
+            icon: Icons.compare_arrows_outlined,
+            title: 'Sîga Eşleştirme',
+            body:
+                'Arapça sîgaları doğru dilbilgisi adları veya anlamlarıyla eşleştir.',
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => MatchingPracticeScreen(
+                  data: data,
+                  random: random,
                 ),
               ),
             ),
