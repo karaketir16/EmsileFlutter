@@ -1,4 +1,5 @@
 import 'package:emsile_flutter/data/models.dart';
+import 'package:emsile_flutter/features/conjugation/conjugation_screen.dart';
 import 'package:emsile_flutter/shared/widgets/app_page.dart';
 import 'package:emsile_flutter/shared/widgets/info_panel.dart';
 import 'package:flutter/material.dart';
@@ -193,82 +194,25 @@ class _MuttarideDetailScreen extends StatelessWidget {
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 10),
-            _FormsTable(
-              forms: forms.where((form) => form.voice == voice).toList(),
-            ),
+            if (category.isNoun)
+              NounFormsTable(
+                forms: forms,
+                selectedForm: FormSelection.fromForm(forms.first),
+                onSelect: (_) {},
+                highlightSelection: false,
+              )
+            else
+              FormsTable(
+                forms: forms.where((form) => form.voice == voice).toList(),
+                selectedForm: FormSelection.fromForm(forms.first),
+                activeCategory: category,
+                activeVoice: voice,
+                onSelect: (_) {},
+                highlightSelection: false,
+              ),
             const SizedBox(height: 20),
           ],
         ],
-      ),
-    );
-  }
-}
-
-class _FormsTable extends StatelessWidget {
-  const _FormsTable({required this.forms});
-
-  final List<ConjugationForm> forms;
-
-  @override
-  Widget build(BuildContext context) {
-    final border = TableBorder.all(color: Theme.of(context).dividerColor);
-    return Card(
-      clipBehavior: Clip.antiAlias,
-      child: Table(
-        border: border,
-        columnWidths: const {
-          0: FlexColumnWidth(1.2),
-          1: FlexColumnWidth(1.3),
-          2: FlexColumnWidth(1.5),
-        },
-        children: [
-          const TableRow(
-            decoration: BoxDecoration(color: Color(0xFFF0E9DA)),
-            children: [
-              _TableCell(text: 'Şahıs / Özellik', bold: true),
-              _TableCell(text: 'Arapça', bold: true),
-              _TableCell(text: 'Anlam', bold: true),
-            ],
-          ),
-          for (final form in forms)
-            TableRow(
-              children: [
-                _TableCell(text: form.pronounLabel),
-                _TableCell(text: form.arabic, arabic: true),
-                _TableCell(text: form.meaning),
-              ],
-            ),
-        ],
-      ),
-    );
-  }
-}
-
-class _TableCell extends StatelessWidget {
-  const _TableCell({
-    required this.text,
-    this.bold = false,
-    this.arabic = false,
-  });
-
-  final String text;
-  final bool bold;
-  final bool arabic;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
-      child: Directionality(
-        textDirection: arabic ? TextDirection.rtl : TextDirection.ltr,
-        child: Text(
-          text,
-          textAlign: arabic ? TextAlign.center : TextAlign.start,
-          style: TextStyle(
-            fontSize: arabic ? 20 : 13,
-            fontWeight: bold ? FontWeight.w800 : FontWeight.normal,
-          ),
-        ),
       ),
     );
   }
