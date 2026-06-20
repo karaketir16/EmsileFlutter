@@ -267,13 +267,13 @@ class _MatchingPracticeScreenState extends State<MatchingPracticeScreen> {
                 String desc;
                 if (type == MatchingType.wordToSiga) {
                   icon = Icons.label_outline;
-                  desc = 'Arapça kelimeleri dilbilgisi sîga adlarıyla eşleştir.';
+                  desc = 'Kelimeleri dilbilgisindeki sîga (kalıp) adlarıyla eşleştir.';
                 } else if (type == MatchingType.wordToMeaning) {
                   icon = Icons.translate_outlined;
-                  desc = 'Arapça kelimeleri Türkçe anlamlarıyla eşleştir.';
+                  desc = 'Kelimeleri Türkçe anlam karşılıklarıyla eşleştir.';
                 } else {
                   icon = Icons.shuffle_outlined;
-                  desc = 'Kelime-Sîga ve Kelime-Anlam eşleştirmelerini karışık oyna.';
+                  desc = 'Sîga adları ve Türkçe anlamları bir arada harmanlayarak eşleştir.';
                 }
 
                 return Card(
