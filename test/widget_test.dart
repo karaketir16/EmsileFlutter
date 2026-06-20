@@ -1179,6 +1179,46 @@ void main() {
   );
 
   testWidgets(
+    'practice: table fill supports independent and attached pronouns',
+    (WidgetTester tester) async {
+      await tester.binding.setSurfaceSize(const Size(500, 1000));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+
+      await tester.pumpWidget(
+        const MaterialApp(
+          home: Scaffold(
+            body: SafeArea(child: PracticeScreen(data: pronounTestData)),
+          ),
+        ),
+      );
+
+      await openTableFillPractice(tester);
+      await tester.tap(find.byType(DropdownButtonFormField<String>));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Zamirler').last);
+      await tester.pumpAndSettle();
+
+      expect(find.text('Zamir Türü'), findsOneWidget);
+      expect(find.text('Ayrı Zamirler'), findsOneWidget);
+      expect(find.text('Bitişik Zamirler'), findsOneWidget);
+
+      await tester.tap(find.text('Tabloyu Başlat'));
+      await tester.pumpAndSettle();
+      expect(find.text('هُوَ'), findsOneWidget);
+      expect(find.text('أَنْتَ'), findsOneWidget);
+
+      await tester.tap(find.text('Konuyu Değiştir'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Bitişik Zamirler'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Tabloyu Başlat'));
+      await tester.pumpAndSettle();
+      expect(find.text('ـهُ'), findsOneWidget);
+      expect(find.text('ـكَ'), findsOneWidget);
+    },
+  );
+
+  testWidgets(
     'practice: back button returns from a practice mode to mode selection',
     (WidgetTester tester) async {
       await tester.binding.setSurfaceSize(const Size(390, 844));
@@ -1671,7 +1711,7 @@ Future<void> selectTableFillCategory(
   WidgetTester tester,
   String categoryLabel,
 ) async {
-  final dropdown = find.byType(DropdownButtonFormField<FormCategory>);
+  final dropdown = find.byType(DropdownButtonFormField<String>);
   await tester.tap(dropdown);
   await tester.pumpAndSettle();
   await tester.tap(find.text(categoryLabel).last);

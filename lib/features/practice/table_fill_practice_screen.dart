@@ -19,6 +19,8 @@ class TableFillPracticeScreen extends StatefulWidget {
 
 class _TableFillPracticeScreenState extends State<TableFillPracticeScreen> {
   late FormCategory _category;
+  bool _pronounMode = false;
+  PronounKind _pronounKind = PronounKind.independent;
   Voice _voice = Voice.malum;
   bool _includeBrokenPlurals = true;
   bool _started = false;
@@ -26,6 +28,9 @@ class _TableFillPracticeScreenState extends State<TableFillPracticeScreen> {
   final Map<FormSelection, _PlacedForm> _placed = {};
   final Set<FormSelection> _wrongSlots = {};
   List<_FormToken> _tokens = [];
+  final Map<FormSelection, _PlacedPronoun> _placedPronouns = {};
+  final Set<FormSelection> _wrongPronounSlots = {};
+  List<_PronounToken> _pronounTokens = [];
 
   List<FormCategory> get _categories => FormCategory.values
       .where(
@@ -43,6 +48,10 @@ class _TableFillPracticeScreenState extends State<TableFillPracticeScreen> {
       )
       .toList();
 
+  List<PronounEntry> get _pronouns => widget.data.pronouns
+      .where((pronoun) => pronoun.kind == _pronounKind)
+      .toList();
+
   @override
   void initState() {
     super.initState();
@@ -51,6 +60,20 @@ class _TableFillPracticeScreenState extends State<TableFillPracticeScreen> {
 
   void _startRound() {
     final random = widget.random ?? Random();
+    if (_pronounMode) {
+      final pronouns = _pronouns;
+      setState(() {
+        _round++;
+        _placedPronouns.clear();
+        _wrongPronounSlots.clear();
+        _pronounTokens = [
+          for (var index = 0; index < pronouns.length; index++)
+            _PronounToken(id: '$_round-$index', pronoun: pronouns[index]),
+        ]..shuffle(random);
+        _started = true;
+      });
+      return;
+    }
     final forms = _forms;
     setState(() {
       _round++;
@@ -62,6 +85,57 @@ class _TableFillPracticeScreenState extends State<TableFillPracticeScreen> {
       ]..shuffle(random);
       _started = true;
     });
+  }
+
+  void _dropPronoun(_PronounToken token, FormSelection slot) {
+    final expected = _pronounFor(slot);
+    final previous = _placedPronouns[slot];
+    if (expected == null || previous?.isCorrect == true) return;
+
+    final isCorrect = token.pronoun.arabic == expected.arabic;
+    setState(() {
+      if (previous != null &&
+          previous.token.id != token.id &&
+          !_pronounTokens.any(
+            (candidate) => candidate.id == previous.token.id,
+          )) {
+        _pronounTokens.add(previous.token);
+      }
+      if (isCorrect) {
+        _wrongPronounSlots.remove(slot);
+      } else {
+        _wrongPronounSlots.add(slot);
+      }
+      _placedPronouns[slot] = _PlacedPronoun(
+        token: token,
+        pronoun: token.pronoun,
+        isCorrect: isCorrect,
+      );
+      _pronounTokens.removeWhere((candidate) => candidate.id == token.id);
+    });
+  }
+
+  void _releaseWrongPronoun(FormSelection slot) {
+    final placed = _placedPronouns[slot];
+    if (placed == null || placed.isCorrect) return;
+    setState(() {
+      _placedPronouns.remove(slot);
+      _wrongPronounSlots.remove(slot);
+      if (!_pronounTokens.any((token) => token.id == placed.token.id)) {
+        _pronounTokens.add(placed.token);
+      }
+    });
+  }
+
+  PronounEntry? _pronounFor(FormSelection selection) {
+    for (final pronoun in _pronouns) {
+      if (pronoun.person == selection.person &&
+          pronoun.number == selection.number &&
+          pronoun.gender == selection.gender) {
+        return pronoun;
+      }
+    }
+    return null;
   }
 
   void _drop(_FormToken token, FormSelection slot) {
@@ -129,14 +203,19 @@ class _TableFillPracticeScreenState extends State<TableFillPracticeScreen> {
   Widget build(BuildContext context) {
     if (!_started) return _buildSetup();
 
-    final allPlaced = _tokens.isEmpty;
-    final complete =
-        allPlaced &&
-        _placed.length == _forms.length &&
-        _placed.values.every((placed) => placed.isCorrect);
+    final allPlaced = _pronounMode ? _pronounTokens.isEmpty : _tokens.isEmpty;
+    final complete = _pronounMode
+        ? allPlaced &&
+              _placedPronouns.length == _pronouns.length &&
+              _placedPronouns.values.every((placed) => placed.isCorrect)
+        : allPlaced &&
+              _placed.length == _forms.length &&
+              _placed.values.every((placed) => placed.isCorrect);
     return AppPage(
       title: 'Tabloyu Doldur',
-      subtitle: _category.isVerb
+      subtitle: _pronounMode
+          ? _pronounKind.label
+          : _category.isVerb
           ? '${_category.label} - ${_voice.label}'
           : _category.label,
       leading: _backButton(),
@@ -147,7 +226,7 @@ class _TableFillPracticeScreenState extends State<TableFillPracticeScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'Kalan: ${_tokens.length}',
+                'Kalan: ${_pronounMode ? _pronounTokens.length : _tokens.length}',
                 style: const TextStyle(fontWeight: FontWeight.w700),
               ),
               TextButton.icon(
@@ -158,9 +237,20 @@ class _TableFillPracticeScreenState extends State<TableFillPracticeScreen> {
             ],
           ),
           const SizedBox(height: 8),
-          _TokenPool(tokens: _tokens),
+          if (_pronounMode)
+            _PronounTokenPool(tokens: _pronounTokens)
+          else
+            _TokenPool(tokens: _tokens),
           const SizedBox(height: 18),
-          if (_category.isVerb)
+          if (_pronounMode)
+            _PronounFillTable(
+              pronouns: _pronouns,
+              placed: _placedPronouns,
+              wrongSlots: _wrongPronounSlots,
+              onDrop: _dropPronoun,
+              onWrongDragStarted: _releaseWrongPronoun,
+            )
+          else if (_category.isVerb)
             _FillTable(
               forms: _forms,
               placed: _placed,
@@ -253,19 +343,48 @@ class _TableFillPracticeScreenState extends State<TableFillPracticeScreen> {
         children: [
           Text('Konu', style: Theme.of(context).textTheme.titleMedium),
           const SizedBox(height: 8),
-          DropdownButtonFormField<FormCategory>(
-            initialValue: _category,
+          DropdownButtonFormField<String>(
+            initialValue: _pronounMode ? 'pronouns' : _category.name,
             decoration: const InputDecoration(border: OutlineInputBorder()),
             items: [
+              if (widget.data.pronouns.isNotEmpty)
+                const DropdownMenuItem(
+                  value: 'pronouns',
+                  child: Text('Zamirler'),
+                ),
               for (final category in _categories)
-                DropdownMenuItem(value: category, child: Text(category.label)),
+                DropdownMenuItem(
+                  value: category.name,
+                  child: Text(category.label),
+                ),
             ],
-            onChanged: (category) {
-              if (category == null) return;
-              setState(() => _category = category);
+            onChanged: (value) {
+              if (value == null) return;
+              setState(() {
+                _pronounMode = value == 'pronouns';
+                if (!_pronounMode) {
+                  _category = FormCategory.values.firstWhere(
+                    (category) => category.name == value,
+                  );
+                }
+              });
             },
           ),
-          if (_category.isVerb) ...[
+          if (_pronounMode) ...[
+            const SizedBox(height: 18),
+            Text('Zamir Türü', style: Theme.of(context).textTheme.titleMedium),
+            const SizedBox(height: 8),
+            SegmentedButton<PronounKind>(
+              segments: [
+                for (final kind in PronounKind.values)
+                  ButtonSegment(value: kind, label: Text(kind.label)),
+              ],
+              selected: {_pronounKind},
+              onSelectionChanged: (selection) {
+                setState(() => _pronounKind = selection.first);
+              },
+            ),
+          ] else if (_category.isVerb) ...[
             const SizedBox(height: 18),
             Text('Çatı', style: Theme.of(context).textTheme.titleMedium),
             const SizedBox(height: 8),
@@ -297,7 +416,9 @@ class _TableFillPracticeScreenState extends State<TableFillPracticeScreen> {
           ],
           const SizedBox(height: 20),
           FilledButton.icon(
-            onPressed: _forms.isEmpty ? null : _startRound,
+            onPressed: (_pronounMode ? _pronouns.isEmpty : _forms.isEmpty)
+                ? null
+                : _startRound,
             icon: const Icon(Icons.play_arrow),
             label: const Text('Tabloyu Başlat'),
           ),
@@ -351,6 +472,53 @@ class _TokenPool extends StatelessWidget {
                         child: _ArabicToken(text: token.form.arabic),
                       ),
                       child: _ArabicToken(text: token.form.arabic),
+                    ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _PronounTokenPool extends StatelessWidget {
+  const _PronounTokenPool({required this.tokens});
+
+  final List<_PronounToken> tokens;
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: SizedBox(
+          width: double.infinity,
+          height: 132,
+          child: SingleChildScrollView(
+            child: SizedBox(
+              width: double.infinity,
+              child: Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  for (final token in tokens)
+                    Draggable<_PronounToken>(
+                      key: ValueKey('pronoun-token-${token.id}'),
+                      data: token,
+                      feedback: Material(
+                        color: Colors.transparent,
+                        child: _ArabicToken(
+                          text: token.pronoun.arabic,
+                          lifted: true,
+                        ),
+                      ),
+                      childWhenDragging: Opacity(
+                        opacity: 0.25,
+                        child: _ArabicToken(text: token.pronoun.arabic),
+                      ),
+                      child: _ArabicToken(text: token.pronoun.arabic),
                     ),
                 ],
               ),
@@ -515,6 +683,234 @@ class _FillTable extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _PronounFillTable extends StatelessWidget {
+  const _PronounFillTable({
+    required this.pronouns,
+    required this.placed,
+    required this.wrongSlots,
+    required this.onDrop,
+    required this.onWrongDragStarted,
+  });
+
+  final List<PronounEntry> pronouns;
+  final Map<FormSelection, _PlacedPronoun> placed;
+  final Set<FormSelection> wrongSlots;
+  final void Function(_PronounToken token, FormSelection slot) onDrop;
+  final ValueChanged<FormSelection> onWrongDragStarted;
+
+  PronounEntry? _find(FormSelection slot) {
+    for (final pronoun in pronouns) {
+      if (pronoun.person == slot.person &&
+          pronoun.number == slot.number &&
+          pronoun.gender == slot.gender) {
+        return pronoun;
+      }
+    }
+    return null;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      clipBehavior: Clip.antiAlias,
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Column(
+          children: [
+            Table(
+              border: TableBorder.all(color: const Color(0xFFD8D1C1)),
+              columnWidths: const {
+                0: FixedColumnWidth(82),
+                1: FixedColumnWidth(82),
+                2: FixedColumnWidth(82),
+                3: FixedColumnWidth(92),
+              },
+              children: const [
+                TableRow(
+                  children: [
+                    _TableLabel(text: 'Çoğul'),
+                    _TableLabel(text: 'İkil'),
+                    _TableLabel(text: 'Tekil'),
+                    _TableLabel(text: ''),
+                  ],
+                ),
+              ],
+            ),
+            for (final row in pdfRows)
+              if (row.person == FormPerson.first)
+                Table(
+                  border: TableBorder.all(color: const Color(0xFFD8D1C1)),
+                  columnWidths: const {
+                    0: FixedColumnWidth(164),
+                    1: FixedColumnWidth(82),
+                    2: FixedColumnWidth(92),
+                  },
+                  children: [
+                    TableRow(
+                      children: [
+                        _PronounDropCell(
+                          slot: row.selectionFor(FormNumber.plural),
+                          expected: _find(row.selectionFor(FormNumber.plural)),
+                          placed: placed[row.selectionFor(FormNumber.plural)],
+                          isWrong: wrongSlots.contains(
+                            row.selectionFor(FormNumber.plural),
+                          ),
+                          onDrop: onDrop,
+                          onWrongDragStarted: onWrongDragStarted,
+                        ),
+                        _PronounDropCell(
+                          slot: row.selectionFor(FormNumber.singular),
+                          expected: _find(
+                            row.selectionFor(FormNumber.singular),
+                          ),
+                          placed: placed[row.selectionFor(FormNumber.singular)],
+                          isWrong: wrongSlots.contains(
+                            row.selectionFor(FormNumber.singular),
+                          ),
+                          onDrop: onDrop,
+                          onWrongDragStarted: onWrongDragStarted,
+                        ),
+                        _TableLabel(text: row.label),
+                      ],
+                    ),
+                  ],
+                )
+              else
+                Table(
+                  border: TableBorder.all(color: const Color(0xFFD8D1C1)),
+                  columnWidths: const {
+                    0: FixedColumnWidth(82),
+                    1: FixedColumnWidth(82),
+                    2: FixedColumnWidth(82),
+                    3: FixedColumnWidth(92),
+                  },
+                  children: [
+                    TableRow(
+                      children: [
+                        for (final column in pdfColumns)
+                          _PronounDropCell(
+                            slot: row.selectionFor(column.number),
+                            expected: _find(row.selectionFor(column.number)),
+                            placed: placed[row.selectionFor(column.number)],
+                            isWrong: wrongSlots.contains(
+                              row.selectionFor(column.number),
+                            ),
+                            onDrop: onDrop,
+                            onWrongDragStarted: onWrongDragStarted,
+                          ),
+                        _TableLabel(text: row.label),
+                      ],
+                    ),
+                  ],
+                ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _PronounDropCell extends StatelessWidget {
+  const _PronounDropCell({
+    required this.slot,
+    required this.expected,
+    required this.placed,
+    required this.isWrong,
+    required this.onDrop,
+    required this.onWrongDragStarted,
+  });
+
+  final FormSelection slot;
+  final PronounEntry? expected;
+  final _PlacedPronoun? placed;
+  final bool isWrong;
+  final void Function(_PronounToken token, FormSelection slot) onDrop;
+  final ValueChanged<FormSelection> onWrongDragStarted;
+
+  @override
+  Widget build(BuildContext context) {
+    final dropKey = ValueKey(
+      'pronoun-drop-${slot.person.name}-${slot.number.name}-${slot.gender.name}',
+    );
+    if (expected == null) {
+      return Container(
+        key: dropKey,
+        height: 70,
+        color: const Color(0xFF5F625F),
+        child: const Icon(Icons.block, color: Colors.white54, size: 18),
+      );
+    }
+
+    return DragTarget<_PronounToken>(
+      onAcceptWithDetails: (details) => onDrop(details.data, slot),
+      builder: (context, candidates, rejected) {
+        final isCorrect = placed?.isCorrect ?? false;
+        final isPlacedWrong = placed != null && !isCorrect;
+        final color = isCorrect
+            ? const Color(0xFFE0F3E5)
+            : isPlacedWrong || isWrong
+            ? const Color(0xFFFFDCDC)
+            : candidates.isNotEmpty
+            ? const Color(0xFFE2E7EA)
+            : Colors.white;
+
+        final content = AnimatedContainer(
+          key: dropKey,
+          duration: const Duration(milliseconds: 180),
+          height: 70,
+          color: color,
+          alignment: Alignment.center,
+          padding: const EdgeInsets.all(4),
+          child: placed == null
+              ? Icon(Icons.add, color: Theme.of(context).colorScheme.outline)
+              : Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    Center(
+                      child: Directionality(
+                        textDirection: TextDirection.rtl,
+                        child: Text(
+                          placed!.pronoun.arabic,
+                          textAlign: TextAlign.center,
+                          style: arabicTextStyle(19).copyWith(
+                            color: isCorrect
+                                ? const Color(0xFF236437)
+                                : const Color(0xFF9C2F2F),
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top: 0,
+                      right: 0,
+                      child: Icon(
+                        isCorrect ? Icons.check_circle : Icons.cancel,
+                        size: 17,
+                        color: isCorrect
+                            ? const Color(0xFF2F7D46)
+                            : const Color(0xFFB43C3C),
+                      ),
+                    ),
+                  ],
+                ),
+        );
+
+        if (placed == null || isCorrect) return content;
+        return Draggable<_PronounToken>(
+          data: placed!.token,
+          onDragStarted: () => onWrongDragStarted(slot),
+          feedback: Material(
+            color: Colors.transparent,
+            child: _ArabicToken(text: placed!.pronoun.arabic, lifted: true),
+          ),
+          child: content,
+        );
+      },
     );
   }
 }
@@ -824,6 +1220,13 @@ class _FormToken {
   final ConjugationForm form;
 }
 
+class _PronounToken {
+  const _PronounToken({required this.id, required this.pronoun});
+
+  final String id;
+  final PronounEntry pronoun;
+}
+
 class _PlacedForm {
   const _PlacedForm({
     required this.token,
@@ -833,5 +1236,17 @@ class _PlacedForm {
 
   final _FormToken token;
   final ConjugationForm form;
+  final bool isCorrect;
+}
+
+class _PlacedPronoun {
+  const _PlacedPronoun({
+    required this.token,
+    required this.pronoun,
+    required this.isCorrect,
+  });
+
+  final _PronounToken token;
+  final PronounEntry pronoun;
   final bool isCorrect;
 }

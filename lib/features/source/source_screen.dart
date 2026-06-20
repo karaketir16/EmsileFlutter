@@ -57,6 +57,48 @@ class SourceScreen extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(height: 12),
+          Card(
+            child: InkWell(
+              onTap: () async {
+                final url = Uri.parse('https://github.com/karaketir16');
+                if (await canLaunchUrl(url)) {
+                  await launchUrl(url, mode: LaunchMode.externalApplication);
+                }
+              },
+              borderRadius: BorderRadius.circular(12),
+              child: const Padding(
+                padding: EdgeInsets.all(16),
+                child: Row(
+                  children: [
+                    Icon(Icons.code, color: Colors.blue),
+                    SizedBox(width: 12),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Bu uygulama Osman Karaketir tarafından geliştirilmiştir.',
+                            style: TextStyle(fontSize: 14),
+                          ),
+                          SizedBox(height: 8),
+                          Text(
+                            'github.com/karaketir16',
+                            style: TextStyle(
+                              fontSize: 14,
+                              color: Colors.blue,
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Icon(Icons.open_in_new, size: 18),
+                  ],
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
