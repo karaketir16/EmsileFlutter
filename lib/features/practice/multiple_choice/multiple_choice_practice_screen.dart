@@ -85,7 +85,6 @@ class _MultipleChoicePracticeScreenState
   }
 
   Widget _buildSetup(BuildContext context) {
-    final count = _matchingForms.length;
     final canStart = _canStart;
     return AppPage(
       title: 'Pratik Ayarları',
@@ -110,7 +109,6 @@ class _MultipleChoicePracticeScreenState
           ),
           const SizedBox(height: 30),
           _StartPanel(
-            count: count,
             canStart: canStart,
             validationMessage: _categories.isEmpty
                 ? 'Pratiğe başlamak için en az bir çekim tablosu seç.'
@@ -212,13 +210,11 @@ class _QuestionCard extends StatelessWidget {
 
 class _StartPanel extends StatelessWidget {
   const _StartPanel({
-    required this.count,
     required this.canStart,
     required this.validationMessage,
     required this.onStart,
   });
 
-  final int count;
   final bool canStart;
   final String validationMessage;
   final VoidCallback onStart;
@@ -232,30 +228,13 @@ class _StartPanel extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  'Eşleşen Form Sayısı:',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-                Text(
-                  '$count',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: canStart ? Colors.green : Colors.red,
-                  ),
-                ),
-              ],
-            ),
             if (!canStart) ...[
-              const SizedBox(height: 10),
               Text(
                 validationMessage,
                 style: TextStyle(color: Colors.red.shade900, fontSize: 13),
               ),
+              const SizedBox(height: 16),
             ],
-            const SizedBox(height: 16),
             FilledButton.icon(
               onPressed: canStart ? onStart : null,
               icon: const Icon(Icons.play_arrow),

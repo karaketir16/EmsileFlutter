@@ -992,15 +992,13 @@ void main() {
     );
     await openMultipleChoicePractice(tester);
 
-    // Başlangıçta 6 form eşleştiği için canStart true olmalı
-    expect(find.text('Eşleşen Form Sayısı:'), findsOneWidget);
-    expect(find.text('6'), findsOneWidget);
+    // Başlangıçta canStart true olmalı
     expect(
       tester.widget<FilledButton>(find.byType(FilledButton)).enabled,
       isTrue,
     );
 
-    // Çekim Tablolarını temizle diyelim -> Eşleşen 0 olur, buton kilitlenir
+    // Çekim Tablolarını temizle diyelim -> buton kilitlenir
     await tester.tap(
       find
           .descendant(of: find.byType(Row), matching: find.text('Temizle'))
@@ -1008,7 +1006,6 @@ void main() {
     );
     await tester.pumpAndSettle();
 
-    expect(find.text('0'), findsOneWidget);
     expect(
       tester.widget<FilledButton>(find.byType(FilledButton)).enabled,
       isFalse,
@@ -1060,12 +1057,18 @@ void main() {
 
       expect(find.text('Şahıslar (Fiiller)'), findsNothing);
       expect(find.text('Kırık Çoğullar'), findsOneWidget);
-      expect(find.text('7'), findsOneWidget);
+      expect(
+        tester.widget<SwitchListTile>(find.byType(SwitchListTile)).value,
+        isTrue,
+      );
 
       await tester.tap(find.byType(SwitchListTile));
       await tester.pumpAndSettle();
 
-      expect(find.text('6'), findsOneWidget);
+      expect(
+        tester.widget<SwitchListTile>(find.byType(SwitchListTile)).value,
+        isFalse,
+      );
     },
   );
 
@@ -1453,8 +1456,7 @@ void main() {
       );
       await openMultipleChoicePractice(tester);
 
-      // Initially, ismFail is selected by default in filters, and we have 7 forms matching.
-      expect(find.text('7'), findsOneWidget);
+      // Initially, ismFail is selected by default in filters.
       expect(
         tester.widget<FilledButton>(find.byType(FilledButton)).enabled,
         isTrue,
@@ -1471,7 +1473,6 @@ void main() {
       );
       await tester.pumpAndSettle();
 
-      expect(find.text('0'), findsOneWidget);
       expect(
         tester.widget<FilledButton>(find.byType(FilledButton)).enabled,
         isFalse,
@@ -1481,7 +1482,6 @@ void main() {
       await tester.tap(find.text('İsm-i Fâil'));
       await tester.pumpAndSettle();
 
-      expect(find.text('7'), findsOneWidget);
       expect(
         tester.widget<FilledButton>(find.byType(FilledButton)).enabled,
         isTrue,
