@@ -1,194 +1,112 @@
 # Emsile Flutter Geliştirme Checklist
 
-Son güncelleme: `Tablo` ekranına `Çekimler / Zamirler` modu eklendi. PDF'teki ayrı zamirler ve bitişik zamirler `catalog.json` altında yapılandırılmış veri olarak tutuluyor ve PDF düzenine yakın tabloyla gösteriliyor.
+Son durum: `نصر` fiili üzerinden dersler, çekim/zamir tabloları, çoktan seçmeli pratik ve fiil/isim tablo doldurma alıştırması çalışıyor.
 
-Bu dosya yaşayan proje kaydıdır. Kapsam, veri modeli, ekranlar, testler veya tamamlanma durumu değiştiğinde aynı değişiklikle birlikte güncel tutulmalıdır.
+## Tamamlananlar
 
-## 0. Durum Özeti
+### Altyapı
 
-- [x] Uygulama `catalog.json + verbs/<id>.json + repository composition` yapısına geçti.
-- [x] Varsayılan fiil `nasara` için generated çekim üretimi çalışıyor.
-- [x] Fiil muttaride grupları, isim türevleri ve taaccüb formları tek çekim ekranında erişilebilir.
-- [x] Ayrı ve bitişik şahıs zamirleri `Tablo > Zamirler` görünümünden erişilebilir.
-- [x] Dersler ekranı katalogdan geliyor; Muhtelife dersi iki sütunlu tabloyla gösteriliyor.
-- [x] Pratik ekranı soru başlamadan önce filtrelenebilir ayar modu sunuyor.
-- [ ] Hâlâ tek fiilli MVP durumundayız; çok fiilli katalog ve fiil seçici henüz yok.
+- [x] Flutter proje ve Material 3 tema
+- [x] Feature/data/shared klasör ayrımı
+- [x] Mobil merkezli `AppPage`
+- [x] Alt navigasyon ve state koruyan `IndexedStack`
+- [x] Katalog + fiil dosyası + runtime generator veri akışı
+- [x] Web build ve otomatik test altyapısı
 
-## 1. Proje Hazırlığı
+### Veri
 
-- [x] Flutter proje iskeletini oluştur.
-- [x] Web hedefini çalıştır.
-- [x] Android/iOS hedeflerinin ileride desteklenebileceğini doğrula.
-- [x] Temel klasör yapısını oluştur: `lib/features`, `lib/shared`, `lib/data`.
-- [x] Lint ve format ayarlarını ekle.
-- [x] Playwright görsel kontrol altyapısını ekle.
-- [x] İlk commit'i at.
+- [x] Kaynak ders içeriği doğrulandı
+- [x] `catalog.json`
+- [x] `verbs/nasara.json`
+- [x] Muhtelife satırları
+- [x] Ayrı ve bitişik zamirler
+- [x] 339 runtime form
+- [x] 24 form kategorisi
+- [x] Fiil, isim, masdar ve taaccüb üretimi
+- [x] Seed/katalog validasyon script'i
 
-## 2. Tasarım Sistemi
+### Ana Sayfa
 
-- [x] İlk renk paletini belirle.
-- [x] Tema dosyasını uygulama içinde oluştur.
-- [x] Kart, segment kontrol, alt navigasyon ve cevap butonu stillerini standartlaştır.
-- [x] Mobil öncelikli spacing değerlerini ilk MVP ekranlarında uygula.
-- [ ] Türkçe metin fontunu netleştir.
-- [ ] Arapça metin fontunu netleştir.
-- [x] Tema ve ortak widgetları `lib/shared` altına ayır.
+- [x] Uygulamayı tanıtan karşılama
+- [x] Dersler, Tablo ve Pratik kullanım açıklamaları
 
-## 3. Veri Hazırlığı
+### Dersler
 
-- [x] Yerel PDF kaynağını doğrula: `docs/Emsile_Ders_Notu_Zafer_ESEN_01.01.2025.pdf`.
-- [x] PDF kaynak bilgilerini uygulama içinde kullanılacak şekilde kaydet.
-- [x] İlk örnek fiili seç: `نصر`.
-- [x] İlk ders veri modelini oluştur.
-- [x] İlk çekim veri modelini oluştur.
-- [x] İlk alıştırma veri modelini oluştur.
-- [x] Veriyi koddan çıkarıp JSON asset'e taşı: `assets/data/emsile_seed.json`.
-- [x] Fiil-i mâzi malum çekimlerini yapılandır.
-- [x] Fiil-i mâzi meçhul çekimlerini yapılandır.
-- [x] Fiil-i muzâri malum çekimlerini yapılandır.
-- [x] Fiil-i muzâri meçhul çekimlerini yapılandır.
-- [x] Her form için Türkçe anlam alanı ekle.
-- [x] `person`, `number`, `gender` alanlarını seed veri modeline ekle.
-- [x] Alıştırma sorularını formlardan türetilecek şekilde modelle.
-- [x] Veri kaynağını `catalog + verbs` yapısına evriltmeye başla.
-- [x] İlk fiili ayrı verb dosyasına taşı: `assets/data/verbs/nasara.json`.
-- [x] İlk generated `conjugationSource` profilini ekle.
-- [x] `nasara` için `muttarideForms` verisini rule-based üretime taşı.
-- [x] `nasara` için muhtelife satırlarını kanonik ders sırasına göre tamamla.
-- [x] `nasara` için fiil çekimli tüm muttaride gruplarını generate et.
-- [x] `nasara` için isim ve taaccüb türevlerini generated forma taşı.
-- [x] Şahıs zamirleri veri modelini ayrıca oluştur.
-- [x] PDF'teki ayrı ve bitişik zamir tablolarını `catalog.json` içine taşı.
-- [x] JSON seed veri validasyon script'i ekle.
-- [x] Catalog/verb veri validasyon script'ini yeni yapıya göre güncelle.
-- [ ] PDF'ten taşınacak sonraki tabloları elle kontrol et.
+- [x] Emsile-i Muhtelife
+- [x] Muhtelife açıklamaları
+- [x] Emsile-i Muttaride kategori listesi
+- [x] Muttaride açıklamaları
+- [x] Tablo menüsüyle ortak fiil/isim tabloları
+- [x] Şahıs Zamirleri dersi
+- [x] Ayrı ve bitişik zamir tabloları
 
-## 4. Navigasyon
+### Tablo
 
-- [x] Alt navigasyon yapısını kur.
-- [x] Ana Sayfa rotasını oluştur.
-- [x] Dersler rotasını oluştur.
-- [x] Çekim Tablosu rotasını oluştur.
-- [x] Alıştırma rotasını oluştur.
-- [x] Kaynak rotasını oluştur.
-- [x] Uygulama kabuğunu `lib/app` altına taşı.
+- [x] Çekimler ve Zamirler ana menüsü
+- [x] Fiil kategori ve çatı seçimi
+- [x] Şahıs seçimi ve sonuç kartı
+- [x] İsim tabloları
+- [x] Kırık çoğullar
+- [x] Tüm tablolar görünümü
+- [x] Karşılığı olmayan koyu hücreler
+- [x] Birinci şahıs `Biz` birleşik hücresi
+- [x] Ayrı ve bitişik zamirler
 
-## 5. Ana Sayfa
+### Çoktan Seçmeli Pratik
 
-- [x] Uygulama başlığını ve kısa durum alanını tasarla.
-- [x] Kaldığın yer kartını oluştur.
-- [x] Günlük çalışma önerisi alanını ekle.
-- [x] Hızlı tekrar akışını temsil eden kartı ekle.
-- [x] Mobil ekranlarda taşma ve sıkışma testi yap.
-- [ ] Gerçek ilerleme verisi bağla.
+- [x] İki sütunlu kategori seçimi
+- [x] Çatı, şahıs ve isim filtreleri
+- [x] Minimum beş form kontrolü
+- [x] Arapçadan Türkçeye soru
+- [x] Türkçeden Arapçaya soru
+- [x] En fazla beş karışık şık
+- [x] Doğru için yeşil/tik
+- [x] Yanlış için kırmızı/X
+- [x] Yanlışta doğru cevabı gizleme
+- [x] Sonraki soru
 
-## 6. Dersler
+### Tabloyu Doldur
 
-- [x] Ders listesi ekranını oluştur.
-- [x] Ders kartı bileşenini oluştur.
-- [x] Ders detay ekranını oluştur.
-- [x] Ders detayında Arapça örnek ve Türkçe açıklama göster.
-- [x] Muhtelife ders detayında PDF'e yakın iki sütunlu tabloyu göster.
-- [ ] Ders detayından çekim tablosuna hedefli geçiş ekle.
-- [ ] Ders detayından alıştırmaya hedefli geçiş ekle.
+- [x] Fiil kategori ve çatı seçimi
+- [x] İsim kategorileri
+- [x] Kırık çoğulları dahil etme anahtarı
+- [x] Rastgele karıştırılmış token havuzu
+- [x] Üç satırlık sabit havuz yüksekliği
+- [x] Sabit tam havuz genişliği
+- [x] Doğru/yanlış renk ve simgeleri
+- [x] Yanlış cevabı yeniden sürükleme
+- [x] Yanlış dolu hücrede cevap değiştirme
+- [x] Geçersiz bırakmada havuza dönüş
+- [x] Aynı yazılışlı çekimleri eşdeğer kabul etme
+- [x] Kırık çoğulları kendi aralarında eşdeğer kabul etme
+- [x] Yalnız bütün cevaplar doğruysa tamamlanma
+- [x] Geri ve konu değiştirme akışı
 
-## 7. Çekim Tablosu
+### Hakkında
 
-- [x] Kategori seçici oluştur: Mâzi, Muzâri.
-- [x] Bina seçici oluştur: Malum, Meçhul.
-- [x] Şahıs seçici oluştur.
-- [x] Kategori/bina geçişlerinde seçili şahsı koru.
-- [x] Seçime göre Arapça formu büyük göster.
-- [x] Türkçe anlam ve kısa kural notu göster.
-- [x] Tüm formları listeleyen detay görünümü ekle.
-- [x] Tüm formlar tablosundan da aktif şahıs seçilebilsin.
-- [x] Şahıs seçimini PDF düzenine yakın tablo görünümüne taşı.
-- [x] Tüm formları PDF düzenine yakın tablo görünümüne taşı.
-- [x] Üst seçim alanını sabitle, tabloları ayrı scroll alanında göster.
-- [x] Nefy, cahd, emir ve nehy fiil gruplarını çekim ekranına ekle.
-- [x] Tüm fiil muttaride tablolarını tek ekrandan erişilebilir yap.
-- [x] Sağdan sola yazım davranışını Playwright screenshot ile test et.
-- [x] İsim ve masdar türev tablolarını çekim ekranına ayrı bölüm olarak ekle.
-- [x] Taaccüb fiillerini çekim ekranına ayrı kategori olarak ekle.
-- [x] Ayrı zamirler ve bitişik zamirler için tablo modu ekle.
-- [x] Sayı/cinsiyet seçiciyi ayrı filtre olarak modelle.
-- [ ] Boş veri durumlarını tasarla.
+- [x] Kaynak atfı
+- [x] Blog bağlantısı
+- [x] “Faydalanılmıştır” ifadesi
 
-## 8. Alıştırma
+### Kalite
 
-- [ ] Kart çevirme alıştırmasını oluştur.
-- [x] Çoktan seçmeli alıştırmayı oluştur.
-- [x] Cevap kontrol mekanizmasını ekle.
-- [x] Doğru/yanlış geri bildirimlerini tasarla.
-- [x] Sonraki soru akışını ekle.
-- [x] İlk alıştırma veri setini `نصر` üzerinden otomatik üret.
-- [x] Alıştırma öncesi kategori/çatı/şahıs-zamir filtreleme ekranını ekle.
-- [x] Satır ve sütun başlıklarından toplu seçim yapılmasını ekle.
-- [ ] Boşluk doldurma alıştırmasını ekle.
-- [ ] Eşleştirme alıştırmasını ekle.
-- [ ] Skor/ilerleme modelini ekle.
+- [x] `dart format`
+- [x] `flutter analyze`
+- [x] `flutter test`
+- [x] 36 otomatik test
+- [x] `flutter build web`
+- [x] Playwright görsel kontrol altyapısı
 
-## 9. Kaynak Ekranı
+## Sıradaki İşler
 
-- [x] Zafer ESEN kaynak bilgisini göster.
-- [x] Belge güncelleme tarihini göster: 01.01.2025.
-- [x] Kullanım notunu kısa ve açık şekilde göster.
-- [x] Yerel PDF yolunu göster.
-- [x] Kaynak bağlantısını tıklanabilir hale getir.
-- [ ] PDF açma veya dış bağlantı alanı ekle.
-
-## 10. Mobil/Web Kalite Kontrol
-
-- [ ] 360px genişlikte ekran testi yap.
-- [x] 390px genişlikte ekran testi yap.
-- [ ] 430px genişlikte ekran testi yap.
-- [x] Masaüstü web önizlemede mobil merkezli görünümü doğrula.
-- [x] Arapça metinlerin kritik ekranlarda taşmadığını doğrula.
-- [x] Buton metinlerinin kritik ekranlarda sığdığını doğrula.
-- [x] Alt navigasyonun küçük ekranlarda kullanılabilir olduğunu doğrula.
-- [x] Playwright screenshot çıktıları üret: `docs/screenshots`.
-- [x] Codex in-app browser ile canlı yüzey kontrolü yap.
-
-## 11. Teknik Kalite
-
-- [x] `dart format` çalıştır.
-- [x] `flutter analyze` çalıştır.
-- [x] `flutter test` çalıştır.
-- [x] `flutter build web` çalıştır.
-- [x] `npm run validate-seed` çalıştır.
-- [x] `npm run visual-check` çalıştır.
-- [x] Seed veri alanları için temel validasyon ekle.
-- [x] Seed veri alanlarında `person/number/gender` doğrulaması ekle.
-- [x] Catalog zamir alanları için validasyon ekle.
-- [ ] Veri modelleri için ayrı Dart unit test ekle.
-- [x] Pratik soru üreticisi için ayrı Dart unit test ekle.
-- [x] `MuttarideGenerator` için generated form kapsam testi ekle.
-- [x] Çekim ve pratik ekranları için widget test ekle.
-- [x] Seçili sekme ekran eşleşmeleri için widget test ekle.
-- [x] Pratik cevap etkileşimleri için widget test ekle.
-- [ ] Repository hata durumları için test ekle.
-
-## 12. MVP Tamamlanma Kriterleri
-
-- [x] Uygulama webde açılıyor.
-- [x] Ana navigasyon çalışıyor.
-- [x] En az bir ders okunabiliyor.
-- [x] `نصر` için mâzi ve muzâri çekimleri görüntülenebiliyor.
-- [x] En az bir alıştırma tamamlanabiliyor.
-- [x] Kaynak bilgisi görünür.
-- [x] Mobil görünümde kritik taşma yok.
-
-## 13. Sıradaki Mantıklı İşler
-
-- [x] Kod organizasyonunu `lib/data`, `lib/features`, `lib/shared` klasörlerine böl.
-- [x] JSON veri şemasını büyütmeden önce temel alan adlarını sabitle.
-- [x] Scalable veri tasarım dokümanını ekle.
-- [x] PDF'teki şahıs zamirleri tablosunu JSON'a taşı.
-- [x] Fiil-i mâzi ve muzâri için 14 şahıslık tam tabloyu tamamla.
-- [ ] `daraba`, `fataha` gibi yeni bablar için generated conjugation profilleri ekle.
-- [ ] Muhtelife explorer için ders detayından ayrı, filtrelenebilir bağımsız ekran ekle.
-- [ ] Fiil listesi/katalog ekranını ekle.
-- [x] Nefy, cahd, emir ve nehy fiil kategorileri için aynı tablo genişletmesini yap.
-- [x] İsim/masdar türevleri için sayı-cinsiyet tablolarını ayrı muttaride bölümü olarak ekle.
-- [ ] Üretilen pratik sorularına zorluk/karıştırma stratejisi ekle.
-- [ ] Playwright testini 360px ve 430px viewportlarla genişlet.
+- [ ] İsim Tabloyu Doldur için doğrudan widget testleri
+- [ ] Kırık çoğul anahtarı ve eşdeğer hedef testleri
+- [ ] Birinci şahıs birleşik hücre testi
+- [ ] 360 px ve 430 px viewport testleri
+- [ ] Güncel ekran görüntülerini yeniden üretme
+- [ ] Özel ve platformlar arası doğrulanmış Arapça fontu
+- [ ] Repository hata testleri
+- [ ] Çok fiilli katalog ve fiil seçici
+- [ ] Yeni generated bab profilleri
+- [ ] Kalıcı skor ve tekrar geçmişi
+- [ ] Derslerden ilgili tablo/pratiğe doğrudan geçiş

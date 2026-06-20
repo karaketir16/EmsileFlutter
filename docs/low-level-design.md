@@ -1,28 +1,12 @@
-# Low-Level Tasarım
+# Düşük Seviye Tasarım
 
-Bu doküman mevcut Flutter MVP'nin teknik yapısını tarif eder. Amaç, sonraki geliştirmelerde veri, UI ve test sınırlarının kaybolmamasıdır.
-
-Bu dosya yaşayan teknik tasarım kaydıdır. Mimari, veri akışı, model alanları, klasör yapısı veya test edilebilirlik kararları değiştiğinde aynı değişiklikle birlikte güncel tutulmalıdır.
-
-Not: Bu doküman ve eşlik eden checklist/test kayıtları her zaman güncel tutulmalıdır; mimari veya veri akışında yapılan her değişiklik aynı commit içinde bu kayıtlara yansıtılmalıdır.
-
-## 1. Mevcut Dosya Yapısı
-
-```text
-lib/main.dart
-assets/data/emsile_seed.json
-scripts/visual-check.js
-test/widget_test.dart
-docs/screenshots/
-```
-
-Mevcut uygulama kodu feature ve katman sınırlarına göre ayrılmıştır:
+## 1. Proje Yapısı
 
 ```text
 lib/
   app/
-    emsile_app.dart
     app_shell.dart
+    emsile_app.dart
   data/
     catalog_models.dart
     emsile_repository.dart
@@ -30,102 +14,39 @@ lib/
     muttaride_generator.dart
     practice_question_generator.dart
   features/
-    home/
-    lessons/
-    conjugation/
-    practice/
-    source/
+    conjugation/conjugation_screen.dart
+    home/home_screen.dart
+    lessons/lessons_screen.dart
+    practice/practice_screen.dart
+    practice/table_fill_practice_screen.dart
+    source/source_screen.dart
   shared/
-    theme/
-      app_theme.dart
+    theme/app_theme.dart
     widgets/
+assets/data/
+  catalog.json
+  verbs/nasara.json
+test/
+  data/
+  widget_test.dart
 ```
 
-`shared/widgets` altında ortak sayfa, bilgi paneli ve Arapça sonuç kartı gibi tekrar kullanılan bileşenler bulunur.
+## 2. Başlatma ve Veri Akışı
 
-## 2. Uygulama Başlatma Akışı
+1. `main()` → `EmsileApp`
+2. `EmsileRepository.load()`
+3. `catalog.json` yüklenir.
+4. `defaultVerbId` ile `verbs/nasara.json` yüklenir.
+5. `MuttarideGenerator.fromVerbEntry()` runtime `ConjugationForm` listesini üretir.
+6. Dersler, zamirler, Muhtelife satırları ve formlar `AppData` içinde birleştirilir.
+7. `PracticeQuestionGenerator.fromForms()` geriye dönük soru listesi üretir.
+8. `AppShell` beş ana ekranı `IndexedStack` içinde gösterir.
 
-1. `main()` çalışır.
-2. `EmsileApp` oluşturulur.
-3. `EmsileRepository.load()` çağrılır.
-4. `assets/data/catalog.json` okunur.
-5. Varsayılan fiilin `assets/data/verbs/<id>.json` dosyası okunur.
-6. `MuttarideGenerator`, `conjugationSource` üzerinden runtime form listesini üretir.
-7. `catalog.lessons`, `catalog.pronouns`, `verb.muhtelifeEntries` ve generated formlar `AppData` modelinde birleştirilir.
-8. `PracticeQuestionGenerator`, `forms` listesinden çoktan seçmeli pratik sorularını üretir.
-9. Veri hazırsa `AppShell(data: snapshot.data!)` render edilir.
-10. Veri yüklenirken `LoadingScreen`, hata varsa `LoadErrorScreen` gösterilir.
+Yükleme sırasında `LoadingScreen`, hata halinde `LoadErrorScreen` kullanılır.
 
-## 3. Veri Katmanı
+## 3. Veri Modeli
 
-Veri kaynağı:
-
-```text
-assets/data/catalog.json
-assets/data/verbs/<id>.json
-```
-
-Bu tercih şimdilik SQLite yerine daha uygun çünkü:
-
-- Veri küçük ve statik.
-- İçerik elle kontrol edilerek genişletilecek.
-- Flutter asset olarak web, Android ve iOS'ta aynı şekilde paketlenebilir.
-- Geliştirme sırasında diff okunabilir kalır.
-
-SQLite ileride şu durumlarda mantıklı olur:
-
-- Kullanıcı ilerlemesi kalıcı tutulacaksa.
-- Çok sayıda kök/çekim üzerinde arama ve filtreleme gerekiyorsa.
-- Offline kişisel notlar, favoriler ve tekrar geçmişi eklenecekse.
-
-## 4. JSON Modeli
-
-Kök yapı:
-
-`catalog.json` kök yapı:
-
-```json
-{
-  "version": 1,
-  "defaultVerbId": "nasara",
-  "lessons": [],
-  "pronouns": [],
-  "verbs": []
-}
-```
-
-`verbs/<id>.json` yapı:
-
-```json
-{
-  "meta": {},
-  "muhtelifeEntries": [],
-  "conjugationSource": {}
-}
-```
-
-`catalog.lessons` alanı ders listesini ve ders detayındaki temel açıklamayı taşır.
-
-`catalog.pronouns` alanı PDF'teki `Şahıs Zamirleri (Ayrı Zamirler)` ve `Şahıs Zamirleri (Bitişik Zamirler)` tablolarını taşır.
-
-`conjugationSource` alanı kıyasi çekimleri runtime'da üretmek için kullanılır.
-
-Repository, bu kaynaktan `muttarideForms` listesini üretir. Runtime form listesi şu seçimlerle filtrelenir:
-
-- `category`: `mazi`, `muzari`, `cahdMutlak`, `cahdMustagrak`, `nefyHal`, `nefyIstikbal`, `tekidNefyIstikbal`, `emrGaib`, `nehyGaib`, `emrHazir`, `nehyHazir`
-- `voice`: `malum`, `mechul`
-- `person`: `first`, `second`, `third`
-- `number`: `singular`, `dual`, `plural`
-- `gender`: `masculine`, `feminine`, `common`
-- `pronounLabel`: kullanıcıya gösterilen şahıs etiketi
-
-`muhtelifeEntries` alanı aynı fiilin `Emsile-i Muhtelife` kalıplarını taşır. Gerekirse `row` ve `column` alanları ile PDF'teki iki sutunlu tablo duzeni runtime'da korunur.
-
-Çoktan seçmeli alıştırmalar seed JSON'da tek tek tutulmaz; çalışma anında generated `muttarideForms` listesinden üretilir.
-
-## 5. Model Sınıfları
-
-`AppData`
+### AppData
 
 - `lessons`
 - `pronouns`
@@ -133,206 +54,200 @@ Repository, bu kaynaktan `muttarideForms` listesini üretir. Runtime form listes
 - `forms`
 - `practiceQuestions`
 
-`CatalogData`
+### ConjugationForm
 
-- içerik sürümü
-- varsayılan fiil
-- ders listesi
-- ayrı ve bitişik zamir listesi
-- fiil manifestleri
+- `category`
+- `voice`
+- `person`
+- `number`
+- `gender`
+- `pronounLabel`
+- `arabic`
+- `meaning`
+- alanlardan türetilen `rule`
 
-`PronounEntry`
+### FormCategory
+
+Toplam 24 kategori vardır. Mâzi, muzâri, nefy, cahd, emir, nehiy, masdar, isim türevleri ve taaccüb biçimlerini kapsar. `isVerb` ve `isNoun` getter'ları UI ayrımında kullanılır.
+
+### PronounEntry
 
 - `kind`: `independent` veya `attached`
 - `person`, `number`, `gender`
-- `labelTr`
-- `arabic`
-- `meaning`
+- `labelTr`, `arabic`, `meaning`
 
-`VerbEntry`
+### MuhtelifeEntry
 
-- `meta`
-- `muhtelifeEntries`
-- `conjugationSource`
-
-`MuhtelifeEntry`
-
-- `type`
-- `label`
-- `arabic`
-- `meaning`
+- `type`, `label`, `arabic`, `meaning`
 - `sortOrder`
-- opsiyonel `row`
-- opsiyonel `column`
+- opsiyonel `row`, `column`
 
-`ConjugationSource`
+## 4. Muttaride Üretimi
 
-- `strategy`
-- `generated`
+`MuttarideGenerator`, şu an yalnız:
 
-`GeneratedConjugationSource`
-
-- `family`
-- `verbClass`
-- `bab`
-- `lemma`
-- şu an desteklenen profil: `sulasi_mujarrad / sahih_salim / nasara_yansuru`
-
-`Lesson`
-
-- Ders listesi ve ders detayının kaynağıdır.
-- `relatedCategory` ile ilgili çekim formlarına bağlanır.
-
-`ConjugationForm`
-
-- Çekim tablosu kartı, şahıs seçici ve tüm formlar listesinde kullanılır.
-- `category`, `voice`, `person`, `number`, `gender` alanlarıyla tanımlanır.
-- Arapça form ve Türkçe anlamı taşır.
-- Kısa kural notu `rule` getter'ı ile bu alanlardan türetilir.
-
-`MuttarideGenerator`
-
-- `nasara` için toplam 339 form üretir.
-- Temel mâzi/muzâri, nefy, cahd, emir ve nehy gruplarını malum/meçhul kırılımlarıyla kurar.
-- İsim türevleri ve taaccüb kategorilerini de aynı runtime listeye ekler.
-- PDF'te çekilmeyen şahıslar için form üretmez; tablo hücreleri bu yüzden boş kalır.
-
-`PracticeQuestion`
-
-- Pratik ekranındaki soru, seçenekler, doğru cevap ve açıklamayı taşır.
-- Repository aşamasında `PracticeQuestionGenerator` tarafından üretilir.
-
-`PracticeQuestionGenerator`
-
-- Her çekim formu için en az iki soru üretir:
-  - anlamı seç
-  - şahsı seç
-- Distractor seçeneklerini aynı `category` + `voice` grubundaki kardeş formlardan toplar.
-- Aynı Arapça formun birden çok şahısta tekrar ettiği durumlarda kardeş filtrelemesini `candidate != form` mantığıyla yapar.
-
-Repository akışı artık önce `catalog.json`, sonra seçili fiilin `verbs/<id>.json` dosyasını okur; ardından `MuttarideGenerator` ile runtime form listesini üretir ve mevcut ekranların kullandığı `AppData` modelini kurar.
-
-## 6. UI Katmanı
-
-Ana ekranlar:
-
-- `HomeScreen`
-- `LessonsScreen`
-- `LessonDetailScreen`
-- `ConjugationScreen`
-- `PracticeScreen`
-- `SourceScreen`
-
-`AppShell`, bu ekranları `IndexedStack` içinde tutar. Böylece alt sekme değişiminde her ekranın state'i korunur.
-
-Paylaşılan widgetlar:
-
-- `AppPage`
-- `FeaturedStudyCard`
-- `StudyStep`
-- `LessonTile`
-- `ArabicResultCard`
-- `AnswerButton`
-- `InfoPanel`
-
-`AppPage`, tüm ekranlarda mobil merkezli sayfa iskeletini sağlar. `ConstrainedBox(maxWidth: 520)` ile webde de mobil okuma genişliği korunur.
-
-Varsayılan olarak sayfa gövdesini `CustomScrollView` içinde render eder. Ancak `scrollable: false` seçeneği ile başlık alanı sabit, gövde alanı ayrı scroll davranışına sahip olacak şekilde de kullanılabilir. Çekim ekranı bu ikinci modu kullanır.
-
-## 7. Çekim Tablosu Davranışı
-
-State:
-
-- `_tableView`: `Çekimler` veya `Zamirler`
-- `_category`: seçili fiil çekim grubu
-- `_voice`: Malum veya Meçhul
-- `_pronounKind`: `Ayrı` veya `Bitişik`
-- `_selectedForm`: seçili şahsın `person + number + gender` kimliği
-
-Filtre:
-
-```dart
-forms.where((form) => form.category == _category && form.voice == _voice)
+```text
+family: sulasi_mujarrad
+verbClass: sahih_salim
+bab: nasara_yansuru
 ```
 
-Kategori veya bina değiştiğinde seçili şahıs indeksle değil kimlikle korunur. Yeni görünür grupta aynı `person + number + gender` eşleşmesi varsa o form aktif kalır; yoksa ilk görünür forma düşülür.
+profilini destekler.
 
-Bazı gruplar PDF gereği tüm şahıslarda çekilmez:
+Üretilen toplam form sayısı: `339`.
 
-- `Emr-i Gâib` ve `Nehy-i Gâib` malum: sadece gâib/gâibe satırları
-- `Emr-i Hâzır` ve `Nehy-i Hâzır` malum: sadece muhatab/muhataba satırları
-- Bu grupların meçhul çekimleri ayrıca mütekellim satırlarını da içerir.
+Üretim kapsamı:
 
-Şahıs seçimi ve tüm formlar görünümü artık seed sırasına bırakılmaz; PDF'deki muttaride düzenini izleyen sabit bir tablo şeması ile çizilir:
+- Mâzi ve muzâri, malum/meçhul
+- Cahd ve nefy kategorileri
+- Emr-i Gâib, Nehy-i Gâib, Emr-i Hâzır, Nehy-i Hâzır
+- Masdar ve isim türevleri
+- Fiil-i Taaccüb
 
-- sütunlar soldan sağa: `Çoğul`, `İkil`, `Tekil`
-- satırlar yukarıdan aşağıya:
-  - `3. Şahıs / Müzekker`
-  - `3. Şahıs / Müennes`
-  - `2. Şahıs / Müzekker`
-  - `2. Şahıs / Müennes`
-  - `1. Şahıs / Ortak`
+Kaynak tabloda bulunmayan şahıs çekimleri üretilmez.
 
-Bu şema hem şahıs seçim tablosunda hem de tüm formlar tablosunda ortak kullanılır.
+Birinci şahıs için ayrı ikil çekim yoktur. Veri yalnız `Ben` ve `Biz` formu üretir. Tablo widget'ı 1. şahıs satırında çoğul ve ikil sütunlarını görsel olarak birleştirir.
 
-`Zamirler` görünümü de aynı şemayı kullanır:
+## 5. Ortak Tablo Modeli
 
-- `Ayrı` görünümü kaynak tablodaki şahıs zamirlerini gösterir.
-- `Bitişik` görünümü kaynak tablodaki bitişik zamirleri gösterir.
-- Bitişik zamir görünümünde fiile geldiğinde fail eki değil çoğunlukla mef'ul zamiri olduğu ayrıca belirtilir.
+`conjugation_screen.dart` aşağıdaki public bileşenleri sağlar:
 
-Etkileşim:
+- `FormsTable`
+- `NounFormsTable`
+- `PronounsPanel`
+- `PdfStyleTable`
+- `FormSelection`
+- `pdfRows`
+- `pdfColumns`
 
-- Şahıs tablosundaki bir hücreye dokunmak aktif formu değiştirir.
-- Tüm formlar tablosundaki bir hücreye dokunmak da aynı seçimi yapar.
-- Aktif hücre her iki tabloda da vurgulanır.
-- İsim kategorilerinde ayrı `NounFormsTable` kullanılır ve çatı seçici gizlenir.
+`LessonsScreen`, Muttaride detaylarında aynı `FormsTable` ve `NounFormsTable` bileşenlerini kullanır. Böylece Dersler ve Tablo menüsü görsel olarak ayrışmaz.
 
-Yerleşim:
+Fiil tablo şeması:
 
-- `Çekim Grubu` seçici, `Malum/Meçhul` seçici ve üstteki sonuç kartı sabittir.
-- `Şahıs Tablosu`, `Seçili Tablo` ve `Tüm Fiil Muttaride Tabloları` alanı alttaki bağımsız scroll bölgesinde akar.
-- Böylece kullanıcı aşağıdaki tabloyu incelerken üst kontrol alanı ekranda kalır.
-
-## 8. Arapça Metin Davranışı
-
-Arapça formlar `Directionality(textDirection: TextDirection.rtl)` içinde render edilir.
-
-Şimdilik font:
-
-```dart
-fontFamily: 'Times New Roman'
+```text
+Çoğul | İkil | Tekil | Şahıs
 ```
 
-Bu kesin nihai karar değildir. Harekeli Arapça metin için ileride özel font seçimi yapılmalı ve Android/iOS üzerinde ayrıca doğrulanmalıdır.
+1. şahıs satırında ilk iki sütun tek `Biz` hücresine dönüşür.
 
-## 9. Hata ve Boş Durumlar
+İsimler için `NounFormsTable`:
 
-Mevcut durum:
+- Müzekker/müennes veya ortak satır
+- Çoğul/ikil/tekil sütun
+- Ana tablonun dışında kırık çoğul kartları
 
-- JSON yükleme hatasında `LoadErrorScreen` gösterilir.
-- Boş form listeleri için özel UI henüz yoktur.
-- Pratik ekranında filtre sonucu 5 formun altına düşülürse soru yerine ayar moduna geri dönülür.
+## 6. Ekran State'leri
 
-Sıradaki iyileştirme:
+### Çekimler
 
-- `forms.isEmpty` durumunda çekim tablosunda açıklayıcı boş durum göster.
-- JSON parse hatalarında hangi alanın eksik olduğunu daha okunur raporla.
-- Repository hata senaryolarını testte izole edebilmek için asset yüklemeyi enjekte edilebilir hale getir.
+`_ConjugationsPageState`:
 
-## 10. Refactor Notu
+- `_category`
+- `_voice`
+- `_selectedForm`
 
-İlk kod organizasyonu refactor'ı tamamlandı. `lib/main.dart` artık sadece uygulamayı başlatır.
+Kategori/çatı değişiminde `person + number + gender` korunur. Aynı seçim yoksa görünür ilk forma düşülür.
 
-Tamamlanan taşıma:
+### Çoktan Seçmeli
 
-1. Model ve repository sınıfları `lib/data/` altına taşındı.
-2. Tema ve ortak widgetlar `lib/shared/` altına taşındı.
-3. Ekranlar `lib/features/<feature>/` altına taşındı.
-4. App shell ve bootstrap kodu `lib/app/` altına taşındı.
-5. Test import yolları güncellendi.
+`_MultipleChoicePracticeScreenState`:
 
-Sıradaki teknik borç:
+- `_setupMode`
+- `_question`
+- `_selectedAnswer`
+- `_selectedCategories`
+- `_selectedVoices`
+- `_selectedPronouns`
 
-- Feature içindeki küçük bileşenleri ayrı dosyalara böl.
-- Route/nav kararlarını ihtiyaç büyüdükçe ayrı bir navigation katmanına taşı.
+Filtre sonucu en az beş form gereklidir.
+
+`PracticeQuestionGenerator.generateSingleQuestion()`:
+
+1. Filtreli listeden rastgele form seçer.
+2. İki soru yönünden birini rastgele seçer.
+3. Aynı Arapça yazılışa sahip kardeşleri yanlış şık adayından çıkarır.
+4. En fazla beş benzersiz şık üretir ve karıştırır.
+
+Soru tipleri:
+
+- `Bu sîganın anlamı hangisi?`
+- `Hangisi bu anlama gelir: "..."?`
+
+Şahıs sorusu üretilmez.
+
+### Tabloyu Doldur
+
+`_TableFillPracticeScreenState`:
+
+- `_category`
+- `_voice`
+- `_includeBrokenPlurals`
+- `_started`
+- `_round`
+- `_placed`
+- `_wrongSlots`
+- `_tokens`
+
+Başlangıçta seçili formlar `_FormToken` listesine dönüştürülür ve `shuffle()` edilir.
+
+Yerleşim kuralları:
+
+- Aynı Arapça yazım doğru kabul edilir.
+- Aynı kategorideki kırık çoğullar birbirinin alanına bırakılabilir.
+- Doğru yerleşim kilitlenir.
+- Yanlış yerleşim yeniden sürüklenebilir.
+- Yanlış dolu hücreye yeni token bırakılırsa eski token havuza döner.
+- Kullanılmayan hedefe bırakılan token havuza döner.
+
+Tamamlanma:
+
+```dart
+tokens.isEmpty &&
+placed.length == forms.length &&
+placed.values.every((item) => item.isCorrect)
+```
+
+Fiiller `_FillTable`, isimler `_NounFillTable` ile çizilir.
+
+## 7. Dersler
+
+`LessonsScreen` üç sabit ana ders sunar:
+
+- Muhtelife
+- Muttaride
+- Şahıs Zamirleri
+
+`catalog.lessons` modeli geriye dönük uyumlulukta ve test fixture'larında bulunur; mevcut ana ders navigasyonu kod içindeki bu üç başlıktan kurulur.
+
+Muhtelife notları ve kategori açıklamaları şu an `lessons_screen.dart` içinde sabit metinlerdir. Tablo verileri `AppData` üzerinden gelir.
+
+## 8. UI Altyapısı
+
+`AppPage`:
+
+- maksimum 520 px içerik genişliği
+- varsayılan `CustomScrollView`
+- opsiyonel sabit başlık + ayrı gövde scroll'u
+- opsiyonel geri butonu
+
+Tema:
+
+- Material 3
+- `seedColor: #1F6F5B`
+- zemin `#F7F6F0`
+- beyaz, ince çerçeveli kartlar
+
+Arapça:
+
+- `Directionality.rtl`
+- `arabicTextStyle()`
+- mevcut font ailesi `Times New Roman`
+
+## 9. Bilinen Sınırlar
+
+- Tek fiil ve tek generated profil
+- Kalıcı skor/ilerleme yok
+- Repository dependency injection yok
+- Veri parse hataları alan bazında kullanıcı dostu raporlanmıyor
+- Özel Arapça fontu paketlenmiş değil
+- `emsile_seed.json` eski seed/uyumluluk asset'i olarak pakette kalıyor; repository aktif olarak katalog yapısını kullanıyor

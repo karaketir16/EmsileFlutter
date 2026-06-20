@@ -1,17 +1,58 @@
-# emsile_flutter
+# Emsile Flutter
 
-A new Flutter project.
+Mobil öncelikli Arapça sarf çalışma uygulaması.
 
-## Getting Started
+## Özellikler
 
-This project is a starting point for a Flutter application.
+- Muhtelife, Muttaride ve Şahıs Zamirleri dersleri
+- Fiil, isim, masdar ve taaccüb kategorileri için çekim tabloları
+- Ayrı ve bitişik zamir tabloları
+- Filtrelenebilir çoktan seçmeli pratik
+- Fiil ve isim tabloları için sürükle-bırak “Tabloyu Doldur” alıştırması
+- Malum/meçhul, şahıs, sayı, cinsiyet ve kırık çoğul desteği
 
-A few resources to get you started if this is your first Flutter project:
+## Veri
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Uygulama yerel JSON verisini kullanır:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```text
+assets/data/catalog.json
+assets/data/verbs/nasara.json
+```
+
+`نصر` fiilinin düzenli çekimleri çalışma anında `MuttarideGenerator` tarafından üretilir.
+
+## Çalıştırma
+
+```bash
+flutter pub get
+flutter run -d chrome
+```
+
+Farklı bir tarayıcı kullanmak için:
+
+```bash
+flutter run -d web-server
+```
+
+Terminalde gösterilen yerel adresi istediğiniz tarayıcıda açabilirsiniz.
+
+## Kontroller
+
+```bash
+dart format lib test
+flutter analyze
+flutter test
+flutter build web
+npm run validate-seed
+```
+
+## Belgeler
+
+- [Tasarım dokümanı](docs/design-document.md)
+- [Düşük seviye tasarım](docs/low-level-design.md)
+- [Test stratejisi](docs/testing.md)
+- [Geliştirme checklist'i](docs/checklist.md)
+- [Ölçeklenme planı](docs/scaling-plan.md)
+
+Uygulama hazırlanırken Zafer ESEN tarafından hazırlanan Emsile Ders Notu'ndan faydalanılmıştır.

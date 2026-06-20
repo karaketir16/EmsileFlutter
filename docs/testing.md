@@ -1,158 +1,129 @@
 # Test Stratejisi
 
-Bu doküman uygulamanın nasıl test edildiğini ve hangi komutların hangi riski azalttığını açıklar.
-
-Bu dosya yaşayan test kaydıdır. Test komutları, kapsam, screenshot çıktıları veya doğrulama kriterleri değiştiğinde aynı değişiklikle birlikte güncel tutulmalıdır.
-
-Not: Bu doküman ve diğer proje kayıtları her zaman güncel tutulmalıdır; test kapsamı veya doğrulama adımları değişirse aynı commit içinde burada da güncelleme yapılmalıdır.
-
-## 1. Çalıştırılan Kontroller
-
-### Format
+## 1. Temel Komutlar
 
 ```bash
 dart format lib test
-```
-
-Amaç:
-
-- Dart kod stilini standart tutmak.
-- Gereksiz diff ve okunabilirlik problemlerini azaltmak.
-
-### Statik Analiz
-
-```bash
 flutter analyze
-```
-
-Amaç:
-
-- Import, lint, tip ve Flutter API kullanım hatalarını yakalamak.
-- Asset refactor sonrası kullanılmayan import veya kırık referansları görmek.
-
-### Widget Testleri (Etkileşimli)
-
-```bash
 flutter test
-```
-
-Kapsam:
-
-- Uygulama JSON asset'i yükleyip ana ekranı render ediyor.
-- Seçili sekme index'ine göre Tablo, Pratik, Dersler ve Kaynak ekranları doğru render oluyor.
-- Çekim tablosu: Meçhul segment tıklaması doğru formu gösteriyor.
-- Çekim tablosu: Çekim grubu menüsünden Muzâri seçimi doğru formu gösteriyor.
-- Çekim tablosu: Şahıs tablosundaki hücre tıklaması sonuç kartını güncelliyor.
-- Çekim tablosu: Tüm formlar tablosundaki hücre tıklaması sonuç kartını güncelliyor.
-- Çekim tablosu: Bina değişiminde seçili şahıs korunuyor.
-- Çekim tablosu: Kategori değişiminde seçili şahıs korunuyor.
-- Çekim tablosu: Üst kontroller sabit kalırken alt tablolar ayrı scroll alanında akıyor.
-- Çekim tablosu: Tüm fiil muttaride tabloları aynı ekrandan erişilebilir oluyor.
-- Çekim tablosu: Zamirler modunda ayrı ve bitişik zamir tabloları render ediliyor.
-- Pratik: Doğru cevap tıklaması "Doğru" geri bildirimini gösteriyor.
-- Pratik: Yanlış cevap tıklaması "Tekrar Bak" geri bildirimini gösteriyor.
-- Pratik: Sonraki Soru butonu bir sonraki soruya geçiyor.
-- Pratik: Ayarlar ekranında kategori filtrelerinin sıfırlanabilmesi ve 5 form sınırının kontrolü.
-- Pratik: Çatı filtresi ve isim çekimlerinin birlikte filtrelenebilmesi.
-- Pratik: Ayarlar ekranında sütun başlıkları ve satır etiketlerine tıklanarak şahıs/zamir gruplarının toplu seçilip kaldırılabilmesi.
-- Pratik: İsim çekim kategorileri için filtreleme ve isim pratiği başlatılabilmesi.
-- Çekim tablosu: İsim kategorisi (İsm-i Fâil vb.) seçildiğinde çatı seçicinin gizlenmesi, isim tablosunda hücre seçimi ve kırık çoğul çipi tıklamaları.
-- Test fixture'ları yeni `person/number/gender` veri modelini kullanıyor.
-- `PracticeQuestionGenerator` unit testleri aynı Arapça form tekrarlarında ayrı şahıs soruları üretildiğini doğruluyor.
-- `MuttarideGenerator` unit testleri generated conjugation kaynağından tüm fiil, isim ve taaccüb çekimlerinin toplam `339` form olarak doğru ve harekeli üretildiğini test ediyor.
-
-Test altyapısı:
-
-- `pumpLoadedApp`: EmsileApp'i gerçek JSON asset'iyle yükler ve ana ekranın hazır olmasını bekler.
-- `_IndexedAppShell`: AppShell ile aynı ekran eşleme mantığını kullanarak seçili index'e göre doğru ekranın render edildiğini doğrular.
-- `richTestData`: Çekim testleri için birden fazla kategori/bina/şahıs içeren yerel veri seti.
-- `multiQuestionData`: "Sonraki Soru" akışını test eden iki soruluk yerel veri seti.
-- `Random(0)` benzeri sabit rastgelelik ile pratik testleri deterministik tutulur.
-
-Not:
-
-Widget testleri Playwright'ın yerini tamamen almaz. `flutter test` etkileşim ve durum değişimini doğrular; `npm run visual-check` ise release web çıktısında görsel akışı ve layout'u kontrol eder.
-
-Widget testleri ChromeDriver veya Playwright kurulumu gerektirmez; tüm platformlarda `flutter test` ile çalışır.
-
-### Codex In-App Browser Doğrulaması
-
-Codex içinde çalışırken yerel web çıktısı ayrıca Codex in-app browser ile açılıp canlı olarak kontrol edilir.
-
-Amaç:
-
-- `build/web` veya servis edilen yerel web çıktısının gerçekten açıldığını görsel olarak doğrulamak.
-- Kritik ekranlarda manuel etkileşimleri hızlıca teyit etmek.
-- Özellikle mobil merkezli layout, sabit üst alanlar ve scroll davranışı gibi ayrıntıları canlı yüzeyde görmek.
-
-Not:
-
-- Bu adım otomatik testlerin yerine geçmez; `flutter test` ve `npm run visual-check` ile birlikte tamamlayıcı doğrulama olarak kullanılır.
-- Bu projede çekim ekranı gibi etkileşimli değişikliklerde Codex in-app browser üzerinden de kontrol yapılmıştır.
-
-### Seed Veri Validasyonu
-
-```bash
+flutter build web
 npm run validate-seed
 ```
 
-Amaç:
-
-- `assets/data/catalog.json` ve `assets/data/verbs/*.json` dosyalarının beklenen yapıyı taşıdığını doğrulamak.
-- Ders, verb manifesti, muhtelife ve muttaride alanlarının boş olmadığını kontrol etmek.
-- PDF'ten taşınan ayrı/bitişik zamir verisinin 15'er satırla tanımlandığını kontrol etmek.
-- Muhtelife satirlarinda varsa `row`/`column` yerlesim bilgilerinin tutarli oldugunu kontrol etmek.
-- `category`, `voice`, `person`, `number` ve `gender` alanlarında temel tutarlılığı yakalamak.
-- Varsayılan fiilin katalog içinde gerçekten tanımlı olduğunu doğrulamak.
-- Pratik soruları artık seed JSON'dan değil, uygulama içinde formlardan üretildiği için doğrulama odağı form verisindedir.
-
-### Web Build
-
-```bash
-flutter build web
-```
-
-Amaç:
-
-- Release web çıktısının üretilebildiğini doğrulamak.
-- JSON asset'in web bundle içine doğru girdiğini kontrol etmek.
-
-### Playwright Görsel Kontrol
-
-```bash
-npm run visual-check
-```
-
-Ön koşul:
+Görsel kontrol:
 
 ```bash
 python3 -m http.server 8090 -d build/web
+npm run visual-check
 ```
 
-veya aynı portta `build/web` servis ediliyor olmalı.
+## 2. Otomatik Test Kapsamı
 
-Amaç:
+Mevcut test paketi `36` test içerir.
 
-- Release web çıktısında ana akışın gerçekten açıldığını doğrulamak.
-- Mobil viewport'ta ana ekran, çekim tablosu, zamir tablosu ve pratik ekranı screenshot'larını üretmek.
-- Console error veya page error durumlarını yakalamak.
+### Veri ve Üretici Testleri
 
-## 2. Mevcut Test Sınırları
+`test/data/muttaride_generator_test.dart`
 
-Henüz yok:
+- `nasara` için 339 form üretimi
+- 24 kategorinin kapsanması
+- Temel mâzi, muzâri, cahd, nefy, emir ve taaccüb örnekleri
+- Kaynak tabloda bulunmayan emir hücrelerinin üretilmemesi
 
-- Repository hata senaryosu testi (`EmsileRepository.load()` başarısız durumu).
-- Veri modelleri için ayrı Dart unit testi.
-- Form filtreleme mantığı için ayrı unit testi.
-- Ders detayından çekim tablosuna/pratiğe hedefli geçiş testi.
-- 360px ve 430px viewport genişlik testleri.
-- Gerçek `AppShell` alt navigasyon tap akışı için daha doğrudan widget testi.
+`test/data/practice_question_generator_test.dart`
 
-## 3. Önerilen Test Genişletmeleri
+- Her form için anlam sorusu üretimi
+- Şahıs sorularının artık üretilmemesi
+- Doğru şıkkın seçenekler içinde bulunması
 
-- `assets/data/emsile_seed.json` için daha katı JSON Schema dosyası ekle (ajv ile).
-- `assets/data/catalog.json` ve `assets/data/verbs/*.json` için şema tabanlı doğrulamayı sıkılaştır.
-- `EmsileRepository.load()` hata durumunu test edilebilir hale getir.
-- Form filtreleme mantığını ayrı unit test ile doğrula.
-- Widget testini 360px ve 430px viewport genişlikleriyle çalıştır.
-- Ders detayından çekim tablosuna/pratiğe hedefli geçiş testleri ekle.
+### Widget Testleri
+
+Genel:
+
+- Gerçek JSON asset'iyle uygulamanın yüklenmesi
+- Ana sayfanın render edilmesi
+- Alt navigasyon ekran eşleşmeleri
+- Ders Muhtelife detayının render edilmesi
+- Hakkında bağlantısının gösterilmesi
+
+Çekimler:
+
+- Meçhul ve kategori geçişleri
+- Şahıs ve form hücresine dokunma
+- Kategori/çatı değişiminde seçimin korunması
+- Aktif tablonun doğru vurgulanması
+- Üst kontroller ve alt scroll ayrımı
+- Dar tabloların mevcut genişliği doldurması
+- İsim tabloları ve kırık çoğul seçimi
+- Ayrı/bitişik zamir tabloları
+
+Çoktan Seçmeli:
+
+- Doğru cevapta `Doğru`
+- Yanlış cevapta `Tekrar Bak`
+- Sonraki soru
+- Beş form altı başlangıç engeli
+- Kategori, çatı, şahıs ve isim filtreleri
+- Satır/sütun toplu seçimleri
+
+Tabloyu Doldur:
+
+- Yanlış bırakmanın kırmızı/X olması
+- Doğru bırakmanın yeşil/tik olması
+- Karşılığı olmayan hücrenin kapalı olması
+- Yanlış token'ın yeniden sürüklenebilmesi
+
+## 3. Determinizm
+
+Pratik ekranları testlerde `Random(1)` gibi sabit random nesneleri alır. Üretim ve karıştırma gerçek uygulamada rastgele, testte tekrarlanabilirdir.
+
+## 4. Seed Validasyonu
+
+`npm run validate-seed`:
+
+- `catalog.json`
+- `verbs/*.json`
+- ders, zamir, manifest ve Muhtelife alanları
+- generated kaynak profili
+- enum değerleri
+
+üzerinde temel yapısal kontrol yapar.
+
+## 5. Görsel Kontrol
+
+`npm run visual-check`, release web çıktısında mobil viewport ekran görüntüleri üretir ve console/page hatalarını yakalar.
+
+Mevcut ekran görüntüleri:
+
+```text
+docs/screenshots/
+  01-home-mobile.png
+  02-table-mobile.png
+  03-practice-mobile.png
+  04-pronouns-mobile.png
+```
+
+Bu görüntüler güncel UI'nin garantisi değildir; büyük görsel değişikliklerde yeniden üretilmelidir.
+
+## 6. Eksik Testler
+
+- İsim Tabloyu Doldur modu için doğrudan widget testi
+- Kırık çoğulları dahil et anahtarı testi
+- Kırık çoğulların eşdeğer hedeflere bırakılması testi
+- Birinci şahıs birleşik `Biz` hücresi için doğrudan widget testi
+- Geri butonları ve route kapanışı testi
+- Repository hata senaryoları
+- 360 px ve 430 px viewport testleri
+- Erişilebilirlik/semantics testi
+
+## 7. Değişiklik Sonrası Minimum Doğrulama
+
+UI veya veri mantığı değiştiğinde:
+
+1. İlgili hedef test
+2. `flutter analyze`
+3. `flutter test`
+
+çalıştırılmalıdır.
+
+Tablo, RTL veya layout değişikliğinde ayrıca web build ve görsel kontrol önerilir.

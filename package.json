@@ -1,7 +1,7 @@
 {
   "name": "emsileflutter",
   "version": "1.0.0",
-  "description": "A new Flutter project.",
+  "description": "Emsile Flutter veri doğrulama ve görsel test araçları.",
   "main": "index.js",
   "directories": {
     "doc": "docs",

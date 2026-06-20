@@ -2,257 +2,169 @@
 
 ## 1. Ürün Vizyonu
 
-Bu uygulama, Zafer ESEN'in "Emsile Ders Notu" içeriğini mobil odaklı, çalışılabilir ve tekrar edilebilir bir öğrenme deneyimine dönüştürmeyi amaçlar.
+Emsile Flutter, Arapça sarf konularını okunabilir derslere, gezilebilir tablolara ve aktif alıştırmalara dönüştürür.
 
-Hedef, PDF'i sadece okunur hale getirmek değil; emsile tablolarını, şahıs zamirlerini, fiil çekimlerini ve açıklamaları kullanıcının aktif olarak öğrenebileceği bir yapıya taşımaktır.
+Kaynak içerik mobil kullanım için yeniden yapılandırılır; açıklamalar, çekimler ve pratikler birbirini tamamlar.
 
-Mevcut uygulama durumu bu vizyonun ilk çalışan sürümünü karşılıyor: tek fiil (`nasara`) üzerinden dersler, çekim tabloları, muhtelife görünümü ve filtrelenebilir çoktan seçmeli pratik akışı birlikte çalışıyor.
-
-## 2. Hedef Platform
-
-- Öncelik: Mobil
-- Geliştirme ortamı: Flutter Web
-- Sonraki hedefler: Android ve iOS
-
-Web geliştirme sırasında tüm ekranlar mobil genişlikte tasarlanmalı ve masaüstünde de mobil önizleme mantığı korunmalıdır.
-
-## 3. Hedef Kullanıcı
+## 2. Hedef Kullanıcı ve Platform
 
 - Arapça sarf öğrenen başlangıç ve orta seviye öğrenciler
-- Emsile metnini takip eden medrese, kurs veya bireysel çalışma kullanıcıları
-- Tabloları ezberlemek yerine örnek, tekrar ve alıştırma ile çalışmak isteyen kullanıcılar
+- Emsile metnini ders, kurs veya bireysel çalışmada takip edenler
+- Öncelikli arayüz: mobil
+- Mevcut geliştirme ve dağıtım hedefi: Flutter Web
+- Kod tabanı Android ve iOS hedefleriyle uyumludur
 
-## 4. Tasarım İlkeleri
+Web görünümü `AppPage` içindeki `maxWidth: 520` sınırıyla mobil okuma genişliğini korur.
 
-- PDF görünümünü birebir kopyalamak yerine, içeriği mobilde okunabilir küçük parçalara böl.
-- Arapça metni ana bilgi olarak konumlandır; Türkçe açıklama destekleyici olmalı.
-- Tabloları mobilde yatay sıkıştırmak yerine kartlara, filtrelere ve detay ekranlarına dönüştür.
-- Kullanıcıyı her ekranda bir sonraki çalışılabilir adıma yönlendir.
-- Görsel dil sade, ciddi ve öğrenme odaklı olmalı.
-- Arayüz yoğun ama boğucu olmamalı; özellikle Arapça metin için ferah satır aralıkları kullanılmalı.
+## 3. Tasarım İlkeleri
 
-## 5. Önerilen Ürün Modeli
+- Arapça metin ana bilgidir; Türkçe metin açıklayıcıdır.
+- Geleneksel sıra ve terminoloji korunur, arayüz mobil kullanım için sadeleştirilir.
+- Tablolar aynı görsel dili ve aynı `Çoğul / İkil / Tekil` sırasını kullanır.
+- Birinci şahısta Arapçada ikil çekim bulunmadığı için ikil ve çoğul alanı birleşik `Biz` hücresi olarak gösterilir.
+- Doğru/yanlış durumları yalnız renkle değil, tik ve X simgeleriyle de anlatılır.
+- Karşılığı olmayan tablo hücreleri koyu ve kapalı gösterilir.
 
-Önerilen yaklaşım: İnteraktif sarf tablosu + hafif alıştırma sistemi.
+## 4. Ana Navigasyon
 
-Bu modelde uygulama dört ana bölümden oluşur:
+Alt navigasyon beş bölümdür:
 
-1. Ana Sayfa
+1. Ana
 2. Dersler
-3. Çekim Tablosu
-4. Alıştırma
+3. Tablo
+4. Pratik
+5. Hakkında
 
-PDF kaynak bölümü ayrıca tutulur.
+`AppShell`, ekranları `IndexedStack` içinde tuttuğu için sekmeler arasında geçişte ekran state'i korunur.
 
-## 6. Ana Ekranlar
+## 5. Ekranlar
 
-### 6.1 Ana Sayfa
+### 5.1 Ana
 
-Amaç: Kullanıcıya kaldığı yerden devam etme ve hızlı tekrar imkanı vermek.
+Ana sayfa uygulamanın ne işe yaradığını ve bölümlerin nasıl kullanılacağını açıklar:
 
-İçerik:
+- Dersler: konuyu ve açıklamaları oku
+- Tablo: çekimleri karşılaştır
+- Pratik: çoktan seçmeli veya tablo doldurma alıştırması yap
 
-- Günün kısa çalışma önerisi
-- Son çalışılan konu
-- Hızlı tekrar butonu
-- Öğrenme ilerlemesi
-- En son açılan çekim tablosu
+İlerleme, günlük hedef veya kullanıcı hesabı henüz yoktur.
 
-Beklenen bileşenler:
+### 5.2 Dersler
 
-- Üst başlık alanı
-- İlerleme göstergesi
-- Devam et aksiyonu
-- Küçük çalışma kartları
-
-### 6.2 Dersler
-
-Amaç: PDF'teki konu akışını mobil ders listesine dönüştürmek.
-
-Örnek konu başlıkları:
+Dersler ekranında üç ana başlık bulunur:
 
 - Emsile-i Muhtelife
+- Emsile-i Muttaride
 - Şahıs Zamirleri
-- Fiil-i Mâzi
-- Fiil-i Muzâri
-- Masdar
-- İsm-i Fâil
-- İsm-i Mef'ul
-- Nefy-i Hâl
-- Nefy-i İstikbâl
-- Cahd-ı Mutlak
-- Cahd-ı Mustağrak
-- Emir ve Nehiy
 
-Ders ekranında:
+Muhtelife:
 
-- Kısa açıklama
-- Örnek Arapça form
-- Türkçe anlam
-- İlgili çekim tablosuna geçiş
-- İlgili alıştırmalara geçiş
+- Emsile sırasındaki kalıplar ve anlamları
+- Konuyla ilgili açıklama notları
 
-### 6.3 Çekim Tablosu
+Muttaride:
 
-Amaç: PDF'teki geniş tabloları mobilde gezilebilir hale getirmek.
+- Mevcut tüm fiil ve isim kategorileri
+- Kategori açıklaması
+- Tablo menüsüyle aynı fiil veya isim tablosu
+- Fiillerde malum ve meçhul ayrımı
 
-Temel etkileşim:
+Şahıs Zamirleri:
 
-- Kullanıcı ana tablo modunu seçer: Çekimler veya Zamirler
-- Kullanıcı kök/örnek fiil seçer: örneğin `نصر`
-- Kullanıcı kategori seçer: Mâzi, Muzâri, Nefy, Emir, İsimler
-- Kullanıcı bina seçer: Malum, Meçhul
-- Kullanıcı şahıs seçer: 1., 2., 3. şahıs
-- Kullanıcı sayı/cinsiyet seçer: müfred, tesniye, cemi; müzekker, müennes
-- Zamirler modunda kullanıcı ayrı zamirler ile bitişik zamirler arasında geçiş yapar
+- Ayrı zamirler
+- Bitişik zamirler
+- Bitişik zamirlerin iyelik veya mef‘ûl görevine ilişkin kısa not
 
-Çıktı:
+### 5.3 Tablo
 
-- Büyük Arapça form
-- Latin/Türkçe açıklama
-- Kısa kural notu
-- Aynı satırdaki diğer şahıslara geçiş
-- Zamirler için PDF düzenine yakın `Çoğul / İkil / Tekil` tablosu
+Tablo menüsü iki alt başlığa ayrılır:
 
-Mobil tasarım:
+- Çekimler
+- Zamirler
 
-- Üstte segment/tab kontrolü
-- Ortada büyük Arapça sonuç kartı
-- Altta şahıs seçici
-- Detayda tüm çekim listesi
+Çekimler ekranında:
 
-### 6.4 Alıştırma
+- Kategori seçilir.
+- Fiillerde malum/meçhul seçilir.
+- Şahıs veya isim hücresine dokunularak form seçilir.
+- Seçili formun Arapçası, anlamı ve kuralı gösterilir.
+- Tüm tablolar aynı sayfadan açılabilir.
 
-Amaç: Pasif okumayı aktif hatırlamaya dönüştürmek.
+Fiil tabloları sabit şemayı kullanır:
 
-Mevcut MVP alıştırması:
+- Sütunlar: Çoğul, İkil, Tekil
+- Satırlar: 3. şahıs müzekker, 3. şahıs müennes, 2. şahıs müzekker, 2. şahıs müennes, 1. şahıs ortak
+- 1. şahısta `Biz` hücresi çoğul ve ikil sütunlarını birleştirir
 
-- Çoktan seçmeli: verilen şahsa veya anlama göre doğru çekimi seç
+İsim tabloları sayı ve varsa cinsiyete göre düzenlenir. Kırık çoğullar tablonun altında ayrıca gösterilir.
 
-Planlanan sonraki alıştırmalar:
+### 5.4 Pratik
 
-- Kart çevirme: Arapça form -> anlam
-- Boşluk doldurma: eksik harf veya ek tamamla
-- Eşleştirme: şahıs zamiri -> çekim formu
+Pratik ekranı iki moda ayrılır.
 
-Alıştırma ekranında:
+#### Çoktan Seçmeli
 
-- Başlamadan önce kategori/çatı/şahıs-zamir filtreleri
-- Kısa soru
-- Büyük Arapça metin
-- Cevap seçenekleri
-- Sonuç geri bildirimi
-- Bir sonraki soru
+- Kategori, çatı, fiil şahısları ve isim özellikleri filtrelenebilir.
+- Kategori seçimi iki sütunlu kompakt kartlarla yapılır.
+- En az beş eşleşen form gerekir.
+- İki soru tipi vardır:
+  - Arapça sîgadan Türkçe anlamı bulma
+  - Türkçe anlamdan Arapça sîgayı bulma
+- Şıklar en fazla beş seçenektir ve karıştırılır.
+- Yanlış seçimde yalnız seçilen şık kırmızı/X olur; doğru cevap açıklanmaz.
+- Doğru seçimde seçilen şık yeşil/tik olur.
+- Sonraki Soru ile yeni rastgele soru üretilir.
 
-### 6.5 Kaynak ve PDF
+#### Tabloyu Doldur
 
-Amaç: Orijinal kaynağı ve kullanım şartlarını açıkça göstermek.
+- Fiil veya isim kategorisi seçilir.
+- Fiillerde malum/meçhul seçilir.
+- İsimlerde kırık çoğullar isteğe bağlı olarak dahil edilir.
+- Sîgalar üstte karışık sırada ve üç satırlık sabit havuzda gösterilir.
+- Kullanıcı sîgaları tablo hücrelerine sürükler.
+- Doğru yerleşim yeşil/tik, yanlış yerleşim kırmızı/X olur.
+- Yanlış yerleşim yeniden sürüklenebilir; başka cevap bırakılırsa eski cevap havuza döner.
+- Geçersiz alana bırakılan yanlış cevap havuza geri döner.
+- Aynı Arapça yazılışa sahip çekimler eşdeğer kabul edilir.
+- Kırık çoğullar, aynı kategorideki herhangi bir kırık çoğul alanına bırakılabilir.
+- Yalnız bütün cevaplar doğruysa “Tablo tamamlandı” gösterilir.
 
-İçerik:
+### 5.5 Hakkında
 
-- Kaynak: Zafer ESEN, Emsile Ders Notu
-- Güncelleme tarihi: 01.01.2025
-- Yerel PDF: `docs/Emsile_Ders_Notu_Zafer_ESEN_01.01.2025.pdf`
-- Kaynak bağlantısı ve iletişim bilgisi
-- PDF'i uygulama içinde açma veya dışarıda görüntüleme seçeneği
+- İçerik kaynağına ilişkin atıf gösterilir.
+- Kaynak bağlantısı dış tarayıcıda açılır.
 
-Not: İçerik uygulamaya dönüştürülürken kaynak gösterimi korunmalı, ticari kullanım veya içerik değişikliği planlanıyorsa izin konusu ayrıca netleştirilmelidir.
+## 6. Görsel Dil
 
-## 7. Navigasyon Modeli
+- Material 3
+- Kırık beyaz uygulama zemini
+- Derin yeşil ana vurgu
+- Beyaz, ince çerçeveli kartlar
+- Yeşil/tik: doğru
+- Kırmızı/X: yanlış
+- Mavi-gri: sürükleme hedefi
+- Koyu gri ve blok simgesi: kullanılamayan hücre
 
-Alt navigasyon önerisi:
+## 7. Mevcut Kapsam
 
-- Ana Sayfa
-- Dersler
-- Tablo
-- Alıştırma
-- Kaynak
+- Tek fiil kataloğu: `نصر`
+- 24 `FormCategory`
+- Generated fiil, isim, masdar ve taaccüb çekimleri
+- Muhtelife ve zamir verileri
+- Ders, tablo ve iki pratik modu
 
-Mobilde bu yapı hızlı erişim sağlar. Web geliştirme sırasında da aynı alt navigasyon korunabilir.
+Henüz yok:
 
-## 8. Görsel Dil
-
-Genel ton:
-
-- Sade
-- Okunaklı
-- Ders/defter hissi veren
-- Modern ama gösterişsiz
-
-Renk önerisi:
-
-- Arka plan: kırık beyaz veya çok açık gri
-- Ana vurgu: derin yeşil veya lacivert
-- İkincil vurgu: altın/sarımsı küçük detaylar
-- Uyarı/geri bildirim: yeşil, kırmızı, amber
-
-Tipografi:
-
-- Türkçe metin için modern sans-serif
-- Arapça metin için okunaklı, harekeleri iyi gösteren font
-- Arapça formlar kart içinde büyük ve sağdan sola hizalı olmalı
-
-## 9. Veri Modeli Taslağı
-
-Mevcut sürümde içerikler yerel JSON asset'lerinde tutulur ve repository tarafından runtime modele dönüştürülür.
-
-Not: Çok fiilli ve tüm `Emsile-i Muhtelife` hedefi için önerilen ölçeklenebilir veri mimarisi ayrı olarak [docs/scaling-plan.md](/Users/karaketir16/Documents/EmsileFlutter/docs/scaling-plan.md) içinde tutulur. Bu dosya ürün/tasarım bakışını, `scaling-plan.md` ise veri ve genişleme mimarisini detaylandırır.
-
-UI'nin beslendiği runtime yapı örneği:
-
-```json
-{
-  "id": "fiil_mazi_malum",
-  "title": "Fiil-i Mâzi Bina-i Malum",
-  "category": "mazi",
-  "voice": "malum",
-  "description": "Geçmiş zamanda yapılan fiili ifade eder.",
-  "forms": [
-    {
-      "person": "third",
-      "number": "singular",
-      "gender": "masculine",
-      "arabic": "نَصَرَ",
-      "meaning": "Yardım etti."
-    }
-  ]
-}
-```
-
-## 10. MVP Kapsamı
-
-Tamamlanan ilk sürüm kapsamı:
-
-- Mobil odaklı Flutter proje iskeleti
-- Ana sayfa
-- Ders listesi ve ders detay ekranı
-- Muhtelife tablosu görünümü
-- İnteraktif çekim tablosu
-- Filtrelenebilir çoktan seçmeli alıştırma
-- Kaynak ekranı
-- Örnek veri seti: `نصر` fiili üzerinden fiil, isim ve taaccüb formları
-
-MVP dışında bırakılacaklar:
-
+- Çok fiilli katalog
+- Kalıcı ilerleme veya skor
 - Kullanıcı hesabı
-- Bulut senkronizasyonu
 - Sesli okuma
-- Tam PDF veri çıkarımı
-- Gelişmiş istatistik ve seviye sistemi
-- Çok fiilli katalog gezgini
+- Arama, favori ve kişisel notlar
 
-## 11. Riskler ve Dikkat Edilecekler
+## 8. Başarı Kriterleri
 
-- Arapça metinlerde sağdan sola yazım ve hareke gösterimi dikkatle test edilmeli.
-- PDF'ten çıkarılan metin doğrudan güvenilir veri gibi kullanılmamalı; elle kontrol edilerek yapılandırılmalı.
-- Tablolar mobilde okunmaz hale gelmemeli; kart ve filtre yaklaşımı korunmalı.
-- Kaynak gösterimi uygulama içinde görünür olmalı.
-- İçerik lisansı ve izin şartları uygulamanın yayınlanma planına göre tekrar değerlendirilmeli.
-
-## 12. Başarı Kriterleri
-
-- Kullanıcı bir çekimi PDF açmadan bulabiliyor.
-- Kullanıcı bir konuyu okuyup hemen o konuyla ilgili alıştırma çözebiliyor.
-- Arapça metinler mobil ekranda net ve hatasız görünüyor.
-- Uygulama ilk açılışta ne yapılacağını açıkça hissettiriyor.
-- Tasarım mobilde tek elle kullanılabilir kalıyor.
+- Kullanıcı ayrı bir belge açmadan bir konuyu okuyabilir.
+- Bir sîgayı şahıs, sayı, cinsiyet ve çatı bağlamında bulabilir.
+- Derslerde gördüğü tabloyu aynı görsel yapıyla pratikte doldurabilir.
+- Arapça metin ve harekeler mobil ekranda okunabilir kalır.
+- Yanlış ve doğru durumları renk görmeden de ayırt edilebilir.

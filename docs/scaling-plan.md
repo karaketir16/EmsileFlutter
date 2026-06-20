@@ -1,23 +1,23 @@
 # Ölçeklenebilir Veri Tasarımı
 
-Bu doküman, uygulamanın tek örnek fiilden tüm `Emsile-i Muhtelife` içeriğine ve ardından çok sayıda sülasi fiile genişleyebilmesi için önerilen veri mimarisini tanımlar.
+Bu doküman, uygulamanın mevcut tek fiilli katalogdan çok sayıda sülasi fiile genişleyebilmesi için kullanılan ve planlanan veri mimarisini tanımlar.
 
 Bu dosya yaşayan teknik tasarım kaydıdır. Veri şeması, içerik organizasyonu, import akışı veya ölçeklenme kararları değiştiğinde aynı değişiklikle birlikte güncel tutulmalıdır.
 
 ## 1. Problem Tanımı
 
-Mevcut MVP veri modeli tek bir `forms[]` listesi ile iyi çalışır; ancak şu hedefler için yeterince ölçekli değildir:
+Mevcut runtime model tek bir `forms[]` listesi ile ekranları besler; kaynak veri ise katalog, fiil dosyası ve generator olarak ayrılmıştır. Sonraki ölçeklenme ihtiyacı şunlardır:
 
 - tek fiil yerine çok sayıda fiil eklemek
 - `Emsile-i Muhtelife` ve `Emsile-i Muttaride` içeriklerini aynı veri kaynağında taşımak
 - sülasi fiilleri kök, bab ve kalıp düzeyinde filtrelemek
 - ileride arama, favori, tekrar geçmişi ve kullanıcı notları eklemek
 
-Bu yüzden veri katmanı "ekranı besleyen sabit seed" olmaktan çıkıp "genişleyebilir içerik kataloğu" haline gelmelidir.
+Veri katmanı sabit seed olmaktan çıkarılmış, genişleyebilir içerik kataloğuna geçirilmiştir. Bir sonraki adım aynı yapıya yeni fiil ve generator profilleri eklemektir.
 
-## 2. Önerilen Mimari
+## 2. Mevcut Mimari
 
-Önerilen yaklaşım: `normalized JSON + runtime composition + rule-based generation`
+Uygulanan yaklaşım: `normalized JSON + runtime composition + rule-based generation`
 
 Bu yapıda veri tek bir büyük dosyada tutulmaz; bunun yerine birbirini tamamlayan birkaç kaynağa ayrılır:
 
@@ -31,16 +31,16 @@ Bu yapıda veri tek bir büyük dosyada tutulmaz; bunun yerine birbirini tamamla
 
 ## 3. Dosya Organizasyonu
 
-Önerilen yapı:
+Mevcut yapı:
 
 ```text
 assets/data/
   catalog.json
   verbs/
     nasara.json
-    daraba.json
-    fataha.json
 ```
+
+`daraba.json` ve `fataha.json` gibi yeni fiiller henüz eklenmemiştir.
 
 ### 3.1 catalog.json
 
@@ -74,7 +74,7 @@ Katalog dosyası uygulama seviyesindeki içerik kayıtlarını taşır:
 
 Her fiil kendi dosyasında tutulur.
 
-Önerilen bölümler:
+Mevcut bölümler:
 
 - `meta`
 - `muhtelifeEntries`
@@ -176,7 +176,7 @@ Bu yaklaşımın avantajları:
 
 Uygulama JSON dosyalarını doğrudan UI modeli olarak kullanmaz.
 
-Önerilen akış:
+Mevcut akış:
 
 1. `catalog.json` yüklenir
 2. varsayılan fiil veya seçilen fiil manifesti bulunur
@@ -187,46 +187,49 @@ Uygulama JSON dosyalarını doğrudan UI modeli olarak kullanmaz.
 
 Bu sayede UI bir anda bütünüyle yeniden yazılmak zorunda kalmaz.
 
-## 7. Geçiş Planı
+## 7. Durum ve Sonraki Fazlar
 
-### Faz 1
+### Tamamlandı: Katalog Ayrımı
 
-- `catalog.json` oluştur
-- `verbs/nasara.json` oluştur
-- repository'yi yeni yapıyı okuyacak hale getir
-- mevcut çekim ekranını `nasara` üzerinden çalıştırmaya devam et
+- [x] `catalog.json`
+- [x] `verbs/nasara.json`
+- [x] Repository composition
+- [x] Varsayılan fiil manifesti
 
-### Faz 2
+### Tamamlandı: Runtime Üretim
 
-- ilk `generated` conjugation strategy'sini ekle
-- `nasara` için flat `muttarideForms` listesini kaldır
-- `sahih_salim` + `nasara_yansuru` profiliyle runtime üretime geç
+- [x] `generated` strategy
+- [x] `sahih_salim + nasara_yansuru` profili
+- [x] Fiil, isim, masdar ve taaccüb formlarının runtime üretimi
+- [x] Ders, tablo ve pratik ekranlarının aynı runtime formları kullanması
 
-### Faz 3
+### Kısmen Tamamlandı: İçerik Görünümleri
 
-- `Muhtelife Explorer` ekranı ekle
-- muhtelife içeriklerini ayrı görünümde göster
-- fiil listesi ekranını ekle
+- [x] Muhtelife ders görünümü
+- [x] Muttaride ders görünümü
+- [x] Zamir ders ve tablo görünümü
+- [ ] Bağımsız filtrelenebilir Muhtelife Explorer
+- [ ] Fiil listesi ve fiil seçici
 
-### Faz 4
+### Sonraki Faz: Çok Fiilli Katalog
 
 - birden çok sülasi fiil ekle
 - arama ve filtreleme ekle
 - içerik doğrulamasını schema tabanlı sıkılaştır
 
-### Faz 5
+### Uzun Vadeli Faz
 
 - gerekirse SQLite'a geç
 - kullanıcı ilerleme verisini kalıcı tut
 
-## 8. Uygulama Kararı
+## 8. Güncel Kararlar
 
-Bu proje için önerilen yol:
+Bu proje için geçerli kararlar:
 
 - hemen SQLite ile başlamamak
 - fakat veri modelini SQLite-ready kurmak
-- kısa vadede `normalized JSON + repository composition` ile ilerlemek
+- `normalized JSON + repository composition` ile ilerlemek
 - `muttaride` tarafında mümkün olan çekimleri rule-based generate etmek
 - semai veya istisnai alanlarda override/veri tabanlı yaklaşımı korumak
 
-Bu karar, içerik henüz büyüme aşamasındayken diff okunabilirliğini ve veri düzenleme kolaylığını korur.
+Yeni fiil eklenirken önce generator profilinin genellenebilirliği değerlendirilmeli; semai veya istisnai biçimler veri/override olarak tutulmalıdır.
