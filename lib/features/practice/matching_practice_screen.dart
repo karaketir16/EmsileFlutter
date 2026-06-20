@@ -6,8 +6,8 @@ import 'package:emsile_flutter/shared/widgets/arabic_text.dart';
 import 'package:flutter/material.dart';
 
 enum MatchingType {
-  wordToSiga('Arapça ↔ Sîga Adı'),
   wordToMeaning('Arapça ↔ Türkçe Anlam'),
+  wordToSiga('Arapça ↔ Sîga Adı'),
   mixed('Karışık');
 
   const MatchingType(this.label);
@@ -42,7 +42,7 @@ class _MatchingPracticeScreenState extends State<MatchingPracticeScreen> {
   // Config & State
   bool _setupMode = true;
   bool _completedMode = false;
-  MatchingType _matchingType = MatchingType.wordToSiga;
+  MatchingType _matchingType = MatchingType.wordToMeaning;
 
   late List<MuhtelifeEntry> _allEntries;
   List<_MatchingItem> _leftItems = [];
