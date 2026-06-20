@@ -75,7 +75,7 @@ void main() {
       ),
     );
 
-    expect(find.text('Pratik Ayarları'), findsOneWidget);
+    expect(find.text('Çoktan Seçmeli'), findsOneWidget);
     await startPractice(tester);
 
     expect(find.text('Pratik'), findsOneWidget);
@@ -135,7 +135,8 @@ void main() {
     notifier.value = 3; // Pratik
     await tester.pumpAndSettle();
 
-    expect(find.text('Pratik Ayarları'), findsOneWidget);
+    expect(find.text('Çoktan Seçmeli'), findsOneWidget);
+    expect(find.text('Tabloyu Doldur'), findsOneWidget);
   });
 
   testWidgets('selected index 1 renders lessons screen', (
@@ -987,6 +988,7 @@ void main() {
           ),
         ),
       );
+      await openMultipleChoicePractice(tester);
 
       // Başlangıçta 6 form eşleştiği için canStart true olmalı
       expect(find.text('Eşleşen Form Sayısı:'), findsOneWidget);
@@ -1033,6 +1035,7 @@ void main() {
           ),
         ),
       );
+      await openMultipleChoicePractice(tester);
 
       // Verify column deselect/select via 'Tekil' header
       await tester.ensureVisible(find.text('Tekil').first);
@@ -1053,6 +1056,87 @@ void main() {
       await tester.tap(find.text('3. Şh. Müzekker\n(Gâib)'));
       await tester.pumpAndSettle();
       expect(find.text('3'), findsOneWidget);
+    },
+  );
+
+  testWidgets(
+    'practice: table fill marks wrong and correct drops and closes empty slots',
+    (WidgetTester tester) async {
+      await tester.binding.setSurfaceSize(const Size(500, 1000));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: SafeArea(
+              child: PracticeScreen(data: testData, random: Random(1)),
+            ),
+          ),
+        ),
+      );
+
+      await tester.tap(find.text('Tabloyu Doldur'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Tabloyu Başlat'));
+      await tester.pumpAndSettle();
+
+      const targetKey = ValueKey('drop-third-singular-masculine');
+      final target = find.byKey(targetKey);
+      final wrongToken = find.ancestor(
+        of: find.text('نَصَرْتَ'),
+        matching: find.byWidgetPredicate((widget) => widget is Draggable),
+      );
+
+      await tester.dragFrom(
+        tester.getCenter(wrongToken),
+        tester.getCenter(target) - tester.getCenter(wrongToken),
+      );
+      await tester.pumpAndSettle();
+
+      var targetWidget = tester.widget<AnimatedContainer>(target);
+      expect(
+        (targetWidget.decoration as BoxDecoration).color,
+        const Color(0xFFFFDCDC),
+      );
+      expect(
+        find.descendant(of: target, matching: find.byIcon(Icons.cancel)),
+        findsOneWidget,
+      );
+      expect(find.text('نَصَرْتَ'), findsOneWidget);
+
+      await tester.tap(find.text('Konuyu Değiştir'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Tabloyu Başlat'));
+      await tester.pumpAndSettle();
+
+      final correctTarget = find.byKey(targetKey);
+      final correctToken = find.ancestor(
+        of: find.text('نَصَرَ'),
+        matching: find.byWidgetPredicate((widget) => widget is Draggable),
+      );
+      await tester.dragFrom(
+        tester.getCenter(correctToken),
+        tester.getCenter(correctTarget) - tester.getCenter(correctToken),
+      );
+      await tester.pumpAndSettle();
+
+      targetWidget = tester.widget<AnimatedContainer>(correctTarget);
+      expect(
+        (targetWidget.decoration as BoxDecoration).color,
+        const Color(0xFFE0F3E5),
+      );
+      expect(
+        find.descendant(
+          of: correctTarget,
+          matching: find.byIcon(Icons.check_circle),
+        ),
+        findsOneWidget,
+      );
+
+      final closed = tester.widget<Container>(
+        find.byKey(const ValueKey('drop-second-singular-feminine')),
+      );
+      expect(closed.color, const Color(0xFF5F625F));
     },
   );
 
@@ -1126,6 +1210,7 @@ void main() {
           ),
         ),
       );
+      await openMultipleChoicePractice(tester);
 
       // Initially, ismFail is selected by default in filters, and we have 7 forms matching.
       expect(find.text('7'), findsOneWidget);
@@ -1343,9 +1428,16 @@ Future<void> selectConjugationCategory(
 }
 
 Future<void> startPractice(WidgetTester tester) async {
+  await openMultipleChoicePractice(tester);
   await tester.ensureVisible(find.text('Pratiğe Başla'));
   await tester.pumpAndSettle();
   await tester.tap(find.text('Pratiğe Başla'));
+  await tester.pumpAndSettle();
+}
+
+Future<void> openMultipleChoicePractice(WidgetTester tester) async {
+  if (find.text('Çoktan Seçmeli').evaluate().isEmpty) return;
+  await tester.tap(find.text('Çoktan Seçmeli'));
   await tester.pumpAndSettle();
 }
 

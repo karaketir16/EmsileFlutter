@@ -1,22 +1,135 @@
 import 'dart:math';
 import 'package:emsile_flutter/data/models.dart';
 import 'package:emsile_flutter/data/practice_question_generator.dart';
+import 'package:emsile_flutter/features/practice/table_fill_practice_screen.dart';
 import 'package:emsile_flutter/shared/widgets/app_page.dart';
 import 'package:emsile_flutter/shared/widgets/arabic_text.dart';
 import 'package:emsile_flutter/shared/widgets/info_panel.dart';
 import 'package:flutter/material.dart';
 
-class PracticeScreen extends StatefulWidget {
+class PracticeScreen extends StatelessWidget {
   const PracticeScreen({required this.data, this.random, super.key});
 
   final AppData data;
   final Random? random;
 
   @override
-  State<PracticeScreen> createState() => _PracticeScreenState();
+  Widget build(BuildContext context) {
+    return AppPage(
+      title: 'Pratik',
+      subtitle: 'Çalışma biçimini seç.',
+      child: Column(
+        children: [
+          _PracticeModeCard(
+            icon: Icons.quiz_outlined,
+            title: 'Çoktan Seçmeli',
+            body:
+                'Arapça ve Türkçe anlamlar arasında doğru cevabı seçeneklerden bul.',
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => Scaffold(
+                  body: SafeArea(
+                    child: MultipleChoicePracticeScreen(
+                      data: data,
+                      random: random,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
+          _PracticeModeCard(
+            icon: Icons.view_module_outlined,
+            title: 'Tabloyu Doldur',
+            body:
+                'Karışık verilen çekimleri sürükleyerek doğru tablo hücrelerine yerleştir.',
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => Scaffold(
+                  body: SafeArea(
+                    child: TableFillPracticeScreen(data: data, random: random),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }
 
-class _PracticeScreenState extends State<PracticeScreen> {
+class _PracticeModeCard extends StatelessWidget {
+  const _PracticeModeCard({
+    required this.icon,
+    required this.title,
+    required this.body,
+    required this.onTap,
+  });
+
+  final IconData icon;
+  final String title;
+  final String body;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return Card(
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.all(18),
+          child: Row(
+            children: [
+              Container(
+                width: 52,
+                height: 52,
+                decoration: BoxDecoration(
+                  color: scheme.primaryContainer,
+                  borderRadius: BorderRadius.circular(14),
+                ),
+                child: Icon(icon, color: scheme.primary),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(title, style: Theme.of(context).textTheme.titleMedium),
+                    const SizedBox(height: 4),
+                    Text(body),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class MultipleChoicePracticeScreen extends StatefulWidget {
+  const MultipleChoicePracticeScreen({
+    required this.data,
+    this.random,
+    super.key,
+  });
+
+  final AppData data;
+  final Random? random;
+
+  @override
+  State<MultipleChoicePracticeScreen> createState() =>
+      _MultipleChoicePracticeScreenState();
+}
+
+class _MultipleChoicePracticeScreenState
+    extends State<MultipleChoicePracticeScreen> {
   static const _verbPronouns = [
     'O (er.)',
     'O ikisi (er.)',
@@ -69,7 +182,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
   }
 
   @override
-  void didUpdateWidget(covariant PracticeScreen oldWidget) {
+  void didUpdateWidget(covariant MultipleChoicePracticeScreen oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.data != widget.data) {
       _initializeSelections();
@@ -364,6 +477,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
 
     return AppPage(
       title: 'Pratik Ayarları',
+      leading: _practiceBackButton(context),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -721,6 +835,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
 
     return AppPage(
       title: 'Pratik',
+      leading: _practiceBackButton(context),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -812,6 +927,14 @@ class _PracticeScreenState extends State<PracticeScreen> {
       ),
     );
   }
+}
+
+Widget _practiceBackButton(BuildContext context) {
+  return IconButton(
+    onPressed: () => Navigator.of(context).pop(),
+    icon: const Icon(Icons.arrow_back),
+    tooltip: 'Geri',
+  );
 }
 
 class AnswerButton extends StatelessWidget {
