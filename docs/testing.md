@@ -19,7 +19,7 @@ npm run visual-check
 
 ## 2. Otomatik Test Kapsamı
 
-Mevcut test paketi `36` test içerir.
+Mevcut test paketi `44` test içerir.
 
 ### Veri ve Üretici Testleri
 
@@ -35,6 +35,9 @@ Mevcut test paketi `36` test içerir.
 - Her form için anlam sorusu üretimi
 - Şahıs sorularının artık üretilmemesi
 - Doğru şıkkın seçenekler içinde bulunması
+- Runtime sorularında yalnız iki soru yönünün kullanılması
+- Şıkların benzersiz ve en fazla beş adet olması
+- Aynı Arapça yazılışın distractor olarak tekrarlanmaması
 
 ### Widget Testleri
 
@@ -61,6 +64,7 @@ Genel:
 
 - Doğru cevapta `Doğru`
 - Yanlış cevapta `Tekrar Bak`
+- Yanlış cevapta doğru cevabın ve açıklamanın gizli kalması
 - Sonraki soru
 - Beş form altı başlangıç engeli
 - Kategori, çatı, şahıs ve isim filtreleri
@@ -72,6 +76,17 @@ Tabloyu Doldur:
 - Doğru bırakmanın yeşil/tik olması
 - Karşılığı olmayan hücrenin kapalı olması
 - Yanlış token'ın yeniden sürüklenebilmesi
+- Yanlış dolu hücre doğru cevapla değiştirildiğinde eski token'ın havuza dönmesi
+- İsim kategorisinde çatı seçiminin gizlenmesi
+- Kırık çoğulların alıştırmadan çıkarılabilmesi
+- Kırık çoğulların eşdeğer hedeflere bırakılabilmesi
+- Bütün hedefler doğru dolduğunda başarı kartının gösterilmesi
+- Pratik alt ekranındaki geri butonunun mod seçimine dönmesi
+
+Dersler ve ortak tablolar:
+
+- Birinci şahıs ikil/çoğul alanının tek `Biz` hücresi olması
+- Dersler içindeki zamir ekranının ayrı/bitişik geçişi
 
 ## 3. Determinizm
 
@@ -107,11 +122,7 @@ Bu görüntüler güncel UI'nin garantisi değildir; büyük görsel değişikli
 
 ## 6. Eksik Testler
 
-- İsim Tabloyu Doldur modu için doğrudan widget testi
-- Kırık çoğulları dahil et anahtarı testi
-- Kırık çoğulların eşdeğer hedeflere bırakılması testi
-- Birinci şahıs birleşik `Biz` hücresi için doğrudan widget testi
-- Geri butonları ve route kapanışı testi
+- Bütün token'lar yanlış yerleştiğinde `Tekrar bak` kartı testi
 - Repository hata senaryoları
 - 360 px ve 430 px viewport testleri
 - Erişilebilirlik/semantics testi

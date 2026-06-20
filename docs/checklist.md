@@ -93,15 +93,15 @@ Son durum: `نصر` fiili üzerinden dersler, çekim/zamir tabloları, çoktan s
 - [x] `dart format`
 - [x] `flutter analyze`
 - [x] `flutter test`
-- [x] 36 otomatik test
+- [x] 44 otomatik test
 - [x] `flutter build web`
 - [x] Playwright görsel kontrol altyapısı
 
 ## Sıradaki İşler
 
-- [ ] İsim Tabloyu Doldur için doğrudan widget testleri
-- [ ] Kırık çoğul anahtarı ve eşdeğer hedef testleri
-- [ ] Birinci şahıs birleşik hücre testi
+- [x] İsim Tabloyu Doldur için doğrudan widget testleri
+- [x] Kırık çoğul anahtarı ve eşdeğer hedef testleri
+- [x] Birinci şahıs birleşik hücre testi
 - [ ] 360 px ve 430 px viewport testleri
 - [ ] Güncel ekran görüntülerini yeniden üretme
 - [ ] Özel ve platformlar arası doğrulanmış Arapça fontu

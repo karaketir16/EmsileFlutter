@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:emsile_flutter/data/models.dart';
@@ -37,6 +39,45 @@ void main() {
           ),
         ),
       );
+    });
+
+    test('runtime questions use only two directions and unique options', () {
+      final prompts = <String>{};
+
+      for (var seed = 0; seed < 50; seed++) {
+        final question = PracticeQuestionGenerator.generateSingleQuestion(
+          testForms,
+          Random(seed),
+        );
+        prompts.add(question.prompt);
+
+        expect(question.options, contains(question.answer));
+        expect(question.options.length, lessThanOrEqualTo(5));
+        expect(question.options.toSet(), hasLength(question.options.length));
+        expect(question.prompt, isNot(contains('şahsa')));
+        expect(question.prompt, isNot(contains('dil bilgisi özelliği')));
+      }
+
+      expect(
+        prompts.any((prompt) => prompt == 'Bu sîganın anlamı hangisi?'),
+        isTrue,
+      );
+      expect(
+        prompts.any((prompt) => prompt.startsWith('Hangisi bu anlama gelir:')),
+        isTrue,
+      );
+    });
+
+    test('arabic distractors exclude duplicate spellings', () {
+      for (var seed = 0; seed < 100; seed++) {
+        final question = PracticeQuestionGenerator.generateSingleQuestion(
+          duplicatedArabicForms,
+          Random(seed),
+        );
+        if (!question.prompt.startsWith('Hangisi bu anlama gelir:')) continue;
+
+        expect(question.options.toSet(), hasLength(question.options.length));
+      }
     });
   });
 }

@@ -889,6 +889,8 @@ void main() {
 
     expect(find.text('Tekrar Bak'), findsOneWidget);
     expect(find.text('Sonraki Soru'), findsOneWidget);
+    expect(find.text('Doğru cevap'), findsNothing);
+    expect(find.byIcon(Icons.check_circle), findsNothing);
     expect(tester.takeException(), isNull);
   });
 
@@ -1104,31 +1106,29 @@ void main() {
       );
       expect(find.text('نَصَرْتَ'), findsOneWidget);
 
-      await tester.tap(find.text('Konuyu Değiştir'));
-      await tester.pumpAndSettle();
-      await tester.tap(find.text('Tabloyu Başlat'));
-      await tester.pumpAndSettle();
-
-      final correctTarget = find.byKey(targetKey);
       final correctToken = find.ancestor(
         of: find.text('نَصَرَ'),
         matching: find.byWidgetPredicate((widget) => widget is Draggable),
       );
       await tester.dragFrom(
         tester.getCenter(correctToken),
-        tester.getCenter(correctTarget) - tester.getCenter(correctToken),
+        tester.getCenter(target) - tester.getCenter(correctToken),
       );
       await tester.pumpAndSettle();
 
-      targetWidget = tester.widget<AnimatedContainer>(correctTarget);
+      targetWidget = tester.widget<AnimatedContainer>(target);
       expect(
         (targetWidget.decoration as BoxDecoration).color,
         const Color(0xFFE0F3E5),
       );
       expect(
-        find.descendant(
-          of: correctTarget,
-          matching: find.byIcon(Icons.check_circle),
+        find.descendant(of: target, matching: find.byIcon(Icons.check_circle)),
+        findsOneWidget,
+      );
+      expect(
+        find.ancestor(
+          of: find.text('نَصَرْتَ'),
+          matching: find.byWidgetPredicate((widget) => widget is Draggable),
         ),
         findsOneWidget,
       );
@@ -1137,6 +1137,198 @@ void main() {
         find.byKey(const ValueKey('drop-second-singular-feminine')),
       );
       expect(closed.color, const Color(0xFF5F625F));
+    },
+  );
+
+  testWidgets(
+    'practice: table fill shows completion only after every token is correct',
+    (WidgetTester tester) async {
+      await tester.binding.setSurfaceSize(const Size(500, 1000));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: SafeArea(
+              child: PracticeScreen(data: testData, random: Random(1)),
+            ),
+          ),
+        ),
+      );
+
+      await openTableFillPractice(tester);
+      await tester.tap(find.text('Tabloyu Başlat'));
+      await tester.pumpAndSettle();
+
+      await dragArabicTokenTo(
+        tester,
+        arabic: 'نَصَرَ',
+        targetKey: const ValueKey('drop-third-singular-masculine'),
+      );
+      expect(find.text('Tablo tamamlandı!'), findsNothing);
+
+      await dragArabicTokenTo(
+        tester,
+        arabic: 'نَصَرْتَ',
+        targetKey: const ValueKey('drop-second-singular-masculine'),
+      );
+
+      expect(find.text('Tablo tamamlandı!'), findsOneWidget);
+      expect(find.text('Yeniden Karıştır'), findsOneWidget);
+    },
+  );
+
+  testWidgets(
+    'practice: back button returns from a practice mode to mode selection',
+    (WidgetTester tester) async {
+      await tester.binding.setSurfaceSize(const Size(390, 844));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: SafeArea(
+              child: PracticeScreen(data: testData, random: Random(1)),
+            ),
+          ),
+        ),
+      );
+
+      await openTableFillPractice(tester);
+      expect(
+        find.text('Doldurmak istediğin çekim tablosunu seç.'),
+        findsOneWidget,
+      );
+
+      await tester.tap(find.byTooltip('Geri'));
+      await tester.pumpAndSettle();
+
+      expect(find.text('Çoktan Seçmeli'), findsOneWidget);
+      expect(find.text('Tabloyu Doldur'), findsOneWidget);
+    },
+  );
+
+  testWidgets(
+    'practice: noun table fill hides voice and can exclude broken plurals',
+    (WidgetTester tester) async {
+      await tester.binding.setSurfaceSize(const Size(500, 1000));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: SafeArea(
+              child: PracticeScreen(
+                data: nounTableFillTestData,
+                random: Random(1),
+              ),
+            ),
+          ),
+        ),
+      );
+
+      await openTableFillPractice(tester);
+      await selectTableFillCategory(tester, 'İsm-i Fâil');
+
+      expect(find.text('Çatı'), findsNothing);
+      expect(find.text('Malum'), findsNothing);
+      expect(find.text('Kırık Çoğullar'), findsOneWidget);
+
+      await tester.tap(find.byType(Switch));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Tabloyu Başlat'));
+      await tester.pumpAndSettle();
+
+      expect(find.text('نُصَّارٌ'), findsNothing);
+      expect(find.text('نُصَّرٌ'), findsNothing);
+      expect(find.text('Kırık Çoğullar'), findsNothing);
+      expect(find.text('Müzekker'), findsOneWidget);
+      expect(find.text('Müennes'), findsOneWidget);
+    },
+  );
+
+  testWidgets(
+    'practice: broken plurals can be dropped into either broken plural slot',
+    (WidgetTester tester) async {
+      await tester.binding.setSurfaceSize(const Size(500, 1000));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: SafeArea(
+              child: PracticeScreen(
+                data: nounTableFillTestData,
+                random: Random(1),
+              ),
+            ),
+          ),
+        ),
+      );
+
+      await openTableFillPractice(tester);
+      await selectTableFillCategory(tester, 'İsm-i Fâil');
+      await tester.tap(find.text('Tabloyu Başlat'));
+      await tester.pumpAndSettle();
+
+      final token = find.ancestor(
+        of: find.text('نُصَّارٌ'),
+        matching: find.byWidgetPredicate((widget) => widget is Draggable),
+      );
+      final otherBrokenSlot = find.byKey(
+        const ValueKey('drop-none-plural-masculine-نُصَّرٌ'),
+      );
+
+      await tester.ensureVisible(otherBrokenSlot);
+      await tester.dragFrom(
+        tester.getCenter(token),
+        tester.getCenter(otherBrokenSlot) - tester.getCenter(token),
+      );
+      await tester.pumpAndSettle();
+
+      final target = tester.widget<AnimatedContainer>(otherBrokenSlot);
+      expect(
+        (target.decoration as BoxDecoration).color,
+        const Color(0xFFE0F3E5),
+      );
+      expect(
+        find.descendant(
+          of: otherBrokenSlot,
+          matching: find.byIcon(Icons.check_circle),
+        ),
+        findsOneWidget,
+      );
+    },
+  );
+
+  testWidgets(
+    'conjugation: first-person row merges dual and plural into one Biz cell',
+    (WidgetTester tester) async {
+      await tester.binding.setSurfaceSize(const Size(500, 1000));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+
+      await tester.pumpWidget(
+        const MaterialApp(
+          home: Scaffold(
+            body: FormsTable(
+              forms: firstPersonForms,
+              selectedForm: FormSelection(
+                person: FormPerson.first,
+                number: FormNumber.plural,
+                gender: FormGender.common,
+              ),
+              activeCategory: FormCategory.mazi,
+              activeVoice: Voice.malum,
+              onSelect: _ignoreSelection,
+              highlightSelection: false,
+            ),
+          ),
+        ),
+      );
+
+      expect(find.text('نَصَرْنَا'), findsOneWidget);
+      expect(find.text('نَصَرْتُ'), findsOneWidget);
+      expect(find.text('1. Şahıs\nOrtak'), findsOneWidget);
     },
   );
 
@@ -1343,6 +1535,35 @@ void main() {
   );
 
   testWidgets(
+    'lessons: pronoun lesson switches between independent and attached tables',
+    (WidgetTester tester) async {
+      await tester.binding.setSurfaceSize(const Size(390, 844));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+
+      await tester.pumpWidget(
+        const MaterialApp(
+          home: Scaffold(
+            body: SafeArea(child: LessonsScreen(data: pronounTestData)),
+          ),
+        ),
+      );
+
+      await tester.tap(find.text('Şahıs Zamirleri'));
+      await tester.pumpAndSettle();
+
+      expect(find.text('Ayrı Zamirler'), findsOneWidget);
+      expect(find.text('هُوَ'), findsOneWidget);
+
+      await tester.tap(find.text('Bitişik'));
+      await tester.pumpAndSettle();
+
+      expect(find.text('Bitişik Zamirler'), findsOneWidget);
+      expect(find.text('ـهُ'), findsOneWidget);
+      expect(find.textContaining('iyelik veya mef‘ûl'), findsOneWidget);
+    },
+  );
+
+  testWidgets(
     'conjugation: opening all tables page does not highlight cells in inactive tables',
     (WidgetTester tester) async {
       await tester.binding.setSurfaceSize(const Size(500, 1000));
@@ -1440,6 +1661,41 @@ Future<void> openMultipleChoicePractice(WidgetTester tester) async {
   await tester.tap(find.text('Çoktan Seçmeli'));
   await tester.pumpAndSettle();
 }
+
+Future<void> openTableFillPractice(WidgetTester tester) async {
+  await tester.tap(find.text('Tabloyu Doldur'));
+  await tester.pumpAndSettle();
+}
+
+Future<void> selectTableFillCategory(
+  WidgetTester tester,
+  String categoryLabel,
+) async {
+  final dropdown = find.byType(DropdownButtonFormField<FormCategory>);
+  await tester.tap(dropdown);
+  await tester.pumpAndSettle();
+  await tester.tap(find.text(categoryLabel).last);
+  await tester.pumpAndSettle();
+}
+
+Future<void> dragArabicTokenTo(
+  WidgetTester tester, {
+  required String arabic,
+  required Key targetKey,
+}) async {
+  final token = find.ancestor(
+    of: find.text(arabic),
+    matching: find.byWidgetPredicate((widget) => widget is Draggable),
+  );
+  final target = find.byKey(targetKey);
+  await tester.dragFrom(
+    tester.getCenter(token),
+    tester.getCenter(target) - tester.getCenter(token),
+  );
+  await tester.pumpAndSettle();
+}
+
+void _ignoreSelection(FormSelection _) {}
 
 // ── Shared test data ──────────────────────────────────────────────────────────
 
@@ -1594,6 +1850,51 @@ const nounTestData = AppData(
   forms: nounTestFormsList,
   practiceQuestions: [],
 );
+
+const nounTableFillTestForms = [
+  ...nounTestFormsList,
+  ConjugationForm(
+    category: FormCategory.ismFail,
+    voice: Voice.malum,
+    person: FormPerson.none,
+    number: FormNumber.plural,
+    gender: FormGender.masculine,
+    pronounLabel: 'Kırık Çoğul Müzekker 2',
+    arabic: 'نُصَّرٌ',
+    meaning: 'Yardım eden erkekler (Kırık Çoğul 2).',
+  ),
+];
+
+const nounTableFillTestData = AppData(
+  lessons: [],
+  pronouns: [],
+  muhtelifeEntries: [],
+  forms: nounTableFillTestForms,
+  practiceQuestions: [],
+);
+
+const firstPersonForms = [
+  ConjugationForm(
+    category: FormCategory.mazi,
+    voice: Voice.malum,
+    person: FormPerson.first,
+    number: FormNumber.singular,
+    gender: FormGender.common,
+    pronounLabel: 'Ben',
+    arabic: 'نَصَرْتُ',
+    meaning: 'Yardım ettim.',
+  ),
+  ConjugationForm(
+    category: FormCategory.mazi,
+    voice: Voice.malum,
+    person: FormPerson.first,
+    number: FormNumber.plural,
+    gender: FormGender.common,
+    pronounLabel: 'Biz',
+    arabic: 'نَصَرْنَا',
+    meaning: 'Yardım ettik.',
+  ),
+];
 
 /// Richer dataset for interaction tests that need multiple forms.
 const richTestData = AppData(

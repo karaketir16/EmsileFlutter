@@ -692,11 +692,14 @@ class _DropCell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final keySuffix = slot.arabic == null ? '' : '-${slot.arabic}';
+    final dropKey = ValueKey(
+      'drop-${slot.person.name}-${slot.number.name}-${slot.gender.name}$keySuffix',
+    );
+
     if (expected == null) {
       return Container(
-        key: ValueKey(
-          'drop-${slot.person.name}-${slot.number.name}-${slot.gender.name}',
-        ),
+        key: dropKey,
         height: 70,
         color: const Color(0xFF5F625F),
         child: const Icon(Icons.block, color: Colors.white54, size: 18),
@@ -720,9 +723,7 @@ class _DropCell extends StatelessWidget {
         }
 
         final content = AnimatedContainer(
-          key: ValueKey(
-            'drop-${slot.person.name}-${slot.number.name}-${slot.gender.name}',
-          ),
+          key: dropKey,
           duration: const Duration(milliseconds: 180),
           height: 70,
           color: color,
