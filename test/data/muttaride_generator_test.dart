@@ -231,6 +231,59 @@ void main() {
         isFalse,
       );
     });
+
+    test('generates natural Turkish person and case meanings', () {
+      final entry = VerbEntry.fromJson(
+        jsonDecode(nasaraVerbJson) as Map<String, dynamic>,
+      );
+
+      final forms = MuttarideGenerator.fromVerbEntry(entry);
+
+      expect(
+        _findForm(
+          forms,
+          category: FormCategory.mazi,
+          voice: Voice.malum,
+          person: FormPerson.second,
+          number: FormNumber.dual,
+          gender: FormGender.feminine,
+        ).meaning,
+        'İkiniz (kadın) yardım ettiniz.',
+      );
+      expect(
+        _findForm(
+          forms,
+          category: FormCategory.mazi,
+          voice: Voice.mechul,
+          person: FormPerson.second,
+          number: FormNumber.dual,
+          gender: FormGender.feminine,
+        ).meaning,
+        'İkinize (kadın) yardım edildi.',
+      );
+      expect(
+        _findForm(
+          forms,
+          category: FormCategory.emrHazir,
+          voice: Voice.mechul,
+          person: FormPerson.second,
+          number: FormNumber.dual,
+          gender: FormGender.feminine,
+        ).meaning,
+        'İkinize (kadın) yardım edilsin.',
+      );
+      expect(
+        _findForm(
+          forms,
+          category: FormCategory.muzari,
+          voice: Voice.malum,
+          person: FormPerson.first,
+          number: FormNumber.plural,
+          gender: FormGender.common,
+        ).meaning,
+        'Biz yardım ediyoruz.',
+      );
+    });
   });
 }
 
@@ -251,6 +304,24 @@ bool _hasForm(
         form.number == number &&
         form.gender == gender &&
         form.arabic == arabic,
+  );
+}
+
+ConjugationForm _findForm(
+  List<ConjugationForm> forms, {
+  required FormCategory category,
+  required Voice voice,
+  required FormPerson person,
+  required FormNumber number,
+  required FormGender gender,
+}) {
+  return forms.firstWhere(
+    (form) =>
+        form.category == category &&
+        form.voice == voice &&
+        form.person == person &&
+        form.number == number &&
+        form.gender == gender,
   );
 }
 

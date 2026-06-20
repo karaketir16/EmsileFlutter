@@ -49,7 +49,7 @@ class NasaraMuttarideGenerator {
           voice: Voice.malum,
           slot: slot,
           arabic: _maziMalum(letters, slot),
-          meaning: '${slot.subjectPhrase} yardim etti.',
+          meaning: slot.activeMeaning(_TurkishTense.past),
         ),
       )
       ..add(
@@ -58,7 +58,7 @@ class NasaraMuttarideGenerator {
           voice: Voice.mechul,
           slot: slot,
           arabic: _maziMechul(letters, slot),
-          meaning: '${slot.objectPhrase} icin yardim edildi.',
+          meaning: slot.passiveMeaning('yardım edildi'),
         ),
       )
       ..add(
@@ -67,7 +67,7 @@ class NasaraMuttarideGenerator {
           voice: Voice.malum,
           slot: slot,
           arabic: _muzariMalum(letters, slot, _MuzariMood.marfu),
-          meaning: '${slot.subjectPhrase} yardim ediyor.',
+          meaning: slot.activeMeaning(_TurkishTense.presentContinuous),
         ),
       )
       ..add(
@@ -76,7 +76,7 @@ class NasaraMuttarideGenerator {
           voice: Voice.mechul,
           slot: slot,
           arabic: _muzariMechul(letters, slot, _MuzariMood.marfu),
-          meaning: '${slot.objectPhrase} icin yardim ediliyor.',
+          meaning: slot.passiveMeaning('yardım ediliyor'),
         ),
       );
   }
@@ -91,36 +91,42 @@ class NasaraMuttarideGenerator {
         category: FormCategory.nefyHal,
         prefix: 'مَا ',
         mood: _MuzariMood.marfu,
-        activeMeaning: '${slot.subjectPhrase} yardim etmiyor.',
-        passiveMeaning: '${slot.objectPhrase} icin yardim edilmiyor.',
+        activeMeaning: slot.activeMeaning(_TurkishTense.negativePresent),
+        passiveMeaning: slot.passiveMeaning('yardım edilmiyor'),
       ),
       _PrefixedMuzariSpec(
         category: FormCategory.nefyIstikbal,
         prefix: 'لا ',
         mood: _MuzariMood.marfu,
-        activeMeaning: '${slot.subjectPhrase} yardim etmeyecek.',
-        passiveMeaning: '${slot.objectPhrase} icin yardim edilmeyecek.',
+        activeMeaning: slot.activeMeaning(_TurkishTense.future),
+        passiveMeaning: slot.passiveMeaning('yardım edilmeyecek'),
       ),
       _PrefixedMuzariSpec(
         category: FormCategory.cahdMutlak,
         prefix: 'لَمْ ',
         mood: _MuzariMood.majzum,
-        activeMeaning: '${slot.subjectPhrase} yardim etmedi.',
-        passiveMeaning: '${slot.objectPhrase} icin yardim edilmedi.',
+        activeMeaning: slot.activeMeaning(_TurkishTense.negativePast),
+        passiveMeaning: slot.passiveMeaning('yardım edilmedi'),
       ),
       _PrefixedMuzariSpec(
         category: FormCategory.cahdMustagrak,
         prefix: 'لَمَّا ',
         mood: _MuzariMood.majzum,
-        activeMeaning: '${slot.subjectPhrase} henuz yardim etmedi.',
-        passiveMeaning: '${slot.objectPhrase} icin henuz yardim edilmedi.',
+        activeMeaning: slot.activeMeaning(
+          _TurkishTense.negativePast,
+          adverb: 'henüz',
+        ),
+        passiveMeaning: slot.passiveMeaning('yardım edilmedi', adverb: 'henüz'),
       ),
       _PrefixedMuzariSpec(
         category: FormCategory.tekidNefyIstikbal,
         prefix: 'لَنْ ',
         mood: _MuzariMood.mansub,
-        activeMeaning: '${slot.subjectPhrase} asla yardim etmeyecek.',
-        passiveMeaning: '${slot.objectPhrase} icin asla yardim edilmeyecek.',
+        activeMeaning: slot.activeMeaning(_TurkishTense.future, adverb: 'asla'),
+        passiveMeaning: slot.passiveMeaning(
+          'yardım edilmeyecek',
+          adverb: 'asla',
+        ),
       ),
     ];
 
@@ -160,7 +166,7 @@ class NasaraMuttarideGenerator {
             voice: Voice.malum,
             slot: slot,
             arabic: 'لِ${_muzariMalum(letters, slot, _MuzariMood.majzum)}',
-            meaning: '${slot.subjectPhrase} yardim etsin.',
+            meaning: slot.activeCommandMeaning(),
           ),
         )
         ..add(
@@ -169,7 +175,7 @@ class NasaraMuttarideGenerator {
             voice: Voice.malum,
             slot: slot,
             arabic: 'لا ${_muzariMalum(letters, slot, _MuzariMood.majzum)}',
-            meaning: '${slot.subjectPhrase} yardim etmesin.',
+            meaning: slot.activeCommandMeaning(negative: true),
           ),
         )
         ..add(
@@ -178,7 +184,7 @@ class NasaraMuttarideGenerator {
             voice: Voice.mechul,
             slot: slot,
             arabic: 'لِ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
-            meaning: '${slot.objectPhrase} icin yardim edilsin.',
+            meaning: slot.passiveMeaning('yardım edilsin'),
           ),
         )
         ..add(
@@ -187,7 +193,7 @@ class NasaraMuttarideGenerator {
             voice: Voice.mechul,
             slot: slot,
             arabic: 'لا ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
-            meaning: '${slot.objectPhrase} icin yardim edilmesin.',
+            meaning: slot.passiveMeaning('yardım edilmesin'),
           ),
         );
     }
@@ -200,7 +206,7 @@ class NasaraMuttarideGenerator {
             voice: Voice.malum,
             slot: slot,
             arabic: _emrHazirMalum(letters, slot),
-            meaning: '${slot.subjectPhrase} yardim et.',
+            meaning: slot.activeCommandMeaning(),
           ),
         )
         ..add(
@@ -209,7 +215,7 @@ class NasaraMuttarideGenerator {
             voice: Voice.malum,
             slot: slot,
             arabic: 'لا ${_muzariMalum(letters, slot, _MuzariMood.majzum)}',
-            meaning: '${slot.subjectPhrase} yardim etme.',
+            meaning: slot.activeCommandMeaning(negative: true),
           ),
         )
         ..add(
@@ -218,7 +224,7 @@ class NasaraMuttarideGenerator {
             voice: Voice.mechul,
             slot: slot,
             arabic: 'لِ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
-            meaning: '${slot.objectPhrase} icin yardim edilsin.',
+            meaning: slot.passiveMeaning('yardım edilsin'),
           ),
         )
         ..add(
@@ -227,7 +233,7 @@ class NasaraMuttarideGenerator {
             voice: Voice.mechul,
             slot: slot,
             arabic: 'لا ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
-            meaning: '${slot.objectPhrase} icin yardim edilmesin.',
+            meaning: slot.passiveMeaning('yardım edilmesin'),
           ),
         );
     }
@@ -240,7 +246,7 @@ class NasaraMuttarideGenerator {
             voice: Voice.mechul,
             slot: slot,
             arabic: 'لِ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
-            meaning: '${slot.objectPhrase} icin yardim edilsin.',
+            meaning: slot.passiveMeaning('yardım edilsin'),
           ),
         )
         ..add(
@@ -249,7 +255,7 @@ class NasaraMuttarideGenerator {
             voice: Voice.mechul,
             slot: slot,
             arabic: 'لا ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
-            meaning: '${slot.objectPhrase} icin yardim edilmesin.',
+            meaning: slot.passiveMeaning('yardım edilmesin'),
           ),
         )
         ..add(
@@ -258,7 +264,7 @@ class NasaraMuttarideGenerator {
             voice: Voice.mechul,
             slot: slot,
             arabic: 'لِ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
-            meaning: '${slot.objectPhrase} icin yardim edilsin.',
+            meaning: slot.passiveMeaning('yardım edilsin'),
           ),
         )
         ..add(
@@ -267,7 +273,7 @@ class NasaraMuttarideGenerator {
             voice: Voice.mechul,
             slot: slot,
             arabic: 'لا ${_muzariMechul(letters, slot, _MuzariMood.majzum)}',
-            meaning: '${slot.objectPhrase} icin yardim edilmesin.',
+            meaning: slot.passiveMeaning('yardım edilmesin'),
           ),
         );
     }
@@ -339,14 +345,20 @@ class _PrefixedMuzariSpec {
 
 enum _MuzariMood { marfu, majzum, mansub }
 
+enum _TurkishTense {
+  past,
+  presentContinuous,
+  negativePresent,
+  future,
+  negativePast,
+}
+
 class _Slot {
   const _Slot({
     required this.person,
     required this.number,
     required this.gender,
     required this.pronounLabel,
-    required this.subjectPhrase,
-    required this.objectPhrase,
     required this.maziSuffixMalum,
     required this.maziSuffixMechul,
     required this.muzariPrefixMalum,
@@ -359,8 +371,6 @@ class _Slot {
   final FormNumber number;
   final FormGender gender;
   final String pronounLabel;
-  final String subjectPhrase;
-  final String objectPhrase;
   final String maziSuffixMalum;
   final String maziSuffixMechul;
   final String muzariPrefixMalum;
@@ -371,6 +381,140 @@ class _Slot {
   bool get isThirdPerson => person == FormPerson.third;
   bool get isSecondPerson => person == FormPerson.second;
   bool get isFirstPerson => person == FormPerson.first;
+
+  String get subjectPhrase => _annotated(switch ((person, number)) {
+    (FormPerson.third, FormNumber.singular) => 'O',
+    (FormPerson.third, FormNumber.dual) => 'İkisi',
+    (FormPerson.third, FormNumber.plural) => 'Onlar',
+    (FormPerson.second, FormNumber.singular) => 'Sen',
+    (FormPerson.second, FormNumber.dual) => 'İkiniz',
+    (FormPerson.second, FormNumber.plural) => 'Siz',
+    (FormPerson.first, FormNumber.singular) => 'Ben',
+    (FormPerson.first, _) => 'Biz',
+    _ => '',
+  });
+
+  String get dativePhrase => _annotated(switch ((person, number)) {
+    (FormPerson.third, FormNumber.singular) => 'Ona',
+    (FormPerson.third, FormNumber.dual) => 'İkisine',
+    (FormPerson.third, FormNumber.plural) => 'Onlara',
+    (FormPerson.second, FormNumber.singular) => 'Sana',
+    (FormPerson.second, FormNumber.dual) => 'İkinize',
+    (FormPerson.second, FormNumber.plural) => 'Size',
+    (FormPerson.first, FormNumber.singular) => 'Bana',
+    (FormPerson.first, _) => 'Bize',
+    _ => '',
+  });
+
+  String get possessivePhrase => _annotated(switch ((person, number)) {
+    (FormPerson.third, FormNumber.singular) => 'Onun',
+    (FormPerson.third, FormNumber.dual) => 'İkisinin',
+    (FormPerson.third, FormNumber.plural) => 'Onların',
+    (FormPerson.second, FormNumber.singular) => 'Senin',
+    (FormPerson.second, FormNumber.dual) => 'İkinizin',
+    (FormPerson.second, FormNumber.plural) => 'Sizin',
+    (FormPerson.first, FormNumber.singular) => 'Benim',
+    (FormPerson.first, _) => 'Bizim',
+    _ => '',
+  });
+
+  String activeMeaning(_TurkishTense tense, {String? adverb}) {
+    final verb = switch (tense) {
+      _TurkishTense.past => _byPerson(
+        thirdSingular: 'yardım etti',
+        thirdPlural: 'yardım ettiler',
+        secondSingular: 'yardım ettin',
+        secondPlural: 'yardım ettiniz',
+        firstSingular: 'yardım ettim',
+        firstPlural: 'yardım ettik',
+      ),
+      _TurkishTense.presentContinuous => _byPerson(
+        thirdSingular: 'yardım ediyor',
+        thirdPlural: 'yardım ediyorlar',
+        secondSingular: 'yardım ediyorsun',
+        secondPlural: 'yardım ediyorsunuz',
+        firstSingular: 'yardım ediyorum',
+        firstPlural: 'yardım ediyoruz',
+      ),
+      _TurkishTense.negativePresent => _byPerson(
+        thirdSingular: 'yardım etmiyor',
+        thirdPlural: 'yardım etmiyorlar',
+        secondSingular: 'yardım etmiyorsun',
+        secondPlural: 'yardım etmiyorsunuz',
+        firstSingular: 'yardım etmiyorum',
+        firstPlural: 'yardım etmiyoruz',
+      ),
+      _TurkishTense.future => _byPerson(
+        thirdSingular: 'yardım etmeyecek',
+        thirdPlural: 'yardım etmeyecekler',
+        secondSingular: 'yardım etmeyeceksin',
+        secondPlural: 'yardım etmeyeceksiniz',
+        firstSingular: 'yardım etmeyeceğim',
+        firstPlural: 'yardım etmeyeceğiz',
+      ),
+      _TurkishTense.negativePast => _byPerson(
+        thirdSingular: 'yardım etmedi',
+        thirdPlural: 'yardım etmediler',
+        secondSingular: 'yardım etmedin',
+        secondPlural: 'yardım etmediniz',
+        firstSingular: 'yardım etmedim',
+        firstPlural: 'yardım etmedik',
+      ),
+    };
+    return _sentence(subjectPhrase, verb, adverb: adverb);
+  }
+
+  String activeCommandMeaning({bool negative = false}) {
+    final verb = switch ((person, number, negative)) {
+      (FormPerson.third, FormNumber.plural, false) => 'yardım etsinler',
+      (FormPerson.third, _, false) => 'yardım etsin',
+      (FormPerson.third, FormNumber.plural, true) => 'yardım etmesinler',
+      (FormPerson.third, _, true) => 'yardım etmesin',
+      (FormPerson.second, FormNumber.singular, false) => 'yardım et',
+      (FormPerson.second, _, false) => 'yardım edin',
+      (FormPerson.second, FormNumber.singular, true) => 'yardım etme',
+      (FormPerson.second, _, true) => 'yardım etmeyin',
+      _ => negative ? 'yardım edilmesin' : 'yardım edilsin',
+    };
+    return _sentence(subjectPhrase, verb);
+  }
+
+  String passiveMeaning(String verb, {String? adverb}) {
+    return _sentence(dativePhrase, verb, adverb: adverb);
+  }
+
+  String _byPerson({
+    required String thirdSingular,
+    required String thirdPlural,
+    required String secondSingular,
+    required String secondPlural,
+    required String firstSingular,
+    required String firstPlural,
+  }) {
+    return switch ((person, number)) {
+      (FormPerson.third, FormNumber.plural) => thirdPlural,
+      (FormPerson.third, _) => thirdSingular,
+      (FormPerson.second, FormNumber.singular) => secondSingular,
+      (FormPerson.second, _) => secondPlural,
+      (FormPerson.first, FormNumber.singular) => firstSingular,
+      (FormPerson.first, _) => firstPlural,
+      _ => thirdSingular,
+    };
+  }
+
+  String _annotated(String phrase) {
+    final annotation = switch (gender) {
+      FormGender.masculine => 'erkek',
+      FormGender.feminine => 'kadın',
+      FormGender.common => null,
+    };
+    return annotation == null ? phrase : '$phrase ($annotation)';
+  }
+
+  String _sentence(String phrase, String verb, {String? adverb}) {
+    final middle = adverb == null ? '' : ' $adverb';
+    return '$phrase$middle $verb.';
+  }
 
   String muzariSuffixMalumFor(_MuzariMood mood) {
     return _muzariSuffixFor(mood, muzariSuffixMalum);
@@ -424,8 +568,6 @@ const _slots = <_Slot>[
     number: FormNumber.singular,
     gender: FormGender.masculine,
     pronounLabel: 'O (er.)',
-    subjectPhrase: 'O erkek',
-    objectPhrase: 'O erkek',
     maziSuffixMalum: 'َ',
     maziSuffixMechul: 'َ',
     muzariPrefixMalum: 'يَ',
@@ -438,8 +580,6 @@ const _slots = <_Slot>[
     number: FormNumber.dual,
     gender: FormGender.masculine,
     pronounLabel: 'O ikisi (er.)',
-    subjectPhrase: 'O iki erkek',
-    objectPhrase: 'O iki erkek',
     maziSuffixMalum: 'َا',
     maziSuffixMechul: 'َا',
     muzariPrefixMalum: 'يَ',
@@ -452,8 +592,6 @@ const _slots = <_Slot>[
     number: FormNumber.plural,
     gender: FormGender.masculine,
     pronounLabel: 'Onlar (er.)',
-    subjectPhrase: 'O erkekler',
-    objectPhrase: 'O erkekler',
     maziSuffixMalum: 'ُوا',
     maziSuffixMechul: 'ُوا',
     muzariPrefixMalum: 'يَ',
@@ -466,8 +604,6 @@ const _slots = <_Slot>[
     number: FormNumber.singular,
     gender: FormGender.feminine,
     pronounLabel: 'O (kad.)',
-    subjectPhrase: 'O kadin',
-    objectPhrase: 'O kadin',
     maziSuffixMalum: 'َتْ',
     maziSuffixMechul: 'َتْ',
     muzariPrefixMalum: 'تَ',
@@ -480,8 +616,6 @@ const _slots = <_Slot>[
     number: FormNumber.dual,
     gender: FormGender.feminine,
     pronounLabel: 'O ikisi (kad.)',
-    subjectPhrase: 'O iki kadin',
-    objectPhrase: 'O iki kadin',
     maziSuffixMalum: 'َتَا',
     maziSuffixMechul: 'َتَا',
     muzariPrefixMalum: 'تَ',
@@ -494,8 +628,6 @@ const _slots = <_Slot>[
     number: FormNumber.plural,
     gender: FormGender.feminine,
     pronounLabel: 'Onlar (kad.)',
-    subjectPhrase: 'O kadinlar',
-    objectPhrase: 'O kadinlar',
     maziSuffixMalum: 'ْنَ',
     maziSuffixMechul: 'ْنَ',
     muzariPrefixMalum: 'يَ',
@@ -508,8 +640,6 @@ const _slots = <_Slot>[
     number: FormNumber.singular,
     gender: FormGender.masculine,
     pronounLabel: 'Sen (er.)',
-    subjectPhrase: 'Sen erkek',
-    objectPhrase: 'Sen erkek',
     maziSuffixMalum: 'ْتَ',
     maziSuffixMechul: 'ْتَ',
     muzariPrefixMalum: 'تَ',
@@ -522,8 +652,6 @@ const _slots = <_Slot>[
     number: FormNumber.dual,
     gender: FormGender.masculine,
     pronounLabel: 'Siz ikiniz (er.)',
-    subjectPhrase: 'Siz iki erkek',
-    objectPhrase: 'Siz iki erkek',
     maziSuffixMalum: 'ْتُمَا',
     maziSuffixMechul: 'ْتُمَا',
     muzariPrefixMalum: 'تَ',
@@ -536,8 +664,6 @@ const _slots = <_Slot>[
     number: FormNumber.plural,
     gender: FormGender.masculine,
     pronounLabel: 'Siz (er.)',
-    subjectPhrase: 'Siz erkekler',
-    objectPhrase: 'Siz erkekler',
     maziSuffixMalum: 'ْتُمْ',
     maziSuffixMechul: 'ْتُمْ',
     muzariPrefixMalum: 'تَ',
@@ -550,8 +676,6 @@ const _slots = <_Slot>[
     number: FormNumber.singular,
     gender: FormGender.feminine,
     pronounLabel: 'Sen (kad.)',
-    subjectPhrase: 'Sen kadin',
-    objectPhrase: 'Sen kadin',
     maziSuffixMalum: 'ْتِ',
     maziSuffixMechul: 'ْتِ',
     muzariPrefixMalum: 'تَ',
@@ -564,8 +688,6 @@ const _slots = <_Slot>[
     number: FormNumber.dual,
     gender: FormGender.feminine,
     pronounLabel: 'Siz ikiniz (kad.)',
-    subjectPhrase: 'Siz iki kadin',
-    objectPhrase: 'Siz iki kadin',
     maziSuffixMalum: 'ْتُمَا',
     maziSuffixMechul: 'ْتُمَا',
     muzariPrefixMalum: 'تَ',
@@ -578,8 +700,6 @@ const _slots = <_Slot>[
     number: FormNumber.plural,
     gender: FormGender.feminine,
     pronounLabel: 'Siz (kad.)',
-    subjectPhrase: 'Siz kadinlar',
-    objectPhrase: 'Siz kadinlar',
     maziSuffixMalum: 'ْتُنَّ',
     maziSuffixMechul: 'ْتُنَّ',
     muzariPrefixMalum: 'تَ',
@@ -592,8 +712,6 @@ const _slots = <_Slot>[
     number: FormNumber.singular,
     gender: FormGender.common,
     pronounLabel: 'Ben',
-    subjectPhrase: 'Ben',
-    objectPhrase: 'Ben',
     maziSuffixMalum: 'ْتُ',
     maziSuffixMechul: 'ْتُ',
     muzariPrefixMalum: 'أَ',
@@ -606,8 +724,6 @@ const _slots = <_Slot>[
     number: FormNumber.plural,
     gender: FormGender.common,
     pronounLabel: 'Biz',
-    subjectPhrase: 'Biz',
-    objectPhrase: 'Biz',
     maziSuffixMalum: 'ْنَا',
     maziSuffixMechul: 'ْنَا',
     muzariPrefixMalum: 'نَ',

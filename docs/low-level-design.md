@@ -82,6 +82,16 @@ Yükleme sırasında `LoadingScreen`, hata halinde `LoadErrorScreen` kullanılı
 - `meaning`
 - alanlardan türetilen `rule`
 
+Fiil anlamları Türkçe kişi ve hâl uyumuyla üretilir. Generator her şahıs için:
+
+- yalın/özne: `İkiniz (kadın)`
+- yönelme: `İkinize (kadın)`
+- iyelik: `İkinizin (kadın)`
+
+biçimlerini bilir. Etken anlamlarda fiil kişiyle çekimlenir
+(`yardım ettiniz`), edilgen anlamlarda yönelme hâli kullanılır
+(`İkinize (kadın) yardım edildi`).
+
 ### FormCategory
 
 Toplam 24 kategori vardır. Mâzi, muzâri, nefy, cahd, emir, nehiy, masdar, isim türevleri ve taaccüb biçimlerini kapsar. `isVerb` ve `isNoun` getter'ları UI ayrımında kullanılır.
