@@ -8,7 +8,7 @@ class SourceScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppPage(
-      title: 'Kaynak',
+      title: 'Hakkında',
       child: Column(
         children: [
           Card(
@@ -30,7 +30,7 @@ class SourceScreen extends StatelessWidget {
                         Icon(Icons.link, color: Colors.blue),
                         SizedBox(width: 8),
                         Text(
-                          'Kaynak',
+                          'Hakkında',
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -40,7 +40,7 @@ class SourceScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 12),
                     Text(
-                      'Zafer ESEN tarafından hazırlanan Emsile Ders Notu temel alınmıştır.',
+                      'Zafer ESEN tarafından hazırlanan Emsile Ders Notu’ndan faydalanılmıştır.',
                       style: TextStyle(fontSize: 14),
                     ),
                     SizedBox(height: 12),

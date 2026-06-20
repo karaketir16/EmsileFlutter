@@ -44,9 +44,7 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(
-      const MaterialApp(
-        home: ConjugationScreen(data: testData),
-      ),
+      const MaterialApp(home: ConjugationScreen(data: testData)),
     );
 
     // Seçim ekranı görünmeli
@@ -81,7 +79,7 @@ void main() {
     await startPractice(tester);
 
     expect(find.text('Pratik'), findsOneWidget);
-    expect(find.text('Yardım etti.'), findsOneWidget);
+    expect(find.byType(AnswerButton), findsWidgets);
     expect(tester.takeException(), isNull);
   });
 
@@ -191,7 +189,7 @@ void main() {
       notifier.dispose();
     });
 
-    notifier.value = 4; // Kaynak
+    notifier.value = 4; // Hakkında
     await tester.pumpAndSettle();
 
     expect(find.textContaining('arapcadiyari.blogspot.com'), findsOneWidget);
@@ -206,9 +204,7 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(
-      MaterialApp(
-        home: ConjugationScreen(data: richTestData),
-      ),
+      MaterialApp(home: ConjugationScreen(data: richTestData)),
     );
     await navigateToConjugations(tester);
 
@@ -228,9 +224,7 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(
-      MaterialApp(
-        home: ConjugationScreen(data: richTestData),
-      ),
+      MaterialApp(home: ConjugationScreen(data: richTestData)),
     );
     await navigateToConjugations(tester);
 
@@ -247,9 +241,7 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(
-      MaterialApp(
-        home: ConjugationScreen(data: richTestData),
-      ),
+      MaterialApp(home: ConjugationScreen(data: richTestData)),
     );
     await navigateToConjugations(tester);
 
@@ -268,9 +260,7 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(
-      MaterialApp(
-        home: ConjugationScreen(data: richTestData),
-      ),
+      MaterialApp(home: ConjugationScreen(data: richTestData)),
     );
     await navigateToConjugations(tester);
 
@@ -309,9 +299,7 @@ void main() {
       );
 
       await tester.pumpWidget(
-        MaterialApp(
-          home: ConjugationScreen(data: scenarioTestData),
-        ),
+        MaterialApp(home: ConjugationScreen(data: scenarioTestData)),
       );
       await navigateToConjugations(tester);
 
@@ -324,17 +312,21 @@ void main() {
       await tester.pumpAndSettle();
 
       // Verify that in the SelectionTable (Şahıs Tablosu), the 'Onlar (er.)' cell is colored with primaryContainer
-      final cellContainerFinder = find.ancestor(
-        of: find.text('Onlar (er.)'),
-        matching: find.byType(Container),
-      ).first;
+      final cellContainerFinder = find
+          .ancestor(
+            of: find.text('Onlar (er.)'),
+            matching: find.byType(Container),
+          )
+          .first;
 
       final containerWidget = tester.widget<Container>(cellContainerFinder);
       final decoration = containerWidget.decoration as BoxDecoration;
-      
+
       // The color should be primaryContainer
       final context = tester.element(find.text('Onlar (er.)'));
-      final primaryContainerColor = Theme.of(context).colorScheme.primaryContainer;
+      final primaryContainerColor = Theme.of(
+        context,
+      ).colorScheme.primaryContainer;
       expect(decoration.color, primaryContainerColor);
       expect(tester.takeException(), isNull);
     },
@@ -387,9 +379,7 @@ void main() {
       );
 
       await tester.pumpWidget(
-        MaterialApp(
-          home: ConjugationScreen(data: scenarioTestData),
-        ),
+        MaterialApp(home: ConjugationScreen(data: scenarioTestData)),
       );
       await navigateToConjugations(tester);
 
@@ -402,10 +392,12 @@ void main() {
       await tester.pumpAndSettle();
 
       // Verify that 'Onlar (er.)' is selected in SelectionTable
-      var cellContainerFinder = find.ancestor(
-        of: find.text('Onlar (er.)'),
-        matching: find.byType(Container),
-      ).first;
+      var cellContainerFinder = find
+          .ancestor(
+            of: find.text('Onlar (er.)'),
+            matching: find.byType(Container),
+          )
+          .first;
       var containerWidget = tester.widget<Container>(cellContainerFinder);
       var decoration = containerWidget.decoration as BoxDecoration;
       var context = tester.element(find.text('Onlar (er.)'));
@@ -420,10 +412,12 @@ void main() {
       expect(find.text('يُنْصَرُونَ'), findsWidgets);
 
       // Verify that 'Onlar (er.)' is STILL selected in SelectionTable
-      cellContainerFinder = find.ancestor(
-        of: find.text('Onlar (er.)'),
-        matching: find.byType(Container),
-      ).first;
+      cellContainerFinder = find
+          .ancestor(
+            of: find.text('Onlar (er.)'),
+            matching: find.byType(Container),
+          )
+          .first;
       containerWidget = tester.widget<Container>(cellContainerFinder);
       decoration = containerWidget.decoration as BoxDecoration;
       expect(decoration.color, Theme.of(context).colorScheme.primaryContainer);
@@ -458,9 +452,7 @@ void main() {
       );
 
       await tester.pumpWidget(
-        MaterialApp(
-          home: ConjugationScreen(data: scenarioTestData),
-        ),
+        MaterialApp(home: ConjugationScreen(data: scenarioTestData)),
       );
       await navigateToConjugations(tester);
 
@@ -478,23 +470,27 @@ void main() {
       expect(find.text('O kadın yardım ediyor.'), findsNothing);
 
       // Verify that in SelectionTable, 'O (kd.)' is uncolored (white)
-      final oKdFinder = find.ancestor(
-        of: find.text('O (kd.)'),
-        matching: find.byType(Container),
-      ).first;
+      final oKdFinder = find
+          .ancestor(of: find.text('O (kd.)'), matching: find.byType(Container))
+          .first;
       final oKdWidget = tester.widget<Container>(oKdFinder);
       final oKdDecoration = oKdWidget.decoration as BoxDecoration;
       expect(oKdDecoration.color, Colors.white);
 
       // Verify that in SelectionTable, 'Sen (er.)' is colored (primaryContainer)
-      final senErFinder = find.ancestor(
-        of: find.text('Sen (er.)'),
-        matching: find.byType(Container),
-      ).first;
+      final senErFinder = find
+          .ancestor(
+            of: find.text('Sen (er.)'),
+            matching: find.byType(Container),
+          )
+          .first;
       final senErWidget = tester.widget<Container>(senErFinder);
       final senErDecoration = senErWidget.decoration as BoxDecoration;
       final context = tester.element(find.text('Sen (er.)'));
-      expect(senErDecoration.color, Theme.of(context).colorScheme.primaryContainer);
+      expect(
+        senErDecoration.color,
+        Theme.of(context).colorScheme.primaryContainer,
+      );
 
       expect(tester.takeException(), isNull);
     },
@@ -547,9 +543,7 @@ void main() {
       );
 
       await tester.pumpWidget(
-        MaterialApp(
-          home: ConjugationScreen(data: scenarioTestData),
-        ),
+        MaterialApp(home: ConjugationScreen(data: scenarioTestData)),
       );
       await navigateToConjugations(tester);
 
@@ -571,10 +565,12 @@ void main() {
       expect(find.text('Yardım ediliyorlar.'), findsWidgets);
 
       // Verify that 'Onlar (er.)' is STILL selected in SelectionTable
-      final cellContainerFinder = find.ancestor(
-        of: find.text('Onlar (er.)'),
-        matching: find.byType(Container),
-      ).first;
+      final cellContainerFinder = find
+          .ancestor(
+            of: find.text('Onlar (er.)'),
+            matching: find.byType(Container),
+          )
+          .first;
       final containerWidget = tester.widget<Container>(cellContainerFinder);
       final decoration = containerWidget.decoration as BoxDecoration;
       final context = tester.element(find.text('Onlar (er.)'));
@@ -590,9 +586,7 @@ void main() {
       addTearDown(() => tester.binding.setSurfaceSize(null));
 
       await tester.pumpWidget(
-        MaterialApp(
-          home: ConjugationScreen(data: richTestData),
-        ),
+        MaterialApp(home: ConjugationScreen(data: richTestData)),
       );
       await navigateToConjugations(tester);
 
@@ -618,9 +612,7 @@ void main() {
       addTearDown(() => tester.binding.setSurfaceSize(null));
 
       await tester.pumpWidget(
-        MaterialApp(
-          home: ConjugationScreen(data: richTestData),
-        ),
+        MaterialApp(home: ConjugationScreen(data: richTestData)),
       );
       await navigateToConjugations(tester);
 
@@ -644,9 +636,7 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(
-      MaterialApp(
-        home: ConjugationScreen(data: richTestData),
-      ),
+      MaterialApp(home: ConjugationScreen(data: richTestData)),
     );
     await navigateToConjugations(tester);
 
@@ -672,9 +662,7 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(
-      MaterialApp(
-        home: ConjugationScreen(data: richTestData),
-      ),
+      MaterialApp(home: ConjugationScreen(data: richTestData)),
     );
     await navigateToConjugations(tester);
 
@@ -702,9 +690,7 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(
-      MaterialApp(
-        home: ConjugationScreen(data: richTestData),
-      ),
+      MaterialApp(home: ConjugationScreen(data: richTestData)),
     );
     await navigateToConjugations(tester);
 
@@ -1077,9 +1063,7 @@ void main() {
       addTearDown(() => tester.binding.setSurfaceSize(null));
 
       await tester.pumpWidget(
-        MaterialApp(
-          home: ConjugationScreen(data: nounTestData),
-        ),
+        MaterialApp(home: ConjugationScreen(data: nounTestData)),
       );
       await navigateToConjugations(tester);
 
@@ -1104,10 +1088,7 @@ void main() {
 
       // ArabicResultCard should display the selected word and rule details
       expect(find.text('نَاصِرَةٌ'), findsWidgets);
-      expect(
-        find.textContaining('Yardım eden bir kadın.'),
-        findsWidgets,
-      );
+      expect(find.textContaining('Yardım eden bir kadın.'), findsWidgets);
 
       // Broken plural chip 'نُصَّارٌ' should be visible at the bottom
       expect(find.text('نُصَّارٌ'), findsWidgets);
@@ -1254,9 +1235,7 @@ void main() {
       addTearDown(() => tester.binding.setSurfaceSize(null));
 
       await tester.pumpWidget(
-        const MaterialApp(
-          home: ConjugationScreen(data: pronounTestData),
-        ),
+        const MaterialApp(home: ConjugationScreen(data: pronounTestData)),
       );
 
       // Seçim ekranında 'Zamirler' kartına tıkla → ayrı sayfaya gider
@@ -1285,9 +1264,7 @@ void main() {
       addTearDown(() => tester.binding.setSurfaceSize(null));
 
       await tester.pumpWidget(
-        MaterialApp(
-          home: ConjugationScreen(data: richTestData),
-        ),
+        MaterialApp(home: ConjugationScreen(data: richTestData)),
       );
       await navigateToConjugations(tester);
 
@@ -1299,18 +1276,15 @@ void main() {
       // The default category on the main screen is Mazi Malum.
       // So on the All Tables page, the Mazi Malum table should highlight 'نَصَرَ' (Hüve).
       // But the Muzari Malum table ('يَنْصُرُ') should NOT highlight 'يَنْصُرُ' (Hüve).
-      
+
       // Let's verify 'نَصَرَ' is highlighted (with primaryContainer color)
       final nasaraFinder = find.text('نَصَرَ');
       expect(nasaraFinder, findsAtLeastNWidgets(1));
-      
+
       final nasaraContainers = tester.widgetList<Container>(
-        find.ancestor(
-          of: nasaraFinder,
-          matching: find.byType(Container),
-        ),
+        find.ancestor(of: nasaraFinder, matching: find.byType(Container)),
       );
-      
+
       bool foundHighlightedNasara = false;
       for (final container in nasaraContainers) {
         if (container.decoration is BoxDecoration) {
@@ -1321,23 +1295,28 @@ void main() {
           }
         }
       }
-      expect(foundHighlightedNasara, isTrue, reason: 'Mazi Malum cell should be highlighted');
+      expect(
+        foundHighlightedNasara,
+        isTrue,
+        reason: 'Mazi Malum cell should be highlighted',
+      );
 
       // Now verify 'يَنْصُرُ' (Muzari Malum) is NOT highlighted
       final yansuruFinder = find.text('يَنْصُرُ');
       expect(yansuruFinder, findsAtLeastNWidgets(1));
 
       final yansuruContainers = tester.widgetList<Container>(
-        find.ancestor(
-          of: yansuruFinder,
-          matching: find.byType(Container),
-        ),
+        find.ancestor(of: yansuruFinder, matching: find.byType(Container)),
       );
 
       for (final container in yansuruContainers) {
         if (container.decoration is BoxDecoration) {
           final deco = container.decoration as BoxDecoration;
-          expect(deco.color, isNull, reason: 'Muzari Malum cell should not be highlighted');
+          expect(
+            deco.color,
+            isNull,
+            reason: 'Muzari Malum cell should not be highlighted',
+          );
         }
       }
 
@@ -1696,7 +1675,7 @@ class _IndexedAppShell extends StatelessWidget {
           NavigationDestination(
             icon: Icon(Icons.info_outline),
             selectedIcon: Icon(Icons.info),
-            label: 'Kaynak',
+            label: 'Hakkında',
           ),
         ],
       ),

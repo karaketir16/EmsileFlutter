@@ -24,11 +24,10 @@ class PracticeQuestionGenerator {
         .toList();
     siblings.shuffle(random);
 
-    // 3 farklı soru tipinden birini rastgele seçelim:
+    // 2 farklı soru tipinden birini rastgele seçelim:
     // 0: Arapçadan Türkçeye anlam sorusu
-    // 1: Arapçadan şahıs sorusu
-    // 2: Türkçeden Arapçaya form sorusu
-    final questionType = random.nextInt(3);
+    // 1: Türkçeden Arapçaya form sorusu
+    final questionType = random.nextInt(2);
 
     if (questionType == 0) {
       // Arapçadan Türkçeye Anlam Sorusu
@@ -40,19 +39,6 @@ class PracticeQuestionGenerator {
         explanation: form.category.isNoun
             ? '${form.arabic} ${form.category.label} ${form.pronounLabel.toLowerCase()} formudur.'
             : '${form.arabic} ${form.category.label} ${form.voice.label} ${form.pronounLabel.toLowerCase()} formudur.',
-      );
-    } else if (questionType == 1) {
-      // Arapçadan Şahıs Sorusu
-      return PracticeQuestion(
-        prompt: form.category.isNoun
-            ? 'Bu formun dil bilgisi özelliği hangisidir?'
-            : 'Bu form hangi şahsa aittir?',
-        arabic: form.arabic,
-        options: _buildPronounOptions(form, siblings, random),
-        answer: form.pronounLabel,
-        explanation: form.category.isNoun
-            ? '${form.arabic} ${form.pronounLabel.toLowerCase()} özelliğine sahiptir.'
-            : '${form.arabic} ${form.pronounLabel.toLowerCase()} için kullanılır.',
       );
     } else {
       // Türkçeden Arapçaya Soru
@@ -89,20 +75,6 @@ class PracticeQuestionGenerator {
               : '${form.arabic} ${form.category.label} ${form.voice.label} ${form.pronounLabel.toLowerCase()} formudur.',
         ),
       );
-
-      questions.add(
-        PracticeQuestion(
-          prompt: form.category.isNoun
-              ? 'Bu formun dil bilgisi özelliği hangisidir?'
-              : 'Bu form hangi şahsa aittir?',
-          arabic: form.arabic,
-          options: _buildPronounOptions(form, siblings, random),
-          answer: form.pronounLabel,
-          explanation: form.category.isNoun
-              ? '${form.arabic} ${form.pronounLabel.toLowerCase()} özelliğine sahiptir.'
-              : '${form.arabic} ${form.pronounLabel.toLowerCase()} için kullanılır.',
-        ),
-      );
     }
 
     return questions;
@@ -118,26 +90,6 @@ class PracticeQuestionGenerator {
     for (final candidate in siblings) {
       if (!options.contains(candidate.meaning)) {
         options.add(candidate.meaning);
-      }
-      if (options.length == 5) {
-        break;
-      }
-    }
-
-    options.shuffle(random);
-    return options;
-  }
-
-  static List<String> _buildPronounOptions(
-    ConjugationForm form,
-    List<ConjugationForm> siblings,
-    Random random,
-  ) {
-    final options = <String>[form.pronounLabel];
-
-    for (final candidate in siblings) {
-      if (!options.contains(candidate.pronounLabel)) {
-        options.add(candidate.pronounLabel);
       }
       if (options.length == 5) {
         break;

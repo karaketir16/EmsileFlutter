@@ -5,10 +5,10 @@ import 'package:emsile_flutter/data/practice_question_generator.dart';
 
 void main() {
   group('PracticeQuestionGenerator', () {
-    test('generates meaning and pronoun questions for each form', () {
+    test('generates meaning questions for each form', () {
       final questions = PracticeQuestionGenerator.fromForms(testForms);
 
-      expect(questions, hasLength(testForms.length * 2));
+      expect(questions, hasLength(testForms.length));
 
       final meaningQuestion = questions.firstWhere(
         (question) =>
@@ -18,30 +18,24 @@ void main() {
       expect(meaningQuestion.answer, 'O erkek yardım etti.');
       expect(meaningQuestion.options, contains('O erkek yardım etti.'));
       expect(meaningQuestion.options, contains('O iki erkek yardım etti.'));
-
-      final pronounQuestion = questions.firstWhere(
-        (question) =>
-            question.prompt == 'Bu form hangi şahsa aittir?' &&
-            question.arabic == 'نَصَرَ',
-      );
-      expect(pronounQuestion.answer, 'O (er.)');
-      expect(pronounQuestion.options, contains('O (er.)'));
-      expect(pronounQuestion.options, contains('O ikisi (er.)'));
     });
 
-    test('keeps duplicated arabic forms as separate pronoun questions', () {
+    test('does not generate pronoun questions', () {
       final questions = PracticeQuestionGenerator.fromForms(
         duplicatedArabicForms,
       );
 
-      final pronounQuestions = questions
-          .where((question) => question.prompt == 'Bu form hangi şahsa aittir?')
-          .toList();
-
-      expect(pronounQuestions, hasLength(duplicatedArabicForms.length));
       expect(
-        pronounQuestions.map((question) => question.answer),
-        containsAll(<String>['Onlar (er.)', 'O (kad.)']),
+        questions,
+        isNot(
+          contains(
+            isA<PracticeQuestion>().having(
+              (question) => question.prompt,
+              'prompt',
+              contains('şahsa'),
+            ),
+          ),
+        ),
       );
     });
   });

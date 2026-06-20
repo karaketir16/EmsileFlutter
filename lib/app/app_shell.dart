@@ -60,7 +60,7 @@ class _AppShellState extends State<AppShell> {
           NavigationDestination(
             icon: Icon(Icons.info_outline),
             selectedIcon: Icon(Icons.info),
-            label: 'Kaynak',
+            label: 'Hakkında',
           ),
         ],
       ),

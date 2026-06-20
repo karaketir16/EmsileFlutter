@@ -1,6 +1,5 @@
 import 'package:emsile_flutter/data/models.dart';
 import 'package:emsile_flutter/shared/widgets/app_page.dart';
-import 'package:emsile_flutter/shared/widgets/arabic_result_card.dart';
 import 'package:emsile_flutter/shared/widgets/info_panel.dart';
 import 'package:flutter/material.dart';
 
@@ -13,28 +12,36 @@ class LessonsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppPage(
       title: 'Dersler',
-      subtitle: 'PDF akışını mobil çalışma başlıklarına böldük.',
       child: Column(
-        children: data.lessons
-            .map(
-              (lesson) => LessonTile(
-                lesson: lesson,
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) =>
-                          LessonDetailScreen(lesson: lesson, data: data),
-                    ),
-                  );
-                },
+        children: [
+          _MainLessonTile(
+            title: 'Emsile-i Muhtelife',
+            subtitle: 'Aynı kökten türeyen farklı kalıplar ve anlamları',
+            icon: Icons.account_tree_outlined,
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => _MuhtelifeLessonScreen(data: data),
               ),
-            )
-            .toList(),
+            ),
+          ),
+          const SizedBox(height: 10),
+          _MainLessonTile(
+            title: 'Emsile-i Muttaride',
+            subtitle: 'Kalıpların şahıslara ve sayılara göre çekimleri',
+            icon: Icons.table_chart_outlined,
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => _MuttarideLessonScreen(data: data),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
 }
 
+/// Eski doğrudan ders açma akışıyla uyumluluk için korunur.
 class LessonDetailScreen extends StatelessWidget {
   const LessonDetailScreen({
     required this.lesson,
@@ -47,43 +54,219 @@ class LessonDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final muhtelifeEntries = _sortedMuhtelifeEntries(data.muhtelifeEntries);
-    final relatedForms = data.forms
-        .where((form) => form.category == lesson.relatedCategory)
-        .take(4)
+    if (lesson.title == 'Emsile-i Muhtelife') {
+      return _MuhtelifeLessonScreen(data: data);
+    }
+    return _MuttarideDetailScreen(data: data, category: lesson.relatedCategory);
+  }
+}
+
+class _MuhtelifeLessonScreen extends StatelessWidget {
+  const _MuhtelifeLessonScreen({required this.data});
+
+  final AppData data;
+
+  @override
+  Widget build(BuildContext context) {
+    final entries = [...data.muhtelifeEntries]
+      ..sort((a, b) => a.sortOrder.compareTo(b.sortOrder));
+
+    return _LessonScaffold(
+      title: 'Emsile-i Muhtelife',
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          InfoPanel(
+            title: 'Emsile-i Muhtelife',
+            body:
+                'Aynı kökten türeyen, kalıp ve anlam bakımından birbirinden farklı kelime çeşitlerini gösterir.',
+          ),
+          const SizedBox(height: 18),
+          Text(
+            'Muhtelife Tablosu',
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
+          const SizedBox(height: 10),
+          for (var index = 0; index < entries.length; index++) ...[
+            _MuhtelifeCard(index: index + 1, entry: entries[index]),
+            const SizedBox(height: 10),
+          ],
+          const SizedBox(height: 8),
+          Text('Açıklamalar', style: Theme.of(context).textTheme.titleLarge),
+          const SizedBox(height: 10),
+          for (final note in _muhtelifeNotes) ...[
+            _NoteCard(text: note),
+            const SizedBox(height: 8),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _MuttarideLessonScreen extends StatelessWidget {
+  const _MuttarideLessonScreen({required this.data});
+
+  final AppData data;
+
+  @override
+  Widget build(BuildContext context) {
+    final available = FormCategory.values
+        .where(
+          (category) => data.forms.any((form) => form.category == category),
+        )
         .toList();
 
-    return Scaffold(
-      body: SafeArea(
-        child: AppPage(
-          title: lesson.title,
-          subtitle: lesson.summary,
-          leading: IconButton(
-            onPressed: () => Navigator.of(context).pop(),
-            icon: const Icon(Icons.arrow_back),
-            tooltip: 'Geri',
+    return _LessonScaffold(
+      title: 'Emsile-i Muttaride',
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          InfoPanel(
+            title: 'Emsile-i Muttaride',
+            body:
+                'Bir kalıbın şahıs, sayı ve cinsiyete göre düzenli biçimde çekilmesini gösterir. Bu nedenle şahıs zamirlerinin bilinmesi gerekir.',
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              InfoPanel(title: 'Kural Notu', body: lesson.rule),
-              const SizedBox(height: 16),
-              if (lesson.title == 'Emsile-i Muhtelife') ...[
-                Text(
-                  'Muhtelife Tablosu',
-                  style: Theme.of(context).textTheme.titleLarge,
+          const SizedBox(height: 18),
+          Text(
+            'Ders Başlıkları',
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
+          const SizedBox(height: 10),
+          for (var index = 0; index < available.length; index++) ...[
+            Card(
+              child: ListTile(
+                leading: CircleAvatar(child: Text('${index + 1}')),
+                title: Text(
+                  available[index].label,
+                  style: const TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const SizedBox(height: 10),
-                _MuhtelifeList(entries: muhtelifeEntries),
-              ] else ...[
-                Text('Örnekler', style: Theme.of(context).textTheme.titleLarge),
-                const SizedBox(height: 10),
-                for (final form in relatedForms) ...[
-                  ArabicResultCard(form: form),
-                  const SizedBox(height: 10),
-                ],
-              ],
+                subtitle: Text(_categoryDescription(available[index])),
+                trailing: const Icon(Icons.chevron_right),
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => _MuttarideDetailScreen(
+                      data: data,
+                      category: available[index],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 8),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _MuttarideDetailScreen extends StatelessWidget {
+  const _MuttarideDetailScreen({required this.data, required this.category});
+
+  final AppData data;
+  final FormCategory category;
+
+  @override
+  Widget build(BuildContext context) {
+    final forms = data.forms
+        .where((form) => form.category == category)
+        .toList();
+    final voices = category.isNoun
+        ? [forms.first.voice]
+        : Voice.values
+              .where((voice) => forms.any((form) => form.voice == voice))
+              .toList();
+
+    return _LessonScaffold(
+      title: category.label,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          InfoPanel(title: 'Açıklama', body: _categoryExplanation(category)),
+          const SizedBox(height: 18),
+          for (final voice in voices) ...[
+            Text(
+              category.isVerb
+                  ? '${category.label} Bina-i ${voice.label}'
+                  : category.label,
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
+            const SizedBox(height: 10),
+            _FormsTable(
+              forms: forms.where((form) => form.voice == voice).toList(),
+            ),
+            const SizedBox(height: 20),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _FormsTable extends StatelessWidget {
+  const _FormsTable({required this.forms});
+
+  final List<ConjugationForm> forms;
+
+  @override
+  Widget build(BuildContext context) {
+    final border = TableBorder.all(color: Theme.of(context).dividerColor);
+    return Card(
+      clipBehavior: Clip.antiAlias,
+      child: Table(
+        border: border,
+        columnWidths: const {
+          0: FlexColumnWidth(1.2),
+          1: FlexColumnWidth(1.3),
+          2: FlexColumnWidth(1.5),
+        },
+        children: [
+          const TableRow(
+            decoration: BoxDecoration(color: Color(0xFFF0E9DA)),
+            children: [
+              _TableCell(text: 'Şahıs / Özellik', bold: true),
+              _TableCell(text: 'Arapça', bold: true),
+              _TableCell(text: 'Anlam', bold: true),
             ],
+          ),
+          for (final form in forms)
+            TableRow(
+              children: [
+                _TableCell(text: form.pronounLabel),
+                _TableCell(text: form.arabic, arabic: true),
+                _TableCell(text: form.meaning),
+              ],
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+class _TableCell extends StatelessWidget {
+  const _TableCell({
+    required this.text,
+    this.bold = false,
+    this.arabic = false,
+  });
+
+  final String text;
+  final bool bold;
+  final bool arabic;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+      child: Directionality(
+        textDirection: arabic ? TextDirection.rtl : TextDirection.ltr,
+        child: Text(
+          text,
+          textAlign: arabic ? TextAlign.center : TextAlign.start,
+          style: TextStyle(
+            fontSize: arabic ? 20 : 13,
+            fontWeight: bold ? FontWeight.w800 : FontWeight.normal,
           ),
         ),
       ),
@@ -91,91 +274,40 @@ class LessonDetailScreen extends StatelessWidget {
   }
 }
 
-List<MuhtelifeEntry> _sortedMuhtelifeEntries(List<MuhtelifeEntry> entries) {
-  final sorted = [...entries];
-  sorted.sort((a, b) => a.sortOrder.compareTo(b.sortOrder));
-  return sorted;
-}
-
-class _MuhtelifeList extends StatelessWidget {
-  const _MuhtelifeList({required this.entries});
-
-  final List<MuhtelifeEntry> entries;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        for (var index = 0; index < entries.length; index++) ...[
-          _MuhtelifeListItem(index: index + 1, entry: entries[index]),
-          if (index != entries.length - 1) const SizedBox(height: 10),
-        ],
-      ],
-    );
-  }
-}
-
-class _MuhtelifeListItem extends StatelessWidget {
-  const _MuhtelifeListItem({required this.index, required this.entry});
+class _MuhtelifeCard extends StatelessWidget {
+  const _MuhtelifeCard({required this.index, required this.entry});
 
   final int index;
   final MuhtelifeEntry entry;
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-
     return Card(
-      clipBehavior: Clip.antiAlias,
       child: Padding(
         padding: const EdgeInsets.all(14),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: Row(
           children: [
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                CircleAvatar(
-                  radius: 16,
-                  backgroundColor: colorScheme.primaryContainer,
-                  child: Text(
-                    index.toString(),
-                    style: Theme.of(context).textTheme.labelMedium?.copyWith(
-                      fontWeight: FontWeight.w800,
-                      color: colorScheme.onPrimaryContainer,
+            CircleAvatar(radius: 16, child: Text('$index')),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    entry.label,
+                    style: const TextStyle(fontWeight: FontWeight.w800),
+                  ),
+                  const SizedBox(height: 3),
+                  Text(entry.meaning),
+                  const SizedBox(height: 8),
+                  Directionality(
+                    textDirection: TextDirection.rtl,
+                    child: Text(
+                      entry.arabic,
+                      style: Theme.of(context).textTheme.headlineSmall,
                     ),
                   ),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        entry.label,
-                        style: Theme.of(context).textTheme.titleMedium
-                            ?.copyWith(fontWeight: FontWeight.w800),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        entry.meaning,
-                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: Theme.of(context).colorScheme.primary,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 12),
-            Directionality(
-              textDirection: TextDirection.rtl,
-              child: Text(
-                entry.arabic,
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.headlineMedium,
+                ],
               ),
             ),
           ],
@@ -185,28 +317,147 @@ class _MuhtelifeListItem extends StatelessWidget {
   }
 }
 
-class LessonTile extends StatelessWidget {
-  const LessonTile({required this.lesson, required this.onTap, super.key});
+class _NoteCard extends StatelessWidget {
+  const _NoteCard({required this.text});
 
-  final Lesson lesson;
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(14),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Icon(
+              Icons.info_outline,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+            const SizedBox(width: 10),
+            Expanded(child: Text(text)),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _MainLessonTile extends StatelessWidget {
+  const _MainLessonTile({
+    required this.title,
+    required this.subtitle,
+    required this.icon,
+    required this.onTap,
+  });
+
+  final String title;
+  final String subtitle;
+  final IconData icon;
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
+        contentPadding: const EdgeInsets.all(14),
         onTap: onTap,
-        leading: CircleAvatar(
-          backgroundColor: Theme.of(context).colorScheme.primaryContainer,
-          child: Text(lesson.order.toString()),
+        leading: CircleAvatar(child: Icon(icon)),
+        title: Text(title, style: const TextStyle(fontWeight: FontWeight.w800)),
+        subtitle: Padding(
+          padding: const EdgeInsets.only(top: 5),
+          child: Text(subtitle),
         ),
-        title: Text(
-          lesson.title,
-          style: const TextStyle(fontWeight: FontWeight.w800),
-        ),
-        subtitle: Text(lesson.summary),
         trailing: const Icon(Icons.chevron_right),
       ),
     );
+  }
+}
+
+class _LessonScaffold extends StatelessWidget {
+  const _LessonScaffold({required this.title, required this.child});
+
+  final String title;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: AppPage(
+          title: title,
+          leading: IconButton(
+            onPressed: () => Navigator.of(context).pop(),
+            icon: const Icon(Icons.arrow_back),
+            tooltip: 'Geri',
+          ),
+          child: child,
+        ),
+      ),
+    );
+  }
+}
+
+const _muhtelifeNotes = [
+  'Emr-i Hâzır formunun başındaki hemze vasıl hemzesidir; kelimeye geçişte okunmaz.',
+  'Emr-i Hâzır formunun aslı, emir lâmı ile kurulan “li-tensur” yapısıdır.',
+  'İsm-i Zaman, İsm-i Mekân ve Masdar-ı Mîmî “mef‘al” kalıbındandır; “mef‘il” kalıbı da kullanılabilir.',
+  'İsm-i Âlet için “mif‘al” yanında “mif‘âl” ve “mif‘ale” kalıpları da kullanılabilir.',
+  'İsm-i Mensub, Masdar-ı Gayr-ı Mîmî’den yapılır.',
+  'Fiil-i Taaccüb kalıplarının sonundaki zamir ismin yerini tutar; yerine açık bir isim getirilebilir.',
+];
+
+String _categoryDescription(FormCategory category) {
+  switch (category) {
+    case FormCategory.mazi:
+      return 'Geçmiş zamanın malum ve meçhul çekimleri';
+    case FormCategory.muzari:
+      return 'Şimdiki, geniş ve gelecek zaman çekimleri';
+    case FormCategory.masdar:
+      return 'Fiilin şahıs ve zamandan bağımsız isim hali';
+    default:
+      return '${category.label} tablosu ve açıklaması';
+  }
+}
+
+String _categoryExplanation(FormCategory category) {
+  switch (category) {
+    case FormCategory.mazi:
+      return 'Fiil-i Mâzi geçmişte gerçekleşen işi bildirir. Meçhul çekimde sondan bir önceki harf kesralı, ondan önceki harekeli harfler dammeli okunur.';
+    case FormCategory.muzari:
+      return 'Fiil-i Muzâri, mâzi fiilin başına şahsa göre أ، ت، ي، ن muzaraat harflerinden biri getirilerek yapılır. Meçhulünde sondan bir önceki harf fethalı, muzaraat harfi dammeli olur.';
+    case FormCategory.cahdMutlak:
+      return '“Lem” muzâri fiili olumsuz yapar, anlamını geçmiş zamana çevirir ve fiili cezm eder.';
+    case FormCategory.cahdMustagrak:
+      return '“Lemmâ”, işin konuşma anına kadar yapılmadığını; sonrasında yapılmasının mümkün veya beklendiğini bildirir.';
+    case FormCategory.nefyHal:
+      return '“Mâ” edatı muzâri fiili lafzen değiştirmeden şimdiki zamanda olumsuz yapar.';
+    case FormCategory.nefyIstikbal:
+      return '“Lâ” edatı muzâri fiili lafzen değiştirmeden gelecek zamanda olumsuz yapar.';
+    case FormCategory.tekidNefyIstikbal:
+      return '“Len” gelecek zamanı kuvvetli biçimde olumsuz yapar ve muzâri fiili nasb eder.';
+    case FormCategory.emrGaib:
+      return 'Hazır olmayan şahsa bir işin yapılmasını emretmek için muzâri fiile emir lâmı getirilir.';
+    case FormCategory.nehyGaib:
+      return 'Hazır olmayan şahsın bir işi yapmasını yasaklamak için muzâri fiile nehiy “lâ”sı getirilir.';
+    case FormCategory.emrHazir:
+      return 'Karşımızdaki şahsa emir verir. Muzâri fiil cezm edilir, muzaraat harfi kaldırılır; gerekirse başına vasıl hemzesi getirilir.';
+    case FormCategory.nehyHazir:
+      return 'Karşımızdaki şahsın bir işi yapmasını yasaklamak için muhatap muzâri çekiminin başına nehiy “lâ”sı getirilir.';
+    case FormCategory.masdarMerre:
+      return 'Bir işin kaç defa yapıldığını bildiren masdardır.';
+    case FormCategory.masdarNev:
+      return 'Bir işin yapılış biçimini veya çeşidini bildiren masdardır; daha çok tekil biçimi kullanılır.';
+    case FormCategory.ismTasgir:
+      return 'Küçültme veya azlık anlamı verir. Üç, dört ve beş harfli isimler için farklı vezinleri vardır.';
+    case FormCategory.ismMensub:
+      return 'Bir işe, yere veya şeye mensubiyet ve alâka bildirir.';
+    case FormCategory.mubalagaIsmFail:
+      return 'İşi çokça yapanı bildirir; modern Arapçada alet ismi olarak da kullanılabilir.';
+    case FormCategory.fiilTaaccubEvvel:
+    case FormCategory.fiilTaaccubSani:
+      return 'Hayret ve şaşırma bildirir. Çekimi fiilin kendisiyle değil bitişik zamirlerle yapılır; meçhulü kullanılmaz.';
+    default:
+      return '${category.label}, aynı kökten türeyen düzenli çekim kalıplarından biridir. Aşağıdaki tabloda tekil, ikil ve çoğul biçimleri gösterilir.';
   }
 }
