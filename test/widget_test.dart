@@ -16,7 +16,7 @@ Future<void> pumpLoadedApp(WidgetTester tester) async {
   await tester.pumpWidget(const EmsileApp());
   for (var i = 0; i < 60; i++) {
     await tester.pump(const Duration(milliseconds: 100));
-    if (find.text('Bugünkü Akış').evaluate().isNotEmpty) {
+    if (find.text('Nasıl kullanılır?').evaluate().isNotEmpty) {
       return;
     }
     if (find.textContaining('Veri yüklenemedi').evaluate().isNotEmpty) {
@@ -35,8 +35,8 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     expect(find.text('Emsile'), findsOneWidget);
-    expect(find.text('Bugünkü Akış'), findsOneWidget);
-    expect(find.text('نَصَرَ'), findsOneWidget);
+    expect(find.text('Nasıl kullanılır?'), findsOneWidget);
+    expect(find.text('Bilgini pekiştir'), findsOneWidget);
   });
 
   testWidgets('renders the conjugation screen', (WidgetTester tester) async {
