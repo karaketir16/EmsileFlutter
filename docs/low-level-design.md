@@ -215,6 +215,10 @@ Soru tipleri:
 
 Şahıs sorusu üretilmez.
 
+`AppData.practiceQuestions` repository yüklemesinde hâlâ üretilir; ancak güncel
+çoktan seçmeli ekran bu listeyi kullanmaz ve soruyu filtrelenmiş `forms`
+üzerinden anlık üretir. Alan geriye dönük uyumluluk dışında kaldırılabilir.
+
 ### Tabloyu Doldur
 
 `_TableFillPracticeScreenState`:
@@ -286,8 +290,12 @@ Arapça:
 ## 9. Bilinen Sınırlar
 
 - Tek fiil ve tek generated profil
+- Generator Türkçe anlamları `نصر / yardım etmek` fiiline sabitler;
+  `meaningSummary` henüz çekim üretiminde kullanılmaz
 - Kalıcı skor/ilerleme yok
 - Repository `AssetBundle` üzerinden enjekte edilebilir ve izole test edilebilir
 - Veri parse hataları alan bazında kullanıcı dostu raporlanmıyor
 - Özel Arapça fontu paketlenmiş değil
 - `emsile_seed.json` eski seed/uyumluluk asset'i olarak pakette kalıyor; repository aktif olarak katalog yapısını kullanıyor
+- Çekimler ve Zamirler alt sayfalarında `AppBar` ve `AppPage` başlığı birlikte
+  kullanıldığı için başlık iki kez görünür

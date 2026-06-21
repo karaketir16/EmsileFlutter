@@ -69,6 +69,8 @@ npm run visual-check
 
 ## Belgeler
 
+- [Belge dizini](docs/README.md)
+- [Uygulama denetim raporu](docs/audit-report.md)
 - [Tasarım dokümanı](docs/design-document.md)
 - [Düşük seviye tasarım](docs/low-level-design.md)
 - [Test stratejisi](docs/testing.md)

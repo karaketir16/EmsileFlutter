@@ -90,10 +90,11 @@ Son durum: `نصر` fiili üzerinden dersler, çekim/zamir tabloları, çoktan s
 
 ### Kalite
 
-- [x] `dart format`
-- [x] `flutter analyze`
+- [ ] `dart format --output=none --set-exit-if-changed lib test` temiz
+- [ ] `flutter analyze` temiz (2 deprecated API bilgisi var)
 - [x] `flutter test`
-- [x] 51 otomatik test
+- [x] 53 otomatik test
+- [x] `%88,8` satır kapsamı
 - [x] Repository asset bundle dependency injection
 - [x] Domain modellerinin veri katmanından ayrılması
 - [x] Çekim tablolarının ekran dosyasından bağımsız widget'lara ayrılması
@@ -107,7 +108,8 @@ Son durum: `نصر` fiili üzerinden dersler, çekim/zamir tabloları, çoktan s
 - [x] Kırık çoğul anahtarı ve eşdeğer hedef testleri
 - [x] Birinci şahıs birleşik hücre testi
 - [x] Eşleştirme alıştırması (matching practice) testleri
-- [ ] 360 px ve 430 px viewport testleri
+- [x] 360 px ve 430 px manuel viewport kontrolü
+- [ ] 360 px ve 430 px otomatik viewport testleri
 - [x] Güncel ekran görüntülerini yeniden üretme
 - [ ] Özel ve platformlar arası doğrulanmış Arapça fontu
 - [x] Repository hata testleri
@@ -115,3 +117,14 @@ Son durum: `نصر` fiili üzerinden dersler, çekim/zamir tabloları, çoktan s
 - [ ] Yeni generated bab profilleri
 - [ ] Kalıcı skor ve tekrar geçmişi
 - [ ] Derslerden ilgili tablo/pratiğe doğrudan geçiş
+
+## Yayın Öncesi Engeller
+
+- [ ] Android ve iOS production uygulama kimlikleri
+- [ ] Android release signing
+- [ ] CI içinde format, analyze, test ve seed kalite kapısı
+- [ ] GPL/ISC lisans metadata birliği
+- [ ] Cloudflare Analytics için gizlilik politikası veya analitiğin kaldırılması
+- [ ] Tablo doldurma için erişilebilir dokunma/klavye alternatifi
+
+Ayrıntılar: [Uygulama denetim raporu](audit-report.md)

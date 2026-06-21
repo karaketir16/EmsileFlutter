@@ -163,9 +163,10 @@ Bu alanlar UI ile uyumludur:
 
 ## 5. Neden Bu Yapı
 
-Bu yaklaşımın avantajları:
+Bu yaklaşımın hedeflenen avantajları:
 
-- yeni fiil eklemek kod yerine veri eklemek olur
+- generator profili ve anlam üretimi genelleştirildiğinde yeni fiil eklemek
+  ağırlıklı olarak veri eklemek olur
 - aynı UI birden çok fiil için yeniden kullanılabilir
 - `muhtelife` ve `muttaride` içerikleri ayrı fakat ilişkili kalır
 - kıyasi çekimlerde büyük veri tekrarını kaldırır
@@ -213,6 +214,9 @@ Bu sayede UI bir anda bütünüyle yeniden yazılmak zorunda kalmaz.
 
 ### Sonraki Faz: Çok Fiilli Katalog
 
+- Türkçe anlam üretimini `yardım etmek` sabitlerinden ayır
+- ikinci gerçek fiille generator testi ekle
+- manifest ve verb metadata ilişkilerini doğrula
 - birden çok sülasi fiil ekle
 - arama ve filtreleme ekle
 - içerik doğrulamasını schema tabanlı sıkılaştır
@@ -233,3 +237,8 @@ Bu proje için geçerli kararlar:
 - semai veya istisnai alanlarda override/veri tabanlı yaklaşımı korumak
 
 Yeni fiil eklenirken önce generator profilinin genellenebilirliği değerlendirilmeli; semai veya istisnai biçimler veri/override olarak tutulmalıdır.
+
+Mevcut önemli sınır: `NasaraMuttarideGenerator`, Arapça formları kök harflerden
+üretebilse de Türkçe anlamları doğrudan “yardım etmek” ifadeleriyle kurar.
+`VerbMeta.meaningSummary` henüz kullanılmaz. Bu nedenle ikinci fiil, anlam modeli
+genelleştirilmeden yalnız JSON eklenerek güvenli biçimde yayınlanamaz.

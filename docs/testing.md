@@ -3,9 +3,10 @@
 ## 1. Temel Komutlar
 
 ```bash
-dart format lib test
+dart format --output=none --set-exit-if-changed lib test
 flutter analyze
 flutter test
+flutter test --coverage
 flutter build web
 npm run validate-seed
 ```
@@ -19,7 +20,9 @@ npm run visual-check
 
 ## 2. Otomatik Test Kapsamı
 
-Mevcut test paketi `51` test içerir.
+Mevcut test paketi `53` test içerir.
+
+21 Haziran 2026 doğrulamasında satır kapsamı `2425/2731` (`%88,8`) ölçülmüştür.
 
 ### Veri ve Üretici Testleri
 
@@ -119,7 +122,8 @@ Pratik ekranları testlerde `Random(1)` gibi sabit random nesneleri alır. Üret
 
 ## 5. Görsel Kontrol
 
-`npm run visual-check`, release web çıktısında mobil viewport ekran görüntüleri üretir ve console/page hatalarını yakalar.
+`npm run visual-check`, release web çıktısında 390 × 844 mobil viewport ekran
+görüntüleri üretir ve console/page hatalarını yakalar.
 
 Mevcut ekran görüntüleri:
 
@@ -133,16 +137,34 @@ docs/screenshots/
   06-table-fill-mobile.png
 ```
 
-Bu görüntüler güncel UI'nin garantisi değildir; büyük görsel değişikliklerde yeniden üretilmelidir.
+Bu görüntüler güncel UI'nin garantisi değildir; script piksel karşılaştırması
+yapmaz ve sabit koordinatlarla gezinir. Büyük görsel değişikliklerde yeniden
+üretilmeli, sonuçlar gözle kontrol edilmelidir.
+
+21 Haziran 2026 tarihinde ayrıca 360 × 640 ve 430 × 932 boyutlarında manuel
+web kontrolü yapılmış, taşma veya console hatası görülmemiştir.
 
 ## 6. Eksik Testler
 
 - Bütün token'lar yanlış yerleştiğinde `Tekrar bak` kartı testi
 - Ayrıntılı JSON alan/parse hata mesajları
-- 360 px ve 430 px viewport testleri
+- 360 px ve 430 px otomatik viewport testleri
 - Erişilebilirlik/semantics testi
+- 200% text scale testi
+- Matching modlarının üçü için ayrı test
+- URL launcher başarı/başarısızlık testi
+- İkinci fiille generator anlam testi
+- Android release ve iOS archive smoke build
 
-## 7. Değişiklik Sonrası Minimum Doğrulama
+## 7. Bilinen Kontrol Borcu
+
+- `flutter analyze`, iki `DropdownButtonFormField.value` deprecated kullanımını
+  bildiriyor.
+- Format kontrolü `table_fill_practice_screen.dart` için başarısız.
+- GitHub Pages deploy workflow'u henüz format, analyze, test ve seed adımlarını
+  çalıştırmıyor.
+
+## 8. Değişiklik Sonrası Minimum Doğrulama
 
 UI veya veri mantığı değiştiğinde:
 

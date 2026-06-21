@@ -100,7 +100,14 @@ Fiil tabloları sabit şemayı kullanır:
 
 ### 5.4 Pratik
 
-Pratik ekranı iki moda ayrılır.
+Pratik ekranı üç moda ayrılır.
+
+#### Emsile-i Muhtelife Eşleştirme
+
+- Arapça sîga, Türkçe anlam veya sîga adıyla eşleştirilir.
+- Anlam, sîga adı ve karışık olmak üzere üç çalışma modu vardır.
+- Her tur en fazla beş eşleşme gösterir.
+- Hata sayısı, tur ilerlemesi ve tamamlanma oranı gösterilir.
 
 #### Çoktan Seçmeli
 
@@ -117,6 +124,7 @@ Pratik ekranı iki moda ayrılır.
 - Yanlış seçimde yalnız seçilen şık kırmızı/X olur; doğru cevap açıklanmaz.
 - Doğru seçimde seçilen şık yeşil/tik olur.
 - Sonraki Soru ile yeni rastgele soru üretilir.
+- Şahıs filtresi bulunmaz; sorular kategori ve çatı üzerinden süzülür.
 
 #### Tabloyu Doldur
 
@@ -163,6 +171,7 @@ Henüz yok:
 - Kullanıcı hesabı
 - Sesli okuma
 - Arama, favori ve kişisel notlar
+- Tablo doldurma için sürükle-bırak dışı erişilebilir giriş yöntemi
 
 ## 8. Başarı Kriterleri
 
