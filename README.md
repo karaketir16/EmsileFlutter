@@ -6,25 +6,18 @@ Mobil öncelikli Arapça sarf çalışma uygulaması.
 
 ## Ekran Görüntüleri
 
-Uygulamanın mobil öncelikli arayüzünden görünümler:
+Uygulamanın temel öğrenme ve alıştırma akışları:
 
 <p align="center">
-  <img src="docs/screenshots/01-home-mobile.png" width="24%" alt="Ana Sayfa" />
-  <img src="docs/screenshots/05-lessons-mobile.png" width="24%" alt="Dersler" />
-  <img src="docs/screenshots/06-lesson-detail-mobile.png" width="24%" alt="Ders Detayı" />
-  <img src="docs/screenshots/02-table-mobile.png" width="24%" alt="Çekim Tablosu" />
+  <img src="docs/screenshots/01-home-mobile.png" width="31%" alt="Ana sayfa" />
+  <img src="docs/screenshots/02-lesson-mobile.png" width="31%" alt="Fiil-i Mâzi ders açıklaması" />
+  <img src="docs/screenshots/03-conjugation-mobile.png" width="31%" alt="Fiil çekim tablosu" />
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/04-pronouns-mobile.png" width="24%" alt="Zamir Tablosu" />
-  <img src="docs/screenshots/07-practice-modes-mobile.png" width="24%" alt="Pratik Seçimi" />
-  <img src="docs/screenshots/08-matching-practice-mobile.png" width="24%" alt="Eşleştirme" />
-  <img src="docs/screenshots/03-practice-mobile.png" width="24%" alt="Çoktan Seçmeli" />
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/09-table-fill-practice-mobile.png" width="24%" alt="Tabloyu Doldur" />
-  <img src="docs/screenshots/10-about-mobile.png" width="24%" alt="Hakkında" />
+  <img src="docs/screenshots/04-pronouns-mobile.png" width="31%" alt="Şahıs zamirleri tablosu" />
+  <img src="docs/screenshots/05-matching-mobile.png" width="31%" alt="Emsile-i Muhtelife eşleştirme alıştırması" />
+  <img src="docs/screenshots/06-table-fill-mobile.png" width="31%" alt="Çekim tablosunu doldurma alıştırması" />
 </p>
 
 ## Özellikler

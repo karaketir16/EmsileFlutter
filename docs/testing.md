@@ -126,9 +126,11 @@ Mevcut ekran görüntüleri:
 ```text
 docs/screenshots/
   01-home-mobile.png
-  02-table-mobile.png
-  03-practice-mobile.png
+  02-lesson-mobile.png
+  03-conjugation-mobile.png
   04-pronouns-mobile.png
+  05-matching-mobile.png
+  06-table-fill-mobile.png
 ```
 
 Bu görüntüler güncel UI'nin garantisi değildir; büyük görsel değişikliklerde yeniden üretilmelidir.
