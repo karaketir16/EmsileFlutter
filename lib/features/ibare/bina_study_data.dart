@@ -1,0 +1,680 @@
+class BinaWord {
+  const BinaWord({
+    required this.arabic,
+    required this.meaning,
+    required this.kind,
+    required this.facts,
+    this.printedArabic,
+    this.punctuation = '',
+  });
+
+  final String arabic;
+  final String meaning;
+  final String kind;
+  final List<(String, String)> facts;
+  final String? printedArabic;
+  final String punctuation;
+
+  bool get hasOptionalHarakat =>
+      printedArabic != null && printedArabic != arabic;
+
+  String displayArabic(bool showHarakat) =>
+      '${showHarakat ? arabic : printedArabic ?? arabic}$punctuation';
+}
+
+class BinaPassage {
+  const BinaPassage({
+    required this.title,
+    required this.subtitle,
+    required this.words,
+    required this.translation,
+  });
+
+  final String title;
+  final String subtitle;
+  final List<BinaWord> words;
+  final String translation;
+
+  bool get hasOptionalHarakat => words.any((word) => word.hasOptionalHarakat);
+}
+
+const binaPassages = [
+  BinaPassage(
+    title: 'Besmele',
+    subtitle: 'Kitabın başlangıcı',
+    words: [
+      BinaWord(
+        arabic: 'بِسْمِ',
+        printedArabic: 'بسم',
+        meaning: 'Allah’ın ismiyle ifadesindeki “isim ile”',
+        kind: 'Harf-i cer + isim',
+        facts: [
+          ('Yapısı', 'بِ harf-i cerri, اِسْمِ ise mecrur isimdir.'),
+          ('İsim', 'اِسْمٌ: müfred, muzaf'),
+          ('İ‘rab', 'Kesra ile mecrurdur.'),
+          ('Görevi', 'Muzaf'),
+          ('Takdir', 'Başında gizli أَبْدَأُ “başlarım” fiili vardır.'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'اللّٰهِ',
+        printedArabic: 'اللّٰه',
+        meaning: 'Allah’ın',
+        kind: 'Özel isim',
+        facts: [
+          ('Kelime biçimi', 'Müfred ve marife'),
+          ('Görevi', 'Muzafun ileyh'),
+          ('İ‘rab', 'Kesra ile mecrurdur.'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'الرَّحْمٰنِ',
+        printedArabic: 'الرحمن',
+        meaning: 'Rahman olan',
+        kind: 'Sıfat',
+        facts: [
+          ('Kök', 'ر ح م'),
+          ('Vezin', 'فَعْلَان'),
+          ('Kelime biçimi', 'Müfred, müzekker ve marife'),
+          ('Görevi', 'Allah lafzının birinci sıfatı'),
+          ('İ‘rab', 'Mecrurdur; mevsufuna uyar.'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'الرَّحِيمِ',
+        printedArabic: 'الرحيم',
+        meaning: 'Rahim olan',
+        kind: 'Sıfat',
+        facts: [
+          ('Kök', 'ر ح م'),
+          ('Vezin', 'فَعِيل'),
+          ('Kelime biçimi', 'Müfred, müzekker ve marife'),
+          ('Görevi', 'Allah lafzının ikinci sıfatı'),
+          ('İ‘rab', 'Mecrurdur; mevsufuna uyar.'),
+        ],
+      ),
+    ],
+    translation: 'Rahman ve Rahim olan Allah’ın ismiyle başlarım.',
+  ),
+  BinaPassage(
+    title: 'Sarfın Bapları',
+    subtitle: 'Giriş cümlesi',
+    words: [
+      BinaWord(
+        arabic: 'اِعْلَمْ',
+        printedArabic: 'اعلم',
+        meaning: 'Bil',
+        kind: 'Fiil',
+        facts: [
+          ('Çekim', 'Emr-i hâzır, malûm'),
+          ('Şahıs', '2. şahıs, müzekker, tekil'),
+          ('Gizli zamir', 'أَنْتَ “sen”'),
+          ('Kök', 'ع ل م'),
+          ('Aslı', 'عَلِمَ يَعْلَمُ'),
+          ('Bab', 'Sülâsî mücerred 4. bab'),
+          ('Vezin', 'اِفْعَلْ'),
+          ('Cümledeki görev', 'Fiil'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'أَنَّ',
+        printedArabic: 'أن',
+        meaning: 'Muhakkak ki',
+        kind: 'Harf',
+        facts: [
+          ('Türü', 'Te’kid ve nasb harfi'),
+          ('Etkisi', 'İsmini mansub, haberini merfû yapar.'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'أَبْوَابَ',
+        printedArabic: 'أبواب',
+        meaning: 'Bapları',
+        kind: 'İsim',
+        facts: [
+          ('Tekili', 'بَابٌ'),
+          ('Kök', 'ب و ب'),
+          ('Vezin', 'أَفْعَال'),
+          ('Kelime biçimi', 'Cem-i mükesser, muzaf'),
+          ('Görevi', 'أَنَّ edatının ismi'),
+          ('İ‘rab', 'Fetha ile mansub'),
+          ('Tamlama', 'Muzaf'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'التَّصْرِيفِ',
+        printedArabic: 'التصريف',
+        meaning: 'Sarf ilminin',
+        kind: 'Masdar / isim',
+        facts: [
+          ('Kök', 'ص ر ف'),
+          ('Türediği fiil', 'صَرَّفَ يُصَرِّفُ'),
+          ('Bab', 'Sülâsî mezîd, tef‘îl babı'),
+          ('Vezin', 'تَفْعِيل'),
+          ('Kelime biçimi', 'Müfred ve marife'),
+          ('Görevi', 'أَبْوَابَ kelimesinin muzafun ileyhi'),
+          ('İ‘rab', 'Kesra ile mecrur'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'خَمْسَةٌ',
+        printedArabic: 'خمسة',
+        meaning: 'Beş',
+        kind: 'Sayı',
+        facts: [
+          ('Sayı türü', 'Birler basamağı'),
+          ('Temyizi', 'بَابًا'),
+          ('Görevi', 'أَنَّ edatının haberinin ilk parçası'),
+          ('İ‘rab', 'Merfû'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'وَثَلَاثُونَ',
+        printedArabic: 'وثلاثون',
+        meaning: 'Ve otuz',
+        kind: 'Bağlaç + sayı',
+        facts: [
+          ('وَ', 'Atıf harfi: “ve”'),
+          ('Sayı türü', 'Ukûd sayılarından “otuz”'),
+          ('Görevi', 'خَمْسَةٌ kelimesine atfedilmiştir.'),
+          ('İ‘rab', 'Vav ile merfû'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'بَابًا',
+        printedArabic: 'باباً',
+        punctuation: '،',
+        meaning: 'Bap olarak',
+        kind: 'İsim',
+        facts: [
+          ('Kök', 'ب و ب'),
+          ('Kelime biçimi', 'Müfred ve nekre'),
+          ('Görevi', 'Sayı temyizi'),
+          ('İ‘rab', 'Fetha ile mansub'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'سِتَّةٌ',
+        printedArabic: 'ستة',
+        meaning: 'Altı tanesi',
+        kind: 'Sayı',
+        facts: [
+          ('Sayı türü', 'Asıl sayı'),
+          ('Görevi', 'Yeni cümlenin mübtedası'),
+          ('İ‘rab', 'Zamme ile merfû'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'مِنْهَا',
+        printedArabic: 'منها',
+        meaning: 'Onlardan',
+        kind: 'Harf-i cer + zamir',
+        facts: [
+          ('مِنْ', 'Harf-i cer: “-den/-dan”'),
+          ('Zamir', 'هَا: 3. şahıs, müennes, tekil'),
+          ('Mercii', 'Otuz beş baba döner.'),
+          ('İ‘rab', 'هَا zamiri mahallen mecrurdur.'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'لِلثُّلَاثِيِّ',
+        printedArabic: 'للثلاثي',
+        meaning: 'Üç harfli için',
+        kind: 'Harf-i cer + isim',
+        facts: [
+          ('لِ', 'Harf-i cer: “için”'),
+          ('Kök', 'ث ل ث'),
+          ('Anlam', 'Sülâsî: üç harfli'),
+          ('Kelime biçimi', 'Nisbet ismi, müfred ve marife'),
+          ('İ‘rab', 'Mecrur'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'الْمُجَرَّدِ',
+        printedArabic: 'المجرد',
+        meaning: 'Mücerred, yalın olan',
+        kind: 'Sıfat',
+        facts: [
+          ('Kök', 'ج ر د'),
+          ('Türediği fiil', 'جَرَّدَ يُجَرِّدُ'),
+          ('Bab', 'Sülâsî mezîd, tef‘îl babı'),
+          ('Vezin', 'مُفَعَّل'),
+          ('Türü', 'İsm-i mef‘ûl'),
+          ('Anlam', 'Ziyade harflerden soyulmuş kök fiil'),
+          ('Görevi', 'الثُّلَاثِيِّ kelimesinin sıfatı'),
+          ('İ‘rab', 'Mecrur'),
+        ],
+      ),
+    ],
+    translation:
+        'Bil ki sarf ilminin bapları otuz beş baptır. Bunlardan altısı sülâsî mücerred içindir.',
+  ),
+  BinaPassage(
+    title: 'Birinci Bab',
+    subtitle: 'Vezin, mevzun ve alâmet',
+    words: [
+      BinaWord(
+        arabic: 'الْبَابُ',
+        printedArabic: 'الباب',
+        meaning: 'Bab',
+        kind: 'İsim',
+        facts: [
+          ('Kök', 'ب و ب'),
+          ('Kelime biçimi', 'Müfred ve marife'),
+          ('Görevi', 'Mübtedâ'),
+          ('İ‘rab', 'Zamme ile merfû'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'الْأَوَّلُ',
+        printedArabic: 'الأول',
+        punctuation: ':',
+        meaning: 'Birinci',
+        kind: 'Sıfat',
+        facts: [
+          ('Kök', 'أ و ل'),
+          ('Kelime biçimi', 'Sıra sayısı, müfred ve marife'),
+          ('Görevi', 'الْبَابُ kelimesinin sıfatı'),
+          ('İ‘rab', 'Zamme ile merfû'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'فَعَلَ',
+        punctuation: ' –',
+        meaning: 'Mâzi vezni: feale',
+        kind: 'Vezin',
+        facts: [
+          ('Türü', 'Sarf ölçüsü; gerçek bir kelime kökü değildir.'),
+          ('Çekim', 'Fiil-i mâzi, malûm'),
+          ('Şahıs', '3. şahıs, müzekker, tekil'),
+          ('Gizli zamir', 'هُوَ'),
+          ('Aynü’l-fiil', 'Fethalı'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'يَفْعُلُ',
+        meaning: 'Muzâri vezni: yef‘ulü',
+        kind: 'Vezin',
+        facts: [
+          ('Türü', 'Sarf ölçüsü; gerçek bir kelime kökü değildir.'),
+          ('Çekim', 'Fiil-i muzâri, malûm'),
+          ('Şahıs', '3. şahıs, müzekker, tekil'),
+          ('Gizli zamir', 'هُوَ'),
+          ('Aynü’l-fiil', 'Dammeli'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'مَوْزُونُهُ',
+        printedArabic: 'موزونه',
+        punctuation: ':',
+        meaning: 'Onun mevzunu',
+        kind: 'İsim + zamir',
+        facts: [
+          ('Kök', 'و ز ن'),
+          ('Türediği fiil', 'وَزَنَ يَزِنُ'),
+          ('Vezin', 'مَفْعُول'),
+          ('Türü', 'İsm-i mef‘ûl'),
+          ('Anlam', 'Bu vezne oturan örnek fiil'),
+          ('Zamir', 'هُ: 3. şahıs, müzekker, tekil'),
+          ('Mercii', 'Birinci baba döner.'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'نَصَرَ',
+        meaning: 'Yardım etti',
+        kind: 'Fiil',
+        facts: [
+          ('Çekim', 'Fiil-i mâzi, malûm'),
+          ('Şahıs', '3. şahıs, müzekker, tekil'),
+          ('Gizli zamir', 'هُوَ'),
+          ('Kök', 'ن ص ر'),
+          ('Bab', 'Sülâsî mücerred 1. bab'),
+          ('Vezin', 'فَعَلَ'),
+          ('Geçişlilik', 'Müteaddi'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'يَنْصُرُ',
+        punctuation: '،',
+        meaning: 'Yardım eder',
+        kind: 'Fiil',
+        facts: [
+          ('Çekim', 'Fiil-i muzâri, malûm'),
+          ('Şahıs', '3. şahıs, müzekker, tekil'),
+          ('Gizli zamir', 'هُوَ'),
+          ('Kök', 'ن ص ر'),
+          ('Bab', 'Sülâsî mücerred 1. bab'),
+          ('Vezin', 'يَفْعُلُ'),
+          ('Geçişlilik', 'Müteaddi'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'وَعَلَامَتُهُ',
+        printedArabic: 'وعلامَتُهُ',
+        meaning: 'Ve onun alâmeti',
+        kind: 'Bağlaç + isim + zamir',
+        facts: [
+          ('وَ', 'Atıf harfi: “ve”'),
+          ('Kök', 'ع ل م'),
+          ('Vezin', 'فَعَالَة'),
+          ('Kelime biçimi', 'Müfred, muzaf ve merfû'),
+          ('Zamir', 'هُ: birinci baba döner.'),
+          ('Anlam', 'Babı diğer baplardan ayıran lafzî özellik'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'أَنْ',
+        printedArabic: 'أن',
+        meaning: '-mesi, olması',
+        kind: 'Harf',
+        facts: [
+          ('Türü', 'Masdariyye ve nasb harfi'),
+          ('Etkisi', 'Muzâri fiili nasb eder.'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'يَكُونَ',
+        printedArabic: 'يكون',
+        meaning: 'Olmasıdır',
+        kind: 'Fiil',
+        facts: [
+          ('Çekim', 'Fiil-i muzâri, ناقص fiil'),
+          ('Şahıs', '3. şahıs, müzekker, tekil'),
+          ('Gizli zamir', 'هُوَ'),
+          ('Nasb', 'أَنْ sebebiyle mansub'),
+          ('Kök', 'ك و ن'),
+          ('Aslı', 'كَانَ يَكُونُ'),
+          ('Vezin', 'يَفْعُلُ'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'عَيْنُ',
+        printedArabic: 'عَيْنُ',
+        meaning: 'Orta harfinin',
+        kind: 'İsim',
+        facts: [
+          ('Kök', 'ع ي ن'),
+          ('Kelime biçimi', 'Müfred ve muzaf'),
+          ('Terim', 'Aynü’l-fiil: kökün ikinci harfi'),
+          ('Görevi', 'يَكُونَ fiilinin ismi'),
+          ('Tamlama', 'Muzaf'),
+          ('İ‘rab', 'Zamme ile merfû'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'فِعْلِهِ',
+        printedArabic: 'فِعْلِهِ',
+        meaning: 'Fiilinin',
+        kind: 'İsim + zamir',
+        facts: [
+          ('Kök', 'ف ع ل'),
+          ('Vezin', 'فِعْل'),
+          ('Görevi', 'Muzafun ileyh'),
+          ('Zamir', 'هُ: vezne giren fiile döner.'),
+          ('İ‘rab', 'Kesra ile mecrur'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'مَفْتُوحًا',
+        printedArabic: 'مَفْتُوحاً',
+        meaning: 'Fethalı',
+        kind: 'İsm-i mef‘ûl',
+        facts: [
+          ('Kök', 'ف ت ح'),
+          ('Türediği fiil', 'فَتَحَ يَفْتَحُ'),
+          ('Vezin', 'مَفْعُول'),
+          ('Görevi', 'يَكُونَ fiilinin haberi'),
+          ('İ‘rab', 'Fetha ile mansub'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'فِي الْمَاضِي',
+        printedArabic: 'فِي الماضي',
+        meaning: 'Mâzide',
+        kind: 'Harf-i cer + isim',
+        facts: [
+          ('فِي', 'Harf-i cer: “-de/-da”'),
+          ('Kök', 'م ض ي'),
+          ('Türü', 'الْمَاضِي: ism-i fâil'),
+          ('Vezin', 'فَاعِل'),
+          ('Anlam', 'Fiil-i mâzi'),
+          ('İ‘rab', 'Kesra takdir edilerek mecrur'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'وَمَضْمُومًا',
+        printedArabic: 'ومَضْمُوماً',
+        meaning: 'Ve dammeli',
+        kind: 'Bağlaç + ism-i mef‘ûl',
+        facts: [
+          ('وَ', 'Atıf harfi: “ve”'),
+          ('Kök', 'ض م م'),
+          ('Türediği fiil', 'ضَمَّ يَضُمُّ'),
+          ('Vezin', 'مَفْعُول'),
+          ('Görevi', 'مَفْتُوحًا kelimesine atfedilmiştir.'),
+          ('İ‘rab', 'Fetha ile mansub'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'فِي الْمُضَارِعِ',
+        printedArabic: 'فِي المضارعِ',
+        meaning: 'Muzârîde',
+        kind: 'Harf-i cer + isim',
+        facts: [
+          ('فِي', 'Harf-i cer'),
+          ('Kök', 'ض ر ع'),
+          ('Türediği fiil', 'ضَارَعَ يُضَارِعُ'),
+          ('Bab', 'Sülâsî mezîd, müfâale babı'),
+          ('Vezin', 'مُفَاعِل'),
+          ('Türü', 'İsm-i fâil; terim olarak fiil-i muzâri'),
+          ('İ‘rab', 'Kesra ile mecrur'),
+        ],
+      ),
+    ],
+    translation:
+        'Birinci babın vezni فَعَلَ يَفْعُلُ, mevzunu نَصَرَ يَنْصُرُ’dur ve alâmet-i lafziyyesi, aynü’l-fiilin mâzide fethalı ve muzârîde dammeli olmasıdır.',
+  ),
+  BinaPassage(
+    title: 'Manen Bina ve Misaller',
+    subtitle: 'Müteaddi ve lazım',
+    words: [
+      BinaWord(
+        arabic: 'وَبِنَاؤُهُ',
+        printedArabic: 'وبِناؤُهُ',
+        meaning: 'Ve bu babın manen binası',
+        kind: 'Bağlaç + masdar + zamir',
+        facts: [
+          ('وَ', 'Atıf harfi: “ve”'),
+          ('Kök', 'ب ن ي'),
+          ('Türediği fiil', 'بَنَى يَبْنِي'),
+          ('Vezin', 'فِعَال'),
+          ('Anlam', 'Babın hangi işlev için kullanıldığı'),
+          ('Zamir', 'هُ: birinci baba döner.'),
+          ('İ‘rab', 'Merfû'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'لِلتَّعْدِيَةِ',
+        printedArabic: 'لِلتَّعْدِيَةِ',
+        meaning: 'Müteaddilik içindir',
+        kind: 'Harf-i cer + isim',
+        facts: [
+          ('Kök', 'ع د و'),
+          ('Türediği fiil', 'عَدَّى يُعَدِّي'),
+          ('Bab', 'Sülâsî mezîd, tef‘îl babı'),
+          ('Vezin', 'تَفْعِلَة'),
+          ('Türü', 'Masdar'),
+          ('Anlam', 'Fiilin etkisinin mef‘ûle geçmesi'),
+          ('Türkçesi', 'Geçişlilik'),
+          ('İ‘rab', 'Kesra ile mecrur'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'غَالِبًا',
+        printedArabic: 'غَالِباً',
+        meaning: 'Çoğu kez',
+        kind: 'İsm-i fâil',
+        facts: [
+          ('Kök', 'غ ل ب'),
+          ('Türediği fiil', 'غَلَبَ يَغْلِبُ'),
+          ('Vezin', 'فَاعِل'),
+          ('Görevi', 'Hâl/zarf manası'),
+          ('İ‘rab', 'Fetha ile mansub'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'وَقَدْ',
+        printedArabic: 'وَقَدْ',
+        meaning: 'Ve bazen',
+        kind: 'Bağlaç + harf',
+        facts: [
+          ('وَ', 'Atıf harfi: “ve”'),
+          ('قَدْ', 'Muzâri fiille burada ihtimal ve bazen manası verir.'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'يَكُونُ',
+        printedArabic: 'يَكُونُ',
+        meaning: 'Olur',
+        kind: 'Fiil',
+        facts: [
+          ('Çekim', 'Fiil-i muzâri, malûm'),
+          ('Şahıs', '3. şahıs, müzekker, tekil'),
+          ('Gizli zamir', 'هُوَ'),
+          ('Kök', 'ك و ن'),
+          ('Aslı', 'كَانَ يَكُونُ'),
+          ('Vezin', 'يَفْعُلُ'),
+          ('İ‘rab', 'Zamme ile merfû'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'لَازِمًا',
+        printedArabic: 'لَازِماً',
+        meaning: 'Lazım, geçişsiz',
+        kind: 'İsm-i fâil',
+        facts: [
+          ('Kök', 'ل ز م'),
+          ('Türediği fiil', 'لَزِمَ يَلْزَمُ'),
+          ('Vezin', 'فَاعِل'),
+          ('Anlam', 'Etkisi bir mef‘ûle geçmeyen fiil'),
+          ('Görevi', 'يَكُونُ fiilinin haberi'),
+          ('İ‘rab', 'Fetha ile mansub'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'مِثَالُ الْمُتَعَدِّي',
+        printedArabic: 'مثال المتعدِّي',
+        meaning: 'Müteaddinin misali',
+        kind: 'İsim tamlaması',
+        facts: [
+          ('مِثَالُ', 'Müfred isim ve muzaf'),
+          ('الْمُتَعَدِّي', 'İsm-i fâil ve muzafun ileyh'),
+          ('Kök', 'ع د و'),
+          ('Türediği fiil', 'تَعَدَّى يَتَعَدَّى'),
+          ('Vezin', 'مُتَفَعِّل'),
+          ('İ‘rab', 'الْمُتَعَدِّي kesra takdir edilerek mecrur'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'نَحْوُ',
+        printedArabic: 'نحو',
+        punctuation: ':',
+        meaning: 'Şunun gibi',
+        kind: 'İsim',
+        facts: [
+          ('Kök', 'ن ح و'),
+          ('Anlam', 'Örnek vermek için “gibi, şöyle” manasında kullanılır.'),
+          ('İ‘rab', 'Zamme ile merfû'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'نَصَرَ',
+        meaning: 'Yardım etti',
+        kind: 'Fiil',
+        facts: [
+          ('Çekim', 'Fiil-i mâzi, malûm'),
+          ('Şahıs', '3. şahıs, müzekker, tekil'),
+          ('Kök', 'ن ص ر'),
+          ('Bab', 'Sülâsî mücerred 1. bab'),
+          ('Vezin', 'فَعَلَ'),
+          ('Muzârisi', 'يَنْصُرُ'),
+          ('Cümledeki görev', 'Fiil'),
+          ('Geçişlilik', 'Müteaddi'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'زَيْدٌ',
+        meaning: 'Zeyd',
+        kind: 'Özel isim',
+        facts: [
+          ('Kelime biçimi', 'Müfred, müzekker ve marife'),
+          ('Cümledeki görev', 'Fâil'),
+          ('İ‘rab', 'Zamme ile merfû'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'عَمْرًا',
+        meaning: 'Amr’a',
+        kind: 'Özel isim',
+        facts: [
+          ('Kelime biçimi', 'Müfred, müzekker ve marife'),
+          ('Cümledeki görev', 'Mef‘ûlün bih'),
+          ('İ‘rab', 'Fetha ile mansub'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'وَمِثَالُ اللَّازِمِ',
+        printedArabic: 'ومثال اللازم',
+        meaning: 'Ve lazımın misali',
+        kind: 'Bağlaç + isim tamlaması',
+        facts: [
+          ('وَ', 'Atıf harfi: “ve”'),
+          ('مِثَالُ', 'Müfred isim ve muzaf'),
+          ('اللَّازِمِ', 'İsm-i fâil ve muzafun ileyh'),
+          ('Kök', 'ل ز م'),
+          ('Vezin', 'فَاعِل'),
+          ('İ‘rab', 'اللَّازِمِ kesra ile mecrur'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'نَحْوُ',
+        printedArabic: 'نحو',
+        punctuation: ':',
+        meaning: 'Şunun gibi',
+        kind: 'İsim',
+        facts: [
+          ('Kök', 'ن ح و'),
+          ('Anlam', 'Örnek vermek için “gibi, şöyle” manasında kullanılır.'),
+          ('İ‘rab', 'Zamme ile merfû'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'خَرَجَ',
+        meaning: 'Çıktı',
+        kind: 'Fiil',
+        facts: [
+          ('Çekim', 'Fiil-i mâzi, malûm'),
+          ('Şahıs', '3. şahıs, müzekker, tekil'),
+          ('Kök', 'خ ر ج'),
+          ('Bab', 'Sülâsî mücerred 1. bab'),
+          ('Vezin', 'فَعَلَ'),
+          ('Muzârisi', 'يَخْرُجُ'),
+          ('Cümledeki görev', 'Fiil'),
+          ('Geçişlilik', 'Lazım'),
+        ],
+      ),
+      BinaWord(
+        arabic: 'زَيْدٌ',
+        meaning: 'Zeyd',
+        kind: 'Özel isim',
+        facts: [
+          ('Kelime biçimi', 'Müfred, müzekker ve marife'),
+          ('Cümledeki görev', 'Fâil'),
+          ('İ‘rab', 'Zamme ile merfû'),
+        ],
+      ),
+    ],
+    translation:
+        'Ve bu bab çoğunlukla müteaddi, bazen lazım fiiller için kullanılır. Müteaddinin misali “Zeyd Amr’a yardım etti”; ve lazımın misali “Zeyd çıktı” cümlesidir.',
+  ),
+];

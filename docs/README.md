@@ -7,6 +7,7 @@
 - [Geliştirme checklist'i](checklist.md) — tamamlanan ve sıradaki işler
 - [Ölçeklenme planı](scaling-plan.md) — çok-fiilli veri tasarımı
 - [Kaynak ders notu](Emsile_Ders_Notu_Zafer_ESEN_01.01.2025.pdf)
+- [Metnü'l-Binâ ve'l-Esâs](البناء%20والأساس.pdf)
 
 Belgeler, davranışı değiştiren kod güncellemeleriyle aynı commit içinde
 güncellenmelidir.

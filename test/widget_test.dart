@@ -6,6 +6,8 @@ import 'package:emsile_flutter/app/emsile_app.dart';
 import 'package:emsile_flutter/data/models.dart';
 import 'package:emsile_flutter/features/conjugation/conjugation_screen.dart';
 import 'package:emsile_flutter/features/home/home_screen.dart';
+import 'package:emsile_flutter/features/ibare/bina_study_data.dart';
+import 'package:emsile_flutter/features/ibare/bina_study_screen.dart';
 import 'package:emsile_flutter/features/lessons/lessons_screen.dart';
 import 'package:emsile_flutter/features/practice/practice_screen.dart';
 import 'package:emsile_flutter/features/source/source_screen.dart';
@@ -30,6 +32,65 @@ Future<void> pumpLoadedApp(WidgetTester tester) async {
 }
 
 void main() {
+  test('ibare data preserves printed harakat and toggles added harakat', () {
+    final besmele = binaPassages.first.words.first;
+    final printedPattern = binaPassages[2].words.firstWhere(
+      (word) => word.arabic == 'فَعَلَ',
+    );
+
+    expect(besmele.displayArabic(false), 'بسم');
+    expect(besmele.displayArabic(true), 'بِسْمِ');
+    expect(printedPattern.displayArabic(false), 'فَعَلَ –');
+    expect(printedPattern.displayArabic(true), 'فَعَلَ –');
+
+    final numberedSentence = binaPassages[1].words.firstWhere(
+      (word) => word.arabic == 'بَابًا',
+    );
+    expect(numberedSentence.displayArabic(false), 'باباً،');
+    expect(numberedSentence.displayArabic(true), 'بَابًا،');
+
+    final alametuhu = binaPassages[2].words.firstWhere(
+      (word) => word.arabic == 'وَعَلَامَتُهُ',
+    );
+    expect(alametuhu.displayArabic(false), 'وعلامَتُهُ');
+    expect(alametuhu.displayArabic(true), 'وَعَلَامَتُهُ');
+
+    final bina = binaPassages[3].words.firstWhere(
+      (word) => word.arabic == 'وَبِنَاؤُهُ',
+    );
+    expect(bina.displayArabic(false), 'وبِناؤُهُ');
+    expect(bina.displayArabic(true), 'وَبِنَاؤُهُ');
+  });
+
+  test('ibare text matches the book forms when harakat are hidden', () {
+    expect(
+      binaPassages
+          .map(
+            (passage) => passage.words
+                .map((word) => word.displayArabic(false))
+                .join(' '),
+          )
+          .toList(),
+      [
+        'بسم اللّٰه الرحمن الرحيم',
+        'اعلم أن أبواب التصريف خمسة وثلاثون باباً، ستة منها للثلاثي المجرد',
+        'الباب الأول: فَعَلَ – يَفْعُلُ موزونه: نَصَرَ يَنْصُرُ، وعلامَتُهُ أن يكون عَيْنُ فِعْلِهِ مَفْتُوحاً فِي الماضي ومَضْمُوماً فِي المضارعِ',
+        'وبِناؤُهُ لِلتَّعْدِيَةِ غَالِباً وَقَدْ يَكُونُ لَازِماً مثال المتعدِّي نحو: نَصَرَ زَيْدٌ عَمْرًا ومثال اللازم نحو: خَرَجَ زَيْدٌ',
+      ],
+    );
+  });
+
+  test('ibare broken meanings preserve conjunction waw', () {
+    final conjunctions = binaPassages
+        .expand((passage) => passage.words)
+        .where((word) => word.arabic.startsWith('وَ'));
+
+    expect(
+      conjunctions.every((word) => word.meaning.startsWith('Ve ')),
+      isTrue,
+    );
+  });
+
   testWidgets('shows the Emsile home screen', (WidgetTester tester) async {
     await pumpLoadedApp(tester);
     addTearDown(() => tester.binding.setSurfaceSize(null));
@@ -152,6 +213,48 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('Dersler'), findsWidgets);
+    expect(find.text('İbare Çalışması'), findsOneWidget);
+  });
+
+  testWidgets('ibare study reveals word analysis and meanings', (
+    WidgetTester tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(390, 1600));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+
+    await tester.pumpWidget(
+      const MaterialApp(home: BinaPassageScreen(initialIndex: 1)),
+    );
+
+    expect(find.text('اعلم'), findsOneWidget);
+    expect(find.text('اِعْلَمْ'), findsNothing);
+
+    await tester.tap(find.text('اعلم'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Emr-i hâzır, malûm'), findsOneWidget);
+    expect(find.text('أَنْتَ “sen”'), findsOneWidget);
+    expect(find.text('Sülâsî mücerred 4. bab'), findsOneWidget);
+
+    await tester.tap(find.text('Harekeleri göster'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('اِعْلَمْ'), findsWidgets);
+    expect(find.text('Mefhum'), findsNothing);
+
+    await tester.tap(find.text('التَّصْرِيفِ'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Masdar / isim'), findsOneWidget);
+    expect(find.text('صَرَّفَ يُصَرِّفُ'), findsOneWidget);
+    expect(find.text('Sülâsî mezîd, tef‘îl babı'), findsOneWidget);
+
+    final showBrokenMeanings = find.widgetWithText(TextButton, 'Göster').first;
+    await tester.tap(showBrokenMeanings);
+    await tester.pumpAndSettle();
+
+    expect(find.text('Muhakkak ki'), findsOneWidget);
+    expect(find.text('Bapları'), findsOneWidget);
   });
 
   testWidgets('lesson detail renders muhtelife table entries', (

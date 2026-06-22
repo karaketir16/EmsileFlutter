@@ -51,11 +51,24 @@ Ana sayfa uygulamanın ne işe yaradığını ve bölümlerin nasıl kullanılac
 
 ### 5.2 Dersler
 
-Dersler ekranında üç ana başlık bulunur:
+Dersler ekranında dört ana başlık bulunur:
 
+- İbare Çalışması
 - Emsile-i Muhtelife
 - Emsile-i Muttaride
 - Şahıs Zamirleri
+
+İbare Çalışması:
+
+- `Metnü'l-Binâ ve'l-Esâs` metninin giriş ve birinci bab bölümleri
+- Dokunulabilir Arapça kelime ve ibare parçaları
+- Kelime türüne göre sarf-nahiv tahlili: bab, vezin, çekim, şahıs,
+  zamir, kök, i'rab ve cümledeki görev
+- Kitaptaki basılı harekeleri aynen koruyan, eksik harekeleri isteğe bağlı
+  tamamlayan gösterim
+- Gizlenip açılabilen kırık mana ve toparlanmış tercüme
+- Mevcut kapsam: Besmele, sarfın 35 babına giriş, sülâsî mücerred
+  birinci bab ve müteaddi/lazım misalleri
 
 Muhtelife:
 
