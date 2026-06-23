@@ -255,6 +255,7 @@
     {
       "id": "p4_t10",
       "arabic": "زَيْدٌ",
+      "printedArabic": "زيد",
       "gloss": "Zeyd",
       "analysis": {
         "kind": "Özel isim",
@@ -268,6 +269,7 @@
     {
       "id": "p4_t11",
       "arabic": "عَمْرًا",
+      "printedArabic": "عمراً",
       "gloss": "Amr’a",
       "analysis": {
         "kind": "Özel isim",
@@ -349,6 +351,7 @@
     {
       "id": "p4_t15",
       "arabic": "زَيْدٌ",
+      "printedArabic": "زيد",
       "gloss": "Zeyd",
       "analysis": {
         "kind": "Özel isim",

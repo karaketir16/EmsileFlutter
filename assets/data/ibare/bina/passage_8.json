@@ -275,6 +275,7 @@
     {
       "id": "p8_t11",
       "arabic": "زَيْدٌ",
+      "printedArabic": "زيد",
       "gloss": "Zeyd",
       "analysis": {
         "kind": "Özel isim",
@@ -288,6 +289,7 @@
     {
       "id": "p8_t12",
       "arabic": "الْبَابَ",
+      "printedArabic": "الباب",
       "gloss": "Kapıyı",
       "analysis": {
         "kind": "İsim",
@@ -370,6 +372,7 @@
     {
       "id": "p8_t16",
       "arabic": "زَيْدٌ",
+      "printedArabic": "زيد",
       "punctuation": ".",
       "gloss": "Zeyd",
       "analysis": {

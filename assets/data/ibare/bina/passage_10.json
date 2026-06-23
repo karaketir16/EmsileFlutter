@@ -5,33 +5,52 @@
   "phrases": [
     {
       "id": "p10_ph1",
-      "tokenIds": ["p10_t1", "p10_t2"],
+      "tokenIds": [
+        "p10_t1",
+        "p10_t2"
+      ],
       "type": "Mübtedâ + ilave bildiren zarf",
       "meaning": "Bu babın binası da",
       "parentId": "p10_ph2"
     },
     {
       "id": "p10_ph2",
-      "tokenIds": ["p10_t1", "p10_t2", "p10_t3", "p10_t4"],
+      "tokenIds": [
+        "p10_t1",
+        "p10_t2",
+        "p10_t3",
+        "p10_t4"
+      ],
       "type": "İsim cümlesi",
       "meaning": "Bu bab da çoğunlukla müteaddilik içindir."
     },
     {
       "id": "p10_ph3",
-      "tokenIds": ["p10_t5", "p10_t6", "p10_t7"],
+      "tokenIds": [
+        "p10_t5",
+        "p10_t6",
+        "p10_t7"
+      ],
       "type": "Kâne cümlesi",
       "meaning": "Ve bazen lazım olur."
     },
     {
       "id": "p10_ph4",
-      "tokenIds": ["p10_t8", "p10_t9"],
+      "tokenIds": [
+        "p10_t8",
+        "p10_t9"
+      ],
       "type": "İsim tamlaması (izafet)",
       "meaning": "Müteaddinin misali",
       "parentId": "p10_ph7"
     },
     {
       "id": "p10_ph5",
-      "tokenIds": ["p10_t11", "p10_t12", "p10_t13"],
+      "tokenIds": [
+        "p10_t11",
+        "p10_t12",
+        "p10_t13"
+      ],
       "type": "Fiil cümlesi",
       "meaning": "Zeyd meseleyi bildi.",
       "parentId": "p10_ph6",
@@ -39,27 +58,45 @@
     },
     {
       "id": "p10_ph6",
-      "tokenIds": ["p10_t10", "p10_t11", "p10_t12", "p10_t13"],
+      "tokenIds": [
+        "p10_t10",
+        "p10_t11",
+        "p10_t12",
+        "p10_t13"
+      ],
       "type": "Örnekleme terkibi",
       "meaning": "Şunun gibi: Zeyd meseleyi bildi.",
       "parentId": "p10_ph7"
     },
     {
       "id": "p10_ph7",
-      "tokenIds": ["p10_t8", "p10_t9", "p10_t10", "p10_t11", "p10_t12", "p10_t13"],
+      "tokenIds": [
+        "p10_t8",
+        "p10_t9",
+        "p10_t10",
+        "p10_t11",
+        "p10_t12",
+        "p10_t13"
+      ],
       "type": "Örnek bildiren isim cümlesi",
       "meaning": "Müteaddinin misali: Zeyd meseleyi bildi."
     },
     {
       "id": "p10_ph8",
-      "tokenIds": ["p10_t14", "p10_t15"],
+      "tokenIds": [
+        "p10_t14",
+        "p10_t15"
+      ],
       "type": "Atıflı isim tamlaması (izafet)",
       "meaning": "Ve lazımın misali",
       "parentId": "p10_ph11"
     },
     {
       "id": "p10_ph9",
-      "tokenIds": ["p10_t17", "p10_t18"],
+      "tokenIds": [
+        "p10_t17",
+        "p10_t18"
+      ],
       "type": "Fiil cümlesi",
       "meaning": "Zeyd korktu.",
       "parentId": "p10_ph10",
@@ -67,14 +104,24 @@
     },
     {
       "id": "p10_ph10",
-      "tokenIds": ["p10_t16", "p10_t17", "p10_t18"],
+      "tokenIds": [
+        "p10_t16",
+        "p10_t17",
+        "p10_t18"
+      ],
       "type": "Örnekleme terkibi",
       "meaning": "Şunun gibi: Zeyd korktu.",
       "parentId": "p10_ph11"
     },
     {
       "id": "p10_ph11",
-      "tokenIds": ["p10_t14", "p10_t15", "p10_t16", "p10_t17", "p10_t18"],
+      "tokenIds": [
+        "p10_t14",
+        "p10_t15",
+        "p10_t16",
+        "p10_t17",
+        "p10_t18"
+      ],
       "type": "Örnek bildiren isim cümlesi",
       "meaning": "Ve lazımın misali: Zeyd korktu."
     }
@@ -92,7 +139,8 @@
           "pronoun": "هُ: dördüncü baba döner",
           "role": "Mübtedâ"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p10_t2",
@@ -104,7 +152,8 @@
           "meaning": "Önceki babdaki hükmün burada da geçerli olduğunu bildirir.",
           "irab": "Fetha ile mansub"
         }
-      }
+      },
+      "printedArabic": "أيضاً"
     },
     {
       "id": "p10_t3",
@@ -118,7 +167,8 @@
           "role": "Haber",
           "irab": "Kesra ile mecrur"
         }
-      }
+      },
+      "printedArabic": "للتعدية"
     },
     {
       "id": "p10_t4",
@@ -131,7 +181,8 @@
           "role": "Çoğunluk bildiren kayıt",
           "irab": "Fetha ile mansub"
         }
-      }
+      },
+      "printedArabic": "غالباً"
     },
     {
       "id": "p10_t5",
@@ -145,7 +196,8 @@
             "value": "Muzâri fiille burada ihtimal ve bazen anlamı verir."
           }
         ]
-      }
+      },
+      "printedArabic": "وقد"
     },
     {
       "id": "p10_t6",
@@ -158,7 +210,8 @@
           "baseForm": "كَانَ يَكُونُ",
           "irab": "Zamme ile merfû"
         }
-      }
+      },
+      "printedArabic": "يكون"
     },
     {
       "id": "p10_t7",
@@ -172,7 +225,8 @@
           "role": "يَكُونُ fiilinin haberi",
           "irab": "Fetha ile mansub"
         }
-      }
+      },
+      "printedArabic": "لازماً"
     },
     {
       "id": "p10_t8",
@@ -185,7 +239,8 @@
           "wordForm": "Müfred ve muzaf",
           "irab": "Zamme ile merfû"
         }
-      }
+      },
+      "printedArabic": "مثال"
     },
     {
       "id": "p10_t9",
@@ -199,7 +254,8 @@
           "role": "Muzafun ileyh",
           "irab": "Kesra takdir edilerek mecrur"
         }
-      }
+      },
+      "printedArabic": "المتعدي"
     },
     {
       "id": "p10_t10",
@@ -213,7 +269,8 @@
           "meaning": "Örnekleme lafzı",
           "irab": "Zamme ile merfû"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p10_t11",
@@ -240,7 +297,8 @@
           "syntax": "Fâil",
           "irab": "Zamme ile merfû"
         }
-      }
+      },
+      "printedArabic": "زيد"
     },
     {
       "id": "p10_t13",
@@ -254,7 +312,8 @@
           "syntax": "Mef‘ûlün bih",
           "irab": "Fetha ile mansub"
         }
-      }
+      },
+      "printedArabic": "المسألة"
     },
     {
       "id": "p10_t14",
@@ -267,7 +326,8 @@
           "wordForm": "Müfred ve muzaf",
           "irab": "Zamme ile merfû"
         }
-      }
+      },
+      "printedArabic": "ومثال"
     },
     {
       "id": "p10_t15",
@@ -281,7 +341,8 @@
           "role": "Muzafun ileyh",
           "irab": "Kesra ile mecrur"
         }
-      }
+      },
+      "printedArabic": "اللازم"
     },
     {
       "id": "p10_t16",
@@ -295,7 +356,8 @@
           "meaning": "Örnekleme lafzı",
           "irab": "Zamme ile merfû"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p10_t17",
@@ -323,7 +385,8 @@
           "syntax": "Fâil",
           "irab": "Zamme ile merfû"
         }
-      }
+      },
+      "printedArabic": "زيد"
     }
   ]
 }

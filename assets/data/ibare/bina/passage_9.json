@@ -5,61 +5,98 @@
   "phrases": [
     {
       "id": "p9_ph1",
-      "tokenIds": ["p9_t1", "p9_t2"],
+      "tokenIds": [
+        "p9_t1",
+        "p9_t2"
+      ],
       "type": "Sıfat tamlaması",
       "meaning": "Dördüncü bab"
     },
     {
       "id": "p9_ph2",
-      "tokenIds": ["p9_t3", "p9_t4"],
+      "tokenIds": [
+        "p9_t3",
+        "p9_t4"
+      ],
       "type": "Mâzi-muzâri vezin çifti",
       "meaning": "فَعِلَ يَفْعَلُ kalıbı",
       "explanation": "Dördüncü babda aynü’l-fiil mâzide kesreli, muzârîde fethalıdır."
     },
     {
       "id": "p9_ph3",
-      "tokenIds": ["p9_t5", "p9_t6", "p9_t7"],
+      "tokenIds": [
+        "p9_t5",
+        "p9_t6",
+        "p9_t7"
+      ],
       "type": "İsim cümlesi",
       "meaning": "Onun mevzunu عَلِمَ يَعْلَمُ’dır."
     },
     {
       "id": "p9_ph4",
-      "tokenIds": ["p9_t11", "p9_t12"],
+      "tokenIds": [
+        "p9_t11",
+        "p9_t12"
+      ],
       "type": "İsim tamlaması (izafet)",
       "meaning": "Fiilinin ayn harfi, orta harfi",
       "parentId": "p9_ph9"
     },
     {
       "id": "p9_ph5",
-      "tokenIds": ["p9_t14", "p9_t15"],
+      "tokenIds": [
+        "p9_t14",
+        "p9_t15"
+      ],
       "type": "Câr-mecrûr",
       "meaning": "Mâzide",
       "parentId": "p9_ph6"
     },
     {
       "id": "p9_ph6",
-      "tokenIds": ["p9_t13", "p9_t14", "p9_t15"],
+      "tokenIds": [
+        "p9_t13",
+        "p9_t14",
+        "p9_t15"
+      ],
       "type": "Haber + câr-mecrûr",
       "meaning": "Mâzide kesreli",
       "parentId": "p9_ph9"
     },
     {
       "id": "p9_ph7",
-      "tokenIds": ["p9_t17", "p9_t18"],
+      "tokenIds": [
+        "p9_t17",
+        "p9_t18"
+      ],
       "type": "Câr-mecrûr",
       "meaning": "Muzârîde",
       "parentId": "p9_ph8"
     },
     {
       "id": "p9_ph8",
-      "tokenIds": ["p9_t16", "p9_t17", "p9_t18"],
+      "tokenIds": [
+        "p9_t16",
+        "p9_t17",
+        "p9_t18"
+      ],
       "type": "Atıflı haber + câr-mecrûr",
       "meaning": "Ve muzârîde fethalı",
       "parentId": "p9_ph9"
     },
     {
       "id": "p9_ph9",
-      "tokenIds": ["p9_t10", "p9_t11", "p9_t12", "p9_t13", "p9_t14", "p9_t15", "p9_t16", "p9_t17", "p9_t18"],
+      "tokenIds": [
+        "p9_t10",
+        "p9_t11",
+        "p9_t12",
+        "p9_t13",
+        "p9_t14",
+        "p9_t15",
+        "p9_t16",
+        "p9_t17",
+        "p9_t18"
+      ],
       "type": "Kâne cümlesi",
       "meaning": "Fiilinin orta harfi mâzide kesreli, muzârîde fethalı olur.",
       "parentId": "p9_ph10",
@@ -67,7 +104,18 @@
     },
     {
       "id": "p9_ph10",
-      "tokenIds": ["p9_t9", "p9_t10", "p9_t11", "p9_t12", "p9_t13", "p9_t14", "p9_t15", "p9_t16", "p9_t17", "p9_t18"],
+      "tokenIds": [
+        "p9_t9",
+        "p9_t10",
+        "p9_t11",
+        "p9_t12",
+        "p9_t13",
+        "p9_t14",
+        "p9_t15",
+        "p9_t16",
+        "p9_t17",
+        "p9_t18"
+      ],
       "type": "Masdar-ı müevvel",
       "meaning": "Fiilinin orta harfinin mâzide kesreli, muzârîde fethalı olması",
       "parentId": "p9_ph11",
@@ -75,7 +123,19 @@
     },
     {
       "id": "p9_ph11",
-      "tokenIds": ["p9_t8", "p9_t9", "p9_t10", "p9_t11", "p9_t12", "p9_t13", "p9_t14", "p9_t15", "p9_t16", "p9_t17", "p9_t18"],
+      "tokenIds": [
+        "p9_t8",
+        "p9_t9",
+        "p9_t10",
+        "p9_t11",
+        "p9_t12",
+        "p9_t13",
+        "p9_t14",
+        "p9_t15",
+        "p9_t16",
+        "p9_t17",
+        "p9_t18"
+      ],
       "type": "İsim cümlesi",
       "meaning": "Onun alâmeti, fiilinin orta harfinin mâzide kesreli ve muzârîde fethalı olmasıdır."
     }
@@ -93,7 +153,8 @@
           "role": "Mübtedâ",
           "irab": "Zamme ile merfû"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p9_t2",
@@ -108,7 +169,8 @@
           "role": "الْبَابُ kelimesinin sıfatı",
           "irab": "Zamme ile merfû"
         }
-      }
+      },
+      "printedArabic": "الرابع"
     },
     {
       "id": "p9_t3",
@@ -147,7 +209,8 @@
           "pronoun": "هُ: dördüncü baba döner",
           "meaning": "Bu vezne oturan örnek fiil"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p9_t6",
@@ -191,7 +254,8 @@
           "pronoun": "هُ: dördüncü baba döner",
           "role": "Mübtedâ"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p9_t9",
@@ -202,7 +266,8 @@
         "fields": {
           "effect": "Muzâri fiili nasb eder ve cümleyi isimleştirir."
         }
-      }
+      },
+      "printedArabic": "أن"
     },
     {
       "id": "p9_t10",
@@ -215,7 +280,8 @@
           "baseForm": "كَانَ يَكُونُ",
           "nasb": "أَنْ sebebiyle mansub"
         }
-      }
+      },
+      "printedArabic": "يكون"
     },
     {
       "id": "p9_t11",
@@ -230,7 +296,8 @@
           "construction": "Muzaf",
           "irab": "Zamme ile merfû"
         }
-      }
+      },
+      "printedArabic": "عين"
     },
     {
       "id": "p9_t12",
@@ -244,7 +311,8 @@
           "pronoun": "هُ: vezne giren fiile döner",
           "irab": "Kesra ile mecrur"
         }
-      }
+      },
+      "printedArabic": "فعله"
     },
     {
       "id": "p9_t13",
@@ -258,7 +326,8 @@
           "role": "يَكُونَ fiilinin haberi",
           "irab": "Fetha ile mansub"
         }
-      }
+      },
+      "printedArabic": "مكسوراً"
     },
     {
       "id": "p9_t14",
@@ -269,7 +338,8 @@
         "fields": {
           "meaning": "“-de/-da”"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p9_t15",
@@ -282,7 +352,8 @@
           "meaning": "Fiil-i mâzi",
           "irab": "Kesra takdir edilerek mecrur"
         }
-      }
+      },
+      "printedArabic": "الماضي"
     },
     {
       "id": "p9_t16",
@@ -296,7 +367,8 @@
           "role": "مَكْسُورًا kelimesine atfedilen ikinci haber",
           "irab": "Fetha ile mansub"
         }
-      }
+      },
+      "printedArabic": "ومفتوحاً"
     },
     {
       "id": "p9_t17",
@@ -307,7 +379,8 @@
         "fields": {
           "meaning": "“-de/-da”"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p9_t18",
@@ -320,7 +393,8 @@
           "meaning": "Fiil-i muzâri",
           "irab": "Kesra ile mecrur"
         }
-      }
+      },
+      "printedArabic": "المضارع"
     }
   ]
 }
