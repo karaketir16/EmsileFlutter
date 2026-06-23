@@ -788,8 +788,7 @@
         "fields": {
           "meaning": "الْعِلْمَ"
         }
-      },
-      "printedArabic": "العلم"
+      }
     },
     {
       "id": "p23_t28",
@@ -812,7 +811,8 @@
         "fields": {
           "meaning": "بَعْدَ"
         }
-      }
+      },
+      "printedArabic": "بعد"
     },
     {
       "id": "p23_t30",

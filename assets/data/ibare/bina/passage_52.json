@@ -387,7 +387,7 @@
           "meaning": "مُتَحَرِّكًا"
         }
       },
-      "printedArabic": "متحركا"
+      "printedArabic": "متحركاً"
     },
     {
       "id": "p52_t12",
@@ -411,7 +411,7 @@
           "meaning": "سَاكِنًا"
         }
       },
-      "printedArabic": "ساكنا"
+      "printedArabic": "ساكناً"
     },
     {
       "id": "p52_t14",
@@ -469,7 +469,8 @@
         "fields": {
           "meaning": "إِلَى"
         }
-      }
+      },
+      "printedArabic": "إلى"
     },
     {
       "id": "p52_t19",

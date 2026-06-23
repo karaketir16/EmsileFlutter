@@ -495,7 +495,7 @@
           "meaning": "مُتَحَرِّكًا"
         }
       },
-      "printedArabic": "متحركا"
+      "printedArabic": "متحركاً"
     },
     {
       "id": "p51_t13",
@@ -531,7 +531,7 @@
           "meaning": "سَاكِنًا"
         }
       },
-      "printedArabic": "ساكنا"
+      "printedArabic": "ساكناً"
     },
     {
       "id": "p51_t16",
@@ -578,7 +578,8 @@
         "fields": {
           "meaning": "لَمْ"
         }
-      }
+      },
+      "printedArabic": "لم"
     },
     {
       "id": "p51_t20",
@@ -600,7 +601,8 @@
         "fields": {
           "meaning": "Aslı"
         }
-      }
+      },
+      "printedArabic": "أصله"
     },
     {
       "id": "p51_t22",
@@ -611,7 +613,8 @@
         "fields": {
           "meaning": "لَمْ"
         }
-      }
+      },
+      "printedArabic": "لم"
     },
     {
       "id": "p51_t23",
@@ -633,7 +636,8 @@
         "fields": {
           "meaning": "فَيَجُوزُ"
         }
-      }
+      },
+      "printedArabic": "فيجوز"
     },
     {
       "id": "p51_t25",
@@ -644,7 +648,8 @@
         "fields": {
           "meaning": "بِالْإِدْغَامِ"
         }
-      }
+      },
+      "printedArabic": "بالإدغام"
     },
     {
       "id": "p51_t26",
@@ -655,7 +660,8 @@
         "fields": {
           "meaning": "Ve وَبِالْفَكِّ"
         }
-      }
+      },
+      "printedArabic": "وبالفك"
     }
   ]
 }

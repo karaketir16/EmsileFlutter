@@ -838,7 +838,7 @@
           "meaning": "Çoğunlukla"
         }
       },
-      "printedArabic": "غالبا"
+      "printedArabic": "غالباً"
     },
     {
       "id": "p19_t29",
@@ -920,7 +920,8 @@
         "fields": {
           "meaning": "عَمْرًا"
         }
-      }
+      },
+      "printedArabic": "عمراً"
     },
     {
       "id": "p19_t36",

@@ -502,7 +502,8 @@
         "fields": {
           "meaning": "Aslı"
         }
-      }
+      },
+      "printedArabic": "أصله"
     },
     {
       "id": "p49_t13",
@@ -524,7 +525,8 @@
         "fields": {
           "meaning": "حُذِفَتْ"
         }
-      }
+      },
+      "printedArabic": "حذفت"
     },
     {
       "id": "p49_t15",
@@ -535,7 +537,8 @@
         "fields": {
           "meaning": "حَرَكَةُ"
         }
-      }
+      },
+      "printedArabic": "حركة"
     },
     {
       "id": "p49_t16",
@@ -570,7 +573,8 @@
         "fields": {
           "meaning": "ثُمَّ"
         }
-      }
+      },
+      "printedArabic": "ثم"
     },
     {
       "id": "p49_t19",
@@ -581,7 +585,8 @@
         "fields": {
           "meaning": "أُدْغِمَتِ"
         }
-      }
+      },
+      "printedArabic": "أدغمت"
     },
     {
       "id": "p49_t20",
@@ -616,7 +621,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p49_t23",
@@ -651,7 +657,8 @@
         "fields": {
           "meaning": "إِدْخَالُ"
         }
-      }
+      },
+      "printedArabic": "إدخال"
     },
     {
       "id": "p49_t26",
@@ -662,7 +669,8 @@
         "fields": {
           "meaning": "أَحَدِ"
         }
-      }
+      },
+      "printedArabic": "أحد"
     },
     {
       "id": "p49_t27",
@@ -685,7 +693,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p49_t29",
@@ -708,7 +717,8 @@
         "fields": {
           "meaning": "Ve o"
         }
-      }
+      },
+      "printedArabic": "وهو"
     },
     {
       "id": "p49_t31",
@@ -719,7 +729,8 @@
         "fields": {
           "meaning": "Üç"
         }
-      }
+      },
+      "printedArabic": "ثلاثة"
     },
     {
       "id": "p49_t32",
@@ -730,7 +741,8 @@
         "fields": {
           "meaning": "أَنْوَاعٍ"
         }
-      }
+      },
+      "printedArabic": "أنواع"
     }
   ]
 }

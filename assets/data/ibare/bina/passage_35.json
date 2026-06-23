@@ -688,7 +688,8 @@
         "fields": {
           "meaning": "Yani"
         }
-      }
+      },
+      "printedArabic": "أي"
     },
     {
       "id": "p35_t24",
@@ -699,7 +700,8 @@
         "fields": {
           "meaning": "نَامَ"
         }
-      }
+      },
+      "printedArabic": "نام"
     },
     {
       "id": "p35_t25",
@@ -710,7 +712,8 @@
         "fields": {
           "meaning": "Üzere"
         }
-      }
+      },
+      "printedArabic": "على"
     },
     {
       "id": "p35_t26",
@@ -721,7 +724,8 @@
         "fields": {
           "meaning": "قَفَاهُ"
         }
-      }
+      },
+      "printedArabic": "قفاه"
     },
     {
       "id": "p35_t27",
@@ -732,7 +736,8 @@
         "fields": {
           "meaning": "Ve وَمَعْنَى"
         }
-      }
+      },
+      "printedArabic": "ومعنى"
     },
     {
       "id": "p35_t28",
@@ -755,7 +760,8 @@
         "fields": {
           "meaning": "اِتِّحَادُ"
         }
-      }
+      },
+      "printedArabic": "اتحاد"
     },
     {
       "id": "p35_t30",

@@ -789,8 +789,7 @@
         "fields": {
           "meaning": "عَشُبَتِ"
         }
-      },
-      "printedArabic": "عشبت"
+      }
     },
     {
       "id": "p26_t29",
@@ -801,8 +800,7 @@
         "fields": {
           "meaning": "الْأَرْضُ"
         }
-      },
-      "printedArabic": "الأرض"
+      }
     },
     {
       "id": "p26_t30",
@@ -813,8 +811,7 @@
         "fields": {
           "meaning": "Ve وَاِعْشَوْشَبَتِ"
         }
-      },
-      "printedArabic": "واعشوشبت"
+      }
     },
     {
       "id": "p26_t31",
@@ -825,8 +822,7 @@
         "fields": {
           "meaning": "الْأَرْضُ"
         }
-      },
-      "printedArabic": "الأرض"
+      }
     }
   ]
 }
