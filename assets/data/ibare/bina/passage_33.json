@@ -1,0 +1,92 @@
+{
+  "id": "passage_33",
+  "order": 33,
+  "orijinal_metin": "وواحد منها للرباعي المجرد وهو باب واحد",
+  "translation": "Otuz beş babdan biri rubâî mücerred içindir ve o tek babdır.",
+  "tokens": [
+    {
+      "id": "p33_t1",
+      "arabic": "وَوَاحِدٌ",
+      "printedArabic": "وواحد",
+      "gloss": "Ve bir",
+      "analysis": {
+        "kind": "Bağlaç + sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p33_t2",
+      "arabic": "مِنْهَا",
+      "printedArabic": "منها",
+      "gloss": "Onlardan",
+      "analysis": {
+        "kind": "Harf + zamir",
+        "fields": {
+          "referent": "Otuz beş bab"
+        }
+      }
+    },
+    {
+      "id": "p33_t3",
+      "arabic": "لِلرُّبَاعِيِّ",
+      "printedArabic": "للرباعي",
+      "gloss": "Rubâî içindir",
+      "analysis": {
+        "kind": "Harf-i cer + nisbet ismi",
+        "fields": {
+          "term": "Dört harfli fiil"
+        }
+      }
+    },
+    {
+      "id": "p33_t4",
+      "arabic": "الْمُجَرَّدِ",
+      "printedArabic": "المجرد",
+      "gloss": "Mücerred",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Ziyadesiz"
+        }
+      }
+    },
+    {
+      "id": "p33_t5",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "Rubâî mücerred"
+        }
+      }
+    },
+    {
+      "id": "p33_t6",
+      "arabic": "بَابٌ",
+      "printedArabic": "باب",
+      "gloss": "Bir babdır",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "بَاب"
+        }
+      }
+    },
+    {
+      "id": "p33_t7",
+      "arabic": "وَاحِدٌ",
+      "printedArabic": "واحد",
+      "gloss": "Tek",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    }
+  ]
+}

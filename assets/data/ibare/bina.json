@@ -40,6 +40,150 @@
         "assets/data/ibare/bina/passage_7.json",
         "assets/data/ibare/bina/passage_8.json"
       ]
+    },
+    {
+      "id": "dorduncu_bab",
+      "order": 5,
+      "title": "Dördüncü Bab",
+      "passages": [
+        "assets/data/ibare/bina/passage_9.json",
+        "assets/data/ibare/bina/passage_10.json"
+      ]
+    },
+    {
+      "id": "besinci_bab",
+      "order": 6,
+      "title": "Beşinci Bab",
+      "passages": [
+        "assets/data/ibare/bina/passage_11.json",
+        "assets/data/ibare/bina/passage_12.json"
+      ]
+    },
+    {
+      "id": "altinci_bab",
+      "order": 7,
+      "title": "Altıncı Bab",
+      "passages": [
+        "assets/data/ibare/bina/passage_13.json",
+        "assets/data/ibare/bina/passage_14.json"
+      ]
+    },
+    {
+      "id": "mezid_bir_harf_birinci_bab",
+      "order": 8,
+      "title": "Mezîd Bir Harf - Birinci Bab",
+      "passages": [
+        "assets/data/ibare/bina/passage_15.json",
+        "assets/data/ibare/bina/passage_16.json",
+        "assets/data/ibare/bina/passage_17.json"
+      ]
+    },
+    {
+      "id": "mezid_bir_harf_ikinci_bab",
+      "order": 9,
+      "title": "Mezîd Bir Harf - İkinci Bab",
+      "passages": [
+        "assets/data/ibare/bina/passage_18.json",
+        "assets/data/ibare/bina/passage_19.json"
+      ]
+    },
+    {
+      "id": "mezid_bir_harf_ucuncu_bab",
+      "order": 10,
+      "title": "Mezîd Bir Harf - Üçüncü Bab",
+      "passages": [
+        "assets/data/ibare/bina/passage_20.json",
+        "assets/data/ibare/bina/passage_21.json"
+      ]
+    },
+    {
+      "id": "mezid_iki_harf",
+      "order": 11,
+      "title": "Mezîd İki Harf",
+      "passages": [
+        "assets/data/ibare/bina/passage_22.json",
+        "assets/data/ibare/bina/passage_23.json",
+        "assets/data/ibare/bina/passage_24.json",
+        "assets/data/ibare/bina/passage_25.json",
+        "assets/data/ibare/bina/passage_26.json",
+        "assets/data/ibare/bina/passage_27.json"
+      ]
+    },
+    {
+      "id": "mezid_uc_harf",
+      "order": 12,
+      "title": "Mezîd Üç Harf",
+      "passages": [
+        "assets/data/ibare/bina/passage_28.json",
+        "assets/data/ibare/bina/passage_29.json",
+        "assets/data/ibare/bina/passage_30.json",
+        "assets/data/ibare/bina/passage_31.json",
+        "assets/data/ibare/bina/passage_32.json"
+      ]
+    },
+    {
+      "id": "rubai_mucerred",
+      "order": 13,
+      "title": "Rubâî Mücerred",
+      "passages": [
+        "assets/data/ibare/bina/passage_33.json",
+        "assets/data/ibare/bina/passage_34.json"
+      ]
+    },
+    {
+      "id": "mulhak_rubai",
+      "order": 14,
+      "title": "Mülhak Rubâî",
+      "passages": [
+        "assets/data/ibare/bina/passage_35.json",
+        "assets/data/ibare/bina/passage_36.json",
+        "assets/data/ibare/bina/passage_37.json",
+        "assets/data/ibare/bina/passage_38.json",
+        "assets/data/ibare/bina/passage_39.json",
+        "assets/data/ibare/bina/passage_40.json",
+        "assets/data/ibare/bina/passage_41.json"
+      ]
+    },
+    {
+      "id": "rubai_mezid",
+      "order": 15,
+      "title": "Rubâî Mezîd",
+      "passages": [
+        "assets/data/ibare/bina/passage_42.json",
+        "assets/data/ibare/bina/passage_43.json",
+        "assets/data/ibare/bina/passage_44.json",
+        "assets/data/ibare/bina/passage_45.json",
+        "assets/data/ibare/bina/passage_46.json"
+      ]
+    },
+    {
+      "id": "mulhak_rubai_mezid",
+      "order": 16,
+      "title": "Mülhak Rubâî Mezîd",
+      "passages": [
+        "assets/data/ibare/bina/passage_47.json",
+        "assets/data/ibare/bina/passage_48.json",
+        "assets/data/ibare/bina/passage_49.json",
+        "assets/data/ibare/bina/passage_50.json",
+        "assets/data/ibare/bina/passage_51.json",
+        "assets/data/ibare/bina/passage_52.json",
+        "assets/data/ibare/bina/passage_53.json",
+        "assets/data/ibare/bina/passage_54.json",
+        "assets/data/ibare/bina/passage_55.json"
+      ]
+    },
+    {
+      "id": "fiil_taksimleri",
+      "order": 17,
+      "title": "Fiil Taksimleri",
+      "passages": [
+        "assets/data/ibare/bina/passage_56.json",
+        "assets/data/ibare/bina/passage_57.json",
+        "assets/data/ibare/bina/passage_58.json",
+        "assets/data/ibare/bina/passage_59.json",
+        "assets/data/ibare/bina/passage_60.json",
+        "assets/data/ibare/bina/passage_61.json"
+      ]
     }
   ]
 }

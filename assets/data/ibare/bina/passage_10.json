@@ -1,14 +1,14 @@
 {
-  "id": "passage_4",
-  "order": 4,
-  "orijinal_metin": "وبناؤه للتعدية غالباً وقد يكون لازماً مثال المتعدي نحو: نَصَرَ زيد عمراً ومثال اللازم نحو: خَرَجَ زيد",
-  "translation": "Ve bu bab çoğunlukla müteaddi, bazen lazım fiiller için kullanılır. Müteaddinin misali “Zeyd Amr’a yardım etti”; ve lazımın misali “Zeyd çıktı” cümlesidir.",
+  "id": "passage_10",
+  "order": 10,
+  "orijinal_metin": "وبناؤه أيضاً للتعدية غالباً وقد يكون لازماً، مثال المتعدي نحو: عَلِمَ زيد المسألة ومثال اللازم نحو: وَجِلَ زيد",
+  "translation": "Bu bab da çoğunlukla müteaddi, bazen lazım fiiller içindir. Müteaddinin misali “Zeyd meseleyi bildi”; lazımın misali ise “Zeyd korktu” cümlesidir.",
   "tokens": [
     {
-      "id": "p4_t1",
+      "id": "p10_t1",
       "arabic": "وَبِنَاؤُهُ",
       "printedArabic": "وبناؤه",
-      "gloss": "Ve bu babın manen binası",
+      "gloss": "Ve bu babın binası",
       "analysis": {
         "kind": "Bağlaç + masdar + zamir",
         "fields": {
@@ -16,19 +16,26 @@
           "derivedFrom": "بَنَى يَبْنِي",
           "pattern": "فِعَال",
           "meaning": "Babın hangi işlev için kullanıldığı",
-          "pronoun": "هُ: birinci baba döner.",
-          "irab": "Merfû"
-        },
-        "details": [
-          {
-            "label": "وَ",
-            "value": "Atıf harfi: “ve”"
-          }
-        ]
+          "pronoun": "هُ: dördüncü baba döner.",
+          "irab": "Zamme ile merfû"
+        }
       }
     },
     {
-      "id": "p4_t2",
+      "id": "p10_t2",
+      "arabic": "أَيْضًا",
+      "printedArabic": "أيضاً",
+      "gloss": "De, dahi",
+      "analysis": {
+        "kind": "Zarf anlamında kullanılan mansub isim",
+        "fields": {
+          "meaning": "De, dahi, ayrıca",
+          "irab": "Fetha ile mansubdur."
+        }
+      }
+    },
+    {
+      "id": "p10_t3",
       "arabic": "لِلتَّعْدِيَةِ",
       "printedArabic": "للتعدية",
       "gloss": "Müteaddilik içindir",
@@ -41,13 +48,12 @@
           "pattern": "تَفْعِلَة",
           "morphology": "Masdar",
           "meaning": "Fiilin etkisinin mef‘ûle geçmesi",
-          "turkish": "Geçişlilik",
           "irab": "Kesra ile mecrûr"
         }
       }
     },
     {
-      "id": "p4_t3",
+      "id": "p10_t4",
       "arabic": "غَالِبًا",
       "printedArabic": "غالباً",
       "gloss": "Çoğu kez",
@@ -63,17 +69,13 @@
       }
     },
     {
-      "id": "p4_t4",
+      "id": "p10_t5",
       "arabic": "وَقَدْ",
       "printedArabic": "وقد",
       "gloss": "Ve bazen",
       "analysis": {
         "kind": "Bağlaç + harf",
         "details": [
-          {
-            "label": "وَ",
-            "value": "Atıf harfi: “ve”"
-          },
           {
             "label": "قَدْ",
             "value": "Muzâri fiille burada ihtimal ve bazen manası verir."
@@ -82,7 +84,7 @@
       }
     },
     {
-      "id": "p4_t5",
+      "id": "p10_t6",
       "arabic": "يَكُونُ",
       "printedArabic": "يكون",
       "gloss": "Olur",
@@ -100,9 +102,10 @@
       }
     },
     {
-      "id": "p4_t6",
+      "id": "p10_t7",
       "arabic": "لَازِمًا",
       "printedArabic": "لازماً",
+      "punctuation": "،",
       "gloss": "Lazım, geçişsiz",
       "analysis": {
         "kind": "İsm-i fâil",
@@ -117,7 +120,7 @@
       }
     },
     {
-      "id": "p4_t7",
+      "id": "p10_t8",
       "arabic": "مِثَالُ",
       "printedArabic": "مثال",
       "gloss": "Misali",
@@ -131,7 +134,7 @@
       }
     },
     {
-      "id": "p4_t7b",
+      "id": "p10_t9",
       "arabic": "الْمُتَعَدِّي",
       "printedArabic": "المتعدي",
       "gloss": "Müteaddinin",
@@ -142,12 +145,12 @@
           "derivedFrom": "تَعَدَّى يَتَعَدَّى",
           "pattern": "مُتَفَعِّل",
           "role": "Muzafun ileyh",
-          "irab": "الْمُتَعَدِّي kesra takdir edilerek mecrûr"
+          "irab": "Kesra takdir edilerek mecrûr"
         }
       }
     },
     {
-      "id": "p4_t8",
+      "id": "p10_t10",
       "arabic": "نَحْوُ",
       "printedArabic": "نحو",
       "punctuation": ":",
@@ -156,59 +159,58 @@
         "kind": "İsim",
         "fields": {
           "root": "ن ح و",
-          "meaning": "Örnek vermek için “gibi, şöyle” manasında kullanılır.",
+          "meaning": "Örnek vermek için kullanılır.",
           "irab": "Zamme ile merfû"
         }
       }
     },
     {
-      "id": "p4_t9",
-      "arabic": "نَصَرَ",
-      "gloss": "Yardım etti",
+      "id": "p10_t11",
+      "arabic": "عَلِمَ",
+      "gloss": "Bildi",
       "analysis": {
         "kind": "Fiil",
         "fields": {
           "conjugation": "Fiil-i mâzi, malûm",
           "person": "3. şahıs, müzekker, tekil",
-          "root": "ن ص ر",
-          "bab": "Sülâsî mücerred 1. bab",
-          "pattern": "فَعَلَ",
-          "presentForm": "يَنْصُرُ",
-          "syntax": "Fiil",
+          "hiddenPronoun": "هُوَ",
+          "root": "ع ل م",
+          "bab": "Sülâsî mücerred 4. bab",
+          "pattern": "فَعِلَ",
           "transitivity": "Müteaddi"
         }
       }
     },
     {
-      "id": "p4_t10",
+      "id": "p10_t12",
       "arabic": "زَيْدٌ",
       "printedArabic": "زيد",
       "gloss": "Zeyd",
       "analysis": {
         "kind": "Özel isim",
         "fields": {
-          "wordForm": "Müfred, müzekker ve marife",
-          "syntax": "Fâil",
+          "role": "Fâil",
           "irab": "Zamme ile merfû"
         }
       }
     },
     {
-      "id": "p4_t11",
-      "arabic": "عَمْرًا",
-      "printedArabic": "عمراً",
-      "gloss": "Amr’a",
+      "id": "p10_t13",
+      "arabic": "الْمَسْأَلَةَ",
+      "printedArabic": "المسألة",
+      "gloss": "Meseleyi",
       "analysis": {
-        "kind": "Özel isim",
+        "kind": "İsim",
         "fields": {
-          "wordForm": "Müfred, müzekker ve marife",
-          "syntax": "Mef‘ûlün bih",
+          "root": "س أ ل",
+          "wordForm": "Müfred ve marife",
+          "role": "Mef‘ûlün bih",
           "irab": "Fetha ile mansub"
         }
       }
     },
     {
-      "id": "p4_t12",
+      "id": "p10_t14",
       "arabic": "وَمِثَالُ",
       "printedArabic": "ومثال",
       "gloss": "Ve misali",
@@ -218,17 +220,11 @@
           "root": "م ث ل",
           "wordForm": "Müfred ve muzaf",
           "irab": "Zamme ile merfû"
-        },
-        "details": [
-          {
-            "label": "وَ",
-            "value": "Atıf harfi: “ve”"
-          }
-        ]
+        }
       }
     },
     {
-      "id": "p4_t12b",
+      "id": "p10_t15",
       "arabic": "اللَّازِمِ",
       "printedArabic": "اللازم",
       "gloss": "Lazımın",
@@ -236,6 +232,7 @@
         "kind": "İsm-i fâil",
         "fields": {
           "root": "ل ز م",
+          "derivedFrom": "لَزِمَ يَلْزَمُ",
           "pattern": "فَاعِل",
           "role": "Muzafun ileyh",
           "irab": "Kesra ile mecrûr"
@@ -243,7 +240,7 @@
       }
     },
     {
-      "id": "p4_t13",
+      "id": "p10_t16",
       "arabic": "نَحْوُ",
       "printedArabic": "نحو",
       "punctuation": ":",
@@ -252,39 +249,37 @@
         "kind": "İsim",
         "fields": {
           "root": "ن ح و",
-          "meaning": "Örnek vermek için “gibi, şöyle” manasında kullanılır.",
+          "meaning": "Örnek vermek için kullanılır.",
           "irab": "Zamme ile merfû"
         }
       }
     },
     {
-      "id": "p4_t14",
-      "arabic": "خَرَجَ",
-      "gloss": "Çıktı",
+      "id": "p10_t17",
+      "arabic": "وَجِلَ",
+      "gloss": "Korktu, ürktü",
       "analysis": {
         "kind": "Fiil",
         "fields": {
           "conjugation": "Fiil-i mâzi, malûm",
           "person": "3. şahıs, müzekker, tekil",
-          "root": "خ ر ج",
-          "bab": "Sülâsî mücerred 1. bab",
-          "pattern": "فَعَلَ",
-          "presentForm": "يَخْرُجُ",
-          "syntax": "Fiil",
+          "hiddenPronoun": "هُوَ",
+          "root": "و ج ل",
+          "bab": "Sülâsî mücerred 4. bab",
+          "pattern": "فَعِلَ",
           "transitivity": "Lazım"
         }
       }
     },
     {
-      "id": "p4_t15",
+      "id": "p10_t18",
       "arabic": "زَيْدٌ",
       "printedArabic": "زيد",
       "gloss": "Zeyd",
       "analysis": {
         "kind": "Özel isim",
         "fields": {
-          "wordForm": "Müfred, müzekker ve marife",
-          "syntax": "Fâil",
+          "role": "Fâil",
           "irab": "Zamme ile merfû"
         }
       }

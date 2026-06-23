@@ -1,0 +1,359 @@
+{
+  "id": "passage_15",
+  "order": 15,
+  "orijinal_metin": "واثنا عشر باباً منها لما زاد على الثلاثي وهو ثلاثة أنواع: النوع الأول: الفعل الثلاثي المزيد بحرف واحد وهو ما زيد فيه حرف واحد على الثلاثي وهو ثلاثة أبواب:",
+  "translation": "Otuz beş babdan on iki bab, sülâsî üzerine ziyade edilen fiiller içindir. Bunlar üç çeşittir. Birinci çeşit, sülâsî üzerine bir harf ziyade edilen fiildir ve üç babdır.",
+  "tokens": [
+    {
+      "id": "p15_t1",
+      "arabic": "وَاثْنَا",
+      "printedArabic": "واثنا",
+      "gloss": "Ve on iki",
+      "analysis": {
+        "kind": "Bağlaç + sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p15_t2",
+      "arabic": "عَشَرَ",
+      "printedArabic": "عشر",
+      "gloss": "On",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p15_t3",
+      "arabic": "بَابًا",
+      "printedArabic": "باباً",
+      "gloss": "Bab",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "بَاب"
+        }
+      }
+    },
+    {
+      "id": "p15_t4",
+      "arabic": "مِنْهَا",
+      "printedArabic": "منها",
+      "gloss": "Onlardan",
+      "analysis": {
+        "kind": "Harf + zamir",
+        "fields": {
+          "referent": "Otuz beş bab"
+        }
+      }
+    },
+    {
+      "id": "p15_t5",
+      "arabic": "لِمَا",
+      "printedArabic": "لما",
+      "gloss": "Şey içindir",
+      "analysis": {
+        "kind": "Harf-i cer + ism-i mevsûl",
+        "fields": {
+          "meaning": "Aitlik bildirir"
+        }
+      }
+    },
+    {
+      "id": "p15_t6",
+      "arabic": "زَادَ",
+      "printedArabic": "زاد",
+      "gloss": "Arttı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ز ي د"
+        }
+      }
+    },
+    {
+      "id": "p15_t7",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzerine",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Üzerine"
+        }
+      }
+    },
+    {
+      "id": "p15_t8",
+      "arabic": "الثُّلَاثِيِّ",
+      "printedArabic": "الثلاثي",
+      "gloss": "Sülâsînin",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Üç harfli fiil"
+        }
+      }
+    },
+    {
+      "id": "p15_t9",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "Ziyadeli sülâsî"
+        }
+      }
+    },
+    {
+      "id": "p15_t10",
+      "arabic": "ثَلَاثَةُ",
+      "printedArabic": "ثلاثة",
+      "gloss": "Üç",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p15_t11",
+      "arabic": "أَنْوَاعٍ",
+      "printedArabic": "أنواع",
+      "punctuation": ":",
+      "gloss": "Çeşittir",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "نَوْع"
+        }
+      }
+    },
+    {
+      "id": "p15_t12",
+      "arabic": "النَّوْعُ",
+      "printedArabic": "النوع",
+      "gloss": "Çeşit",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن و ع"
+        }
+      }
+    },
+    {
+      "id": "p15_t13",
+      "arabic": "الْأَوَّلُ",
+      "printedArabic": "الأول",
+      "punctuation": ":",
+      "gloss": "Birinci",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "wordForm": "Sıra sayısı"
+        }
+      }
+    },
+    {
+      "id": "p15_t14",
+      "arabic": "الْفِعْلُ",
+      "printedArabic": "الفعل",
+      "gloss": "Fiil",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ف ع ل"
+        }
+      }
+    },
+    {
+      "id": "p15_t15",
+      "arabic": "الثُّلَاثِيُّ",
+      "printedArabic": "الثلاثي",
+      "gloss": "Sülâsî",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Üç harfli"
+        }
+      }
+    },
+    {
+      "id": "p15_t16",
+      "arabic": "الْمَزِيدُ",
+      "printedArabic": "المزيد",
+      "gloss": "Mezîd",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Ziyade almış"
+        }
+      }
+    },
+    {
+      "id": "p15_t17",
+      "arabic": "بِحَرْفٍ",
+      "printedArabic": "بحرف",
+      "gloss": "Bir harfle",
+      "analysis": {
+        "kind": "Harf-i cer + isim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p15_t18",
+      "arabic": "وَاحِدٍ",
+      "printedArabic": "واحد",
+      "gloss": "Bir",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p15_t19",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "Bir harfli mezîd"
+        }
+      }
+    },
+    {
+      "id": "p15_t20",
+      "arabic": "مَا",
+      "printedArabic": "ما",
+      "gloss": "Şeydir ki",
+      "analysis": {
+        "kind": "İsm-i mevsûl",
+        "fields": {
+          "meaning": "Tanım kurar"
+        }
+      }
+    },
+    {
+      "id": "p15_t21",
+      "arabic": "زِيدَ",
+      "printedArabic": "زيد",
+      "gloss": "Ziyade edildi",
+      "analysis": {
+        "kind": "Meçhul fiil",
+        "fields": {
+          "root": "ز ي د"
+        }
+      }
+    },
+    {
+      "id": "p15_t22",
+      "arabic": "فِيهِ",
+      "printedArabic": "فيه",
+      "gloss": "Onda",
+      "analysis": {
+        "kind": "Harf + zamir",
+        "fields": {
+          "referent": "Fiil"
+        }
+      }
+    },
+    {
+      "id": "p15_t23",
+      "arabic": "حَرْفٌ",
+      "printedArabic": "حرف",
+      "gloss": "Bir harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p15_t24",
+      "arabic": "وَاحِدٌ",
+      "printedArabic": "واحد",
+      "gloss": "Bir",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p15_t25",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzerine",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Üzerine"
+        }
+      }
+    },
+    {
+      "id": "p15_t26",
+      "arabic": "الثُّلَاثِيِّ",
+      "printedArabic": "الثلاثي",
+      "gloss": "Sülâsînin",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Üç harfli fiil"
+        }
+      }
+    },
+    {
+      "id": "p15_t27",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "Bu çeşit"
+        }
+      }
+    },
+    {
+      "id": "p15_t28",
+      "arabic": "ثَلَاثَةُ",
+      "printedArabic": "ثلاثة",
+      "gloss": "Üç",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p15_t29",
+      "arabic": "أَبْوَابٍ",
+      "printedArabic": "أبواب",
+      "punctuation": ":",
+      "gloss": "Babdır",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "بَاب"
+        }
+      }
+    }
+  ]
+}

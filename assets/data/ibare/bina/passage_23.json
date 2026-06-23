@@ -1,0 +1,422 @@
+{
+  "id": "passage_23",
+  "order": 23,
+  "orijinal_metin": "الباب الأول: اِنْفَعَلَ يَنْفَعِلُ اِنْفِعَالًا موزونه اِنْكَسَرَ يَنْكَسِرُ اِنْكِسَارًا، وعلامته أن يكون ماضيه على خمسة أحرف بزيادة الهمزة والنون في أوله وبناؤه للمطاوعة نحو: كَسَرْتُ الزجاج فَانْكَسَرَ ذلك الزجاج",
+  "translation": "Sülâsî mezîd iki harfli birinci babın vezni اِنْفَعَلَ يَنْفَعِلُ اِنْفِعَالًا, mevzunu اِنْكَسَرَ يَنْكَسِرُ اِنْكِسَارًا’dır. Alâmeti, mâzisinin başında hemze ve nun ziyadesiyle beş harf üzere olmasıdır. Binası mutâvaat içindir; “camı kırdım, o cam kırıldı” örneğinde kırılma, müteaddi fiilin etkisinden doğar.",
+  "tokens": [
+    {
+      "id": "p23_t1",
+      "arabic": "الْبَابُ",
+      "printedArabic": "الباب",
+      "gloss": "Bab",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ب و ب",
+          "wordForm": "Müfred ve marife",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p23_t2",
+      "arabic": "الْأَوَّلُ",
+      "printedArabic": "الأول",
+      "punctuation": ":",
+      "gloss": "Birinci",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "wordForm": "Sıra sayısı, müfred ve marife",
+          "role": "الْبَابُ kelimesinin sıfatı",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p23_t3",
+      "arabic": "اِنْفَعَلَ",
+      "gloss": "Mâzi vezni: infa‘ale",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "Sülâsî mezîd iki harf, infa‘âl babı",
+          "morphology": "Başta hemze ve nun ziyadelidir.",
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil"
+        }
+      }
+    },
+    {
+      "id": "p23_t4",
+      "arabic": "يَنْفَعِلُ",
+      "gloss": "Muzâri vezni: yenfa‘ilü",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "İnfa‘âl babı",
+          "morphology": "Bu babın muzâri ölçüsüdür.",
+          "conjugation": "Fiil-i muzâri, malûm",
+          "person": "3. şahıs, müzekker, tekil"
+        }
+      }
+    },
+    {
+      "id": "p23_t5",
+      "arabic": "اِنْفِعَالًا",
+      "gloss": "Masdar vezni: infi‘âlen",
+      "analysis": {
+        "kind": "Masdar vezni",
+        "fields": {
+          "bab": "İnfa‘âl babı",
+          "pattern": "اِنْفِعَال",
+          "morphology": "Masdar",
+          "irab": "Fetha ile mansub"
+        }
+      }
+    },
+    {
+      "id": "p23_t6",
+      "arabic": "مَوْزُونُهُ",
+      "printedArabic": "موزونه",
+      "gloss": "Onun mevzunu",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "و ز ن",
+          "pattern": "مَفْعُول",
+          "morphology": "İsm-i mef‘ûl",
+          "meaning": "Bu vezne oturan örnek fiil",
+          "pronoun": "هُ: infa‘âl babına döner."
+        }
+      }
+    },
+    {
+      "id": "p23_t7",
+      "arabic": "اِنْكَسَرَ",
+      "gloss": "Kırıldı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "root": "ك س ر",
+          "bab": "Sülâsî mezîd, infa‘âl babı",
+          "pattern": "اِنْفَعَلَ",
+          "meaning": "Kırma fiilinin etkisinin nesnede gerçekleşmesi",
+          "transitivity": "Lazım"
+        }
+      }
+    },
+    {
+      "id": "p23_t8",
+      "arabic": "يَنْكَسِرُ",
+      "gloss": "Kırılır",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "conjugation": "Fiil-i muzâri, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "root": "ك س ر",
+          "bab": "Sülâsî mezîd, infa‘âl babı",
+          "pattern": "يَنْفَعِلُ",
+          "transitivity": "Lazım"
+        }
+      }
+    },
+    {
+      "id": "p23_t9",
+      "arabic": "اِنْكِسَارًا",
+      "punctuation": "،",
+      "gloss": "Kırılmak",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ك س ر",
+          "bab": "Sülâsî mezîd, infa‘âl babı",
+          "pattern": "اِنْفِعَال",
+          "morphology": "Masdar",
+          "irab": "Fetha ile mansub"
+        }
+      }
+    },
+    {
+      "id": "p23_t10",
+      "arabic": "وَعَلَامَتُهُ",
+      "printedArabic": "وعلامته",
+      "gloss": "Ve onun alâmeti",
+      "analysis": {
+        "kind": "Bağlaç + isim + zamir",
+        "fields": {
+          "root": "ع ل م",
+          "wordForm": "Müfred, muzaf ve merfû",
+          "pronoun": "هُ: infa‘âl babına döner.",
+          "meaning": "Babı diğer bablardan ayıran lafzî özellik"
+        }
+      }
+    },
+    {
+      "id": "p23_t11",
+      "arabic": "أَنْ",
+      "printedArabic": "أن",
+      "gloss": "-mesi, olması",
+      "analysis": {
+        "kind": "Harf",
+        "fields": {
+          "morphology": "Masdariyye ve nasb harfi",
+          "effect": "Muzâri fiili nasb eder."
+        }
+      }
+    },
+    {
+      "id": "p23_t12",
+      "arabic": "يَكُونَ",
+      "printedArabic": "يكون",
+      "gloss": "Olmasıdır",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "conjugation": "Fiil-i muzâri, nâkıs fiil",
+          "person": "3. şahıs, müzekker, tekil",
+          "nasb": "أَنْ sebebiyle mansub",
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p23_t13",
+      "arabic": "مَاضِيهِ",
+      "printedArabic": "ماضيه",
+      "gloss": "Onun mâzisi",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "م ض ي",
+          "morphology": "Fiil-i mâzi adı",
+          "role": "يَكُونَ fiilinin ismi",
+          "pronoun": "هُ: bu baba giren fiile döner."
+        }
+      }
+    },
+    {
+      "id": "p23_t14",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzere",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Üzerine, üzere"
+        }
+      }
+    },
+    {
+      "id": "p23_t15",
+      "arabic": "خَمْسَةِ",
+      "printedArabic": "خمسة",
+      "gloss": "Beş",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded",
+          "role": "أَحْرُفٍ kelimesinin sayı unsuru",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p23_t16",
+      "arabic": "أَحْرُفٍ",
+      "printedArabic": "أحرف",
+      "gloss": "Harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف",
+          "role": "Sayılan unsur",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p23_t17",
+      "arabic": "بِزِيَادَةِ",
+      "printedArabic": "بزيادة",
+      "gloss": "Ziyadesiyle",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ز ي د",
+          "morphology": "Masdar",
+          "meaning": "Asıl harflere eklenen harf",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p23_t18",
+      "arabic": "الْهَمْزَةِ",
+      "printedArabic": "الهمزة",
+      "gloss": "Hemzenin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p23_t19",
+      "arabic": "وَالنُّونِ",
+      "printedArabic": "والنون",
+      "gloss": "Ve nûn harfinin",
+      "analysis": {
+        "kind": "Bağlaç + harf adı",
+        "fields": {
+          "role": "الْهَمْزَةِ kelimesine atıf",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p23_t20",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p23_t21",
+      "arabic": "أَوَّلِهِ",
+      "printedArabic": "أوله",
+      "gloss": "Başında",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "أ و ل",
+          "role": "فِي harfiyle mecrûr",
+          "pronoun": "هُ: mâzi fiile döner."
+        }
+      }
+    },
+    {
+      "id": "p23_t22",
+      "arabic": "وَبِنَاؤُهُ",
+      "printedArabic": "وبناؤه",
+      "gloss": "Ve binası",
+      "analysis": {
+        "kind": "Bağlaç + masdar + zamir",
+        "fields": {
+          "root": "ب ن ي",
+          "pronoun": "هُ: infa‘âl babına döner.",
+          "meaning": "Babın mana işlevi"
+        }
+      }
+    },
+    {
+      "id": "p23_t23",
+      "arabic": "لِلْمُطَاوَعَةِ",
+      "printedArabic": "للمطاوعة",
+      "gloss": "Mutâvaat içindir",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ط و ع",
+          "pattern": "مُفَاعَلَة",
+          "morphology": "Masdar",
+          "meaning": "Müteaddi fiilin etkisinin nesnede gerçekleşmesi",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p23_t24",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و",
+          "meaning": "Örnek vermek için kullanılır."
+        }
+      }
+    },
+    {
+      "id": "p23_t25",
+      "arabic": "كَسَرْتُ",
+      "gloss": "Ben kırdım",
+      "analysis": {
+        "kind": "Fiil + zamir",
+        "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "1. şahıs, tekil",
+          "root": "ك س ر",
+          "pattern": "فَعَلَ",
+          "transitivity": "Müteaddi"
+        }
+      }
+    },
+    {
+      "id": "p23_t26",
+      "arabic": "الزُّجَاجَ",
+      "printedArabic": "الزجاج",
+      "gloss": "Camı",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "role": "Mef‘ûlün bih",
+          "irab": "Fetha ile mansub"
+        }
+      }
+    },
+    {
+      "id": "p23_t27",
+      "arabic": "فَانْكَسَرَ",
+      "gloss": "Böylece kırıldı",
+      "analysis": {
+        "kind": "Bağlaç + fiil",
+        "fields": {
+          "root": "ك س ر",
+          "bab": "Sülâsî mezîd, infa‘âl babı",
+          "pattern": "اِنْفَعَلَ",
+          "meaning": "Mutâvaat sonucunu gösterir."
+        }
+      }
+    },
+    {
+      "id": "p23_t28",
+      "arabic": "ذَلِكَ",
+      "printedArabic": "ذلك",
+      "gloss": "O",
+      "analysis": {
+        "kind": "İşaret ismi",
+        "fields": {
+          "referent": "Cam",
+          "role": "Fâil yerinde kullanılmış işaret"
+        }
+      }
+    },
+    {
+      "id": "p23_t29",
+      "arabic": "الزُّجَاجُ",
+      "printedArabic": "الزجاج",
+      "gloss": "Cam",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "role": "Bedel/açıklayıcı unsur",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    }
+  ]
+}

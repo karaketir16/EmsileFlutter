@@ -1,0 +1,153 @@
+{
+  "id": "passage_22",
+  "order": 22,
+  "orijinal_metin": "النوع الثاني وهو ما زيد فيه حرفان على الثلاثي وهو خمسة أبواب:",
+  "translation": "İkinci çeşit, sülâsî üzerine iki harf ziyade edilen fiildir ve beş babdır.",
+  "tokens": [
+    {
+      "id": "p22_t1",
+      "arabic": "النَّوْعُ",
+      "printedArabic": "النوع",
+      "gloss": "Çeşit",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن و ع"
+        }
+      }
+    },
+    {
+      "id": "p22_t2",
+      "arabic": "الثَّانِي",
+      "printedArabic": "الثاني",
+      "gloss": "İkinci",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "wordForm": "Sıra sayısı"
+        }
+      }
+    },
+    {
+      "id": "p22_t3",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "İkinci çeşit"
+        }
+      }
+    },
+    {
+      "id": "p22_t4",
+      "arabic": "مَا",
+      "printedArabic": "ما",
+      "gloss": "Şeydir ki",
+      "analysis": {
+        "kind": "İsm-i mevsûl",
+        "fields": {
+          "meaning": "Tanım kurar"
+        }
+      }
+    },
+    {
+      "id": "p22_t5",
+      "arabic": "زِيدَ",
+      "printedArabic": "زيد",
+      "gloss": "Ziyade edildi",
+      "analysis": {
+        "kind": "Meçhul fiil",
+        "fields": {
+          "root": "ز ي د"
+        }
+      }
+    },
+    {
+      "id": "p22_t6",
+      "arabic": "فِيهِ",
+      "printedArabic": "فيه",
+      "gloss": "Onda",
+      "analysis": {
+        "kind": "Harf + zamir",
+        "fields": {
+          "referent": "Fiil"
+        }
+      }
+    },
+    {
+      "id": "p22_t7",
+      "arabic": "حَرْفَانِ",
+      "printedArabic": "حرفان",
+      "gloss": "İki harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "numberType": "Tesniye"
+        }
+      }
+    },
+    {
+      "id": "p22_t8",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzerine",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Üzerine"
+        }
+      }
+    },
+    {
+      "id": "p22_t9",
+      "arabic": "الثُّلَاثِيِّ",
+      "printedArabic": "الثلاثي",
+      "gloss": "Sülâsînin",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Üç harfli fiil"
+        }
+      }
+    },
+    {
+      "id": "p22_t10",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "Bu çeşit"
+        }
+      }
+    },
+    {
+      "id": "p22_t11",
+      "arabic": "خَمْسَةُ",
+      "printedArabic": "خمسة",
+      "gloss": "Beş",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p22_t12",
+      "arabic": "أَبْوَابٍ",
+      "printedArabic": "أبواب",
+      "punctuation": ":",
+      "gloss": "Babdır",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "بَاب"
+        }
+      }
+    }
+  ]
+}

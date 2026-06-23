@@ -1,0 +1,166 @@
+{
+  "id": "passage_28",
+  "order": 28,
+  "orijinal_metin": "النوع الثالث: وهو ما زيد فيه ثلاثة أحرف على الثلاثي وهو أربعة أبواب.",
+  "translation": "Üçüncü çeşit, sülâsî üzerine üç harf ziyade edilen fiildir ve dört babdır.",
+  "tokens": [
+    {
+      "id": "p28_t1",
+      "arabic": "النَّوْعُ",
+      "printedArabic": "النوع",
+      "gloss": "Çeşit",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن و ع"
+        }
+      }
+    },
+    {
+      "id": "p28_t2",
+      "arabic": "الثَّالِثُ",
+      "printedArabic": "الثالث",
+      "punctuation": ":",
+      "gloss": "Üçüncü",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "wordForm": "Sıra sayısı"
+        }
+      }
+    },
+    {
+      "id": "p28_t3",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "Üçüncü çeşit"
+        }
+      }
+    },
+    {
+      "id": "p28_t4",
+      "arabic": "مَا",
+      "printedArabic": "ما",
+      "gloss": "Şeydir ki",
+      "analysis": {
+        "kind": "İsm-i mevsûl",
+        "fields": {
+          "meaning": "Tanım kurar"
+        }
+      }
+    },
+    {
+      "id": "p28_t5",
+      "arabic": "زِيدَ",
+      "printedArabic": "زيد",
+      "gloss": "Ziyade edildi",
+      "analysis": {
+        "kind": "Meçhul fiil",
+        "fields": {
+          "root": "ز ي د"
+        }
+      }
+    },
+    {
+      "id": "p28_t6",
+      "arabic": "فِيهِ",
+      "printedArabic": "فيه",
+      "gloss": "Onda",
+      "analysis": {
+        "kind": "Harf + zamir",
+        "fields": {
+          "referent": "Fiil"
+        }
+      }
+    },
+    {
+      "id": "p28_t7",
+      "arabic": "ثَلَاثَةُ",
+      "printedArabic": "ثلاثة",
+      "gloss": "Üç",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p28_t8",
+      "arabic": "أَحْرُفٍ",
+      "printedArabic": "أحرف",
+      "gloss": "Harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p28_t9",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzerine",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Üzerine"
+        }
+      }
+    },
+    {
+      "id": "p28_t10",
+      "arabic": "الثُّلَاثِيِّ",
+      "printedArabic": "الثلاثي",
+      "gloss": "Sülâsînin",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Üç harfli fiil"
+        }
+      }
+    },
+    {
+      "id": "p28_t11",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "Bu çeşit"
+        }
+      }
+    },
+    {
+      "id": "p28_t12",
+      "arabic": "أَرْبَعَةُ",
+      "printedArabic": "أربعة",
+      "gloss": "Dört",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p28_t13",
+      "arabic": "أَبْوَابٍ",
+      "printedArabic": "أبواب",
+      "punctuation": ".",
+      "gloss": "Babdır",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "بَاب"
+        }
+      }
+    }
+  ]
+}

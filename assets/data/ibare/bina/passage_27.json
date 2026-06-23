@@ -1,0 +1,589 @@
+{
+  "id": "passage_27",
+  "order": 27,
+  "orijinal_metin": "الباب الخامس: تَفَاعَلَ يَتَفَاعَلُ تَفَاعُلًا، موزونه تَبَاعَدَ يَتَبَاعَدُ تَبَاعُدًا، وعلامته أن يكون ماضيه على خمسة أحرف بزيادة التاء في أوله والألف بين الفاء والعين وبناؤه للمشاركة بين الاثنين فصاعداً، مثال المشاركة بين الاثنين نحو: تَبَاعَدَ زيد عن عمرو ومثال المشاركة بين الاثنين فصاعداً نحو: تَصَالَحَ القوم",
+  "translation": "Beşinci babın vezni تَفَاعَلَ يَتَفَاعَلُ تَفَاعُلًا, mevzunu تَبَاعَدَ يَتَبَاعَدُ تَبَاعُدًا’dır. Alâmeti, mâzisinin başında tâ ve fâ ile ayn arasında elif ziyadesiyle beş harf üzere olmasıdır. Binası iki kişi ve daha fazlası arasında müşareket içindir. Misali: “Zeyd Amr’dan uzaklaştı” ve “Topluluk barıştı.”",
+  "tokens": [
+    {
+      "id": "p27_t1",
+      "arabic": "الْبَابُ",
+      "printedArabic": "الباب",
+      "gloss": "Bab",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ب و ب",
+          "role": "Mübtedâ"
+        }
+      }
+    },
+    {
+      "id": "p27_t2",
+      "arabic": "الْخَامِسُ",
+      "printedArabic": "الخامس",
+      "punctuation": ":",
+      "gloss": "Beşinci",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "root": "خ م س",
+          "role": "الْبَابُ kelimesinin sıfatı"
+        }
+      }
+    },
+    {
+      "id": "p27_t3",
+      "arabic": "تَفَاعَلَ",
+      "gloss": "Mâzi vezni: tefâ‘ale",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "Sülâsî mezîd iki harf, tefâ‘ul babı",
+          "morphology": "Başta tâ, fâ ile ayn arasında elif ziyadelidir."
+        }
+      }
+    },
+    {
+      "id": "p27_t4",
+      "arabic": "يَتَفَاعَلُ",
+      "gloss": "Muzâri vezni: yetefâ‘alü",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "Tefâ‘ul babı",
+          "conjugation": "Fiil-i muzâri, malûm"
+        }
+      }
+    },
+    {
+      "id": "p27_t5",
+      "arabic": "تَفَاعُلًا",
+      "punctuation": "،",
+      "gloss": "Masdar vezni: tefâ‘ulen",
+      "analysis": {
+        "kind": "Masdar vezni",
+        "fields": {
+          "bab": "Tefâ‘ul babı",
+          "pattern": "تَفَاعُل",
+          "morphology": "Masdar"
+        }
+      }
+    },
+    {
+      "id": "p27_t6",
+      "arabic": "مَوْزُونُهُ",
+      "printedArabic": "موزونه",
+      "gloss": "Onun mevzunu",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "و ز ن",
+          "meaning": "Bu vezne oturan örnek fiil"
+        }
+      }
+    },
+    {
+      "id": "p27_t7",
+      "arabic": "تَبَاعَدَ",
+      "gloss": "Uzaklaştı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ب ع د",
+          "bab": "Sülâsî mezîd, tefâ‘ul babı",
+          "pattern": "تَفَاعَلَ",
+          "conjugation": "Fiil-i mâzi, malûm"
+        }
+      }
+    },
+    {
+      "id": "p27_t8",
+      "arabic": "يَتَبَاعَدُ",
+      "gloss": "Uzaklaşır",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ب ع د",
+          "bab": "Sülâsî mezîd, tefâ‘ul babı",
+          "pattern": "يَتَفَاعَلُ",
+          "conjugation": "Fiil-i muzâri, malûm"
+        }
+      }
+    },
+    {
+      "id": "p27_t9",
+      "arabic": "تَبَاعُدًا",
+      "punctuation": "،",
+      "gloss": "Uzaklaşmak",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ب ع د",
+          "bab": "Sülâsî mezîd, tefâ‘ul babı",
+          "pattern": "تَفَاعُل",
+          "morphology": "Masdar"
+        }
+      }
+    },
+    {
+      "id": "p27_t10",
+      "arabic": "وَعَلَامَتُهُ",
+      "printedArabic": "وعلامته",
+      "gloss": "Ve onun alâmeti",
+      "analysis": {
+        "kind": "Bağlaç + isim + zamir",
+        "fields": {
+          "root": "ع ل م",
+          "meaning": "Babı diğer bablardan ayıran lafzî özellik"
+        }
+      }
+    },
+    {
+      "id": "p27_t11",
+      "arabic": "أَنْ",
+      "printedArabic": "أن",
+      "gloss": "-mesi",
+      "analysis": {
+        "kind": "Harf",
+        "fields": {
+          "morphology": "Masdariyye ve nasb harfi"
+        }
+      }
+    },
+    {
+      "id": "p27_t12",
+      "arabic": "يَكُونَ",
+      "printedArabic": "يكون",
+      "gloss": "Olmasıdır",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن",
+          "nasb": "أَنْ sebebiyle mansub"
+        }
+      }
+    },
+    {
+      "id": "p27_t13",
+      "arabic": "مَاضِيهِ",
+      "printedArabic": "ماضيه",
+      "gloss": "Onun mâzisi",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "م ض ي",
+          "morphology": "Fiil-i mâzi adı"
+        }
+      }
+    },
+    {
+      "id": "p27_t14",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzere",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Üzerine, üzere"
+        }
+      }
+    },
+    {
+      "id": "p27_t15",
+      "arabic": "خَمْسَةِ",
+      "printedArabic": "خمسة",
+      "gloss": "Beş",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p27_t16",
+      "arabic": "أَحْرُفٍ",
+      "printedArabic": "أحرف",
+      "gloss": "Harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p27_t17",
+      "arabic": "بِزِيَادَةِ",
+      "printedArabic": "بزيادة",
+      "gloss": "Ziyadesiyle",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ز ي د",
+          "meaning": "Asıl harflere eklenen harf"
+        }
+      }
+    },
+    {
+      "id": "p27_t18",
+      "arabic": "التَّاءِ",
+      "printedArabic": "التاء",
+      "gloss": "Tâ harfinin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p27_t19",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p27_t20",
+      "arabic": "أَوَّلِهِ",
+      "printedArabic": "أوله",
+      "gloss": "Başında",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "role": "فِي harfiyle mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p27_t21",
+      "arabic": "وَالْأَلِفِ",
+      "printedArabic": "والألف",
+      "gloss": "Ve elifin",
+      "analysis": {
+        "kind": "Bağlaç + harf adı",
+        "fields": {
+          "role": "التَّاءِ kelimesine atıf"
+        }
+      }
+    },
+    {
+      "id": "p27_t22",
+      "arabic": "بَيْنَ",
+      "printedArabic": "بين",
+      "gloss": "Arasında",
+      "analysis": {
+        "kind": "Zarf",
+        "fields": {
+          "meaning": "İki şeyin arası"
+        }
+      }
+    },
+    {
+      "id": "p27_t23",
+      "arabic": "الْفَاءِ",
+      "printedArabic": "الفاء",
+      "gloss": "Fâ harfinin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "term": "Fâü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p27_t24",
+      "arabic": "وَالْعَيْنِ",
+      "printedArabic": "والعين",
+      "gloss": "Ve ayn harfinin",
+      "analysis": {
+        "kind": "Bağlaç + harf adı",
+        "fields": {
+          "term": "Aynü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p27_t25",
+      "arabic": "وَبِنَاؤُهُ",
+      "printedArabic": "وبناؤه",
+      "gloss": "Ve binası",
+      "analysis": {
+        "kind": "Bağlaç + masdar + zamir",
+        "fields": {
+          "meaning": "Babın mana işlevi"
+        }
+      }
+    },
+    {
+      "id": "p27_t26",
+      "arabic": "لِلْمُشَارَكَةِ",
+      "printedArabic": "للمشاركة",
+      "gloss": "Ortaklık içindir",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ش ر ك",
+          "pattern": "مُفَاعَلَة",
+          "meaning": "Fiilin birden fazla taraf arasında gerçekleşmesi"
+        }
+      }
+    },
+    {
+      "id": "p27_t27",
+      "arabic": "بَيْنَ",
+      "printedArabic": "بين",
+      "gloss": "Arasında",
+      "analysis": {
+        "kind": "Zarf",
+        "fields": {
+          "meaning": "İki şeyin arası"
+        }
+      }
+    },
+    {
+      "id": "p27_t28",
+      "arabic": "الْاِثْنَيْنِ",
+      "printedArabic": "الاثنين",
+      "gloss": "İki kişinin",
+      "analysis": {
+        "kind": "Sayı ismi",
+        "fields": {
+          "numberType": "Tesniye"
+        }
+      }
+    },
+    {
+      "id": "p27_t29",
+      "arabic": "فَصَاعِدًا",
+      "printedArabic": "فصاعداً",
+      "punctuation": "،",
+      "gloss": "Ve daha fazlası",
+      "analysis": {
+        "kind": "Bağlaç + ism-i fâil",
+        "fields": {
+          "root": "ص ع د",
+          "meaning": "İkiden yukarı olanları da kapsar."
+        }
+      }
+    },
+    {
+      "id": "p27_t30",
+      "arabic": "مِثَالُ",
+      "printedArabic": "مثال",
+      "gloss": "Misali",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "م ث ل"
+        }
+      }
+    },
+    {
+      "id": "p27_t31",
+      "arabic": "الْمُشَارَكَةِ",
+      "printedArabic": "المشاركة",
+      "gloss": "Ortaklığın",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ش ر ك",
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p27_t32",
+      "arabic": "بَيْنَ",
+      "printedArabic": "بين",
+      "gloss": "Arasında",
+      "analysis": {
+        "kind": "Zarf",
+        "fields": {
+          "meaning": "İki şeyin arası"
+        }
+      }
+    },
+    {
+      "id": "p27_t33",
+      "arabic": "الْاِثْنَيْنِ",
+      "printedArabic": "الاثنين",
+      "gloss": "İki kişinin",
+      "analysis": {
+        "kind": "Sayı ismi",
+        "fields": {
+          "numberType": "Tesniye"
+        }
+      }
+    },
+    {
+      "id": "p27_t34",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p27_t35",
+      "arabic": "تَبَاعَدَ",
+      "gloss": "Uzaklaştı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ب ع د",
+          "bab": "Sülâsî mezîd, tefâ‘ul babı",
+          "pattern": "تَفَاعَلَ"
+        }
+      }
+    },
+    {
+      "id": "p27_t36",
+      "arabic": "زَيْدٌ",
+      "printedArabic": "زيد",
+      "gloss": "Zeyd",
+      "analysis": {
+        "kind": "Özel isim",
+        "fields": {
+          "role": "Fâil"
+        }
+      }
+    },
+    {
+      "id": "p27_t37",
+      "arabic": "عَنْ",
+      "printedArabic": "عن",
+      "gloss": "-den",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Ayrılma/uzaklaşma bildirir."
+        }
+      }
+    },
+    {
+      "id": "p27_t38",
+      "arabic": "عَمْرٍو",
+      "printedArabic": "عمرو",
+      "gloss": "Amr’dan",
+      "analysis": {
+        "kind": "Özel isim",
+        "fields": {
+          "role": "عَنْ harfiyle mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p27_t39",
+      "arabic": "وَمِثَالُ",
+      "printedArabic": "ومثال",
+      "gloss": "Ve misali",
+      "analysis": {
+        "kind": "Bağlaç + isim",
+        "fields": {
+          "root": "م ث ل"
+        }
+      }
+    },
+    {
+      "id": "p27_t40",
+      "arabic": "الْمُشَارَكَةِ",
+      "printedArabic": "المشاركة",
+      "gloss": "Ortaklığın",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ش ر ك"
+        }
+      }
+    },
+    {
+      "id": "p27_t41",
+      "arabic": "بَيْنَ",
+      "printedArabic": "بين",
+      "gloss": "Arasında",
+      "analysis": {
+        "kind": "Zarf",
+        "fields": {
+          "meaning": "İki şeyin arası"
+        }
+      }
+    },
+    {
+      "id": "p27_t42",
+      "arabic": "الْاِثْنَيْنِ",
+      "printedArabic": "الاثنين",
+      "gloss": "İki kişinin",
+      "analysis": {
+        "kind": "Sayı ismi",
+        "fields": {
+          "numberType": "Tesniye"
+        }
+      }
+    },
+    {
+      "id": "p27_t43",
+      "arabic": "فَصَاعِدًا",
+      "printedArabic": "فصاعداً",
+      "gloss": "Ve daha fazlası",
+      "analysis": {
+        "kind": "Bağlaç + ism-i fâil",
+        "fields": {
+          "root": "ص ع د",
+          "meaning": "İkiden yukarı olanları da kapsar."
+        }
+      }
+    },
+    {
+      "id": "p27_t44",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p27_t45",
+      "arabic": "تَصَالَحَ",
+      "gloss": "Barıştı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ص ل ح",
+          "bab": "Sülâsî mezîd, tefâ‘ul babı",
+          "pattern": "تَفَاعَلَ",
+          "meaning": "Çok taraflı müşareket örneği"
+        }
+      }
+    },
+    {
+      "id": "p27_t46",
+      "arabic": "الْقَوْمُ",
+      "printedArabic": "القوم",
+      "gloss": "Topluluk",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "role": "Fâil",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    }
+  ]
+}

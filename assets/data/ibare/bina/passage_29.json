@@ -1,0 +1,673 @@
+{
+  "id": "passage_29",
+  "order": 29,
+  "orijinal_metin": "الباب الأول: اِسْتَفْعَلَ يَسْتَفْعِلُ اِسْتِفْعَالًا موزونه: اِسْتَخْرَجَ يَسْتَخْرِجُ اِسْتِخْرَاجًا، وعلامته أن يكون ماضيه على ستة أحرف بزيادة الهمزة والسين والتاء في أوله وبناؤه للتعدية غالباً وقد يكون لازماً مثال المتعدي نحو: اِسْتَخْرَجَ زيد المال ومثال اللازم نحو: اِسْتَحْجَرَ الطين وقيل لطلب الفعل نحو: اِسْتَغْفَرَ الله: أي اُطْلُبْ المغفرة من الله تعالى",
+  "translation": "Sülâsî mezîd üç harfli birinci babın vezni اِسْتَفْعَلَ يَسْتَفْعِلُ اِسْتِفْعَالًا, mevzunu اِسْتَخْرَجَ يَسْتَخْرِجُ اِسْتِخْرَاجًا’dır. Alâmeti, mâzisinin başında hemze, sîn ve tâ ziyadesiyle altı harf üzere olmasıdır. Binası çoğunlukla müteaddi, bazen lazım fiiller içindir; ayrıca طلب الفعل, yani işi istemek manasına da gelebilir.",
+  "tokens": [
+    {
+      "id": "p29_t1",
+      "arabic": "الْبَابُ",
+      "printedArabic": "الباب",
+      "gloss": "Bab",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ب و ب",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p29_t2",
+      "arabic": "الْأَوَّلُ",
+      "printedArabic": "الأول",
+      "punctuation": ":",
+      "gloss": "Birinci",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "wordForm": "Sıra sayısı",
+          "role": "الْبَابُ kelimesinin sıfatı"
+        }
+      }
+    },
+    {
+      "id": "p29_t3",
+      "arabic": "اِسْتَفْعَلَ",
+      "gloss": "Mâzi vezni: istef‘ale",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "Sülâsî mezîd üç harf, istif‘âl babı",
+          "morphology": "Başta hemze, sîn ve tâ ziyadelidir.",
+          "conjugation": "Fiil-i mâzi, malûm"
+        }
+      }
+    },
+    {
+      "id": "p29_t4",
+      "arabic": "يَسْتَفْعِلُ",
+      "gloss": "Muzâri vezni: yestef‘ilü",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "İstif‘âl babı",
+          "conjugation": "Fiil-i muzâri, malûm"
+        }
+      }
+    },
+    {
+      "id": "p29_t5",
+      "arabic": "اِسْتِفْعَالًا",
+      "gloss": "Masdar vezni: istif‘âlen",
+      "analysis": {
+        "kind": "Masdar vezni",
+        "fields": {
+          "bab": "İstif‘âl babı",
+          "pattern": "اِسْتِفْعَال",
+          "morphology": "Masdar"
+        }
+      }
+    },
+    {
+      "id": "p29_t6",
+      "arabic": "مَوْزُونُهُ",
+      "printedArabic": "موزونه",
+      "punctuation": ":",
+      "gloss": "Onun mevzunu",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "و ز ن",
+          "pattern": "مَفْعُول",
+          "meaning": "Bu vezne oturan örnek fiil"
+        }
+      }
+    },
+    {
+      "id": "p29_t7",
+      "arabic": "اِسْتَخْرَجَ",
+      "gloss": "Çıkardı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "خ ر ج",
+          "bab": "Sülâsî mezîd, istif‘âl babı",
+          "pattern": "اِسْتَفْعَلَ",
+          "conjugation": "Fiil-i mâzi, malûm",
+          "transitivity": "Müteaddi"
+        }
+      }
+    },
+    {
+      "id": "p29_t8",
+      "arabic": "يَسْتَخْرِجُ",
+      "gloss": "Çıkarır",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "خ ر ج",
+          "bab": "Sülâsî mezîd, istif‘âl babı",
+          "pattern": "يَسْتَفْعِلُ",
+          "conjugation": "Fiil-i muzâri, malûm",
+          "transitivity": "Müteaddi"
+        }
+      }
+    },
+    {
+      "id": "p29_t9",
+      "arabic": "اِسْتِخْرَاجًا",
+      "punctuation": "،",
+      "gloss": "Çıkarmak",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "خ ر ج",
+          "bab": "Sülâsî mezîd, istif‘âl babı",
+          "pattern": "اِسْتِفْعَال",
+          "morphology": "Masdar"
+        }
+      }
+    },
+    {
+      "id": "p29_t10",
+      "arabic": "وَعَلَامَتُهُ",
+      "printedArabic": "وعلامته",
+      "gloss": "Ve onun alâmeti",
+      "analysis": {
+        "kind": "Bağlaç + isim + zamir",
+        "fields": {
+          "root": "ع ل م",
+          "meaning": "Babı diğer bablardan ayıran lafzî özellik"
+        }
+      }
+    },
+    {
+      "id": "p29_t11",
+      "arabic": "أَنْ",
+      "printedArabic": "أن",
+      "gloss": "-mesi",
+      "analysis": {
+        "kind": "Harf",
+        "fields": {
+          "morphology": "Masdariyye ve nasb harfi"
+        }
+      }
+    },
+    {
+      "id": "p29_t12",
+      "arabic": "يَكُونَ",
+      "printedArabic": "يكون",
+      "gloss": "Olmasıdır",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن",
+          "nasb": "أَنْ sebebiyle mansub"
+        }
+      }
+    },
+    {
+      "id": "p29_t13",
+      "arabic": "مَاضِيهِ",
+      "printedArabic": "ماضيه",
+      "gloss": "Onun mâzisi",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "م ض ي",
+          "morphology": "Fiil-i mâzi adı"
+        }
+      }
+    },
+    {
+      "id": "p29_t14",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzere",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Üzerine, üzere"
+        }
+      }
+    },
+    {
+      "id": "p29_t15",
+      "arabic": "سِتَّةِ",
+      "printedArabic": "ستة",
+      "gloss": "Altı",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded",
+          "role": "أَحْرُفٍ kelimesinin sayı unsuru"
+        }
+      }
+    },
+    {
+      "id": "p29_t16",
+      "arabic": "أَحْرُفٍ",
+      "printedArabic": "أحرف",
+      "gloss": "Harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف",
+          "role": "Sayılan unsur"
+        }
+      }
+    },
+    {
+      "id": "p29_t17",
+      "arabic": "بِزِيَادَةِ",
+      "printedArabic": "بزيادة",
+      "gloss": "Ziyadesiyle",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ز ي د",
+          "meaning": "Asıl harflere eklenen harf"
+        }
+      }
+    },
+    {
+      "id": "p29_t18",
+      "arabic": "الْهَمْزَةِ",
+      "printedArabic": "الهمزة",
+      "gloss": "Hemzenin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p29_t19",
+      "arabic": "وَالسِّينِ",
+      "printedArabic": "والسين",
+      "gloss": "Ve sîn harfinin",
+      "analysis": {
+        "kind": "Bağlaç + harf adı",
+        "fields": {
+          "role": "الْهَمْزَةِ kelimesine atıf"
+        }
+      }
+    },
+    {
+      "id": "p29_t20",
+      "arabic": "وَالتَّاءِ",
+      "printedArabic": "والتاء",
+      "gloss": "Ve tâ harfinin",
+      "analysis": {
+        "kind": "Bağlaç + harf adı",
+        "fields": {
+          "role": "الْهَمْزَةِ kelimesine atıf"
+        }
+      }
+    },
+    {
+      "id": "p29_t21",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p29_t22",
+      "arabic": "أَوَّلِهِ",
+      "printedArabic": "أوله",
+      "gloss": "Başında",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "role": "فِي harfiyle mecrûr",
+          "pronoun": "هُ: mâzi fiile döner."
+        }
+      }
+    },
+    {
+      "id": "p29_t23",
+      "arabic": "وَبِنَاؤُهُ",
+      "printedArabic": "وبناؤه",
+      "gloss": "Ve binası",
+      "analysis": {
+        "kind": "Bağlaç + masdar + zamir",
+        "fields": {
+          "meaning": "Babın mana işlevi"
+        }
+      }
+    },
+    {
+      "id": "p29_t24",
+      "arabic": "لِلتَّعْدِيَةِ",
+      "printedArabic": "للتعدية",
+      "gloss": "Müteaddilik içindir",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ع د و",
+          "meaning": "Fiilin etkisinin mef‘ûle geçmesi"
+        }
+      }
+    },
+    {
+      "id": "p29_t25",
+      "arabic": "غَالِبًا",
+      "printedArabic": "غالباً",
+      "gloss": "Çoğu kez",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "غ ل ب",
+          "role": "Hâl/zarf manası"
+        }
+      }
+    },
+    {
+      "id": "p29_t26",
+      "arabic": "وَقَدْ",
+      "printedArabic": "وقد",
+      "gloss": "Ve bazen",
+      "analysis": {
+        "kind": "Bağlaç + harf",
+        "details": [
+          {
+            "label": "قَدْ",
+            "value": "Muzâri fiille burada ihtimal ve bazen manası verir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p29_t27",
+      "arabic": "يَكُونُ",
+      "printedArabic": "يكون",
+      "gloss": "Olur",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن",
+          "conjugation": "Fiil-i muzâri, nâkıs fiil"
+        }
+      }
+    },
+    {
+      "id": "p29_t28",
+      "arabic": "لَازِمًا",
+      "printedArabic": "لازماً",
+      "gloss": "Lazım",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "ل ز م",
+          "meaning": "Etkisi bir mef‘ûle geçmeyen fiil"
+        }
+      }
+    },
+    {
+      "id": "p29_t29",
+      "arabic": "مِثَالُ",
+      "printedArabic": "مثال",
+      "gloss": "Misali",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "م ث ل"
+        }
+      }
+    },
+    {
+      "id": "p29_t30",
+      "arabic": "الْمُتَعَدِّي",
+      "printedArabic": "المتعدي",
+      "gloss": "Müteaddinin",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "ع د و",
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p29_t31",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p29_t32",
+      "arabic": "اِسْتَخْرَجَ",
+      "gloss": "Çıkardı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "خ ر ج",
+          "bab": "Sülâsî mezîd, istif‘âl babı",
+          "pattern": "اِسْتَفْعَلَ",
+          "transitivity": "Müteaddi"
+        }
+      }
+    },
+    {
+      "id": "p29_t33",
+      "arabic": "زَيْدٌ",
+      "printedArabic": "زيد",
+      "gloss": "Zeyd",
+      "analysis": {
+        "kind": "Özel isim",
+        "fields": {
+          "role": "Fâil"
+        }
+      }
+    },
+    {
+      "id": "p29_t34",
+      "arabic": "الْمَالَ",
+      "printedArabic": "المال",
+      "gloss": "Malı",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "م و ل",
+          "role": "Mef‘ûlün bih"
+        }
+      }
+    },
+    {
+      "id": "p29_t35",
+      "arabic": "وَمِثَالُ",
+      "printedArabic": "ومثال",
+      "gloss": "Ve misali",
+      "analysis": {
+        "kind": "Bağlaç + isim",
+        "fields": {
+          "root": "م ث ل"
+        }
+      }
+    },
+    {
+      "id": "p29_t36",
+      "arabic": "اللَّازِمِ",
+      "printedArabic": "اللازم",
+      "gloss": "Lazımın",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "ل ز م",
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p29_t37",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p29_t38",
+      "arabic": "اِسْتَحْجَرَ",
+      "gloss": "Taşlaştı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ح ج ر",
+          "bab": "Sülâsî mezîd, istif‘âl babı",
+          "pattern": "اِسْتَفْعَلَ",
+          "transitivity": "Lazım"
+        }
+      }
+    },
+    {
+      "id": "p29_t39",
+      "arabic": "الطِّينُ",
+      "printedArabic": "الطين",
+      "gloss": "Çamur",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "role": "Fâil",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p29_t40",
+      "arabic": "وَقِيلَ",
+      "printedArabic": "وقيل",
+      "gloss": "Ve denildi",
+      "analysis": {
+        "kind": "Meçhul fiil",
+        "fields": {
+          "root": "ق و ل",
+          "conjugation": "Fiil-i mâzi, meçhul"
+        }
+      }
+    },
+    {
+      "id": "p29_t41",
+      "arabic": "لِطَلَبِ",
+      "printedArabic": "لطلب",
+      "gloss": "İstemek içindir",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ط ل ب",
+          "meaning": "Bir şeyi istemek, talep etmek"
+        }
+      }
+    },
+    {
+      "id": "p29_t42",
+      "arabic": "الْفِعْلِ",
+      "printedArabic": "الفعل",
+      "gloss": "Fiili",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ف ع ل",
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p29_t43",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p29_t44",
+      "arabic": "اِسْتَغْفَرَ",
+      "gloss": "Mağfiret istedi",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "غ ف ر",
+          "bab": "Sülâsî mezîd, istif‘âl babı",
+          "pattern": "اِسْتَفْعَلَ",
+          "meaning": "طلب الفعل: bağışlanmayı istemek"
+        }
+      }
+    },
+    {
+      "id": "p29_t45",
+      "arabic": "اللَّهَ",
+      "printedArabic": "الله",
+      "punctuation": ":",
+      "gloss": "Allah’tan",
+      "analysis": {
+        "kind": "Lafzatullah",
+        "fields": {
+          "role": "Mef‘ûlün bih",
+          "irab": "Fetha ile mansub"
+        }
+      }
+    },
+    {
+      "id": "p29_t46",
+      "arabic": "أَيْ",
+      "printedArabic": "أي",
+      "gloss": "Yani",
+      "analysis": {
+        "kind": "Tefsir edatı",
+        "fields": {
+          "meaning": "Önceki ifadeyi açıklar."
+        }
+      }
+    },
+    {
+      "id": "p29_t47",
+      "arabic": "اُطْلُبْ",
+      "gloss": "İste",
+      "analysis": {
+        "kind": "Emir fiil",
+        "fields": {
+          "root": "ط ل ب",
+          "conjugation": "Emr-i hâzır, malûm",
+          "person": "2. şahıs, müzekker, tekil"
+        }
+      }
+    },
+    {
+      "id": "p29_t48",
+      "arabic": "الْمَغْفِرَةَ",
+      "printedArabic": "المغفرة",
+      "gloss": "Mağfireti",
+      "analysis": {
+        "kind": "Masdar/isim",
+        "fields": {
+          "root": "غ ف ر",
+          "role": "Mef‘ûlün bih"
+        }
+      }
+    },
+    {
+      "id": "p29_t49",
+      "arabic": "مِنَ",
+      "printedArabic": "من",
+      "gloss": "-den",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Kaynak bildirir."
+        }
+      }
+    },
+    {
+      "id": "p29_t50",
+      "arabic": "اللَّهِ",
+      "printedArabic": "الله",
+      "gloss": "Allah’tan",
+      "analysis": {
+        "kind": "Lafzatullah",
+        "fields": {
+          "role": "مِنْ harfiyle mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p29_t51",
+      "arabic": "تَعَالَى",
+      "printedArabic": "تعالى",
+      "gloss": "Yüce olan",
+      "analysis": {
+        "kind": "Fiil/dua ifadesi",
+        "fields": {
+          "root": "ع ل و",
+          "meaning": "Allah hakkında tazim ifadesi"
+        }
+      }
+    }
+  ]
+}

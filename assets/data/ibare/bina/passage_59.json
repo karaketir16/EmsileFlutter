@@ -1,0 +1,399 @@
+{
+  "id": "passage_59",
+  "order": 59,
+  "orijinal_metin": "وإما مضاعف وهو الذي يكون عينه ولامه من جنس واحد نحو: مَدَّ، أصله مَدَدَ حذفت حركة الدال الأولى ثم أدغمت في الدال الثانية، والإدغام إدخال أحد المتجانسين في الآخر، وهو ثلاثة أنواع",
+  "translation": "Mu‘tel kısımlardan biri de mudâaftır: aynı ve lâmı aynı cinsten olan fiildir. Örneği مَدَّ’dir; aslı مَدَدَ idi. Birinci dâlın harekesi kaldırıldı, sonra ikinci dâla idğam edildi. İdğam, aynı cinsten iki harften birini diğerinin içine sokmaktır. İdğam üç türdür.",
+  "tokens": [
+    {
+      "id": "p59_t1",
+      "arabic": "وَإِمَّا",
+      "printedArabic": "وإما",
+      "gloss": "Ve ya",
+      "analysis": {
+        "kind": "Bağlaç + taksim edatı",
+        "fields": {
+          "meaning": "Yeni kısmı başlatır"
+        }
+      }
+    },
+    {
+      "id": "p59_t2",
+      "arabic": "مُضَاعَفٌ",
+      "printedArabic": "مضاعف",
+      "gloss": "Mudâaf",
+      "analysis": {
+        "kind": "Terim",
+        "fields": {
+          "term": "Ayn ve lâmı aynı cinsten olan fiil"
+        }
+      }
+    },
+    {
+      "id": "p59_t3",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "مضاعف"
+        }
+      }
+    },
+    {
+      "id": "p59_t4",
+      "arabic": "الَّذِي",
+      "printedArabic": "الذي",
+      "gloss": "O ki",
+      "analysis": {
+        "kind": "İsm-i mevsûl",
+        "fields": {
+          "referent": "Mudâaf fiil"
+        }
+      }
+    },
+    {
+      "id": "p59_t5",
+      "arabic": "يَكُونُ",
+      "printedArabic": "يكون",
+      "gloss": "Olur",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p59_t6",
+      "arabic": "عَيْنُهُ",
+      "printedArabic": "عينه",
+      "gloss": "Aynı",
+      "analysis": {
+        "kind": "Harf adı + zamir",
+        "fields": {
+          "term": "Aynü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p59_t7",
+      "arabic": "وَلَامُهُ",
+      "printedArabic": "ولامه",
+      "gloss": "Ve lâmı",
+      "analysis": {
+        "kind": "Bağlaç + harf adı + zamir",
+        "fields": {
+          "term": "Lâmü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p59_t8",
+      "arabic": "مِنْ",
+      "printedArabic": "من",
+      "gloss": "-den",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Cins bildirir"
+        }
+      }
+    },
+    {
+      "id": "p59_t9",
+      "arabic": "جِنْسٍ",
+      "printedArabic": "جنس",
+      "gloss": "Cinsten",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ج ن س"
+        }
+      }
+    },
+    {
+      "id": "p59_t10",
+      "arabic": "وَاحِدٍ",
+      "printedArabic": "واحد",
+      "gloss": "Bir",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p59_t11",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p59_t12",
+      "arabic": "مَدَّ",
+      "punctuation": "،",
+      "gloss": "Uzattı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "م د د",
+          "term": "Mudâaf"
+        }
+      }
+    },
+    {
+      "id": "p59_t13",
+      "arabic": "أَصْلُهُ",
+      "printedArabic": "أصله",
+      "gloss": "Aslı",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "أ ص ل"
+        }
+      }
+    },
+    {
+      "id": "p59_t14",
+      "arabic": "مَدَدَ",
+      "gloss": "Medede idi",
+      "analysis": {
+        "kind": "Asıl şekil",
+        "fields": {
+          "root": "م د د",
+          "morphology": "İdğamdan önceki şekil"
+        }
+      }
+    },
+    {
+      "id": "p59_t15",
+      "arabic": "حُذِفَتْ",
+      "printedArabic": "حذفت",
+      "gloss": "Kaldırıldı",
+      "analysis": {
+        "kind": "Meçhul fiil",
+        "fields": {
+          "root": "ح ذ ف"
+        }
+      }
+    },
+    {
+      "id": "p59_t16",
+      "arabic": "حَرَكَةُ",
+      "printedArabic": "حركة",
+      "gloss": "Hareketi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ح ر ك"
+        }
+      }
+    },
+    {
+      "id": "p59_t17",
+      "arabic": "الدَّالِ",
+      "printedArabic": "الدال",
+      "gloss": "Dâl harfinin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p59_t18",
+      "arabic": "الْأُولَى",
+      "printedArabic": "الأولى",
+      "gloss": "Birincinin",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "wordForm": "Sıra sayısı"
+        }
+      }
+    },
+    {
+      "id": "p59_t19",
+      "arabic": "ثُمَّ",
+      "printedArabic": "ثم",
+      "gloss": "Sonra",
+      "analysis": {
+        "kind": "Bağlaç",
+        "fields": {
+          "meaning": "Tertip bildirir"
+        }
+      }
+    },
+    {
+      "id": "p59_t20",
+      "arabic": "أُدْغِمَتْ",
+      "printedArabic": "أدغمت",
+      "gloss": "İdğam edildi",
+      "analysis": {
+        "kind": "Meçhul fiil",
+        "fields": {
+          "root": "د غ م",
+          "term": "İdğam"
+        }
+      }
+    },
+    {
+      "id": "p59_t21",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "İçine",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "İçine"
+        }
+      }
+    },
+    {
+      "id": "p59_t22",
+      "arabic": "الدَّالِ",
+      "printedArabic": "الدال",
+      "gloss": "Dâl harfinin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "term": "İkinci dâl"
+        }
+      }
+    },
+    {
+      "id": "p59_t23",
+      "arabic": "الثَّانِيَةِ",
+      "printedArabic": "الثانية",
+      "punctuation": "،",
+      "gloss": "İkincisine",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "wordForm": "Sıra sayısı"
+        }
+      }
+    },
+    {
+      "id": "p59_t24",
+      "arabic": "وَالْإِدْغَامُ",
+      "printedArabic": "والإدغام",
+      "gloss": "Ve idğam",
+      "analysis": {
+        "kind": "Bağlaç + masdar",
+        "fields": {
+          "root": "د غ م",
+          "term": "İki aynı/cinsdaş harfi birleştirme"
+        }
+      }
+    },
+    {
+      "id": "p59_t25",
+      "arabic": "إِدْخَالُ",
+      "printedArabic": "إدخال",
+      "gloss": "Sokmaktır",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "د خ ل"
+        }
+      }
+    },
+    {
+      "id": "p59_t26",
+      "arabic": "أَحَدِ",
+      "printedArabic": "أحد",
+      "gloss": "Birini",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "meaning": "Bir"
+        }
+      }
+    },
+    {
+      "id": "p59_t27",
+      "arabic": "الْمُتَجَانِسَيْنِ",
+      "printedArabic": "المتجانسين",
+      "gloss": "İki cinsdaşın",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "ج ن س",
+          "numberType": "Tesniye"
+        }
+      }
+    },
+    {
+      "id": "p59_t28",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "İçine",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "İçine"
+        }
+      }
+    },
+    {
+      "id": "p59_t29",
+      "arabic": "الْآخَرِ",
+      "printedArabic": "الآخر",
+      "punctuation": "،",
+      "gloss": "Diğerinin",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "meaning": "Öteki"
+        }
+      }
+    },
+    {
+      "id": "p59_t30",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "İdğam"
+        }
+      }
+    },
+    {
+      "id": "p59_t31",
+      "arabic": "ثَلَاثَةُ",
+      "printedArabic": "ثلاثة",
+      "gloss": "Üç",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p59_t32",
+      "arabic": "أَنْوَاعٍ",
+      "printedArabic": "أنواع",
+      "gloss": "Türdür",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "نَوْع"
+        }
+      }
+    }
+  ]
+}

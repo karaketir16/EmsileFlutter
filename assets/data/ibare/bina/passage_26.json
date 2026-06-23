@@ -1,0 +1,476 @@
+{
+  "id": "passage_26",
+  "order": 26,
+  "orijinal_metin": "الباب الرابع: تَفَعَّلَ يَتَفَعَّلُ تَفَعُّلًا موزونه تَكَلَّمَ يَتَكَلَّمُ تَكَلُّمًا، وعلامته أن يكون ماضيه على خمسة أحرف بزيادة التاء في أوله وحرف آخر من جنس عين فعله بين الفاء والعين وبناؤه للتكلف نحو: تَعَلَّمْتُ العلم مسألة بعد مسألة",
+  "translation": "Dördüncü babın vezni تَفَعَّلَ يَتَفَعَّلُ تَفَعُّلًا, mevzunu تَكَلَّمَ يَتَكَلَّمُ تَكَلُّمًا’dır. Alâmeti, mâzisinin başında tâ ve fâ ile ayn arasında aynü’l-fiilin cinsinden bir harf ziyadesiyle beş harf üzere olmasıdır. Binası tekellüf içindir; tekellüf, isteneni parça parça elde etmektir. Misali: “İlmi mesele mesele öğrendim.”",
+  "tokens": [
+    {
+      "id": "p26_t1",
+      "arabic": "الْبَابُ",
+      "printedArabic": "الباب",
+      "gloss": "Bab",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ب و ب",
+          "role": "Mübtedâ"
+        }
+      }
+    },
+    {
+      "id": "p26_t2",
+      "arabic": "الرَّابِعُ",
+      "printedArabic": "الرابع",
+      "punctuation": ":",
+      "gloss": "Dördüncü",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "root": "ر ب ع",
+          "role": "الْبَابُ kelimesinin sıfatı"
+        }
+      }
+    },
+    {
+      "id": "p26_t3",
+      "arabic": "تَفَعَّلَ",
+      "gloss": "Mâzi vezni: tefe‘‘ale",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "Sülâsî mezîd iki harf, tefa‘‘ul babı",
+          "morphology": "Başta tâ ziyadesi ve aynü’l-fiilde şedde vardır."
+        }
+      }
+    },
+    {
+      "id": "p26_t4",
+      "arabic": "يَتَفَعَّلُ",
+      "gloss": "Muzâri vezni: yetefe‘‘alü",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "Tefa‘‘ul babı",
+          "conjugation": "Fiil-i muzâri, malûm"
+        }
+      }
+    },
+    {
+      "id": "p26_t5",
+      "arabic": "تَفَعُّلًا",
+      "gloss": "Masdar vezni: tefe‘‘ulen",
+      "analysis": {
+        "kind": "Masdar vezni",
+        "fields": {
+          "bab": "Tefa‘‘ul babı",
+          "pattern": "تَفَعُّل",
+          "morphology": "Masdar"
+        }
+      }
+    },
+    {
+      "id": "p26_t6",
+      "arabic": "مَوْزُونُهُ",
+      "printedArabic": "موزونه",
+      "gloss": "Onun mevzunu",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "و ز ن",
+          "meaning": "Bu vezne oturan örnek fiil"
+        }
+      }
+    },
+    {
+      "id": "p26_t7",
+      "arabic": "تَكَلَّمَ",
+      "gloss": "Konuştu",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ك ل م",
+          "bab": "Sülâsî mezîd, tefa‘‘ul babı",
+          "pattern": "تَفَعَّلَ",
+          "conjugation": "Fiil-i mâzi, malûm"
+        }
+      }
+    },
+    {
+      "id": "p26_t8",
+      "arabic": "يَتَكَلَّمُ",
+      "gloss": "Konuşur",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ك ل م",
+          "bab": "Sülâsî mezîd, tefa‘‘ul babı",
+          "pattern": "يَتَفَعَّلُ",
+          "conjugation": "Fiil-i muzâri, malûm"
+        }
+      }
+    },
+    {
+      "id": "p26_t9",
+      "arabic": "تَكَلُّمًا",
+      "punctuation": "،",
+      "gloss": "Konuşmak",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ك ل م",
+          "bab": "Sülâsî mezîd, tefa‘‘ul babı",
+          "pattern": "تَفَعُّل",
+          "morphology": "Masdar"
+        }
+      }
+    },
+    {
+      "id": "p26_t10",
+      "arabic": "وَعَلَامَتُهُ",
+      "printedArabic": "وعلامته",
+      "gloss": "Ve onun alâmeti",
+      "analysis": {
+        "kind": "Bağlaç + isim + zamir",
+        "fields": {
+          "root": "ع ل م",
+          "meaning": "Babı diğer bablardan ayıran lafzî özellik"
+        }
+      }
+    },
+    {
+      "id": "p26_t11",
+      "arabic": "أَنْ",
+      "printedArabic": "أن",
+      "gloss": "-mesi",
+      "analysis": {
+        "kind": "Harf",
+        "fields": {
+          "morphology": "Masdariyye ve nasb harfi"
+        }
+      }
+    },
+    {
+      "id": "p26_t12",
+      "arabic": "يَكُونَ",
+      "printedArabic": "يكون",
+      "gloss": "Olmasıdır",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن",
+          "nasb": "أَنْ sebebiyle mansub"
+        }
+      }
+    },
+    {
+      "id": "p26_t13",
+      "arabic": "مَاضِيهِ",
+      "printedArabic": "ماضيه",
+      "gloss": "Onun mâzisi",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "م ض ي",
+          "morphology": "Fiil-i mâzi adı"
+        }
+      }
+    },
+    {
+      "id": "p26_t14",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzere",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Üzerine, üzere"
+        }
+      }
+    },
+    {
+      "id": "p26_t15",
+      "arabic": "خَمْسَةِ",
+      "printedArabic": "خمسة",
+      "gloss": "Beş",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p26_t16",
+      "arabic": "أَحْرُفٍ",
+      "printedArabic": "أحرف",
+      "gloss": "Harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p26_t17",
+      "arabic": "بِزِيَادَةِ",
+      "printedArabic": "بزيادة",
+      "gloss": "Ziyadesiyle",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ز ي د",
+          "meaning": "Asıl harflere eklenen harf"
+        }
+      }
+    },
+    {
+      "id": "p26_t18",
+      "arabic": "التَّاءِ",
+      "printedArabic": "التاء",
+      "gloss": "Tâ harfinin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p26_t19",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p26_t20",
+      "arabic": "أَوَّلِهِ",
+      "printedArabic": "أوله",
+      "gloss": "Başında",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "role": "فِي harfiyle mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p26_t21",
+      "arabic": "وَحَرْفٍ",
+      "printedArabic": "وحرف",
+      "gloss": "Ve bir harf",
+      "analysis": {
+        "kind": "Bağlaç + isim",
+        "fields": {
+          "wordForm": "Nekre ve müfred"
+        }
+      }
+    },
+    {
+      "id": "p26_t22",
+      "arabic": "آخَرَ",
+      "printedArabic": "آخر",
+      "gloss": "Başka",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "role": "حَرْفٍ kelimesinin sıfatı"
+        }
+      }
+    },
+    {
+      "id": "p26_t23",
+      "arabic": "مِنْ",
+      "printedArabic": "من",
+      "gloss": "-den",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Cins ve kaynak bildirir."
+        }
+      }
+    },
+    {
+      "id": "p26_t24",
+      "arabic": "جِنْسِ",
+      "printedArabic": "جنس",
+      "gloss": "Cinsinden",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ج ن س"
+        }
+      }
+    },
+    {
+      "id": "p26_t25",
+      "arabic": "عَيْنِ",
+      "printedArabic": "عين",
+      "gloss": "Ayn harfinin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "term": "Aynü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p26_t26",
+      "arabic": "فِعْلِهِ",
+      "printedArabic": "فعله",
+      "gloss": "Fiilinin",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "ف ع ل"
+        }
+      }
+    },
+    {
+      "id": "p26_t27",
+      "arabic": "بَيْنَ",
+      "printedArabic": "بين",
+      "gloss": "Arasında",
+      "analysis": {
+        "kind": "Zarf",
+        "fields": {
+          "meaning": "İki şeyin arası"
+        }
+      }
+    },
+    {
+      "id": "p26_t28",
+      "arabic": "الْفَاءِ",
+      "printedArabic": "الفاء",
+      "gloss": "Fâ harfinin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "term": "Fâü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p26_t29",
+      "arabic": "وَالْعَيْنِ",
+      "printedArabic": "والعين",
+      "gloss": "Ve ayn harfinin",
+      "analysis": {
+        "kind": "Bağlaç + harf adı",
+        "fields": {
+          "term": "Aynü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p26_t30",
+      "arabic": "وَبِنَاؤُهُ",
+      "printedArabic": "وبناؤه",
+      "gloss": "Ve binası",
+      "analysis": {
+        "kind": "Bağlaç + masdar + zamir",
+        "fields": {
+          "meaning": "Babın mana işlevi"
+        }
+      }
+    },
+    {
+      "id": "p26_t31",
+      "arabic": "لِلتَّكَلُّفِ",
+      "printedArabic": "للتكلف",
+      "gloss": "Tekellüf içindir",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ك ل ف",
+          "pattern": "تَفَعُّل",
+          "meaning": "İşi zorlanarak/aşama aşama elde etme"
+        }
+      }
+    },
+    {
+      "id": "p26_t32",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p26_t33",
+      "arabic": "تَعَلَّمْتُ",
+      "gloss": "Öğrendim",
+      "analysis": {
+        "kind": "Fiil + zamir",
+        "fields": {
+          "root": "ع ل م",
+          "bab": "Sülâsî mezîd, tefa‘‘ul babı",
+          "pattern": "تَفَعَّلَ",
+          "person": "1. şahıs, tekil"
+        }
+      }
+    },
+    {
+      "id": "p26_t34",
+      "arabic": "الْعِلْمَ",
+      "printedArabic": "العلم",
+      "gloss": "İlmi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ع ل م",
+          "role": "Mef‘ûlün bih"
+        }
+      }
+    },
+    {
+      "id": "p26_t35",
+      "arabic": "مَسْأَلَةً",
+      "printedArabic": "مسألة",
+      "gloss": "Bir mesele",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "س أ ل",
+          "wordForm": "Nekre ve müfred"
+        }
+      }
+    },
+    {
+      "id": "p26_t36",
+      "arabic": "بَعْدَ",
+      "printedArabic": "بعد",
+      "gloss": "Sonra",
+      "analysis": {
+        "kind": "Zarf",
+        "fields": {
+          "meaning": "Ardından"
+        }
+      }
+    },
+    {
+      "id": "p26_t37",
+      "arabic": "مَسْأَلَةٍ",
+      "printedArabic": "مسألة",
+      "gloss": "Bir meselenin",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "س أ ل",
+          "role": "بَعْدَ zarfına muzafun ileyh"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,847 @@
+{
+  "id": "passage_56",
+  "order": 56,
+  "orijinal_metin": "ثم اعلم أن الفعل المنحصر في هذه الأبواب: إما ثلاثي مجرد سالم نحو: كَرُمَ، وإما ثلاثي مجرد غير سالم نحو: وَعَدَ، وإما ثلاثي مزيد سالم نحو: أَكْرَمَ وإما ثلاثي مزيد فيه غير سالم نحو: أَوْعَدَ، وإما رباعي مجرد سالم نحو: دَحْرَجَ وإما رباعي غير سالم نحو: وَسْوَسَ وَزَلْزَلَ، وإما رباعي مزيد فيه سالم نحو: تَدَحْرَجَ وإما رباعي مزيد فيه غير سالم نحو: تَوَسْوَسَ ويقال لهذه الأقسام الأقسام الثمانية",
+  "translation": "Bu bablarda toplanan fiil ya sülâsî mücerred sâlimdir, örneği كَرُمَ; ya sülâsî mücerred gayr-i sâlimdir, örneği وَعَدَ. Ya sülâsî mezîd sâlimdir, örneği أَكْرَمَ; ya sülâsî mezîd gayr-i sâlimdir, örneği أَوْعَدَ. Ya rubâî mücerred sâlimdir, örneği دَحْرَجَ; ya rubâî gayr-i sâlimdir, örneği وَسْوَسَ ve زَلْزَلَ. Ya rubâî mezîd sâlimdir, örneği تَدَحْرَجَ; ya rubâî mezîd gayr-i sâlimdir, örneği تَوَسْوَسَ. Bunlara sekiz kısım denir.",
+  "tokens": [
+    {
+      "id": "p56_t1",
+      "arabic": "ثُمَّ",
+      "printedArabic": "ثم",
+      "gloss": "Sonra",
+      "analysis": {
+        "kind": "Bağlaç",
+        "fields": {
+          "meaning": "Sonraki bahse geçiş bildirir"
+        }
+      }
+    },
+    {
+      "id": "p56_t2",
+      "arabic": "اِعْلَمْ",
+      "printedArabic": "اعلم",
+      "gloss": "Bil ki",
+      "analysis": {
+        "kind": "Emir fiil",
+        "fields": {
+          "root": "ع ل م",
+          "person": "Muhatap müfred"
+        }
+      }
+    },
+    {
+      "id": "p56_t3",
+      "arabic": "أَنَّ",
+      "printedArabic": "أن",
+      "gloss": "Şüphesiz",
+      "analysis": {
+        "kind": "Harf",
+        "fields": {
+          "meaning": "Tekid ve nasb harfi"
+        }
+      }
+    },
+    {
+      "id": "p56_t4",
+      "arabic": "الْفِعْلَ",
+      "printedArabic": "الفعل",
+      "gloss": "Fiil",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ف ع ل",
+          "role": "أَنَّ ismi"
+        }
+      }
+    },
+    {
+      "id": "p56_t5",
+      "arabic": "الْمُنْحَصِرَ",
+      "printedArabic": "المنحصر",
+      "gloss": "Toplanan",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "root": "ح ص ر",
+          "meaning": "Sınırlandırılmış, toplanmış"
+        }
+      }
+    },
+    {
+      "id": "p56_t6",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "İçinde"
+        }
+      }
+    },
+    {
+      "id": "p56_t7",
+      "arabic": "هَذِهِ",
+      "printedArabic": "هذه",
+      "gloss": "Bu",
+      "analysis": {
+        "kind": "İşaret ismi",
+        "fields": {
+          "referent": "Geçen bablar"
+        }
+      }
+    },
+    {
+      "id": "p56_t8",
+      "arabic": "الْأَبْوَابِ",
+      "printedArabic": "الأبواب",
+      "punctuation": ":",
+      "gloss": "Bablarda",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "بَاب",
+          "role": "فِي ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p56_t9",
+      "arabic": "إِمَّا",
+      "printedArabic": "إما",
+      "gloss": "Ya",
+      "analysis": {
+        "kind": "Taksim edatı",
+        "fields": {
+          "meaning": "Seçenekleri ayırır"
+        }
+      }
+    },
+    {
+      "id": "p56_t10",
+      "arabic": "ثُلَاثِيٌّ",
+      "printedArabic": "ثلاثي",
+      "gloss": "Üç harfli",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Sülâsî"
+        }
+      }
+    },
+    {
+      "id": "p56_t11",
+      "arabic": "مُجَرَّدٌ",
+      "printedArabic": "مجرد",
+      "gloss": "Mücerred",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Asıl harflerine ziyade almayan fiil"
+        }
+      }
+    },
+    {
+      "id": "p56_t12",
+      "arabic": "سَالِمٌ",
+      "printedArabic": "سالم",
+      "gloss": "Sâlim",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "İllet, hemze veya idğam arızası bulunmayan"
+        }
+      }
+    },
+    {
+      "id": "p56_t13",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p56_t14",
+      "arabic": "كَرُمَ",
+      "punctuation": "،",
+      "gloss": "Kerem sahibi oldu",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ك ر م",
+          "term": "Sülâsî mücerred sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t15",
+      "arabic": "وَإِمَّا",
+      "printedArabic": "وإما",
+      "gloss": "Ve ya",
+      "analysis": {
+        "kind": "Bağlaç + taksim edatı",
+        "fields": {
+          "meaning": "İkinci ihtimali başlatır"
+        }
+      }
+    },
+    {
+      "id": "p56_t16",
+      "arabic": "ثُلَاثِيٌّ",
+      "printedArabic": "ثلاثي",
+      "gloss": "Sülâsî",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Üç harfli fiil"
+        }
+      }
+    },
+    {
+      "id": "p56_t17",
+      "arabic": "مُجَرَّدٌ",
+      "printedArabic": "مجرد",
+      "gloss": "Mücerred",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Ziyadesiz"
+        }
+      }
+    },
+    {
+      "id": "p56_t18",
+      "arabic": "غَيْرُ",
+      "printedArabic": "غير",
+      "gloss": "Olmayan",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "meaning": "Nefy ve istisna manası"
+        }
+      }
+    },
+    {
+      "id": "p56_t19",
+      "arabic": "سَالِمٍ",
+      "printedArabic": "سالم",
+      "gloss": "Sâlim",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Sâlimin zıddı"
+        }
+      }
+    },
+    {
+      "id": "p56_t20",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p56_t21",
+      "arabic": "وَعَدَ",
+      "punctuation": "،",
+      "gloss": "Vaad etti",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "و ع د",
+          "term": "Sülâsî mücerred gayr-i sâlim; fâü’l-fiili vâvdır"
+        }
+      }
+    },
+    {
+      "id": "p56_t22",
+      "arabic": "وَإِمَّا",
+      "printedArabic": "وإما",
+      "gloss": "Ve ya",
+      "analysis": {
+        "kind": "Bağlaç + taksim edatı",
+        "fields": {
+          "meaning": "Yeni kısmı başlatır"
+        }
+      }
+    },
+    {
+      "id": "p56_t23",
+      "arabic": "ثُلَاثِيٌّ",
+      "printedArabic": "ثلاثي",
+      "gloss": "Sülâsî",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Üç harfli"
+        }
+      }
+    },
+    {
+      "id": "p56_t24",
+      "arabic": "مَزِيدٌ",
+      "printedArabic": "مزيد",
+      "gloss": "Mezîd",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Ziyade harf almış fiil"
+        }
+      }
+    },
+    {
+      "id": "p56_t25",
+      "arabic": "سَالِمٌ",
+      "printedArabic": "سالم",
+      "gloss": "Sâlim",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t26",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p56_t27",
+      "arabic": "أَكْرَمَ",
+      "gloss": "İkram etti",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ك ر م",
+          "bab": "إِفْعَال",
+          "term": "Sülâsî mezîd sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t28",
+      "arabic": "وَإِمَّا",
+      "printedArabic": "وإما",
+      "gloss": "Ve ya",
+      "analysis": {
+        "kind": "Bağlaç + taksim edatı",
+        "fields": {
+          "meaning": "Diğer ihtimal"
+        }
+      }
+    },
+    {
+      "id": "p56_t29",
+      "arabic": "ثُلَاثِيٌّ",
+      "printedArabic": "ثلاثي",
+      "gloss": "Sülâsî",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Üç harfli"
+        }
+      }
+    },
+    {
+      "id": "p56_t30",
+      "arabic": "مَزِيدٌ",
+      "printedArabic": "مزيد",
+      "gloss": "Mezîd",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Ziyadeli"
+        }
+      }
+    },
+    {
+      "id": "p56_t31",
+      "arabic": "فِيهِ",
+      "printedArabic": "فيه",
+      "gloss": "Onda",
+      "analysis": {
+        "kind": "Harf + zamir",
+        "fields": {
+          "referent": "Fiil"
+        }
+      }
+    },
+    {
+      "id": "p56_t32",
+      "arabic": "غَيْرُ",
+      "printedArabic": "غير",
+      "gloss": "Gayr-i",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "meaning": "Olmayan"
+        }
+      }
+    },
+    {
+      "id": "p56_t33",
+      "arabic": "سَالِمٍ",
+      "printedArabic": "سالم",
+      "gloss": "Sâlim",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Gayr-i sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t34",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p56_t35",
+      "arabic": "أَوْعَدَ",
+      "punctuation": "،",
+      "gloss": "Tehdit etti, vaadde bulundu",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "و ع د",
+          "bab": "إِفْعَال",
+          "term": "Sülâsî mezîd gayr-i sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t36",
+      "arabic": "وَإِمَّا",
+      "printedArabic": "وإما",
+      "gloss": "Ve ya",
+      "analysis": {
+        "kind": "Bağlaç + taksim edatı",
+        "fields": {
+          "meaning": "Yeni kısmı başlatır"
+        }
+      }
+    },
+    {
+      "id": "p56_t37",
+      "arabic": "رُبَاعِيٌّ",
+      "printedArabic": "رباعي",
+      "gloss": "Dört harfli",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Rubâî"
+        }
+      }
+    },
+    {
+      "id": "p56_t38",
+      "arabic": "مُجَرَّدٌ",
+      "printedArabic": "مجرد",
+      "gloss": "Mücerred",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Ziyadesiz"
+        }
+      }
+    },
+    {
+      "id": "p56_t39",
+      "arabic": "سَالِمٌ",
+      "printedArabic": "سالم",
+      "gloss": "Sâlim",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t40",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p56_t41",
+      "arabic": "دَحْرَجَ",
+      "gloss": "Yuvarladı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "د ح ر ج",
+          "term": "Rubâî mücerred sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t42",
+      "arabic": "وَإِمَّا",
+      "printedArabic": "وإما",
+      "gloss": "Ve ya",
+      "analysis": {
+        "kind": "Bağlaç + taksim edatı",
+        "fields": {
+          "meaning": "Diğer ihtimal"
+        }
+      }
+    },
+    {
+      "id": "p56_t43",
+      "arabic": "رُبَاعِيٌّ",
+      "printedArabic": "رباعي",
+      "gloss": "Rubâî",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Dört harfli"
+        }
+      }
+    },
+    {
+      "id": "p56_t44",
+      "arabic": "غَيْرُ",
+      "printedArabic": "غير",
+      "gloss": "Gayr-i",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "meaning": "Olmayan"
+        }
+      }
+    },
+    {
+      "id": "p56_t45",
+      "arabic": "سَالِمٍ",
+      "printedArabic": "سالم",
+      "gloss": "Sâlim",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Gayr-i sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t46",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p56_t47",
+      "arabic": "وَسْوَسَ",
+      "printedArabic": "وَسْوَسَ",
+      "gloss": "Vesvese verdi",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "و س و س",
+          "term": "Rubâî gayr-i sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t48",
+      "arabic": "وَزَلْزَلَ",
+      "printedArabic": "وَزَلْزَلَ",
+      "punctuation": "،",
+      "gloss": "Ve sarstı",
+      "analysis": {
+        "kind": "Bağlaç + fiil",
+        "fields": {
+          "root": "ز ل ز ل",
+          "term": "Rubâî gayr-i sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t49",
+      "arabic": "وَإِمَّا",
+      "printedArabic": "وإما",
+      "gloss": "Ve ya",
+      "analysis": {
+        "kind": "Bağlaç + taksim edatı",
+        "fields": {
+          "meaning": "Yeni kısmı başlatır"
+        }
+      }
+    },
+    {
+      "id": "p56_t50",
+      "arabic": "رُبَاعِيٌّ",
+      "printedArabic": "رباعي",
+      "gloss": "Rubâî",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Dört harfli"
+        }
+      }
+    },
+    {
+      "id": "p56_t51",
+      "arabic": "مَزِيدٌ",
+      "printedArabic": "مزيد",
+      "gloss": "Mezîd",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Ziyadeli"
+        }
+      }
+    },
+    {
+      "id": "p56_t52",
+      "arabic": "فِيهِ",
+      "printedArabic": "فيه",
+      "gloss": "Onda",
+      "analysis": {
+        "kind": "Harf + zamir",
+        "fields": {
+          "referent": "Fiil"
+        }
+      }
+    },
+    {
+      "id": "p56_t53",
+      "arabic": "سَالِمٌ",
+      "printedArabic": "سالم",
+      "gloss": "Sâlim",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t54",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p56_t55",
+      "arabic": "تَدَحْرَجَ",
+      "gloss": "Yuvarlandı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "د ح ر ج",
+          "bab": "تَفَعْلَل",
+          "term": "Rubâî mezîd sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t56",
+      "arabic": "وَإِمَّا",
+      "printedArabic": "وإما",
+      "gloss": "Ve ya",
+      "analysis": {
+        "kind": "Bağlaç + taksim edatı",
+        "fields": {
+          "meaning": "Son ihtimal"
+        }
+      }
+    },
+    {
+      "id": "p56_t57",
+      "arabic": "رُبَاعِيٌّ",
+      "printedArabic": "رباعي",
+      "gloss": "Rubâî",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Dört harfli"
+        }
+      }
+    },
+    {
+      "id": "p56_t58",
+      "arabic": "مَزِيدٌ",
+      "printedArabic": "مزيد",
+      "gloss": "Mezîd",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Ziyadeli"
+        }
+      }
+    },
+    {
+      "id": "p56_t59",
+      "arabic": "فِيهِ",
+      "printedArabic": "فيه",
+      "gloss": "Onda",
+      "analysis": {
+        "kind": "Harf + zamir",
+        "fields": {
+          "referent": "Fiil"
+        }
+      }
+    },
+    {
+      "id": "p56_t60",
+      "arabic": "غَيْرُ",
+      "printedArabic": "غير",
+      "gloss": "Gayr-i",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "meaning": "Olmayan"
+        }
+      }
+    },
+    {
+      "id": "p56_t61",
+      "arabic": "سَالِمٍ",
+      "printedArabic": "سالم",
+      "gloss": "Sâlim",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Gayr-i sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t62",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p56_t63",
+      "arabic": "تَوَسْوَسَ",
+      "gloss": "Vesveselendi",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "و س و س",
+          "bab": "تَفَعْلَل",
+          "term": "Rubâî mezîd gayr-i sâlim"
+        }
+      }
+    },
+    {
+      "id": "p56_t64",
+      "arabic": "وَيُقَالُ",
+      "printedArabic": "ويقال",
+      "gloss": "Ve denilir",
+      "analysis": {
+        "kind": "Bağlaç + meçhul fiil",
+        "fields": {
+          "root": "ق و ل"
+        }
+      }
+    },
+    {
+      "id": "p56_t65",
+      "arabic": "لِهَذِهِ",
+      "printedArabic": "لهذه",
+      "gloss": "Bunlara",
+      "analysis": {
+        "kind": "Harf-i cer + işaret ismi",
+        "fields": {
+          "referent": "Geçen kısımlar"
+        }
+      }
+    },
+    {
+      "id": "p56_t66",
+      "arabic": "الْأَقْسَامِ",
+      "printedArabic": "الأقسام",
+      "gloss": "Kısımlara",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "قِسْم"
+        }
+      }
+    },
+    {
+      "id": "p56_t67",
+      "arabic": "الْأَقْسَامُ",
+      "printedArabic": "الأقسام",
+      "gloss": "Kısımlar",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "قِسْم"
+        }
+      }
+    },
+    {
+      "id": "p56_t68",
+      "arabic": "الثَّمَانِيَةُ",
+      "printedArabic": "الثمانية",
+      "gloss": "Sekiz",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    }
+  ]
+}

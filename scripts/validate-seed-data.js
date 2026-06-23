@@ -166,6 +166,7 @@ function validateIbareBook(bookPath, expectedId) {
     assert(Number.isInteger(passage.order), `${prefix}.order must be an integer`);
     if (passage.title != null) assertString(passage.title, `${prefix}.title`);
     if (passage.subtitle != null) assertString(passage.subtitle, `${prefix}.subtitle`);
+    if (passage.orijinal_metin != null) assertString(passage.orijinal_metin, `${prefix}.orijinal_metin`);
     assertString(passage.translation, `${prefix}.translation`);
     assert(Array.isArray(passage.tokens), `${prefix}.tokens must be an array`);
     assert(passage.tokens.length > 0, `${prefix}.tokens must not be empty`);
@@ -219,6 +220,16 @@ function validateIbareBook(bookPath, expectedId) {
         );
       });
     });
+
+    if (passage.orijinal_metin != null) {
+      const printedText = passage.tokens
+        .map((token) => `${token.printedArabic ?? token.arabic}${token.punctuation ?? ''}`)
+        .join(' ');
+      assert(
+        passage.orijinal_metin === printedText,
+        `${prefix}.orijinal_metin must match printed token text`,
+      );
+    }
 
     const phrases = passage.phrases ?? [];
     assert(Array.isArray(phrases), `${prefix}.phrases must be an array`);

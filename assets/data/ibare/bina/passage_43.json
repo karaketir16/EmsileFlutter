@@ -1,0 +1,355 @@
+{
+  "id": "passage_43",
+  "order": 43,
+  "orijinal_metin": "النوع الأول: تَفَعْلَلَ يَتَفَعْلَلُ تَفَعْلُلًا، موزونه: تَدَحْرَجَ يَتَدَحْرَجُ تَدَحْرُجًا، وعلامته أن يكون ماضيه على خمسة أحرف بزيادة التاء في أوله، وبناؤه للمطاوعة نحو: دَحْرَجْتُ الحجر فَتَدَحْرَجَ ذلك الحجر",
+  "translation": "Rubâî mezîd bir harfli tek bab تَفَعْلَلَ يَتَفَعْلَلُ تَفَعْلُلًا’dır. Mevzunu تَدَحْرَجَ يَتَدَحْرَجُ تَدَحْرُجًا’dır. Alâmeti, mâzisinin başında tâ ziyadesiyle beş harf üzere olmasıdır. Binası mutâvaat içindir.",
+  "tokens": [
+    {
+      "id": "p43_t1",
+      "arabic": "النَّوْعُ",
+      "printedArabic": "النوع",
+      "gloss": "Nev‘",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن و ع",
+          "role": "Mübtedâ"
+        }
+      }
+    },
+    {
+      "id": "p43_t2",
+      "arabic": "الْأَوَّلُ",
+      "printedArabic": "الأول",
+      "punctuation": ":",
+      "gloss": "Birinci",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "wordForm": "Sıra sayısı"
+        }
+      }
+    },
+    {
+      "id": "p43_t3",
+      "arabic": "تَفَعْلَلَ",
+      "gloss": "Mâzi vezni: tefa‘lele",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "Rubâî mezîd bir harf",
+          "morphology": "Başta tâ ziyadelidir.",
+          "conjugation": "Fiil-i mâzi, malûm"
+        }
+      }
+    },
+    {
+      "id": "p43_t4",
+      "arabic": "يَتَفَعْلَلُ",
+      "gloss": "Muzâri vezni: yetefa‘lelü",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "conjugation": "Fiil-i muzâri, malûm"
+        }
+      }
+    },
+    {
+      "id": "p43_t5",
+      "arabic": "تَفَعْلُلًا",
+      "punctuation": "،",
+      "gloss": "Masdar vezni: tefa‘lulen",
+      "analysis": {
+        "kind": "Masdar vezni",
+        "fields": {
+          "pattern": "تَفَعْلُل"
+        }
+      }
+    },
+    {
+      "id": "p43_t6",
+      "arabic": "مَوْزُونُهُ",
+      "printedArabic": "موزونه",
+      "punctuation": ":",
+      "gloss": "Onun mevzunu",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "و ز ن"
+        }
+      }
+    },
+    {
+      "id": "p43_t7",
+      "arabic": "تَدَحْرَجَ",
+      "gloss": "Yuvarlandı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "د ح ر ج",
+          "bab": "Rubâî mezîd bir harf",
+          "pattern": "تَفَعْلَلَ",
+          "meaning": "دَحْرَجَ fiilinin mutâvaatı"
+        }
+      }
+    },
+    {
+      "id": "p43_t8",
+      "arabic": "يَتَدَحْرَجُ",
+      "gloss": "Yuvarlanır",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "د ح ر ج",
+          "pattern": "يَتَفَعْلَلُ"
+        }
+      }
+    },
+    {
+      "id": "p43_t9",
+      "arabic": "تَدَحْرُجًا",
+      "punctuation": "،",
+      "gloss": "Yuvarlanmak",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "د ح ر ج",
+          "pattern": "تَفَعْلُل"
+        }
+      }
+    },
+    {
+      "id": "p43_t10",
+      "arabic": "وَعَلَامَتُهُ",
+      "printedArabic": "وعلامته",
+      "gloss": "Ve onun alâmeti",
+      "analysis": {
+        "kind": "Bağlaç + isim + zamir",
+        "fields": {
+          "root": "ع ل م"
+        }
+      }
+    },
+    {
+      "id": "p43_t11",
+      "arabic": "أَنْ",
+      "printedArabic": "أن",
+      "gloss": "-mesi",
+      "analysis": {
+        "kind": "Harf",
+        "fields": {
+          "morphology": "Masdariyye ve nasb harfi"
+        }
+      }
+    },
+    {
+      "id": "p43_t12",
+      "arabic": "يَكُونَ",
+      "printedArabic": "يكون",
+      "gloss": "Olmasıdır",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p43_t13",
+      "arabic": "مَاضِيهِ",
+      "printedArabic": "ماضيه",
+      "gloss": "Onun mâzisi",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "م ض ي"
+        }
+      }
+    },
+    {
+      "id": "p43_t14",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzere",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Üzerine, üzere"
+        }
+      }
+    },
+    {
+      "id": "p43_t15",
+      "arabic": "خَمْسَةِ",
+      "printedArabic": "خمسة",
+      "gloss": "Beş",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p43_t16",
+      "arabic": "أَحْرُفٍ",
+      "printedArabic": "أحرف",
+      "gloss": "Harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p43_t17",
+      "arabic": "بِزِيَادَةِ",
+      "printedArabic": "بزيادة",
+      "gloss": "Ziyadesiyle",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ز ي د"
+        }
+      }
+    },
+    {
+      "id": "p43_t18",
+      "arabic": "التَّاءِ",
+      "printedArabic": "التاء",
+      "gloss": "Tâ harfinin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p43_t19",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p43_t20",
+      "arabic": "أَوَّلِهِ",
+      "printedArabic": "أوله",
+      "punctuation": "،",
+      "gloss": "Başında",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "role": "فِي harfiyle mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p43_t21",
+      "arabic": "وَبِنَاؤُهُ",
+      "printedArabic": "وبناؤه",
+      "gloss": "Ve binası",
+      "analysis": {
+        "kind": "Bağlaç + masdar + zamir",
+        "fields": {
+          "meaning": "Babın mana işlevi"
+        }
+      }
+    },
+    {
+      "id": "p43_t22",
+      "arabic": "لِلْمُطَاوَعَةِ",
+      "printedArabic": "للمطاوعة",
+      "gloss": "Mutâvaat içindir",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ط و ع",
+          "meaning": "Müteaddi fiilin etkisinin nesnede gerçekleşmesi"
+        }
+      }
+    },
+    {
+      "id": "p43_t23",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p43_t24",
+      "arabic": "دَحْرَجْتُ",
+      "gloss": "Ben yuvarladım",
+      "analysis": {
+        "kind": "Fiil + zamir",
+        "fields": {
+          "root": "د ح ر ج",
+          "pattern": "فَعْلَلَ",
+          "person": "1. şahıs, tekil"
+        }
+      }
+    },
+    {
+      "id": "p43_t25",
+      "arabic": "الْحَجَرَ",
+      "printedArabic": "الحجر",
+      "gloss": "Taşı",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "role": "Mef‘ûlün bih"
+        }
+      }
+    },
+    {
+      "id": "p43_t26",
+      "arabic": "فَتَدَحْرَجَ",
+      "gloss": "Böylece yuvarlandı",
+      "analysis": {
+        "kind": "Bağlaç + fiil",
+        "fields": {
+          "root": "د ح ر ج",
+          "pattern": "تَفَعْلَلَ",
+          "meaning": "Mutâvaat sonucunu gösterir."
+        }
+      }
+    },
+    {
+      "id": "p43_t27",
+      "arabic": "ذَلِكَ",
+      "printedArabic": "ذلك",
+      "gloss": "O",
+      "analysis": {
+        "kind": "İşaret ismi",
+        "fields": {
+          "referent": "Taş"
+        }
+      }
+    },
+    {
+      "id": "p43_t28",
+      "arabic": "الْحَجَرُ",
+      "printedArabic": "الحجر",
+      "gloss": "Taş",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "role": "Bedel/açıklayıcı unsur"
+        }
+      }
+    }
+  ]
+}

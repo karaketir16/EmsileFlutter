@@ -1,0 +1,317 @@
+{
+  "id": "passage_21",
+  "order": 21,
+  "orijinal_metin": "وبناؤه للمشاركة بين الإثنين غالباً وقد يكون للواحد مثال المشاركة بين الإثنين نحو: قَاتَلَ زيد عمراً ومثال الواحد نحو: قَاتَلَهُمْ الله",
+  "translation": "Bu bab çoğunlukla iki kişi arasında ortaklık içindir, bazen tek kişi için de gelir. Ortaklık misali “Zeyd Amr ile savaştı”; tek kişi misali “Allah onları öldürdü/savaşta kahretti” cümlesidir.",
+  "tokens": [
+    {
+      "id": "p21_t1",
+      "arabic": "وَبِنَاؤُهُ",
+      "printedArabic": "وبناؤه",
+      "gloss": "Ve bu babın binası",
+      "analysis": {
+        "kind": "Bağlaç + masdar + zamir",
+        "fields": {
+          "root": "ب ن ي",
+          "derivedFrom": "بَنَى يَبْنِي",
+          "pattern": "فِعَال",
+          "pronoun": "هُ: müfâ‘ale babına döner.",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p21_t2",
+      "arabic": "لِلْمُشَارَكَةِ",
+      "printedArabic": "للمشاركة",
+      "gloss": "Ortaklık içindir",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ش ر ك",
+          "derivedFrom": "شَارَكَ يُشَارِكُ",
+          "bab": "Sülâsî mezîd, müfâ‘ale babı",
+          "pattern": "مُفَاعَلَة",
+          "morphology": "Masdar",
+          "meaning": "Fiilin iki taraf arasında meydana gelmesi",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p21_t3",
+      "arabic": "بَيْنَ",
+      "printedArabic": "بين",
+      "gloss": "Arasında",
+      "analysis": {
+        "kind": "Zarf",
+        "fields": {
+          "meaning": "İki şeyin arası",
+          "irab": "Fetha ile mansub zarf"
+        }
+      }
+    },
+    {
+      "id": "p21_t4",
+      "arabic": "الْإِثْنَيْنِ",
+      "printedArabic": "الإثنين",
+      "gloss": "İki kişinin",
+      "analysis": {
+        "kind": "Sayı ismi",
+        "fields": {
+          "numberType": "Tesniye",
+          "role": "بَيْنَ zarfına bağlı unsur",
+          "irab": "ياء ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p21_t5",
+      "arabic": "غَالِبًا",
+      "printedArabic": "غالباً",
+      "gloss": "Çoğu kez",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "غ ل ب",
+          "derivedFrom": "غَلَبَ يَغْلِبُ",
+          "pattern": "فَاعِل",
+          "role": "Hâl/zarf manası",
+          "irab": "Fetha ile mansub"
+        }
+      }
+    },
+    {
+      "id": "p21_t6",
+      "arabic": "وَقَدْ",
+      "printedArabic": "وقد",
+      "gloss": "Ve bazen",
+      "analysis": {
+        "kind": "Bağlaç + harf",
+        "details": [
+          {
+            "label": "قَدْ",
+            "value": "Bu babın ortaklık dışında tek taraflı kullanımı da olabileceğini bildirir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p21_t7",
+      "arabic": "يَكُونُ",
+      "printedArabic": "يكون",
+      "gloss": "Olur",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "conjugation": "Fiil-i muzâri, nâkıs fiil",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p21_t8",
+      "arabic": "لِلْوَاحِدِ",
+      "printedArabic": "للواحد",
+      "gloss": "Tek kişi için",
+      "analysis": {
+        "kind": "Harf-i cer + isim",
+        "fields": {
+          "numberType": "Müfred",
+          "meaning": "Fiilin karşılıklı değil tek tarafa nispet edilmesi",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p21_t9",
+      "arabic": "مِثَالُ",
+      "printedArabic": "مثال",
+      "gloss": "Misali",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "م ث ل",
+          "wordForm": "Müfred ve muzaf",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p21_t10",
+      "arabic": "الْمُشَارَكَةِ",
+      "printedArabic": "المشاركة",
+      "gloss": "Ortaklığın",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ش ر ك",
+          "derivedFrom": "شَارَكَ يُشَارِكُ",
+          "pattern": "مُفَاعَلَة",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p21_t11",
+      "arabic": "بَيْنَ",
+      "printedArabic": "بين",
+      "gloss": "Arasında",
+      "analysis": {
+        "kind": "Zarf",
+        "fields": {
+          "meaning": "İki şeyin arası",
+          "irab": "Fetha ile mansub zarf"
+        }
+      }
+    },
+    {
+      "id": "p21_t12",
+      "arabic": "الْإِثْنَيْنِ",
+      "printedArabic": "الإثنين",
+      "gloss": "İki kişinin",
+      "analysis": {
+        "kind": "Sayı ismi",
+        "fields": {
+          "numberType": "Tesniye",
+          "role": "بَيْنَ zarfına bağlı unsur",
+          "irab": "ياء ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p21_t13",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و",
+          "meaning": "Örnek vermek için kullanılır.",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p21_t14",
+      "arabic": "قَاتَلَ",
+      "gloss": "Savaştı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "root": "ق ت ل",
+          "bab": "Sülâsî mezîd, müfâ‘ale babı",
+          "pattern": "فَاعَلَ",
+          "meaning": "İki taraflı mücadele manası taşır."
+        }
+      }
+    },
+    {
+      "id": "p21_t15",
+      "arabic": "زَيْدٌ",
+      "printedArabic": "زيد",
+      "gloss": "Zeyd",
+      "analysis": {
+        "kind": "Özel isim",
+        "fields": {
+          "role": "Fâil",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p21_t16",
+      "arabic": "عَمْرًا",
+      "printedArabic": "عمراً",
+      "gloss": "Amr ile",
+      "analysis": {
+        "kind": "Özel isim",
+        "fields": {
+          "role": "Mef‘ûlün bih gibi mansub gelir; manada karşı taraftır.",
+          "irab": "Fetha ile mansub"
+        }
+      }
+    },
+    {
+      "id": "p21_t17",
+      "arabic": "وَمِثَالُ",
+      "printedArabic": "ومثال",
+      "gloss": "Ve misali",
+      "analysis": {
+        "kind": "Bağlaç + isim",
+        "fields": {
+          "root": "م ث ل",
+          "wordForm": "Müfred ve muzaf",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p21_t18",
+      "arabic": "الْوَاحِدِ",
+      "printedArabic": "الواحد",
+      "gloss": "Tek kişinin",
+      "analysis": {
+        "kind": "Sayı ismi",
+        "fields": {
+          "numberType": "Müfred",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p21_t19",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و",
+          "meaning": "Örnek vermek için kullanılır.",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p21_t20",
+      "arabic": "قَاتَلَهُمْ",
+      "gloss": "Onlarla savaştı, onları kahretti",
+      "analysis": {
+        "kind": "Fiil + zamir",
+        "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "root": "ق ت ل",
+          "bab": "Sülâsî mezîd, müfâ‘ale babı",
+          "pattern": "فَاعَلَ",
+          "pronoun": "هُمْ: mef‘ûl zamiri",
+          "meaning": "Burada bab ortaklık değil, tek taraflı fiil manasında kullanılmıştır."
+        }
+      }
+    },
+    {
+      "id": "p21_t21",
+      "arabic": "اللَّهُ",
+      "printedArabic": "الله",
+      "gloss": "Allah",
+      "analysis": {
+        "kind": "Lafzatullah",
+        "fields": {
+          "role": "Fâil",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    }
+  ]
+}

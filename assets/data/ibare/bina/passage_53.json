@@ -1,0 +1,93 @@
+{
+  "id": "passage_53",
+  "order": 53,
+  "orijinal_metin": "توابع ملحقات الرباعي المزيد وإثنان لملحق اِحْرَنْجَمَ",
+  "translation": "Rubâî mezîd mülhaklarının tâbileri: iki bab اِحْرَنْجَمَ mülhakı içindir.",
+  "tokens": [
+    {
+      "id": "p53_t1",
+      "arabic": "تَوَابِعُ",
+      "printedArabic": "توابع",
+      "gloss": "Tâbileri",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "تَابِع",
+          "meaning": "Ardından gelen"
+        }
+      }
+    },
+    {
+      "id": "p53_t2",
+      "arabic": "مُلْحَقَاتِ",
+      "printedArabic": "ملحقات",
+      "gloss": "Mülhaklarının",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ل ح ق"
+        }
+      }
+    },
+    {
+      "id": "p53_t3",
+      "arabic": "الرُّبَاعِيِّ",
+      "printedArabic": "الرباعي",
+      "gloss": "Rubâînin",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Dört harfli"
+        }
+      }
+    },
+    {
+      "id": "p53_t4",
+      "arabic": "الْمَزِيدِ",
+      "printedArabic": "المزيد",
+      "gloss": "Mezîd",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Ziyadeli"
+        }
+      }
+    },
+    {
+      "id": "p53_t5",
+      "arabic": "وَاثْنَانِ",
+      "printedArabic": "وإثنان",
+      "gloss": "Ve iki",
+      "analysis": {
+        "kind": "Bağlaç + sayı",
+        "fields": {
+          "numberType": "Tesniye"
+        }
+      }
+    },
+    {
+      "id": "p53_t6",
+      "arabic": "لِمُلْحَقِ",
+      "printedArabic": "لملحق",
+      "gloss": "Mülhakı içindir",
+      "analysis": {
+        "kind": "Harf-i cer + isim",
+        "fields": {
+          "root": "ل ح ق"
+        }
+      }
+    },
+    {
+      "id": "p53_t7",
+      "arabic": "اِحْرَنْجَمَ",
+      "gloss": "İhranceme",
+      "analysis": {
+        "kind": "Fiil örneği",
+        "fields": {
+          "root": "ح ر ج م",
+          "pattern": "اِفْعَنْلَلَ"
+        }
+      }
+    }
+  ]
+}

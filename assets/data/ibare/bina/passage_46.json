@@ -1,0 +1,633 @@
+{
+  "id": "passage_46",
+  "order": 46,
+  "orijinal_metin": "الباب الثاني: اِفْعَلَّلَ يَفْعَلِلُّ اِفْعِلَّالًا موزونه: اِقْشَعَرَّ يَقْشَعِرُّ اِقْشِعْرَارًا، وعلامته أن يكون ماضيه على ستة أحرف بزيادة الهمزة في أوله، وحرف آخر من جنس اللام الثانية في آخره وبناؤه لمبالغة اللازم، لأنه يقال: قَشْعَرَ جلد الرجل: إذا انتشر شعر جلده في الجملة ويقال: اِقْشَعَرَّ جلد الرجل: إذا انتشر شعر جلده مبالغة",
+  "translation": "Rubâî mezîd iki harfli ikinci bab اِفْعَلَّلَ يَفْعَلِلُّ اِفْعِلَّالًا’dır. Mevzunu اِقْشَعَرَّ يَقْشَعِرُّ اِقْشِعْرَارًا’dır. Alâmeti, mâzisinin başında hemze ve sonunda ikinci lâm cinsinden bir harf ziyadesiyle altı harf üzere olmasıdır. Binası lazım fiilde mübalağa içindir.",
+  "tokens": [
+    {
+      "id": "p46_t1",
+      "arabic": "الْبَابُ",
+      "printedArabic": "الباب",
+      "gloss": "Bab",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ب و ب"
+        }
+      }
+    },
+    {
+      "id": "p46_t2",
+      "arabic": "الثَّانِي",
+      "printedArabic": "الثاني",
+      "punctuation": ":",
+      "gloss": "İkinci",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "root": "ث ن ي"
+        }
+      }
+    },
+    {
+      "id": "p46_t3",
+      "arabic": "اِفْعَلَّلَ",
+      "gloss": "Mâzi vezni: if‘allele",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "Rubâî mezîd iki harf 2. bab",
+          "morphology": "Başta hemze ve sonda ikinci lâm cinsinden harf ziyadelidir."
+        }
+      }
+    },
+    {
+      "id": "p46_t4",
+      "arabic": "يَفْعَلِلُّ",
+      "gloss": "Muzâri vezni: yef‘alillü",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "conjugation": "Fiil-i muzâri, malûm"
+        }
+      }
+    },
+    {
+      "id": "p46_t5",
+      "arabic": "اِفْعِلَّالًا",
+      "gloss": "Masdar vezni: if‘illâlen",
+      "analysis": {
+        "kind": "Masdar vezni",
+        "fields": {
+          "pattern": "اِفْعِلَّال"
+        }
+      }
+    },
+    {
+      "id": "p46_t6",
+      "arabic": "مَوْزُونُهُ",
+      "printedArabic": "موزونه",
+      "punctuation": ":",
+      "gloss": "Onun mevzunu",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "و ز ن"
+        }
+      }
+    },
+    {
+      "id": "p46_t7",
+      "arabic": "اِقْشَعَرَّ",
+      "gloss": "Tüyleri ürperdi",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ق ش ع ر",
+          "bab": "Rubâî mezîd iki harf 2. bab",
+          "pattern": "اِفْعَلَّلَ",
+          "transitivity": "Lazım",
+          "meaning": "Ürperme manasında mübalağa"
+        }
+      }
+    },
+    {
+      "id": "p46_t8",
+      "arabic": "يَقْشَعِرُّ",
+      "gloss": "Tüyleri ürperir",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ق ش ع ر",
+          "pattern": "يَفْعَلِلُّ"
+        }
+      }
+    },
+    {
+      "id": "p46_t9",
+      "arabic": "اِقْشِعْرَارًا",
+      "punctuation": "،",
+      "gloss": "Tüylerin ürpermesi",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ق ش ع ر",
+          "pattern": "اِفْعِلَّال"
+        }
+      }
+    },
+    {
+      "id": "p46_t10",
+      "arabic": "وَعَلَامَتُهُ",
+      "printedArabic": "وعلامته",
+      "gloss": "Ve onun alâmeti",
+      "analysis": {
+        "kind": "Bağlaç + isim + zamir",
+        "fields": {
+          "root": "ع ل م"
+        }
+      }
+    },
+    {
+      "id": "p46_t11",
+      "arabic": "أَنْ",
+      "printedArabic": "أن",
+      "gloss": "-mesi",
+      "analysis": {
+        "kind": "Harf",
+        "fields": {
+          "morphology": "Masdariyye ve nasb harfi"
+        }
+      }
+    },
+    {
+      "id": "p46_t12",
+      "arabic": "يَكُونَ",
+      "printedArabic": "يكون",
+      "gloss": "Olmasıdır",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p46_t13",
+      "arabic": "مَاضِيهِ",
+      "printedArabic": "ماضيه",
+      "gloss": "Onun mâzisi",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "م ض ي"
+        }
+      }
+    },
+    {
+      "id": "p46_t14",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzere",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Üzerine, üzere"
+        }
+      }
+    },
+    {
+      "id": "p46_t15",
+      "arabic": "سِتَّةِ",
+      "printedArabic": "ستة",
+      "gloss": "Altı",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p46_t16",
+      "arabic": "أَحْرُفٍ",
+      "printedArabic": "أحرف",
+      "gloss": "Harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p46_t17",
+      "arabic": "بِزِيَادَةِ",
+      "printedArabic": "بزيادة",
+      "gloss": "Ziyadesiyle",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ز ي د"
+        }
+      }
+    },
+    {
+      "id": "p46_t18",
+      "arabic": "الْهَمْزَةِ",
+      "printedArabic": "الهمزة",
+      "gloss": "Hemzenin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p46_t19",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p46_t20",
+      "arabic": "أَوَّلِهِ",
+      "printedArabic": "أوله",
+      "punctuation": "،",
+      "gloss": "Başında",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "role": "فِي harfiyle mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p46_t21",
+      "arabic": "وَحَرْفٍ",
+      "printedArabic": "وحرف",
+      "gloss": "Ve bir harf",
+      "analysis": {
+        "kind": "Bağlaç + isim",
+        "fields": {
+          "wordForm": "Nekre ve müfred"
+        }
+      }
+    },
+    {
+      "id": "p46_t22",
+      "arabic": "آخَرَ",
+      "printedArabic": "آخر",
+      "gloss": "Başka",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "role": "حَرْفٍ kelimesinin sıfatı"
+        }
+      }
+    },
+    {
+      "id": "p46_t23",
+      "arabic": "مِنْ",
+      "printedArabic": "من",
+      "gloss": "-den",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Cins ve kaynak bildirir."
+        }
+      }
+    },
+    {
+      "id": "p46_t24",
+      "arabic": "جِنْسِ",
+      "printedArabic": "جنس",
+      "gloss": "Cinsinden",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ج ن س"
+        }
+      }
+    },
+    {
+      "id": "p46_t25",
+      "arabic": "اللَّامِ",
+      "printedArabic": "اللام",
+      "gloss": "Lâm harfinin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "term": "İkinci lâm"
+        }
+      }
+    },
+    {
+      "id": "p46_t26",
+      "arabic": "الثَّانِيَةِ",
+      "printedArabic": "الثانية",
+      "gloss": "İkincinin",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "wordForm": "Sıra sayısı"
+        }
+      }
+    },
+    {
+      "id": "p46_t27",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p46_t28",
+      "arabic": "آخِرِهِ",
+      "printedArabic": "آخره",
+      "gloss": "Sonunda",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "role": "فِي harfiyle mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p46_t29",
+      "arabic": "وَبِنَاؤُهُ",
+      "printedArabic": "وبناؤه",
+      "gloss": "Ve binası",
+      "analysis": {
+        "kind": "Bağlaç + masdar + zamir",
+        "fields": {
+          "meaning": "Babın mana işlevi"
+        }
+      }
+    },
+    {
+      "id": "p46_t30",
+      "arabic": "لِمُبَالَغَةِ",
+      "printedArabic": "لمبالغة",
+      "gloss": "Mübalağa içindir",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ب ل غ"
+        }
+      }
+    },
+    {
+      "id": "p46_t31",
+      "arabic": "اللَّازِمِ",
+      "printedArabic": "اللازم",
+      "punctuation": "،",
+      "gloss": "Lazımın",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "ل ز م"
+        }
+      }
+    },
+    {
+      "id": "p46_t32",
+      "arabic": "لِأَنَّهُ",
+      "printedArabic": "لأنه",
+      "gloss": "Çünkü",
+      "analysis": {
+        "kind": "Harf + nâsih harf + zamir",
+        "fields": {
+          "meaning": "Açıklama gerekçesi başlatır."
+        }
+      }
+    },
+    {
+      "id": "p46_t33",
+      "arabic": "يُقَالُ",
+      "printedArabic": "يقال",
+      "punctuation": ":",
+      "gloss": "Denilir",
+      "analysis": {
+        "kind": "Meçhul fiil",
+        "fields": {
+          "root": "ق و ل"
+        }
+      }
+    },
+    {
+      "id": "p46_t34",
+      "arabic": "قَشْعَرَ",
+      "gloss": "Ürperdi",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ق ش ع ر",
+          "meaning": "Temel ürperme"
+        }
+      }
+    },
+    {
+      "id": "p46_t35",
+      "arabic": "جِلْدُ",
+      "printedArabic": "جلد",
+      "gloss": "Derisi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ج ل د",
+          "role": "Fâil"
+        }
+      }
+    },
+    {
+      "id": "p46_t36",
+      "arabic": "الرَّجُلِ",
+      "printedArabic": "الرجل",
+      "punctuation": ":",
+      "gloss": "Adamın",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p46_t37",
+      "arabic": "إِذَا",
+      "printedArabic": "إذا",
+      "gloss": "Ne zaman ki",
+      "analysis": {
+        "kind": "Şart zarfı",
+        "fields": {
+          "meaning": "Açıklama şartı kurar."
+        }
+      }
+    },
+    {
+      "id": "p46_t38",
+      "arabic": "اِنْتَشَرَ",
+      "printedArabic": "انتشر",
+      "gloss": "Dikeldi/yayıldı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ن ش ر"
+        }
+      }
+    },
+    {
+      "id": "p46_t39",
+      "arabic": "شَعْرُ",
+      "printedArabic": "شعر",
+      "gloss": "Tüyleri",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "role": "Fâil"
+        }
+      }
+    },
+    {
+      "id": "p46_t40",
+      "arabic": "جِلْدِهِ",
+      "printedArabic": "جلده",
+      "gloss": "Derisinin",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "ج ل د"
+        }
+      }
+    },
+    {
+      "id": "p46_t41",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p46_t42",
+      "arabic": "الْجُمْلَةِ",
+      "printedArabic": "الجملة",
+      "gloss": "Genel olarak",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "meaning": "Toplu/genel durum"
+        }
+      }
+    },
+    {
+      "id": "p46_t43",
+      "arabic": "وَيُقَالُ",
+      "printedArabic": "ويقال",
+      "punctuation": ":",
+      "gloss": "Ve denilir",
+      "analysis": {
+        "kind": "Bağlaç + meçhul fiil",
+        "fields": {
+          "root": "ق و ل"
+        }
+      }
+    },
+    {
+      "id": "p46_t44",
+      "arabic": "اِقْشَعَرَّ",
+      "gloss": "Tüyleri ürperdi",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ق ش ع ر",
+          "pattern": "اِفْعَلَّلَ",
+          "meaning": "Mübalağalı ürperme"
+        }
+      }
+    },
+    {
+      "id": "p46_t45",
+      "arabic": "جِلْدُ",
+      "printedArabic": "جلد",
+      "gloss": "Derisi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ج ل د"
+        }
+      }
+    },
+    {
+      "id": "p46_t46",
+      "arabic": "الرَّجُلِ",
+      "printedArabic": "الرجل",
+      "punctuation": ":",
+      "gloss": "Adamın",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p46_t47",
+      "arabic": "إِذَا",
+      "printedArabic": "إذا",
+      "gloss": "Ne zaman ki",
+      "analysis": {
+        "kind": "Şart zarfı",
+        "fields": {
+          "meaning": "Açıklama şartı kurar."
+        }
+      }
+    },
+    {
+      "id": "p46_t48",
+      "arabic": "اِنْتَشَرَ",
+      "printedArabic": "انتشر",
+      "gloss": "Dikeldi/yayıldı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ن ش ر"
+        }
+      }
+    },
+    {
+      "id": "p46_t49",
+      "arabic": "شَعْرُ",
+      "printedArabic": "شعر",
+      "gloss": "Tüyleri",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "role": "Fâil"
+        }
+      }
+    },
+    {
+      "id": "p46_t50",
+      "arabic": "جِلْدِهِ",
+      "printedArabic": "جلده",
+      "gloss": "Derisinin",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "ج ل د"
+        }
+      }
+    },
+    {
+      "id": "p46_t51",
+      "arabic": "مُبَالَغَةً",
+      "printedArabic": "مبالغة",
+      "gloss": "Mübalağalı olarak",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ب ل غ",
+          "meaning": "Kuvvetlendirme"
+        }
+      }
+    }
+  ]
+}

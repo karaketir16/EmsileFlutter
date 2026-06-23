@@ -1,0 +1,658 @@
+{
+  "id": "passage_54",
+  "order": 54,
+  "orijinal_metin": "الباب الأول: اِفْعَنْلَلَ يَفْعَنْلِلُ اِفْعِنْلَالًا، موزونه: اِقْعَنْسَسَ يَقْعَنْسِسُ اِقْعِنْسَاسًا، وعلامته أن يكون ماضيه على ستة أحرف بزيادة الهمزة في أوله، والنون بين العين واللام وحرف آخر من جنس لام فعله في آخره، وبناؤه لمبالغة اللازم، لأنه يقال: قَعَسَ الرجل إذا خرج صدره في الجملة، ويقال: اِقْعَنْسَسَ الرجل إذا خرج صدره ودخل ظهره مبالغة",
+  "translation": "Rubâî mezîd mülhaklarının اِحْرَنْجَمَ babına tâbi birinci babı اِفْعَنْلَلَ يَفْعَنْلِلُ اِفْعِنْلَالًا’dır. Mevzunu اِقْعَنْسَسَ يَقْعَنْسِسُ اِقْعِنْسَاسًا’dır. Alâmeti, mâzisinin başında hemze, ayn ile lâm arasında nûn ve sonunda lâmü’l-fiilin cinsinden bir harf ziyadesiyle altı harf üzere olmasıdır. Binası lazımın mübalağası içindir. قَعَسَ الرجل denildiğinde adamın göğsünün genel olarak çıkması; اِقْعَنْسَسَ الرجل denildiğinde göğsünün çıkıp sırtının içeri girmesi mübalağa olarak anlatılır.",
+  "tokens": [
+    {
+      "id": "p54_t1",
+      "arabic": "الْبَابُ",
+      "printedArabic": "الباب",
+      "gloss": "Bab",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ب و ب"
+        }
+      }
+    },
+    {
+      "id": "p54_t2",
+      "arabic": "الْأَوَّلُ",
+      "printedArabic": "الأول",
+      "punctuation": ":",
+      "gloss": "Birinci",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "wordForm": "Sıra sayısı"
+        }
+      }
+    },
+    {
+      "id": "p54_t3",
+      "arabic": "اِفْعَنْلَلَ",
+      "gloss": "Mâzi vezni: if‘anlele",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "İhranceme mülhakı 1. bab",
+          "morphology": "Başta hemze, ayn ile lâm arasında nûn, sonda lâm cinsinden harf ziyadelidir."
+        }
+      }
+    },
+    {
+      "id": "p54_t4",
+      "arabic": "يَفْعَنْلِلُ",
+      "gloss": "Muzâri vezni: yef‘anlilü",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "conjugation": "Fiil-i muzâri, malûm"
+        }
+      }
+    },
+    {
+      "id": "p54_t5",
+      "arabic": "اِفْعِنْلَالًا",
+      "punctuation": "،",
+      "gloss": "Masdar vezni: if‘inlâlen",
+      "analysis": {
+        "kind": "Masdar vezni",
+        "fields": {
+          "pattern": "اِفْعِنْلَال"
+        }
+      }
+    },
+    {
+      "id": "p54_t6",
+      "arabic": "مَوْزُونُهُ",
+      "printedArabic": "موزونه",
+      "punctuation": ":",
+      "gloss": "Onun mevzunu",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "و ز ن"
+        }
+      }
+    },
+    {
+      "id": "p54_t7",
+      "arabic": "اِقْعَنْسَسَ",
+      "gloss": "Göğsünü ileri çıkarıp belini içeri çekti",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ق ع س س",
+          "bab": "İhranceme mülhakı 1. bab",
+          "pattern": "اِفْعَنْلَلَ",
+          "transitivity": "Lazım"
+        }
+      }
+    },
+    {
+      "id": "p54_t8",
+      "arabic": "يَقْعَنْسِسُ",
+      "gloss": "Göğsünü ileri çıkarıp belini içeri çeker",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ق ع س س",
+          "pattern": "يَفْعَنْلِلُ"
+        }
+      }
+    },
+    {
+      "id": "p54_t9",
+      "arabic": "اِقْعِنْسَاسًا",
+      "punctuation": "،",
+      "gloss": "Göğsü ileri çıkıp beli içeri çekilmek",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ق ع س س",
+          "pattern": "اِفْعِنْلَال"
+        }
+      }
+    },
+    {
+      "id": "p54_t10",
+      "arabic": "وَعَلَامَتُهُ",
+      "printedArabic": "وعلامته",
+      "gloss": "Ve onun alâmeti",
+      "analysis": {
+        "kind": "Bağlaç + isim + zamir",
+        "fields": {
+          "root": "ع ل م"
+        }
+      }
+    },
+    {
+      "id": "p54_t11",
+      "arabic": "أَنْ",
+      "printedArabic": "أن",
+      "gloss": "-mesi",
+      "analysis": {
+        "kind": "Harf",
+        "fields": {
+          "morphology": "Masdariyye ve nasb harfi"
+        }
+      }
+    },
+    {
+      "id": "p54_t12",
+      "arabic": "يَكُونَ",
+      "printedArabic": "يكون",
+      "gloss": "Olmasıdır",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p54_t13",
+      "arabic": "مَاضِيهِ",
+      "printedArabic": "ماضيه",
+      "gloss": "Onun mâzisi",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "م ض ي"
+        }
+      }
+    },
+    {
+      "id": "p54_t14",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzere",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Üzerine, üzere"
+        }
+      }
+    },
+    {
+      "id": "p54_t15",
+      "arabic": "سِتَّةِ",
+      "printedArabic": "ستة",
+      "gloss": "Altı",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p54_t16",
+      "arabic": "أَحْرُفٍ",
+      "printedArabic": "أحرف",
+      "gloss": "Harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p54_t17",
+      "arabic": "بِزِيَادَةِ",
+      "printedArabic": "بزيادة",
+      "gloss": "Ziyadesiyle",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ز ي د"
+        }
+      }
+    },
+    {
+      "id": "p54_t18",
+      "arabic": "الْهَمْزَةِ",
+      "printedArabic": "الهمزة",
+      "gloss": "Hemzenin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p54_t19",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p54_t20",
+      "arabic": "أَوَّلِهِ",
+      "printedArabic": "أوله",
+      "punctuation": "،",
+      "gloss": "Başında",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "role": "فِي harfiyle mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p54_t21",
+      "arabic": "وَالنُّونِ",
+      "printedArabic": "والنون",
+      "gloss": "Ve nûn harfinin",
+      "analysis": {
+        "kind": "Bağlaç + harf adı",
+        "fields": {
+          "role": "Ziyade edilen harf"
+        }
+      }
+    },
+    {
+      "id": "p54_t22",
+      "arabic": "بَيْنَ",
+      "printedArabic": "بين",
+      "gloss": "Arasında",
+      "analysis": {
+        "kind": "Zarf",
+        "fields": {
+          "meaning": "İki şeyin arası"
+        }
+      }
+    },
+    {
+      "id": "p54_t23",
+      "arabic": "الْعَيْنِ",
+      "printedArabic": "العين",
+      "gloss": "Ayn harfinin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "term": "Aynü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p54_t24",
+      "arabic": "وَاللَّامِ",
+      "printedArabic": "واللام",
+      "gloss": "Ve lâm harfinin",
+      "analysis": {
+        "kind": "Bağlaç + harf adı",
+        "fields": {
+          "term": "Lâmü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p54_t25",
+      "arabic": "وَحَرْفٍ",
+      "printedArabic": "وحرف",
+      "gloss": "Ve bir harfin",
+      "analysis": {
+        "kind": "Bağlaç + isim",
+        "fields": {
+          "wordForm": "Nekre ve müfred"
+        }
+      }
+    },
+    {
+      "id": "p54_t26",
+      "arabic": "آخَرَ",
+      "printedArabic": "آخر",
+      "gloss": "Başka",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "role": "حَرْفٍ kelimesinin sıfatı"
+        }
+      }
+    },
+    {
+      "id": "p54_t27",
+      "arabic": "مِنْ",
+      "printedArabic": "من",
+      "gloss": "-den",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Cins bildirir."
+        }
+      }
+    },
+    {
+      "id": "p54_t28",
+      "arabic": "جِنْسِ",
+      "printedArabic": "جنس",
+      "gloss": "Cinsinden",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ج ن س"
+        }
+      }
+    },
+    {
+      "id": "p54_t29",
+      "arabic": "لَامِ",
+      "printedArabic": "لام",
+      "gloss": "Lâmının",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "term": "Lâmü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p54_t30",
+      "arabic": "فِعْلِهِ",
+      "printedArabic": "فعله",
+      "gloss": "Fiilinin",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "ف ع ل"
+        }
+      }
+    },
+    {
+      "id": "p54_t31",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p54_t32",
+      "arabic": "آخِرِهِ",
+      "printedArabic": "آخره",
+      "punctuation": "،",
+      "gloss": "Sonunda",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "role": "فِي harfiyle mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p54_t33",
+      "arabic": "وَبِنَاؤُهُ",
+      "printedArabic": "وبناؤه",
+      "gloss": "Ve binası",
+      "analysis": {
+        "kind": "Bağlaç + masdar + zamir",
+        "fields": {
+          "meaning": "Babın mana işlevi"
+        }
+      }
+    },
+    {
+      "id": "p54_t34",
+      "arabic": "لِمُبَالَغَةِ",
+      "printedArabic": "لمبالغة",
+      "gloss": "Mübalağası içindir",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ب ل غ",
+          "effect": "Lazım manayı kuvvetlendirir."
+        }
+      }
+    },
+    {
+      "id": "p54_t35",
+      "arabic": "اللَّازِمِ",
+      "printedArabic": "اللازم",
+      "punctuation": "،",
+      "gloss": "Lazımın",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "ل ز م"
+        }
+      }
+    },
+    {
+      "id": "p54_t36",
+      "arabic": "لِأَنَّهُ",
+      "printedArabic": "لأنه",
+      "gloss": "Çünkü o",
+      "analysis": {
+        "kind": "Harf + inne + zamir",
+        "fields": {
+          "meaning": "Gerekçe bildirir"
+        }
+      }
+    },
+    {
+      "id": "p54_t37",
+      "arabic": "يُقَالُ",
+      "printedArabic": "يقال",
+      "punctuation": ":",
+      "gloss": "Denilir",
+      "analysis": {
+        "kind": "Meçhul fiil",
+        "fields": {
+          "root": "ق و ل",
+          "conjugation": "Fiil-i muzâri, meçhul"
+        }
+      }
+    },
+    {
+      "id": "p54_t38",
+      "arabic": "قَعَسَ",
+      "gloss": "Göğsünü çıkardı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ق ع س",
+          "transitivity": "Lazım"
+        }
+      }
+    },
+    {
+      "id": "p54_t39",
+      "arabic": "الرَّجُلُ",
+      "printedArabic": "الرجل",
+      "gloss": "Adam",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "role": "Fâil"
+        }
+      }
+    },
+    {
+      "id": "p54_t40",
+      "arabic": "إِذَا",
+      "printedArabic": "إذا",
+      "gloss": "-diğinde",
+      "analysis": {
+        "kind": "Zarf",
+        "fields": {
+          "meaning": "Şart/zaman bildirir"
+        }
+      }
+    },
+    {
+      "id": "p54_t41",
+      "arabic": "خَرَجَ",
+      "printedArabic": "خرج",
+      "gloss": "Çıktı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "خ ر ج"
+        }
+      }
+    },
+    {
+      "id": "p54_t42",
+      "arabic": "صَدْرُهُ",
+      "printedArabic": "صدره",
+      "gloss": "Göğsü",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "role": "Fâil"
+        }
+      }
+    },
+    {
+      "id": "p54_t43",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p54_t44",
+      "arabic": "الْجُمْلَةِ",
+      "printedArabic": "الجملة",
+      "punctuation": "،",
+      "gloss": "Genel olarak",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "meaning": "Toplam, genel durum"
+        }
+      }
+    },
+    {
+      "id": "p54_t45",
+      "arabic": "وَيُقَالُ",
+      "printedArabic": "ويقال",
+      "punctuation": ":",
+      "gloss": "Ve denilir",
+      "analysis": {
+        "kind": "Bağlaç + meçhul fiil",
+        "fields": {
+          "root": "ق و ل"
+        }
+      }
+    },
+    {
+      "id": "p54_t46",
+      "arabic": "اِقْعَنْسَسَ",
+      "gloss": "Göğsünü ileri çıkarıp belini içeri çekti",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ق ع س س",
+          "pattern": "اِفْعَنْلَلَ",
+          "effect": "Mübalağalı mana"
+        }
+      }
+    },
+    {
+      "id": "p54_t47",
+      "arabic": "الرَّجُلُ",
+      "printedArabic": "الرجل",
+      "gloss": "Adam",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "role": "Fâil"
+        }
+      }
+    },
+    {
+      "id": "p54_t48",
+      "arabic": "إِذَا",
+      "printedArabic": "إذا",
+      "gloss": "-diğinde",
+      "analysis": {
+        "kind": "Zarf",
+        "fields": {
+          "meaning": "Şart/zaman bildirir"
+        }
+      }
+    },
+    {
+      "id": "p54_t49",
+      "arabic": "خَرَجَ",
+      "printedArabic": "خرج",
+      "gloss": "Çıktı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "خ ر ج"
+        }
+      }
+    },
+    {
+      "id": "p54_t50",
+      "arabic": "صَدْرُهُ",
+      "printedArabic": "صدره",
+      "gloss": "Göğsü",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "role": "Fâil"
+        }
+      }
+    },
+    {
+      "id": "p54_t51",
+      "arabic": "وَدَخَلَ",
+      "printedArabic": "ودخل",
+      "gloss": "Ve girdi",
+      "analysis": {
+        "kind": "Bağlaç + fiil",
+        "fields": {
+          "root": "د خ ل"
+        }
+      }
+    },
+    {
+      "id": "p54_t52",
+      "arabic": "ظَهْرُهُ",
+      "printedArabic": "ظهره",
+      "gloss": "Sırtı",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "role": "Fâil"
+        }
+      }
+    },
+    {
+      "id": "p54_t53",
+      "arabic": "مُبَالَغَةً",
+      "printedArabic": "مبالغة",
+      "gloss": "Mübalağa olarak",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ب ل غ",
+          "effect": "Manayı kuvvetlendirir"
+        }
+      }
+    }
+  ]
+}

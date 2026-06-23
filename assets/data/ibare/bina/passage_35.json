@@ -1,0 +1,155 @@
+{
+  "id": "passage_35",
+  "order": 35,
+  "orijinal_metin": "أبواب الملحق الرباعي: وستة منها لملحق دَحْرَجَ ويقال لهذه الست الملحق الرباعي.",
+  "translation": "Rubâî mülhak babları: altı bab دَحْرَجَ mülhakı içindir; bu altısına mülhak-ı rubâî denir.",
+  "tokens": [
+    {
+      "id": "p35_t1",
+      "arabic": "أَبْوَابُ",
+      "printedArabic": "أبواب",
+      "gloss": "Babları",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "بَاب"
+        }
+      }
+    },
+    {
+      "id": "p35_t2",
+      "arabic": "الْمُلْحَقِ",
+      "printedArabic": "الملحق",
+      "gloss": "Mülhakın",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ل ح ق",
+          "term": "Başka vezne eklenen"
+        }
+      }
+    },
+    {
+      "id": "p35_t3",
+      "arabic": "الرُّبَاعِيِّ",
+      "printedArabic": "الرباعي",
+      "punctuation": ":",
+      "gloss": "Rubâî",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Dört harfli"
+        }
+      }
+    },
+    {
+      "id": "p35_t4",
+      "arabic": "وَسِتَّةٌ",
+      "printedArabic": "وستة",
+      "gloss": "Ve altı",
+      "analysis": {
+        "kind": "Bağlaç + sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p35_t5",
+      "arabic": "مِنْهَا",
+      "printedArabic": "منها",
+      "gloss": "Onlardan",
+      "analysis": {
+        "kind": "Harf + zamir",
+        "fields": {
+          "referent": "Otuz beş bab"
+        }
+      }
+    },
+    {
+      "id": "p35_t6",
+      "arabic": "لِمُلْحَقِ",
+      "printedArabic": "لملحق",
+      "gloss": "Mülhakı içindir",
+      "analysis": {
+        "kind": "Harf-i cer + isim",
+        "fields": {
+          "root": "ل ح ق"
+        }
+      }
+    },
+    {
+      "id": "p35_t7",
+      "arabic": "دَحْرَجَ",
+      "gloss": "Dahrece",
+      "analysis": {
+        "kind": "Fiil örneği",
+        "fields": {
+          "root": "د ح ر ج",
+          "pattern": "فَعْلَلَ"
+        }
+      }
+    },
+    {
+      "id": "p35_t8",
+      "arabic": "وَيُقَالُ",
+      "printedArabic": "ويقال",
+      "gloss": "Ve denilir",
+      "analysis": {
+        "kind": "Bağlaç + meçhul fiil",
+        "fields": {
+          "root": "ق و ل"
+        }
+      }
+    },
+    {
+      "id": "p35_t9",
+      "arabic": "لِهَذِهِ",
+      "printedArabic": "لهذه",
+      "gloss": "Bu",
+      "analysis": {
+        "kind": "Harf-i cer + işaret ismi",
+        "fields": {
+          "referent": "Altı bab"
+        }
+      }
+    },
+    {
+      "id": "p35_t10",
+      "arabic": "السِّتِّ",
+      "printedArabic": "الست",
+      "gloss": "Altıya",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p35_t11",
+      "arabic": "الْمُلْحَقُ",
+      "printedArabic": "الملحق",
+      "gloss": "Mülhak",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "term": "Eklenen vezinler"
+        }
+      }
+    },
+    {
+      "id": "p35_t12",
+      "arabic": "الرُّبَاعِيُّ",
+      "printedArabic": "الرباعي",
+      "punctuation": ".",
+      "gloss": "Rubâî",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Mülhak-ı rubâî"
+        }
+      }
+    }
+  ]
+}

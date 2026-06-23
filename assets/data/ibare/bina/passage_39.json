@@ -1,0 +1,374 @@
+{
+  "id": "passage_39",
+  "order": 39,
+  "orijinal_metin": "الباب الرابع: فَعْيَلَ يُفَعْيِلُ فَعْيَلَةً وَفِعْيَالًا موزونه: عَثْيَرَ يُعَثْيِرُ عَثْيَرَةً وَعِثْيَارًا، وعلامته أن يكون ماضيه على أربعة أحرف بزيادة الياء بين العين واللام وبناؤه للازم نحو: عَثْيَرَ زيد: أي طلع",
+  "translation": "Mülhak rubâînin dördüncü babı فَعْيَلَ يُفَعْيِلُ فَعْيَلَةً وَفِعْيَالًا’dır. Mevzunu عَثْيَرَ يُعَثْيِرُ عَثْيَرَةً وَعِثْيَارًا’dır. Alâmeti, mâzisinin ayn ile lâm arasında yâ ziyadesiyle dört harf üzere olmasıdır. Binası lazım içindir.",
+  "tokens": [
+    {
+      "id": "p39_t1",
+      "arabic": "الْبَابُ",
+      "printedArabic": "الباب",
+      "gloss": "Bab",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ب و ب"
+        }
+      }
+    },
+    {
+      "id": "p39_t2",
+      "arabic": "الرَّابِعُ",
+      "printedArabic": "الرابع",
+      "punctuation": ":",
+      "gloss": "Dördüncü",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "root": "ر ب ع"
+        }
+      }
+    },
+    {
+      "id": "p39_t3",
+      "arabic": "فَعْيَلَ",
+      "gloss": "Mâzi vezni: fa‘yale",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "Mülhak rubâî 4. bab",
+          "morphology": "Ayn ile lâm arasında yâ ziyadelidir."
+        }
+      }
+    },
+    {
+      "id": "p39_t4",
+      "arabic": "يُفَعْيِلُ",
+      "gloss": "Muzâri vezni: yüfa‘yilü",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "conjugation": "Fiil-i muzâri, malûm"
+        }
+      }
+    },
+    {
+      "id": "p39_t5",
+      "arabic": "فَعْيَلَةً",
+      "gloss": "Masdar vezni: fa‘yeleten",
+      "analysis": {
+        "kind": "Masdar vezni",
+        "fields": {
+          "pattern": "فَعْيَلَة"
+        }
+      }
+    },
+    {
+      "id": "p39_t6",
+      "arabic": "وَفِعْيَالًا",
+      "gloss": "Ve fi‘yâlen",
+      "analysis": {
+        "kind": "Bağlaç + masdar vezni",
+        "fields": {
+          "pattern": "فِعْيَال"
+        }
+      }
+    },
+    {
+      "id": "p39_t7",
+      "arabic": "مَوْزُونُهُ",
+      "printedArabic": "موزونه",
+      "punctuation": ":",
+      "gloss": "Onun mevzunu",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "و ز ن"
+        }
+      }
+    },
+    {
+      "id": "p39_t8",
+      "arabic": "عَثْيَرَ",
+      "gloss": "Çıktı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ع ث ر",
+          "bab": "Mülhak rubâî 4. bab",
+          "pattern": "فَعْيَلَ",
+          "transitivity": "Lazım"
+        }
+      }
+    },
+    {
+      "id": "p39_t9",
+      "arabic": "يُعَثْيِرُ",
+      "gloss": "Çıkar",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ع ث ر",
+          "pattern": "يُفَعْيِلُ"
+        }
+      }
+    },
+    {
+      "id": "p39_t10",
+      "arabic": "عَثْيَرَةً",
+      "gloss": "Çıkmak",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ع ث ر",
+          "pattern": "فَعْيَلَة"
+        }
+      }
+    },
+    {
+      "id": "p39_t11",
+      "arabic": "وَعِثْيَارًا",
+      "punctuation": "،",
+      "gloss": "Ve ‘ithyâren",
+      "analysis": {
+        "kind": "Bağlaç + masdar",
+        "fields": {
+          "root": "ع ث ر",
+          "pattern": "فِعْيَال"
+        }
+      }
+    },
+    {
+      "id": "p39_t12",
+      "arabic": "وَعَلَامَتُهُ",
+      "printedArabic": "وعلامته",
+      "gloss": "Ve onun alâmeti",
+      "analysis": {
+        "kind": "Bağlaç + isim + zamir",
+        "fields": {
+          "root": "ع ل م"
+        }
+      }
+    },
+    {
+      "id": "p39_t13",
+      "arabic": "أَنْ",
+      "printedArabic": "أن",
+      "gloss": "-mesi",
+      "analysis": {
+        "kind": "Harf",
+        "fields": {
+          "morphology": "Masdariyye ve nasb harfi"
+        }
+      }
+    },
+    {
+      "id": "p39_t14",
+      "arabic": "يَكُونَ",
+      "printedArabic": "يكون",
+      "gloss": "Olmasıdır",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p39_t15",
+      "arabic": "مَاضِيهِ",
+      "printedArabic": "ماضيه",
+      "gloss": "Onun mâzisi",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "م ض ي"
+        }
+      }
+    },
+    {
+      "id": "p39_t16",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzere",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Üzerine, üzere"
+        }
+      }
+    },
+    {
+      "id": "p39_t17",
+      "arabic": "أَرْبَعَةِ",
+      "printedArabic": "أربعة",
+      "gloss": "Dört",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p39_t18",
+      "arabic": "أَحْرُفٍ",
+      "printedArabic": "أحرف",
+      "gloss": "Harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p39_t19",
+      "arabic": "بِزِيَادَةِ",
+      "printedArabic": "بزيادة",
+      "gloss": "Ziyadesiyle",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ز ي د"
+        }
+      }
+    },
+    {
+      "id": "p39_t20",
+      "arabic": "الْيَاءِ",
+      "printedArabic": "الياء",
+      "gloss": "Yâ harfinin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p39_t21",
+      "arabic": "بَيْنَ",
+      "printedArabic": "بين",
+      "gloss": "Arasında",
+      "analysis": {
+        "kind": "Zarf",
+        "fields": {
+          "meaning": "İki şeyin arası"
+        }
+      }
+    },
+    {
+      "id": "p39_t22",
+      "arabic": "الْعَيْنِ",
+      "printedArabic": "العين",
+      "gloss": "Ayn harfinin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "term": "Aynü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p39_t23",
+      "arabic": "وَاللَّامِ",
+      "printedArabic": "واللام",
+      "gloss": "Ve lâm harfinin",
+      "analysis": {
+        "kind": "Bağlaç + harf adı",
+        "fields": {
+          "term": "Lâmü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p39_t24",
+      "arabic": "وَبِنَاؤُهُ",
+      "printedArabic": "وبناؤه",
+      "gloss": "Ve binası",
+      "analysis": {
+        "kind": "Bağlaç + masdar + zamir",
+        "fields": {
+          "meaning": "Babın mana işlevi"
+        }
+      }
+    },
+    {
+      "id": "p39_t25",
+      "arabic": "لِلَّازِمِ",
+      "printedArabic": "للازم",
+      "gloss": "Lazım içindir",
+      "analysis": {
+        "kind": "Harf-i cer + ism-i fâil",
+        "fields": {
+          "root": "ل ز م"
+        }
+      }
+    },
+    {
+      "id": "p39_t26",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p39_t27",
+      "arabic": "عَثْيَرَ",
+      "gloss": "Çıktı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ع ث ر",
+          "pattern": "فَعْيَلَ",
+          "transitivity": "Lazım"
+        }
+      }
+    },
+    {
+      "id": "p39_t28",
+      "arabic": "زَيْدٌ",
+      "printedArabic": "زيد",
+      "punctuation": ":",
+      "gloss": "Zeyd",
+      "analysis": {
+        "kind": "Özel isim",
+        "fields": {
+          "role": "Fâil"
+        }
+      }
+    },
+    {
+      "id": "p39_t29",
+      "arabic": "أَيْ",
+      "printedArabic": "أي",
+      "gloss": "Yani",
+      "analysis": {
+        "kind": "Tefsir edatı",
+        "fields": {
+          "meaning": "Önceki ifadeyi açıklar."
+        }
+      }
+    },
+    {
+      "id": "p39_t30",
+      "arabic": "طَلَعَ",
+      "printedArabic": "طلع",
+      "gloss": "Çıktı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ط ل ع",
+          "meaning": "عَثْيَرَ fiilinin açıklaması"
+        }
+      }
+    }
+  ]
+}

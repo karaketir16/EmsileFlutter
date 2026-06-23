@@ -1,0 +1,53 @@
+{
+  "id": "passage_12",
+  "order": 12,
+  "orijinal_metin": "نحو: حَسُنَ زيد",
+  "translation": "Beşinci babın lazım fiil örneği “Zeyd güzel oldu” cümlesidir.",
+  "tokens": [
+    {
+      "id": "p12_t1",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و",
+          "meaning": "Örnek vermek için kullanılır.",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p12_t2",
+      "arabic": "حَسُنَ",
+      "gloss": "Güzel oldu",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "root": "ح س ن",
+          "bab": "Sülâsî mücerred 5. bab",
+          "pattern": "فَعُلَ",
+          "transitivity": "Lazım"
+        }
+      }
+    },
+    {
+      "id": "p12_t3",
+      "arabic": "زَيْدٌ",
+      "printedArabic": "زيد",
+      "gloss": "Zeyd",
+      "analysis": {
+        "kind": "Özel isim",
+        "fields": {
+          "role": "Fâil",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    }
+  ]
+}

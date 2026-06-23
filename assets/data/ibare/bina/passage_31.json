@@ -1,0 +1,570 @@
+{
+  "id": "passage_31",
+  "order": 31,
+  "orijinal_metin": "الباب الثالث: اِفْعَوَّلَ يَفْعَوِّلُ اِفْعِوَّالًا موزونه: اِجْلَوَّذَ يَجْلَوِّذُ اِجْلِوَّاذًا، وعلامته أن يكون ماضيه على ستة أحرف بزيادة الهمزة في أوله لواوين بين العين واللام وبناؤه أيضاً لمبالغة اللازم لأنه يقال: جَلَذَ الإبل: إذا سار سيراً بسرعة ويقال: اِجْلَوَّذَ الإبل: إذا سار سيراً بزيادة سرعة",
+  "translation": "Üçüncü babın vezni اِفْعَوَّلَ يَفْعَوِّلُ اِفْعِوَّالًا, mevzunu اِجْلَوَّذَ يَجْلَوِّذُ اِجْلِوَّاذًا’dır. Alâmeti, mâzisinin başında hemze ve ayn ile lâm arasında iki vâv ziyadesiyle altı harf üzere olmasıdır. Binası da lazım fiilde mübalağa içindir: جَلَذَ الإبل hızlı yürümek, اِجْلَوَّذَ الإبل ise daha hızlı yürümektir.",
+  "tokens": [
+    {
+      "id": "p31_t1",
+      "arabic": "الْبَابُ",
+      "printedArabic": "الباب",
+      "gloss": "Bab",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ب و ب",
+          "role": "Mübtedâ"
+        }
+      }
+    },
+    {
+      "id": "p31_t2",
+      "arabic": "الثَّالِثُ",
+      "printedArabic": "الثالث",
+      "punctuation": ":",
+      "gloss": "Üçüncü",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "root": "ث ل ث",
+          "role": "الْبَابُ kelimesinin sıfatı"
+        }
+      }
+    },
+    {
+      "id": "p31_t3",
+      "arabic": "اِفْعَوَّلَ",
+      "gloss": "Mâzi vezni: if‘avvale",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "Sülâsî mezîd üç harf, if‘ivvâl babı",
+          "morphology": "Başta hemze, ayn-lâm arasında iki vâv ziyadelidir."
+        }
+      }
+    },
+    {
+      "id": "p31_t4",
+      "arabic": "يَفْعَوِّلُ",
+      "gloss": "Muzâri vezni: yef‘avvilü",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "bab": "İf‘ivvâl babı",
+          "conjugation": "Fiil-i muzâri, malûm"
+        }
+      }
+    },
+    {
+      "id": "p31_t5",
+      "arabic": "اِفْعِوَّالًا",
+      "gloss": "Masdar vezni: if‘ivvâlen",
+      "analysis": {
+        "kind": "Masdar vezni",
+        "fields": {
+          "bab": "İf‘ivvâl babı",
+          "pattern": "اِفْعِوَّال",
+          "morphology": "Masdar"
+        }
+      }
+    },
+    {
+      "id": "p31_t6",
+      "arabic": "مَوْزُونُهُ",
+      "printedArabic": "موزونه",
+      "punctuation": ":",
+      "gloss": "Onun mevzunu",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "و ز ن",
+          "meaning": "Bu vezne oturan örnek fiil"
+        }
+      }
+    },
+    {
+      "id": "p31_t7",
+      "arabic": "اِجْلَوَّذَ",
+      "gloss": "Hızla yürüdü",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ج ل ذ",
+          "bab": "Sülâsî mezîd, if‘ivvâl babı",
+          "pattern": "اِفْعَوَّلَ",
+          "transitivity": "Lazım",
+          "meaning": "Yürüyüşte hız mübalağası"
+        }
+      }
+    },
+    {
+      "id": "p31_t8",
+      "arabic": "يَجْلَوِّذُ",
+      "gloss": "Hızla yürür",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ج ل ذ",
+          "bab": "Sülâsî mezîd, if‘ivvâl babı",
+          "pattern": "يَفْعَوِّلُ",
+          "conjugation": "Fiil-i muzâri, malûm"
+        }
+      }
+    },
+    {
+      "id": "p31_t9",
+      "arabic": "اِجْلِوَّاذًا",
+      "punctuation": "،",
+      "gloss": "Hızla yürümek",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ج ل ذ",
+          "bab": "Sülâsî mezîd, if‘ivvâl babı",
+          "pattern": "اِفْعِوَّال",
+          "morphology": "Masdar"
+        }
+      }
+    },
+    {
+      "id": "p31_t10",
+      "arabic": "وَعَلَامَتُهُ",
+      "printedArabic": "وعلامته",
+      "gloss": "Ve onun alâmeti",
+      "analysis": {
+        "kind": "Bağlaç + isim + zamir",
+        "fields": {
+          "root": "ع ل م",
+          "meaning": "Babı diğer bablardan ayıran lafzî özellik"
+        }
+      }
+    },
+    {
+      "id": "p31_t11",
+      "arabic": "أَنْ",
+      "printedArabic": "أن",
+      "gloss": "-mesi",
+      "analysis": {
+        "kind": "Harf",
+        "fields": {
+          "morphology": "Masdariyye ve nasb harfi"
+        }
+      }
+    },
+    {
+      "id": "p31_t12",
+      "arabic": "يَكُونَ",
+      "printedArabic": "يكون",
+      "gloss": "Olmasıdır",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن",
+          "nasb": "أَنْ sebebiyle mansub"
+        }
+      }
+    },
+    {
+      "id": "p31_t13",
+      "arabic": "مَاضِيهِ",
+      "printedArabic": "ماضيه",
+      "gloss": "Onun mâzisi",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "م ض ي",
+          "morphology": "Fiil-i mâzi adı"
+        }
+      }
+    },
+    {
+      "id": "p31_t14",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzere",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Üzerine, üzere"
+        }
+      }
+    },
+    {
+      "id": "p31_t15",
+      "arabic": "سِتَّةِ",
+      "printedArabic": "ستة",
+      "gloss": "Altı",
+      "analysis": {
+        "kind": "Sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p31_t16",
+      "arabic": "أَحْرُفٍ",
+      "printedArabic": "أحرف",
+      "gloss": "Harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p31_t17",
+      "arabic": "بِزِيَادَةِ",
+      "printedArabic": "بزيادة",
+      "gloss": "Ziyadesiyle",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ز ي د",
+          "meaning": "Asıl harflere eklenen harf"
+        }
+      }
+    },
+    {
+      "id": "p31_t18",
+      "arabic": "الْهَمْزَةِ",
+      "printedArabic": "الهمزة",
+      "gloss": "Hemzenin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p31_t19",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p31_t20",
+      "arabic": "أَوَّلِهِ",
+      "printedArabic": "أوله",
+      "gloss": "Başında",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "role": "فِي harfiyle mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p31_t21",
+      "arabic": "لِوَاوَيْنِ",
+      "printedArabic": "لواوين",
+      "gloss": "İki vâv için",
+      "analysis": {
+        "kind": "Harf-i cer + tesniye isim",
+        "fields": {
+          "numberType": "Tesniye",
+          "meaning": "İki vâv ziyadesi"
+        }
+      }
+    },
+    {
+      "id": "p31_t22",
+      "arabic": "بَيْنَ",
+      "printedArabic": "بين",
+      "gloss": "Arasında",
+      "analysis": {
+        "kind": "Zarf",
+        "fields": {
+          "meaning": "İki şeyin arası"
+        }
+      }
+    },
+    {
+      "id": "p31_t23",
+      "arabic": "الْعَيْنِ",
+      "printedArabic": "العين",
+      "gloss": "Ayn harfinin",
+      "analysis": {
+        "kind": "Harf adı",
+        "fields": {
+          "term": "Aynü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p31_t24",
+      "arabic": "وَاللَّامِ",
+      "printedArabic": "واللام",
+      "gloss": "Ve lâm harfinin",
+      "analysis": {
+        "kind": "Bağlaç + harf adı",
+        "fields": {
+          "term": "Lâmü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p31_t25",
+      "arabic": "وَبِنَاؤُهُ",
+      "printedArabic": "وبناؤه",
+      "gloss": "Ve binası",
+      "analysis": {
+        "kind": "Bağlaç + masdar + zamir",
+        "fields": {
+          "meaning": "Babın mana işlevi"
+        }
+      }
+    },
+    {
+      "id": "p31_t26",
+      "arabic": "أَيْضًا",
+      "printedArabic": "أيضاً",
+      "gloss": "De, dahi",
+      "analysis": {
+        "kind": "Zarf anlamında kullanılan mansub isim",
+        "fields": {
+          "meaning": "Önceki bab gibi"
+        }
+      }
+    },
+    {
+      "id": "p31_t27",
+      "arabic": "لِمُبَالَغَةِ",
+      "printedArabic": "لمبالغة",
+      "gloss": "Mübalağa içindir",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ب ل غ",
+          "meaning": "Manayı kuvvetlendirme"
+        }
+      }
+    },
+    {
+      "id": "p31_t28",
+      "arabic": "اللَّازِمِ",
+      "printedArabic": "اللازم",
+      "gloss": "Lazımın",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "ل ز م",
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p31_t29",
+      "arabic": "لِأَنَّهُ",
+      "printedArabic": "لأنه",
+      "gloss": "Çünkü",
+      "analysis": {
+        "kind": "Harf + nâsih harf + zamir",
+        "fields": {
+          "meaning": "Açıklama gerekçesi başlatır."
+        }
+      }
+    },
+    {
+      "id": "p31_t30",
+      "arabic": "يُقَالُ",
+      "printedArabic": "يقال",
+      "punctuation": ":",
+      "gloss": "Denilir",
+      "analysis": {
+        "kind": "Meçhul fiil",
+        "fields": {
+          "root": "ق و ل"
+        }
+      }
+    },
+    {
+      "id": "p31_t31",
+      "arabic": "جَلَذَ",
+      "gloss": "Hızlı yürüdü",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ج ل ذ",
+          "pattern": "فَعَلَ",
+          "meaning": "Temel hızlı yürüyüş"
+        }
+      }
+    },
+    {
+      "id": "p31_t32",
+      "arabic": "الْإِبِلُ",
+      "printedArabic": "الإبل",
+      "punctuation": ":",
+      "gloss": "Develer",
+      "analysis": {
+        "kind": "Cins isim",
+        "fields": {
+          "role": "Fâil"
+        }
+      }
+    },
+    {
+      "id": "p31_t33",
+      "arabic": "إِذَا",
+      "printedArabic": "إذا",
+      "gloss": "Ne zaman ki",
+      "analysis": {
+        "kind": "Şart zarfı",
+        "fields": {
+          "meaning": "Açıklama şartı kurar."
+        }
+      }
+    },
+    {
+      "id": "p31_t34",
+      "arabic": "سَارَ",
+      "printedArabic": "سار",
+      "gloss": "Yürüdü",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "س ي ر",
+          "conjugation": "Fiil-i mâzi"
+        }
+      }
+    },
+    {
+      "id": "p31_t35",
+      "arabic": "سَيْرًا",
+      "printedArabic": "سيراً",
+      "gloss": "Yürüyüş",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "س ي ر",
+          "role": "Mef‘ûl-i mutlak"
+        }
+      }
+    },
+    {
+      "id": "p31_t36",
+      "arabic": "بِسُرْعَةٍ",
+      "printedArabic": "بسرعة",
+      "gloss": "Hızla",
+      "analysis": {
+        "kind": "Harf-i cer + isim",
+        "fields": {
+          "root": "س ر ع",
+          "meaning": "Hız ile"
+        }
+      }
+    },
+    {
+      "id": "p31_t37",
+      "arabic": "وَيُقَالُ",
+      "printedArabic": "ويقال",
+      "punctuation": ":",
+      "gloss": "Ve denilir",
+      "analysis": {
+        "kind": "Bağlaç + meçhul fiil",
+        "fields": {
+          "root": "ق و ل"
+        }
+      }
+    },
+    {
+      "id": "p31_t38",
+      "arabic": "اِجْلَوَّذَ",
+      "gloss": "Daha hızlı yürüdü",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ج ل ذ",
+          "bab": "Sülâsî mezîd, if‘ivvâl babı",
+          "pattern": "اِفْعَوَّلَ",
+          "meaning": "Mübalağalı hızlı yürüyüş"
+        }
+      }
+    },
+    {
+      "id": "p31_t39",
+      "arabic": "الْإِبِلُ",
+      "printedArabic": "الإبل",
+      "punctuation": ":",
+      "gloss": "Develer",
+      "analysis": {
+        "kind": "Cins isim",
+        "fields": {
+          "role": "Fâil"
+        }
+      }
+    },
+    {
+      "id": "p31_t40",
+      "arabic": "إِذَا",
+      "printedArabic": "إذا",
+      "gloss": "Ne zaman ki",
+      "analysis": {
+        "kind": "Şart zarfı",
+        "fields": {
+          "meaning": "Açıklama şartı kurar."
+        }
+      }
+    },
+    {
+      "id": "p31_t41",
+      "arabic": "سَارَ",
+      "printedArabic": "سار",
+      "gloss": "Yürüdü",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "س ي ر"
+        }
+      }
+    },
+    {
+      "id": "p31_t42",
+      "arabic": "سَيْرًا",
+      "printedArabic": "سيراً",
+      "gloss": "Yürüyüş",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "س ي ر",
+          "role": "Mef‘ûl-i mutlak"
+        }
+      }
+    },
+    {
+      "id": "p31_t43",
+      "arabic": "بِزِيَادَةِ",
+      "printedArabic": "بزيادة",
+      "gloss": "Artışıyla",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ز ي د",
+          "meaning": "Fazlalık"
+        }
+      }
+    },
+    {
+      "id": "p31_t44",
+      "arabic": "سُرْعَةٍ",
+      "printedArabic": "سرعة",
+      "gloss": "Hızın",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "س ر ع",
+          "role": "Muzafun ileyh"
+        }
+      }
+    }
+  ]
+}

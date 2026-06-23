@@ -1,0 +1,1131 @@
+{
+  "id": "passage_58",
+  "order": 58,
+  "orijinal_metin": "أقسام الفعل المعتل: مثال وهو الذي يكون في مقابلة فائه حرف من حروف العلة نحو: وَعَدَ ويسر، وإما أجوف وهو الذي يكون في مقابلة عينه حرف من حروف العلة نحو: قَالَ وكال، وإما ناقص وهو الذي يكون في مقابلة لامه حرف من حروف العلة نحو: غَزَا ورمى، وإما لفيف وهو الذي يكون فيه حرفان من حروف العلة وهو على قسمين: الأول: اللفيف المقرون وهو الذي يكون في مقابلة عينه ولامه حرفان من حروف العلة نحو: طَوَى، والثاني: اللفيف المفروق وهو الذي يكون في مقابلة فائه ولامه حرفان من حروف العلة نحو: وَقَى",
+  "translation": "Mu‘tel fiilin kısımları şunlardır: Misâl, fâsı karşılığında illet harfi bulunan fiildir; örneği وَعَدَ ve يَسَرَ. Ecvaf, aynı karşılığında illet harfi bulunan fiildir; örneği قَالَ ve كَالَ. Nâkıs, lâmı karşılığında illet harfi bulunan fiildir; örneği غَزَا ve رَمَى. Lefîf, içinde iki illet harfi bulunan fiildir. Lefîf-i makrûn, aynı ve lâmı karşılığında iki illet harfi bulunandır; örneği طَوَى. Lefîf-i mefrûk, fâsı ve lâmı karşılığında iki illet harfi bulunandır; örneği وَقَى.",
+  "tokens": [
+    {
+      "id": "p58_t1",
+      "arabic": "أَقْسَامُ",
+      "printedArabic": "أقسام",
+      "gloss": "Kısımlar",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "قِسْم",
+          "role": "Mübteda"
+        }
+      }
+    },
+    {
+      "id": "p58_t2",
+      "arabic": "الْفِعْلِ",
+      "printedArabic": "الفعل",
+      "gloss": "Fiilin",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ف ع ل",
+          "role": "Muzafun ileyh"
+        }
+      }
+    },
+    {
+      "id": "p58_t3",
+      "arabic": "الْمُعْتَلِّ",
+      "printedArabic": "المعتل",
+      "punctuation": ":",
+      "gloss": "Mu‘tel",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "İlletli fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t4",
+      "arabic": "مِثَالٌ",
+      "printedArabic": "مثال",
+      "gloss": "Misâl",
+      "analysis": {
+        "kind": "Terim",
+        "fields": {
+          "term": "Fâü’l-fiili illetli olan fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t5",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "مثال"
+        }
+      }
+    },
+    {
+      "id": "p58_t6",
+      "arabic": "الَّذِي",
+      "printedArabic": "الذي",
+      "gloss": "O ki",
+      "analysis": {
+        "kind": "İsm-i mevsûl",
+        "fields": {
+          "referent": "Misâl fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t7",
+      "arabic": "يَكُونُ",
+      "printedArabic": "يكون",
+      "gloss": "Bulunur",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p58_t8",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Karşılığında"
+        }
+      }
+    },
+    {
+      "id": "p58_t9",
+      "arabic": "مُقَابَلَةِ",
+      "printedArabic": "مقابلة",
+      "gloss": "Karşılığında",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ق ب ل"
+        }
+      }
+    },
+    {
+      "id": "p58_t10",
+      "arabic": "فَائِهِ",
+      "printedArabic": "فائه",
+      "gloss": "Fâsının",
+      "analysis": {
+        "kind": "Harf adı + zamir",
+        "fields": {
+          "term": "Fâü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t11",
+      "arabic": "حَرْفٌ",
+      "printedArabic": "حرف",
+      "gloss": "Bir harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p58_t12",
+      "arabic": "مِنْ",
+      "printedArabic": "من",
+      "gloss": "-den",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Cins bildirir"
+        }
+      }
+    },
+    {
+      "id": "p58_t13",
+      "arabic": "حُرُوفِ",
+      "printedArabic": "حروف",
+      "gloss": "Harflerinden",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p58_t14",
+      "arabic": "الْعِلَّةِ",
+      "printedArabic": "العلة",
+      "gloss": "İllet",
+      "analysis": {
+        "kind": "Terim",
+        "fields": {
+          "term": "İllet harfleri"
+        }
+      }
+    },
+    {
+      "id": "p58_t15",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p58_t16",
+      "arabic": "وَعَدَ",
+      "gloss": "Vaad etti",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "و ع د",
+          "term": "Misâl"
+        }
+      }
+    },
+    {
+      "id": "p58_t17",
+      "arabic": "وَيَسَرَ",
+      "printedArabic": "ويسر",
+      "punctuation": "،",
+      "gloss": "Ve kolay oldu",
+      "analysis": {
+        "kind": "Bağlaç + fiil",
+        "fields": {
+          "root": "ي س ر",
+          "term": "Misâl"
+        }
+      }
+    },
+    {
+      "id": "p58_t18",
+      "arabic": "وَإِمَّا",
+      "printedArabic": "وإما",
+      "gloss": "Ve ya",
+      "analysis": {
+        "kind": "Bağlaç + taksim edatı",
+        "fields": {
+          "meaning": "Yeni kısmı başlatır"
+        }
+      }
+    },
+    {
+      "id": "p58_t19",
+      "arabic": "أَجْوَفُ",
+      "printedArabic": "أجوف",
+      "gloss": "Ecvaf",
+      "analysis": {
+        "kind": "Terim",
+        "fields": {
+          "term": "Aynü’l-fiili illetli olan fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t20",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "أجوف"
+        }
+      }
+    },
+    {
+      "id": "p58_t21",
+      "arabic": "الَّذِي",
+      "printedArabic": "الذي",
+      "gloss": "O ki",
+      "analysis": {
+        "kind": "İsm-i mevsûl",
+        "fields": {
+          "referent": "Ecvaf fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t22",
+      "arabic": "يَكُونُ",
+      "printedArabic": "يكون",
+      "gloss": "Bulunur",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p58_t23",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Karşılığında"
+        }
+      }
+    },
+    {
+      "id": "p58_t24",
+      "arabic": "مُقَابَلَةِ",
+      "printedArabic": "مقابلة",
+      "gloss": "Karşılığında",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ق ب ل"
+        }
+      }
+    },
+    {
+      "id": "p58_t25",
+      "arabic": "عَيْنِهِ",
+      "printedArabic": "عينه",
+      "gloss": "Aynının",
+      "analysis": {
+        "kind": "Harf adı + zamir",
+        "fields": {
+          "term": "Aynü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t26",
+      "arabic": "حَرْفٌ",
+      "printedArabic": "حرف",
+      "gloss": "Bir harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p58_t27",
+      "arabic": "مِنْ",
+      "printedArabic": "من",
+      "gloss": "-den",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Cins bildirir"
+        }
+      }
+    },
+    {
+      "id": "p58_t28",
+      "arabic": "حُرُوفِ",
+      "printedArabic": "حروف",
+      "gloss": "Harflerinden",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p58_t29",
+      "arabic": "الْعِلَّةِ",
+      "printedArabic": "العلة",
+      "gloss": "İllet",
+      "analysis": {
+        "kind": "Terim",
+        "fields": {
+          "term": "İllet harfleri"
+        }
+      }
+    },
+    {
+      "id": "p58_t30",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p58_t31",
+      "arabic": "قَالَ",
+      "gloss": "Dedi",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ق و ل",
+          "term": "Ecvaf"
+        }
+      }
+    },
+    {
+      "id": "p58_t32",
+      "arabic": "وَكَالَ",
+      "printedArabic": "وكال",
+      "punctuation": "،",
+      "gloss": "Ve ölçtü",
+      "analysis": {
+        "kind": "Bağlaç + fiil",
+        "fields": {
+          "root": "ك ي ل",
+          "term": "Ecvaf"
+        }
+      }
+    },
+    {
+      "id": "p58_t33",
+      "arabic": "وَإِمَّا",
+      "printedArabic": "وإما",
+      "gloss": "Ve ya",
+      "analysis": {
+        "kind": "Bağlaç + taksim edatı",
+        "fields": {
+          "meaning": "Yeni kısmı başlatır"
+        }
+      }
+    },
+    {
+      "id": "p58_t34",
+      "arabic": "نَاقِصٌ",
+      "printedArabic": "ناقص",
+      "gloss": "Nâkıs",
+      "analysis": {
+        "kind": "Terim",
+        "fields": {
+          "term": "Lâmü’l-fiili illetli olan fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t35",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "ناقص"
+        }
+      }
+    },
+    {
+      "id": "p58_t36",
+      "arabic": "الَّذِي",
+      "printedArabic": "الذي",
+      "gloss": "O ki",
+      "analysis": {
+        "kind": "İsm-i mevsûl",
+        "fields": {
+          "referent": "Nâkıs fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t37",
+      "arabic": "يَكُونُ",
+      "printedArabic": "يكون",
+      "gloss": "Bulunur",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p58_t38",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Karşılığında"
+        }
+      }
+    },
+    {
+      "id": "p58_t39",
+      "arabic": "مُقَابَلَةِ",
+      "printedArabic": "مقابلة",
+      "gloss": "Karşılığında",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ق ب ل"
+        }
+      }
+    },
+    {
+      "id": "p58_t40",
+      "arabic": "لَامِهِ",
+      "printedArabic": "لامه",
+      "gloss": "Lâmının",
+      "analysis": {
+        "kind": "Harf adı + zamir",
+        "fields": {
+          "term": "Lâmü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t41",
+      "arabic": "حَرْفٌ",
+      "printedArabic": "حرف",
+      "gloss": "Bir harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p58_t42",
+      "arabic": "مِنْ",
+      "printedArabic": "من",
+      "gloss": "-den",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Cins bildirir"
+        }
+      }
+    },
+    {
+      "id": "p58_t43",
+      "arabic": "حُرُوفِ",
+      "printedArabic": "حروف",
+      "gloss": "Harflerinden",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p58_t44",
+      "arabic": "الْعِلَّةِ",
+      "printedArabic": "العلة",
+      "gloss": "İllet",
+      "analysis": {
+        "kind": "Terim",
+        "fields": {
+          "term": "İllet harfleri"
+        }
+      }
+    },
+    {
+      "id": "p58_t45",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p58_t46",
+      "arabic": "غَزَا",
+      "gloss": "Gaza etti",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "غ ز و",
+          "term": "Nâkıs"
+        }
+      }
+    },
+    {
+      "id": "p58_t47",
+      "arabic": "وَرَمَى",
+      "printedArabic": "ورمى",
+      "punctuation": "،",
+      "gloss": "Ve attı",
+      "analysis": {
+        "kind": "Bağlaç + fiil",
+        "fields": {
+          "root": "ر م ي",
+          "term": "Nâkıs"
+        }
+      }
+    },
+    {
+      "id": "p58_t48",
+      "arabic": "وَإِمَّا",
+      "printedArabic": "وإما",
+      "gloss": "Ve ya",
+      "analysis": {
+        "kind": "Bağlaç + taksim edatı",
+        "fields": {
+          "meaning": "Yeni kısmı başlatır"
+        }
+      }
+    },
+    {
+      "id": "p58_t49",
+      "arabic": "لَفِيفٌ",
+      "printedArabic": "لفيف",
+      "gloss": "Lefîf",
+      "analysis": {
+        "kind": "Terim",
+        "fields": {
+          "term": "İki illet harfi bulunan fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t50",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "لفيف"
+        }
+      }
+    },
+    {
+      "id": "p58_t51",
+      "arabic": "الَّذِي",
+      "printedArabic": "الذي",
+      "gloss": "O ki",
+      "analysis": {
+        "kind": "İsm-i mevsûl",
+        "fields": {
+          "referent": "Lefîf fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t52",
+      "arabic": "يَكُونُ",
+      "printedArabic": "يكون",
+      "gloss": "Bulunur",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p58_t53",
+      "arabic": "فِيهِ",
+      "printedArabic": "فيه",
+      "gloss": "İçinde",
+      "analysis": {
+        "kind": "Harf + zamir",
+        "fields": {
+          "referent": "Fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t54",
+      "arabic": "حَرْفَانِ",
+      "printedArabic": "حرفان",
+      "gloss": "İki harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "numberType": "Tesniye"
+        }
+      }
+    },
+    {
+      "id": "p58_t55",
+      "arabic": "مِنْ",
+      "printedArabic": "من",
+      "gloss": "-den",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Cins bildirir"
+        }
+      }
+    },
+    {
+      "id": "p58_t56",
+      "arabic": "حُرُوفِ",
+      "printedArabic": "حروف",
+      "gloss": "Harflerinden",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p58_t57",
+      "arabic": "الْعِلَّةِ",
+      "printedArabic": "العلة",
+      "gloss": "İllet",
+      "analysis": {
+        "kind": "Terim",
+        "fields": {
+          "term": "İllet harfleri"
+        }
+      }
+    },
+    {
+      "id": "p58_t58",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "لفيف"
+        }
+      }
+    },
+    {
+      "id": "p58_t59",
+      "arabic": "عَلَى",
+      "printedArabic": "على",
+      "gloss": "Üzere",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Kısımlara ayrılma"
+        }
+      }
+    },
+    {
+      "id": "p58_t60",
+      "arabic": "قِسْمَيْنِ",
+      "printedArabic": "قسمين",
+      "punctuation": ":",
+      "gloss": "İki kısım",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "numberType": "Tesniye"
+        }
+      }
+    },
+    {
+      "id": "p58_t61",
+      "arabic": "الْأَوَّلُ",
+      "printedArabic": "الأول",
+      "punctuation": ":",
+      "gloss": "Birincisi",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "wordForm": "Sıra sayısı"
+        }
+      }
+    },
+    {
+      "id": "p58_t62",
+      "arabic": "اللَّفِيفُ",
+      "printedArabic": "اللفيف",
+      "gloss": "Lefîf",
+      "analysis": {
+        "kind": "Terim",
+        "fields": {
+          "term": "Lefîf"
+        }
+      }
+    },
+    {
+      "id": "p58_t63",
+      "arabic": "الْمَقْرُونُ",
+      "printedArabic": "المقرون",
+      "gloss": "Makrûn",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "İki illet harfi bitişik olan"
+        }
+      }
+    },
+    {
+      "id": "p58_t64",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "Lefîf makrûn"
+        }
+      }
+    },
+    {
+      "id": "p58_t65",
+      "arabic": "الَّذِي",
+      "printedArabic": "الذي",
+      "gloss": "O ki",
+      "analysis": {
+        "kind": "İsm-i mevsûl",
+        "fields": {
+          "referent": "Lefîf makrûn"
+        }
+      }
+    },
+    {
+      "id": "p58_t66",
+      "arabic": "يَكُونُ",
+      "printedArabic": "يكون",
+      "gloss": "Bulunur",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p58_t67",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Karşılığında"
+        }
+      }
+    },
+    {
+      "id": "p58_t68",
+      "arabic": "مُقَابَلَةِ",
+      "printedArabic": "مقابلة",
+      "gloss": "Karşılığında",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ق ب ل"
+        }
+      }
+    },
+    {
+      "id": "p58_t69",
+      "arabic": "عَيْنِهِ",
+      "printedArabic": "عينه",
+      "gloss": "Aynının",
+      "analysis": {
+        "kind": "Harf adı + zamir",
+        "fields": {
+          "term": "Aynü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t70",
+      "arabic": "وَلَامِهِ",
+      "printedArabic": "ولامه",
+      "gloss": "Ve lâmının",
+      "analysis": {
+        "kind": "Bağlaç + harf adı + zamir",
+        "fields": {
+          "term": "Lâmü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t71",
+      "arabic": "حَرْفَانِ",
+      "printedArabic": "حرفان",
+      "gloss": "İki harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "numberType": "Tesniye"
+        }
+      }
+    },
+    {
+      "id": "p58_t72",
+      "arabic": "مِنْ",
+      "printedArabic": "من",
+      "gloss": "-den",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Cins bildirir"
+        }
+      }
+    },
+    {
+      "id": "p58_t73",
+      "arabic": "حُرُوفِ",
+      "printedArabic": "حروف",
+      "gloss": "Harflerinden",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p58_t74",
+      "arabic": "الْعِلَّةِ",
+      "printedArabic": "العلة",
+      "gloss": "İllet",
+      "analysis": {
+        "kind": "Terim",
+        "fields": {
+          "term": "İllet harfleri"
+        }
+      }
+    },
+    {
+      "id": "p58_t75",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p58_t76",
+      "arabic": "طَوَى",
+      "punctuation": "،",
+      "gloss": "Dürüp katladı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ط و ي",
+          "term": "Lefîf makrûn"
+        }
+      }
+    },
+    {
+      "id": "p58_t77",
+      "arabic": "وَالثَّانِي",
+      "printedArabic": "والثاني",
+      "punctuation": ":",
+      "gloss": "Ve ikincisi",
+      "analysis": {
+        "kind": "Bağlaç + sıfat",
+        "fields": {
+          "wordForm": "Sıra sayısı"
+        }
+      }
+    },
+    {
+      "id": "p58_t78",
+      "arabic": "اللَّفِيفُ",
+      "printedArabic": "اللفيف",
+      "gloss": "Lefîf",
+      "analysis": {
+        "kind": "Terim",
+        "fields": {
+          "term": "Lefîf"
+        }
+      }
+    },
+    {
+      "id": "p58_t79",
+      "arabic": "الْمَفْرُوقُ",
+      "printedArabic": "المفروق",
+      "gloss": "Mefrûk",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "İki illet harfi ayrı olan"
+        }
+      }
+    },
+    {
+      "id": "p58_t80",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "referent": "Lefîf mefrûk"
+        }
+      }
+    },
+    {
+      "id": "p58_t81",
+      "arabic": "الَّذِي",
+      "printedArabic": "الذي",
+      "gloss": "O ki",
+      "analysis": {
+        "kind": "İsm-i mevsûl",
+        "fields": {
+          "referent": "Lefîf mefrûk"
+        }
+      }
+    },
+    {
+      "id": "p58_t82",
+      "arabic": "يَكُونُ",
+      "printedArabic": "يكون",
+      "gloss": "Bulunur",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p58_t83",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Karşılığında"
+        }
+      }
+    },
+    {
+      "id": "p58_t84",
+      "arabic": "مُقَابَلَةِ",
+      "printedArabic": "مقابلة",
+      "gloss": "Karşılığında",
+      "analysis": {
+        "kind": "Masdar",
+        "fields": {
+          "root": "ق ب ل"
+        }
+      }
+    },
+    {
+      "id": "p58_t85",
+      "arabic": "فَائِهِ",
+      "printedArabic": "فائه",
+      "gloss": "Fâsının",
+      "analysis": {
+        "kind": "Harf adı + zamir",
+        "fields": {
+          "term": "Fâü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t86",
+      "arabic": "وَلَامِهِ",
+      "printedArabic": "ولامه",
+      "gloss": "Ve lâmının",
+      "analysis": {
+        "kind": "Bağlaç + harf adı + zamir",
+        "fields": {
+          "term": "Lâmü’l-fiil"
+        }
+      }
+    },
+    {
+      "id": "p58_t87",
+      "arabic": "حَرْفَانِ",
+      "printedArabic": "حرفان",
+      "gloss": "İki harf",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "numberType": "Tesniye"
+        }
+      }
+    },
+    {
+      "id": "p58_t88",
+      "arabic": "مِنْ",
+      "printedArabic": "من",
+      "gloss": "-den",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "Cins bildirir"
+        }
+      }
+    },
+    {
+      "id": "p58_t89",
+      "arabic": "حُرُوفِ",
+      "printedArabic": "حروف",
+      "gloss": "Harflerinden",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "singular": "حَرْف"
+        }
+      }
+    },
+    {
+      "id": "p58_t90",
+      "arabic": "الْعِلَّةِ",
+      "printedArabic": "العلة",
+      "gloss": "İllet",
+      "analysis": {
+        "kind": "Terim",
+        "fields": {
+          "term": "İllet harfleri"
+        }
+      }
+    },
+    {
+      "id": "p58_t91",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و"
+        }
+      }
+    },
+    {
+      "id": "p58_t92",
+      "arabic": "وَقَى",
+      "printedArabic": "وَقَى",
+      "gloss": "Korudu",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "و ق ي",
+          "term": "Lefîf mefrûk"
+        }
+      }
+    }
+  ]
+}

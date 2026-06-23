@@ -1,0 +1,93 @@
+{
+  "id": "passage_47",
+  "order": 47,
+  "orijinal_metin": "ملحقات الرباعي المزيد وخمسة منها لملحق تَدَحْرَجَ",
+  "translation": "Rubâî mezîd mülhakları: beş bab تَدَحْرَجَ mülhakı içindir.",
+  "tokens": [
+    {
+      "id": "p47_t1",
+      "arabic": "مُلْحَقَاتُ",
+      "printedArabic": "ملحقات",
+      "gloss": "Mülhakları",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ل ح ق",
+          "term": "Eklenen bablar"
+        }
+      }
+    },
+    {
+      "id": "p47_t2",
+      "arabic": "الرُّبَاعِيِّ",
+      "printedArabic": "الرباعي",
+      "gloss": "Rubâînin",
+      "analysis": {
+        "kind": "Nisbet ismi",
+        "fields": {
+          "term": "Dört harfli"
+        }
+      }
+    },
+    {
+      "id": "p47_t3",
+      "arabic": "الْمَزِيدِ",
+      "printedArabic": "المزيد",
+      "gloss": "Mezîd",
+      "analysis": {
+        "kind": "Sıfat",
+        "fields": {
+          "term": "Ziyadeli"
+        }
+      }
+    },
+    {
+      "id": "p47_t4",
+      "arabic": "وَخَمْسَةٌ",
+      "printedArabic": "وخمسة",
+      "gloss": "Ve beş",
+      "analysis": {
+        "kind": "Bağlaç + sayı",
+        "fields": {
+          "numberType": "Aded"
+        }
+      }
+    },
+    {
+      "id": "p47_t5",
+      "arabic": "مِنْهَا",
+      "printedArabic": "منها",
+      "gloss": "Onlardan",
+      "analysis": {
+        "kind": "Harf + zamir",
+        "fields": {
+          "referent": "Bablar"
+        }
+      }
+    },
+    {
+      "id": "p47_t6",
+      "arabic": "لِمُلْحَقِ",
+      "printedArabic": "لملحق",
+      "gloss": "Mülhakı içindir",
+      "analysis": {
+        "kind": "Harf-i cer + isim",
+        "fields": {
+          "root": "ل ح ق"
+        }
+      }
+    },
+    {
+      "id": "p47_t7",
+      "arabic": "تَدَحْرَجَ",
+      "gloss": "Tedahrece",
+      "analysis": {
+        "kind": "Fiil örneği",
+        "fields": {
+          "root": "د ح ر ج",
+          "pattern": "تَفَعْلَلَ"
+        }
+      }
+    }
+  ]
+}

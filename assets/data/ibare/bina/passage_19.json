@@ -1,0 +1,391 @@
+{
+  "id": "passage_19",
+  "order": 19,
+  "orijinal_metin": "وبناؤه للتكثير وهو قد يكون في الفعل نحو: طَوَّفَ زيد الكعبة وقد يكون في الفاعل نحو: مَوَّتَ الإبل وقد يكون في المفعول نحو: غَلَّقَ زيد الباب",
+  "translation": "Bu bab teksir içindir. Teksir bazen fiilde olur: “Zeyd Kâbe’yi çokça tavaf etti”; bazen fâilde olur: “Develer çoğaldı”; bazen mef‘ûlde olur: “Zeyd kapıları çokça kapattı.”",
+  "tokens": [
+    {
+      "id": "p19_t1",
+      "arabic": "وَبِنَاؤُهُ",
+      "printedArabic": "وبناؤه",
+      "gloss": "Ve bu babın binası",
+      "analysis": {
+        "kind": "Bağlaç + masdar + zamir",
+        "fields": {
+          "root": "ب ن ي",
+          "derivedFrom": "بَنَى يَبْنِي",
+          "pattern": "فِعَال",
+          "pronoun": "هُ: tef‘îl babına döner.",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p19_t2",
+      "arabic": "لِلتَّكْثِيرِ",
+      "printedArabic": "للتكثير",
+      "gloss": "Teksir içindir",
+      "analysis": {
+        "kind": "Harf-i cer + masdar",
+        "fields": {
+          "root": "ك ث ر",
+          "derivedFrom": "كَثَّرَ يُكَثِّرُ",
+          "bab": "Sülâsî mezîd, tef‘îl babı",
+          "pattern": "تَفْعِيل",
+          "morphology": "Masdar",
+          "meaning": "Çoğaltma veya işi çokça yapma",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p19_t3",
+      "arabic": "وَهُوَ",
+      "printedArabic": "وهو",
+      "gloss": "Ve o",
+      "analysis": {
+        "kind": "Bağlaç + zamir",
+        "fields": {
+          "pronoun": "هُوَ: teksir manasına döner.",
+          "role": "Yeni açıklama cümlesinin mübtedâsı"
+        }
+      }
+    },
+    {
+      "id": "p19_t4",
+      "arabic": "قَدْ",
+      "printedArabic": "قد",
+      "gloss": "Bazen",
+      "analysis": {
+        "kind": "Harf",
+        "fields": {
+          "meaning": "Muzâri fiille burada ihtimal ve çeşitlilik bildirir."
+        }
+      }
+    },
+    {
+      "id": "p19_t5",
+      "arabic": "يَكُونُ",
+      "printedArabic": "يكون",
+      "gloss": "Olur",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "conjugation": "Fiil-i muzâri, nâkıs fiil",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "root": "ك و ن",
+          "baseForm": "كَانَ يَكُونُ"
+        }
+      }
+    },
+    {
+      "id": "p19_t6",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p19_t7",
+      "arabic": "الْفِعْلِ",
+      "printedArabic": "الفعل",
+      "gloss": "Fiilde",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ف ع ل",
+          "role": "فِي harfiyle mecrûr",
+          "meaning": "Teksirin bizzat fiil yapma sayısında olması",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p19_t8",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و",
+          "meaning": "Örnek vermek için kullanılır.",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p19_t9",
+      "arabic": "طَوَّفَ",
+      "gloss": "Çokça tavaf etti",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "root": "ط و ف",
+          "bab": "Sülâsî mezîd, tef‘îl babı",
+          "pattern": "فَعَّلَ",
+          "meaning": "Fiilde teksir: tavaf fiilinin çok yapılması"
+        }
+      }
+    },
+    {
+      "id": "p19_t10",
+      "arabic": "زَيْدٌ",
+      "printedArabic": "زيد",
+      "gloss": "Zeyd",
+      "analysis": {
+        "kind": "Özel isim",
+        "fields": {
+          "role": "Fâil",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p19_t11",
+      "arabic": "الْكَعْبَةَ",
+      "printedArabic": "الكعبة",
+      "gloss": "Kâbe’yi",
+      "analysis": {
+        "kind": "Özel isim",
+        "fields": {
+          "role": "Mef‘ûlün bih",
+          "irab": "Fetha ile mansub"
+        }
+      }
+    },
+    {
+      "id": "p19_t12",
+      "arabic": "وَقَدْ",
+      "printedArabic": "وقد",
+      "gloss": "Ve bazen",
+      "analysis": {
+        "kind": "Bağlaç + harf",
+        "details": [
+          {
+            "label": "قَدْ",
+            "value": "Aynı teksir manasının başka yere bağlanabileceğini bildirir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p19_t13",
+      "arabic": "يَكُونُ",
+      "printedArabic": "يكون",
+      "gloss": "Olur",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "conjugation": "Fiil-i muzâri, nâkıs fiil",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p19_t14",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p19_t15",
+      "arabic": "الْفَاعِلِ",
+      "printedArabic": "الفاعل",
+      "gloss": "Fâilde",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ف ع ل",
+          "role": "فِي harfiyle mecrûr",
+          "meaning": "Teksirin işi yapan varlığın çokluğunda olması",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p19_t16",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و",
+          "meaning": "Örnek vermek için kullanılır.",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p19_t17",
+      "arabic": "مَوَّتَ",
+      "gloss": "Çokça öldü/telef oldu",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "root": "م و ت",
+          "bab": "Sülâsî mezîd, tef‘îl babı",
+          "pattern": "فَعَّلَ",
+          "meaning": "Fâilde teksir: ölen varlıkların çok olması"
+        }
+      }
+    },
+    {
+      "id": "p19_t18",
+      "arabic": "الْإِبِلُ",
+      "printedArabic": "الإبل",
+      "gloss": "Develer",
+      "analysis": {
+        "kind": "Cins isim",
+        "fields": {
+          "role": "Fâil",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p19_t19",
+      "arabic": "وَقَدْ",
+      "printedArabic": "وقد",
+      "gloss": "Ve bazen",
+      "analysis": {
+        "kind": "Bağlaç + harf",
+        "details": [
+          {
+            "label": "قَدْ",
+            "value": "Üçüncü teksir türüne geçiş yapar."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p19_t20",
+      "arabic": "يَكُونُ",
+      "printedArabic": "يكون",
+      "gloss": "Olur",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "conjugation": "Fiil-i muzâri, nâkıs fiil",
+          "person": "3. şahıs, müzekker, tekil",
+          "root": "ك و ن"
+        }
+      }
+    },
+    {
+      "id": "p19_t21",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p19_t22",
+      "arabic": "الْمَفْعُولِ",
+      "printedArabic": "المفعول",
+      "gloss": "Mef‘ûlde",
+      "analysis": {
+        "kind": "İsm-i mef‘ûl",
+        "fields": {
+          "root": "ف ع ل",
+          "pattern": "مَفْعُول",
+          "role": "فِي harfiyle mecrûr",
+          "meaning": "Teksirin etkilenen nesnenin çokluğunda olması",
+          "irab": "Kesra ile mecrûr"
+        }
+      }
+    },
+    {
+      "id": "p19_t23",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و",
+          "meaning": "Örnek vermek için kullanılır.",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p19_t24",
+      "arabic": "غَلَّقَ",
+      "gloss": "Çokça kapattı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "root": "غ ل ق",
+          "bab": "Sülâsî mezîd, tef‘îl babı",
+          "pattern": "فَعَّلَ",
+          "meaning": "Mef‘ûlde teksir: kapatılan nesnelerin çok olması"
+        }
+      }
+    },
+    {
+      "id": "p19_t25",
+      "arabic": "زَيْدٌ",
+      "printedArabic": "زيد",
+      "gloss": "Zeyd",
+      "analysis": {
+        "kind": "Özel isim",
+        "fields": {
+          "role": "Fâil",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p19_t26",
+      "arabic": "الْبَابَ",
+      "printedArabic": "الباب",
+      "gloss": "Kapıyı/kapıları",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ب و ب",
+          "role": "Mef‘ûlün bih",
+          "irab": "Fetha ile mansub"
+        },
+        "details": [
+          {
+            "label": "Teksir yorumu",
+            "value": "Mef‘ûlde teksir manası sebebiyle kapatılan kapıların çokluğu anlaşılır."
+          }
+        ]
+      }
+    }
+  ]
+}
