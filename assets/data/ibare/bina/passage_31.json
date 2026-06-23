@@ -8,6 +8,350 @@
       "id": "p31_ph1",
       "tokenIds": [
         "p31_t1",
+        "p31_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab İkinci",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph2",
+      "tokenIds": [
+        "p31_t7",
+        "p31_t8",
+        "p31_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu بَيْطَرَ يُبَيْطِرُ",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph3",
+      "tokenIds": [
+        "p31_t12",
+        "p31_t13",
+        "p31_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Yânın",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph4",
+      "tokenIds": [
+        "p31_t18",
+        "p31_t19",
+        "p31_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Geçişlilik içindir فَقَطْ",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph5",
+      "tokenIds": [
+        "p31_t21",
+        "p31_t22",
+        "p31_t23"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin بَيْطَرَ Zeyd",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph6",
+      "tokenIds": [
+        "p31_t15",
+        "p31_t16",
+        "p31_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Fânın Ve وَالْعَيْنِ",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph7",
+      "tokenIds": [
+        "p31_t19",
+        "p31_t20",
+        "p31_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Geçişlilik içindir فَقَطْ Örneğin",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph8",
+      "tokenIds": [
+        "p31_t1",
+        "p31_t2",
+        "p31_t3",
+        "p31_t4",
+        "p31_t5",
+        "p31_t6",
+        "p31_t7",
+        "p31_t8",
+        "p31_t9",
+        "p31_t10",
+        "p31_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab İkinci فَيْعَلَ يُفَيْعِلُ فَيْعَلَةً Ve وَفِيعَالًا Mevzunu بَيْطَرَ يُبَيْطِرُ بَيْطَرَةً Ve وَبِيطَارًا",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph9",
+      "tokenIds": [
+        "p31_t1",
+        "p31_t2",
+        "p31_t3",
+        "p31_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab İkinci فَيْعَلَ يُفَيْعِلُ",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph10",
+      "tokenIds": [
+        "p31_t5",
+        "p31_t6",
+        "p31_t7",
+        "p31_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَيْعَلَةً Ve وَفِيعَالًا Mevzunu بَيْطَرَ",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph11",
+      "tokenIds": [
+        "p31_t9",
+        "p31_t10",
+        "p31_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُبَيْطِرُ بَيْطَرَةً Ve وَبِيطَارًا",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph12",
+      "tokenIds": [
+        "p31_t12",
+        "p31_t13",
+        "p31_t14",
+        "p31_t15",
+        "p31_t16",
+        "p31_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Yânın Arasında Fânın Ve وَالْعَيْنِ",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph13",
+      "tokenIds": [
+        "p31_t12",
+        "p31_t13",
+        "p31_t14",
+        "p31_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Yânın Arasında",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph14",
+      "tokenIds": [
+        "p31_t16",
+        "p31_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Fânın Ve وَالْعَيْنِ",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph15",
+      "tokenIds": [
+        "p31_t21",
+        "p31_t22",
+        "p31_t23",
+        "p31_t24",
+        "p31_t25",
+        "p31_t26"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin بَيْطَرَ Zeyd الْقَلَمَ Yani شَقَّهُ",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph16",
+      "tokenIds": [
+        "p31_t21",
+        "p31_t22",
+        "p31_t23",
+        "p31_t24"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin بَيْطَرَ Zeyd الْقَلَمَ",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph17",
+      "tokenIds": [
+        "p31_t25",
+        "p31_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Yani شَقَّهُ",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph18",
+      "tokenIds": [
+        "p31_t13",
+        "p31_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Eklenmesi Yânın",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph19",
+      "tokenIds": [
+        "p31_t14",
+        "p31_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Yânın Arasında",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph20",
+      "tokenIds": [
+        "p31_t15",
+        "p31_t16"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Fânın",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph21",
+      "tokenIds": [
+        "p31_t23",
+        "p31_t24"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Zeyd الْقَلَمَ",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph22",
+      "tokenIds": [
+        "p31_t24",
+        "p31_t25"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْقَلَمَ Yani",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph23",
+      "tokenIds": [
+        "p31_t3",
+        "p31_t4",
+        "p31_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَيْعَلَ يُفَيْعِلُ فَيْعَلَةً",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph24",
+      "tokenIds": [
+        "p31_t3",
+        "p31_t4",
+        "p31_t5",
+        "p31_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَيْعَلَ يُفَيْعِلُ فَيْعَلَةً Ve وَفِيعَالًا",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph25",
+      "tokenIds": [
+        "p31_t4",
+        "p31_t5",
+        "p31_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُفَيْعِلُ فَيْعَلَةً Ve وَفِيعَالًا",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph26",
+      "tokenIds": [
+        "p31_t4",
+        "p31_t5",
+        "p31_t6",
+        "p31_t7"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُفَيْعِلُ فَيْعَلَةً Ve وَفِيعَالًا Mevzunu",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph27",
+      "tokenIds": [
+        "p31_t5",
+        "p31_t6",
+        "p31_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَيْعَلَةً Ve وَفِيعَالًا Mevzunu",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph28",
+      "tokenIds": [
+        "p31_t9",
+        "p31_t10",
+        "p31_t11",
+        "p31_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُبَيْطِرُ بَيْطَرَةً Ve وَبِيطَارًا Ve alâmeti",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph29",
+      "tokenIds": [
+        "p31_t20",
+        "p31_t21",
+        "p31_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَقَطْ Örneğin بَيْطَرَ",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph30",
+      "tokenIds": [
+        "p31_t20",
+        "p31_t21",
+        "p31_t22",
+        "p31_t23"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَقَطْ Örneğin بَيْطَرَ Zeyd",
+      "parentId": "p31_ph31"
+    },
+    {
+      "id": "p31_ph31",
+      "tokenIds": [
+        "p31_t1",
         "p31_t2",
         "p31_t3",
         "p31_t4",
@@ -48,7 +392,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p31_t2",
@@ -59,7 +404,8 @@
         "fields": {
           "meaning": "İkinci"
         }
-      }
+      },
+      "printedArabic": "الثاني"
     },
     {
       "id": "p31_t3",
@@ -114,7 +460,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p31_t8",
@@ -169,7 +516,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p31_t13",
@@ -180,7 +528,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p31_t14",
@@ -191,7 +540,8 @@
         "fields": {
           "meaning": "Yânın"
         }
-      }
+      },
+      "printedArabic": "الياء"
     },
     {
       "id": "p31_t15",
@@ -202,7 +552,8 @@
         "fields": {
           "meaning": "Arasında"
         }
-      }
+      },
+      "printedArabic": "بين"
     },
     {
       "id": "p31_t16",
@@ -213,7 +564,8 @@
         "fields": {
           "meaning": "Fânın"
         }
-      }
+      },
+      "printedArabic": "الفاء"
     },
     {
       "id": "p31_t17",
@@ -224,7 +576,8 @@
         "fields": {
           "meaning": "Ve وَالْعَيْنِ"
         }
-      }
+      },
+      "printedArabic": "والعين"
     },
     {
       "id": "p31_t18",
@@ -235,7 +588,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p31_t19",
@@ -246,7 +600,8 @@
         "fields": {
           "meaning": "Geçişlilik içindir"
         }
-      }
+      },
+      "printedArabic": "للتعدية"
     },
     {
       "id": "p31_t20",
@@ -257,7 +612,8 @@
         "fields": {
           "meaning": "فَقَطْ"
         }
-      }
+      },
+      "printedArabic": "فقط"
     },
     {
       "id": "p31_t21",
@@ -268,7 +624,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p31_t22",
@@ -290,7 +647,8 @@
         "fields": {
           "meaning": "Zeyd"
         }
-      }
+      },
+      "printedArabic": "زيد"
     },
     {
       "id": "p31_t24",
@@ -301,7 +659,8 @@
         "fields": {
           "meaning": "الْقَلَمَ"
         }
-      }
+      },
+      "printedArabic": "القلم"
     },
     {
       "id": "p31_t25",

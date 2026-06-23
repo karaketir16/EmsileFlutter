@@ -8,6 +8,183 @@
       "id": "p54_ph1",
       "tokenIds": [
         "p54_t1",
+        "p54_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve وَيُقَالُ لِهَذِهِ",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph2",
+      "tokenIds": [
+        "p54_t1",
+        "p54_t2",
+        "p54_t3",
+        "p54_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve وَيُقَالُ لِهَذِهِ الْأَقْسَامِ الْأَقْسَامُ",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph3",
+      "tokenIds": [
+        "p54_t5",
+        "p54_t6",
+        "p54_t7",
+        "p54_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "السَّبْعَةُ يَجْمَعُهَا هَذَا الْبَيْتُ",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph4",
+      "tokenIds": [
+        "p54_t9",
+        "p54_t10",
+        "p54_t11",
+        "p54_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Sahih Misâl Mudaaf Ecvef",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph5",
+      "tokenIds": [
+        "p54_t13",
+        "p54_t14",
+        "p54_t15",
+        "p54_t16"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Nâkıs Lefîf Mehmuz Ve وَاللَّهُ",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph6",
+      "tokenIds": [
+        "p54_t17",
+        "p54_t18",
+        "p54_t19",
+        "p54_t20"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve وَرَسُولُهُ أَعْلَمُ بِالصَّوَابِ النِّهَايَةُ",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph7",
+      "tokenIds": [
+        "p54_t2",
+        "p54_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "لِهَذِهِ الْأَقْسَامِ",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph8",
+      "tokenIds": [
+        "p54_t3",
+        "p54_t4"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْأَقْسَامِ الْأَقْسَامُ",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph9",
+      "tokenIds": [
+        "p54_t4",
+        "p54_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْأَقْسَامُ السَّبْعَةُ",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph10",
+      "tokenIds": [
+        "p54_t7",
+        "p54_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "هَذَا الْبَيْتُ",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph11",
+      "tokenIds": [
+        "p54_t8",
+        "p54_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْبَيْتُ Sahih",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph12",
+      "tokenIds": [
+        "p54_t6",
+        "p54_t7",
+        "p54_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَجْمَعُهَا هَذَا الْبَيْتُ",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph13",
+      "tokenIds": [
+        "p54_t6",
+        "p54_t7",
+        "p54_t8",
+        "p54_t9"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَجْمَعُهَا هَذَا الْبَيْتُ Sahih",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph14",
+      "tokenIds": [
+        "p54_t12",
+        "p54_t13",
+        "p54_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ecvef Nâkıs Lefîf",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph15",
+      "tokenIds": [
+        "p54_t12",
+        "p54_t13",
+        "p54_t14",
+        "p54_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ecvef Nâkıs Lefîf Mehmuz",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph16",
+      "tokenIds": [
+        "p54_t18",
+        "p54_t19",
+        "p54_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَعْلَمُ بِالصَّوَابِ النِّهَايَةُ",
+      "parentId": "p54_ph17"
+    },
+    {
+      "id": "p54_ph17",
+      "tokenIds": [
+        "p54_t1",
         "p54_t2",
         "p54_t3",
         "p54_t4",
@@ -42,7 +219,8 @@
         "fields": {
           "meaning": "Ve وَيُقَالُ"
         }
-      }
+      },
+      "printedArabic": "ويقال"
     },
     {
       "id": "p54_t2",
@@ -53,7 +231,8 @@
         "fields": {
           "meaning": "لِهَذِهِ"
         }
-      }
+      },
+      "printedArabic": "لهذه"
     },
     {
       "id": "p54_t3",
@@ -64,7 +243,8 @@
         "fields": {
           "meaning": "الْأَقْسَامِ"
         }
-      }
+      },
+      "printedArabic": "الأقسام"
     },
     {
       "id": "p54_t4",
@@ -75,7 +255,8 @@
         "fields": {
           "meaning": "الْأَقْسَامُ"
         }
-      }
+      },
+      "printedArabic": "الأقسام"
     },
     {
       "id": "p54_t5",
@@ -86,7 +267,8 @@
         "fields": {
           "meaning": "السَّبْعَةُ"
         }
-      }
+      },
+      "printedArabic": "السبعة"
     },
     {
       "id": "p54_t6",
@@ -97,7 +279,8 @@
         "fields": {
           "meaning": "يَجْمَعُهَا"
         }
-      }
+      },
+      "printedArabic": "يجمعها"
     },
     {
       "id": "p54_t7",
@@ -108,7 +291,8 @@
         "fields": {
           "meaning": "هَذَا"
         }
-      }
+      },
+      "printedArabic": "هذا"
     },
     {
       "id": "p54_t8",
@@ -119,7 +303,8 @@
         "fields": {
           "meaning": "الْبَيْتُ"
         }
-      }
+      },
+      "printedArabic": "البيت"
     },
     {
       "id": "p54_t9",
@@ -130,7 +315,8 @@
         "fields": {
           "meaning": "Sahih"
         }
-      }
+      },
+      "printedArabic": "صحيح"
     },
     {
       "id": "p54_t10",
@@ -141,7 +327,8 @@
         "fields": {
           "meaning": "Misâl"
         }
-      }
+      },
+      "printedArabic": "مثال"
     },
     {
       "id": "p54_t11",
@@ -152,7 +339,8 @@
         "fields": {
           "meaning": "Mudaaf"
         }
-      }
+      },
+      "printedArabic": "مضاعف"
     },
     {
       "id": "p54_t12",
@@ -163,7 +351,8 @@
         "fields": {
           "meaning": "Ecvef"
         }
-      }
+      },
+      "printedArabic": "أجوف"
     },
     {
       "id": "p54_t13",
@@ -174,7 +363,8 @@
         "fields": {
           "meaning": "Nâkıs"
         }
-      }
+      },
+      "printedArabic": "ناقص"
     },
     {
       "id": "p54_t14",
@@ -185,7 +375,8 @@
         "fields": {
           "meaning": "Lefîf"
         }
-      }
+      },
+      "printedArabic": "لفيف"
     },
     {
       "id": "p54_t15",
@@ -196,7 +387,8 @@
         "fields": {
           "meaning": "Mehmuz"
         }
-      }
+      },
+      "printedArabic": "مهموز"
     },
     {
       "id": "p54_t16",
@@ -207,7 +399,8 @@
         "fields": {
           "meaning": "Ve وَاللَّهُ"
         }
-      }
+      },
+      "printedArabic": "والله"
     },
     {
       "id": "p54_t17",
@@ -218,7 +411,8 @@
         "fields": {
           "meaning": "Ve وَرَسُولُهُ"
         }
-      }
+      },
+      "printedArabic": "ورسوله"
     },
     {
       "id": "p54_t18",
@@ -229,7 +423,8 @@
         "fields": {
           "meaning": "أَعْلَمُ"
         }
-      }
+      },
+      "printedArabic": "أعلم"
     },
     {
       "id": "p54_t19",
@@ -240,7 +435,8 @@
         "fields": {
           "meaning": "بِالصَّوَابِ"
         }
-      }
+      },
+      "printedArabic": "بالصواب"
     },
     {
       "id": "p54_t20",
@@ -251,7 +447,8 @@
         "fields": {
           "meaning": "النِّهَايَةُ"
         }
-      }
+      },
+      "printedArabic": "النهاية"
     }
   ]
 }

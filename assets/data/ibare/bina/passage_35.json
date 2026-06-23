@@ -8,6 +8,387 @@
       "id": "p35_ph1",
       "tokenIds": [
         "p35_t1",
+        "p35_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Altıncı",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph2",
+      "tokenIds": [
+        "p35_t7",
+        "p35_t8",
+        "p35_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu سَلْقَى يُسَلْقِي",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph3",
+      "tokenIds": [
+        "p35_t12",
+        "p35_t13",
+        "p35_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Yânın",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph4",
+      "tokenIds": [
+        "p35_t17",
+        "p35_t18",
+        "p35_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Lâzımlık içindir فَقَطْ",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph5",
+      "tokenIds": [
+        "p35_t20",
+        "p35_t21",
+        "p35_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin سَلْقَى Zeyd",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph6",
+      "tokenIds": [
+        "p35_t15",
+        "p35_t16",
+        "p35_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde Sonunda Ve kullanılışı",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph7",
+      "tokenIds": [
+        "p35_t18",
+        "p35_t19",
+        "p35_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Lâzımlık içindir فَقَطْ Örneğin",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph8",
+      "tokenIds": [
+        "p35_t25",
+        "p35_t26",
+        "p35_t27"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Üzere قَفَاهُ Ve وَمَعْنَى",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph9",
+      "tokenIds": [
+        "p35_t1",
+        "p35_t2",
+        "p35_t3",
+        "p35_t4",
+        "p35_t5",
+        "p35_t6",
+        "p35_t7",
+        "p35_t8",
+        "p35_t9",
+        "p35_t10",
+        "p35_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Altıncı فَعْلَى يُفَعْلِي فَعْلَيَةً Ve وَفَعْلَاءً Mevzunu سَلْقَى يُسَلْقِي سَلْقَيَةً Ve وَسَلْقَاءً",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph10",
+      "tokenIds": [
+        "p35_t1",
+        "p35_t2",
+        "p35_t3",
+        "p35_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Altıncı فَعْلَى يُفَعْلِي",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph11",
+      "tokenIds": [
+        "p35_t5",
+        "p35_t6",
+        "p35_t7",
+        "p35_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَعْلَيَةً Ve وَفَعْلَاءً Mevzunu سَلْقَى",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph12",
+      "tokenIds": [
+        "p35_t9",
+        "p35_t10",
+        "p35_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُسَلْقِي سَلْقَيَةً Ve وَسَلْقَاءً",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph13",
+      "tokenIds": [
+        "p35_t12",
+        "p35_t13",
+        "p35_t14",
+        "p35_t15",
+        "p35_t16"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Yânın İçinde Sonunda",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph14",
+      "tokenIds": [
+        "p35_t12",
+        "p35_t13",
+        "p35_t14",
+        "p35_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Yânın İçinde",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph15",
+      "tokenIds": [
+        "p35_t20",
+        "p35_t21",
+        "p35_t22",
+        "p35_t23",
+        "p35_t24",
+        "p35_t25",
+        "p35_t26"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin سَلْقَى Zeyd Yani نَامَ Üzere قَفَاهُ",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph16",
+      "tokenIds": [
+        "p35_t20",
+        "p35_t21",
+        "p35_t22",
+        "p35_t23"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin سَلْقَى Zeyd Yani",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph17",
+      "tokenIds": [
+        "p35_t24",
+        "p35_t25",
+        "p35_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "نَامَ Üzere قَفَاهُ",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph18",
+      "tokenIds": [
+        "p35_t27",
+        "p35_t28",
+        "p35_t29",
+        "p35_t30"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve وَمَعْنَى الْإِلْحَاقِ اِتِّحَادُ الْمَصْدَرَيْنِ",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph19",
+      "tokenIds": [
+        "p35_t13",
+        "p35_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Eklenmesi Yânın",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph20",
+      "tokenIds": [
+        "p35_t14",
+        "p35_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Yânın İçinde",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph21",
+      "tokenIds": [
+        "p35_t27",
+        "p35_t28"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve وَمَعْنَى الْإِلْحَاقِ",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph22",
+      "tokenIds": [
+        "p35_t28",
+        "p35_t29"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْإِلْحَاقِ اِتِّحَادُ",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph23",
+      "tokenIds": [
+        "p35_t29",
+        "p35_t30"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِتِّحَادُ الْمَصْدَرَيْنِ",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph24",
+      "tokenIds": [
+        "p35_t3",
+        "p35_t4",
+        "p35_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَعْلَى يُفَعْلِي فَعْلَيَةً",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph25",
+      "tokenIds": [
+        "p35_t3",
+        "p35_t4",
+        "p35_t5",
+        "p35_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَعْلَى يُفَعْلِي فَعْلَيَةً Ve وَفَعْلَاءً",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph26",
+      "tokenIds": [
+        "p35_t4",
+        "p35_t5",
+        "p35_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُفَعْلِي فَعْلَيَةً Ve وَفَعْلَاءً",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph27",
+      "tokenIds": [
+        "p35_t4",
+        "p35_t5",
+        "p35_t6",
+        "p35_t7"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُفَعْلِي فَعْلَيَةً Ve وَفَعْلَاءً Mevzunu",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph28",
+      "tokenIds": [
+        "p35_t5",
+        "p35_t6",
+        "p35_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَعْلَيَةً Ve وَفَعْلَاءً Mevzunu",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph29",
+      "tokenIds": [
+        "p35_t9",
+        "p35_t10",
+        "p35_t11",
+        "p35_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُسَلْقِي سَلْقَيَةً Ve وَسَلْقَاءً Ve alâmeti",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph30",
+      "tokenIds": [
+        "p35_t19",
+        "p35_t20",
+        "p35_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَقَطْ Örneğin سَلْقَى",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph31",
+      "tokenIds": [
+        "p35_t19",
+        "p35_t20",
+        "p35_t21",
+        "p35_t22"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَقَطْ Örneğin سَلْقَى Zeyd",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph32",
+      "tokenIds": [
+        "p35_t23",
+        "p35_t24",
+        "p35_t25"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Yani نَامَ Üzere",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph33",
+      "tokenIds": [
+        "p35_t23",
+        "p35_t24",
+        "p35_t25",
+        "p35_t26"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Yani نَامَ Üzere قَفَاهُ",
+      "parentId": "p35_ph34"
+    },
+    {
+      "id": "p35_ph34",
+      "tokenIds": [
+        "p35_t1",
         "p35_t2",
         "p35_t3",
         "p35_t4",
@@ -52,7 +433,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p35_t2",
@@ -63,7 +445,8 @@
         "fields": {
           "meaning": "Altıncı"
         }
-      }
+      },
+      "printedArabic": "السادس"
     },
     {
       "id": "p35_t3",
@@ -118,7 +501,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p35_t8",
@@ -173,7 +557,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p35_t13",
@@ -184,7 +569,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p35_t14",
@@ -195,7 +581,8 @@
         "fields": {
           "meaning": "Yânın"
         }
-      }
+      },
+      "printedArabic": "الياء"
     },
     {
       "id": "p35_t15",
@@ -206,7 +593,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p35_t16",
@@ -217,7 +605,8 @@
         "fields": {
           "meaning": "Sonunda"
         }
-      }
+      },
+      "printedArabic": "آخره"
     },
     {
       "id": "p35_t17",
@@ -228,7 +617,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p35_t18",
@@ -239,7 +629,8 @@
         "fields": {
           "meaning": "Lâzımlık içindir"
         }
-      }
+      },
+      "printedArabic": "للازم"
     },
     {
       "id": "p35_t19",
@@ -250,7 +641,8 @@
         "fields": {
           "meaning": "فَقَطْ"
         }
-      }
+      },
+      "printedArabic": "فقط"
     },
     {
       "id": "p35_t20",
@@ -261,7 +653,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p35_t21",
@@ -283,7 +676,8 @@
         "fields": {
           "meaning": "Zeyd"
         }
-      }
+      },
+      "printedArabic": "زيد"
     },
     {
       "id": "p35_t23",
@@ -349,7 +743,8 @@
         "fields": {
           "meaning": "الْإِلْحَاقِ"
         }
-      }
+      },
+      "printedArabic": "الإلحاق"
     },
     {
       "id": "p35_t29",
@@ -371,7 +766,8 @@
         "fields": {
           "meaning": "الْمَصْدَرَيْنِ"
         }
-      }
+      },
+      "printedArabic": "المصدرين"
     }
   ]
 }

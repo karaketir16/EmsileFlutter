@@ -8,6 +8,396 @@
       "id": "p27_ph1",
       "tokenIds": [
         "p27_t1",
+        "p27_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Üçüncü",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph2",
+      "tokenIds": [
+        "p27_t6",
+        "p27_t7",
+        "p27_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu اِجْلَوَّذَ يَجْلَوِّذُ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph3",
+      "tokenIds": [
+        "p27_t10",
+        "p27_t11",
+        "p27_t12"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph4",
+      "tokenIds": [
+        "p27_t19",
+        "p27_t20",
+        "p27_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Mübalağa içindir اللَّازِمِ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph5",
+      "tokenIds": [
+        "p27_t13",
+        "p27_t14",
+        "p27_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde Başında Ve وَوَاوَيْنِ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph6",
+      "tokenIds": [
+        "p27_t16",
+        "p27_t17",
+        "p27_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Aynın Ve وَاللَّامِ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph7",
+      "tokenIds": [
+        "p27_t20",
+        "p27_t21",
+        "p27_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mübalağa içindir اللَّازِمِ يُقَالُ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph8",
+      "tokenIds": [
+        "p27_t1",
+        "p27_t2",
+        "p27_t3",
+        "p27_t4",
+        "p27_t5",
+        "p27_t6",
+        "p27_t7",
+        "p27_t8",
+        "p27_t9"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Üçüncü اِفْعَوَّلَ يَفْعَوِّلُ اِفْعِوَّالًا Mevzunu اِجْلَوَّذَ يَجْلَوِّذُ اِجْلِوَّاذًا",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph9",
+      "tokenIds": [
+        "p27_t1",
+        "p27_t2",
+        "p27_t3",
+        "p27_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Üçüncü اِفْعَوَّلَ يَفْعَوِّلُ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph10",
+      "tokenIds": [
+        "p27_t5",
+        "p27_t6",
+        "p27_t7",
+        "p27_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِفْعِوَّالًا Mevzunu اِجْلَوَّذَ يَجْلَوِّذُ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph11",
+      "tokenIds": [
+        "p27_t10",
+        "p27_t11",
+        "p27_t12",
+        "p27_t13",
+        "p27_t14",
+        "p27_t15",
+        "p27_t16",
+        "p27_t17",
+        "p27_t18"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin İçinde Başında Ve وَوَاوَيْنِ Arasında Aynın Ve وَاللَّامِ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph12",
+      "tokenIds": [
+        "p27_t10",
+        "p27_t11",
+        "p27_t12",
+        "p27_t13"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin İçinde",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph13",
+      "tokenIds": [
+        "p27_t14",
+        "p27_t15",
+        "p27_t16",
+        "p27_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Başında Ve وَوَاوَيْنِ Arasında Aynın",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph14",
+      "tokenIds": [
+        "p27_t22",
+        "p27_t23",
+        "p27_t24",
+        "p27_t25",
+        "p27_t26"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُقَالُ جَلَذَتِ الْإِبِلُ Ve وَاِجْلَوَّذَتِ الْإِبِلُ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph15",
+      "tokenIds": [
+        "p27_t22",
+        "p27_t23",
+        "p27_t24",
+        "p27_t25"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُقَالُ جَلَذَتِ الْإِبِلُ Ve وَاِجْلَوَّذَتِ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph16",
+      "tokenIds": [
+        "p27_t11",
+        "p27_t12"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Eklenmesi Hemzenin",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph17",
+      "tokenIds": [
+        "p27_t12",
+        "p27_t13"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Hemzenin İçinde",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph18",
+      "tokenIds": [
+        "p27_t16",
+        "p27_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Aynın",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph19",
+      "tokenIds": [
+        "p27_t17",
+        "p27_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Aynın Ve وَاللَّامِ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph20",
+      "tokenIds": [
+        "p27_t23",
+        "p27_t24"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "جَلَذَتِ الْإِبِلُ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph21",
+      "tokenIds": [
+        "p27_t24",
+        "p27_t25"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْإِبِلُ Ve وَاِجْلَوَّذَتِ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph22",
+      "tokenIds": [
+        "p27_t25",
+        "p27_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve وَاِجْلَوَّذَتِ الْإِبِلُ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph23",
+      "tokenIds": [
+        "p27_t3",
+        "p27_t4",
+        "p27_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِفْعَوَّلَ يَفْعَوِّلُ اِفْعِوَّالًا",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph24",
+      "tokenIds": [
+        "p27_t3",
+        "p27_t4",
+        "p27_t5",
+        "p27_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِفْعَوَّلَ يَفْعَوِّلُ اِفْعِوَّالًا Mevzunu",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph25",
+      "tokenIds": [
+        "p27_t4",
+        "p27_t5",
+        "p27_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَفْعَوِّلُ اِفْعِوَّالًا Mevzunu",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph26",
+      "tokenIds": [
+        "p27_t4",
+        "p27_t5",
+        "p27_t6",
+        "p27_t7"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَفْعَوِّلُ اِفْعِوَّالًا Mevzunu اِجْلَوَّذَ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph27",
+      "tokenIds": [
+        "p27_t5",
+        "p27_t6",
+        "p27_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِفْعِوَّالًا Mevzunu اِجْلَوَّذَ",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph28",
+      "tokenIds": [
+        "p27_t7",
+        "p27_t8",
+        "p27_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِجْلَوَّذَ يَجْلَوِّذُ اِجْلِوَّاذًا",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph29",
+      "tokenIds": [
+        "p27_t7",
+        "p27_t8",
+        "p27_t9",
+        "p27_t10"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِجْلَوَّذَ يَجْلَوِّذُ اِجْلِوَّاذًا Ve alâmeti",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph30",
+      "tokenIds": [
+        "p27_t8",
+        "p27_t9",
+        "p27_t10"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَجْلَوِّذُ اِجْلِوَّاذًا Ve alâmeti",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph31",
+      "tokenIds": [
+        "p27_t8",
+        "p27_t9",
+        "p27_t10",
+        "p27_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَجْلَوِّذُ اِجْلِوَّاذًا Ve alâmeti Eklenmesi",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph32",
+      "tokenIds": [
+        "p27_t9",
+        "p27_t10",
+        "p27_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِجْلِوَّاذًا Ve alâmeti Eklenmesi",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph33",
+      "tokenIds": [
+        "p27_t9",
+        "p27_t10",
+        "p27_t11",
+        "p27_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِجْلِوَّاذًا Ve alâmeti Eklenmesi Hemzenin",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph34",
+      "tokenIds": [
+        "p27_t14",
+        "p27_t15",
+        "p27_t16"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Başında Ve وَوَاوَيْنِ Arasında",
+      "parentId": "p27_ph35"
+    },
+    {
+      "id": "p27_ph35",
+      "tokenIds": [
+        "p27_t1",
         "p27_t2",
         "p27_t3",
         "p27_t4",
@@ -48,7 +438,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p27_t2",
@@ -59,7 +450,8 @@
         "fields": {
           "meaning": "Üçüncü"
         }
-      }
+      },
+      "printedArabic": "الثالث"
     },
     {
       "id": "p27_t3",
@@ -103,7 +495,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p27_t7",
@@ -147,7 +540,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p27_t11",
@@ -158,7 +552,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p27_t12",
@@ -169,7 +564,8 @@
         "fields": {
           "meaning": "Hemzenin"
         }
-      }
+      },
+      "printedArabic": "الهمزة"
     },
     {
       "id": "p27_t13",
@@ -180,7 +576,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p27_t14",
@@ -191,7 +588,8 @@
         "fields": {
           "meaning": "Başında"
         }
-      }
+      },
+      "printedArabic": "أوله"
     },
     {
       "id": "p27_t15",
@@ -202,7 +600,8 @@
         "fields": {
           "meaning": "Ve وَوَاوَيْنِ"
         }
-      }
+      },
+      "printedArabic": "وواوين"
     },
     {
       "id": "p27_t16",
@@ -213,7 +612,8 @@
         "fields": {
           "meaning": "Arasında"
         }
-      }
+      },
+      "printedArabic": "بين"
     },
     {
       "id": "p27_t17",
@@ -224,7 +624,8 @@
         "fields": {
           "meaning": "Aynın"
         }
-      }
+      },
+      "printedArabic": "العين"
     },
     {
       "id": "p27_t18",
@@ -235,7 +636,8 @@
         "fields": {
           "meaning": "Ve وَاللَّامِ"
         }
-      }
+      },
+      "printedArabic": "واللام"
     },
     {
       "id": "p27_t19",
@@ -246,7 +648,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p27_t20",
@@ -257,7 +660,8 @@
         "fields": {
           "meaning": "Mübalağa içindir"
         }
-      }
+      },
+      "printedArabic": "لمبالغة"
     },
     {
       "id": "p27_t21",
@@ -268,7 +672,8 @@
         "fields": {
           "meaning": "اللَّازِمِ"
         }
-      }
+      },
+      "printedArabic": "اللازم"
     },
     {
       "id": "p27_t22",
@@ -279,7 +684,8 @@
         "fields": {
           "meaning": "يُقَالُ"
         }
-      }
+      },
+      "printedArabic": "يقال"
     },
     {
       "id": "p27_t23",
@@ -290,7 +696,8 @@
         "fields": {
           "meaning": "جَلَذَتِ"
         }
-      }
+      },
+      "printedArabic": "جلذت"
     },
     {
       "id": "p27_t24",
@@ -301,7 +708,8 @@
         "fields": {
           "meaning": "الْإِبِلُ"
         }
-      }
+      },
+      "printedArabic": "الإبل"
     },
     {
       "id": "p27_t25",
@@ -312,7 +720,8 @@
         "fields": {
           "meaning": "Ve وَاِجْلَوَّذَتِ"
         }
-      }
+      },
+      "printedArabic": "واجلوذت"
     },
     {
       "id": "p27_t26",
@@ -323,7 +732,8 @@
         "fields": {
           "meaning": "الْإِبِلُ"
         }
-      }
+      },
+      "printedArabic": "الإبل"
     }
   ]
 }

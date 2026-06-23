@@ -8,6 +8,388 @@
       "id": "p47_ph1",
       "tokenIds": [
         "p47_t1",
+        "p47_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve وَاعْلَمْ أَنَّ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph2",
+      "tokenIds": [
+        "p47_t19",
+        "p47_t20",
+        "p47_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin نَصَرَ Ve وَإِمَّا",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph3",
+      "tokenIds": [
+        "p47_t37",
+        "p47_t38",
+        "p47_t39"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin Ve وَعَدَ Ve وَقَالَ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph4",
+      "tokenIds": [
+        "p47_t10",
+        "p47_t11",
+        "p47_t12"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde مُقَابَلَةِ فَائِهِ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph5",
+      "tokenIds": [
+        "p47_t16",
+        "p47_t17",
+        "p47_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "-den حُرُوفِ الْعِلَّةِ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph6",
+      "tokenIds": [
+        "p47_t26",
+        "p47_t27",
+        "p47_t28"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde مُقَابَلَةِ فَائِهِ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph7",
+      "tokenIds": [
+        "p47_t34",
+        "p47_t35",
+        "p47_t36"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "-den حُرُوفِ الْعِلَّةِ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph8",
+      "tokenIds": [
+        "p47_t1",
+        "p47_t2",
+        "p47_t3",
+        "p47_t4",
+        "p47_t5",
+        "p47_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve وَاعْلَمْ أَنَّ كُلَّ فِعْلٍ إِمَّا Sahih",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph9",
+      "tokenIds": [
+        "p47_t1",
+        "p47_t2",
+        "p47_t3",
+        "p47_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve وَاعْلَمْ أَنَّ كُلَّ فِعْلٍ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph10",
+      "tokenIds": [
+        "p47_t5",
+        "p47_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "إِمَّا Sahih",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph11",
+      "tokenIds": [
+        "p47_t7",
+        "p47_t8",
+        "p47_t9",
+        "p47_t10",
+        "p47_t11",
+        "p47_t12",
+        "p47_t13",
+        "p47_t14",
+        "p47_t15",
+        "p47_t16",
+        "p47_t17",
+        "p47_t18"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o الَّذِي لَيْسَ İçinde مُقَابَلَةِ فَائِهِ Ve وَعَيْنِهِ Ve وَلَامِهِ Bir harf -den حُرُوفِ الْعِلَّةِ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph12",
+      "tokenIds": [
+        "p47_t7",
+        "p47_t8",
+        "p47_t9",
+        "p47_t10"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o الَّذِي لَيْسَ İçinde",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph13",
+      "tokenIds": [
+        "p47_t11",
+        "p47_t12",
+        "p47_t13",
+        "p47_t14"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "مُقَابَلَةِ فَائِهِ Ve وَعَيْنِهِ Ve وَلَامِهِ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph14",
+      "tokenIds": [
+        "p47_t15",
+        "p47_t16",
+        "p47_t17",
+        "p47_t18"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bir harf -den حُرُوفِ الْعِلَّةِ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph15",
+      "tokenIds": [
+        "p47_t19",
+        "p47_t20",
+        "p47_t21",
+        "p47_t22"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin نَصَرَ Ve وَإِمَّا Mu‘tel",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph16",
+      "tokenIds": [
+        "p47_t23",
+        "p47_t24",
+        "p47_t25",
+        "p47_t26",
+        "p47_t27",
+        "p47_t28",
+        "p47_t29",
+        "p47_t30",
+        "p47_t31",
+        "p47_t32",
+        "p47_t33",
+        "p47_t34",
+        "p47_t35",
+        "p47_t36"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o الَّذِي يَكُونُ İçinde مُقَابَلَةِ فَائِهِ أَوْ عَيْنِهِ أَوْ لَامِهِ Bir harf -den حُرُوفِ الْعِلَّةِ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph17",
+      "tokenIds": [
+        "p47_t23",
+        "p47_t24",
+        "p47_t25",
+        "p47_t26"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o الَّذِي يَكُونُ İçinde",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph18",
+      "tokenIds": [
+        "p47_t27",
+        "p47_t28",
+        "p47_t29",
+        "p47_t30"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "مُقَابَلَةِ فَائِهِ أَوْ عَيْنِهِ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph19",
+      "tokenIds": [
+        "p47_t31",
+        "p47_t32",
+        "p47_t33",
+        "p47_t34"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَوْ لَامِهِ Bir harf -den",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph20",
+      "tokenIds": [
+        "p47_t35",
+        "p47_t36"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "حُرُوفِ الْعِلَّةِ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph21",
+      "tokenIds": [
+        "p47_t37",
+        "p47_t38",
+        "p47_t39",
+        "p47_t40"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin Ve وَعَدَ Ve وَقَالَ Ve وَطَغَى",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph22",
+      "tokenIds": [
+        "p47_t17",
+        "p47_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "حُرُوفِ الْعِلَّةِ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph23",
+      "tokenIds": [
+        "p47_t18",
+        "p47_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْعِلَّةِ Örneğin",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph24",
+      "tokenIds": [
+        "p47_t36",
+        "p47_t37"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْعِلَّةِ Örneğin",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph25",
+      "tokenIds": [
+        "p47_t2",
+        "p47_t3",
+        "p47_t4"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَنَّ كُلَّ فِعْلٍ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph26",
+      "tokenIds": [
+        "p47_t2",
+        "p47_t3",
+        "p47_t4",
+        "p47_t5"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَنَّ كُلَّ فِعْلٍ إِمَّا",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph27",
+      "tokenIds": [
+        "p47_t5",
+        "p47_t6",
+        "p47_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "إِمَّا Sahih Ve o",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph28",
+      "tokenIds": [
+        "p47_t5",
+        "p47_t6",
+        "p47_t7",
+        "p47_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "إِمَّا Sahih Ve o الَّذِي",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph29",
+      "tokenIds": [
+        "p47_t12",
+        "p47_t13",
+        "p47_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَائِهِ Ve وَعَيْنِهِ Ve وَلَامِهِ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph30",
+      "tokenIds": [
+        "p47_t12",
+        "p47_t13",
+        "p47_t14",
+        "p47_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَائِهِ Ve وَعَيْنِهِ Ve وَلَامِهِ Bir harf",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph31",
+      "tokenIds": [
+        "p47_t28",
+        "p47_t29",
+        "p47_t30"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَائِهِ أَوْ عَيْنِهِ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph32",
+      "tokenIds": [
+        "p47_t28",
+        "p47_t29",
+        "p47_t30",
+        "p47_t31"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَائِهِ أَوْ عَيْنِهِ أَوْ",
+      "parentId": "p47_ph33"
+    },
+    {
+      "id": "p47_ph33",
+      "tokenIds": [
+        "p47_t1",
         "p47_t2",
         "p47_t3",
         "p47_t4",
@@ -62,7 +444,8 @@
         "fields": {
           "meaning": "Ve وَاعْلَمْ"
         }
-      }
+      },
+      "printedArabic": "واعلم"
     },
     {
       "id": "p47_t2",
@@ -73,7 +456,8 @@
         "fields": {
           "meaning": "أَنَّ"
         }
-      }
+      },
+      "printedArabic": "أن"
     },
     {
       "id": "p47_t3",
@@ -84,7 +468,8 @@
         "fields": {
           "meaning": "كُلَّ"
         }
-      }
+      },
+      "printedArabic": "كل"
     },
     {
       "id": "p47_t4",
@@ -106,7 +491,8 @@
         "fields": {
           "meaning": "إِمَّا"
         }
-      }
+      },
+      "printedArabic": "إما"
     },
     {
       "id": "p47_t6",
@@ -117,7 +503,8 @@
         "fields": {
           "meaning": "Sahih"
         }
-      }
+      },
+      "printedArabic": "صحيح"
     },
     {
       "id": "p47_t7",
@@ -128,7 +515,8 @@
         "fields": {
           "meaning": "Ve o"
         }
-      }
+      },
+      "printedArabic": "وهو"
     },
     {
       "id": "p47_t8",
@@ -139,7 +527,8 @@
         "fields": {
           "meaning": "الَّذِي"
         }
-      }
+      },
+      "printedArabic": "الذي"
     },
     {
       "id": "p47_t9",
@@ -150,7 +539,8 @@
         "fields": {
           "meaning": "لَيْسَ"
         }
-      }
+      },
+      "printedArabic": "ليس"
     },
     {
       "id": "p47_t10",
@@ -161,7 +551,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p47_t11",
@@ -172,7 +563,8 @@
         "fields": {
           "meaning": "مُقَابَلَةِ"
         }
-      }
+      },
+      "printedArabic": "مقابلة"
     },
     {
       "id": "p47_t12",
@@ -183,7 +575,8 @@
         "fields": {
           "meaning": "فَائِهِ"
         }
-      }
+      },
+      "printedArabic": "فائه"
     },
     {
       "id": "p47_t13",
@@ -194,7 +587,8 @@
         "fields": {
           "meaning": "Ve وَعَيْنِهِ"
         }
-      }
+      },
+      "printedArabic": "وعينه"
     },
     {
       "id": "p47_t14",
@@ -205,7 +599,8 @@
         "fields": {
           "meaning": "Ve وَلَامِهِ"
         }
-      }
+      },
+      "printedArabic": "ولامه"
     },
     {
       "id": "p47_t15",
@@ -216,7 +611,8 @@
         "fields": {
           "meaning": "Bir harf"
         }
-      }
+      },
+      "printedArabic": "حرف"
     },
     {
       "id": "p47_t16",
@@ -227,7 +623,8 @@
         "fields": {
           "meaning": "-den"
         }
-      }
+      },
+      "printedArabic": "من"
     },
     {
       "id": "p47_t17",
@@ -238,7 +635,8 @@
         "fields": {
           "meaning": "حُرُوفِ"
         }
-      }
+      },
+      "printedArabic": "حروف"
     },
     {
       "id": "p47_t18",
@@ -249,7 +647,8 @@
         "fields": {
           "meaning": "الْعِلَّةِ"
         }
-      }
+      },
+      "printedArabic": "العلة"
     },
     {
       "id": "p47_t19",
@@ -260,7 +659,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p47_t20",
@@ -282,7 +682,8 @@
         "fields": {
           "meaning": "Ve وَإِمَّا"
         }
-      }
+      },
+      "printedArabic": "وإما"
     },
     {
       "id": "p47_t22",
@@ -293,7 +694,8 @@
         "fields": {
           "meaning": "Mu‘tel"
         }
-      }
+      },
+      "printedArabic": "معتل"
     },
     {
       "id": "p47_t23",
@@ -304,7 +706,8 @@
         "fields": {
           "meaning": "Ve o"
         }
-      }
+      },
+      "printedArabic": "وهو"
     },
     {
       "id": "p47_t24",
@@ -315,7 +718,8 @@
         "fields": {
           "meaning": "الَّذِي"
         }
-      }
+      },
+      "printedArabic": "الذي"
     },
     {
       "id": "p47_t25",
@@ -326,7 +730,8 @@
         "fields": {
           "meaning": "يَكُونُ"
         }
-      }
+      },
+      "printedArabic": "يكون"
     },
     {
       "id": "p47_t26",
@@ -337,7 +742,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p47_t27",
@@ -348,7 +754,8 @@
         "fields": {
           "meaning": "مُقَابَلَةِ"
         }
-      }
+      },
+      "printedArabic": "مقابلة"
     },
     {
       "id": "p47_t28",
@@ -359,7 +766,8 @@
         "fields": {
           "meaning": "فَائِهِ"
         }
-      }
+      },
+      "printedArabic": "فائه"
     },
     {
       "id": "p47_t29",
@@ -370,7 +778,8 @@
         "fields": {
           "meaning": "أَوْ"
         }
-      }
+      },
+      "printedArabic": "أو"
     },
     {
       "id": "p47_t30",
@@ -381,7 +790,8 @@
         "fields": {
           "meaning": "عَيْنِهِ"
         }
-      }
+      },
+      "printedArabic": "عينه"
     },
     {
       "id": "p47_t31",
@@ -392,7 +802,8 @@
         "fields": {
           "meaning": "أَوْ"
         }
-      }
+      },
+      "printedArabic": "أو"
     },
     {
       "id": "p47_t32",
@@ -403,7 +814,8 @@
         "fields": {
           "meaning": "لَامِهِ"
         }
-      }
+      },
+      "printedArabic": "لامه"
     },
     {
       "id": "p47_t33",
@@ -414,7 +826,8 @@
         "fields": {
           "meaning": "Bir harf"
         }
-      }
+      },
+      "printedArabic": "حرف"
     },
     {
       "id": "p47_t34",
@@ -425,7 +838,8 @@
         "fields": {
           "meaning": "-den"
         }
-      }
+      },
+      "printedArabic": "من"
     },
     {
       "id": "p47_t35",
@@ -436,7 +850,8 @@
         "fields": {
           "meaning": "حُرُوفِ"
         }
-      }
+      },
+      "printedArabic": "حروف"
     },
     {
       "id": "p47_t36",
@@ -447,7 +862,8 @@
         "fields": {
           "meaning": "الْعِلَّةِ"
         }
-      }
+      },
+      "printedArabic": "العلة"
     },
     {
       "id": "p47_t37",
@@ -458,7 +874,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p47_t38",

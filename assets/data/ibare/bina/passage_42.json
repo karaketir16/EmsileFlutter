@@ -8,6 +8,342 @@
       "id": "p42_ph1",
       "tokenIds": [
         "p42_t1",
+        "p42_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Dördüncü",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph2",
+      "tokenIds": [
+        "p42_t6",
+        "p42_t7",
+        "p42_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu تَرَهْوَكَ يَتَرَهْوَكُ",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph3",
+      "tokenIds": [
+        "p42_t10",
+        "p42_t11",
+        "p42_t12"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Tânın",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph4",
+      "tokenIds": [
+        "p42_t19",
+        "p42_t20",
+        "p42_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Lâzımlık içindir Örneğin",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph5",
+      "tokenIds": [
+        "p42_t21",
+        "p42_t22",
+        "p42_t23"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin تَرَهْوَكَ Zeyd",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph6",
+      "tokenIds": [
+        "p42_t13",
+        "p42_t14",
+        "p42_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde Başında Ve وَالْوَاوِ",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph7",
+      "tokenIds": [
+        "p42_t16",
+        "p42_t17",
+        "p42_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Aynın Ve وَاللَّامِ",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph8",
+      "tokenIds": [
+        "p42_t20",
+        "p42_t21",
+        "p42_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Lâzımlık içindir Örneğin تَرَهْوَكَ",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph9",
+      "tokenIds": [
+        "p42_t1",
+        "p42_t2",
+        "p42_t3",
+        "p42_t4",
+        "p42_t5",
+        "p42_t6",
+        "p42_t7",
+        "p42_t8",
+        "p42_t9"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Dördüncü تَفَعْوَلَ يَتَفَعْوَلُ تَفَعْوُلًا Mevzunu تَرَهْوَكَ يَتَرَهْوَكُ تَرَهْوُكًا",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph10",
+      "tokenIds": [
+        "p42_t1",
+        "p42_t2",
+        "p42_t3",
+        "p42_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Dördüncü تَفَعْوَلَ يَتَفَعْوَلُ",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph11",
+      "tokenIds": [
+        "p42_t5",
+        "p42_t6",
+        "p42_t7",
+        "p42_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَفَعْوُلًا Mevzunu تَرَهْوَكَ يَتَرَهْوَكُ",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph12",
+      "tokenIds": [
+        "p42_t10",
+        "p42_t11",
+        "p42_t12",
+        "p42_t13",
+        "p42_t14",
+        "p42_t15",
+        "p42_t16",
+        "p42_t17",
+        "p42_t18"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Tânın İçinde Başında Ve وَالْوَاوِ Arasında Aynın Ve وَاللَّامِ",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph13",
+      "tokenIds": [
+        "p42_t10",
+        "p42_t11",
+        "p42_t12",
+        "p42_t13"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Tânın İçinde",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph14",
+      "tokenIds": [
+        "p42_t14",
+        "p42_t15",
+        "p42_t16",
+        "p42_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Başında Ve وَالْوَاوِ Arasında Aynın",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph15",
+      "tokenIds": [
+        "p42_t19",
+        "p42_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Lâzımlık içindir",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph16",
+      "tokenIds": [
+        "p42_t16",
+        "p42_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Aynın",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph17",
+      "tokenIds": [
+        "p42_t17",
+        "p42_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Aynın Ve وَاللَّامِ",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph18",
+      "tokenIds": [
+        "p42_t3",
+        "p42_t4",
+        "p42_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَفَعْوَلَ يَتَفَعْوَلُ تَفَعْوُلًا",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph19",
+      "tokenIds": [
+        "p42_t3",
+        "p42_t4",
+        "p42_t5",
+        "p42_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَفَعْوَلَ يَتَفَعْوَلُ تَفَعْوُلًا Mevzunu",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph20",
+      "tokenIds": [
+        "p42_t4",
+        "p42_t5",
+        "p42_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَتَفَعْوَلُ تَفَعْوُلًا Mevzunu",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph21",
+      "tokenIds": [
+        "p42_t4",
+        "p42_t5",
+        "p42_t6",
+        "p42_t7"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَتَفَعْوَلُ تَفَعْوُلًا Mevzunu تَرَهْوَكَ",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph22",
+      "tokenIds": [
+        "p42_t5",
+        "p42_t6",
+        "p42_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَفَعْوُلًا Mevzunu تَرَهْوَكَ",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph23",
+      "tokenIds": [
+        "p42_t7",
+        "p42_t8",
+        "p42_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَرَهْوَكَ يَتَرَهْوَكُ تَرَهْوُكًا",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph24",
+      "tokenIds": [
+        "p42_t7",
+        "p42_t8",
+        "p42_t9",
+        "p42_t10"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَرَهْوَكَ يَتَرَهْوَكُ تَرَهْوُكًا Ve alâmeti",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph25",
+      "tokenIds": [
+        "p42_t8",
+        "p42_t9",
+        "p42_t10"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَتَرَهْوَكُ تَرَهْوُكًا Ve alâmeti",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph26",
+      "tokenIds": [
+        "p42_t8",
+        "p42_t9",
+        "p42_t10",
+        "p42_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَتَرَهْوَكُ تَرَهْوُكًا Ve alâmeti Eklenmesi",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph27",
+      "tokenIds": [
+        "p42_t9",
+        "p42_t10",
+        "p42_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَرَهْوُكًا Ve alâmeti Eklenmesi",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph28",
+      "tokenIds": [
+        "p42_t9",
+        "p42_t10",
+        "p42_t11",
+        "p42_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَرَهْوُكًا Ve alâmeti Eklenmesi Tânın",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph29",
+      "tokenIds": [
+        "p42_t14",
+        "p42_t15",
+        "p42_t16"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Başında Ve وَالْوَاوِ Arasında",
+      "parentId": "p42_ph30"
+    },
+    {
+      "id": "p42_ph30",
+      "tokenIds": [
+        "p42_t1",
         "p42_t2",
         "p42_t3",
         "p42_t4",
@@ -45,7 +381,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p42_t2",
@@ -56,7 +393,8 @@
         "fields": {
           "meaning": "Dördüncü"
         }
-      }
+      },
+      "printedArabic": "الرابع"
     },
     {
       "id": "p42_t3",
@@ -100,7 +438,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p42_t7",
@@ -144,7 +483,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p42_t11",
@@ -155,7 +495,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p42_t12",
@@ -166,7 +507,8 @@
         "fields": {
           "meaning": "Tânın"
         }
-      }
+      },
+      "printedArabic": "التاء"
     },
     {
       "id": "p42_t13",
@@ -177,7 +519,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p42_t14",
@@ -188,7 +531,8 @@
         "fields": {
           "meaning": "Başında"
         }
-      }
+      },
+      "printedArabic": "أوله"
     },
     {
       "id": "p42_t15",
@@ -199,7 +543,8 @@
         "fields": {
           "meaning": "Ve وَالْوَاوِ"
         }
-      }
+      },
+      "printedArabic": "والواو"
     },
     {
       "id": "p42_t16",
@@ -210,7 +555,8 @@
         "fields": {
           "meaning": "Arasında"
         }
-      }
+      },
+      "printedArabic": "بين"
     },
     {
       "id": "p42_t17",
@@ -221,7 +567,8 @@
         "fields": {
           "meaning": "Aynın"
         }
-      }
+      },
+      "printedArabic": "العين"
     },
     {
       "id": "p42_t18",
@@ -232,7 +579,8 @@
         "fields": {
           "meaning": "Ve وَاللَّامِ"
         }
-      }
+      },
+      "printedArabic": "واللام"
     },
     {
       "id": "p42_t19",
@@ -243,7 +591,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p42_t20",
@@ -254,7 +603,8 @@
         "fields": {
           "meaning": "Lâzımlık içindir"
         }
-      }
+      },
+      "printedArabic": "للازم"
     },
     {
       "id": "p42_t21",
@@ -265,7 +615,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p42_t22",
@@ -287,7 +638,8 @@
         "fields": {
           "meaning": "Zeyd"
         }
-      }
+      },
+      "printedArabic": "زيد"
     }
   ]
 }

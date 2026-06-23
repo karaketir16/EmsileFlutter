@@ -8,6 +8,628 @@
       "id": "p46_ph1",
       "tokenIds": [
         "p46_t1",
+        "p46_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِعْلَمْ أَنَّ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph2",
+      "tokenIds": [
+        "p46_t12",
+        "p46_t13",
+        "p46_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin كَرُمَ أَوْ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph3",
+      "tokenIds": [
+        "p46_t17",
+        "p46_t18",
+        "p46_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin Ve وَعَدَ Ve وَإِمَّا",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph4",
+      "tokenIds": [
+        "p46_t24",
+        "p46_t25",
+        "p46_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin أَكْرَمَ أَوْ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph5",
+      "tokenIds": [
+        "p46_t29",
+        "p46_t30",
+        "p46_t31"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin أَوْعَدَ Ve وَإِمَّا",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph6",
+      "tokenIds": [
+        "p46_t35",
+        "p46_t36",
+        "p46_t37"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin دَحْرَجَ أَوْ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph7",
+      "tokenIds": [
+        "p46_t40",
+        "p46_t41",
+        "p46_t42"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin Ve وَسْوَسَ Ve وَزَلْزَلَ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph8",
+      "tokenIds": [
+        "p46_t48",
+        "p46_t49",
+        "p46_t50"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin تَدَحْرَجَ أَوْ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph9",
+      "tokenIds": [
+        "p46_t53",
+        "p46_t54",
+        "p46_t55"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin تَوَسْوَسَ Ve وَيُقَالُ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph10",
+      "tokenIds": [
+        "p46_t5",
+        "p46_t6",
+        "p46_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde هَذِهِ الْأَبْوَابِ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph11",
+      "tokenIds": [
+        "p46_t1",
+        "p46_t2",
+        "p46_t3",
+        "p46_t4",
+        "p46_t5",
+        "p46_t6",
+        "p46_t7",
+        "p46_t8",
+        "p46_t9",
+        "p46_t10",
+        "p46_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِعْلَمْ أَنَّ الْفِعْلَ الْمُنْحَصِرَ İçinde هَذِهِ الْأَبْوَابِ إِمَّا ثُلَاثِيٌّ مُجَرَّدٌ Sâlim",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph12",
+      "tokenIds": [
+        "p46_t1",
+        "p46_t2",
+        "p46_t3",
+        "p46_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِعْلَمْ أَنَّ الْفِعْلَ الْمُنْحَصِرَ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph13",
+      "tokenIds": [
+        "p46_t5",
+        "p46_t6",
+        "p46_t7",
+        "p46_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "İçinde هَذِهِ الْأَبْوَابِ إِمَّا",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph14",
+      "tokenIds": [
+        "p46_t9",
+        "p46_t10",
+        "p46_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "ثُلَاثِيٌّ مُجَرَّدٌ Sâlim",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph15",
+      "tokenIds": [
+        "p46_t12",
+        "p46_t13",
+        "p46_t14",
+        "p46_t15",
+        "p46_t16"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin كَرُمَ أَوْ غَيْرُ سَالِمٍ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph16",
+      "tokenIds": [
+        "p46_t12",
+        "p46_t13",
+        "p46_t14",
+        "p46_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin كَرُمَ أَوْ غَيْرُ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph17",
+      "tokenIds": [
+        "p46_t17",
+        "p46_t18",
+        "p46_t19",
+        "p46_t20",
+        "p46_t21",
+        "p46_t22",
+        "p46_t23"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin Ve وَعَدَ Ve وَإِمَّا ثُلَاثِيٌّ مَزِيدٌ فِيهِ Sâlim",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph18",
+      "tokenIds": [
+        "p46_t17",
+        "p46_t18",
+        "p46_t19",
+        "p46_t20"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin Ve وَعَدَ Ve وَإِمَّا ثُلَاثِيٌّ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph19",
+      "tokenIds": [
+        "p46_t21",
+        "p46_t22",
+        "p46_t23"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "مَزِيدٌ فِيهِ Sâlim",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph20",
+      "tokenIds": [
+        "p46_t24",
+        "p46_t25",
+        "p46_t26",
+        "p46_t27",
+        "p46_t28"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin أَكْرَمَ أَوْ غَيْرُ سَالِمٍ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph21",
+      "tokenIds": [
+        "p46_t24",
+        "p46_t25",
+        "p46_t26",
+        "p46_t27"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin أَكْرَمَ أَوْ غَيْرُ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph22",
+      "tokenIds": [
+        "p46_t29",
+        "p46_t30",
+        "p46_t31",
+        "p46_t32",
+        "p46_t33",
+        "p46_t34"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin أَوْعَدَ Ve وَإِمَّا رُبَاعِيٌّ مُجَرَّدٌ Sâlim",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph23",
+      "tokenIds": [
+        "p46_t29",
+        "p46_t30",
+        "p46_t31",
+        "p46_t32"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin أَوْعَدَ Ve وَإِمَّا رُبَاعِيٌّ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph24",
+      "tokenIds": [
+        "p46_t33",
+        "p46_t34"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "مُجَرَّدٌ Sâlim",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph25",
+      "tokenIds": [
+        "p46_t35",
+        "p46_t36",
+        "p46_t37",
+        "p46_t38",
+        "p46_t39"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin دَحْرَجَ أَوْ غَيْرُ سَالِمٍ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph26",
+      "tokenIds": [
+        "p46_t35",
+        "p46_t36",
+        "p46_t37",
+        "p46_t38"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin دَحْرَجَ أَوْ غَيْرُ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph27",
+      "tokenIds": [
+        "p46_t40",
+        "p46_t41",
+        "p46_t42",
+        "p46_t43",
+        "p46_t44",
+        "p46_t45",
+        "p46_t46",
+        "p46_t47"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin Ve وَسْوَسَ Ve وَزَلْزَلَ Ve وَإِمَّا رُبَاعِيٌّ مَزِيدٌ فِيهِ Sâlim",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph28",
+      "tokenIds": [
+        "p46_t40",
+        "p46_t41",
+        "p46_t42",
+        "p46_t43"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin Ve وَسْوَسَ Ve وَزَلْزَلَ Ve وَإِمَّا",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph29",
+      "tokenIds": [
+        "p46_t44",
+        "p46_t45",
+        "p46_t46",
+        "p46_t47"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "رُبَاعِيٌّ مَزِيدٌ فِيهِ Sâlim",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph30",
+      "tokenIds": [
+        "p46_t48",
+        "p46_t49",
+        "p46_t50",
+        "p46_t51",
+        "p46_t52"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin تَدَحْرَجَ أَوْ غَيْرُ سَالِمٍ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph31",
+      "tokenIds": [
+        "p46_t48",
+        "p46_t49",
+        "p46_t50",
+        "p46_t51"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin تَدَحْرَجَ أَوْ غَيْرُ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph32",
+      "tokenIds": [
+        "p46_t53",
+        "p46_t54",
+        "p46_t55",
+        "p46_t56",
+        "p46_t57",
+        "p46_t58"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin تَوَسْوَسَ Ve وَيُقَالُ لَهَا الْأَقْسَامُ الثَّمَانِيَةُ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph33",
+      "tokenIds": [
+        "p46_t53",
+        "p46_t54",
+        "p46_t55",
+        "p46_t56"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin تَوَسْوَسَ Ve وَيُقَالُ لَهَا",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph34",
+      "tokenIds": [
+        "p46_t57",
+        "p46_t58"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْأَقْسَامُ الثَّمَانِيَةُ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph35",
+      "tokenIds": [
+        "p46_t2",
+        "p46_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَنَّ الْفِعْلَ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph36",
+      "tokenIds": [
+        "p46_t3",
+        "p46_t4"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْفِعْلَ الْمُنْحَصِرَ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph37",
+      "tokenIds": [
+        "p46_t4",
+        "p46_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْمُنْحَصِرَ İçinde",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph38",
+      "tokenIds": [
+        "p46_t6",
+        "p46_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "هَذِهِ الْأَبْوَابِ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph39",
+      "tokenIds": [
+        "p46_t7",
+        "p46_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْأَبْوَابِ إِمَّا",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph40",
+      "tokenIds": [
+        "p46_t56",
+        "p46_t57"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "لَهَا الْأَقْسَامُ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph41",
+      "tokenIds": [
+        "p46_t1",
+        "p46_t2",
+        "p46_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِعْلَمْ أَنَّ الْفِعْلَ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph42",
+      "tokenIds": [
+        "p46_t2",
+        "p46_t3",
+        "p46_t4"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَنَّ الْفِعْلَ الْمُنْحَصِرَ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph43",
+      "tokenIds": [
+        "p46_t2",
+        "p46_t3",
+        "p46_t4",
+        "p46_t5"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَنَّ الْفِعْلَ الْمُنْحَصِرَ İçinde",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph44",
+      "tokenIds": [
+        "p46_t8",
+        "p46_t9",
+        "p46_t10"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "إِمَّا ثُلَاثِيٌّ مُجَرَّدٌ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph45",
+      "tokenIds": [
+        "p46_t8",
+        "p46_t9",
+        "p46_t10",
+        "p46_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "إِمَّا ثُلَاثِيٌّ مُجَرَّدٌ Sâlim",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph46",
+      "tokenIds": [
+        "p46_t25",
+        "p46_t26",
+        "p46_t27"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَكْرَمَ أَوْ غَيْرُ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph47",
+      "tokenIds": [
+        "p46_t25",
+        "p46_t26",
+        "p46_t27",
+        "p46_t28"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَكْرَمَ أَوْ غَيْرُ سَالِمٍ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph48",
+      "tokenIds": [
+        "p46_t30",
+        "p46_t31",
+        "p46_t32"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَوْعَدَ Ve وَإِمَّا رُبَاعِيٌّ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph49",
+      "tokenIds": [
+        "p46_t30",
+        "p46_t31",
+        "p46_t32",
+        "p46_t33"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَوْعَدَ Ve وَإِمَّا رُبَاعِيٌّ مُجَرَّدٌ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph50",
+      "tokenIds": [
+        "p46_t49",
+        "p46_t50",
+        "p46_t51"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَدَحْرَجَ أَوْ غَيْرُ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph51",
+      "tokenIds": [
+        "p46_t49",
+        "p46_t50",
+        "p46_t51",
+        "p46_t52"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَدَحْرَجَ أَوْ غَيْرُ سَالِمٍ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph52",
+      "tokenIds": [
+        "p46_t54",
+        "p46_t55",
+        "p46_t56"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَوَسْوَسَ Ve وَيُقَالُ لَهَا",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph53",
+      "tokenIds": [
+        "p46_t54",
+        "p46_t55",
+        "p46_t56",
+        "p46_t57"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَوَسْوَسَ Ve وَيُقَالُ لَهَا الْأَقْسَامُ",
+      "parentId": "p46_ph54"
+    },
+    {
+      "id": "p46_ph54",
+      "tokenIds": [
+        "p46_t1",
         "p46_t2",
         "p46_t3",
         "p46_t4",
@@ -80,7 +702,8 @@
         "fields": {
           "meaning": "اِعْلَمْ"
         }
-      }
+      },
+      "printedArabic": "اعلم"
     },
     {
       "id": "p46_t2",
@@ -91,7 +714,8 @@
         "fields": {
           "meaning": "أَنَّ"
         }
-      }
+      },
+      "printedArabic": "أن"
     },
     {
       "id": "p46_t3",
@@ -102,7 +726,8 @@
         "fields": {
           "meaning": "الْفِعْلَ"
         }
-      }
+      },
+      "printedArabic": "الفعل"
     },
     {
       "id": "p46_t4",
@@ -113,7 +738,8 @@
         "fields": {
           "meaning": "الْمُنْحَصِرَ"
         }
-      }
+      },
+      "printedArabic": "المنحصر"
     },
     {
       "id": "p46_t5",
@@ -124,7 +750,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p46_t6",
@@ -135,7 +762,8 @@
         "fields": {
           "meaning": "هَذِهِ"
         }
-      }
+      },
+      "printedArabic": "هذه"
     },
     {
       "id": "p46_t7",
@@ -146,7 +774,8 @@
         "fields": {
           "meaning": "الْأَبْوَابِ"
         }
-      }
+      },
+      "printedArabic": "الأبواب"
     },
     {
       "id": "p46_t8",
@@ -157,7 +786,8 @@
         "fields": {
           "meaning": "إِمَّا"
         }
-      }
+      },
+      "printedArabic": "إما"
     },
     {
       "id": "p46_t9",
@@ -168,7 +798,8 @@
         "fields": {
           "meaning": "ثُلَاثِيٌّ"
         }
-      }
+      },
+      "printedArabic": "ثلاثي"
     },
     {
       "id": "p46_t10",
@@ -179,7 +810,8 @@
         "fields": {
           "meaning": "مُجَرَّدٌ"
         }
-      }
+      },
+      "printedArabic": "مجرد"
     },
     {
       "id": "p46_t11",
@@ -190,7 +822,8 @@
         "fields": {
           "meaning": "Sâlim"
         }
-      }
+      },
+      "printedArabic": "سالم"
     },
     {
       "id": "p46_t12",
@@ -201,7 +834,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p46_t13",
@@ -223,7 +857,8 @@
         "fields": {
           "meaning": "أَوْ"
         }
-      }
+      },
+      "printedArabic": "أو"
     },
     {
       "id": "p46_t15",
@@ -234,7 +869,8 @@
         "fields": {
           "meaning": "غَيْرُ"
         }
-      }
+      },
+      "printedArabic": "غير"
     },
     {
       "id": "p46_t16",
@@ -245,7 +881,8 @@
         "fields": {
           "meaning": "سَالِمٍ"
         }
-      }
+      },
+      "printedArabic": "سالم"
     },
     {
       "id": "p46_t17",
@@ -278,7 +915,8 @@
         "fields": {
           "meaning": "Ve وَإِمَّا"
         }
-      }
+      },
+      "printedArabic": "وإما"
     },
     {
       "id": "p46_t20",
@@ -289,7 +927,8 @@
         "fields": {
           "meaning": "ثُلَاثِيٌّ"
         }
-      }
+      },
+      "printedArabic": "ثلاثي"
     },
     {
       "id": "p46_t21",
@@ -300,7 +939,8 @@
         "fields": {
           "meaning": "مَزِيدٌ"
         }
-      }
+      },
+      "printedArabic": "مزيد"
     },
     {
       "id": "p46_t22",
@@ -311,7 +951,8 @@
         "fields": {
           "meaning": "فِيهِ"
         }
-      }
+      },
+      "printedArabic": "فيه"
     },
     {
       "id": "p46_t23",
@@ -322,7 +963,8 @@
         "fields": {
           "meaning": "Sâlim"
         }
-      }
+      },
+      "printedArabic": "سالم"
     },
     {
       "id": "p46_t24",
@@ -333,7 +975,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p46_t25",
@@ -355,7 +998,8 @@
         "fields": {
           "meaning": "أَوْ"
         }
-      }
+      },
+      "printedArabic": "أو"
     },
     {
       "id": "p46_t27",
@@ -366,7 +1010,8 @@
         "fields": {
           "meaning": "غَيْرُ"
         }
-      }
+      },
+      "printedArabic": "غير"
     },
     {
       "id": "p46_t28",
@@ -377,7 +1022,8 @@
         "fields": {
           "meaning": "سَالِمٍ"
         }
-      }
+      },
+      "printedArabic": "سالم"
     },
     {
       "id": "p46_t29",
@@ -410,7 +1056,8 @@
         "fields": {
           "meaning": "Ve وَإِمَّا"
         }
-      }
+      },
+      "printedArabic": "وإما"
     },
     {
       "id": "p46_t32",
@@ -421,7 +1068,8 @@
         "fields": {
           "meaning": "رُبَاعِيٌّ"
         }
-      }
+      },
+      "printedArabic": "رباعي"
     },
     {
       "id": "p46_t33",
@@ -432,7 +1080,8 @@
         "fields": {
           "meaning": "مُجَرَّدٌ"
         }
-      }
+      },
+      "printedArabic": "مجرد"
     },
     {
       "id": "p46_t34",
@@ -443,7 +1092,8 @@
         "fields": {
           "meaning": "Sâlim"
         }
-      }
+      },
+      "printedArabic": "سالم"
     },
     {
       "id": "p46_t35",
@@ -454,7 +1104,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p46_t36",
@@ -476,7 +1127,8 @@
         "fields": {
           "meaning": "أَوْ"
         }
-      }
+      },
+      "printedArabic": "أو"
     },
     {
       "id": "p46_t38",
@@ -487,7 +1139,8 @@
         "fields": {
           "meaning": "غَيْرُ"
         }
-      }
+      },
+      "printedArabic": "غير"
     },
     {
       "id": "p46_t39",
@@ -498,7 +1151,8 @@
         "fields": {
           "meaning": "سَالِمٍ"
         }
-      }
+      },
+      "printedArabic": "سالم"
     },
     {
       "id": "p46_t40",
@@ -542,7 +1196,8 @@
         "fields": {
           "meaning": "Ve وَإِمَّا"
         }
-      }
+      },
+      "printedArabic": "وإما"
     },
     {
       "id": "p46_t44",
@@ -553,7 +1208,8 @@
         "fields": {
           "meaning": "رُبَاعِيٌّ"
         }
-      }
+      },
+      "printedArabic": "رباعي"
     },
     {
       "id": "p46_t45",
@@ -564,7 +1220,8 @@
         "fields": {
           "meaning": "مَزِيدٌ"
         }
-      }
+      },
+      "printedArabic": "مزيد"
     },
     {
       "id": "p46_t46",
@@ -575,7 +1232,8 @@
         "fields": {
           "meaning": "فِيهِ"
         }
-      }
+      },
+      "printedArabic": "فيه"
     },
     {
       "id": "p46_t47",
@@ -586,7 +1244,8 @@
         "fields": {
           "meaning": "Sâlim"
         }
-      }
+      },
+      "printedArabic": "سالم"
     },
     {
       "id": "p46_t48",
@@ -597,7 +1256,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p46_t49",
@@ -619,7 +1279,8 @@
         "fields": {
           "meaning": "أَوْ"
         }
-      }
+      },
+      "printedArabic": "أو"
     },
     {
       "id": "p46_t51",
@@ -630,7 +1291,8 @@
         "fields": {
           "meaning": "غَيْرُ"
         }
-      }
+      },
+      "printedArabic": "غير"
     },
     {
       "id": "p46_t52",
@@ -641,7 +1303,8 @@
         "fields": {
           "meaning": "سَالِمٍ"
         }
-      }
+      },
+      "printedArabic": "سالم"
     },
     {
       "id": "p46_t53",
@@ -674,7 +1337,8 @@
         "fields": {
           "meaning": "Ve وَيُقَالُ"
         }
-      }
+      },
+      "printedArabic": "ويقال"
     },
     {
       "id": "p46_t56",
@@ -685,7 +1349,8 @@
         "fields": {
           "meaning": "لَهَا"
         }
-      }
+      },
+      "printedArabic": "لها"
     },
     {
       "id": "p46_t57",
@@ -696,7 +1361,8 @@
         "fields": {
           "meaning": "الْأَقْسَامُ"
         }
-      }
+      },
+      "printedArabic": "الأقسام"
     },
     {
       "id": "p46_t58",
@@ -707,7 +1373,8 @@
         "fields": {
           "meaning": "الثَّمَانِيَةُ"
         }
-      }
+      },
+      "printedArabic": "الثمانية"
     }
   ]
 }

@@ -8,6 +8,410 @@
       "id": "p44_ph1",
       "tokenIds": [
         "p44_t1",
+        "p44_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَوَابِعُ مُلْحَقَاتِ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph2",
+      "tokenIds": [
+        "p44_t11",
+        "p44_t12",
+        "p44_t13"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu اِقْعَنْسَسَ يَقْعَنْسِسُ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph3",
+      "tokenIds": [
+        "p44_t15",
+        "p44_t16",
+        "p44_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph4",
+      "tokenIds": [
+        "p44_t24",
+        "p44_t25",
+        "p44_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Mübalağa içindir اللَّازِمِ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph5",
+      "tokenIds": [
+        "p44_t20",
+        "p44_t21",
+        "p44_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "-den Cinsinden لَامِ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph6",
+      "tokenIds": [
+        "p44_t25",
+        "p44_t26",
+        "p44_t27"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mübalağa içindir اللَّازِمِ يُقَالُ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph7",
+      "tokenIds": [
+        "p44_t1",
+        "p44_t2",
+        "p44_t3",
+        "p44_t4",
+        "p44_t5"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَوَابِعُ مُلْحَقَاتِ الرُّبَاعِيِّ الْمَزِيدِ بَابَانِ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph8",
+      "tokenIds": [
+        "p44_t1",
+        "p44_t2",
+        "p44_t3",
+        "p44_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَوَابِعُ مُلْحَقَاتِ الرُّبَاعِيِّ الْمَزِيدِ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph9",
+      "tokenIds": [
+        "p44_t6",
+        "p44_t7",
+        "p44_t8",
+        "p44_t9",
+        "p44_t10",
+        "p44_t11",
+        "p44_t12",
+        "p44_t13",
+        "p44_t14"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Birinci اِفْعَنْلَلَ يَفْعَنْلِلُ اِفْعِنْلَالًا Mevzunu اِقْعَنْسَسَ يَقْعَنْسِسُ اِقْعِنْسَاسًا",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph10",
+      "tokenIds": [
+        "p44_t6",
+        "p44_t7",
+        "p44_t8",
+        "p44_t9"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Birinci اِفْعَنْلَلَ يَفْعَنْلِلُ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph11",
+      "tokenIds": [
+        "p44_t10",
+        "p44_t11",
+        "p44_t12",
+        "p44_t13"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِفْعِنْلَالًا Mevzunu اِقْعَنْسَسَ يَقْعَنْسِسُ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph12",
+      "tokenIds": [
+        "p44_t15",
+        "p44_t16",
+        "p44_t17",
+        "p44_t18",
+        "p44_t19",
+        "p44_t20",
+        "p44_t21",
+        "p44_t22",
+        "p44_t23"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin Ve وَالنُّونِ Ve وَحَرْفٍ -den Cinsinden لَامِ Fiilinin",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph13",
+      "tokenIds": [
+        "p44_t15",
+        "p44_t16",
+        "p44_t17",
+        "p44_t18"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin Ve وَالنُّونِ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph14",
+      "tokenIds": [
+        "p44_t19",
+        "p44_t20",
+        "p44_t21",
+        "p44_t22"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve وَحَرْفٍ -den Cinsinden لَامِ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph15",
+      "tokenIds": [
+        "p44_t27",
+        "p44_t28",
+        "p44_t29",
+        "p44_t30",
+        "p44_t31"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُقَالُ قَعَسَ الرَّجُلُ Ve وَاِقْعَنْسَسَ الرَّجُلُ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph16",
+      "tokenIds": [
+        "p44_t27",
+        "p44_t28",
+        "p44_t29",
+        "p44_t30"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُقَالُ قَعَسَ الرَّجُلُ Ve وَاِقْعَنْسَسَ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph17",
+      "tokenIds": [
+        "p44_t3",
+        "p44_t4"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الرُّبَاعِيِّ الْمَزِيدِ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph18",
+      "tokenIds": [
+        "p44_t4",
+        "p44_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْمَزِيدِ بَابَانِ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph19",
+      "tokenIds": [
+        "p44_t5",
+        "p44_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "بَابَانِ Bab",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph20",
+      "tokenIds": [
+        "p44_t6",
+        "p44_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Birinci",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph21",
+      "tokenIds": [
+        "p44_t7",
+        "p44_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Birinci اِفْعَنْلَلَ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph22",
+      "tokenIds": [
+        "p44_t16",
+        "p44_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Eklenmesi Hemzenin",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph23",
+      "tokenIds": [
+        "p44_t17",
+        "p44_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Hemzenin Ve وَالنُّونِ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph24",
+      "tokenIds": [
+        "p44_t1",
+        "p44_t2",
+        "p44_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَوَابِعُ مُلْحَقَاتِ الرُّبَاعِيِّ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph25",
+      "tokenIds": [
+        "p44_t8",
+        "p44_t9",
+        "p44_t10"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِفْعَنْلَلَ يَفْعَنْلِلُ اِفْعِنْلَالًا",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph26",
+      "tokenIds": [
+        "p44_t8",
+        "p44_t9",
+        "p44_t10",
+        "p44_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِفْعَنْلَلَ يَفْعَنْلِلُ اِفْعِنْلَالًا Mevzunu",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph27",
+      "tokenIds": [
+        "p44_t9",
+        "p44_t10",
+        "p44_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَفْعَنْلِلُ اِفْعِنْلَالًا Mevzunu",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph28",
+      "tokenIds": [
+        "p44_t9",
+        "p44_t10",
+        "p44_t11",
+        "p44_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَفْعَنْلِلُ اِفْعِنْلَالًا Mevzunu اِقْعَنْسَسَ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph29",
+      "tokenIds": [
+        "p44_t10",
+        "p44_t11",
+        "p44_t12"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِفْعِنْلَالًا Mevzunu اِقْعَنْسَسَ",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph30",
+      "tokenIds": [
+        "p44_t12",
+        "p44_t13",
+        "p44_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِقْعَنْسَسَ يَقْعَنْسِسُ اِقْعِنْسَاسًا",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph31",
+      "tokenIds": [
+        "p44_t12",
+        "p44_t13",
+        "p44_t14",
+        "p44_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِقْعَنْسَسَ يَقْعَنْسِسُ اِقْعِنْسَاسًا Ve alâmeti",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph32",
+      "tokenIds": [
+        "p44_t13",
+        "p44_t14",
+        "p44_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَقْعَنْسِسُ اِقْعِنْسَاسًا Ve alâmeti",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph33",
+      "tokenIds": [
+        "p44_t13",
+        "p44_t14",
+        "p44_t15",
+        "p44_t16"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَقْعَنْسِسُ اِقْعِنْسَاسًا Ve alâmeti Eklenmesi",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph34",
+      "tokenIds": [
+        "p44_t14",
+        "p44_t15",
+        "p44_t16"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِقْعِنْسَاسًا Ve alâmeti Eklenmesi",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph35",
+      "tokenIds": [
+        "p44_t14",
+        "p44_t15",
+        "p44_t16",
+        "p44_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِقْعِنْسَاسًا Ve alâmeti Eklenmesi Hemzenin",
+      "parentId": "p44_ph36"
+    },
+    {
+      "id": "p44_ph36",
+      "tokenIds": [
+        "p44_t1",
         "p44_t2",
         "p44_t3",
         "p44_t4",
@@ -53,7 +457,8 @@
         "fields": {
           "meaning": "تَوَابِعُ"
         }
-      }
+      },
+      "printedArabic": "توابع"
     },
     {
       "id": "p44_t2",
@@ -64,7 +469,8 @@
         "fields": {
           "meaning": "مُلْحَقَاتِ"
         }
-      }
+      },
+      "printedArabic": "ملحقات"
     },
     {
       "id": "p44_t3",
@@ -75,7 +481,8 @@
         "fields": {
           "meaning": "الرُّبَاعِيِّ"
         }
-      }
+      },
+      "printedArabic": "الرباعي"
     },
     {
       "id": "p44_t4",
@@ -86,7 +493,8 @@
         "fields": {
           "meaning": "الْمَزِيدِ"
         }
-      }
+      },
+      "printedArabic": "المزيد"
     },
     {
       "id": "p44_t5",
@@ -97,7 +505,8 @@
         "fields": {
           "meaning": "بَابَانِ"
         }
-      }
+      },
+      "printedArabic": "بابان"
     },
     {
       "id": "p44_t6",
@@ -108,7 +517,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p44_t7",
@@ -119,7 +529,8 @@
         "fields": {
           "meaning": "Birinci"
         }
-      }
+      },
+      "printedArabic": "الأول"
     },
     {
       "id": "p44_t8",
@@ -163,7 +574,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p44_t12",
@@ -207,7 +619,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p44_t16",
@@ -218,7 +631,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p44_t17",
@@ -229,7 +643,8 @@
         "fields": {
           "meaning": "Hemzenin"
         }
-      }
+      },
+      "printedArabic": "الهمزة"
     },
     {
       "id": "p44_t18",
@@ -240,7 +655,8 @@
         "fields": {
           "meaning": "Ve وَالنُّونِ"
         }
-      }
+      },
+      "printedArabic": "والنون"
     },
     {
       "id": "p44_t19",
@@ -251,7 +667,8 @@
         "fields": {
           "meaning": "Ve وَحَرْفٍ"
         }
-      }
+      },
+      "printedArabic": "وحرف"
     },
     {
       "id": "p44_t20",
@@ -262,7 +679,8 @@
         "fields": {
           "meaning": "-den"
         }
-      }
+      },
+      "printedArabic": "من"
     },
     {
       "id": "p44_t21",
@@ -273,7 +691,8 @@
         "fields": {
           "meaning": "Cinsinden"
         }
-      }
+      },
+      "printedArabic": "جنس"
     },
     {
       "id": "p44_t22",
@@ -284,7 +703,8 @@
         "fields": {
           "meaning": "لَامِ"
         }
-      }
+      },
+      "printedArabic": "لام"
     },
     {
       "id": "p44_t23",
@@ -295,7 +715,8 @@
         "fields": {
           "meaning": "Fiilinin"
         }
-      }
+      },
+      "printedArabic": "فعله"
     },
     {
       "id": "p44_t24",
@@ -306,7 +727,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p44_t25",
@@ -317,7 +739,8 @@
         "fields": {
           "meaning": "Mübalağa içindir"
         }
-      }
+      },
+      "printedArabic": "لمبالغة"
     },
     {
       "id": "p44_t26",
@@ -328,7 +751,8 @@
         "fields": {
           "meaning": "اللَّازِمِ"
         }
-      }
+      },
+      "printedArabic": "اللازم"
     },
     {
       "id": "p44_t27",
@@ -339,7 +763,8 @@
         "fields": {
           "meaning": "يُقَالُ"
         }
-      }
+      },
+      "printedArabic": "يقال"
     },
     {
       "id": "p44_t28",
@@ -350,7 +775,8 @@
         "fields": {
           "meaning": "قَعَسَ"
         }
-      }
+      },
+      "printedArabic": "قعس"
     },
     {
       "id": "p44_t29",
@@ -361,7 +787,8 @@
         "fields": {
           "meaning": "الرَّجُلُ"
         }
-      }
+      },
+      "printedArabic": "الرجل"
     },
     {
       "id": "p44_t30",
@@ -372,7 +799,8 @@
         "fields": {
           "meaning": "Ve وَاِقْعَنْسَسَ"
         }
-      }
+      },
+      "printedArabic": "واقعنسس"
     },
     {
       "id": "p44_t31",
@@ -383,7 +811,8 @@
         "fields": {
           "meaning": "الرَّجُلُ"
         }
-      }
+      },
+      "printedArabic": "الرجل"
     }
   ]
 }

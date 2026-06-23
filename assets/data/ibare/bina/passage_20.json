@@ -8,6 +8,493 @@
       "id": "p20_ph1",
       "tokenIds": [
         "p20_t1",
+        "p20_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Kısım İkinci",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph2",
+      "tokenIds": [
+        "p20_t15",
+        "p20_t16",
+        "p20_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu اِنْكَسَرَ يَنْكَسِرُ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph3",
+      "tokenIds": [
+        "p20_t19",
+        "p20_t20",
+        "p20_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph4",
+      "tokenIds": [
+        "p20_t25",
+        "p20_t26",
+        "p20_t27"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Mütâvaat içindir Örneğin",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph5",
+      "tokenIds": [
+        "p20_t27",
+        "p20_t28",
+        "p20_t29"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin كَسَرْتُ الزُّجَاجَ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph6",
+      "tokenIds": [
+        "p20_t23",
+        "p20_t24",
+        "p20_t25"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde Başında Ve kullanılışı",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph7",
+      "tokenIds": [
+        "p20_t26",
+        "p20_t27",
+        "p20_t28"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mütâvaat içindir Örneğin كَسَرْتُ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph8",
+      "tokenIds": [
+        "p20_t1",
+        "p20_t2",
+        "p20_t3",
+        "p20_t4",
+        "p20_t5",
+        "p20_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Kısım İkinci Fiil Sülâsî Mezîd بِحَرْفَيْنِ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph9",
+      "tokenIds": [
+        "p20_t1",
+        "p20_t2",
+        "p20_t3",
+        "p20_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Kısım İkinci Fiil Sülâsî",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph10",
+      "tokenIds": [
+        "p20_t5",
+        "p20_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mezîd بِحَرْفَيْنِ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph11",
+      "tokenIds": [
+        "p20_t7",
+        "p20_t8",
+        "p20_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve o Beş Bab",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph12",
+      "tokenIds": [
+        "p20_t10",
+        "p20_t11",
+        "p20_t12",
+        "p20_t13",
+        "p20_t14",
+        "p20_t15",
+        "p20_t16",
+        "p20_t17",
+        "p20_t18"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Birinci اِنْفَعَلَ يَنْفَعِلُ اِنْفِعَالًا Mevzunu اِنْكَسَرَ يَنْكَسِرُ اِنْكِسَارًا",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph13",
+      "tokenIds": [
+        "p20_t10",
+        "p20_t11",
+        "p20_t12",
+        "p20_t13"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Birinci اِنْفَعَلَ يَنْفَعِلُ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph14",
+      "tokenIds": [
+        "p20_t14",
+        "p20_t15",
+        "p20_t16",
+        "p20_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِنْفِعَالًا Mevzunu اِنْكَسَرَ يَنْكَسِرُ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph15",
+      "tokenIds": [
+        "p20_t19",
+        "p20_t20",
+        "p20_t21",
+        "p20_t22",
+        "p20_t23",
+        "p20_t24"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin Ve وَالنُّونِ İçinde Başında",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph16",
+      "tokenIds": [
+        "p20_t19",
+        "p20_t20",
+        "p20_t21",
+        "p20_t22"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin Ve وَالنُّونِ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph17",
+      "tokenIds": [
+        "p20_t23",
+        "p20_t24"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde Başında",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph18",
+      "tokenIds": [
+        "p20_t25",
+        "p20_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Mütâvaat içindir",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph19",
+      "tokenIds": [
+        "p20_t27",
+        "p20_t28",
+        "p20_t29",
+        "p20_t30",
+        "p20_t31"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin كَسَرْتُ الزُّجَاجَ فَانْكَسَرَ الزُّجَاجُ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph20",
+      "tokenIds": [
+        "p20_t27",
+        "p20_t28",
+        "p20_t29",
+        "p20_t30"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin كَسَرْتُ الزُّجَاجَ فَانْكَسَرَ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph21",
+      "tokenIds": [
+        "p20_t2",
+        "p20_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İkinci Fiil",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph22",
+      "tokenIds": [
+        "p20_t3",
+        "p20_t4"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Fiil Sülâsî",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph23",
+      "tokenIds": [
+        "p20_t4",
+        "p20_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Sülâsî Mezîd",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph24",
+      "tokenIds": [
+        "p20_t9",
+        "p20_t10"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Bab",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph25",
+      "tokenIds": [
+        "p20_t10",
+        "p20_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Birinci",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph26",
+      "tokenIds": [
+        "p20_t11",
+        "p20_t12"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Birinci اِنْفَعَلَ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph27",
+      "tokenIds": [
+        "p20_t20",
+        "p20_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Eklenmesi Hemzenin",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph28",
+      "tokenIds": [
+        "p20_t21",
+        "p20_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Hemzenin Ve وَالنُّونِ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph29",
+      "tokenIds": [
+        "p20_t9",
+        "p20_t10",
+        "p20_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Bab Birinci",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph30",
+      "tokenIds": [
+        "p20_t9",
+        "p20_t10",
+        "p20_t11",
+        "p20_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Bab Birinci اِنْفَعَلَ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph31",
+      "tokenIds": [
+        "p20_t12",
+        "p20_t13",
+        "p20_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِنْفَعَلَ يَنْفَعِلُ اِنْفِعَالًا",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph32",
+      "tokenIds": [
+        "p20_t12",
+        "p20_t13",
+        "p20_t14",
+        "p20_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِنْفَعَلَ يَنْفَعِلُ اِنْفِعَالًا Mevzunu",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph33",
+      "tokenIds": [
+        "p20_t13",
+        "p20_t14",
+        "p20_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَنْفَعِلُ اِنْفِعَالًا Mevzunu",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph34",
+      "tokenIds": [
+        "p20_t13",
+        "p20_t14",
+        "p20_t15",
+        "p20_t16"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَنْفَعِلُ اِنْفِعَالًا Mevzunu اِنْكَسَرَ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph35",
+      "tokenIds": [
+        "p20_t14",
+        "p20_t15",
+        "p20_t16"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِنْفِعَالًا Mevzunu اِنْكَسَرَ",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph36",
+      "tokenIds": [
+        "p20_t16",
+        "p20_t17",
+        "p20_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِنْكَسَرَ يَنْكَسِرُ اِنْكِسَارًا",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph37",
+      "tokenIds": [
+        "p20_t16",
+        "p20_t17",
+        "p20_t18",
+        "p20_t19"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِنْكَسَرَ يَنْكَسِرُ اِنْكِسَارًا Ve alâmeti",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph38",
+      "tokenIds": [
+        "p20_t17",
+        "p20_t18",
+        "p20_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَنْكَسِرُ اِنْكِسَارًا Ve alâmeti",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph39",
+      "tokenIds": [
+        "p20_t17",
+        "p20_t18",
+        "p20_t19",
+        "p20_t20"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَنْكَسِرُ اِنْكِسَارًا Ve alâmeti Eklenmesi",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph40",
+      "tokenIds": [
+        "p20_t18",
+        "p20_t19",
+        "p20_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِنْكِسَارًا Ve alâmeti Eklenmesi",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph41",
+      "tokenIds": [
+        "p20_t18",
+        "p20_t19",
+        "p20_t20",
+        "p20_t21"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِنْكِسَارًا Ve alâmeti Eklenmesi Hemzenin",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph42",
+      "tokenIds": [
+        "p20_t24",
+        "p20_t25",
+        "p20_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Başında Ve kullanılışı Mütâvaat içindir",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph43",
+      "tokenIds": [
+        "p20_t24",
+        "p20_t25",
+        "p20_t26",
+        "p20_t27"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Başında Ve kullanılışı Mütâvaat içindir Örneğin",
+      "parentId": "p20_ph44"
+    },
+    {
+      "id": "p20_ph44",
+      "tokenIds": [
+        "p20_t1",
         "p20_t2",
         "p20_t3",
         "p20_t4",
@@ -53,7 +540,8 @@
         "fields": {
           "meaning": "Kısım"
         }
-      }
+      },
+      "printedArabic": "النوع"
     },
     {
       "id": "p20_t2",
@@ -64,7 +552,8 @@
         "fields": {
           "meaning": "İkinci"
         }
-      }
+      },
+      "printedArabic": "الثاني"
     },
     {
       "id": "p20_t3",
@@ -75,7 +564,8 @@
         "fields": {
           "meaning": "Fiil"
         }
-      }
+      },
+      "printedArabic": "الفعل"
     },
     {
       "id": "p20_t4",
@@ -86,7 +576,8 @@
         "fields": {
           "meaning": "Sülâsî"
         }
-      }
+      },
+      "printedArabic": "الثلاثي"
     },
     {
       "id": "p20_t5",
@@ -97,7 +588,8 @@
         "fields": {
           "meaning": "Mezîd"
         }
-      }
+      },
+      "printedArabic": "المزيد"
     },
     {
       "id": "p20_t6",
@@ -108,7 +600,8 @@
         "fields": {
           "meaning": "بِحَرْفَيْنِ"
         }
-      }
+      },
+      "printedArabic": "بحرفين"
     },
     {
       "id": "p20_t7",
@@ -119,7 +612,8 @@
         "fields": {
           "meaning": "Ve o"
         }
-      }
+      },
+      "printedArabic": "وهو"
     },
     {
       "id": "p20_t8",
@@ -130,7 +624,8 @@
         "fields": {
           "meaning": "Beş"
         }
-      }
+      },
+      "printedArabic": "خمسة"
     },
     {
       "id": "p20_t9",
@@ -141,7 +636,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "أبواب"
     },
     {
       "id": "p20_t10",
@@ -152,7 +648,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p20_t11",
@@ -163,7 +660,8 @@
         "fields": {
           "meaning": "Birinci"
         }
-      }
+      },
+      "printedArabic": "الأول"
     },
     {
       "id": "p20_t12",
@@ -207,7 +705,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p20_t16",
@@ -251,7 +750,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p20_t20",
@@ -262,7 +762,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p20_t21",
@@ -273,7 +774,8 @@
         "fields": {
           "meaning": "Hemzenin"
         }
-      }
+      },
+      "printedArabic": "الهمزة"
     },
     {
       "id": "p20_t22",
@@ -284,7 +786,8 @@
         "fields": {
           "meaning": "Ve وَالنُّونِ"
         }
-      }
+      },
+      "printedArabic": "والنون"
     },
     {
       "id": "p20_t23",
@@ -295,7 +798,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p20_t24",
@@ -306,7 +810,8 @@
         "fields": {
           "meaning": "Başında"
         }
-      }
+      },
+      "printedArabic": "أوله"
     },
     {
       "id": "p20_t25",
@@ -317,7 +822,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p20_t26",
@@ -328,7 +834,8 @@
         "fields": {
           "meaning": "Mütâvaat içindir"
         }
-      }
+      },
+      "printedArabic": "للمطاوعة"
     },
     {
       "id": "p20_t27",
@@ -339,7 +846,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p20_t28",
@@ -361,7 +869,8 @@
         "fields": {
           "meaning": "الزُّجَاجَ"
         }
-      }
+      },
+      "printedArabic": "الزجاج"
     },
     {
       "id": "p20_t30",
@@ -383,7 +892,8 @@
         "fields": {
           "meaning": "الزُّجَاجُ"
         }
-      }
+      },
+      "printedArabic": "الزجاج"
     }
   ]
 }

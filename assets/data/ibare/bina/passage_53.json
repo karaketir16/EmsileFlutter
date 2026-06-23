@@ -8,6 +8,443 @@
       "id": "p53_ph1",
       "tokenIds": [
         "p53_t1",
+        "p53_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve وَإِمَّا Mehmuz",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph2",
+      "tokenIds": [
+        "p53_t9",
+        "p53_t10",
+        "p53_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin أَخَذَ Ve وَسَأَلَ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph3",
+      "tokenIds": [
+        "p53_t22",
+        "p53_t23",
+        "p53_t24"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin أَخَذَ Ve وَإِنْ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph4",
+      "tokenIds": [
+        "p53_t32",
+        "p53_t33",
+        "p53_t34"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin سَأَلَ Ve وَإِنْ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph5",
+      "tokenIds": [
+        "p53_t42",
+        "p53_t43"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin قَرَأَ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph6",
+      "tokenIds": [
+        "p53_t16",
+        "p53_t17",
+        "p53_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde مُقَابَلَةِ فَائِهِ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph7",
+      "tokenIds": [
+        "p53_t26",
+        "p53_t27",
+        "p53_t28"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde مُقَابَلَةِ عَيْنِهِ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph8",
+      "tokenIds": [
+        "p53_t36",
+        "p53_t37",
+        "p53_t38"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde مُقَابَلَةِ لَامِهِ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph9",
+      "tokenIds": [
+        "p53_t3",
+        "p53_t4",
+        "p53_t5",
+        "p53_t6",
+        "p53_t7",
+        "p53_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o الَّذِي أَحَدُ حُرُوفِهِ الْأَصْلِيَّةِ هَمْزَةٌ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph10",
+      "tokenIds": [
+        "p53_t3",
+        "p53_t4",
+        "p53_t5",
+        "p53_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o الَّذِي أَحَدُ حُرُوفِهِ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph11",
+      "tokenIds": [
+        "p53_t7",
+        "p53_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْأَصْلِيَّةِ هَمْزَةٌ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph12",
+      "tokenIds": [
+        "p53_t9",
+        "p53_t10",
+        "p53_t11",
+        "p53_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin أَخَذَ Ve وَسَأَلَ Ve وَقَرَأَ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph13",
+      "tokenIds": [
+        "p53_t13",
+        "p53_t14",
+        "p53_t15",
+        "p53_t16",
+        "p53_t17",
+        "p53_t18",
+        "p53_t19",
+        "p53_t20",
+        "p53_t21"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَإِنْ كَانَتِ الْهَمْزَةُ İçinde مُقَابَلَةِ فَائِهِ سُمِّيَ مَهْمُوزَ Fânın",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph14",
+      "tokenIds": [
+        "p53_t13",
+        "p53_t14",
+        "p53_t15",
+        "p53_t16"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَإِنْ كَانَتِ الْهَمْزَةُ İçinde",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph15",
+      "tokenIds": [
+        "p53_t17",
+        "p53_t18",
+        "p53_t19",
+        "p53_t20"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "مُقَابَلَةِ فَائِهِ سُمِّيَ مَهْمُوزَ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph16",
+      "tokenIds": [
+        "p53_t22",
+        "p53_t23"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin أَخَذَ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph17",
+      "tokenIds": [
+        "p53_t24",
+        "p53_t25",
+        "p53_t26",
+        "p53_t27",
+        "p53_t28",
+        "p53_t29",
+        "p53_t30",
+        "p53_t31"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve وَإِنْ كَانَتْ İçinde مُقَابَلَةِ عَيْنِهِ سُمِّيَ مَهْمُوزَ Aynın",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph18",
+      "tokenIds": [
+        "p53_t24",
+        "p53_t25",
+        "p53_t26",
+        "p53_t27"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve وَإِنْ كَانَتْ İçinde مُقَابَلَةِ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph19",
+      "tokenIds": [
+        "p53_t28",
+        "p53_t29",
+        "p53_t30",
+        "p53_t31"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "عَيْنِهِ سُمِّيَ مَهْمُوزَ Aynın",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph20",
+      "tokenIds": [
+        "p53_t32",
+        "p53_t33"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin سَأَلَ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph21",
+      "tokenIds": [
+        "p53_t34",
+        "p53_t35",
+        "p53_t36",
+        "p53_t37",
+        "p53_t38",
+        "p53_t39",
+        "p53_t40",
+        "p53_t41"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve وَإِنْ كَانَتْ İçinde مُقَابَلَةِ لَامِهِ سُمِّيَ مَهْمُوزَ Lâmın",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph22",
+      "tokenIds": [
+        "p53_t34",
+        "p53_t35",
+        "p53_t36",
+        "p53_t37"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve وَإِنْ كَانَتْ İçinde مُقَابَلَةِ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph23",
+      "tokenIds": [
+        "p53_t38",
+        "p53_t39",
+        "p53_t40",
+        "p53_t41"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "لَامِهِ سُمِّيَ مَهْمُوزَ Lâmın",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph24",
+      "tokenIds": [
+        "p53_t6",
+        "p53_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "حُرُوفِهِ الْأَصْلِيَّةِ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph25",
+      "tokenIds": [
+        "p53_t14",
+        "p53_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "كَانَتِ الْهَمْزَةُ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph26",
+      "tokenIds": [
+        "p53_t15",
+        "p53_t16"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْهَمْزَةُ İçinde",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph27",
+      "tokenIds": [
+        "p53_t20",
+        "p53_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "مَهْمُوزَ Fânın",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph28",
+      "tokenIds": [
+        "p53_t21",
+        "p53_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Fânın Örneğin",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph29",
+      "tokenIds": [
+        "p53_t30",
+        "p53_t31"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "مَهْمُوزَ Aynın",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph30",
+      "tokenIds": [
+        "p53_t31",
+        "p53_t32"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Aynın Örneğin",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph31",
+      "tokenIds": [
+        "p53_t5",
+        "p53_t6",
+        "p53_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَحَدُ حُرُوفِهِ الْأَصْلِيَّةِ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph32",
+      "tokenIds": [
+        "p53_t5",
+        "p53_t6",
+        "p53_t7",
+        "p53_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَحَدُ حُرُوفِهِ الْأَصْلِيَّةِ هَمْزَةٌ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph33",
+      "tokenIds": [
+        "p53_t10",
+        "p53_t11",
+        "p53_t12"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَخَذَ Ve وَسَأَلَ Ve وَقَرَأَ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph34",
+      "tokenIds": [
+        "p53_t10",
+        "p53_t11",
+        "p53_t12",
+        "p53_t13"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَخَذَ Ve وَسَأَلَ Ve وَقَرَأَ فَإِنْ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph35",
+      "tokenIds": [
+        "p53_t18",
+        "p53_t19",
+        "p53_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَائِهِ سُمِّيَ مَهْمُوزَ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph36",
+      "tokenIds": [
+        "p53_t18",
+        "p53_t19",
+        "p53_t20",
+        "p53_t21"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَائِهِ سُمِّيَ مَهْمُوزَ Fânın",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph37",
+      "tokenIds": [
+        "p53_t23",
+        "p53_t24",
+        "p53_t25"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَخَذَ Ve وَإِنْ كَانَتْ",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph38",
+      "tokenIds": [
+        "p53_t23",
+        "p53_t24",
+        "p53_t25",
+        "p53_t26"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَخَذَ Ve وَإِنْ كَانَتْ İçinde",
+      "parentId": "p53_ph39"
+    },
+    {
+      "id": "p53_ph39",
+      "tokenIds": [
+        "p53_t1",
         "p53_t2",
         "p53_t3",
         "p53_t4",
@@ -65,7 +502,8 @@
         "fields": {
           "meaning": "Ve وَإِمَّا"
         }
-      }
+      },
+      "printedArabic": "وإما"
     },
     {
       "id": "p53_t2",
@@ -76,7 +514,8 @@
         "fields": {
           "meaning": "Mehmuz"
         }
-      }
+      },
+      "printedArabic": "مهموز"
     },
     {
       "id": "p53_t3",
@@ -87,7 +526,8 @@
         "fields": {
           "meaning": "Ve o"
         }
-      }
+      },
+      "printedArabic": "وهو"
     },
     {
       "id": "p53_t4",
@@ -98,7 +538,8 @@
         "fields": {
           "meaning": "الَّذِي"
         }
-      }
+      },
+      "printedArabic": "الذي"
     },
     {
       "id": "p53_t5",
@@ -109,7 +550,8 @@
         "fields": {
           "meaning": "أَحَدُ"
         }
-      }
+      },
+      "printedArabic": "أحد"
     },
     {
       "id": "p53_t6",
@@ -120,7 +562,8 @@
         "fields": {
           "meaning": "حُرُوفِهِ"
         }
-      }
+      },
+      "printedArabic": "حروفه"
     },
     {
       "id": "p53_t7",
@@ -131,7 +574,8 @@
         "fields": {
           "meaning": "الْأَصْلِيَّةِ"
         }
-      }
+      },
+      "printedArabic": "الأصلية"
     },
     {
       "id": "p53_t8",
@@ -142,7 +586,8 @@
         "fields": {
           "meaning": "هَمْزَةٌ"
         }
-      }
+      },
+      "printedArabic": "همزة"
     },
     {
       "id": "p53_t9",
@@ -153,7 +598,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p53_t10",
@@ -197,7 +643,8 @@
         "fields": {
           "meaning": "فَإِنْ"
         }
-      }
+      },
+      "printedArabic": "فإن"
     },
     {
       "id": "p53_t14",
@@ -208,7 +655,8 @@
         "fields": {
           "meaning": "كَانَتِ"
         }
-      }
+      },
+      "printedArabic": "كانت"
     },
     {
       "id": "p53_t15",
@@ -219,7 +667,8 @@
         "fields": {
           "meaning": "الْهَمْزَةُ"
         }
-      }
+      },
+      "printedArabic": "الهمزة"
     },
     {
       "id": "p53_t16",
@@ -263,7 +712,8 @@
         "fields": {
           "meaning": "سُمِّيَ"
         }
-      }
+      },
+      "printedArabic": "سمي"
     },
     {
       "id": "p53_t20",
@@ -285,7 +735,8 @@
         "fields": {
           "meaning": "Fânın"
         }
-      }
+      },
+      "printedArabic": "الفاء"
     },
     {
       "id": "p53_t22",
@@ -318,7 +769,8 @@
         "fields": {
           "meaning": "Ve وَإِنْ"
         }
-      }
+      },
+      "printedArabic": "وإن"
     },
     {
       "id": "p53_t25",
@@ -373,7 +825,8 @@
         "fields": {
           "meaning": "سُمِّيَ"
         }
-      }
+      },
+      "printedArabic": "سمي"
     },
     {
       "id": "p53_t30",
@@ -395,7 +848,8 @@
         "fields": {
           "meaning": "Aynın"
         }
-      }
+      },
+      "printedArabic": "العين"
     },
     {
       "id": "p53_t32",
@@ -428,7 +882,8 @@
         "fields": {
           "meaning": "Ve وَإِنْ"
         }
-      }
+      },
+      "printedArabic": "وإن"
     },
     {
       "id": "p53_t35",
@@ -483,7 +938,8 @@
         "fields": {
           "meaning": "سُمِّيَ"
         }
-      }
+      },
+      "printedArabic": "سمي"
     },
     {
       "id": "p53_t40",
@@ -505,7 +961,8 @@
         "fields": {
           "meaning": "Lâmın"
         }
-      }
+      },
+      "printedArabic": "اللام"
     },
     {
       "id": "p53_t42",

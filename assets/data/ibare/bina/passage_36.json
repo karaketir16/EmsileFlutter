@@ -8,6 +8,481 @@
       "id": "p36_ph1",
       "tokenIds": [
         "p36_t1",
+        "p36_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَنْوَاعُ الرُّبَاعِيِّ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph2",
+      "tokenIds": [
+        "p36_t16",
+        "p36_t17",
+        "p36_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu تَدَحْرَجَ يَتَدَحْرَجُ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph3",
+      "tokenIds": [
+        "p36_t20",
+        "p36_t21",
+        "p36_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Tânın",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph4",
+      "tokenIds": [
+        "p36_t25",
+        "p36_t26",
+        "p36_t27"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Mütâvaat içindir Örneğin",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph5",
+      "tokenIds": [
+        "p36_t27",
+        "p36_t28",
+        "p36_t29"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin دَحْرَجْتُ الْحَجَرَ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph6",
+      "tokenIds": [
+        "p36_t23",
+        "p36_t24",
+        "p36_t25"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde Başında Ve kullanılışı",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph7",
+      "tokenIds": [
+        "p36_t26",
+        "p36_t27",
+        "p36_t28"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mütâvaat içindir Örneğin دَحْرَجْتُ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph8",
+      "tokenIds": [
+        "p36_t1",
+        "p36_t2",
+        "p36_t3",
+        "p36_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَنْوَاعُ الرُّبَاعِيِّ الْمَزِيدِ ثَلَاثَةٌ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph9",
+      "tokenIds": [
+        "p36_t5",
+        "p36_t6",
+        "p36_t7",
+        "p36_t8",
+        "p36_t9"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Kısım Birinci Rubâî Mezîd بِحَرْفٍ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph10",
+      "tokenIds": [
+        "p36_t5",
+        "p36_t6",
+        "p36_t7",
+        "p36_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Kısım Birinci Rubâî Mezîd",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph11",
+      "tokenIds": [
+        "p36_t10",
+        "p36_t11",
+        "p36_t12",
+        "p36_t13",
+        "p36_t14",
+        "p36_t15",
+        "p36_t16",
+        "p36_t17",
+        "p36_t18",
+        "p36_t19"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o بَابٌ Ve وَاحِدٌ تَفَعْلَلَ يَتَفَعْلَلُ تَفَعْلُلًا Mevzunu تَدَحْرَجَ يَتَدَحْرَجُ تَدَحْرُجًا",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph12",
+      "tokenIds": [
+        "p36_t10",
+        "p36_t11",
+        "p36_t12",
+        "p36_t13"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o بَابٌ Ve وَاحِدٌ تَفَعْلَلَ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph13",
+      "tokenIds": [
+        "p36_t14",
+        "p36_t15",
+        "p36_t16",
+        "p36_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَتَفَعْلَلُ تَفَعْلُلًا Mevzunu تَدَحْرَجَ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph14",
+      "tokenIds": [
+        "p36_t18",
+        "p36_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَتَدَحْرَجُ تَدَحْرُجًا",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph15",
+      "tokenIds": [
+        "p36_t20",
+        "p36_t21",
+        "p36_t22",
+        "p36_t23",
+        "p36_t24"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Tânın İçinde Başında",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph16",
+      "tokenIds": [
+        "p36_t20",
+        "p36_t21",
+        "p36_t22",
+        "p36_t23"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Tânın İçinde",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph17",
+      "tokenIds": [
+        "p36_t25",
+        "p36_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Mütâvaat içindir",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph18",
+      "tokenIds": [
+        "p36_t27",
+        "p36_t28",
+        "p36_t29",
+        "p36_t30",
+        "p36_t31"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin دَحْرَجْتُ الْحَجَرَ فَتَدَحْرَجَ الْحَجَرُ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph19",
+      "tokenIds": [
+        "p36_t27",
+        "p36_t28",
+        "p36_t29",
+        "p36_t30"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin دَحْرَجْتُ الْحَجَرَ فَتَدَحْرَجَ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph20",
+      "tokenIds": [
+        "p36_t2",
+        "p36_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الرُّبَاعِيِّ الْمَزِيدِ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph21",
+      "tokenIds": [
+        "p36_t3",
+        "p36_t4"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْمَزِيدِ ثَلَاثَةٌ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph22",
+      "tokenIds": [
+        "p36_t5",
+        "p36_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Kısım Birinci",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph23",
+      "tokenIds": [
+        "p36_t6",
+        "p36_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Birinci Rubâî",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph24",
+      "tokenIds": [
+        "p36_t7",
+        "p36_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Rubâî Mezîd",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph25",
+      "tokenIds": [
+        "p36_t8",
+        "p36_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mezîd بِحَرْفٍ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph26",
+      "tokenIds": [
+        "p36_t28",
+        "p36_t29"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "دَحْرَجْتُ الْحَجَرَ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph27",
+      "tokenIds": [
+        "p36_t29",
+        "p36_t30"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْحَجَرَ فَتَدَحْرَجَ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph28",
+      "tokenIds": [
+        "p36_t30",
+        "p36_t31"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَتَدَحْرَجَ الْحَجَرُ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph29",
+      "tokenIds": [
+        "p36_t1",
+        "p36_t2",
+        "p36_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَنْوَاعُ الرُّبَاعِيِّ الْمَزِيدِ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph30",
+      "tokenIds": [
+        "p36_t13",
+        "p36_t14",
+        "p36_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَفَعْلَلَ يَتَفَعْلَلُ تَفَعْلُلًا",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph31",
+      "tokenIds": [
+        "p36_t13",
+        "p36_t14",
+        "p36_t15",
+        "p36_t16"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَفَعْلَلَ يَتَفَعْلَلُ تَفَعْلُلًا Mevzunu",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph32",
+      "tokenIds": [
+        "p36_t14",
+        "p36_t15",
+        "p36_t16"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَتَفَعْلَلُ تَفَعْلُلًا Mevzunu",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph33",
+      "tokenIds": [
+        "p36_t15",
+        "p36_t16",
+        "p36_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَفَعْلُلًا Mevzunu تَدَحْرَجَ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph34",
+      "tokenIds": [
+        "p36_t15",
+        "p36_t16",
+        "p36_t17",
+        "p36_t18"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَفَعْلُلًا Mevzunu تَدَحْرَجَ يَتَدَحْرَجُ",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph35",
+      "tokenIds": [
+        "p36_t17",
+        "p36_t18",
+        "p36_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَدَحْرَجَ يَتَدَحْرَجُ تَدَحْرُجًا",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph36",
+      "tokenIds": [
+        "p36_t17",
+        "p36_t18",
+        "p36_t19",
+        "p36_t20"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَدَحْرَجَ يَتَدَحْرَجُ تَدَحْرُجًا Ve alâmeti",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph37",
+      "tokenIds": [
+        "p36_t18",
+        "p36_t19",
+        "p36_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَتَدَحْرَجُ تَدَحْرُجًا Ve alâmeti",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph38",
+      "tokenIds": [
+        "p36_t18",
+        "p36_t19",
+        "p36_t20",
+        "p36_t21"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَتَدَحْرَجُ تَدَحْرُجًا Ve alâmeti Eklenmesi",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph39",
+      "tokenIds": [
+        "p36_t19",
+        "p36_t20",
+        "p36_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَدَحْرُجًا Ve alâmeti Eklenmesi",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph40",
+      "tokenIds": [
+        "p36_t19",
+        "p36_t20",
+        "p36_t21",
+        "p36_t22"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَدَحْرُجًا Ve alâmeti Eklenmesi Tânın",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph41",
+      "tokenIds": [
+        "p36_t24",
+        "p36_t25",
+        "p36_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Başında Ve kullanılışı Mütâvaat içindir",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph42",
+      "tokenIds": [
+        "p36_t24",
+        "p36_t25",
+        "p36_t26",
+        "p36_t27"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Başında Ve kullanılışı Mütâvaat içindir Örneğin",
+      "parentId": "p36_ph43"
+    },
+    {
+      "id": "p36_ph43",
+      "tokenIds": [
+        "p36_t1",
         "p36_t2",
         "p36_t3",
         "p36_t4",
@@ -53,7 +528,8 @@
         "fields": {
           "meaning": "أَنْوَاعُ"
         }
-      }
+      },
+      "printedArabic": "أنواع"
     },
     {
       "id": "p36_t2",
@@ -64,7 +540,8 @@
         "fields": {
           "meaning": "الرُّبَاعِيِّ"
         }
-      }
+      },
+      "printedArabic": "الرباعي"
     },
     {
       "id": "p36_t3",
@@ -75,7 +552,8 @@
         "fields": {
           "meaning": "الْمَزِيدِ"
         }
-      }
+      },
+      "printedArabic": "المزيد"
     },
     {
       "id": "p36_t4",
@@ -86,7 +564,8 @@
         "fields": {
           "meaning": "ثَلَاثَةٌ"
         }
-      }
+      },
+      "printedArabic": "ثلاثة"
     },
     {
       "id": "p36_t5",
@@ -97,7 +576,8 @@
         "fields": {
           "meaning": "Kısım"
         }
-      }
+      },
+      "printedArabic": "النوع"
     },
     {
       "id": "p36_t6",
@@ -108,7 +588,8 @@
         "fields": {
           "meaning": "Birinci"
         }
-      }
+      },
+      "printedArabic": "الأول"
     },
     {
       "id": "p36_t7",
@@ -119,7 +600,8 @@
         "fields": {
           "meaning": "Rubâî"
         }
-      }
+      },
+      "printedArabic": "الرباعي"
     },
     {
       "id": "p36_t8",
@@ -130,7 +612,8 @@
         "fields": {
           "meaning": "Mezîd"
         }
-      }
+      },
+      "printedArabic": "المزيد"
     },
     {
       "id": "p36_t9",
@@ -141,7 +624,8 @@
         "fields": {
           "meaning": "بِحَرْفٍ"
         }
-      }
+      },
+      "printedArabic": "بحرف"
     },
     {
       "id": "p36_t10",
@@ -152,7 +636,8 @@
         "fields": {
           "meaning": "Ve o"
         }
-      }
+      },
+      "printedArabic": "وهو"
     },
     {
       "id": "p36_t11",
@@ -163,7 +648,8 @@
         "fields": {
           "meaning": "بَابٌ"
         }
-      }
+      },
+      "printedArabic": "باب"
     },
     {
       "id": "p36_t12",
@@ -174,7 +660,8 @@
         "fields": {
           "meaning": "Ve وَاحِدٌ"
         }
-      }
+      },
+      "printedArabic": "واحد"
     },
     {
       "id": "p36_t13",
@@ -218,7 +705,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p36_t17",
@@ -262,7 +750,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p36_t21",
@@ -273,7 +762,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p36_t22",
@@ -284,7 +774,8 @@
         "fields": {
           "meaning": "Tânın"
         }
-      }
+      },
+      "printedArabic": "التاء"
     },
     {
       "id": "p36_t23",
@@ -295,7 +786,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p36_t24",
@@ -306,7 +798,8 @@
         "fields": {
           "meaning": "Başında"
         }
-      }
+      },
+      "printedArabic": "أوله"
     },
     {
       "id": "p36_t25",
@@ -317,7 +810,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p36_t26",
@@ -328,7 +822,8 @@
         "fields": {
           "meaning": "Mütâvaat içindir"
         }
-      }
+      },
+      "printedArabic": "للمطاوعة"
     },
     {
       "id": "p36_t27",
@@ -339,7 +834,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p36_t28",
@@ -361,7 +857,8 @@
         "fields": {
           "meaning": "الْحَجَرَ"
         }
-      }
+      },
+      "printedArabic": "الحجر"
     },
     {
       "id": "p36_t30",
@@ -383,7 +880,8 @@
         "fields": {
           "meaning": "الْحَجَرُ"
         }
-      }
+      },
+      "printedArabic": "الحجر"
     }
   ]
 }

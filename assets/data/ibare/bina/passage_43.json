@@ -8,6 +8,425 @@
       "id": "p43_ph1",
       "tokenIds": [
         "p43_t1",
+        "p43_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Beşinci",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph2",
+      "tokenIds": [
+        "p43_t6",
+        "p43_t7",
+        "p43_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu تَسَلْقَى يَتَسَلْقَى",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph3",
+      "tokenIds": [
+        "p43_t10",
+        "p43_t11",
+        "p43_t12"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Tânın",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph4",
+      "tokenIds": [
+        "p43_t18",
+        "p43_t19",
+        "p43_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Lâzımlık içindir Örneğin",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph5",
+      "tokenIds": [
+        "p43_t20",
+        "p43_t21",
+        "p43_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin تَسَلْقَى Zeyd",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph6",
+      "tokenIds": [
+        "p43_t13",
+        "p43_t14",
+        "p43_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde Başında Ve وَالْيَاءِ",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph7",
+      "tokenIds": [
+        "p43_t16",
+        "p43_t17",
+        "p43_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde Sonunda Ve kullanılışı",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph8",
+      "tokenIds": [
+        "p43_t19",
+        "p43_t20",
+        "p43_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Lâzımlık içindir Örneğin تَسَلْقَى",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph9",
+      "tokenIds": [
+        "p43_t25",
+        "p43_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Üzere قَفَاهُ",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph10",
+      "tokenIds": [
+        "p43_t1",
+        "p43_t2",
+        "p43_t3",
+        "p43_t4",
+        "p43_t5",
+        "p43_t6",
+        "p43_t7",
+        "p43_t8",
+        "p43_t9"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Beşinci تَفَعْلَى يَتَفَعْلَى تَفَعْلِيًا Mevzunu تَسَلْقَى يَتَسَلْقَى تَسَلْقِيًا",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph11",
+      "tokenIds": [
+        "p43_t1",
+        "p43_t2",
+        "p43_t3",
+        "p43_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Beşinci تَفَعْلَى يَتَفَعْلَى",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph12",
+      "tokenIds": [
+        "p43_t5",
+        "p43_t6",
+        "p43_t7",
+        "p43_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَفَعْلِيًا Mevzunu تَسَلْقَى يَتَسَلْقَى",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph13",
+      "tokenIds": [
+        "p43_t10",
+        "p43_t11",
+        "p43_t12",
+        "p43_t13",
+        "p43_t14",
+        "p43_t15",
+        "p43_t16",
+        "p43_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Tânın İçinde Başında Ve وَالْيَاءِ İçinde Sonunda",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph14",
+      "tokenIds": [
+        "p43_t10",
+        "p43_t11",
+        "p43_t12",
+        "p43_t13"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Tânın İçinde",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph15",
+      "tokenIds": [
+        "p43_t14",
+        "p43_t15",
+        "p43_t16",
+        "p43_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Başında Ve وَالْيَاءِ İçinde Sonunda",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph16",
+      "tokenIds": [
+        "p43_t18",
+        "p43_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Lâzımlık içindir",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph17",
+      "tokenIds": [
+        "p43_t20",
+        "p43_t21",
+        "p43_t22",
+        "p43_t23",
+        "p43_t24",
+        "p43_t25",
+        "p43_t26"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin تَسَلْقَى Zeyd Yani نَامَ Üzere قَفَاهُ",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph18",
+      "tokenIds": [
+        "p43_t20",
+        "p43_t21",
+        "p43_t22",
+        "p43_t23"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin تَسَلْقَى Zeyd Yani",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph19",
+      "tokenIds": [
+        "p43_t24",
+        "p43_t25",
+        "p43_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "نَامَ Üzere قَفَاهُ",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph20",
+      "tokenIds": [
+        "p43_t2",
+        "p43_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Beşinci تَفَعْلَى",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph21",
+      "tokenIds": [
+        "p43_t3",
+        "p43_t4",
+        "p43_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَفَعْلَى يَتَفَعْلَى تَفَعْلِيًا",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph22",
+      "tokenIds": [
+        "p43_t3",
+        "p43_t4",
+        "p43_t5",
+        "p43_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَفَعْلَى يَتَفَعْلَى تَفَعْلِيًا Mevzunu",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph23",
+      "tokenIds": [
+        "p43_t4",
+        "p43_t5",
+        "p43_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَتَفَعْلَى تَفَعْلِيًا Mevzunu",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph24",
+      "tokenIds": [
+        "p43_t4",
+        "p43_t5",
+        "p43_t6",
+        "p43_t7"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَتَفَعْلَى تَفَعْلِيًا Mevzunu تَسَلْقَى",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph25",
+      "tokenIds": [
+        "p43_t5",
+        "p43_t6",
+        "p43_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَفَعْلِيًا Mevzunu تَسَلْقَى",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph26",
+      "tokenIds": [
+        "p43_t7",
+        "p43_t8",
+        "p43_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَسَلْقَى يَتَسَلْقَى تَسَلْقِيًا",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph27",
+      "tokenIds": [
+        "p43_t7",
+        "p43_t8",
+        "p43_t9",
+        "p43_t10"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَسَلْقَى يَتَسَلْقَى تَسَلْقِيًا Ve alâmeti",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph28",
+      "tokenIds": [
+        "p43_t8",
+        "p43_t9",
+        "p43_t10"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَتَسَلْقَى تَسَلْقِيًا Ve alâmeti",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph29",
+      "tokenIds": [
+        "p43_t8",
+        "p43_t9",
+        "p43_t10",
+        "p43_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَتَسَلْقَى تَسَلْقِيًا Ve alâmeti Eklenmesi",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph30",
+      "tokenIds": [
+        "p43_t9",
+        "p43_t10",
+        "p43_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَسَلْقِيًا Ve alâmeti Eklenmesi",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph31",
+      "tokenIds": [
+        "p43_t9",
+        "p43_t10",
+        "p43_t11",
+        "p43_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَسَلْقِيًا Ve alâmeti Eklenmesi Tânın",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph32",
+      "tokenIds": [
+        "p43_t14",
+        "p43_t15",
+        "p43_t16"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Başında Ve وَالْيَاءِ İçinde",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph33",
+      "tokenIds": [
+        "p43_t21",
+        "p43_t22",
+        "p43_t23"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "تَسَلْقَى Zeyd Yani",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph34",
+      "tokenIds": [
+        "p43_t21",
+        "p43_t22",
+        "p43_t23",
+        "p43_t24"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "تَسَلْقَى Zeyd Yani نَامَ",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph35",
+      "tokenIds": [
+        "p43_t23",
+        "p43_t24",
+        "p43_t25"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Yani نَامَ Üzere",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph36",
+      "tokenIds": [
+        "p43_t23",
+        "p43_t24",
+        "p43_t25",
+        "p43_t26"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Yani نَامَ Üzere قَفَاهُ",
+      "parentId": "p43_ph37"
+    },
+    {
+      "id": "p43_ph37",
+      "tokenIds": [
+        "p43_t1",
         "p43_t2",
         "p43_t3",
         "p43_t4",
@@ -48,7 +467,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p43_t2",
@@ -59,7 +479,8 @@
         "fields": {
           "meaning": "Beşinci"
         }
-      }
+      },
+      "printedArabic": "الخامس"
     },
     {
       "id": "p43_t3",
@@ -103,7 +524,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p43_t7",
@@ -147,7 +569,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p43_t11",
@@ -158,7 +581,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p43_t12",
@@ -169,7 +593,8 @@
         "fields": {
           "meaning": "Tânın"
         }
-      }
+      },
+      "printedArabic": "التاء"
     },
     {
       "id": "p43_t13",
@@ -180,7 +605,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p43_t14",
@@ -191,7 +617,8 @@
         "fields": {
           "meaning": "Başında"
         }
-      }
+      },
+      "printedArabic": "أوله"
     },
     {
       "id": "p43_t15",
@@ -202,7 +629,8 @@
         "fields": {
           "meaning": "Ve وَالْيَاءِ"
         }
-      }
+      },
+      "printedArabic": "والياء"
     },
     {
       "id": "p43_t16",
@@ -213,7 +641,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p43_t17",
@@ -224,7 +653,8 @@
         "fields": {
           "meaning": "Sonunda"
         }
-      }
+      },
+      "printedArabic": "آخره"
     },
     {
       "id": "p43_t18",
@@ -235,7 +665,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p43_t19",
@@ -246,7 +677,8 @@
         "fields": {
           "meaning": "Lâzımlık içindir"
         }
-      }
+      },
+      "printedArabic": "للازم"
     },
     {
       "id": "p43_t20",
@@ -257,7 +689,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p43_t21",
@@ -279,7 +712,8 @@
         "fields": {
           "meaning": "Zeyd"
         }
-      }
+      },
+      "printedArabic": "زيد"
     },
     {
       "id": "p43_t23",

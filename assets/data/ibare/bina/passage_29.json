@@ -8,6 +8,485 @@
       "id": "p29_ph1",
       "tokenIds": [
         "p29_t1",
+        "p29_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Babı الرُّبَاعِيِّ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph2",
+      "tokenIds": [
+        "p29_t11",
+        "p29_t12",
+        "p29_t13"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu دَحْرَجَ يُدَحْرِجُ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph3",
+      "tokenIds": [
+        "p29_t16",
+        "p29_t17",
+        "p29_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti -mesi Olması",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph4",
+      "tokenIds": [
+        "p29_t26",
+        "p29_t27",
+        "p29_t28"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Geçişlilik içindir Çoğunlukla",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph5",
+      "tokenIds": [
+        "p29_t32",
+        "p29_t33",
+        "p29_t34"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin دَحْرَجَ Zeyd",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph6",
+      "tokenIds": [
+        "p29_t20",
+        "p29_t21",
+        "p29_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Üzere أَرْبَعَةِ Harf",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph7",
+      "tokenIds": [
+        "p29_t27",
+        "p29_t28",
+        "p29_t29"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Geçişlilik içindir Çoğunlukla Ve bazen",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph8",
+      "tokenIds": [
+        "p29_t1",
+        "p29_t2",
+        "p29_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Babı الرُّبَاعِيِّ Mücerred",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph9",
+      "tokenIds": [
+        "p29_t4",
+        "p29_t5",
+        "p29_t6",
+        "p29_t7",
+        "p29_t8",
+        "p29_t9",
+        "p29_t10",
+        "p29_t11",
+        "p29_t12",
+        "p29_t13",
+        "p29_t14",
+        "p29_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o بَابٌ Ve وَاحِدٌ فَعْلَلَ يُفَعْلِلُ فَعْلَلَةً Ve وَفِعْلَالًا Mevzunu دَحْرَجَ يُدَحْرِجُ دَحْرَجَةً Ve وَدِحْرَاجًا",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph10",
+      "tokenIds": [
+        "p29_t4",
+        "p29_t5",
+        "p29_t6",
+        "p29_t7"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o بَابٌ Ve وَاحِدٌ فَعْلَلَ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph11",
+      "tokenIds": [
+        "p29_t8",
+        "p29_t9",
+        "p29_t10",
+        "p29_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُفَعْلِلُ فَعْلَلَةً Ve وَفِعْلَالًا Mevzunu",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph12",
+      "tokenIds": [
+        "p29_t12",
+        "p29_t13",
+        "p29_t14",
+        "p29_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "دَحْرَجَ يُدَحْرِجُ دَحْرَجَةً Ve وَدِحْرَاجًا",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph13",
+      "tokenIds": [
+        "p29_t16",
+        "p29_t17",
+        "p29_t18",
+        "p29_t19",
+        "p29_t20",
+        "p29_t21",
+        "p29_t22",
+        "p29_t23",
+        "p29_t24",
+        "p29_t25"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti -mesi Olması Mâzisi Üzere أَرْبَعَةِ Harf جَمِيعُ حُرُوفِهِ أَصْلِيَّةٌ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph14",
+      "tokenIds": [
+        "p29_t16",
+        "p29_t17",
+        "p29_t18",
+        "p29_t19"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti -mesi Olması Mâzisi",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph15",
+      "tokenIds": [
+        "p29_t20",
+        "p29_t21",
+        "p29_t22",
+        "p29_t23"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Üzere أَرْبَعَةِ Harf جَمِيعُ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph16",
+      "tokenIds": [
+        "p29_t24",
+        "p29_t25"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "حُرُوفِهِ أَصْلِيَّةٌ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph17",
+      "tokenIds": [
+        "p29_t26",
+        "p29_t27",
+        "p29_t28",
+        "p29_t29",
+        "p29_t30",
+        "p29_t31"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve kullanılışı Geçişlilik içindir Çoğunlukla Ve bazen يَكُونُ لَازِمًا",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph18",
+      "tokenIds": [
+        "p29_t26",
+        "p29_t27",
+        "p29_t28",
+        "p29_t29"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve kullanılışı Geçişlilik içindir Çoğunlukla Ve bazen",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph19",
+      "tokenIds": [
+        "p29_t30",
+        "p29_t31"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَكُونُ لَازِمًا",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph20",
+      "tokenIds": [
+        "p29_t32",
+        "p29_t33",
+        "p29_t34",
+        "p29_t35",
+        "p29_t36",
+        "p29_t37"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin دَحْرَجَ Zeyd الْحَجَرَ Ve وَدَرْبَخَ Zeyd",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph21",
+      "tokenIds": [
+        "p29_t32",
+        "p29_t33",
+        "p29_t34",
+        "p29_t35"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin دَحْرَجَ Zeyd الْحَجَرَ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph22",
+      "tokenIds": [
+        "p29_t36",
+        "p29_t37"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve وَدَرْبَخَ Zeyd",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph23",
+      "tokenIds": [
+        "p29_t2",
+        "p29_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الرُّبَاعِيِّ Mücerred",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph24",
+      "tokenIds": [
+        "p29_t3",
+        "p29_t4"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mücerred Ve o",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph25",
+      "tokenIds": [
+        "p29_t34",
+        "p29_t35"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Zeyd الْحَجَرَ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph26",
+      "tokenIds": [
+        "p29_t35",
+        "p29_t36"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْحَجَرَ Ve وَدَرْبَخَ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph27",
+      "tokenIds": [
+        "p29_t7",
+        "p29_t8",
+        "p29_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَعْلَلَ يُفَعْلِلُ فَعْلَلَةً",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph28",
+      "tokenIds": [
+        "p29_t7",
+        "p29_t8",
+        "p29_t9",
+        "p29_t10"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَعْلَلَ يُفَعْلِلُ فَعْلَلَةً Ve وَفِعْلَالًا",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph29",
+      "tokenIds": [
+        "p29_t8",
+        "p29_t9",
+        "p29_t10"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُفَعْلِلُ فَعْلَلَةً Ve وَفِعْلَالًا",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph30",
+      "tokenIds": [
+        "p29_t9",
+        "p29_t10",
+        "p29_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَعْلَلَةً Ve وَفِعْلَالًا Mevzunu",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph31",
+      "tokenIds": [
+        "p29_t9",
+        "p29_t10",
+        "p29_t11",
+        "p29_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَعْلَلَةً Ve وَفِعْلَالًا Mevzunu دَحْرَجَ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph32",
+      "tokenIds": [
+        "p29_t13",
+        "p29_t14",
+        "p29_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُدَحْرِجُ دَحْرَجَةً Ve وَدِحْرَاجًا",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph33",
+      "tokenIds": [
+        "p29_t13",
+        "p29_t14",
+        "p29_t15",
+        "p29_t16"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُدَحْرِجُ دَحْرَجَةً Ve وَدِحْرَاجًا Ve alâmeti",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph34",
+      "tokenIds": [
+        "p29_t17",
+        "p29_t18",
+        "p29_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "-mesi Olması Mâzisi",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph35",
+      "tokenIds": [
+        "p29_t17",
+        "p29_t18",
+        "p29_t19",
+        "p29_t20"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "-mesi Olması Mâzisi Üzere",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph36",
+      "tokenIds": [
+        "p29_t21",
+        "p29_t22",
+        "p29_t23"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَرْبَعَةِ Harf جَمِيعُ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph37",
+      "tokenIds": [
+        "p29_t21",
+        "p29_t22",
+        "p29_t23",
+        "p29_t24"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَرْبَعَةِ Harf جَمِيعُ حُرُوفِهِ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph38",
+      "tokenIds": [
+        "p29_t22",
+        "p29_t23",
+        "p29_t24"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Harf جَمِيعُ حُرُوفِهِ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph39",
+      "tokenIds": [
+        "p29_t22",
+        "p29_t23",
+        "p29_t24",
+        "p29_t25"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Harf جَمِيعُ حُرُوفِهِ أَصْلِيَّةٌ",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph40",
+      "tokenIds": [
+        "p29_t25",
+        "p29_t26",
+        "p29_t27"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَصْلِيَّةٌ Ve kullanılışı Geçişlilik içindir",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph41",
+      "tokenIds": [
+        "p29_t25",
+        "p29_t26",
+        "p29_t27",
+        "p29_t28"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَصْلِيَّةٌ Ve kullanılışı Geçişlilik içindir Çoğunlukla",
+      "parentId": "p29_ph42"
+    },
+    {
+      "id": "p29_ph42",
+      "tokenIds": [
+        "p29_t1",
         "p29_t2",
         "p29_t3",
         "p29_t4",
@@ -59,7 +538,8 @@
         "fields": {
           "meaning": "Babı"
         }
-      }
+      },
+      "printedArabic": "باب"
     },
     {
       "id": "p29_t2",
@@ -70,7 +550,8 @@
         "fields": {
           "meaning": "الرُّبَاعِيِّ"
         }
-      }
+      },
+      "printedArabic": "الرباعي"
     },
     {
       "id": "p29_t3",
@@ -81,7 +562,8 @@
         "fields": {
           "meaning": "Mücerred"
         }
-      }
+      },
+      "printedArabic": "المجرد"
     },
     {
       "id": "p29_t4",
@@ -92,7 +574,8 @@
         "fields": {
           "meaning": "Ve o"
         }
-      }
+      },
+      "printedArabic": "وهو"
     },
     {
       "id": "p29_t5",
@@ -103,7 +586,8 @@
         "fields": {
           "meaning": "بَابٌ"
         }
-      }
+      },
+      "printedArabic": "باب"
     },
     {
       "id": "p29_t6",
@@ -114,7 +598,8 @@
         "fields": {
           "meaning": "Ve وَاحِدٌ"
         }
-      }
+      },
+      "printedArabic": "واحد"
     },
     {
       "id": "p29_t7",
@@ -169,7 +654,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p29_t12",
@@ -224,7 +710,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p29_t17",
@@ -235,7 +722,8 @@
         "fields": {
           "meaning": "-mesi"
         }
-      }
+      },
+      "printedArabic": "أن"
     },
     {
       "id": "p29_t18",
@@ -246,7 +734,8 @@
         "fields": {
           "meaning": "Olması"
         }
-      }
+      },
+      "printedArabic": "يكون"
     },
     {
       "id": "p29_t19",
@@ -257,7 +746,8 @@
         "fields": {
           "meaning": "Mâzisi"
         }
-      }
+      },
+      "printedArabic": "ماضيه"
     },
     {
       "id": "p29_t20",
@@ -268,7 +758,8 @@
         "fields": {
           "meaning": "Üzere"
         }
-      }
+      },
+      "printedArabic": "على"
     },
     {
       "id": "p29_t21",
@@ -279,7 +770,8 @@
         "fields": {
           "meaning": "أَرْبَعَةِ"
         }
-      }
+      },
+      "printedArabic": "أربعة"
     },
     {
       "id": "p29_t22",
@@ -290,7 +782,8 @@
         "fields": {
           "meaning": "Harf"
         }
-      }
+      },
+      "printedArabic": "أحرف"
     },
     {
       "id": "p29_t23",
@@ -301,7 +794,8 @@
         "fields": {
           "meaning": "جَمِيعُ"
         }
-      }
+      },
+      "printedArabic": "جميع"
     },
     {
       "id": "p29_t24",
@@ -312,7 +806,8 @@
         "fields": {
           "meaning": "حُرُوفِهِ"
         }
-      }
+      },
+      "printedArabic": "حروفه"
     },
     {
       "id": "p29_t25",
@@ -323,7 +818,8 @@
         "fields": {
           "meaning": "أَصْلِيَّةٌ"
         }
-      }
+      },
+      "printedArabic": "أصلية"
     },
     {
       "id": "p29_t26",
@@ -334,7 +830,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p29_t27",
@@ -345,7 +842,8 @@
         "fields": {
           "meaning": "Geçişlilik içindir"
         }
-      }
+      },
+      "printedArabic": "للتعدية"
     },
     {
       "id": "p29_t28",
@@ -356,7 +854,8 @@
         "fields": {
           "meaning": "Çoğunlukla"
         }
-      }
+      },
+      "printedArabic": "غالبا"
     },
     {
       "id": "p29_t29",
@@ -367,7 +866,8 @@
         "fields": {
           "meaning": "Ve bazen"
         }
-      }
+      },
+      "printedArabic": "وقد"
     },
     {
       "id": "p29_t30",
@@ -378,7 +878,8 @@
         "fields": {
           "meaning": "يَكُونُ"
         }
-      }
+      },
+      "printedArabic": "يكون"
     },
     {
       "id": "p29_t31",
@@ -389,7 +890,8 @@
         "fields": {
           "meaning": "لَازِمًا"
         }
-      }
+      },
+      "printedArabic": "لازما"
     },
     {
       "id": "p29_t32",
@@ -400,7 +902,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p29_t33",
@@ -422,7 +925,8 @@
         "fields": {
           "meaning": "Zeyd"
         }
-      }
+      },
+      "printedArabic": "زيد"
     },
     {
       "id": "p29_t35",
@@ -433,7 +937,8 @@
         "fields": {
           "meaning": "الْحَجَرَ"
         }
-      }
+      },
+      "printedArabic": "الحجر"
     },
     {
       "id": "p29_t36",
@@ -455,7 +960,8 @@
         "fields": {
           "meaning": "Zeyd"
         }
-      }
+      },
+      "printedArabic": "زيد"
     }
   ]
 }

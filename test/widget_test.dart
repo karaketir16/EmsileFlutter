@@ -217,6 +217,31 @@ void main() {
     }
   });
 
+  test('generated bina passages keep harakat toggle and small phrase groups', () {
+    for (final passage in binaBook.passages.skip(17)) {
+      final tokenCount = passage.tokens.length;
+      final smallPhraseTokenIds = passage.phrases
+          .where((phrase) => phrase.tokenIds.length < tokenCount)
+          .expand((phrase) => phrase.tokenIds)
+          .toSet();
+
+      expect(
+        passage.tokens.any(
+          (token) => token.displayArabic(false) != token.displayArabic(true),
+        ),
+        isTrue,
+        reason: passage.id,
+      );
+      expect(
+        smallPhraseTokenIds,
+        containsAll(passage.tokens.map((token) => token.id)),
+        reason: passage.id,
+      );
+    }
+
+    expect(File('tools/generate_bina_full.py').existsSync(), isFalse);
+  });
+
   test('besmele and introduction expose layered phrases', () {
     final besmele = binaBook.passages[0];
     final introduction = binaBook.passages[1];

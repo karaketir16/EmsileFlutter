@@ -8,6 +8,523 @@
       "id": "p37_ph1",
       "tokenIds": [
         "p37_t1",
+        "p37_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Kısım İkinci",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph2",
+      "tokenIds": [
+        "p37_t13",
+        "p37_t14",
+        "p37_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu اِحْرَنْجَمَ يَحْرَنْجِمُ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph3",
+      "tokenIds": [
+        "p37_t17",
+        "p37_t18",
+        "p37_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph4",
+      "tokenIds": [
+        "p37_t27",
+        "p37_t28",
+        "p37_t29"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Mütâvaat içindir Örneğin",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph5",
+      "tokenIds": [
+        "p37_t29",
+        "p37_t30",
+        "p37_t31"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin حَرْجَمْتُ الْإِبِلَ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph6",
+      "tokenIds": [
+        "p37_t20",
+        "p37_t21",
+        "p37_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde Başında Ve وَالنُّونِ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph7",
+      "tokenIds": [
+        "p37_t23",
+        "p37_t24",
+        "p37_t25"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Aynın Ve وَاللَّامِ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph8",
+      "tokenIds": [
+        "p37_t28",
+        "p37_t29",
+        "p37_t30"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mütâvaat içindir Örneğin حَرْجَمْتُ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph9",
+      "tokenIds": [
+        "p37_t1",
+        "p37_t2",
+        "p37_t3",
+        "p37_t4",
+        "p37_t5"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Kısım İkinci Rubâî Mezîd بِحَرْفَيْنِ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph10",
+      "tokenIds": [
+        "p37_t1",
+        "p37_t2",
+        "p37_t3",
+        "p37_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Kısım İkinci Rubâî Mezîd",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph11",
+      "tokenIds": [
+        "p37_t6",
+        "p37_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve o بَابَانِ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph12",
+      "tokenIds": [
+        "p37_t8",
+        "p37_t9",
+        "p37_t10",
+        "p37_t11",
+        "p37_t12",
+        "p37_t13",
+        "p37_t14",
+        "p37_t15",
+        "p37_t16"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Birinci اِفْعَنْلَلَ يَفْعَنْلِلُ اِفْعِنْلَالًا Mevzunu اِحْرَنْجَمَ يَحْرَنْجِمُ اِحْرِنْجَامًا",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph13",
+      "tokenIds": [
+        "p37_t8",
+        "p37_t9",
+        "p37_t10",
+        "p37_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Birinci اِفْعَنْلَلَ يَفْعَنْلِلُ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph14",
+      "tokenIds": [
+        "p37_t12",
+        "p37_t13",
+        "p37_t14",
+        "p37_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِفْعِنْلَالًا Mevzunu اِحْرَنْجَمَ يَحْرَنْجِمُ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph15",
+      "tokenIds": [
+        "p37_t17",
+        "p37_t18",
+        "p37_t19",
+        "p37_t20",
+        "p37_t21",
+        "p37_t22",
+        "p37_t23",
+        "p37_t24",
+        "p37_t25",
+        "p37_t26"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin İçinde Başında Ve وَالنُّونِ Arasında Aynın Ve وَاللَّامِ الْأُولَى",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph16",
+      "tokenIds": [
+        "p37_t17",
+        "p37_t18",
+        "p37_t19",
+        "p37_t20"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin İçinde",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph17",
+      "tokenIds": [
+        "p37_t21",
+        "p37_t22",
+        "p37_t23",
+        "p37_t24"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Başında Ve وَالنُّونِ Arasında Aynın",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph18",
+      "tokenIds": [
+        "p37_t25",
+        "p37_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve وَاللَّامِ الْأُولَى",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph19",
+      "tokenIds": [
+        "p37_t27",
+        "p37_t28"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Mütâvaat içindir",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph20",
+      "tokenIds": [
+        "p37_t29",
+        "p37_t30",
+        "p37_t31",
+        "p37_t32",
+        "p37_t33"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin حَرْجَمْتُ الْإِبِلَ فَاحْرَنْجَمَتِ الْإِبِلُ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph21",
+      "tokenIds": [
+        "p37_t29",
+        "p37_t30",
+        "p37_t31",
+        "p37_t32"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin حَرْجَمْتُ الْإِبِلَ فَاحْرَنْجَمَتِ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph22",
+      "tokenIds": [
+        "p37_t3",
+        "p37_t4"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Rubâî Mezîd",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph23",
+      "tokenIds": [
+        "p37_t4",
+        "p37_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mezîd بِحَرْفَيْنِ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph24",
+      "tokenIds": [
+        "p37_t7",
+        "p37_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "بَابَانِ Bab",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph25",
+      "tokenIds": [
+        "p37_t8",
+        "p37_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Birinci",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph26",
+      "tokenIds": [
+        "p37_t9",
+        "p37_t10"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Birinci اِفْعَنْلَلَ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph27",
+      "tokenIds": [
+        "p37_t18",
+        "p37_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Eklenmesi Hemzenin",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph28",
+      "tokenIds": [
+        "p37_t19",
+        "p37_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Hemzenin İçinde",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph29",
+      "tokenIds": [
+        "p37_t23",
+        "p37_t24"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Aynın",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph30",
+      "tokenIds": [
+        "p37_t24",
+        "p37_t25"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Aynın Ve وَاللَّامِ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph31",
+      "tokenIds": [
+        "p37_t26",
+        "p37_t27"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْأُولَى Ve kullanılışı",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph32",
+      "tokenIds": [
+        "p37_t30",
+        "p37_t31"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "حَرْجَمْتُ الْإِبِلَ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph33",
+      "tokenIds": [
+        "p37_t31",
+        "p37_t32"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْإِبِلَ فَاحْرَنْجَمَتِ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph34",
+      "tokenIds": [
+        "p37_t32",
+        "p37_t33"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَاحْرَنْجَمَتِ الْإِبِلُ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph35",
+      "tokenIds": [
+        "p37_t10",
+        "p37_t11",
+        "p37_t12"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِفْعَنْلَلَ يَفْعَنْلِلُ اِفْعِنْلَالًا",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph36",
+      "tokenIds": [
+        "p37_t10",
+        "p37_t11",
+        "p37_t12",
+        "p37_t13"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِفْعَنْلَلَ يَفْعَنْلِلُ اِفْعِنْلَالًا Mevzunu",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph37",
+      "tokenIds": [
+        "p37_t11",
+        "p37_t12",
+        "p37_t13"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَفْعَنْلِلُ اِفْعِنْلَالًا Mevzunu",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph38",
+      "tokenIds": [
+        "p37_t11",
+        "p37_t12",
+        "p37_t13",
+        "p37_t14"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَفْعَنْلِلُ اِفْعِنْلَالًا Mevzunu اِحْرَنْجَمَ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph39",
+      "tokenIds": [
+        "p37_t12",
+        "p37_t13",
+        "p37_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِفْعِنْلَالًا Mevzunu اِحْرَنْجَمَ",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph40",
+      "tokenIds": [
+        "p37_t14",
+        "p37_t15",
+        "p37_t16"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِحْرَنْجَمَ يَحْرَنْجِمُ اِحْرِنْجَامًا",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph41",
+      "tokenIds": [
+        "p37_t14",
+        "p37_t15",
+        "p37_t16",
+        "p37_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِحْرَنْجَمَ يَحْرَنْجِمُ اِحْرِنْجَامًا Ve alâmeti",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph42",
+      "tokenIds": [
+        "p37_t15",
+        "p37_t16",
+        "p37_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَحْرَنْجِمُ اِحْرِنْجَامًا Ve alâmeti",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph43",
+      "tokenIds": [
+        "p37_t15",
+        "p37_t16",
+        "p37_t17",
+        "p37_t18"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَحْرَنْجِمُ اِحْرِنْجَامًا Ve alâmeti Eklenmesi",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph44",
+      "tokenIds": [
+        "p37_t16",
+        "p37_t17",
+        "p37_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِحْرِنْجَامًا Ve alâmeti Eklenmesi",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph45",
+      "tokenIds": [
+        "p37_t16",
+        "p37_t17",
+        "p37_t18",
+        "p37_t19"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِحْرِنْجَامًا Ve alâmeti Eklenmesi Hemzenin",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph46",
+      "tokenIds": [
+        "p37_t21",
+        "p37_t22",
+        "p37_t23"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Başında Ve وَالنُّونِ Arasında",
+      "parentId": "p37_ph47"
+    },
+    {
+      "id": "p37_ph47",
+      "tokenIds": [
+        "p37_t1",
         "p37_t2",
         "p37_t3",
         "p37_t4",
@@ -55,7 +572,8 @@
         "fields": {
           "meaning": "Kısım"
         }
-      }
+      },
+      "printedArabic": "النوع"
     },
     {
       "id": "p37_t2",
@@ -66,7 +584,8 @@
         "fields": {
           "meaning": "İkinci"
         }
-      }
+      },
+      "printedArabic": "الثاني"
     },
     {
       "id": "p37_t3",
@@ -77,7 +596,8 @@
         "fields": {
           "meaning": "Rubâî"
         }
-      }
+      },
+      "printedArabic": "الرباعي"
     },
     {
       "id": "p37_t4",
@@ -88,7 +608,8 @@
         "fields": {
           "meaning": "Mezîd"
         }
-      }
+      },
+      "printedArabic": "المزيد"
     },
     {
       "id": "p37_t5",
@@ -99,7 +620,8 @@
         "fields": {
           "meaning": "بِحَرْفَيْنِ"
         }
-      }
+      },
+      "printedArabic": "بحرفين"
     },
     {
       "id": "p37_t6",
@@ -110,7 +632,8 @@
         "fields": {
           "meaning": "Ve o"
         }
-      }
+      },
+      "printedArabic": "وهو"
     },
     {
       "id": "p37_t7",
@@ -121,7 +644,8 @@
         "fields": {
           "meaning": "بَابَانِ"
         }
-      }
+      },
+      "printedArabic": "بابان"
     },
     {
       "id": "p37_t8",
@@ -132,7 +656,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p37_t9",
@@ -143,7 +668,8 @@
         "fields": {
           "meaning": "Birinci"
         }
-      }
+      },
+      "printedArabic": "الأول"
     },
     {
       "id": "p37_t10",
@@ -187,7 +713,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p37_t14",
@@ -231,7 +758,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p37_t18",
@@ -242,7 +770,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p37_t19",
@@ -253,7 +782,8 @@
         "fields": {
           "meaning": "Hemzenin"
         }
-      }
+      },
+      "printedArabic": "الهمزة"
     },
     {
       "id": "p37_t20",
@@ -264,7 +794,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p37_t21",
@@ -275,7 +806,8 @@
         "fields": {
           "meaning": "Başında"
         }
-      }
+      },
+      "printedArabic": "أوله"
     },
     {
       "id": "p37_t22",
@@ -286,7 +818,8 @@
         "fields": {
           "meaning": "Ve وَالنُّونِ"
         }
-      }
+      },
+      "printedArabic": "والنون"
     },
     {
       "id": "p37_t23",
@@ -297,7 +830,8 @@
         "fields": {
           "meaning": "Arasında"
         }
-      }
+      },
+      "printedArabic": "بين"
     },
     {
       "id": "p37_t24",
@@ -308,7 +842,8 @@
         "fields": {
           "meaning": "Aynın"
         }
-      }
+      },
+      "printedArabic": "العين"
     },
     {
       "id": "p37_t25",
@@ -319,7 +854,8 @@
         "fields": {
           "meaning": "Ve وَاللَّامِ"
         }
-      }
+      },
+      "printedArabic": "واللام"
     },
     {
       "id": "p37_t26",
@@ -330,7 +866,8 @@
         "fields": {
           "meaning": "الْأُولَى"
         }
-      }
+      },
+      "printedArabic": "الأولى"
     },
     {
       "id": "p37_t27",
@@ -341,7 +878,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p37_t28",
@@ -352,7 +890,8 @@
         "fields": {
           "meaning": "Mütâvaat içindir"
         }
-      }
+      },
+      "printedArabic": "للمطاوعة"
     },
     {
       "id": "p37_t29",
@@ -363,7 +902,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p37_t30",
@@ -385,7 +925,8 @@
         "fields": {
           "meaning": "الْإِبِلَ"
         }
-      }
+      },
+      "printedArabic": "الإبل"
     },
     {
       "id": "p37_t32",
@@ -407,7 +948,8 @@
         "fields": {
           "meaning": "الْإِبِلُ"
         }
-      }
+      },
+      "printedArabic": "الإبل"
     }
   ]
 }

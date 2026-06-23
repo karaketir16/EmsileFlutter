@@ -8,6 +8,316 @@
       "id": "p32_ph1",
       "tokenIds": [
         "p32_t1",
+        "p32_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Üçüncü",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph2",
+      "tokenIds": [
+        "p32_t7",
+        "p32_t8",
+        "p32_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu جَهْوَرَ يُجَهْوِرُ",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph3",
+      "tokenIds": [
+        "p32_t12",
+        "p32_t13",
+        "p32_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Vavın",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph4",
+      "tokenIds": [
+        "p32_t18",
+        "p32_t19",
+        "p32_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Geçişlilik içindir Ayrıca",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph5",
+      "tokenIds": [
+        "p32_t21",
+        "p32_t22",
+        "p32_t23"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin جَهْوَرَ Zeyd",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph6",
+      "tokenIds": [
+        "p32_t15",
+        "p32_t16",
+        "p32_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Aynın Ve وَاللَّامِ",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph7",
+      "tokenIds": [
+        "p32_t19",
+        "p32_t20",
+        "p32_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Geçişlilik içindir Ayrıca Örneğin",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph8",
+      "tokenIds": [
+        "p32_t1",
+        "p32_t2",
+        "p32_t3",
+        "p32_t4",
+        "p32_t5",
+        "p32_t6",
+        "p32_t7",
+        "p32_t8",
+        "p32_t9",
+        "p32_t10",
+        "p32_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Üçüncü فَعْوَلَ يُفَعْوِلُ فَعْوَلَةً Ve وَفِعْوَالًا Mevzunu جَهْوَرَ يُجَهْوِرُ جَهْوَرَةً Ve وَجِهْوَارًا",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph9",
+      "tokenIds": [
+        "p32_t1",
+        "p32_t2",
+        "p32_t3",
+        "p32_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Üçüncü فَعْوَلَ يُفَعْوِلُ",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph10",
+      "tokenIds": [
+        "p32_t5",
+        "p32_t6",
+        "p32_t7",
+        "p32_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَعْوَلَةً Ve وَفِعْوَالًا Mevzunu جَهْوَرَ",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph11",
+      "tokenIds": [
+        "p32_t9",
+        "p32_t10",
+        "p32_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُجَهْوِرُ جَهْوَرَةً Ve وَجِهْوَارًا",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph12",
+      "tokenIds": [
+        "p32_t12",
+        "p32_t13",
+        "p32_t14",
+        "p32_t15",
+        "p32_t16",
+        "p32_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Vavın Arasında Aynın Ve وَاللَّامِ",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph13",
+      "tokenIds": [
+        "p32_t12",
+        "p32_t13",
+        "p32_t14",
+        "p32_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Vavın Arasında",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph14",
+      "tokenIds": [
+        "p32_t16",
+        "p32_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Aynın Ve وَاللَّامِ",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph15",
+      "tokenIds": [
+        "p32_t21",
+        "p32_t22",
+        "p32_t23",
+        "p32_t24"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin جَهْوَرَ Zeyd الْقُرْآنَ",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph16",
+      "tokenIds": [
+        "p32_t13",
+        "p32_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Eklenmesi Vavın",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph17",
+      "tokenIds": [
+        "p32_t14",
+        "p32_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Vavın Arasında",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph18",
+      "tokenIds": [
+        "p32_t15",
+        "p32_t16"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Aynın",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph19",
+      "tokenIds": [
+        "p32_t23",
+        "p32_t24"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Zeyd الْقُرْآنَ",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph20",
+      "tokenIds": [
+        "p32_t3",
+        "p32_t4",
+        "p32_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَعْوَلَ يُفَعْوِلُ فَعْوَلَةً",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph21",
+      "tokenIds": [
+        "p32_t3",
+        "p32_t4",
+        "p32_t5",
+        "p32_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَعْوَلَ يُفَعْوِلُ فَعْوَلَةً Ve وَفِعْوَالًا",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph22",
+      "tokenIds": [
+        "p32_t4",
+        "p32_t5",
+        "p32_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُفَعْوِلُ فَعْوَلَةً Ve وَفِعْوَالًا",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph23",
+      "tokenIds": [
+        "p32_t4",
+        "p32_t5",
+        "p32_t6",
+        "p32_t7"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُفَعْوِلُ فَعْوَلَةً Ve وَفِعْوَالًا Mevzunu",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph24",
+      "tokenIds": [
+        "p32_t5",
+        "p32_t6",
+        "p32_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَعْوَلَةً Ve وَفِعْوَالًا Mevzunu",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph25",
+      "tokenIds": [
+        "p32_t9",
+        "p32_t10",
+        "p32_t11",
+        "p32_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُجَهْوِرُ جَهْوَرَةً Ve وَجِهْوَارًا Ve alâmeti",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph26",
+      "tokenIds": [
+        "p32_t20",
+        "p32_t21",
+        "p32_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ayrıca Örneğin جَهْوَرَ",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph27",
+      "tokenIds": [
+        "p32_t20",
+        "p32_t21",
+        "p32_t22",
+        "p32_t23"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ayrıca Örneğin جَهْوَرَ Zeyd",
+      "parentId": "p32_ph28"
+    },
+    {
+      "id": "p32_ph28",
+      "tokenIds": [
+        "p32_t1",
         "p32_t2",
         "p32_t3",
         "p32_t4",
@@ -46,7 +356,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p32_t2",
@@ -57,7 +368,8 @@
         "fields": {
           "meaning": "Üçüncü"
         }
-      }
+      },
+      "printedArabic": "الثالث"
     },
     {
       "id": "p32_t3",
@@ -112,7 +424,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p32_t8",
@@ -167,7 +480,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p32_t13",
@@ -178,7 +492,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p32_t14",
@@ -189,7 +504,8 @@
         "fields": {
           "meaning": "Vavın"
         }
-      }
+      },
+      "printedArabic": "الواو"
     },
     {
       "id": "p32_t15",
@@ -200,7 +516,8 @@
         "fields": {
           "meaning": "Arasında"
         }
-      }
+      },
+      "printedArabic": "بين"
     },
     {
       "id": "p32_t16",
@@ -211,7 +528,8 @@
         "fields": {
           "meaning": "Aynın"
         }
-      }
+      },
+      "printedArabic": "العين"
     },
     {
       "id": "p32_t17",
@@ -222,7 +540,8 @@
         "fields": {
           "meaning": "Ve وَاللَّامِ"
         }
-      }
+      },
+      "printedArabic": "واللام"
     },
     {
       "id": "p32_t18",
@@ -233,7 +552,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p32_t19",
@@ -244,7 +564,8 @@
         "fields": {
           "meaning": "Geçişlilik içindir"
         }
-      }
+      },
+      "printedArabic": "للتعدية"
     },
     {
       "id": "p32_t20",
@@ -255,7 +576,8 @@
         "fields": {
           "meaning": "Ayrıca"
         }
-      }
+      },
+      "printedArabic": "أيضا"
     },
     {
       "id": "p32_t21",
@@ -266,7 +588,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p32_t22",
@@ -288,7 +611,8 @@
         "fields": {
           "meaning": "Zeyd"
         }
-      }
+      },
+      "printedArabic": "زيد"
     },
     {
       "id": "p32_t24",
@@ -299,7 +623,8 @@
         "fields": {
           "meaning": "الْقُرْآنَ"
         }
-      }
+      },
+      "printedArabic": "القرآن"
     }
   ]
 }

@@ -8,6 +8,320 @@
       "id": "p51_ph1",
       "tokenIds": [
         "p51_t1",
+        "p51_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Kısım İkinci",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph2",
+      "tokenIds": [
+        "p51_t18",
+        "p51_t19",
+        "p51_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin لَمْ يَمُدَّ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph3",
+      "tokenIds": [
+        "p51_t1",
+        "p51_t2",
+        "p51_t3",
+        "p51_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Kısım İkinci İdgam Câiz",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph4",
+      "tokenIds": [
+        "p51_t5",
+        "p51_t6",
+        "p51_t7",
+        "p51_t8",
+        "p51_t9",
+        "p51_t10",
+        "p51_t11",
+        "p51_t12",
+        "p51_t13",
+        "p51_t14",
+        "p51_t15",
+        "p51_t16",
+        "p51_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o -mesi Olması الْحَرْفُ Birinci مِنَ الْمُتَجَانِسَيْنِ مُتَحَرِّكًا Ve وَالْحَرْفُ İkinci سَاكِنًا بِسُكُونٍ عَارِضٍ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph5",
+      "tokenIds": [
+        "p51_t5",
+        "p51_t6",
+        "p51_t7",
+        "p51_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o -mesi Olması الْحَرْفُ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph6",
+      "tokenIds": [
+        "p51_t9",
+        "p51_t10",
+        "p51_t11",
+        "p51_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Birinci مِنَ الْمُتَجَانِسَيْنِ مُتَحَرِّكًا",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph7",
+      "tokenIds": [
+        "p51_t13",
+        "p51_t14",
+        "p51_t15",
+        "p51_t16"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve وَالْحَرْفُ İkinci سَاكِنًا بِسُكُونٍ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph8",
+      "tokenIds": [
+        "p51_t18",
+        "p51_t19",
+        "p51_t20",
+        "p51_t21",
+        "p51_t22",
+        "p51_t23",
+        "p51_t24",
+        "p51_t25",
+        "p51_t26"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin لَمْ يَمُدَّ Aslı لَمْ يَمْدُدْ فَيَجُوزُ بِالْإِدْغَامِ Ve وَبِالْفَكِّ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph9",
+      "tokenIds": [
+        "p51_t18",
+        "p51_t19",
+        "p51_t20",
+        "p51_t21"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin لَمْ يَمُدَّ Aslı",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph10",
+      "tokenIds": [
+        "p51_t22",
+        "p51_t23",
+        "p51_t24",
+        "p51_t25"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "لَمْ يَمْدُدْ فَيَجُوزُ بِالْإِدْغَامِ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph11",
+      "tokenIds": [
+        "p51_t2",
+        "p51_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İkinci İdgam",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph12",
+      "tokenIds": [
+        "p51_t3",
+        "p51_t4"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İdgam Câiz",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph13",
+      "tokenIds": [
+        "p51_t4",
+        "p51_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Câiz Ve o",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph14",
+      "tokenIds": [
+        "p51_t7",
+        "p51_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Olması الْحَرْفُ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph15",
+      "tokenIds": [
+        "p51_t8",
+        "p51_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْحَرْفُ Birinci",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph16",
+      "tokenIds": [
+        "p51_t9",
+        "p51_t10"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Birinci مِنَ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph17",
+      "tokenIds": [
+        "p51_t10",
+        "p51_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "مِنَ الْمُتَجَانِسَيْنِ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph18",
+      "tokenIds": [
+        "p51_t11",
+        "p51_t12"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْمُتَجَانِسَيْنِ مُتَحَرِّكًا",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph19",
+      "tokenIds": [
+        "p51_t6",
+        "p51_t7",
+        "p51_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "-mesi Olması الْحَرْفُ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph20",
+      "tokenIds": [
+        "p51_t6",
+        "p51_t7",
+        "p51_t8",
+        "p51_t9"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "-mesi Olması الْحَرْفُ Birinci",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph21",
+      "tokenIds": [
+        "p51_t20",
+        "p51_t21",
+        "p51_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَمُدَّ Aslı لَمْ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph22",
+      "tokenIds": [
+        "p51_t20",
+        "p51_t21",
+        "p51_t22",
+        "p51_t23"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَمُدَّ Aslı لَمْ يَمْدُدْ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph23",
+      "tokenIds": [
+        "p51_t21",
+        "p51_t22",
+        "p51_t23"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Aslı لَمْ يَمْدُدْ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph24",
+      "tokenIds": [
+        "p51_t21",
+        "p51_t22",
+        "p51_t23",
+        "p51_t24"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Aslı لَمْ يَمْدُدْ فَيَجُوزُ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph25",
+      "tokenIds": [
+        "p51_t23",
+        "p51_t24",
+        "p51_t25"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَمْدُدْ فَيَجُوزُ بِالْإِدْغَامِ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph26",
+      "tokenIds": [
+        "p51_t23",
+        "p51_t24",
+        "p51_t25",
+        "p51_t26"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَمْدُدْ فَيَجُوزُ بِالْإِدْغَامِ Ve وَبِالْفَكِّ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph27",
+      "tokenIds": [
+        "p51_t24",
+        "p51_t25",
+        "p51_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَيَجُوزُ بِالْإِدْغَامِ Ve وَبِالْفَكِّ",
+      "parentId": "p51_ph28"
+    },
+    {
+      "id": "p51_ph28",
+      "tokenIds": [
+        "p51_t1",
         "p51_t2",
         "p51_t3",
         "p51_t4",
@@ -48,7 +362,8 @@
         "fields": {
           "meaning": "Kısım"
         }
-      }
+      },
+      "printedArabic": "النوع"
     },
     {
       "id": "p51_t2",
@@ -59,7 +374,8 @@
         "fields": {
           "meaning": "İkinci"
         }
-      }
+      },
+      "printedArabic": "الثاني"
     },
     {
       "id": "p51_t3",
@@ -70,7 +386,8 @@
         "fields": {
           "meaning": "İdgam"
         }
-      }
+      },
+      "printedArabic": "الإدغام"
     },
     {
       "id": "p51_t4",
@@ -81,7 +398,8 @@
         "fields": {
           "meaning": "Câiz"
         }
-      }
+      },
+      "printedArabic": "الجائز"
     },
     {
       "id": "p51_t5",
@@ -92,7 +410,8 @@
         "fields": {
           "meaning": "Ve o"
         }
-      }
+      },
+      "printedArabic": "وهو"
     },
     {
       "id": "p51_t6",
@@ -103,7 +422,8 @@
         "fields": {
           "meaning": "-mesi"
         }
-      }
+      },
+      "printedArabic": "أن"
     },
     {
       "id": "p51_t7",
@@ -114,7 +434,8 @@
         "fields": {
           "meaning": "Olması"
         }
-      }
+      },
+      "printedArabic": "يكون"
     },
     {
       "id": "p51_t8",
@@ -125,7 +446,8 @@
         "fields": {
           "meaning": "الْحَرْفُ"
         }
-      }
+      },
+      "printedArabic": "الحرف"
     },
     {
       "id": "p51_t9",
@@ -136,7 +458,8 @@
         "fields": {
           "meaning": "Birinci"
         }
-      }
+      },
+      "printedArabic": "الأول"
     },
     {
       "id": "p51_t10",
@@ -147,7 +470,8 @@
         "fields": {
           "meaning": "مِنَ"
         }
-      }
+      },
+      "printedArabic": "من"
     },
     {
       "id": "p51_t11",
@@ -158,7 +482,8 @@
         "fields": {
           "meaning": "الْمُتَجَانِسَيْنِ"
         }
-      }
+      },
+      "printedArabic": "المتجانسين"
     },
     {
       "id": "p51_t12",
@@ -169,7 +494,8 @@
         "fields": {
           "meaning": "مُتَحَرِّكًا"
         }
-      }
+      },
+      "printedArabic": "متحركا"
     },
     {
       "id": "p51_t13",
@@ -180,7 +506,8 @@
         "fields": {
           "meaning": "Ve وَالْحَرْفُ"
         }
-      }
+      },
+      "printedArabic": "والحرف"
     },
     {
       "id": "p51_t14",
@@ -191,7 +518,8 @@
         "fields": {
           "meaning": "İkinci"
         }
-      }
+      },
+      "printedArabic": "الثاني"
     },
     {
       "id": "p51_t15",
@@ -202,7 +530,8 @@
         "fields": {
           "meaning": "سَاكِنًا"
         }
-      }
+      },
+      "printedArabic": "ساكنا"
     },
     {
       "id": "p51_t16",
@@ -213,7 +542,8 @@
         "fields": {
           "meaning": "بِسُكُونٍ"
         }
-      }
+      },
+      "printedArabic": "بسكون"
     },
     {
       "id": "p51_t17",
@@ -224,7 +554,8 @@
         "fields": {
           "meaning": "عَارِضٍ"
         }
-      }
+      },
+      "printedArabic": "عارض"
     },
     {
       "id": "p51_t18",
@@ -235,7 +566,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p51_t19",

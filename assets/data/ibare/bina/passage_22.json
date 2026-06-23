@@ -8,6 +8,442 @@
       "id": "p22_ph1",
       "tokenIds": [
         "p22_t1",
+        "p22_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Üçüncü",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph2",
+      "tokenIds": [
+        "p22_t6",
+        "p22_t7",
+        "p22_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu اِحْمَرَّ يَحْمَرُّ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph3",
+      "tokenIds": [
+        "p22_t10",
+        "p22_t11",
+        "p22_t12"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph4",
+      "tokenIds": [
+        "p22_t22",
+        "p22_t23",
+        "p22_t24"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Mübalağa içindir اللَّازِمِ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph5",
+      "tokenIds": [
+        "p22_t28",
+        "p22_t29",
+        "p22_t30"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin اِحْمَرَّ Zeyd",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph6",
+      "tokenIds": [
+        "p22_t13",
+        "p22_t14",
+        "p22_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde Başında Ve وَحَرْفٍ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph7",
+      "tokenIds": [
+        "p22_t16",
+        "p22_t17",
+        "p22_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "-den Cinsinden لَامِ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph8",
+      "tokenIds": [
+        "p22_t20",
+        "p22_t21",
+        "p22_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde Sonunda Ve kullanılışı",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph9",
+      "tokenIds": [
+        "p22_t23",
+        "p22_t24",
+        "p22_t25"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mübalağa içindir اللَّازِمِ Ve وَقِيلَ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph10",
+      "tokenIds": [
+        "p22_t1",
+        "p22_t2",
+        "p22_t3",
+        "p22_t4",
+        "p22_t5",
+        "p22_t6",
+        "p22_t7",
+        "p22_t8",
+        "p22_t9"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Üçüncü اِفْعَلَّ يَفْعَلُّ اِفْعِلَالًا Mevzunu اِحْمَرَّ يَحْمَرُّ اِحْمِرَارًا",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph11",
+      "tokenIds": [
+        "p22_t1",
+        "p22_t2",
+        "p22_t3",
+        "p22_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Üçüncü اِفْعَلَّ يَفْعَلُّ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph12",
+      "tokenIds": [
+        "p22_t5",
+        "p22_t6",
+        "p22_t7",
+        "p22_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِفْعِلَالًا Mevzunu اِحْمَرَّ يَحْمَرُّ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph13",
+      "tokenIds": [
+        "p22_t10",
+        "p22_t11",
+        "p22_t12",
+        "p22_t13",
+        "p22_t14",
+        "p22_t15",
+        "p22_t16",
+        "p22_t17",
+        "p22_t18",
+        "p22_t19",
+        "p22_t20",
+        "p22_t21"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin İçinde Başında Ve وَحَرْفٍ -den Cinsinden لَامِ Fiilinin İçinde Sonunda",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph14",
+      "tokenIds": [
+        "p22_t10",
+        "p22_t11",
+        "p22_t12",
+        "p22_t13"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Hemzenin İçinde",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph15",
+      "tokenIds": [
+        "p22_t14",
+        "p22_t15",
+        "p22_t16",
+        "p22_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Başında Ve وَحَرْفٍ -den Cinsinden",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph16",
+      "tokenIds": [
+        "p22_t18",
+        "p22_t19",
+        "p22_t20",
+        "p22_t21"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "لَامِ Fiilinin İçinde Sonunda",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph17",
+      "tokenIds": [
+        "p22_t22",
+        "p22_t23",
+        "p22_t24",
+        "p22_t25",
+        "p22_t26",
+        "p22_t27"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve kullanılışı Mübalağa içindir اللَّازِمِ Ve وَقِيلَ لِلْأَلْوَانِ Ve وَالْعُيُوبِ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph18",
+      "tokenIds": [
+        "p22_t22",
+        "p22_t23",
+        "p22_t24",
+        "p22_t25"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve kullanılışı Mübalağa içindir اللَّازِمِ Ve وَقِيلَ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph19",
+      "tokenIds": [
+        "p22_t26",
+        "p22_t27"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "لِلْأَلْوَانِ Ve وَالْعُيُوبِ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph20",
+      "tokenIds": [
+        "p22_t28",
+        "p22_t29",
+        "p22_t30",
+        "p22_t31",
+        "p22_t32"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin اِحْمَرَّ Zeyd Ve وَاِعْوَرَّ Zeyd",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph21",
+      "tokenIds": [
+        "p22_t28",
+        "p22_t29",
+        "p22_t30",
+        "p22_t31"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin اِحْمَرَّ Zeyd Ve وَاِعْوَرَّ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph22",
+      "tokenIds": [
+        "p22_t11",
+        "p22_t12"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Eklenmesi Hemzenin",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph23",
+      "tokenIds": [
+        "p22_t12",
+        "p22_t13"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Hemzenin İçinde",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph24",
+      "tokenIds": [
+        "p22_t3",
+        "p22_t4",
+        "p22_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِفْعَلَّ يَفْعَلُّ اِفْعِلَالًا",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph25",
+      "tokenIds": [
+        "p22_t3",
+        "p22_t4",
+        "p22_t5",
+        "p22_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِفْعَلَّ يَفْعَلُّ اِفْعِلَالًا Mevzunu",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph26",
+      "tokenIds": [
+        "p22_t4",
+        "p22_t5",
+        "p22_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَفْعَلُّ اِفْعِلَالًا Mevzunu",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph27",
+      "tokenIds": [
+        "p22_t4",
+        "p22_t5",
+        "p22_t6",
+        "p22_t7"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَفْعَلُّ اِفْعِلَالًا Mevzunu اِحْمَرَّ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph28",
+      "tokenIds": [
+        "p22_t5",
+        "p22_t6",
+        "p22_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِفْعِلَالًا Mevzunu اِحْمَرَّ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph29",
+      "tokenIds": [
+        "p22_t7",
+        "p22_t8",
+        "p22_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِحْمَرَّ يَحْمَرُّ اِحْمِرَارًا",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph30",
+      "tokenIds": [
+        "p22_t7",
+        "p22_t8",
+        "p22_t9",
+        "p22_t10"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِحْمَرَّ يَحْمَرُّ اِحْمِرَارًا Ve alâmeti",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph31",
+      "tokenIds": [
+        "p22_t8",
+        "p22_t9",
+        "p22_t10"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يَحْمَرُّ اِحْمِرَارًا Ve alâmeti",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph32",
+      "tokenIds": [
+        "p22_t8",
+        "p22_t9",
+        "p22_t10",
+        "p22_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يَحْمَرُّ اِحْمِرَارًا Ve alâmeti Eklenmesi",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph33",
+      "tokenIds": [
+        "p22_t9",
+        "p22_t10",
+        "p22_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِحْمِرَارًا Ve alâmeti Eklenmesi",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph34",
+      "tokenIds": [
+        "p22_t9",
+        "p22_t10",
+        "p22_t11",
+        "p22_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِحْمِرَارًا Ve alâmeti Eklenmesi Hemzenin",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph35",
+      "tokenIds": [
+        "p22_t14",
+        "p22_t15",
+        "p22_t16"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Başında Ve وَحَرْفٍ -den",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph36",
+      "tokenIds": [
+        "p22_t29",
+        "p22_t30",
+        "p22_t31"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "اِحْمَرَّ Zeyd Ve وَاِعْوَرَّ",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph37",
+      "tokenIds": [
+        "p22_t29",
+        "p22_t30",
+        "p22_t31",
+        "p22_t32"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "اِحْمَرَّ Zeyd Ve وَاِعْوَرَّ Zeyd",
+      "parentId": "p22_ph38"
+    },
+    {
+      "id": "p22_ph38",
+      "tokenIds": [
+        "p22_t1",
         "p22_t2",
         "p22_t3",
         "p22_t4",
@@ -54,7 +490,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p22_t2",
@@ -65,7 +502,8 @@
         "fields": {
           "meaning": "Üçüncü"
         }
-      }
+      },
+      "printedArabic": "الثالث"
     },
     {
       "id": "p22_t3",
@@ -109,7 +547,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p22_t7",
@@ -153,7 +592,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p22_t11",
@@ -164,7 +604,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p22_t12",
@@ -175,7 +616,8 @@
         "fields": {
           "meaning": "Hemzenin"
         }
-      }
+      },
+      "printedArabic": "الهمزة"
     },
     {
       "id": "p22_t13",
@@ -186,7 +628,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p22_t14",
@@ -197,7 +640,8 @@
         "fields": {
           "meaning": "Başında"
         }
-      }
+      },
+      "printedArabic": "أوله"
     },
     {
       "id": "p22_t15",
@@ -208,7 +652,8 @@
         "fields": {
           "meaning": "Ve وَحَرْفٍ"
         }
-      }
+      },
+      "printedArabic": "وحرف"
     },
     {
       "id": "p22_t16",
@@ -219,7 +664,8 @@
         "fields": {
           "meaning": "-den"
         }
-      }
+      },
+      "printedArabic": "من"
     },
     {
       "id": "p22_t17",
@@ -230,7 +676,8 @@
         "fields": {
           "meaning": "Cinsinden"
         }
-      }
+      },
+      "printedArabic": "جنس"
     },
     {
       "id": "p22_t18",
@@ -241,7 +688,8 @@
         "fields": {
           "meaning": "لَامِ"
         }
-      }
+      },
+      "printedArabic": "لام"
     },
     {
       "id": "p22_t19",
@@ -252,7 +700,8 @@
         "fields": {
           "meaning": "Fiilinin"
         }
-      }
+      },
+      "printedArabic": "فعله"
     },
     {
       "id": "p22_t20",
@@ -263,7 +712,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p22_t21",
@@ -274,7 +724,8 @@
         "fields": {
           "meaning": "Sonunda"
         }
-      }
+      },
+      "printedArabic": "آخره"
     },
     {
       "id": "p22_t22",
@@ -285,7 +736,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p22_t23",
@@ -296,7 +748,8 @@
         "fields": {
           "meaning": "Mübalağa içindir"
         }
-      }
+      },
+      "printedArabic": "لمبالغة"
     },
     {
       "id": "p22_t24",
@@ -307,7 +760,8 @@
         "fields": {
           "meaning": "اللَّازِمِ"
         }
-      }
+      },
+      "printedArabic": "اللازم"
     },
     {
       "id": "p22_t25",
@@ -318,7 +772,8 @@
         "fields": {
           "meaning": "Ve وَقِيلَ"
         }
-      }
+      },
+      "printedArabic": "وقيل"
     },
     {
       "id": "p22_t26",
@@ -329,7 +784,8 @@
         "fields": {
           "meaning": "لِلْأَلْوَانِ"
         }
-      }
+      },
+      "printedArabic": "للألوان"
     },
     {
       "id": "p22_t27",
@@ -340,7 +796,8 @@
         "fields": {
           "meaning": "Ve وَالْعُيُوبِ"
         }
-      }
+      },
+      "printedArabic": "والعيوب"
     },
     {
       "id": "p22_t28",
@@ -351,7 +808,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p22_t29",
@@ -373,7 +831,8 @@
         "fields": {
           "meaning": "Zeyd"
         }
-      }
+      },
+      "printedArabic": "زيد"
     },
     {
       "id": "p22_t31",
@@ -395,7 +854,8 @@
         "fields": {
           "meaning": "Zeyd"
         }
-      }
+      },
+      "printedArabic": "زيد"
     }
   ]
 }

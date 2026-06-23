@@ -8,6 +8,291 @@
       "id": "p30_ph1",
       "tokenIds": [
         "p30_t1",
+        "p30_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Birinci",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph2",
+      "tokenIds": [
+        "p30_t7",
+        "p30_t8",
+        "p30_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu حَوْقَلَ يُحَوْقِلُ",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph3",
+      "tokenIds": [
+        "p30_t12",
+        "p30_t13",
+        "p30_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Vavın",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph4",
+      "tokenIds": [
+        "p30_t18",
+        "p30_t19",
+        "p30_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Lâzımlık içindir Örneğin",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph5",
+      "tokenIds": [
+        "p30_t20",
+        "p30_t21",
+        "p30_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin حَوْقَلَ Zeyd",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph6",
+      "tokenIds": [
+        "p30_t15",
+        "p30_t16",
+        "p30_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Fânın Ve وَالْعَيْنِ",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph7",
+      "tokenIds": [
+        "p30_t19",
+        "p30_t20",
+        "p30_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Lâzımlık içindir Örneğin حَوْقَلَ",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph8",
+      "tokenIds": [
+        "p30_t1",
+        "p30_t2",
+        "p30_t3",
+        "p30_t4",
+        "p30_t5",
+        "p30_t6",
+        "p30_t7",
+        "p30_t8",
+        "p30_t9",
+        "p30_t10",
+        "p30_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Birinci فَوْعَلَ يُفَوْعِلُ فَوْعَلَةً Ve وَفِيعَالًا Mevzunu حَوْقَلَ يُحَوْقِلُ حَوْقَلَةً Ve وَحِيقَالًا",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph9",
+      "tokenIds": [
+        "p30_t1",
+        "p30_t2",
+        "p30_t3",
+        "p30_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Birinci فَوْعَلَ يُفَوْعِلُ",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph10",
+      "tokenIds": [
+        "p30_t5",
+        "p30_t6",
+        "p30_t7",
+        "p30_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَوْعَلَةً Ve وَفِيعَالًا Mevzunu حَوْقَلَ",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph11",
+      "tokenIds": [
+        "p30_t9",
+        "p30_t10",
+        "p30_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُحَوْقِلُ حَوْقَلَةً Ve وَحِيقَالًا",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph12",
+      "tokenIds": [
+        "p30_t12",
+        "p30_t13",
+        "p30_t14",
+        "p30_t15",
+        "p30_t16",
+        "p30_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Vavın Arasında Fânın Ve وَالْعَيْنِ",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph13",
+      "tokenIds": [
+        "p30_t12",
+        "p30_t13",
+        "p30_t14",
+        "p30_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Vavın Arasında",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph14",
+      "tokenIds": [
+        "p30_t16",
+        "p30_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Fânın Ve وَالْعَيْنِ",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph15",
+      "tokenIds": [
+        "p30_t18",
+        "p30_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Lâzımlık içindir",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph16",
+      "tokenIds": [
+        "p30_t2",
+        "p30_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Birinci فَوْعَلَ",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph17",
+      "tokenIds": [
+        "p30_t13",
+        "p30_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Eklenmesi Vavın",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph18",
+      "tokenIds": [
+        "p30_t14",
+        "p30_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Vavın Arasında",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph19",
+      "tokenIds": [
+        "p30_t15",
+        "p30_t16"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Fânın",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph20",
+      "tokenIds": [
+        "p30_t3",
+        "p30_t4",
+        "p30_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَوْعَلَ يُفَوْعِلُ فَوْعَلَةً",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph21",
+      "tokenIds": [
+        "p30_t3",
+        "p30_t4",
+        "p30_t5",
+        "p30_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَوْعَلَ يُفَوْعِلُ فَوْعَلَةً Ve وَفِيعَالًا",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph22",
+      "tokenIds": [
+        "p30_t4",
+        "p30_t5",
+        "p30_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُفَوْعِلُ فَوْعَلَةً Ve وَفِيعَالًا",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph23",
+      "tokenIds": [
+        "p30_t4",
+        "p30_t5",
+        "p30_t6",
+        "p30_t7"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُفَوْعِلُ فَوْعَلَةً Ve وَفِيعَالًا Mevzunu",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph24",
+      "tokenIds": [
+        "p30_t5",
+        "p30_t6",
+        "p30_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَوْعَلَةً Ve وَفِيعَالًا Mevzunu",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph25",
+      "tokenIds": [
+        "p30_t9",
+        "p30_t10",
+        "p30_t11",
+        "p30_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُحَوْقِلُ حَوْقَلَةً Ve وَحِيقَالًا Ve alâmeti",
+      "parentId": "p30_ph26"
+    },
+    {
+      "id": "p30_ph26",
+      "tokenIds": [
+        "p30_t1",
         "p30_t2",
         "p30_t3",
         "p30_t4",
@@ -44,7 +329,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p30_t2",
@@ -55,7 +341,8 @@
         "fields": {
           "meaning": "Birinci"
         }
-      }
+      },
+      "printedArabic": "الأول"
     },
     {
       "id": "p30_t3",
@@ -110,7 +397,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p30_t8",
@@ -165,7 +453,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p30_t13",
@@ -176,7 +465,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p30_t14",
@@ -187,7 +477,8 @@
         "fields": {
           "meaning": "Vavın"
         }
-      }
+      },
+      "printedArabic": "الواو"
     },
     {
       "id": "p30_t15",
@@ -198,7 +489,8 @@
         "fields": {
           "meaning": "Arasında"
         }
-      }
+      },
+      "printedArabic": "بين"
     },
     {
       "id": "p30_t16",
@@ -209,7 +501,8 @@
         "fields": {
           "meaning": "Fânın"
         }
-      }
+      },
+      "printedArabic": "الفاء"
     },
     {
       "id": "p30_t17",
@@ -220,7 +513,8 @@
         "fields": {
           "meaning": "Ve وَالْعَيْنِ"
         }
-      }
+      },
+      "printedArabic": "والعين"
     },
     {
       "id": "p30_t18",
@@ -231,7 +525,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p30_t19",
@@ -242,7 +537,8 @@
         "fields": {
           "meaning": "Lâzımlık içindir"
         }
-      }
+      },
+      "printedArabic": "للازم"
     },
     {
       "id": "p30_t20",
@@ -253,7 +549,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p30_t21",
@@ -275,7 +572,8 @@
         "fields": {
           "meaning": "Zeyd"
         }
-      }
+      },
+      "printedArabic": "زيد"
     }
   ]
 }

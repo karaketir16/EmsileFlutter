@@ -8,6 +8,468 @@
       "id": "p19_ph1",
       "tokenIds": [
         "p19_t1",
+        "p19_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Üçüncü",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph2",
+      "tokenIds": [
+        "p19_t7",
+        "p19_t8",
+        "p19_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu قَاتَلَ يُقَاتِلُ",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph3",
+      "tokenIds": [
+        "p19_t12",
+        "p19_t13",
+        "p19_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti -mesi Olması",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph4",
+      "tokenIds": [
+        "p19_t24",
+        "p19_t25",
+        "p19_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Ortaklık içindir Arasında",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph5",
+      "tokenIds": [
+        "p19_t32",
+        "p19_t33",
+        "p19_t34"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin قَاتَلَ Zeyd",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph6",
+      "tokenIds": [
+        "p19_t16",
+        "p19_t17",
+        "p19_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Üzere أَرْبَعَةِ Harf",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph7",
+      "tokenIds": [
+        "p19_t19",
+        "p19_t20",
+        "p19_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Eklenmesiyle Elifin Arasında",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph8",
+      "tokenIds": [
+        "p19_t21",
+        "p19_t22",
+        "p19_t23"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Fânın Ve وَالْعَيْنِ",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph9",
+      "tokenIds": [
+        "p19_t25",
+        "p19_t26",
+        "p19_t27"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ortaklık içindir Arasında الِاثْنَيْنِ",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph10",
+      "tokenIds": [
+        "p19_t26",
+        "p19_t27",
+        "p19_t28"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında الِاثْنَيْنِ Çoğunlukla",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph11",
+      "tokenIds": [
+        "p19_t1",
+        "p19_t2",
+        "p19_t3",
+        "p19_t4",
+        "p19_t5",
+        "p19_t6",
+        "p19_t7",
+        "p19_t8",
+        "p19_t9",
+        "p19_t10",
+        "p19_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Üçüncü فَاعَلَ يُفَاعِلُ مُفَاعَلَةً Ve وَفِعَالًا Mevzunu قَاتَلَ يُقَاتِلُ مُقَاتَلَةً Ve وَقِتَالًا",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph12",
+      "tokenIds": [
+        "p19_t1",
+        "p19_t2",
+        "p19_t3",
+        "p19_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Üçüncü فَاعَلَ يُفَاعِلُ",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph13",
+      "tokenIds": [
+        "p19_t5",
+        "p19_t6",
+        "p19_t7",
+        "p19_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "مُفَاعَلَةً Ve وَفِعَالًا Mevzunu قَاتَلَ",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph14",
+      "tokenIds": [
+        "p19_t9",
+        "p19_t10",
+        "p19_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُقَاتِلُ مُقَاتَلَةً Ve وَقِتَالًا",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph15",
+      "tokenIds": [
+        "p19_t12",
+        "p19_t13",
+        "p19_t14",
+        "p19_t15",
+        "p19_t16",
+        "p19_t17",
+        "p19_t18",
+        "p19_t19",
+        "p19_t20",
+        "p19_t21",
+        "p19_t22",
+        "p19_t23"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti -mesi Olması Mâzisi Üzere أَرْبَعَةِ Harf Eklenmesiyle Elifin Arasında Fânın Ve وَالْعَيْنِ",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph16",
+      "tokenIds": [
+        "p19_t12",
+        "p19_t13",
+        "p19_t14",
+        "p19_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti -mesi Olması Mâzisi",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph17",
+      "tokenIds": [
+        "p19_t16",
+        "p19_t17",
+        "p19_t18",
+        "p19_t19"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Üzere أَرْبَعَةِ Harf Eklenmesiyle",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph18",
+      "tokenIds": [
+        "p19_t20",
+        "p19_t21",
+        "p19_t22",
+        "p19_t23"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Elifin Arasında Fânın Ve وَالْعَيْنِ",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph19",
+      "tokenIds": [
+        "p19_t24",
+        "p19_t25",
+        "p19_t26",
+        "p19_t27",
+        "p19_t28",
+        "p19_t29",
+        "p19_t30",
+        "p19_t31"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve kullanılışı Ortaklık içindir Arasında الِاثْنَيْنِ Çoğunlukla Ve bazen يَكُونُ لِلْوَاحِدِ",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph20",
+      "tokenIds": [
+        "p19_t24",
+        "p19_t25",
+        "p19_t26",
+        "p19_t27"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve kullanılışı Ortaklık içindir Arasında الِاثْنَيْنِ",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph21",
+      "tokenIds": [
+        "p19_t28",
+        "p19_t29",
+        "p19_t30",
+        "p19_t31"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Çoğunlukla Ve bazen يَكُونُ لِلْوَاحِدِ",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph22",
+      "tokenIds": [
+        "p19_t32",
+        "p19_t33",
+        "p19_t34",
+        "p19_t35",
+        "p19_t36",
+        "p19_t37"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin قَاتَلَ Zeyd عَمْرًا Ve وَقَاتَلَهُمُ Allah",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph23",
+      "tokenIds": [
+        "p19_t32",
+        "p19_t33",
+        "p19_t34",
+        "p19_t35"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin قَاتَلَ Zeyd عَمْرًا",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph24",
+      "tokenIds": [
+        "p19_t36",
+        "p19_t37"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve وَقَاتَلَهُمُ Allah",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph25",
+      "tokenIds": [
+        "p19_t19",
+        "p19_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Eklenmesiyle Elifin",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph26",
+      "tokenIds": [
+        "p19_t20",
+        "p19_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Elifin Arasında",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph27",
+      "tokenIds": [
+        "p19_t21",
+        "p19_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Fânın",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph28",
+      "tokenIds": [
+        "p19_t22",
+        "p19_t23"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Fânın Ve وَالْعَيْنِ",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph29",
+      "tokenIds": [
+        "p19_t3",
+        "p19_t4",
+        "p19_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَاعَلَ يُفَاعِلُ مُفَاعَلَةً",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph30",
+      "tokenIds": [
+        "p19_t3",
+        "p19_t4",
+        "p19_t5",
+        "p19_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَاعَلَ يُفَاعِلُ مُفَاعَلَةً Ve وَفِعَالًا",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph31",
+      "tokenIds": [
+        "p19_t4",
+        "p19_t5",
+        "p19_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُفَاعِلُ مُفَاعَلَةً Ve وَفِعَالًا",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph32",
+      "tokenIds": [
+        "p19_t4",
+        "p19_t5",
+        "p19_t6",
+        "p19_t7"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُفَاعِلُ مُفَاعَلَةً Ve وَفِعَالًا Mevzunu",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph33",
+      "tokenIds": [
+        "p19_t9",
+        "p19_t10",
+        "p19_t11",
+        "p19_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُقَاتِلُ مُقَاتَلَةً Ve وَقِتَالًا Ve alâmeti",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph34",
+      "tokenIds": [
+        "p19_t13",
+        "p19_t14",
+        "p19_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "-mesi Olması Mâzisi",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph35",
+      "tokenIds": [
+        "p19_t13",
+        "p19_t14",
+        "p19_t15",
+        "p19_t16"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "-mesi Olması Mâzisi Üzere",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph36",
+      "tokenIds": [
+        "p19_t17",
+        "p19_t18",
+        "p19_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَرْبَعَةِ Harf Eklenmesiyle",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph37",
+      "tokenIds": [
+        "p19_t17",
+        "p19_t18",
+        "p19_t19",
+        "p19_t20"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَرْبَعَةِ Harf Eklenmesiyle Elifin",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph38",
+      "tokenIds": [
+        "p19_t18",
+        "p19_t19",
+        "p19_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Harf Eklenmesiyle Elifin",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph39",
+      "tokenIds": [
+        "p19_t18",
+        "p19_t19",
+        "p19_t20",
+        "p19_t21"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Harf Eklenmesiyle Elifin Arasında",
+      "parentId": "p19_ph40"
+    },
+    {
+      "id": "p19_ph40",
+      "tokenIds": [
+        "p19_t1",
         "p19_t2",
         "p19_t3",
         "p19_t4",
@@ -59,7 +521,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p19_t2",
@@ -70,7 +533,8 @@
         "fields": {
           "meaning": "Üçüncü"
         }
-      }
+      },
+      "printedArabic": "الثالث"
     },
     {
       "id": "p19_t3",
@@ -125,7 +589,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p19_t8",
@@ -180,7 +645,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p19_t13",
@@ -191,7 +657,8 @@
         "fields": {
           "meaning": "-mesi"
         }
-      }
+      },
+      "printedArabic": "أن"
     },
     {
       "id": "p19_t14",
@@ -202,7 +669,8 @@
         "fields": {
           "meaning": "Olması"
         }
-      }
+      },
+      "printedArabic": "يكون"
     },
     {
       "id": "p19_t15",
@@ -213,7 +681,8 @@
         "fields": {
           "meaning": "Mâzisi"
         }
-      }
+      },
+      "printedArabic": "ماضيه"
     },
     {
       "id": "p19_t16",
@@ -224,7 +693,8 @@
         "fields": {
           "meaning": "Üzere"
         }
-      }
+      },
+      "printedArabic": "على"
     },
     {
       "id": "p19_t17",
@@ -235,7 +705,8 @@
         "fields": {
           "meaning": "أَرْبَعَةِ"
         }
-      }
+      },
+      "printedArabic": "أربعة"
     },
     {
       "id": "p19_t18",
@@ -246,7 +717,8 @@
         "fields": {
           "meaning": "Harf"
         }
-      }
+      },
+      "printedArabic": "أحرف"
     },
     {
       "id": "p19_t19",
@@ -257,7 +729,8 @@
         "fields": {
           "meaning": "Eklenmesiyle"
         }
-      }
+      },
+      "printedArabic": "بزيادة"
     },
     {
       "id": "p19_t20",
@@ -268,7 +741,8 @@
         "fields": {
           "meaning": "Elifin"
         }
-      }
+      },
+      "printedArabic": "الألف"
     },
     {
       "id": "p19_t21",
@@ -279,7 +753,8 @@
         "fields": {
           "meaning": "Arasında"
         }
-      }
+      },
+      "printedArabic": "بين"
     },
     {
       "id": "p19_t22",
@@ -290,7 +765,8 @@
         "fields": {
           "meaning": "Fânın"
         }
-      }
+      },
+      "printedArabic": "الفاء"
     },
     {
       "id": "p19_t23",
@@ -301,7 +777,8 @@
         "fields": {
           "meaning": "Ve وَالْعَيْنِ"
         }
-      }
+      },
+      "printedArabic": "والعين"
     },
     {
       "id": "p19_t24",
@@ -312,7 +789,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p19_t25",
@@ -323,7 +801,8 @@
         "fields": {
           "meaning": "Ortaklık içindir"
         }
-      }
+      },
+      "printedArabic": "للمشاركة"
     },
     {
       "id": "p19_t26",
@@ -334,7 +813,8 @@
         "fields": {
           "meaning": "Arasında"
         }
-      }
+      },
+      "printedArabic": "بين"
     },
     {
       "id": "p19_t27",
@@ -345,7 +825,8 @@
         "fields": {
           "meaning": "الِاثْنَيْنِ"
         }
-      }
+      },
+      "printedArabic": "الاثنين"
     },
     {
       "id": "p19_t28",
@@ -356,7 +837,8 @@
         "fields": {
           "meaning": "Çoğunlukla"
         }
-      }
+      },
+      "printedArabic": "غالبا"
     },
     {
       "id": "p19_t29",
@@ -367,7 +849,8 @@
         "fields": {
           "meaning": "Ve bazen"
         }
-      }
+      },
+      "printedArabic": "وقد"
     },
     {
       "id": "p19_t30",
@@ -378,7 +861,8 @@
         "fields": {
           "meaning": "يَكُونُ"
         }
-      }
+      },
+      "printedArabic": "يكون"
     },
     {
       "id": "p19_t31",
@@ -389,7 +873,8 @@
         "fields": {
           "meaning": "لِلْوَاحِدِ"
         }
-      }
+      },
+      "printedArabic": "للواحد"
     },
     {
       "id": "p19_t32",
@@ -400,7 +885,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p19_t33",
@@ -422,7 +908,8 @@
         "fields": {
           "meaning": "Zeyd"
         }
-      }
+      },
+      "printedArabic": "زيد"
     },
     {
       "id": "p19_t35",
@@ -455,7 +942,8 @@
         "fields": {
           "meaning": "Allah"
         }
-      }
+      },
+      "printedArabic": "الله"
     }
   ]
 }

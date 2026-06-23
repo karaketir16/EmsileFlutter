@@ -8,6 +8,306 @@
       "id": "p33_ph1",
       "tokenIds": [
         "p33_t1",
+        "p33_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Dördüncü",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph2",
+      "tokenIds": [
+        "p33_t7",
+        "p33_t8",
+        "p33_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu عَثْيَرَ يُعَثْيِرُ",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph3",
+      "tokenIds": [
+        "p33_t12",
+        "p33_t13",
+        "p33_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Yânın",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph4",
+      "tokenIds": [
+        "p33_t18",
+        "p33_t19",
+        "p33_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Lâzımlık içindir Örneğin",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph5",
+      "tokenIds": [
+        "p33_t20",
+        "p33_t21",
+        "p33_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin عَثْيَرَ Zeyd",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph6",
+      "tokenIds": [
+        "p33_t15",
+        "p33_t16",
+        "p33_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Aynın Ve وَاللَّامِ",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph7",
+      "tokenIds": [
+        "p33_t19",
+        "p33_t20",
+        "p33_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Lâzımlık içindir Örneğin عَثْيَرَ",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph8",
+      "tokenIds": [
+        "p33_t1",
+        "p33_t2",
+        "p33_t3",
+        "p33_t4",
+        "p33_t5",
+        "p33_t6",
+        "p33_t7",
+        "p33_t8",
+        "p33_t9",
+        "p33_t10",
+        "p33_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Dördüncü فَعْيَلَ يُفَعْيِلُ فَعْيَلَةً Ve وَفِعْيَالًا Mevzunu عَثْيَرَ يُعَثْيِرُ عَثْيَرَةً Ve وَعِثْيَارًا",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph9",
+      "tokenIds": [
+        "p33_t1",
+        "p33_t2",
+        "p33_t3",
+        "p33_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Dördüncü فَعْيَلَ يُفَعْيِلُ",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph10",
+      "tokenIds": [
+        "p33_t5",
+        "p33_t6",
+        "p33_t7",
+        "p33_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَعْيَلَةً Ve وَفِعْيَالًا Mevzunu عَثْيَرَ",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph11",
+      "tokenIds": [
+        "p33_t9",
+        "p33_t10",
+        "p33_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُعَثْيِرُ عَثْيَرَةً Ve وَعِثْيَارًا",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph12",
+      "tokenIds": [
+        "p33_t12",
+        "p33_t13",
+        "p33_t14",
+        "p33_t15",
+        "p33_t16",
+        "p33_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Yânın Arasında Aynın Ve وَاللَّامِ",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph13",
+      "tokenIds": [
+        "p33_t12",
+        "p33_t13",
+        "p33_t14",
+        "p33_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Yânın Arasında",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph14",
+      "tokenIds": [
+        "p33_t16",
+        "p33_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Aynın Ve وَاللَّامِ",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph15",
+      "tokenIds": [
+        "p33_t18",
+        "p33_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Lâzımlık içindir",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph16",
+      "tokenIds": [
+        "p33_t20",
+        "p33_t21",
+        "p33_t22",
+        "p33_t23",
+        "p33_t24"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin عَثْيَرَ Zeyd Yani طَلَعَ",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph17",
+      "tokenIds": [
+        "p33_t20",
+        "p33_t21",
+        "p33_t22",
+        "p33_t23"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin عَثْيَرَ Zeyd Yani",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph18",
+      "tokenIds": [
+        "p33_t13",
+        "p33_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Eklenmesi Yânın",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph19",
+      "tokenIds": [
+        "p33_t14",
+        "p33_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Yânın Arasında",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph20",
+      "tokenIds": [
+        "p33_t15",
+        "p33_t16"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Arasında Aynın",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph21",
+      "tokenIds": [
+        "p33_t3",
+        "p33_t4",
+        "p33_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَعْيَلَ يُفَعْيِلُ فَعْيَلَةً",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph22",
+      "tokenIds": [
+        "p33_t3",
+        "p33_t4",
+        "p33_t5",
+        "p33_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَعْيَلَ يُفَعْيِلُ فَعْيَلَةً Ve وَفِعْيَالًا",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph23",
+      "tokenIds": [
+        "p33_t4",
+        "p33_t5",
+        "p33_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُفَعْيِلُ فَعْيَلَةً Ve وَفِعْيَالًا",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph24",
+      "tokenIds": [
+        "p33_t4",
+        "p33_t5",
+        "p33_t6",
+        "p33_t7"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُفَعْيِلُ فَعْيَلَةً Ve وَفِعْيَالًا Mevzunu",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph25",
+      "tokenIds": [
+        "p33_t5",
+        "p33_t6",
+        "p33_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَعْيَلَةً Ve وَفِعْيَالًا Mevzunu",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph26",
+      "tokenIds": [
+        "p33_t9",
+        "p33_t10",
+        "p33_t11",
+        "p33_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُعَثْيِرُ عَثْيَرَةً Ve وَعِثْيَارًا Ve alâmeti",
+      "parentId": "p33_ph27"
+    },
+    {
+      "id": "p33_ph27",
+      "tokenIds": [
+        "p33_t1",
         "p33_t2",
         "p33_t3",
         "p33_t4",
@@ -46,7 +346,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p33_t2",
@@ -57,7 +358,8 @@
         "fields": {
           "meaning": "Dördüncü"
         }
-      }
+      },
+      "printedArabic": "الرابع"
     },
     {
       "id": "p33_t3",
@@ -112,7 +414,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p33_t8",
@@ -167,7 +470,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p33_t13",
@@ -178,7 +482,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p33_t14",
@@ -189,7 +494,8 @@
         "fields": {
           "meaning": "Yânın"
         }
-      }
+      },
+      "printedArabic": "الياء"
     },
     {
       "id": "p33_t15",
@@ -200,7 +506,8 @@
         "fields": {
           "meaning": "Arasında"
         }
-      }
+      },
+      "printedArabic": "بين"
     },
     {
       "id": "p33_t16",
@@ -211,7 +518,8 @@
         "fields": {
           "meaning": "Aynın"
         }
-      }
+      },
+      "printedArabic": "العين"
     },
     {
       "id": "p33_t17",
@@ -222,7 +530,8 @@
         "fields": {
           "meaning": "Ve وَاللَّامِ"
         }
-      }
+      },
+      "printedArabic": "واللام"
     },
     {
       "id": "p33_t18",
@@ -233,7 +542,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p33_t19",
@@ -244,7 +554,8 @@
         "fields": {
           "meaning": "Lâzımlık içindir"
         }
-      }
+      },
+      "printedArabic": "للازم"
     },
     {
       "id": "p33_t20",
@@ -255,7 +566,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p33_t21",
@@ -277,7 +589,8 @@
         "fields": {
           "meaning": "Zeyd"
         }
-      }
+      },
+      "printedArabic": "زيد"
     },
     {
       "id": "p33_t23",

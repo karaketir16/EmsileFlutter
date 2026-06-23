@@ -8,6 +8,323 @@
       "id": "p49_ph1",
       "tokenIds": [
         "p49_t1",
+        "p49_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve وَإِمَّا Mudaaf",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph2",
+      "tokenIds": [
+        "p49_t10",
+        "p49_t11",
+        "p49_t12"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin مَدَّ Aslı",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph3",
+      "tokenIds": [
+        "p49_t7",
+        "p49_t8",
+        "p49_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "-den جِنْسٍ Ve وَاحِدٍ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph4",
+      "tokenIds": [
+        "p49_t22",
+        "p49_t23",
+        "p49_t24"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde الثَّانِيَةِ Ve وَالْإِدْغَامُ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph5",
+      "tokenIds": [
+        "p49_t28",
+        "p49_t29",
+        "p49_t30"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde الْآخَرِ Ve o",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph6",
+      "tokenIds": [
+        "p49_t3",
+        "p49_t4",
+        "p49_t5",
+        "p49_t6",
+        "p49_t7",
+        "p49_t8",
+        "p49_t9"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o الَّذِي عَيْنُهُ Ve وَلَامُهُ -den جِنْسٍ Ve وَاحِدٍ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph7",
+      "tokenIds": [
+        "p49_t3",
+        "p49_t4",
+        "p49_t5",
+        "p49_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o الَّذِي عَيْنُهُ Ve وَلَامُهُ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph8",
+      "tokenIds": [
+        "p49_t10",
+        "p49_t11",
+        "p49_t12",
+        "p49_t13",
+        "p49_t14",
+        "p49_t15",
+        "p49_t16",
+        "p49_t17",
+        "p49_t18",
+        "p49_t19",
+        "p49_t20",
+        "p49_t21",
+        "p49_t22",
+        "p49_t23",
+        "p49_t24",
+        "p49_t25",
+        "p49_t26",
+        "p49_t27",
+        "p49_t28",
+        "p49_t29"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin مَدَّ Aslı مَدَدَ حُذِفَتْ حَرَكَةُ الدَّالِ الْأُولَى ثُمَّ أُدْغِمَتِ الدَّالُ الْأُولَى İçinde الثَّانِيَةِ Ve وَالْإِدْغَامُ إِدْخَالُ أَحَدِ الْمُتَجَانِسَيْنِ İçinde الْآخَرِ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph9",
+      "tokenIds": [
+        "p49_t10",
+        "p49_t11",
+        "p49_t12",
+        "p49_t13"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin مَدَّ Aslı مَدَدَ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph10",
+      "tokenIds": [
+        "p49_t14",
+        "p49_t15",
+        "p49_t16",
+        "p49_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "حُذِفَتْ حَرَكَةُ الدَّالِ الْأُولَى",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph11",
+      "tokenIds": [
+        "p49_t18",
+        "p49_t19",
+        "p49_t20",
+        "p49_t21"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "ثُمَّ أُدْغِمَتِ الدَّالُ الْأُولَى",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph12",
+      "tokenIds": [
+        "p49_t22",
+        "p49_t23",
+        "p49_t24",
+        "p49_t25"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "İçinde الثَّانِيَةِ Ve وَالْإِدْغَامُ إِدْخَالُ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph13",
+      "tokenIds": [
+        "p49_t26",
+        "p49_t27",
+        "p49_t28",
+        "p49_t29"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَحَدِ الْمُتَجَانِسَيْنِ İçinde الْآخَرِ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph14",
+      "tokenIds": [
+        "p49_t30",
+        "p49_t31",
+        "p49_t32"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve o Üç أَنْوَاعٍ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph15",
+      "tokenIds": [
+        "p49_t16",
+        "p49_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الدَّالِ الْأُولَى",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph16",
+      "tokenIds": [
+        "p49_t17",
+        "p49_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْأُولَى ثُمَّ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph17",
+      "tokenIds": [
+        "p49_t20",
+        "p49_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الدَّالُ الْأُولَى",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph18",
+      "tokenIds": [
+        "p49_t21",
+        "p49_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْأُولَى İçinde",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph19",
+      "tokenIds": [
+        "p49_t26",
+        "p49_t27"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَحَدِ الْمُتَجَانِسَيْنِ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph20",
+      "tokenIds": [
+        "p49_t27",
+        "p49_t28"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْمُتَجَانِسَيْنِ İçinde",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph21",
+      "tokenIds": [
+        "p49_t28",
+        "p49_t29"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde الْآخَرِ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph22",
+      "tokenIds": [
+        "p49_t29",
+        "p49_t30"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْآخَرِ Ve o",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph23",
+      "tokenIds": [
+        "p49_t12",
+        "p49_t13",
+        "p49_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Aslı مَدَدَ حُذِفَتْ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph24",
+      "tokenIds": [
+        "p49_t12",
+        "p49_t13",
+        "p49_t14",
+        "p49_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Aslı مَدَدَ حُذِفَتْ حَرَكَةُ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph25",
+      "tokenIds": [
+        "p49_t25",
+        "p49_t26",
+        "p49_t27"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "إِدْخَالُ أَحَدِ الْمُتَجَانِسَيْنِ",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph26",
+      "tokenIds": [
+        "p49_t25",
+        "p49_t26",
+        "p49_t27",
+        "p49_t28"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "إِدْخَالُ أَحَدِ الْمُتَجَانِسَيْنِ İçinde",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph27",
+      "tokenIds": [
+        "p49_t26",
+        "p49_t27",
+        "p49_t28"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَحَدِ الْمُتَجَانِسَيْنِ İçinde",
+      "parentId": "p49_ph28"
+    },
+    {
+      "id": "p49_ph28",
+      "tokenIds": [
+        "p49_t1",
         "p49_t2",
         "p49_t3",
         "p49_t4",
@@ -54,7 +371,8 @@
         "fields": {
           "meaning": "Ve وَإِمَّا"
         }
-      }
+      },
+      "printedArabic": "وإما"
     },
     {
       "id": "p49_t2",
@@ -65,7 +383,8 @@
         "fields": {
           "meaning": "Mudaaf"
         }
-      }
+      },
+      "printedArabic": "مضاعف"
     },
     {
       "id": "p49_t3",
@@ -76,7 +395,8 @@
         "fields": {
           "meaning": "Ve o"
         }
-      }
+      },
+      "printedArabic": "وهو"
     },
     {
       "id": "p49_t4",
@@ -87,7 +407,8 @@
         "fields": {
           "meaning": "الَّذِي"
         }
-      }
+      },
+      "printedArabic": "الذي"
     },
     {
       "id": "p49_t5",
@@ -98,7 +419,8 @@
         "fields": {
           "meaning": "عَيْنُهُ"
         }
-      }
+      },
+      "printedArabic": "عينه"
     },
     {
       "id": "p49_t6",
@@ -109,7 +431,8 @@
         "fields": {
           "meaning": "Ve وَلَامُهُ"
         }
-      }
+      },
+      "printedArabic": "ولامه"
     },
     {
       "id": "p49_t7",
@@ -120,7 +443,8 @@
         "fields": {
           "meaning": "-den"
         }
-      }
+      },
+      "printedArabic": "من"
     },
     {
       "id": "p49_t8",
@@ -131,7 +455,8 @@
         "fields": {
           "meaning": "جِنْسٍ"
         }
-      }
+      },
+      "printedArabic": "جنس"
     },
     {
       "id": "p49_t9",
@@ -142,7 +467,8 @@
         "fields": {
           "meaning": "Ve وَاحِدٍ"
         }
-      }
+      },
+      "printedArabic": "واحد"
     },
     {
       "id": "p49_t10",
@@ -153,7 +479,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p49_t11",
@@ -219,7 +546,8 @@
         "fields": {
           "meaning": "الدَّالِ"
         }
-      }
+      },
+      "printedArabic": "الدال"
     },
     {
       "id": "p49_t17",
@@ -230,7 +558,8 @@
         "fields": {
           "meaning": "الْأُولَى"
         }
-      }
+      },
+      "printedArabic": "الأولى"
     },
     {
       "id": "p49_t18",
@@ -263,7 +592,8 @@
         "fields": {
           "meaning": "الدَّالُ"
         }
-      }
+      },
+      "printedArabic": "الدال"
     },
     {
       "id": "p49_t21",
@@ -274,7 +604,8 @@
         "fields": {
           "meaning": "الْأُولَى"
         }
-      }
+      },
+      "printedArabic": "الأولى"
     },
     {
       "id": "p49_t22",
@@ -296,7 +627,8 @@
         "fields": {
           "meaning": "الثَّانِيَةِ"
         }
-      }
+      },
+      "printedArabic": "الثانية"
     },
     {
       "id": "p49_t24",
@@ -307,7 +639,8 @@
         "fields": {
           "meaning": "Ve وَالْإِدْغَامُ"
         }
-      }
+      },
+      "printedArabic": "والإدغام"
     },
     {
       "id": "p49_t25",
@@ -340,7 +673,8 @@
         "fields": {
           "meaning": "الْمُتَجَانِسَيْنِ"
         }
-      }
+      },
+      "printedArabic": "المتجانسين"
     },
     {
       "id": "p49_t28",
@@ -362,7 +696,8 @@
         "fields": {
           "meaning": "الْآخَرِ"
         }
-      }
+      },
+      "printedArabic": "الآخر"
     },
     {
       "id": "p49_t30",

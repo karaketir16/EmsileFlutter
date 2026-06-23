@@ -8,6 +8,348 @@
       "id": "p34_ph1",
       "tokenIds": [
         "p34_t1",
+        "p34_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Bab Beşinci",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph2",
+      "tokenIds": [
+        "p34_t7",
+        "p34_t8",
+        "p34_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Mevzunu جَلْبَبَ يُجَلْبِبُ",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph3",
+      "tokenIds": [
+        "p34_t12",
+        "p34_t13",
+        "p34_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve alâmeti Eklenmesi Bir harf",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph4",
+      "tokenIds": [
+        "p34_t22",
+        "p34_t23",
+        "p34_t24"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Ve kullanılışı Geçişlilik içindir فَقَطْ",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph5",
+      "tokenIds": [
+        "p34_t25",
+        "p34_t26",
+        "p34_t27"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin جَلْبَبَ Zeyd",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph6",
+      "tokenIds": [
+        "p34_t16",
+        "p34_t17",
+        "p34_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "-den Cinsinden لَامِ",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph7",
+      "tokenIds": [
+        "p34_t20",
+        "p34_t21",
+        "p34_t22"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde Sonunda Ve kullanılışı",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph8",
+      "tokenIds": [
+        "p34_t23",
+        "p34_t24",
+        "p34_t25"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Geçişlilik içindir فَقَطْ Örneğin",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph9",
+      "tokenIds": [
+        "p34_t1",
+        "p34_t2",
+        "p34_t3",
+        "p34_t4",
+        "p34_t5",
+        "p34_t6",
+        "p34_t7",
+        "p34_t8",
+        "p34_t9",
+        "p34_t10",
+        "p34_t11"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Beşinci فَعْلَلَ يُفَعْلِلُ فَعْلَلَةً Ve وَفِعْلَالًا Mevzunu جَلْبَبَ يُجَلْبِبُ جَلْبَبَةً Ve وَجِلْبَابًا",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph10",
+      "tokenIds": [
+        "p34_t1",
+        "p34_t2",
+        "p34_t3",
+        "p34_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Bab Beşinci فَعْلَلَ يُفَعْلِلُ",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph11",
+      "tokenIds": [
+        "p34_t5",
+        "p34_t6",
+        "p34_t7",
+        "p34_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَعْلَلَةً Ve وَفِعْلَالًا Mevzunu جَلْبَبَ",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph12",
+      "tokenIds": [
+        "p34_t9",
+        "p34_t10",
+        "p34_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُجَلْبِبُ جَلْبَبَةً Ve وَجِلْبَابًا",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph13",
+      "tokenIds": [
+        "p34_t12",
+        "p34_t13",
+        "p34_t14",
+        "p34_t15",
+        "p34_t16",
+        "p34_t17",
+        "p34_t18",
+        "p34_t19",
+        "p34_t20",
+        "p34_t21"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Bir harf Ve وَاحِدٍ -den Cinsinden لَامِ Fiilinin İçinde Sonunda",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph14",
+      "tokenIds": [
+        "p34_t12",
+        "p34_t13",
+        "p34_t14",
+        "p34_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve alâmeti Eklenmesi Bir harf Ve وَاحِدٍ",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph15",
+      "tokenIds": [
+        "p34_t16",
+        "p34_t17",
+        "p34_t18",
+        "p34_t19"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "-den Cinsinden لَامِ Fiilinin",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph16",
+      "tokenIds": [
+        "p34_t20",
+        "p34_t21"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İçinde Sonunda",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph17",
+      "tokenIds": [
+        "p34_t25",
+        "p34_t26",
+        "p34_t27",
+        "p34_t28",
+        "p34_t29",
+        "p34_t30"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin جَلْبَبَ Zeyd Yani لَبِسَ الْجِلْبَابَ",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph18",
+      "tokenIds": [
+        "p34_t25",
+        "p34_t26",
+        "p34_t27",
+        "p34_t28"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin جَلْبَبَ Zeyd Yani",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph19",
+      "tokenIds": [
+        "p34_t29",
+        "p34_t30"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "لَبِسَ الْجِلْبَابَ",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph20",
+      "tokenIds": [
+        "p34_t2",
+        "p34_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Beşinci فَعْلَلَ",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph21",
+      "tokenIds": [
+        "p34_t3",
+        "p34_t4",
+        "p34_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَعْلَلَ يُفَعْلِلُ فَعْلَلَةً",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph22",
+      "tokenIds": [
+        "p34_t3",
+        "p34_t4",
+        "p34_t5",
+        "p34_t6"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَعْلَلَ يُفَعْلِلُ فَعْلَلَةً Ve وَفِعْلَالًا",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph23",
+      "tokenIds": [
+        "p34_t4",
+        "p34_t5",
+        "p34_t6"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "يُفَعْلِلُ فَعْلَلَةً Ve وَفِعْلَالًا",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph24",
+      "tokenIds": [
+        "p34_t4",
+        "p34_t5",
+        "p34_t6",
+        "p34_t7"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُفَعْلِلُ فَعْلَلَةً Ve وَفِعْلَالًا Mevzunu",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph25",
+      "tokenIds": [
+        "p34_t5",
+        "p34_t6",
+        "p34_t7"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَعْلَلَةً Ve وَفِعْلَالًا Mevzunu",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph26",
+      "tokenIds": [
+        "p34_t9",
+        "p34_t10",
+        "p34_t11",
+        "p34_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "يُجَلْبِبُ جَلْبَبَةً Ve وَجِلْبَابًا Ve alâmeti",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph27",
+      "tokenIds": [
+        "p34_t24",
+        "p34_t25",
+        "p34_t26"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "فَقَطْ Örneğin جَلْبَبَ",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph28",
+      "tokenIds": [
+        "p34_t24",
+        "p34_t25",
+        "p34_t26",
+        "p34_t27"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "فَقَطْ Örneğin جَلْبَبَ Zeyd",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph29",
+      "tokenIds": [
+        "p34_t28",
+        "p34_t29",
+        "p34_t30"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Yani لَبِسَ الْجِلْبَابَ",
+      "parentId": "p34_ph30"
+    },
+    {
+      "id": "p34_ph30",
+      "tokenIds": [
+        "p34_t1",
         "p34_t2",
         "p34_t3",
         "p34_t4",
@@ -52,7 +394,8 @@
         "fields": {
           "meaning": "Bab"
         }
-      }
+      },
+      "printedArabic": "الباب"
     },
     {
       "id": "p34_t2",
@@ -63,7 +406,8 @@
         "fields": {
           "meaning": "Beşinci"
         }
-      }
+      },
+      "printedArabic": "الخامس"
     },
     {
       "id": "p34_t3",
@@ -118,7 +462,8 @@
         "fields": {
           "meaning": "Mevzunu"
         }
-      }
+      },
+      "printedArabic": "موزونه"
     },
     {
       "id": "p34_t8",
@@ -173,7 +518,8 @@
         "fields": {
           "meaning": "Ve alâmeti"
         }
-      }
+      },
+      "printedArabic": "وعلامته"
     },
     {
       "id": "p34_t13",
@@ -184,7 +530,8 @@
         "fields": {
           "meaning": "Eklenmesi"
         }
-      }
+      },
+      "printedArabic": "زيادة"
     },
     {
       "id": "p34_t14",
@@ -195,7 +542,8 @@
         "fields": {
           "meaning": "Bir harf"
         }
-      }
+      },
+      "printedArabic": "حرف"
     },
     {
       "id": "p34_t15",
@@ -206,7 +554,8 @@
         "fields": {
           "meaning": "Ve وَاحِدٍ"
         }
-      }
+      },
+      "printedArabic": "واحد"
     },
     {
       "id": "p34_t16",
@@ -217,7 +566,8 @@
         "fields": {
           "meaning": "-den"
         }
-      }
+      },
+      "printedArabic": "من"
     },
     {
       "id": "p34_t17",
@@ -228,7 +578,8 @@
         "fields": {
           "meaning": "Cinsinden"
         }
-      }
+      },
+      "printedArabic": "جنس"
     },
     {
       "id": "p34_t18",
@@ -239,7 +590,8 @@
         "fields": {
           "meaning": "لَامِ"
         }
-      }
+      },
+      "printedArabic": "لام"
     },
     {
       "id": "p34_t19",
@@ -250,7 +602,8 @@
         "fields": {
           "meaning": "Fiilinin"
         }
-      }
+      },
+      "printedArabic": "فعله"
     },
     {
       "id": "p34_t20",
@@ -261,7 +614,8 @@
         "fields": {
           "meaning": "İçinde"
         }
-      }
+      },
+      "printedArabic": "في"
     },
     {
       "id": "p34_t21",
@@ -272,7 +626,8 @@
         "fields": {
           "meaning": "Sonunda"
         }
-      }
+      },
+      "printedArabic": "آخره"
     },
     {
       "id": "p34_t22",
@@ -283,7 +638,8 @@
         "fields": {
           "meaning": "Ve kullanılışı"
         }
-      }
+      },
+      "printedArabic": "وبناؤه"
     },
     {
       "id": "p34_t23",
@@ -294,7 +650,8 @@
         "fields": {
           "meaning": "Geçişlilik içindir"
         }
-      }
+      },
+      "printedArabic": "للتعدية"
     },
     {
       "id": "p34_t24",
@@ -305,7 +662,8 @@
         "fields": {
           "meaning": "فَقَطْ"
         }
-      }
+      },
+      "printedArabic": "فقط"
     },
     {
       "id": "p34_t25",
@@ -316,7 +674,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p34_t26",
@@ -338,7 +697,8 @@
         "fields": {
           "meaning": "Zeyd"
         }
-      }
+      },
+      "printedArabic": "زيد"
     },
     {
       "id": "p34_t28",
@@ -371,7 +731,8 @@
         "fields": {
           "meaning": "الْجِلْبَابَ"
         }
-      }
+      },
+      "printedArabic": "الجلباب"
     }
   ]
 }

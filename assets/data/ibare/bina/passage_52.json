@@ -8,6 +8,231 @@
       "id": "p52_ph1",
       "tokenIds": [
         "p52_t1",
+        "p52_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Kısım Üçüncü",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph2",
+      "tokenIds": [
+        "p52_t16",
+        "p52_t17",
+        "p52_t18"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin مَدَدْتُ إِلَى",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph3",
+      "tokenIds": [
+        "p52_t18",
+        "p52_t19"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "إِلَى مَدَدْنَ",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph4",
+      "tokenIds": [
+        "p52_t1",
+        "p52_t2",
+        "p52_t3",
+        "p52_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Kısım Üçüncü İdgam İmkânsız",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph5",
+      "tokenIds": [
+        "p52_t5",
+        "p52_t6",
+        "p52_t7",
+        "p52_t8",
+        "p52_t9",
+        "p52_t10",
+        "p52_t11",
+        "p52_t12",
+        "p52_t13",
+        "p52_t14",
+        "p52_t15"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o -mesi Olması Birinci مِنَ الْمُتَجَانِسَيْنِ مُتَحَرِّكًا Ve وَالثَّانِي سَاكِنًا بِسُكُونٍ أَصْلِيٍّ",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph6",
+      "tokenIds": [
+        "p52_t5",
+        "p52_t6",
+        "p52_t7",
+        "p52_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o -mesi Olması Birinci",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph7",
+      "tokenIds": [
+        "p52_t9",
+        "p52_t10",
+        "p52_t11",
+        "p52_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "مِنَ الْمُتَجَانِسَيْنِ مُتَحَرِّكًا Ve وَالثَّانِي",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph8",
+      "tokenIds": [
+        "p52_t13",
+        "p52_t14",
+        "p52_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "سَاكِنًا بِسُكُونٍ أَصْلِيٍّ",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph9",
+      "tokenIds": [
+        "p52_t16",
+        "p52_t17",
+        "p52_t18",
+        "p52_t19"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin مَدَدْتُ إِلَى مَدَدْنَ",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph10",
+      "tokenIds": [
+        "p52_t2",
+        "p52_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Üçüncü İdgam",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph11",
+      "tokenIds": [
+        "p52_t3",
+        "p52_t4"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İdgam İmkânsız",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph12",
+      "tokenIds": [
+        "p52_t4",
+        "p52_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İmkânsız Ve o",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph13",
+      "tokenIds": [
+        "p52_t7",
+        "p52_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Olması Birinci",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph14",
+      "tokenIds": [
+        "p52_t8",
+        "p52_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Birinci مِنَ",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph15",
+      "tokenIds": [
+        "p52_t9",
+        "p52_t10"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "مِنَ الْمُتَجَانِسَيْنِ",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph16",
+      "tokenIds": [
+        "p52_t10",
+        "p52_t11"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْمُتَجَانِسَيْنِ مُتَحَرِّكًا",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph17",
+      "tokenIds": [
+        "p52_t6",
+        "p52_t7",
+        "p52_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "-mesi Olması Birinci",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph18",
+      "tokenIds": [
+        "p52_t6",
+        "p52_t7",
+        "p52_t8",
+        "p52_t9"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "-mesi Olması Birinci مِنَ",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph19",
+      "tokenIds": [
+        "p52_t15",
+        "p52_t16",
+        "p52_t17"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "أَصْلِيٍّ Örneğin مَدَدْتُ",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph20",
+      "tokenIds": [
+        "p52_t15",
+        "p52_t16",
+        "p52_t17",
+        "p52_t18"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "أَصْلِيٍّ Örneğin مَدَدْتُ إِلَى",
+      "parentId": "p52_ph21"
+    },
+    {
+      "id": "p52_ph21",
+      "tokenIds": [
+        "p52_t1",
         "p52_t2",
         "p52_t3",
         "p52_t4",
@@ -41,7 +266,8 @@
         "fields": {
           "meaning": "Kısım"
         }
-      }
+      },
+      "printedArabic": "النوع"
     },
     {
       "id": "p52_t2",
@@ -52,7 +278,8 @@
         "fields": {
           "meaning": "Üçüncü"
         }
-      }
+      },
+      "printedArabic": "الثالث"
     },
     {
       "id": "p52_t3",
@@ -63,7 +290,8 @@
         "fields": {
           "meaning": "İdgam"
         }
-      }
+      },
+      "printedArabic": "الإدغام"
     },
     {
       "id": "p52_t4",
@@ -74,7 +302,8 @@
         "fields": {
           "meaning": "İmkânsız"
         }
-      }
+      },
+      "printedArabic": "الممتنع"
     },
     {
       "id": "p52_t5",
@@ -85,7 +314,8 @@
         "fields": {
           "meaning": "Ve o"
         }
-      }
+      },
+      "printedArabic": "وهو"
     },
     {
       "id": "p52_t6",
@@ -96,7 +326,8 @@
         "fields": {
           "meaning": "-mesi"
         }
-      }
+      },
+      "printedArabic": "أن"
     },
     {
       "id": "p52_t7",
@@ -107,7 +338,8 @@
         "fields": {
           "meaning": "Olması"
         }
-      }
+      },
+      "printedArabic": "يكون"
     },
     {
       "id": "p52_t8",
@@ -118,7 +350,8 @@
         "fields": {
           "meaning": "Birinci"
         }
-      }
+      },
+      "printedArabic": "الأول"
     },
     {
       "id": "p52_t9",
@@ -129,7 +362,8 @@
         "fields": {
           "meaning": "مِنَ"
         }
-      }
+      },
+      "printedArabic": "من"
     },
     {
       "id": "p52_t10",
@@ -140,7 +374,8 @@
         "fields": {
           "meaning": "الْمُتَجَانِسَيْنِ"
         }
-      }
+      },
+      "printedArabic": "المتجانسين"
     },
     {
       "id": "p52_t11",
@@ -151,7 +386,8 @@
         "fields": {
           "meaning": "مُتَحَرِّكًا"
         }
-      }
+      },
+      "printedArabic": "متحركا"
     },
     {
       "id": "p52_t12",
@@ -162,7 +398,8 @@
         "fields": {
           "meaning": "Ve وَالثَّانِي"
         }
-      }
+      },
+      "printedArabic": "والثاني"
     },
     {
       "id": "p52_t13",
@@ -173,7 +410,8 @@
         "fields": {
           "meaning": "سَاكِنًا"
         }
-      }
+      },
+      "printedArabic": "ساكنا"
     },
     {
       "id": "p52_t14",
@@ -184,7 +422,8 @@
         "fields": {
           "meaning": "بِسُكُونٍ"
         }
-      }
+      },
+      "printedArabic": "بسكون"
     },
     {
       "id": "p52_t15",
@@ -195,7 +434,8 @@
         "fields": {
           "meaning": "أَصْلِيٍّ"
         }
-      }
+      },
+      "printedArabic": "أصلي"
     },
     {
       "id": "p52_t16",
@@ -206,7 +446,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p52_t17",

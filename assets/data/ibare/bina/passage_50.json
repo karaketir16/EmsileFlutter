@@ -8,6 +8,221 @@
       "id": "p50_ph1",
       "tokenIds": [
         "p50_t1",
+        "p50_t2"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Kısım Birinci",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph2",
+      "tokenIds": [
+        "p50_t18",
+        "p50_t19",
+        "p50_t20"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Örneğin مَدَّ يَمُدُّ",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph3",
+      "tokenIds": [
+        "p50_t1",
+        "p50_t2",
+        "p50_t3",
+        "p50_t4"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Kısım Birinci İdgam Vâcip",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph4",
+      "tokenIds": [
+        "p50_t5",
+        "p50_t6",
+        "p50_t7",
+        "p50_t8",
+        "p50_t9",
+        "p50_t10",
+        "p50_t11",
+        "p50_t12",
+        "p50_t13",
+        "p50_t14",
+        "p50_t15",
+        "p50_t16",
+        "p50_t17"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o -mesi Olması الْحَرْفَانِ الْمُتَجَانِسَانِ مُتَحَرِّكَيْنِ أَوْ Olması الْحَرْفُ Birinci سَاكِنًا Ve وَالثَّانِي مُتَحَرِّكًا",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph5",
+      "tokenIds": [
+        "p50_t5",
+        "p50_t6",
+        "p50_t7",
+        "p50_t8"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Ve o -mesi Olması الْحَرْفَانِ",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph6",
+      "tokenIds": [
+        "p50_t9",
+        "p50_t10",
+        "p50_t11",
+        "p50_t12"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "الْمُتَجَانِسَانِ مُتَحَرِّكَيْنِ أَوْ Olması",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph7",
+      "tokenIds": [
+        "p50_t13",
+        "p50_t14",
+        "p50_t15",
+        "p50_t16"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "الْحَرْفُ Birinci سَاكِنًا Ve وَالثَّانِي",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph8",
+      "tokenIds": [
+        "p50_t18",
+        "p50_t19",
+        "p50_t20",
+        "p50_t21"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "Örneğin مَدَّ يَمُدُّ مَدًّا",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph9",
+      "tokenIds": [
+        "p50_t2",
+        "p50_t3"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Birinci İdgam",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph10",
+      "tokenIds": [
+        "p50_t3",
+        "p50_t4"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "İdgam Vâcip",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph11",
+      "tokenIds": [
+        "p50_t4",
+        "p50_t5"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Vâcip Ve o",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph12",
+      "tokenIds": [
+        "p50_t7",
+        "p50_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Olması الْحَرْفَانِ",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph13",
+      "tokenIds": [
+        "p50_t8",
+        "p50_t9"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْحَرْفَانِ الْمُتَجَانِسَانِ",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph14",
+      "tokenIds": [
+        "p50_t9",
+        "p50_t10"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْمُتَجَانِسَانِ مُتَحَرِّكَيْنِ",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph15",
+      "tokenIds": [
+        "p50_t12",
+        "p50_t13"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Olması الْحَرْفُ",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph16",
+      "tokenIds": [
+        "p50_t13",
+        "p50_t14"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "الْحَرْفُ Birinci",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph17",
+      "tokenIds": [
+        "p50_t14",
+        "p50_t15"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "Birinci سَاكِنًا",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph18",
+      "tokenIds": [
+        "p50_t6",
+        "p50_t7",
+        "p50_t8"
+      ],
+      "type": "Kelime grubu",
+      "meaning": "-mesi Olması الْحَرْفَانِ",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph19",
+      "tokenIds": [
+        "p50_t6",
+        "p50_t7",
+        "p50_t8",
+        "p50_t9"
+      ],
+      "type": "Cümle parçası",
+      "meaning": "-mesi Olması الْحَرْفَانِ الْمُتَجَانِسَانِ",
+      "parentId": "p50_ph20"
+    },
+    {
+      "id": "p50_ph20",
+      "tokenIds": [
+        "p50_t1",
         "p50_t2",
         "p50_t3",
         "p50_t4",
@@ -43,7 +258,8 @@
         "fields": {
           "meaning": "Kısım"
         }
-      }
+      },
+      "printedArabic": "النوع"
     },
     {
       "id": "p50_t2",
@@ -54,7 +270,8 @@
         "fields": {
           "meaning": "Birinci"
         }
-      }
+      },
+      "printedArabic": "الأول"
     },
     {
       "id": "p50_t3",
@@ -65,7 +282,8 @@
         "fields": {
           "meaning": "İdgam"
         }
-      }
+      },
+      "printedArabic": "الإدغام"
     },
     {
       "id": "p50_t4",
@@ -76,7 +294,8 @@
         "fields": {
           "meaning": "Vâcip"
         }
-      }
+      },
+      "printedArabic": "الواجب"
     },
     {
       "id": "p50_t5",
@@ -87,7 +306,8 @@
         "fields": {
           "meaning": "Ve o"
         }
-      }
+      },
+      "printedArabic": "وهو"
     },
     {
       "id": "p50_t6",
@@ -98,7 +318,8 @@
         "fields": {
           "meaning": "-mesi"
         }
-      }
+      },
+      "printedArabic": "أن"
     },
     {
       "id": "p50_t7",
@@ -109,7 +330,8 @@
         "fields": {
           "meaning": "Olması"
         }
-      }
+      },
+      "printedArabic": "يكون"
     },
     {
       "id": "p50_t8",
@@ -120,7 +342,8 @@
         "fields": {
           "meaning": "الْحَرْفَانِ"
         }
-      }
+      },
+      "printedArabic": "الحرفان"
     },
     {
       "id": "p50_t9",
@@ -131,7 +354,8 @@
         "fields": {
           "meaning": "الْمُتَجَانِسَانِ"
         }
-      }
+      },
+      "printedArabic": "المتجانسان"
     },
     {
       "id": "p50_t10",
@@ -142,7 +366,8 @@
         "fields": {
           "meaning": "مُتَحَرِّكَيْنِ"
         }
-      }
+      },
+      "printedArabic": "متحركين"
     },
     {
       "id": "p50_t11",
@@ -153,7 +378,8 @@
         "fields": {
           "meaning": "أَوْ"
         }
-      }
+      },
+      "printedArabic": "أو"
     },
     {
       "id": "p50_t12",
@@ -164,7 +390,8 @@
         "fields": {
           "meaning": "Olması"
         }
-      }
+      },
+      "printedArabic": "يكون"
     },
     {
       "id": "p50_t13",
@@ -175,7 +402,8 @@
         "fields": {
           "meaning": "الْحَرْفُ"
         }
-      }
+      },
+      "printedArabic": "الحرف"
     },
     {
       "id": "p50_t14",
@@ -186,7 +414,8 @@
         "fields": {
           "meaning": "Birinci"
         }
-      }
+      },
+      "printedArabic": "الأول"
     },
     {
       "id": "p50_t15",
@@ -197,7 +426,8 @@
         "fields": {
           "meaning": "سَاكِنًا"
         }
-      }
+      },
+      "printedArabic": "ساكنا"
     },
     {
       "id": "p50_t16",
@@ -208,7 +438,8 @@
         "fields": {
           "meaning": "Ve وَالثَّانِي"
         }
-      }
+      },
+      "printedArabic": "والثاني"
     },
     {
       "id": "p50_t17",
@@ -219,7 +450,8 @@
         "fields": {
           "meaning": "مُتَحَرِّكًا"
         }
-      }
+      },
+      "printedArabic": "متحركا"
     },
     {
       "id": "p50_t18",
@@ -230,7 +462,8 @@
         "fields": {
           "meaning": "Örneğin"
         }
-      }
+      },
+      "printedArabic": "نحو"
     },
     {
       "id": "p50_t19",
