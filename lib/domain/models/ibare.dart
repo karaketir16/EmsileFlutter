@@ -106,36 +106,157 @@ class IbareToken {
   }
 }
 
+class IbarePhrase {
+  const IbarePhrase({
+    required this.id,
+    required this.tokenIds,
+    required this.type,
+    required this.meaning,
+    this.parentId,
+    this.explanation,
+  });
+
+  final String id;
+  final List<String> tokenIds;
+  final String type;
+  final String meaning;
+  final String? parentId;
+  final String? explanation;
+
+  factory IbarePhrase.fromJson(Map<String, dynamic> json) => IbarePhrase(
+    id: json['id'] as String,
+    tokenIds: List<String>.from(json['tokenIds'] as List),
+    type: json['type'] as String,
+    meaning: json['meaning'] as String,
+    parentId: json['parentId'] as String?,
+    explanation: json['explanation'] as String?,
+  );
+}
+
 class IbarePassage {
   const IbarePassage({
     required this.id,
     required this.order,
-    required this.title,
-    required this.subtitle,
     required this.translation,
     required this.tokens,
+    required this.phrases,
+    this.title,
+    this.subtitle,
+  });
+
+  final String id;
+  final int order;
+  final String? title;
+  final String? subtitle;
+  final String translation;
+  final List<IbareToken> tokens;
+  final List<IbarePhrase> phrases;
+
+  bool get hasOptionalHarakat =>
+      tokens.any((token) => token.hasOptionalHarakat);
+
+  List<IbarePhrase> phrasesForToken(String tokenId) =>
+      phrases.where((phrase) => phrase.tokenIds.contains(tokenId)).toList()
+        ..sort((a, b) {
+          final length = a.tokenIds.length.compareTo(b.tokenIds.length);
+          return length != 0 ? length : a.id.compareTo(b.id);
+        });
+
+  factory IbarePassage.fromJson(Map<String, dynamic> json) {
+    final tokens = (json['tokens'] as List<dynamic>)
+        .map((item) => IbareToken.fromJson(item as Map<String, dynamic>))
+        .toList();
+    final phrases = ((json['phrases'] as List<dynamic>?) ?? const [])
+        .map((item) => IbarePhrase.fromJson(item as Map<String, dynamic>))
+        .toList();
+    final tokenIds = tokens.map((token) => token.id).toSet();
+    final phraseIds = phrases.map((phrase) => phrase.id).toSet();
+
+    _requireUnique(phrases.map((phrase) => phrase.id), 'Terkip kimlikleri');
+    for (final phrase in phrases) {
+      if (phrase.tokenIds.isEmpty ||
+          phrase.tokenIds.any((tokenId) => !tokenIds.contains(tokenId))) {
+        throw FormatException(
+          '${phrase.id} yalnız bu ibaredeki token kimliklerini kullanmalıdır.',
+        );
+      }
+      if (phrase.parentId case final parentId?) {
+        if (!phraseIds.contains(parentId) || parentId == phrase.id) {
+          throw FormatException('${phrase.id} üst terkibi geçersiz: $parentId');
+        }
+        final parent = phrases.firstWhere((item) => item.id == parentId);
+        if (!parent.tokenIds.toSet().containsAll(phrase.tokenIds)) {
+          throw FormatException(
+            '$parentId, ${phrase.id} terkibinin bütün tokenlarını kapsamalıdır.',
+          );
+        }
+        if (parent.tokenIds.length <= phrase.tokenIds.length) {
+          throw FormatException(
+            '$parentId, ${phrase.id} terkibinden daha büyük olmalıdır.',
+          );
+        }
+        if (parent.meaning.trim() == phrase.meaning.trim()) {
+          throw FormatException(
+            '$parentId ve ${phrase.id} aynı toplu anlamı taşıyamaz.',
+          );
+        }
+      }
+    }
+    for (final phrase in phrases) {
+      final visited = <String>{phrase.id};
+      var parentId = phrase.parentId;
+      while (parentId != null) {
+        if (!visited.add(parentId)) {
+          throw FormatException(
+            'Terkip hiyerarşisinde döngü var: ${phrase.id}',
+          );
+        }
+        parentId = phrases.firstWhere((item) => item.id == parentId).parentId;
+      }
+    }
+
+    return IbarePassage(
+      id: json['id'] as String,
+      order: json['order'] as int,
+      title: json['title'] as String?,
+      subtitle: json['subtitle'] as String?,
+      translation: json['translation'] as String,
+      tokens: tokens,
+      phrases: phrases,
+    );
+  }
+}
+
+class IbareSection {
+  const IbareSection({
+    required this.id,
+    required this.order,
+    required this.title,
+    required this.passages,
+    this.description,
   });
 
   final String id;
   final int order;
   final String title;
-  final String subtitle;
-  final String translation;
-  final List<IbareToken> tokens;
+  final String? description;
+  final List<IbarePassage> passages;
 
-  bool get hasOptionalHarakat =>
-      tokens.any((token) => token.hasOptionalHarakat);
+  factory IbareSection.fromJson(Map<String, dynamic> json) {
+    final passages =
+        (json['passages'] as List<dynamic>)
+            .map((item) => IbarePassage.fromJson(item as Map<String, dynamic>))
+            .toList()
+          ..sort((a, b) => a.order.compareTo(b.order));
 
-  factory IbarePassage.fromJson(Map<String, dynamic> json) => IbarePassage(
-    id: json['id'] as String,
-    order: json['order'] as int,
-    title: json['title'] as String,
-    subtitle: json['subtitle'] as String,
-    translation: json['translation'] as String,
-    tokens: (json['tokens'] as List<dynamic>)
-        .map((item) => IbareToken.fromJson(item as Map<String, dynamic>))
-        .toList(),
-  );
+    return IbareSection(
+      id: json['id'] as String,
+      order: json['order'] as int,
+      title: json['title'] as String,
+      description: json['description'] as String?,
+      passages: passages,
+    );
+  }
 }
 
 class IbareBook {
@@ -145,7 +266,7 @@ class IbareBook {
     required this.title,
     required this.shortTitle,
     required this.description,
-    required this.passages,
+    required this.sections,
   });
 
   final int schemaVersion;
@@ -153,7 +274,11 @@ class IbareBook {
   final String title;
   final String shortTitle;
   final String description;
-  final List<IbarePassage> passages;
+  final List<IbareSection> sections;
+
+  List<IbarePassage> get passages => [
+    for (final section in sections) ...section.passages,
+  ];
 
   factory IbareBook.fromJson(Map<String, dynamic> json) {
     final schemaVersion = json['schemaVersion'] as int;
@@ -161,11 +286,37 @@ class IbareBook {
       throw FormatException('Desteklenmeyen ibare şema sürümü: $schemaVersion');
     }
 
-    final passages =
-        (json['passages'] as List<dynamic>)
-            .map((item) => IbarePassage.fromJson(item as Map<String, dynamic>))
-            .toList()
-          ..sort((a, b) => a.order.compareTo(b.order));
+    final List<IbareSection> sections;
+    if (json['sections'] case final List<dynamic> sectionsJson) {
+      sections =
+          sectionsJson
+              .map(
+                (item) => IbareSection.fromJson(item as Map<String, dynamic>),
+              )
+              .toList()
+            ..sort((a, b) => a.order.compareTo(b.order));
+    } else {
+      sections = [
+        IbareSection(
+          id: 'default',
+          order: 1,
+          title: '',
+          passages:
+              (json['passages'] as List<dynamic>)
+                  .map(
+                    (item) =>
+                        IbarePassage.fromJson(item as Map<String, dynamic>),
+                  )
+                  .toList()
+                ..sort((a, b) => a.order.compareTo(b.order)),
+        ),
+      ];
+    }
+    _requireUnique(
+      sections.map((section) => section.id),
+      'İbare bölüm kimlikleri',
+    );
+    final passages = [for (final section in sections) ...section.passages];
     _requireUnique(
       passages.map((passage) => passage.id),
       'İbare pasaj kimlikleri',
@@ -183,7 +334,7 @@ class IbareBook {
       title: json['title'] as String,
       shortTitle: json['shortTitle'] as String,
       description: json['description'] as String,
-      passages: passages,
+      sections: sections,
     );
   }
 }

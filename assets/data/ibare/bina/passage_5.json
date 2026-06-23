@@ -1,9 +1,85 @@
 {
   "id": "passage_5",
   "order": 5,
-  "title": "İkinci Bab",
-  "subtitle": "Vezin, mevzun ve alâmet",
   "translation": "İkinci babın vezni فَعَلَ يَفْعِلُ, mevzunu ضَرَبَ يَضْرِبُ’dür ve alâmet-i lafziyyesi, aynü’l-fiilin mâzide fethalı ve muzârîde kesreli olmasıdır.",
+  "phrases": [
+    {
+      "id": "p5_ph1",
+      "tokenIds": ["p5_t1", "p5_t2"],
+      "type": "Sıfat tamlaması",
+      "meaning": "İkinci bab"
+    },
+    {
+      "id": "p5_ph2",
+      "tokenIds": ["p5_t3", "p5_t4"],
+      "type": "Mâzi-muzâri vezin çifti",
+      "meaning": "فَعَلَ يَفْعِلُ kalıbı",
+      "explanation": "İkinci babın mâzi ve muzâri hareke düzenini birlikte gösterir."
+    },
+    {
+      "id": "p5_ph3",
+      "tokenIds": ["p5_t5", "p5_t6", "p5_t7"],
+      "type": "İsim cümlesi",
+      "meaning": "Onun mevzunu ضَرَبَ يَضْرِبُ’dür."
+    },
+    {
+      "id": "p5_ph4",
+      "tokenIds": ["p5_t11", "p5_t12"],
+      "type": "İsim tamlaması (izafet)",
+      "meaning": "Fiilinin ayn harfi, orta harfi",
+      "parentId": "p5_ph7"
+    },
+    {
+      "id": "p5_ph5",
+      "tokenIds": ["p5_t13", "p5_t14", "p5_t14b"],
+      "type": "Haber + câr-mecrûr",
+      "meaning": "Mâzide fethalı",
+      "parentId": "p5_ph7"
+    },
+    {
+      "id": "p5_ph5a",
+      "tokenIds": ["p5_t14", "p5_t14b"],
+      "type": "Câr-mecrûr",
+      "meaning": "Mâzide",
+      "parentId": "p5_ph5"
+    },
+    {
+      "id": "p5_ph6",
+      "tokenIds": ["p5_t15", "p5_t16", "p5_t16b"],
+      "type": "Atıflı haber + câr-mecrûr",
+      "meaning": "Ve muzârîde kesreli",
+      "parentId": "p5_ph7"
+    },
+    {
+      "id": "p5_ph6a",
+      "tokenIds": ["p5_t16", "p5_t16b"],
+      "type": "Câr-mecrûr",
+      "meaning": "Muzârîde",
+      "parentId": "p5_ph6"
+    },
+    {
+      "id": "p5_ph7",
+      "tokenIds": ["p5_t10", "p5_t11", "p5_t12", "p5_t13", "p5_t14", "p5_t14b", "p5_t15", "p5_t16", "p5_t16b"],
+      "type": "Kâne cümlesi",
+      "meaning": "Fiilinin orta harfi mâzide fethalı, muzârîde kesreli olur.",
+      "parentId": "p5_ph8",
+      "explanation": "يَكُونَ ile kurulmuş çekimli cümledir; أَنْ henüz bu katmana dahil değildir."
+    },
+    {
+      "id": "p5_ph8",
+      "tokenIds": ["p5_t9", "p5_t10", "p5_t11", "p5_t12", "p5_t13", "p5_t14", "p5_t14b", "p5_t15", "p5_t16", "p5_t16b"],
+      "type": "Masdar-ı müevvel",
+      "meaning": "Fiilinin orta harfinin mâzide fethalı, muzârîde kesreli olması",
+      "parentId": "p5_ph9",
+      "explanation": "أَنْ, kendisinden sonraki يَكُونَ cümlesini isimleştirerek “olması” anlamı verir."
+    },
+    {
+      "id": "p5_ph9",
+      "tokenIds": ["p5_t8", "p5_t9", "p5_t10", "p5_t11", "p5_t12", "p5_t13", "p5_t14", "p5_t14b", "p5_t15", "p5_t16", "p5_t16b"],
+      "type": "İsim cümlesi",
+      "meaning": "Onun alâmeti, fiilinin orta harfinin mâzide fethalı ve muzârîde kesreli olmasıdır."
+    }
+  ],
   "tokens": [
     {
       "id": "p5_t1",
@@ -178,7 +254,7 @@
       "id": "p5_t11",
       "arabic": "عَيْنُ",
       "printedArabic": "عين",
-      "gloss": "Orta harfinin",
+      "gloss": "Orta harfi",
       "analysis": {
         "kind": "İsim",
         "fields": {
@@ -225,24 +301,30 @@
     },
     {
       "id": "p5_t14",
-      "arabic": "فِي الْمَاضِي",
-      "printedArabic": "في الماضي",
-      "gloss": "Mâzide",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
       "analysis": {
-        "kind": "Harf-i cer + isim",
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p5_t14b",
+      "arabic": "الْمَاضِي",
+      "printedArabic": "الماضي",
+      "gloss": "Mâzi",
+      "analysis": {
+        "kind": "İsim",
         "fields": {
           "root": "م ض ي",
           "morphology": "الْمَاضِي: ism-i fâil",
           "pattern": "فَاعِل",
           "meaning": "Fiil-i mâzi",
           "irab": "Kesra takdir edilerek mecrur"
-        },
-        "details": [
-          {
-            "label": "فِي",
-            "value": "Harf-i cer: “-de/-da”"
-          }
-        ]
+        }
       }
     },
     {
@@ -269,11 +351,23 @@
     },
     {
       "id": "p5_t16",
-      "arabic": "فِي الْمُضَارِعِ",
-      "printedArabic": "في المضارع",
-      "gloss": "Muzârîde",
+      "arabic": "فِي",
+      "printedArabic": "في",
+      "gloss": "-de",
       "analysis": {
-        "kind": "Harf-i cer + isim",
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p5_t16b",
+      "arabic": "الْمُضَارِعِ",
+      "printedArabic": "المضارع",
+      "gloss": "Muzârî",
+      "analysis": {
+        "kind": "İsim",
         "fields": {
           "root": "ض ر ع",
           "derivedFrom": "ضَارَعَ يُضَارِعُ",
@@ -281,13 +375,7 @@
           "pattern": "مُفَاعِل",
           "morphology": "İsm-i fâil; terim olarak fiil-i muzâri",
           "irab": "Kesra ile mecrur"
-        },
-        "details": [
-          {
-            "label": "فِي",
-            "value": "Harf-i cer"
-          }
-        ]
+        }
       }
     }
   ]

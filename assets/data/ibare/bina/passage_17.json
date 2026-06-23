@@ -1,0 +1,330 @@
+{
+  "id": "passage_17",
+  "order": 17,
+  "translation": "Ve bu babın binası çoğunlukla müteaddi, bazen lazım fiiller içindir. Müteaddinin misali “Zeyd Amr'a ikram etti”; ve lazımın misali “Adam sabaha ulaştı” cümlesidir.",
+  "phrases": [
+    {
+      "id": "p17_ph1",
+      "tokenIds": ["p17_t1", "p17_t2", "p17_t3"],
+      "type": "İsim cümlesi",
+      "meaning": "Bu babın binası çoğunlukla müteaddilik içindir."
+    },
+    {
+      "id": "p17_ph2",
+      "tokenIds": ["p17_t4", "p17_t5", "p17_t6"],
+      "type": "Kâne cümlesi",
+      "meaning": "Ve bazen lazım olur."
+    },
+    {
+      "id": "p17_ph3",
+      "tokenIds": ["p17_t7", "p17_t7b"],
+      "type": "İsim tamlaması (izafet)",
+      "meaning": "Müteaddinin misali",
+      "parentId": "p17_ph6"
+    },
+    {
+      "id": "p17_ph4",
+      "tokenIds": ["p17_t9", "p17_t10", "p17_t11"],
+      "type": "Fiil cümlesi",
+      "meaning": "Zeyd Amr'a ikram etti.",
+      "parentId": "p17_ph5",
+      "explanation": "أَكْرَمَ fiil, زَيْدٌ fâil, عَمْرًا mef‘ûlün bihtir."
+    },
+    {
+      "id": "p17_ph5",
+      "tokenIds": ["p17_t8", "p17_t9", "p17_t10", "p17_t11"],
+      "type": "Örnekleme terkibi",
+      "meaning": "Şunun gibi: Zeyd Amr'a ikram etti.",
+      "parentId": "p17_ph6"
+    },
+    {
+      "id": "p17_ph6",
+      "tokenIds": ["p17_t7", "p17_t7b", "p17_t8", "p17_t9", "p17_t10", "p17_t11"],
+      "type": "Örnek bildiren isim cümlesi",
+      "meaning": "Müteaddinin misali: Zeyd Amr'a ikram etti."
+    },
+    {
+      "id": "p17_ph7",
+      "tokenIds": ["p17_t12", "p17_t12b"],
+      "type": "Atıflı isim tamlaması (izafet)",
+      "meaning": "Ve lazımın misali",
+      "parentId": "p17_ph10"
+    },
+    {
+      "id": "p17_ph8",
+      "tokenIds": ["p17_t14", "p17_t15"],
+      "type": "Fiil cümlesi",
+      "meaning": "Adam sabaha ulaştı.",
+      "parentId": "p17_ph9",
+      "explanation": "أَصْبَحَ fiil, الرَّجُلُ fâildir; fiil lazım olduğu için mef‘ûl almaz."
+    },
+    {
+      "id": "p17_ph9",
+      "tokenIds": ["p17_t13", "p17_t14", "p17_t15"],
+      "type": "Örnekleme terkibi",
+      "meaning": "Şunun gibi: Adam sabaha ulaştı.",
+      "parentId": "p17_ph10"
+    },
+    {
+      "id": "p17_ph10",
+      "tokenIds": ["p17_t12", "p17_t12b", "p17_t13", "p17_t14", "p17_t15"],
+      "type": "Örnek bildiren isim cümlesi",
+      "meaning": "Ve lazımın misali: Adam sabaha ulaştı."
+    }
+  ],
+  "tokens": [
+    {
+      "id": "p17_t1",
+      "arabic": "وَبِنَاؤُهُ",
+      "printedArabic": "وبناؤه",
+      "gloss": "Ve bu babın manen binası",
+      "analysis": {
+        "kind": "Bağlaç + masdar + zamir",
+        "fields": {
+          "root": "ب ن ي",
+          "meaning": "Babın hangi işlev için kullanıldığı",
+          "pronoun": "هُ: birinci (yedinci) baba döner",
+          "role": "Mübtedâ"
+        }
+      }
+    },
+    {
+      "id": "p17_t2",
+      "arabic": "لِلتَّعْدِيَةِ",
+      "printedArabic": "للتعدية",
+      "gloss": "Müteaddilik içindir",
+      "analysis": {
+        "kind": "Harf-i cer + isim",
+        "fields": {
+          "root": "ع د و",
+          "derivedFrom": "عَدَّى يُعَدِّي",
+          "bab": "Sülâsî mezîd, tef‘îl babı",
+          "pattern": "تَفْعِلَة",
+          "morphology": "Masdar",
+          "meaning": "Geçişlilik",
+          "irab": "Kesra ile mecrur"
+        }
+      }
+    },
+    {
+      "id": "p17_t3",
+      "arabic": "غَالِبًا",
+      "printedArabic": "غالباً",
+      "gloss": "Çoğu kez",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "غ ل ب",
+          "pattern": "فَاعِل",
+          "role": "Hâl / zarf anlamı",
+          "irab": "Fetha ile mansub"
+        }
+      }
+    },
+    {
+      "id": "p17_t4",
+      "arabic": "وَقَدْ",
+      "printedArabic": "وقد",
+      "gloss": "Ve bazen",
+      "analysis": {
+        "kind": "Bağlaç + harf",
+        "fields": {
+          "meaning": "Muzâri fiille ihtimal ve bazen manası veren harf"
+        }
+      }
+    },
+    {
+      "id": "p17_t5",
+      "arabic": "يَكُونُ",
+      "printedArabic": "يكون",
+      "gloss": "Olur",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ك و ن",
+          "conjugation": "Fiil-i muzâri, malûm",
+          "baseForm": "كَانَ يَكُونُ"
+        }
+      }
+    },
+    {
+      "id": "p17_t6",
+      "arabic": "لَازِمًا",
+      "printedArabic": "لازماً",
+      "gloss": "Lazım, geçişsiz",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "ل ز م",
+          "pattern": "فَاعِل",
+          "role": "يَكُونُ fiilinin haberi",
+          "irab": "Fetha ile mansub"
+        }
+      }
+    },
+    {
+      "id": "p17_t7",
+      "arabic": "مِثَالُ",
+      "printedArabic": "مثال",
+      "gloss": "Misali",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "م ث ل",
+          "wordForm": "Müfred ve muzaf",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p17_t7b",
+      "arabic": "الْمُتَعَدِّي",
+      "printedArabic": "المتعدي",
+      "gloss": "Müteaddinin",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "ع د و",
+          "pattern": "مُتَفَعِّل",
+          "role": "Muzafun ileyh",
+          "irab": "الْمُتَعَدِّي kesra takdir edilerek mecrur"
+        }
+      }
+    },
+    {
+      "id": "p17_t8",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و",
+          "meaning": "Örnek lafzı",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p17_t9",
+      "arabic": "أَكْرَمَ",
+      "printedArabic": "أكرم",
+      "gloss": "Ağırladı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ك ر م",
+          "bab": "Sülâsî mezîd if‘âl babı",
+          "pattern": "أَفْعَلَ",
+          "conjugation": "Fiil-i mâzi, malûm",
+          "transitivity": "Müteaddi"
+        }
+      }
+    },
+    {
+      "id": "p17_t10",
+      "arabic": "زَيْدٌ",
+      "printedArabic": "زيد",
+      "gloss": "Zeyd",
+      "analysis": {
+        "kind": "Özel isim",
+        "fields": {
+          "wordForm": "Müfred, müzekker ve marife",
+          "syntax": "Fâil",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p17_t11",
+      "arabic": "عَمْرًا",
+      "printedArabic": "عمراً",
+      "gloss": "Amr'ı",
+      "analysis": {
+        "kind": "Özel isim",
+        "fields": {
+          "wordForm": "Müfred, müzekker ve marife",
+          "syntax": "Mef‘ûlün bih",
+          "irab": "Fetha ile mansub"
+        }
+      }
+    },
+    {
+      "id": "p17_t12",
+      "arabic": "وَمِثَالُ",
+      "printedArabic": "ومثال",
+      "gloss": "Ve misali",
+      "analysis": {
+        "kind": "Bağlaç + isim",
+        "fields": {
+          "root": "م ث ل",
+          "wordForm": "Müfred ve muzaf",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p17_t12b",
+      "arabic": "اللَّازِمِ",
+      "printedArabic": "اللازم",
+      "gloss": "Lazımın",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "ل z م",
+          "pattern": "فَاعِل",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrur"
+        }
+      }
+    },
+    {
+      "id": "p17_t13",
+      "arabic": "نَحْوُ",
+      "printedArabic": "نحو",
+      "punctuation": ":",
+      "gloss": "Şunun gibi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ن ح و",
+          "meaning": "Örnek lafzı",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p17_t14",
+      "arabic": "أَصْبَحَ",
+      "printedArabic": "أصبح",
+      "gloss": "Ulaştı",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ص ب ح",
+          "bab": "Sülâsî mezîd if‘âl babı",
+          "pattern": "أَفْعَلَ",
+          "conjugation": "Fiil-i mâzi, malûm",
+          "transitivity": "Lazım"
+        }
+      }
+    },
+    {
+      "id": "p17_t15",
+      "arabic": "الرَّجُلُ",
+      "printedArabic": "الرجل",
+      "punctuation": ".",
+      "gloss": "Adam",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ر ج ل",
+          "wordForm": "Müfred ve marife",
+          "syntax": "Fâil",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    }
+  ]
+}

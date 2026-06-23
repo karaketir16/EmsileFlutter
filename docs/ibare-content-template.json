@@ -4,37 +4,42 @@
   "title": "Kitabın tam adı",
   "shortTitle": "Kısa ad",
   "description": "Kitap listesinde gösterilen açıklama",
-  "passages": [
+  "sections": [
     {
       "id": "benzersiz_bolum_kimligi",
       "order": 1,
       "title": "Bölüm başlığı",
-      "subtitle": "Bölüm alt başlığı",
-      "translation": "Toparlanmış mana",
-      "tokens": [
+      "passages": [
         {
-          "id": "benzersiz_kelime_kimligi",
-          "arabic": "تَامُّ الْحَرَكَاتِ",
-          "printedArabic": "Kitapta basıldığı biçim",
-          "punctuation": "،",
-          "gloss": "Kırık mana",
-          "analysis": {
-            "kind": "Fiil / isim / harf / sıfat",
-            "fields": {
-              "root": "ف ع ل",
-              "pattern": "فَعَلَ",
-              "conjugation": "Fiil-i mâzi, malûm",
-              "person": "3. şahıs, müzekker, tekil",
-              "syntax": "Fiil",
-              "irab": "Varsa i‘rab açıklaması"
-            },
-            "details": [
-              {
-                "label": "Kitaba özel alan",
-                "value": "Standart alanlara girmeyen açıklama"
+          "id": "benzersiz_ibare_kimligi",
+          "order": 1,
+          "translation": "Toparlanmış mana",
+          "phrases": [
+            {
+              "id": "benzersiz_terkip_kimligi",
+              "tokenIds": [
+                "benzersiz_kelime_kimligi",
+                "ikinci_kelime_kimligi"
+              ],
+              "type": "İsim tamlaması (izafet)",
+              "meaning": "Terkibin toplu anlamı",
+              "parentId": "varsa_ust_terkip_kimligi",
+              "explanation": "İsteğe bağlı öğretici açıklama"
+            }
+          ],
+          "tokens": [
+            {
+              "id": "benzersiz_kelime_kimligi",
+              "arabic": "تَامُّ الْحَرَكَاتِ",
+              "gloss": "Kırık mana",
+              "analysis": {
+                "kind": "Fiil / isim / harf / sıfat",
+                "fields": {
+                  "root": "ف ع ل"
+                }
               }
-            ]
-          }
+            }
+          ]
         }
       ]
     }

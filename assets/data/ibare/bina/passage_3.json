@@ -1,9 +1,88 @@
 {
   "id": "passage_3",
   "order": 3,
-  "title": "Birinci Bab",
-  "subtitle": "Vezin, mevzun ve alâmet",
   "translation": "Birinci babın vezni فَعَلَ يَفْعُلُ, mevzunu نَصَرَ يَنْصُرُ’dur ve alâmet-i lafziyyesi, aynü’l-fiilin mâzide fethalı ve muzârîde dammeli olmasıdır.",
+  "phrases": [
+    {
+      "id": "p3_ph1",
+      "tokenIds": ["p3_t1", "p3_t2"],
+      "type": "Sıfat tamlaması",
+      "meaning": "Birinci bab",
+      "explanation": "الْأَوَّلُ, الْبَابُ kelimesini niteleyen sıra sayısıdır."
+    },
+    {
+      "id": "p3_ph2",
+      "tokenIds": ["p3_t3", "p3_t4"],
+      "type": "Mâzi-muzâri vezin çifti",
+      "meaning": "فَعَلَ يَفْعُلُ kalıbı",
+      "explanation": "Birinci babın mâzi ve muzâri hareke düzenini birlikte gösterir."
+    },
+    {
+      "id": "p3_ph3",
+      "tokenIds": ["p3_t5", "p3_t6", "p3_t7"],
+      "type": "İsim cümlesi",
+      "meaning": "Onun mevzunu نَصَرَ يَنْصُرُ’dur.",
+      "explanation": "مَوْزُونُهُ mübtedâ, örnek fiil çifti haberdir."
+    },
+    {
+      "id": "p3_ph4",
+      "tokenIds": ["p3_t11", "p3_t12"],
+      "type": "İsim tamlaması (izafet)",
+      "meaning": "Fiilinin ayn harfi, orta harfi",
+      "parentId": "p3_ph7"
+    },
+    {
+      "id": "p3_ph5",
+      "tokenIds": ["p3_t13", "p3_t14", "p3_t14b"],
+      "type": "Haber + câr-mecrûr",
+      "meaning": "Mâzide fethalı",
+      "parentId": "p3_ph7"
+    },
+    {
+      "id": "p3_ph5a",
+      "tokenIds": ["p3_t14", "p3_t14b"],
+      "type": "Câr-mecrûr",
+      "meaning": "Mâzide",
+      "parentId": "p3_ph5"
+    },
+    {
+      "id": "p3_ph6",
+      "tokenIds": ["p3_t15", "p3_t16", "p3_t16b"],
+      "type": "Atıflı haber + câr-mecrûr",
+      "meaning": "Ve muzârîde dammeli",
+      "parentId": "p3_ph7"
+    },
+    {
+      "id": "p3_ph6a",
+      "tokenIds": ["p3_t16", "p3_t16b"],
+      "type": "Câr-mecrûr",
+      "meaning": "Muzârîde",
+      "parentId": "p3_ph6"
+    },
+    {
+      "id": "p3_ph7",
+      "tokenIds": ["p3_t10", "p3_t11", "p3_t12", "p3_t13", "p3_t14", "p3_t14b", "p3_t15", "p3_t16", "p3_t16b"],
+      "type": "Kâne cümlesi",
+      "meaning": "Fiilinin orta harfi mâzide fethalı, muzârîde dammeli olur.",
+      "parentId": "p3_ph8",
+      "explanation": "يَكُونَ ile kurulmuş çekimli cümledir. عَيْنُ فِعْلِهِ ismi; مَفْتُوحًا ve مَضْمُومًا haberleridir."
+    },
+    {
+      "id": "p3_ph8",
+      "tokenIds": ["p3_t9", "p3_t10", "p3_t11", "p3_t12", "p3_t13", "p3_t14", "p3_t14b", "p3_t15", "p3_t16", "p3_t16b"],
+      "type": "Masdar-ı müevvel",
+      "meaning": "Fiilinin orta harfinin mâzide fethalı, muzârîde dammeli olması",
+      "parentId": "p3_ph9",
+      "explanation": "أَنْ ile başlayan cümle, isim anlamında tek bir bütün hâline gelir."
+    },
+    {
+      "id": "p3_ph9",
+      "tokenIds": ["p3_t8", "p3_t9", "p3_t10", "p3_t11", "p3_t12", "p3_t13", "p3_t14", "p3_t14b", "p3_t15", "p3_t16", "p3_t16b"],
+      "type": "İsim cümlesi",
+      "meaning": "Onun alâmeti, fiilinin orta harfinin mâzide fethalı ve muzârîde dammeli olmasıdır.",
+      "explanation": "عَلَامَتُهُ mübtedâ, أَنْ يَكُونَ ile kurulan masdar-ı müevvel haberdir."
+    }
+  ],
   "tokens": [
     {
       "id": "p3_t1",
@@ -178,7 +257,7 @@
       "id": "p3_t11",
       "arabic": "عَيْنُ",
       "printedArabic": "عَيْنُ",
-      "gloss": "Orta harfinin",
+      "gloss": "Orta harfi",
       "analysis": {
         "kind": "İsim",
         "fields": {
@@ -225,24 +304,30 @@
     },
     {
       "id": "p3_t14",
-      "arabic": "فِي الْمَاضِي",
-      "printedArabic": "فِي الماضي",
-      "gloss": "Mâzide",
+      "arabic": "فِي",
+      "printedArabic": "فِي",
+      "gloss": "-de",
       "analysis": {
-        "kind": "Harf-i cer + isim",
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p3_t14b",
+      "arabic": "الْمَاضِي",
+      "printedArabic": "الماضي",
+      "gloss": "Mâzi",
+      "analysis": {
+        "kind": "İsim",
         "fields": {
           "root": "م ض ي",
           "morphology": "الْمَاضِي: ism-i fâil",
           "pattern": "فَاعِل",
           "meaning": "Fiil-i mâzi",
           "irab": "Kesra takdir edilerek mecrur"
-        },
-        "details": [
-          {
-            "label": "فِي",
-            "value": "Harf-i cer: “-de/-da”"
-          }
-        ]
+        }
       }
     },
     {
@@ -269,11 +354,23 @@
     },
     {
       "id": "p3_t16",
-      "arabic": "فِي الْمُضَارِعِ",
-      "printedArabic": "فِي المضارعِ",
-      "gloss": "Muzârîde",
+      "arabic": "فِي",
+      "printedArabic": "فِي",
+      "gloss": "-de",
       "analysis": {
-        "kind": "Harf-i cer + isim",
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p3_t16b",
+      "arabic": "الْمُضَارِعِ",
+      "printedArabic": "المضارعِ",
+      "gloss": "Muzârî",
+      "analysis": {
+        "kind": "İsim",
         "fields": {
           "root": "ض ر ع",
           "derivedFrom": "ضَارَعَ يُضَارِعُ",
@@ -281,13 +378,7 @@
           "pattern": "مُفَاعِل",
           "morphology": "İsm-i fâil; terim olarak fiil-i muzâri",
           "irab": "Kesra ile mecrur"
-        },
-        "details": [
-          {
-            "label": "فِي",
-            "value": "Harf-i cer"
-          }
-        ]
+        }
       }
     }
   ]

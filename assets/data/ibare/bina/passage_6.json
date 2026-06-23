@@ -1,9 +1,87 @@
 {
   "id": "passage_6",
   "order": 6,
-  "title": "Manen Bina ve Misaller",
-  "subtitle": "Müteaddi ve lazım",
   "translation": "Ve bu babın binası da çoğunlukla müteaddi, bazen lazım fiiller içindir. Müteaddinin misali “Zeyd Amr’a vurdu”; ve lazımın misali “Zeyd oturdu” cümlesidir.",
+  "phrases": [
+    {
+      "id": "p6_ph0",
+      "tokenIds": ["p6_t1", "p6_t2"],
+      "type": "Mübtedâ + ilave bildiren zarf",
+      "meaning": "Bu babın binası da",
+      "parentId": "p6_ph1",
+      "explanation": "أَيْضًا, önceki babdaki hükmün bu bab için de geçerli olduğunu bildirir."
+    },
+    {
+      "id": "p6_ph1",
+      "tokenIds": ["p6_t1", "p6_t2", "p6_t3", "p6_t4"],
+      "type": "İsim cümlesi",
+      "meaning": "Bu bab da çoğunlukla müteaddilik içindir."
+    },
+    {
+      "id": "p6_ph2",
+      "tokenIds": ["p6_t5", "p6_t6", "p6_t7"],
+      "type": "Kâne cümlesi",
+      "meaning": "Ve bazen lazım olur."
+    },
+    {
+      "id": "p6_ph3",
+      "tokenIds": ["p6_t10", "p6_t11", "p6_t12"],
+      "type": "Fiil cümlesi",
+      "meaning": "Zeyd Amr’a vurdu.",
+      "parentId": "p6_ph4",
+      "explanation": "ضَرَبَ fiil, زَيْدٌ fâil, عَمْرًا mef‘ûlün bihtir."
+    },
+    {
+      "id": "p6_ph4",
+      "tokenIds": ["p6_t9", "p6_t10", "p6_t11", "p6_t12"],
+      "type": "Örnekleme terkibi",
+      "meaning": "Şunun gibi: Zeyd Amr’a vurdu.",
+      "parentId": "p6_ph5"
+    },
+    {
+      "id": "p6_ph5a",
+      "tokenIds": ["p6_t8", "p6_t8b"],
+      "type": "İsim tamlaması (izafet)",
+      "meaning": "Müteaddinin misali",
+      "parentId": "p6_ph5"
+    },
+    {
+      "id": "p6_ph5",
+      "tokenIds": ["p6_t8", "p6_t8b", "p6_t9", "p6_t10", "p6_t11", "p6_t12"],
+      "type": "Örnek bildiren isim cümlesi",
+      "meaning": "Müteaddinin misali: Zeyd Amr’a vurdu.",
+      "explanation": "مِثَالُ الْمُتَعَدِّي mübtedâdır; نَحْوُ lafzı ardından gelen fiil cümlesiyle örneği haber olarak tanıtır."
+    },
+    {
+      "id": "p6_ph6",
+      "tokenIds": ["p6_t15", "p6_t16"],
+      "type": "Fiil cümlesi",
+      "meaning": "Zeyd oturdu.",
+      "parentId": "p6_ph7",
+      "explanation": "جَلَسَ fiil, زَيْدٌ fâildir; fiil lazım olduğu için mef‘ûl almaz."
+    },
+    {
+      "id": "p6_ph7",
+      "tokenIds": ["p6_t14", "p6_t15", "p6_t16"],
+      "type": "Örnekleme terkibi",
+      "meaning": "Şunun gibi: Zeyd oturdu.",
+      "parentId": "p6_ph8"
+    },
+    {
+      "id": "p6_ph8a",
+      "tokenIds": ["p6_t13", "p6_t13b"],
+      "type": "Atıflı isim tamlaması (izafet)",
+      "meaning": "Ve lazımın misali",
+      "parentId": "p6_ph8"
+    },
+    {
+      "id": "p6_ph8",
+      "tokenIds": ["p6_t13", "p6_t13b", "p6_t14", "p6_t15", "p6_t16"],
+      "type": "Örnek bildiren isim cümlesi",
+      "meaning": "Ve lazımın misali: Zeyd oturdu.",
+      "explanation": "مِثَالُ اللَّازِمِ mübtedâdır; مِثْلُ lafzı ardından gelen fiil cümlesiyle örneği haber olarak tanıtır."
+    }
+  ],
   "tokens": [
     {
       "id": "p6_t1",
@@ -133,27 +211,32 @@
     },
     {
       "id": "p6_t8",
-      "arabic": "مِثَالُ الْمُتَعَدِّي",
-      "printedArabic": "مثال المتعدي",
-      "gloss": "Müteaddinin misali",
+      "arabic": "مِثَالُ",
+      "printedArabic": "مثال",
+      "gloss": "Misali",
       "analysis": {
-        "kind": "İsim tamlaması",
+        "kind": "İsim",
+        "fields": {
+          "root": "م ث ل",
+          "wordForm": "Müfred ve muzaf",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p6_t8b",
+      "arabic": "الْمُتَعَدِّي",
+      "printedArabic": "المتعدي",
+      "gloss": "Müteaddinin",
+      "analysis": {
+        "kind": "İsm-i fâil",
         "fields": {
           "root": "ع د و",
           "derivedFrom": "تَعَدَّى يَتَعَدَّى",
           "pattern": "مُتَفَعِّل",
+          "role": "Muzafun ileyh",
           "irab": "الْمُتَعَدِّي kesra takdir edilerek mecrur"
-        },
-        "details": [
-          {
-            "label": "مِثَالُ",
-            "value": "Müfred isim ve muzaf"
-          },
-          {
-            "label": "الْمُتَعَدِّي",
-            "value": "İsm-i fâil ve muzafun ileyh"
-          }
-        ]
+        }
       }
     },
     {
@@ -217,30 +300,37 @@
     },
     {
       "id": "p6_t13",
-      "arabic": "وَمِثَالُ اللَّازِمِ",
-      "printedArabic": "ومثال اللازم",
-      "gloss": "Ve lazımın misali",
+      "arabic": "وَمِثَالُ",
+      "printedArabic": "ومثال",
+      "gloss": "Ve misali",
       "analysis": {
-        "kind": "Bağlaç + isim tamlaması",
+        "kind": "Bağlaç + isim",
         "fields": {
-          "root": "ل ز م",
-          "pattern": "فَاعِل",
-          "irab": "اللَّازِمِ kesra ile mecrur"
+          "root": "م ث ل",
+          "wordForm": "Müfred ve muzaf",
+          "irab": "Zamme ile merfû"
         },
         "details": [
           {
             "label": "وَ",
             "value": "Atıf harfi: “ve”"
-          },
-          {
-            "label": "مِثَالُ",
-            "value": "Müfred isim ve muzaf"
-          },
-          {
-            "label": "اللَّازِمِ",
-            "value": "İsm-i fâil ve muzafun ileyh"
           }
         ]
+      }
+    },
+    {
+      "id": "p6_t13b",
+      "arabic": "اللَّازِمِ",
+      "printedArabic": "اللازم",
+      "gloss": "Lazımın",
+      "analysis": {
+        "kind": "İsm-i fâil",
+        "fields": {
+          "root": "ل ز م",
+          "pattern": "فَاعِل",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrur"
+        }
       }
     },
     {

@@ -4,14 +4,86 @@
   "title": "Metnü’l-Binâ ve’l-Esâs",
   "shortTitle": "Metnü’l-Binâ",
   "description": "Metni kırık mana ve kelime tahliliyle çalış. Bir kelimeye dokunarak sarf ve nahiv bilgilerini görebilirsin.",
-  "passages": [
-    "assets/data/ibare/bina/passage_1.json",
-    "assets/data/ibare/bina/passage_2.json",
-    "assets/data/ibare/bina/passage_3.json",
-    "assets/data/ibare/bina/passage_4.json",
-    "assets/data/ibare/bina/passage_5.json",
-    "assets/data/ibare/bina/passage_6.json",
-    "assets/data/ibare/bina/passage_7.json",
-    "assets/data/ibare/bina/passage_8.json"
+  "sections": [
+    {
+      "id": "giris",
+      "order": 1,
+      "title": "Giriş",
+      "passages": [
+        "assets/data/ibare/bina/passage_1.json",
+        "assets/data/ibare/bina/passage_2.json"
+      ]
+    },
+    {
+      "id": "birinci_bab",
+      "order": 2,
+      "title": "Birinci Bab",
+      "passages": [
+        "assets/data/ibare/bina/passage_3.json",
+        "assets/data/ibare/bina/passage_4.json"
+      ]
+    },
+    {
+      "id": "ikinci_bab",
+      "order": 3,
+      "title": "İkinci Bab",
+      "passages": [
+        "assets/data/ibare/bina/passage_5.json",
+        "assets/data/ibare/bina/passage_6.json"
+      ]
+    },
+    {
+      "id": "ucuncu_bab",
+      "order": 4,
+      "title": "Üçüncü Bab",
+      "passages": [
+        "assets/data/ibare/bina/passage_7.json",
+        "assets/data/ibare/bina/passage_8.json"
+      ]
+    },
+    {
+      "id": "dorduncu_bab",
+      "order": 5,
+      "title": "Dördüncü Bab",
+      "passages": [
+        "assets/data/ibare/bina/passage_9.json",
+        "assets/data/ibare/bina/passage_10.json"
+      ]
+    },
+    {
+      "id": "besinci_bab",
+      "order": 6,
+      "title": "Beşinci Bab",
+      "passages": [
+        "assets/data/ibare/bina/passage_11.json",
+        "assets/data/ibare/bina/passage_12.json"
+      ]
+    },
+    {
+      "id": "altinci_bab",
+      "order": 7,
+      "title": "Altıncı Bab",
+      "passages": [
+        "assets/data/ibare/bina/passage_13.json",
+        "assets/data/ibare/bina/passage_14.json"
+      ]
+    },
+    {
+      "id": "sulasi_mezid_giris",
+      "order": 8,
+      "title": "Sülâsî Mezîd Giriş",
+      "passages": [
+        "assets/data/ibare/bina/passage_15.json"
+      ]
+    },
+    {
+      "id": "yedinci_bab",
+      "order": 9,
+      "title": "Yedinci Bab",
+      "passages": [
+        "assets/data/ibare/bina/passage_16.json",
+        "assets/data/ibare/bina/passage_17.json"
+      ]
+    }
   ]
 }

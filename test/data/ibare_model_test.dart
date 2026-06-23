@@ -46,6 +46,117 @@ void main() {
       throwsFormatException,
     );
   });
+
+  test('parses sections and allows passages without headings', () {
+    final passage = _passageJson(id: 'plain', order: 1)
+      ..remove('title')
+      ..remove('subtitle');
+    final book = IbareBook.fromJson({
+      'schemaVersion': 1,
+      'id': 'book',
+      'title': 'Book',
+      'shortTitle': 'Book',
+      'description': 'Description',
+      'sections': [
+        {
+          'id': 'section',
+          'order': 1,
+          'title': 'Section',
+          'passages': [passage],
+        },
+      ],
+    });
+
+    expect(book.sections.single.title, 'Section');
+    expect(book.passages.single.title, isNull);
+    expect(book.passages.single.subtitle, isNull);
+  });
+
+  test('parses nested phrases and orders token matches small to large', () {
+    final passage = _passageJson(id: 'first', order: 1);
+    passage['tokens'] = [
+      _tokenJson(),
+      {..._tokenJson(), 'id': 'second_token', 'arabic': 'الْفِعْلِ'},
+      {..._tokenJson(), 'id': 'third_token', 'arabic': 'مِنْ'},
+    ];
+    passage['phrases'] = [
+      {
+        'id': 'large',
+        'tokenIds': ['token', 'second_token', 'third_token'],
+        'type': 'Câr-mecrûr',
+        'meaning': 'Büyük yapı',
+      },
+      {
+        'id': 'small',
+        'tokenIds': ['token', 'second_token'],
+        'type': 'İsim tamlaması',
+        'meaning': 'Küçük yapı',
+        'parentId': 'large',
+      },
+    ];
+
+    final book = IbareBook.fromJson(_bookJson([passage]));
+    expect(
+      book.passages.single.phrasesForToken('token').map((item) => item.id),
+      ['small', 'large'],
+    );
+  });
+
+  test('rejects phrase parents that do not contain child tokens', () {
+    final passage = _passageJson(id: 'first', order: 1);
+    passage['tokens'] = [
+      _tokenJson(),
+      {..._tokenJson(), 'id': 'second_token'},
+    ];
+    passage['phrases'] = [
+      {
+        'id': 'parent',
+        'tokenIds': ['second_token'],
+        'type': 'Üst yapı',
+        'meaning': 'Üst',
+      },
+      {
+        'id': 'child',
+        'tokenIds': ['token'],
+        'type': 'Alt yapı',
+        'meaning': 'Alt',
+        'parentId': 'parent',
+      },
+    ];
+
+    expect(
+      () => IbareBook.fromJson(_bookJson([passage])),
+      throwsFormatException,
+    );
+  });
+
+  test('rejects phrase parents without token or meaning growth', () {
+    final passage = _passageJson(id: 'first', order: 1);
+    passage['tokens'] = [
+      _tokenJson(),
+      {..._tokenJson(), 'id': 'second_token'},
+    ];
+    passage['phrases'] = [
+      {
+        'id': 'parent',
+        'tokenIds': ['token', 'second_token'],
+        'type': 'Üst yapı',
+        'meaning': 'Aynı anlam',
+      },
+      {
+        'id': 'child',
+        'tokenIds': ['token', 'second_token'],
+        'type': 'Alt yapı',
+        'meaning': 'Aynı anlam',
+        'parentId': 'parent',
+      },
+    ];
+
+    expect(
+      () => IbareBook.fromJson(_bookJson([passage])),
+      throwsFormatException,
+    );
+  });
 }
 
 Map<String, dynamic> _bookJson(List<Map<String, dynamic>> passages) => {

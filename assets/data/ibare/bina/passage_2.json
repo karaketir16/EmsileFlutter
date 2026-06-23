@@ -1,9 +1,79 @@
 {
   "id": "passage_2",
   "order": 2,
-  "title": "Sarfın Bapları",
-  "subtitle": "Giriş cümlesi",
   "translation": "Bil ki sarf ilminin bapları otuz beş baptır. Bunlardan altısı sülâsî mücerred içindir.",
+  "phrases": [
+    {
+      "id": "p2_ph1",
+      "tokenIds": ["p2_t3", "p2_t4"],
+      "type": "İsim tamlaması (izafet)",
+      "meaning": "Sarf ilminin bapları",
+      "parentId": "p2_ph4",
+      "explanation": "أَبْوَابَ muzaf, التَّصْرِيفِ muzafun ileyhtir."
+    },
+    {
+      "id": "p2_ph2",
+      "tokenIds": ["p2_t5", "p2_t6"],
+      "type": "Atıflı birleşik sayı",
+      "meaning": "Otuz beş",
+      "parentId": "p2_ph3",
+      "explanation": "Arapçada birler basamağı önce, onlar basamağı وَ ile sonra gelir."
+    },
+    {
+      "id": "p2_ph3",
+      "tokenIds": ["p2_t5", "p2_t6", "p2_t7"],
+      "type": "Sayı-temyiz terkibi",
+      "meaning": "Otuz beş bap",
+      "parentId": "p2_ph4",
+      "explanation": "بَابًا, خَمْسَةٌ وَثَلَاثُونَ sayısının mansub ve tekil temyizidir."
+    },
+    {
+      "id": "p2_ph4",
+      "tokenIds": ["p2_t3", "p2_t4", "p2_t5", "p2_t6", "p2_t7"],
+      "type": "أَنَّ cümlesinin isim-haber çekirdeği",
+      "meaning": "Sarf ilminin bapları otuz beş baptır.",
+      "parentId": "p2_ph5",
+      "explanation": "أَبْوَابَ التَّصْرِيفِ, أَنَّ edatının ismi; sayı terkibi haberidir."
+    },
+    {
+      "id": "p2_ph5",
+      "tokenIds": ["p2_t2", "p2_t3", "p2_t4", "p2_t5", "p2_t6", "p2_t7"],
+      "type": "أَنَّ cümlesi",
+      "meaning": "Muhakkak ki sarf ilminin bapları otuz beş baptır.",
+      "parentId": "p2_ph6",
+      "explanation": "أَنَّ, isim cümlesine tekit katar; ismini mansub, haberini merfû yapar."
+    },
+    {
+      "id": "p2_ph6",
+      "tokenIds": ["p2_t1", "p2_t2", "p2_t3", "p2_t4", "p2_t5", "p2_t6", "p2_t7"],
+      "type": "Emir fiili ve mef‘ûl cümlesi",
+      "meaning": "Bil ki sarf ilminin bapları otuz beş baptır.",
+      "explanation": "اِعْلَمْ emir fiilidir; ardından gelen أَنَّ cümlesi bilinen şeyi bildirir."
+    },
+    {
+      "id": "p2_ph7",
+      "tokenIds": ["p2_t10", "p2_t11"],
+      "type": "Câr-mecrûr ve sıfat",
+      "meaning": "Sülâsî mücerred için",
+      "parentId": "p2_ph9",
+      "explanation": "لِ harf-i cerri الثُّلَاثِيِّ kelimesine bitişmiştir; الْمُجَرَّدِ onun sıfatıdır."
+    },
+    {
+      "id": "p2_ph8",
+      "tokenIds": ["p2_t8", "p2_t9"],
+      "type": "Mübtedâ ve açıklayıcı câr-mecrûr",
+      "meaning": "Bunlardan altısı",
+      "parentId": "p2_ph9",
+      "explanation": "سِتَّةٌ mübtedâdır; مِنْهَا, altının hangi bütünden olduğunu açıklar."
+    },
+    {
+      "id": "p2_ph9",
+      "tokenIds": ["p2_t8", "p2_t9", "p2_t10", "p2_t11"],
+      "type": "İsim cümlesi",
+      "meaning": "Bunlardan altısı sülâsî mücerred içindir.",
+      "explanation": "سِتَّةٌ mübtedâ, لِلثُّلَاثِيِّ الْمُجَرَّدِ câr-mecrûru haberdir."
+    }
+  ],
   "tokens": [
     {
       "id": "p2_t1",

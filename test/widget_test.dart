@@ -35,12 +35,22 @@ Future<void> pumpLoadedApp(WidgetTester tester) async {
 IbareBook _loadBookSync(String manifestPath) {
   final manifestRaw = File(manifestPath).readAsStringSync();
   final manifestJson = jsonDecode(manifestRaw) as Map<String, dynamic>;
-  final passagePaths = List<String>.from(manifestJson['passages'] as List);
-  final passages = passagePaths.map((path) {
-    final passageRaw = File(path).readAsStringSync();
-    return jsonDecode(passageRaw) as Map<String, dynamic>;
-  }).toList();
-  final fullJson = Map<String, dynamic>.from(manifestJson)..['passages'] = passages;
+  Map<String, dynamic> loadPassage(String path) =>
+      jsonDecode(File(path).readAsStringSync()) as Map<String, dynamic>;
+  final fullJson = Map<String, dynamic>.from(manifestJson);
+  if (manifestJson['sections'] case final List<dynamic> sections) {
+    fullJson['sections'] = sections.map((item) {
+      final section = Map<String, dynamic>.from(item as Map<String, dynamic>);
+      section['passages'] = List<String>.from(
+        section['passages'] as List,
+      ).map(loadPassage).toList();
+      return section;
+    }).toList();
+  } else {
+    fullJson['passages'] = List<String>.from(
+      manifestJson['passages'] as List,
+    ).map(loadPassage).toList();
+  }
   return IbareBook.fromJson(fullJson);
 }
 
@@ -95,6 +105,15 @@ void main() {
         'وبناؤه أيضاً للتعدية غالباً وقد يكون لازماً مثال المتعدي نحو: ضَرَبَ زَيْدٌ عَمْرًا ومثال اللازم مثل: جَلَسَ زَيْدٌ',
         'الباب الثالث: فَعَلَ – يَفْعَلُ موزونه: فَتَحَ يَفْتَحُ، وعلامته أن يكون عين فعله مفتوحاً في الماضي والمضارع بشرط أن يكون عين فعله أو لامه واحداً من حروف الحلق وهي ستة: الحاء والخاء والعين والغين والهاء والهمزة.',
         'وبناؤه أيضاً للتعدية غالباً وقد يكون لازماً مثال المتعدي نحو: فَتَحَ زَيْدٌ الْبَابَ ومثال اللازم نحو: ذَهَبَ زَيْدٌ.',
+        'الْبَابُ الرَّابِعُ: فَعِلَ يَفْعَلُ مَوْزُونُهُ: عَلِمَ يَعْلَمُ، وَعَلَامَتُهُ أَنْ يَكُونَ عَيْنُ فِعْلِهِ مَكْسُورًا فِي الْمَاضِي وَمَفْتُوحًا فِي الْمُضَارِعِ',
+        'وَبِنَاؤُهُ أَيْضًا لِلتَّعْدِيَةِ غَالِبًا وَقَدْ يَكُونُ لَازِمًا مِثَالُ الْمُتَعَدِّي نَحْوُ: عَلِمَ زَيْدٌ الْمَسْأَلَةَ وَمِثَالُ اللَّازِمِ نَحْوُ: وَجِلَ زَيْدٌ',
+        'الباب الخامس: فَعُلَ يَفْعُلُ موزونه: حسن يحسن، وعلامته أن يكون عين فعله مضموماً في الماضي والمضارع',
+        'وبناؤه لا يكون إلا لازماً نحو: حسن زيد.',
+        'الباب السادس: فَعِلَ يَفْعِلُ موزونه: حسب يحسب، وعلامته أن يكون عين فعله مكسوراً في الماضي والمضارع',
+        'وبناؤه أيضاً للتعدية غالباً وقد يكون لازماً مثال المتعدي نحو: حسب زيد عمراً فاضلاً ومثال اللازم نحو: ورث زيد.',
+        'واثنا عشر باباً منها لما زاد على الثلاثي وهو ثلاثة أنواع، النوع الأول: الفعل الثلاثي المزيد بحرف واحد وهو ما زيد فيه حرف واحد على الثلاثي وهو ثلاثة أبواب.',
+        'الباب الأول: أفعل يفعل إفعالاً موزونه: أكرم يكرم إكراماً، وعلامته أن يكون ماضيه على أربعة أحرف بزيادة الهمزة في أوله.',
+        'وبناؤه للتعدية غالباً وقد يكون لازماً مثال المتعدي نحو: أكرم زيد عمراً ومثال اللازم نحو: أصبح الرجل.',
       ],
     );
   });
@@ -102,12 +121,165 @@ void main() {
   test('ibare broken meanings preserve conjunction waw', () {
     final conjunctions = binaBook.passages
         .expand((passage) => passage.tokens)
-        .where((token) => token.arabic.startsWith('وَ') && token.arabic != 'وَاحِدًا');
+        .where(
+          (token) =>
+              token.arabic.startsWith('وَ') &&
+              !token.arabic.contains('وَاحِد') &&
+              token.arabic != 'وَجِلَ' &&
+              token.arabic != 'وَرِثَ',
+        );
 
     expect(
       conjunctions.every((token) => token.gloss.startsWith('Ve ')),
       isTrue,
     );
+  });
+
+  test('ibare broken meanings stay within token boundaries', () {
+    IbareToken token(String id) => binaBook.passages
+        .expand((passage) => passage.tokens)
+        .firstWhere((token) => token.id == id);
+
+    expect(token('p1_t1').gloss, 'İsim ile, adıyla');
+    expect(token('p3_t11').gloss, 'Orta harfi');
+    expect(token('p5_t11').gloss, 'Orta harfi');
+    expect(token('p7_t11').gloss, 'Ayn harfi, orta harfi');
+    expect(token('p7_t14').gloss, '-de');
+    expect(token('p7_t15').gloss, 'Mâzi');
+    expect(token('p7_t23').gloss, 'Lâmı, son harfi');
+    expect(token('p7_t25').gloss, '-den, -dan');
+    expect(token('p7_t26').gloss, 'Harfleri');
+    final phrases = binaBook.passages[6].phrasesForToken('p7_t26');
+    expect(phrases.first.meaning, 'Boğaz harfleri');
+    expect(phrases[1].meaning, 'Boğaz harflerinden');
+  });
+
+  test('ibare tokens follow real word boundaries', () {
+    final multiWordTokens = binaBook.passages
+        .expand((passage) => passage.tokens)
+        .where((token) => token.arabic.contains(' '));
+
+    expect(multiWordTokens, isEmpty);
+    expect(
+      binaBook.passages[7].phrasesForToken('p8_t8').first.meaning,
+      'Müteaddinin misali',
+    );
+    expect(
+      binaBook.passages[7].phrasesForToken('p8_t1').first.meaning,
+      'Bu babın binası da',
+    );
+  });
+
+  test('third bab distinguishes the kane sentence from its verbal noun', () {
+    final phrases = binaBook.passages[6].phrases;
+    final kane = phrases.firstWhere((phrase) => phrase.id == 'p7_ph15');
+    final masdar = phrases.firstWhere((phrase) => phrase.id == 'p7_ph16');
+
+    expect(
+      kane.meaning,
+      'Fiilinin ayn veya lâm harfi boğaz harflerinden biri olur.',
+    );
+    expect(
+      masdar.meaning,
+      'Fiilinin ayn veya lâm harfinin boğaz harflerinden biri olması',
+    );
+  });
+
+  test('all ibare phrase layers grow and have distinct meanings', () {
+    for (final passage in binaBook.passages) {
+      final byId = {for (final phrase in passage.phrases) phrase.id: phrase};
+      final coveredTokens = passage.phrases
+          .expand((phrase) => phrase.tokenIds)
+          .toSet();
+
+      expect(
+        coveredTokens,
+        containsAll(passage.tokens.map((token) => token.id)),
+        reason: passage.id,
+      );
+
+      for (final phrase in passage.phrases) {
+        if (phrase.parentId case final parentId?) {
+          final parent = byId[parentId]!;
+          expect(
+            parent.tokenIds.length,
+            greaterThan(phrase.tokenIds.length),
+            reason: '${passage.id}: ${phrase.id} -> $parentId',
+          );
+          expect(
+            parent.meaning.trim(),
+            isNot(phrase.meaning.trim()),
+            reason: '${passage.id}: ${phrase.id} -> $parentId',
+          );
+        }
+      }
+    }
+  });
+
+  test('besmele and introduction expose layered phrases', () {
+    final besmele = binaBook.passages[0];
+    final introduction = binaBook.passages[1];
+
+    expect(
+      besmele.phrasesForToken('p1_t2').map((phrase) => phrase.meaning),
+      containsAll([
+        'Allah’ın adıyla',
+        'Rahman olan Allah',
+        'Rahman ve Rahim olan Allah',
+        'Rahman ve Rahim olan Allah’ın adıyla [başlarım].',
+      ]),
+    );
+    expect(
+      introduction.phrasesForToken('p2_t5').map((phrase) => phrase.meaning),
+      containsAll([
+        'Otuz beş',
+        'Otuz beş bap',
+        'Sarf ilminin bapları otuz beş baptır.',
+        'Muhakkak ki sarf ilminin bapları otuz beş baptır.',
+        'Bil ki sarf ilminin bapları otuz beş baptır.',
+      ]),
+    );
+    expect(
+      introduction.phrasesForToken('p2_t10').map((phrase) => phrase.meaning),
+      containsAll([
+        'Sülâsî mücerred için',
+        'Bunlardan altısı sülâsî mücerred içindir.',
+      ]),
+    );
+  });
+
+  testWidgets('ibare phrase layers open separately and grow with arrows', (
+    WidgetTester tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(390, 1600));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+
+    await tester.pumpWidget(
+      MaterialApp(home: IbarePassageScreen(book: binaBook, initialIndex: 6)),
+    );
+
+    await tester.tap(find.byKey(const ValueKey('detail_p7_t26')));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Kelime grubunu göster (8)'), findsOneWidget);
+    expect(find.text('Boğaz harfleri'), findsNothing);
+
+    final phraseButton = find.text('Kelime grubunu göster (8)');
+    await tester.ensureVisible(phraseButton);
+    await tester.pumpAndSettle();
+    await tester.tap(phraseButton);
+    await tester.pumpAndSettle();
+
+    await tester.ensureVisible(find.text('Terkip (Kelime Grubu)'));
+    expect(find.text('Terkip (Kelime Grubu)'), findsOneWidget);
+    expect(find.text('Boğaz harfleri'), findsOneWidget);
+    expect(find.text('1/8'), findsOneWidget);
+
+    await tester.tap(find.byTooltip('Daha büyük terkip'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Boğaz harflerinden'), findsOneWidget);
+    expect(find.text('2/8'), findsOneWidget);
   });
 
   testWidgets('shows the Emsile home screen', (WidgetTester tester) async {
@@ -276,10 +448,10 @@ void main() {
     expect(find.text('Bapları'), findsOneWidget);
   });
 
-  testWidgets('ibare book list opens data-driven passages', (
+  testWidgets('ibare book shows passages, word analysis, and detail action', (
     WidgetTester tester,
   ) async {
-    await tester.binding.setSurfaceSize(const Size(390, 844));
+    await tester.binding.setSurfaceSize(const Size(390, 1600));
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(
@@ -290,9 +462,31 @@ void main() {
     await tester.tap(find.text(binaBook.title));
     await tester.pumpAndSettle();
 
-    expect(find.text('Bölümler'), findsOneWidget);
-    expect(find.text('Besmele'), findsOneWidget);
+    expect(find.text('Giriş'), findsOneWidget);
     expect(find.text('Birinci Bab'), findsOneWidget);
+    expect(find.text('Harekeler'), findsNWidgets(binaBook.passages.length));
+
+    await tester.tap(find.byKey(const ValueKey('harakat_passage_1')));
+    await tester.pumpAndSettle();
+
+    expect(find.text('بِسْمِ'), findsOneWidget);
+
+    await tester.tap(find.byKey(const ValueKey('overview_p1_t1')));
+    await tester.pumpAndSettle();
+
+    expect(find.text('İsim'), findsOneWidget);
+    expect(find.text('İsim ile, adıyla'), findsOneWidget);
+
+    await tester.tap(find.byKey(const ValueKey('overview_p1_t1')));
+    await tester.pumpAndSettle();
+
+    expect(find.text('İsim ile, adıyla'), findsNothing);
+
+    await tester.tap(find.byKey(const ValueKey('inspect_passage_1')));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Kırık Mana'), findsOneWidget);
+    expect(find.text('Toparlanmış Mana'), findsOneWidget);
   });
 
   testWidgets('lesson detail renders muhtelife table entries', (

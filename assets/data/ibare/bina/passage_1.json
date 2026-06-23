@@ -1,15 +1,46 @@
 {
   "id": "passage_1",
   "order": 1,
-  "title": "Besmele",
-  "subtitle": "Kitabın başlangıcı",
   "translation": "Rahman ve Rahim olan Allah’ın ismiyle başlarım.",
+  "phrases": [
+    {
+      "id": "p1_ph1",
+      "tokenIds": ["p1_t1", "p1_t2"],
+      "type": "Câr-mecrûr içindeki isim tamlaması",
+      "meaning": "Allah’ın adıyla",
+      "parentId": "p1_ph4",
+      "explanation": "بِ harf-i cerri اِسْمِ kelimesine bitişmiştir; اِسْمِ muzaf, اللّٰهِ muzafun ileyhtir."
+    },
+    {
+      "id": "p1_ph2",
+      "tokenIds": ["p1_t2", "p1_t3"],
+      "type": "Mevsuf-sıfat terkibi",
+      "meaning": "Rahman olan Allah",
+      "parentId": "p1_ph3",
+      "explanation": "الرَّحْمٰنِ, اللّٰهِ lafzını niteleyen birinci sıfattır."
+    },
+    {
+      "id": "p1_ph3",
+      "tokenIds": ["p1_t2", "p1_t3", "p1_t4"],
+      "type": "Mevsuf ve sıfat zinciri",
+      "meaning": "Rahman ve Rahim olan Allah",
+      "parentId": "p1_ph4",
+      "explanation": "الرَّحْمٰنِ ve الرَّحِيمِ, Allah lafzına peş peşe gelen iki sıfattır."
+    },
+    {
+      "id": "p1_ph4",
+      "tokenIds": ["p1_t1", "p1_t2", "p1_t3", "p1_t4"],
+      "type": "Câr-mecrûr ve sıfat zinciri",
+      "meaning": "Rahman ve Rahim olan Allah’ın adıyla [başlarım].",
+      "explanation": "Cümlede müteallak fiil hazfedilmiştir; أَبْدَأُ “başlarım” takdir edilir."
+    }
+  ],
   "tokens": [
     {
       "id": "p1_t1",
       "arabic": "بِسْمِ",
       "printedArabic": "بسم",
-      "gloss": "Allah’ın ismiyle ifadesindeki “isim ile”",
+      "gloss": "İsim ile, adıyla",
       "analysis": {
         "kind": "Harf-i cer + isim",
         "fields": {

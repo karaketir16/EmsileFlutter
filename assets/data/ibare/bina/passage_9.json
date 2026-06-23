@@ -1,0 +1,326 @@
+{
+  "id": "passage_9",
+  "order": 9,
+  "translation": "Dördüncü babın vezni فَعِلَ يَفْعَلُ, mevzunu عَلِمَ يَعْلَمُ’dır. Alâmeti, fiilin orta harfinin mâzide kesreli ve muzârîde fethalı olmasıdır.",
+  "phrases": [
+    {
+      "id": "p9_ph1",
+      "tokenIds": ["p9_t1", "p9_t2"],
+      "type": "Sıfat tamlaması",
+      "meaning": "Dördüncü bab"
+    },
+    {
+      "id": "p9_ph2",
+      "tokenIds": ["p9_t3", "p9_t4"],
+      "type": "Mâzi-muzâri vezin çifti",
+      "meaning": "فَعِلَ يَفْعَلُ kalıbı",
+      "explanation": "Dördüncü babda aynü’l-fiil mâzide kesreli, muzârîde fethalıdır."
+    },
+    {
+      "id": "p9_ph3",
+      "tokenIds": ["p9_t5", "p9_t6", "p9_t7"],
+      "type": "İsim cümlesi",
+      "meaning": "Onun mevzunu عَلِمَ يَعْلَمُ’dır."
+    },
+    {
+      "id": "p9_ph4",
+      "tokenIds": ["p9_t11", "p9_t12"],
+      "type": "İsim tamlaması (izafet)",
+      "meaning": "Fiilinin ayn harfi, orta harfi",
+      "parentId": "p9_ph9"
+    },
+    {
+      "id": "p9_ph5",
+      "tokenIds": ["p9_t14", "p9_t15"],
+      "type": "Câr-mecrûr",
+      "meaning": "Mâzide",
+      "parentId": "p9_ph6"
+    },
+    {
+      "id": "p9_ph6",
+      "tokenIds": ["p9_t13", "p9_t14", "p9_t15"],
+      "type": "Haber + câr-mecrûr",
+      "meaning": "Mâzide kesreli",
+      "parentId": "p9_ph9"
+    },
+    {
+      "id": "p9_ph7",
+      "tokenIds": ["p9_t17", "p9_t18"],
+      "type": "Câr-mecrûr",
+      "meaning": "Muzârîde",
+      "parentId": "p9_ph8"
+    },
+    {
+      "id": "p9_ph8",
+      "tokenIds": ["p9_t16", "p9_t17", "p9_t18"],
+      "type": "Atıflı haber + câr-mecrûr",
+      "meaning": "Ve muzârîde fethalı",
+      "parentId": "p9_ph9"
+    },
+    {
+      "id": "p9_ph9",
+      "tokenIds": ["p9_t10", "p9_t11", "p9_t12", "p9_t13", "p9_t14", "p9_t15", "p9_t16", "p9_t17", "p9_t18"],
+      "type": "Kâne cümlesi",
+      "meaning": "Fiilinin orta harfi mâzide kesreli, muzârîde fethalı olur.",
+      "parentId": "p9_ph10",
+      "explanation": "يَكُونَ ile kurulmuş çekimli cümledir."
+    },
+    {
+      "id": "p9_ph10",
+      "tokenIds": ["p9_t9", "p9_t10", "p9_t11", "p9_t12", "p9_t13", "p9_t14", "p9_t15", "p9_t16", "p9_t17", "p9_t18"],
+      "type": "Masdar-ı müevvel",
+      "meaning": "Fiilinin orta harfinin mâzide kesreli, muzârîde fethalı olması",
+      "parentId": "p9_ph11",
+      "explanation": "أَنْ, يَكُونَ cümlesini isimleştirerek “olması” anlamı verir."
+    },
+    {
+      "id": "p9_ph11",
+      "tokenIds": ["p9_t8", "p9_t9", "p9_t10", "p9_t11", "p9_t12", "p9_t13", "p9_t14", "p9_t15", "p9_t16", "p9_t17", "p9_t18"],
+      "type": "İsim cümlesi",
+      "meaning": "Onun alâmeti, fiilinin orta harfinin mâzide kesreli ve muzârîde fethalı olmasıdır."
+    }
+  ],
+  "tokens": [
+    {
+      "id": "p9_t1",
+      "arabic": "الْبَابُ",
+      "gloss": "Bab",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ب و ب",
+          "wordForm": "Müfred ve marife",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p9_t2",
+      "arabic": "الرَّابِعُ",
+      "punctuation": ":",
+      "gloss": "Dördüncü",
+      "analysis": {
+        "kind": "Sıfat / sıra sayısı",
+        "fields": {
+          "root": "ر ب ع",
+          "pattern": "فَاعِل",
+          "role": "الْبَابُ kelimesinin sıfatı",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p9_t3",
+      "arabic": "فَعِلَ",
+      "gloss": "Mâzi vezni: feile",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "middleRadical": "Kesreli"
+        }
+      }
+    },
+    {
+      "id": "p9_t4",
+      "arabic": "يَفْعَلُ",
+      "gloss": "Muzâri vezni: yef‘alü",
+      "analysis": {
+        "kind": "Vezin",
+        "fields": {
+          "conjugation": "Fiil-i muzâri, malûm",
+          "middleRadical": "Fethalı"
+        }
+      }
+    },
+    {
+      "id": "p9_t5",
+      "arabic": "مَوْزُونُهُ",
+      "punctuation": ":",
+      "gloss": "Onun mevzunu",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "و ز ن",
+          "pattern": "مَفْعُول",
+          "pronoun": "هُ: dördüncü baba döner",
+          "meaning": "Bu vezne oturan örnek fiil"
+        }
+      }
+    },
+    {
+      "id": "p9_t6",
+      "arabic": "عَلِمَ",
+      "gloss": "Bildi",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ع ل م",
+          "bab": "Sülâsî mücerred 4. bab",
+          "pattern": "فَعِلَ",
+          "conjugation": "Fiil-i mâzi, malûm",
+          "transitivity": "Müteaddi"
+        }
+      }
+    },
+    {
+      "id": "p9_t7",
+      "arabic": "يَعْلَمُ",
+      "punctuation": "،",
+      "gloss": "Bilir",
+      "analysis": {
+        "kind": "Fiil",
+        "fields": {
+          "root": "ع ل م",
+          "bab": "Sülâsî mücerred 4. bab",
+          "pattern": "يَفْعَلُ",
+          "conjugation": "Fiil-i muzâri, malûm",
+          "transitivity": "Müteaddi"
+        }
+      }
+    },
+    {
+      "id": "p9_t8",
+      "arabic": "وَعَلَامَتُهُ",
+      "gloss": "Ve onun alâmeti",
+      "analysis": {
+        "kind": "Bağlaç + isim + zamir",
+        "fields": {
+          "root": "ع ل م",
+          "pronoun": "هُ: dördüncü baba döner",
+          "role": "Mübtedâ"
+        }
+      }
+    },
+    {
+      "id": "p9_t9",
+      "arabic": "أَنْ",
+      "gloss": "-mesi",
+      "analysis": {
+        "kind": "Masdariyye ve nasb harfi",
+        "fields": {
+          "effect": "Muzâri fiili nasb eder ve cümleyi isimleştirir."
+        }
+      }
+    },
+    {
+      "id": "p9_t10",
+      "arabic": "يَكُونَ",
+      "gloss": "Olması",
+      "analysis": {
+        "kind": "Nâkıs fiil",
+        "fields": {
+          "root": "ك و ن",
+          "baseForm": "كَانَ يَكُونُ",
+          "nasb": "أَنْ sebebiyle mansub"
+        }
+      }
+    },
+    {
+      "id": "p9_t11",
+      "arabic": "عَيْنُ",
+      "gloss": "Ayn harfi, orta harfi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ع ي ن",
+          "term": "Aynü’l-fiil: kökün ikinci harfi",
+          "role": "يَكُونَ fiilinin ismi",
+          "construction": "Muzaf",
+          "irab": "Zamme ile merfû"
+        }
+      }
+    },
+    {
+      "id": "p9_t12",
+      "arabic": "فِعْلِهِ",
+      "gloss": "Fiilinin",
+      "analysis": {
+        "kind": "İsim + zamir",
+        "fields": {
+          "root": "ف ع ل",
+          "role": "Muzafun ileyh",
+          "pronoun": "هُ: vezne giren fiile döner",
+          "irab": "Kesra ile mecrur"
+        }
+      }
+    },
+    {
+      "id": "p9_t13",
+      "arabic": "مَكْسُورًا",
+      "gloss": "Kesreli",
+      "analysis": {
+        "kind": "İsm-i mef‘ûl",
+        "fields": {
+          "root": "ك س ر",
+          "pattern": "مَفْعُول",
+          "role": "يَكُونَ fiilinin haberi",
+          "irab": "Fetha ile mansub"
+        }
+      }
+    },
+    {
+      "id": "p9_t14",
+      "arabic": "فِي",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p9_t15",
+      "arabic": "الْمَاضِي",
+      "gloss": "Mâzi",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "م ض ي",
+          "meaning": "Fiil-i mâzi",
+          "irab": "Kesra takdir edilerek mecrur"
+        }
+      }
+    },
+    {
+      "id": "p9_t16",
+      "arabic": "وَمَفْتُوحًا",
+      "gloss": "Ve fethalı",
+      "analysis": {
+        "kind": "Bağlaç + ism-i mef‘ûl",
+        "fields": {
+          "root": "ف ت ح",
+          "pattern": "مَفْعُول",
+          "role": "مَكْسُورًا kelimesine atfedilen ikinci haber",
+          "irab": "Fetha ile mansub"
+        }
+      }
+    },
+    {
+      "id": "p9_t17",
+      "arabic": "فِي",
+      "gloss": "-de",
+      "analysis": {
+        "kind": "Harf-i cer",
+        "fields": {
+          "meaning": "“-de/-da”"
+        }
+      }
+    },
+    {
+      "id": "p9_t18",
+      "arabic": "الْمُضَارِعِ",
+      "gloss": "Muzârî",
+      "analysis": {
+        "kind": "İsim",
+        "fields": {
+          "root": "ض ر ع",
+          "meaning": "Fiil-i muzâri",
+          "irab": "Kesra ile mecrur"
+        }
+      }
+    }
+  ]
+}

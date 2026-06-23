@@ -1,9 +1,159 @@
 {
   "id": "passage_7",
   "order": 7,
-  "title": "Üçüncü Bab",
-  "subtitle": "Vezin, mevzun, alâmet ve şart",
   "translation": "Üçüncü babın vezni فَعَلَ يَفْعَلُ, mevzunu فَتَحَ يَفْتَحُ’dür; ve alâmet-i lafziyyesi aynü’l-fiilinin veya lâmü’l-fiilinin boğaz harflerinden biri olması şartıyla, aynü’l-fiilinin mâzide ve muzârîde fethalı olmasıdır. Boğaz harfleri de altıdır: ح, خ, ع, غ, هـ, ء.",
+  "phrases": [
+    {
+      "id": "p7_ph1",
+      "tokenIds": ["p7_t1", "p7_t2"],
+      "type": "Sıfat tamlaması",
+      "meaning": "Üçüncü bab"
+    },
+    {
+      "id": "p7_ph2",
+      "tokenIds": ["p7_t3", "p7_t4"],
+      "type": "Mâzi-muzâri vezin çifti",
+      "meaning": "فَعَلَ يَفْعَلُ kalıbı",
+      "explanation": "Üçüncü babın mâzi ve muzâri hareke düzenini birlikte gösterir."
+    },
+    {
+      "id": "p7_ph3",
+      "tokenIds": ["p7_t5", "p7_t6", "p7_t7"],
+      "type": "İsim cümlesi",
+      "meaning": "Onun mevzunu فَتَحَ يَفْتَحُ’dür."
+    },
+    {
+      "id": "p7_ph4",
+      "tokenIds": ["p7_t11", "p7_t12"],
+      "type": "İsim tamlaması (izafet)",
+      "meaning": "Fiilinin ayn harfi, orta harfi",
+      "parentId": "p7_ph8"
+    },
+    {
+      "id": "p7_ph5",
+      "tokenIds": ["p7_t14", "p7_t15", "p7_t16"],
+      "type": "Câr-mecrûr ve atıf",
+      "meaning": "Mâzide ve muzârîde",
+      "parentId": "p7_ph6"
+    },
+    {
+      "id": "p7_ph6",
+      "tokenIds": ["p7_t13", "p7_t14", "p7_t15", "p7_t16"],
+      "type": "Haber + zaman kaydı",
+      "meaning": "Mâzide ve muzârîde fethalı",
+      "parentId": "p7_ph8"
+    },
+    {
+      "id": "p7_ph8",
+      "tokenIds": ["p7_t10", "p7_t11", "p7_t12", "p7_t13", "p7_t14", "p7_t15", "p7_t16"],
+      "type": "Kâne cümlesi",
+      "meaning": "Fiilinin orta harfi mâzide ve muzârîde fethalı olur.",
+      "parentId": "p7_ph9",
+      "explanation": "يَكُونَ ile kurulmuş çekimli cümledir; أَنْ henüz bu katmana dahil değildir."
+    },
+    {
+      "id": "p7_ph9",
+      "tokenIds": ["p7_t9", "p7_t10", "p7_t11", "p7_t12", "p7_t13", "p7_t14", "p7_t15", "p7_t16"],
+      "type": "Masdar-ı müevvel",
+      "meaning": "Fiilinin orta harfinin mâzide ve muzârîde fethalı olması",
+      "parentId": "p7_ph18",
+      "explanation": "أَنْ, kendisinden sonraki يَكُونَ cümlesini isimleştirerek “olması” anlamı verir."
+    },
+    {
+      "id": "p7_ph10",
+      "tokenIds": ["p7_t20", "p7_t21"],
+      "type": "İsim tamlaması (izafet)",
+      "meaning": "Fiilinin ayn harfi, orta harfi",
+      "parentId": "p7_ph11"
+    },
+    {
+      "id": "p7_ph11",
+      "tokenIds": ["p7_t20", "p7_t21", "p7_t22", "p7_t23"],
+      "type": "Atıf grubu",
+      "meaning": "Fiilinin ayn harfi veya lâm harfi",
+      "parentId": "p7_ph15"
+    },
+    {
+      "id": "p7_ph12",
+      "tokenIds": ["p7_t26", "p7_t27"],
+      "type": "İsim tamlaması (izafet)",
+      "meaning": "Boğaz harfleri",
+      "parentId": "p7_ph13"
+    },
+    {
+      "id": "p7_ph13",
+      "tokenIds": ["p7_t25", "p7_t26", "p7_t27"],
+      "type": "Câr-mecrûr",
+      "meaning": "Boğaz harflerinden",
+      "parentId": "p7_ph14",
+      "explanation": "مِنْ harf-i cerri, حُرُوفِ الْحَلْقِ isim tamlamasını cer eder."
+    },
+    {
+      "id": "p7_ph14",
+      "tokenIds": ["p7_t24", "p7_t25", "p7_t26", "p7_t27"],
+      "type": "Haber grubu",
+      "meaning": "Boğaz harflerinden biri",
+      "parentId": "p7_ph15"
+    },
+    {
+      "id": "p7_ph15",
+      "tokenIds": ["p7_t19", "p7_t20", "p7_t21", "p7_t22", "p7_t23", "p7_t24", "p7_t25", "p7_t26", "p7_t27"],
+      "type": "Kâne cümlesi",
+      "meaning": "Fiilinin ayn veya lâm harfi boğaz harflerinden biri olur.",
+      "parentId": "p7_ph16",
+      "explanation": "يَكُونَ ile kurulmuş çekimli cümledir; henüz أَنْ ile isimleştirilmemiştir."
+    },
+    {
+      "id": "p7_ph16",
+      "tokenIds": ["p7_t18", "p7_t19", "p7_t20", "p7_t21", "p7_t22", "p7_t23", "p7_t24", "p7_t25", "p7_t26", "p7_t27"],
+      "type": "Masdar-ı müevvel",
+      "meaning": "Fiilinin ayn veya lâm harfinin boğaz harflerinden biri olması",
+      "parentId": "p7_ph17",
+      "explanation": "أَنْ, kendisinden sonraki يَكُونَ cümlesini “olması” anlamında isimleştirir."
+    },
+    {
+      "id": "p7_ph17",
+      "tokenIds": ["p7_t17", "p7_t18", "p7_t19", "p7_t20", "p7_t21", "p7_t22", "p7_t23", "p7_t24", "p7_t25", "p7_t26", "p7_t27"],
+      "type": "Şart terkibi",
+      "meaning": "Fiilinin ayn veya lâm harfinin boğaz harflerinden biri olması şartıyla",
+      "parentId": "p7_ph18",
+      "explanation": "بِشَرْطِ lafzı, ardından gelen masdar-ı müevveli muzafun ileyh olarak kendisine bağlar."
+    },
+    {
+      "id": "p7_ph18",
+      "tokenIds": ["p7_t9", "p7_t10", "p7_t11", "p7_t12", "p7_t13", "p7_t14", "p7_t15", "p7_t16", "p7_t17", "p7_t18", "p7_t19", "p7_t20", "p7_t21", "p7_t22", "p7_t23", "p7_t24", "p7_t25", "p7_t26", "p7_t27"],
+      "type": "Şart kaydı taşıyan masdar-ı müevvel",
+      "meaning": "Fiilinin ayn veya lâm harfinin boğaz harflerinden biri olması şartıyla, orta harfinin mâzide ve muzârîde fethalı olması",
+      "parentId": "p7_ph19"
+    },
+    {
+      "id": "p7_ph19",
+      "tokenIds": ["p7_t8", "p7_t9", "p7_t10", "p7_t11", "p7_t12", "p7_t13", "p7_t14", "p7_t15", "p7_t16", "p7_t17", "p7_t18", "p7_t19", "p7_t20", "p7_t21", "p7_t22", "p7_t23", "p7_t24", "p7_t25", "p7_t26", "p7_t27"],
+      "type": "İsim cümlesi",
+      "meaning": "Onun alâmeti, boğaz harfi şartıyla orta harfinin mâzide ve muzârîde fethalı olmasıdır."
+    },
+    {
+      "id": "p7_ph20",
+      "tokenIds": ["p7_t28", "p7_t29"],
+      "type": "İsim cümlesi",
+      "meaning": "Ve onlar altıdır.",
+      "parentId": "p7_ph22"
+    },
+    {
+      "id": "p7_ph21",
+      "tokenIds": ["p7_t30", "p7_t31", "p7_t32", "p7_t33", "p7_t34", "p7_t35"],
+      "type": "Atıflı sayma grubu",
+      "meaning": "Ha, Hı, Ayn, Gayn, He ve Hemze",
+      "parentId": "p7_ph22"
+    },
+    {
+      "id": "p7_ph22",
+      "tokenIds": ["p7_t28", "p7_t29", "p7_t30", "p7_t31", "p7_t32", "p7_t33", "p7_t34", "p7_t35"],
+      "type": "Açıklayıcı isim cümlesi",
+      "meaning": "Boğaz harfleri altıdır: Ha, Hı, Ayn, Gayn, He ve Hemze.",
+      "explanation": "هِيَ zamiri حُرُوفِ الْحَلْقِ terkibine döner; ardından altı harf sayılır."
+    }
+  ],
   "tokens": [
     {
       "id": "p7_t1",
@@ -178,7 +328,7 @@
       "id": "p7_t11",
       "arabic": "عَيْنُ",
       "printedArabic": "عين",
-      "gloss": "Aynü'l-fiilinin",
+      "gloss": "Ayn harfi, orta harfi",
       "analysis": {
         "kind": "İsim",
         "fields": {
@@ -227,7 +377,7 @@
       "id": "p7_t14",
       "arabic": "فِي",
       "printedArabic": "في",
-      "gloss": "İçinde, -de",
+      "gloss": "-de",
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
@@ -239,7 +389,7 @@
       "id": "p7_t15",
       "arabic": "الْمَاضِي",
       "printedArabic": "الماضي",
-      "gloss": "Mâzide",
+      "gloss": "Mâzi",
       "analysis": {
         "kind": "İsim",
         "fields": {
@@ -255,7 +405,7 @@
       "id": "p7_t16",
       "arabic": "وَالْمُضَارِعِ",
       "printedArabic": "والمضارع",
-      "gloss": "Ve muzârîde",
+      "gloss": "Ve muzârî",
       "analysis": {
         "kind": "Bağlaç + isim",
         "fields": {
@@ -333,7 +483,7 @@
       "id": "p7_t20",
       "arabic": "عَيْنُ",
       "printedArabic": "عين",
-      "gloss": "Aynü'l-fiilinin",
+      "gloss": "Ayn harfi, orta harfi",
       "analysis": {
         "kind": "İsim",
         "fields": {
@@ -378,7 +528,7 @@
       "id": "p7_t23",
       "arabic": "لَامُهُ",
       "printedArabic": "لامه",
-      "gloss": "Lâmü'l-fiilinin",
+      "gloss": "Lâmı, son harfi",
       "analysis": {
         "kind": "İsim + zamir",
         "fields": {
@@ -422,7 +572,7 @@
       "id": "p7_t26",
       "arabic": "حُرُوفِ",
       "printedArabic": "حروف",
-      "gloss": "Harflerinden",
+      "gloss": "Harfleri",
       "analysis": {
         "kind": "İsim",
         "fields": {
