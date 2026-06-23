@@ -36,7 +36,10 @@
         "kind": "Zarf anlamında kullanılan mansub isim",
         "fields": {
           "meaning": "De, dahi, ayrıca",
-          "irab": "Fetha ile mansubdur; çoğunlukla mef‘ûl-i mutlak kabul edilir."
+          "irab": "Fetha ile mansubdur; çoğunlukla mef‘ûl-i mutlak kabul edilir.",
+          "root": "أ ي ض",
+          "pattern": "فَعْل",
+          "morphology": "Masdar"
         }
       }
     },
@@ -82,6 +85,10 @@
       "gloss": "Ve bazen",
       "analysis": {
         "kind": "Bağlaç + harf",
+        "fields": {
+          "meaning": "Ve bazen / kimi zaman",
+          "morphology": "Atıf harfi (vav) ve ihtimal/taklil bildiren harf (kad)"
+        },
         "details": [
           {
             "label": "وَ",

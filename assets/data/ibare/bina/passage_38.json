@@ -1,6 +1,7 @@
 {
   "id": "passage_38",
   "order": 38,
+  "orijinal_metin": "الباب الثالث: فَعْوَلَ يُفَعْوِلُ فَعْوَلَةً وَفِعْوَالًا موزونه: جَهْوَرَ يُجَهْوِرُ جَهْوَرَةً وَجِهْوَارًا، وعلامته أن يكون ماضيه على أربعة أحرف بزيادة الواو بين العين واللام وبnaؤه أيضاً للتعدية نحو: جَهْوَرَ زيد القرآن",
   "orijinal_metin": "الباب الثالث: فَعْوَلَ يُفَعْوِلُ فَعْوَلَةً وَفِعْوَالًا موزونه: جَهْوَرَ يُجَهْوِرُ جَهْوَرَةً وَجِهْوَارًا، وعلامته أن يكون ماضيه على أربعة أحرف بزيادة الواو بين العين واللام وبناؤه أيضاً للتعدية نحو: جَهْوَرَ زيد القرآن",
   "translation": "Mülhak rubâînin üçüncü babı فَعْوَلَ يُفَعْوِلُ فَعْوَلَةً وَفِعْوَالًا’dır. Mevzunu جَهْوَرَ يُجَهْوِرُ جَهْوَرَةً وَجِهْوَارًا’dır. Alâmeti, mâzisinin ayn ile lâm arasında vâv ziyadesiyle dört harf üzere olmasıdır. Binası da müteaddilik içindir.",
   "tokens": [
@@ -12,7 +13,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ب و ب"
+          "root": "ب و ب",
+          "singular": "بَابٌ",
+          "wordForm": "Müfred, müzekker, marife",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -25,7 +30,11 @@
       "analysis": {
         "kind": "Sıfat",
         "fields": {
-          "root": "ث ل ث"
+          "root": "ث ل ث",
+          "wordForm": "Sıra sayısı, müfred, marife, sıfat",
+          "role": "Sıfat",
+          "irab": "Zamme ile merfû",
+          "pattern": "فَاعِل"
         }
       }
     },
@@ -37,7 +46,10 @@
         "kind": "Vezin",
         "fields": {
           "bab": "Mülhak rubâî 3. bab",
-          "morphology": "Ayn ile lâm arasında vâv ziyadelidir."
+          "morphology": "Ayn ile lâm arasında vâv ziyadelidir.",
+          "pattern": "فَعْوَلَ",
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil"
         }
       }
     },
@@ -48,7 +60,11 @@
       "analysis": {
         "kind": "Vezin",
         "fields": {
-          "conjugation": "Fiil-i muzâri, malûm"
+          "conjugation": "Fiil-i muzâri, malûm",
+          "bab": "Mülhak rubâî 3. bab",
+          "pattern": "يُفَعْوِلُ",
+          "person": "3. şahıs, müzekker, tekil",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -59,7 +75,10 @@
       "analysis": {
         "kind": "Masdar vezni",
         "fields": {
-          "pattern": "فَعْوَلَة"
+          "pattern": "فَعْوَلَة",
+          "morphology": "Masdar",
+          "wordForm": "Müfred, nekre, mansub",
+          "irab": "Fetha ile mansub"
         }
       }
     },
@@ -70,7 +89,11 @@
       "analysis": {
         "kind": "Bağlaç + masdar vezni",
         "fields": {
-          "pattern": "فِعْوَال"
+          "pattern": "فِعْوَال",
+          "morphology": "Alternatif masdar",
+          "structure": "وَ atıf harfi, فِعْوَالًا matûf masdardır.",
+          "wordForm": "Müfred, nekre, mansub",
+          "irab": "Fetha ile mansub"
         }
       }
     },
@@ -83,7 +106,14 @@
       "analysis": {
         "kind": "İsim + zamir",
         "fields": {
-          "root": "و ز ن"
+          "root": "و ز ن",
+          "meaning": "Bu vezne oturan örnek fiil",
+          "pattern": "مَفْعُول",
+          "morphology": "İsm-i mef‘ûl",
+          "wordForm": "Müfred, müzekker, muzaf",
+          "pronoun": "هُ: üçüncü baba döner.",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -97,7 +127,11 @@
           "root": "ج ه ر",
           "bab": "Mülhak rubâî 3. bab",
           "pattern": "فَعْوَلَ",
-          "transitivity": "Müteaddi"
+          "transitivity": "Müteaddi",
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "presentForm": "يُجَهْوِرُ",
+          "syntax": "Fiil ve haber"
         }
       }
     },
@@ -109,7 +143,12 @@
         "kind": "Fiil",
         "fields": {
           "root": "ج ه ر",
-          "pattern": "يُفَعْوِلُ"
+          "pattern": "يُفَعْوِلُ",
+          "bab": "Mülhak rubâî 3. bab",
+          "conjugation": "Fiil-i muzâri, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "irab": "Zamme ile merfû",
+          "baseForm": "جَهْوَرَ يُجَهْوِرُ"
         }
       }
     },
@@ -121,7 +160,10 @@
         "kind": "Masdar",
         "fields": {
           "root": "ج ه ر",
-          "pattern": "فَعْوَلَة"
+          "pattern": "فَعْوَلَة",
+          "morphology": "Masdar",
+          "wordForm": "Müfred, nekre, mansub",
+          "irab": "Fetha ile mansub"
         }
       }
     },
@@ -134,7 +176,11 @@
         "kind": "Bağlaç + masdar",
         "fields": {
           "root": "ج ه ر",
-          "pattern": "فِعْوَال"
+          "pattern": "فِعْوَال",
+          "structure": "وَ atıf harfi, جِهْوَارًا matûf masdardır.",
+          "morphology": "Alternatif masdar",
+          "wordForm": "Müfred, nekre, mansub",
+          "irab": "Fetha ile mansub"
         }
       }
     },
@@ -146,7 +192,12 @@
       "analysis": {
         "kind": "Bağlaç + isim + zamir",
         "fields": {
-          "root": "ع ل م"
+          "root": "ع ل م",
+          "meaning": "Babı ayıran lafzî özellik",
+          "wordForm": "Müfred, müennes, muzaf",
+          "pronoun": "هُ: üçüncü baba döner.",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -158,7 +209,9 @@
       "analysis": {
         "kind": "Harf",
         "fields": {
-          "morphology": "Masdariyye ve nasb harfi"
+          "morphology": "Masdariyye ve nasb harfi",
+          "meaning": "Fiili masdarlaştırır.",
+          "role": "Nasb ve masdariyye harfi"
         }
       }
     },
@@ -170,7 +223,12 @@
       "analysis": {
         "kind": "Nâkıs fiil",
         "fields": {
-          "root": "ك و ن"
+          "root": "ك و ن",
+          "conjugation": "Fiil-i muzâri, nâkıs fiil",
+          "person": "3. şahıs, müzekker, tekil",
+          "irab": "Fetha ile mansub (أَنْ ile)",
+          "baseForm": "كَانَ يَكُونُ",
+          "pattern": "يَفْعُلُ"
         }
       }
     },
@@ -182,7 +240,11 @@
       "analysis": {
         "kind": "İsim + zamir",
         "fields": {
-          "root": "م ض ي"
+          "root": "م ض ي",
+          "wordForm": "Müfred, müzekker, muzaf",
+          "pronoun": "هُ: üçüncü baba döner.",
+          "role": "يَكُونَ fiilinin ismi",
+          "irab": "Takdiren merfû"
         }
       }
     },
@@ -194,7 +256,9 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Üzerine, üzere"
+          "meaning": "Üzerine, üzere",
+          "role": "Harf-i cer",
+          "effect": "İsmi mecrûr yapar."
         }
       }
     },
@@ -206,7 +270,11 @@
       "analysis": {
         "kind": "Sayı",
         "fields": {
-          "numberType": "Aded"
+          "numberType": "Aded",
+          "root": "ر ب ع",
+          "wordForm": "Müfred, müennes (lafzen), muzaf",
+          "role": "Mecrûr isim, muzaf",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -218,7 +286,12 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "singular": "حَرْف"
+          "singular": "حَرْف",
+          "root": "ح ر ف",
+          "wordForm": "Cem-i mükesser, nekre, muzafun ileyh",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr",
+          "pattern": "أَفْعُل"
         }
       }
     },
@@ -230,7 +303,12 @@
       "analysis": {
         "kind": "Harf-i cer + masdar",
         "fields": {
-          "root": "ز ي د"
+          "root": "ز ي د",
+          "derivedFrom": "زَادَ يَزِيدُ",
+          "pattern": "فِعَالَة",
+          "wordForm": "Müfred, nekre, muzaf",
+          "role": "Mecrûr isim",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -242,7 +320,9 @@
       "analysis": {
         "kind": "Harf adı",
         "fields": {
-          "role": "Muzafun ileyh"
+          "role": "Muzafun ileyh",
+          "wordForm": "Müfred, marife",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -254,7 +334,10 @@
       "analysis": {
         "kind": "Zarf",
         "fields": {
-          "meaning": "İki şeyin arası"
+          "meaning": "İki şeyin arası",
+          "wordForm": "Zaman/mekân zarfı, muzaf",
+          "role": "Zarf",
+          "irab": "Fetha ile mansub"
         }
       }
     },
@@ -266,7 +349,10 @@
       "analysis": {
         "kind": "Harf adı",
         "fields": {
-          "term": "Aynü’l-fiil"
+          "term": "Aynü’l-fiil",
+          "wordForm": "Müfred, marife",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -278,7 +364,10 @@
       "analysis": {
         "kind": "Bağlaç + harf adı",
         "fields": {
-          "term": "Lâmü’l-fiil"
+          "term": "Lâmü’l-fiil",
+          "structure": "وَ atıf harfi, اللَّامِ matûf isimdir.",
+          "wordForm": "Müfred, marife",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -290,7 +379,13 @@
       "analysis": {
         "kind": "Bağlaç + masdar + zamir",
         "fields": {
-          "meaning": "Babın mana işlevi"
+          "meaning": "Babın mana işlevi",
+          "root": "ب ن ي",
+          "derivedFrom": "بَنَى يَبْنِي",
+          "pattern": "فِعَال",
+          "pronoun": "هُ: üçüncü baba döner.",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -302,7 +397,8 @@
       "analysis": {
         "kind": "Zarf anlamında kullanılan mansub isim",
         "fields": {
-          "meaning": "Önceki bab gibi"
+          "meaning": "Önceki bab gibi",
+          "irab": "Fetha ile mansubdur; çoğunlukla mef‘ûl-i mutlak kabul edilir."
         }
       }
     },
@@ -314,7 +410,14 @@
       "analysis": {
         "kind": "Harf-i cer + masdar",
         "fields": {
-          "root": "ع د و"
+          "root": "ع د و",
+          "derivedFrom": "عَدَّى يُعَدِّي",
+          "bab": "Sülâsî mezîd, tef‘îl babı",
+          "pattern": "تَفْعِلَة",
+          "morphology": "Masdar",
+          "meaning": "Fiilin etkisinin mef‘ûle geçmesi",
+          "turkish": "Geçişlilik",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -327,7 +430,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ن ح و"
+          "root": "ن ح و",
+          "meaning": "Benzer, gibi anlamına gelen örnekleme lafzı.",
+          "wordForm": "Müfred, muzaf",
+          "role": "Haber",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -340,7 +447,12 @@
         "fields": {
           "root": "ج ه ر",
           "pattern": "فَعْوَلَ",
-          "transitivity": "Müteaddi"
+          "transitivity": "Müteaddi",
+          "bab": "Mülhak rubâî 3. bab",
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "presentForm": "يُجَهْوِرُ",
+          "syntax": "Fiil"
         }
       }
     },
@@ -352,7 +464,10 @@
       "analysis": {
         "kind": "Özel isim",
         "fields": {
-          "role": "Fâil"
+          "role": "Fâil",
+          "wordForm": "Müfred, müzekker, marife",
+          "syntax": "Fâil",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -364,7 +479,11 @@
       "analysis": {
         "kind": "Özel isim",
         "fields": {
-          "role": "Mef‘ûlün bih"
+          "role": "Mef‘ûlün bih",
+          "root": "ق ر أ",
+          "wordForm": "Müfred, müzekker, marife",
+          "syntax": "Mef‘ûlün bih",
+          "irab": "Fetha ile mansub"
         }
       }
     }

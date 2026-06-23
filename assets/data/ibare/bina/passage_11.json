@@ -79,7 +79,9 @@
           "pattern": "مَفْعُول",
           "morphology": "İsm-i mef‘ûl",
           "meaning": "Bu vezne oturan örnek fiil",
-          "pronoun": "هُ: beşinci baba döner."
+          "pronoun": "هُ: beşinci baba döner.",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -130,7 +132,9 @@
           "pattern": "فَعَالَة",
           "wordForm": "Müfred, muzaf ve merfû",
           "pronoun": "هُ: beşinci baba döner.",
-          "meaning": "Babı diğer bablardan ayıran lafzî özellik"
+          "meaning": "Babı diğer bablardan ayıran lafzî özellik",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -280,7 +284,9 @@
       "analysis": {
         "kind": "Nefy harfi",
         "fields": {
-          "meaning": "Olumsuzluk bildirir."
+          "meaning": "Olumsuzluk bildirir.",
+          "morphology": "Nefy harfi",
+          "effect": "Muzâri fiilin manasını olumsuz yapar, amel etmez."
         }
       }
     },
@@ -309,7 +315,8 @@
       "analysis": {
         "kind": "İstisna/hasr edatı",
         "fields": {
-          "meaning": "لا ile beraber “yalnızca” manasını kurar."
+          "meaning": "لا ile beraber “yalnızca” manasını kurar.",
+          "morphology": "İstisna ve hasr harfi"
         }
       }
     },

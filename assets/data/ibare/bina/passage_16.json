@@ -214,7 +214,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Üzerine, üzere"
+          "meaning": "Üzerine, üzere",
+          "structure": "Cer harfidir."
         }
       }
     },
@@ -228,7 +229,9 @@
         "fields": {
           "numberType": "Aded",
           "role": "أَحْرُفٍ kelimesinin sayı unsuru",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "root": "ر ب ع",
+          "wordForm": "Müfred, müzekker ve muzaf"
         }
       }
     },
@@ -242,7 +245,9 @@
         "fields": {
           "singular": "حَرْف",
           "role": "Sayılan unsur",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "root": "ح ر ف",
+          "wordForm": "Cemi, nekire"
         }
       }
     },
@@ -271,7 +276,9 @@
         "kind": "Harf adı",
         "fields": {
           "role": "Muzafun ileyh",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "root": "ه م ز",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -283,7 +290,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "“-de/-da”"
+          "meaning": "“-de/-da”",
+          "structure": "Cer harfidir."
         }
       }
     },

@@ -29,7 +29,7 @@
         "kind": "Sıfat",
         "fields": {
           "root": "ث ن ي",
-          "wordForm": "Sıra sayısı",
+          "wordForm": "Sıra sayısı, müfred ve marife",
           "role": "الْبَابُ kelimesinin sıfatı",
           "irab": "Zamme ile merfû"
         }
@@ -44,7 +44,10 @@
         "fields": {
           "bab": "Sülâsî mezîd iki harf, ifti‘âl babı",
           "morphology": "Başta hemze, fâ ile ayn arasında tâ ziyadelidir.",
-          "conjugation": "Fiil-i mâzi, malûm"
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "pattern": "اِفْتَعَلَ",
+          "hiddenPronoun": "هُوَ"
         }
       }
     },
@@ -57,7 +60,10 @@
         "fields": {
           "bab": "İfti‘âl babı",
           "morphology": "Bu babın muzâri ölçüsüdür.",
-          "conjugation": "Fiil-i muzâri, malûm"
+          "conjugation": "Fiil-i muzâri, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "pattern": "يَفْتَعِلُ",
+          "hiddenPronoun": "هُوَ"
         }
       }
     },
@@ -71,7 +77,8 @@
         "fields": {
           "bab": "İfti‘âl babı",
           "pattern": "اِفْتِعَال",
-          "morphology": "Masdar"
+          "morphology": "Masdar",
+          "irab": "Fetha ile mansub"
         }
       }
     },
@@ -87,7 +94,11 @@
           "pattern": "مَفْعُول",
           "morphology": "İsm-i mef‘ûl",
           "meaning": "Bu vezne oturan örnek fiil",
-          "pronoun": "هُ: ifti‘âl babına döner."
+          "pronoun": "هُ",
+          "referent": "İfti‘âl babı",
+          "role": "Mübtedâ",
+          "construction": "Muzaf",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -102,6 +113,8 @@
           "bab": "Sülâsî mezîd, ifti‘âl babı",
           "pattern": "اِفْتَعَلَ",
           "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
           "transitivity": "Lazım"
         }
       }
@@ -117,7 +130,10 @@
           "bab": "Sülâsî mezîd, ifti‘âl babı",
           "pattern": "يَفْتَعِلُ",
           "conjugation": "Fiil-i muzâri, malûm",
-          "transitivity": "Lazım"
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "transitivity": "Lazım",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -132,7 +148,9 @@
           "root": "ج م ع",
           "bab": "Sülâsî mezîd, ifti‘âl babı",
           "pattern": "اِفْتِعَال",
-          "morphology": "Masdar"
+          "morphology": "Masdar",
+          "irab": "Fetha ile mansub",
+          "wordForm": "Müfred ve nekre"
         }
       }
     },
@@ -145,8 +163,13 @@
         "kind": "Bağlaç + isim + zamir",
         "fields": {
           "root": "ع ل م",
-          "pronoun": "هُ: ifti‘âl babına döner.",
-          "meaning": "Babı diğer bablardan ayıran lafzî özellik"
+          "wordForm": "Müfred, muzaf ve merfû",
+          "pronoun": "هُ",
+          "referent": "İfti‘âl babı",
+          "meaning": "Babı diğer bablardan ayıran lafzî özellik",
+          "role": "Mübtedâ",
+          "construction": "Muzaf",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -172,8 +195,10 @@
         "kind": "Nâkıs fiil",
         "fields": {
           "root": "ك و ن",
-          "conjugation": "Fiil-i muzâri, nâkıs fiil",
-          "nasb": "أَنْ sebebiyle mansub"
+          "conjugation": "Fiil-i muzâri, nâkıs fiil, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "nasb": "أَنْ sebebiyle mansub",
+          "irab": "Fetha ile mansub"
         }
       }
     },
@@ -187,7 +212,11 @@
         "fields": {
           "root": "م ض ي",
           "morphology": "Fiil-i mâzi adı",
-          "role": "يَكُونَ fiilinin ismi"
+          "role": "يَكُونَ fiilinin ismi",
+          "pronoun": "هِ",
+          "referent": "Bu baba giren fiil",
+          "irab": "Zamme takdir edilerek merfû",
+          "construction": "Muzaf"
         }
       }
     },
@@ -199,7 +228,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Üzerine, üzere"
+          "meaning": "Üzerine, üzere",
+          "syntax": "Harf-i cer"
         }
       }
     },
@@ -212,7 +242,9 @@
         "kind": "Sayı",
         "fields": {
           "numberType": "Aded",
-          "irab": "Kesra ile mecrûr"
+          "role": "Mecrûr isim",
+          "irab": "Kesra ile mecrûr",
+          "construction": "Muzaf"
         }
       }
     },
@@ -225,7 +257,9 @@
         "kind": "İsim",
         "fields": {
           "singular": "حَرْف",
-          "irab": "Kesra ile mecrûr"
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Cem-i mükesser ve nekre"
         }
       }
     },
@@ -239,7 +273,10 @@
         "fields": {
           "root": "ز ي د",
           "morphology": "Masdar",
-          "meaning": "Asıl harflere eklenen harf"
+          "meaning": "Asıl harflere eklenen harf",
+          "irab": "Kesra ile mecrûr",
+          "role": "Câr-mecrûr",
+          "construction": "Muzaf"
         }
       }
     },
@@ -252,7 +289,8 @@
         "kind": "Harf adı",
         "fields": {
           "role": "Muzafun ileyh",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -264,7 +302,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "“-de/-da”"
+          "meaning": "“-de/-da”",
+          "syntax": "Harf-i cer"
         }
       }
     },
@@ -276,8 +315,12 @@
       "analysis": {
         "kind": "İsim + zamir",
         "fields": {
-          "role": "فِي harfiyle mecrûr",
-          "pronoun": "هُ: mâzi fiile döner."
+          "root": "أ و ل",
+          "role": "Mecrûr isim",
+          "pronoun": "هِ",
+          "referent": "Mâzi fiil",
+          "irab": "Kesra ile mecrûr",
+          "construction": "Muzaf"
         }
       }
     },
@@ -289,8 +332,9 @@
       "analysis": {
         "kind": "Bağlaç + harf adı",
         "fields": {
-          "role": "الْهَمْزَةِ kelimesine atıf",
-          "irab": "Kesra ile mecrûr"
+          "role": "Atfedilen isim",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -302,7 +346,10 @@
       "analysis": {
         "kind": "Zarf",
         "fields": {
-          "meaning": "İki şeyin arası"
+          "meaning": "İki şeyin arası",
+          "irab": "Fetha ile mansub zarf",
+          "role": "Mekân zarfı",
+          "construction": "Muzaf"
         }
       }
     },
@@ -314,7 +361,9 @@
       "analysis": {
         "kind": "Harf adı",
         "fields": {
-          "term": "Fâü’l-fiil: kökün birinci harfi"
+          "term": "Fâü’l-fiil: kökün birinci harfi",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -326,7 +375,9 @@
       "analysis": {
         "kind": "Bağlaç + harf adı",
         "fields": {
-          "term": "Aynü’l-fiil: kökün ikinci harfi"
+          "term": "Aynü’l-fiil: kökün ikinci harfi",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -339,7 +390,12 @@
         "kind": "Bağlaç + masdar + zamir",
         "fields": {
           "root": "ب ن ي",
-          "meaning": "Babın mana işlevi"
+          "pronoun": "هُ",
+          "referent": "İfti‘âl babı",
+          "meaning": "Babın mana işlevi",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû",
+          "construction": "Muzaf"
         }
       }
     },
@@ -353,7 +409,11 @@
         "fields": {
           "root": "ط و ع",
           "pattern": "مُفَاعَلَة",
-          "meaning": "Müteaddi fiilin etkisinin nesnede gerçekleşmesi"
+          "morphology": "Masdar",
+          "meaning": "Müteaddi fiilin etkisinin nesnede gerçekleşmesi",
+          "irab": "Kesra ile mecrûr",
+          "role": "Haber",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -365,7 +425,8 @@
       "analysis": {
         "kind": "Zarf anlamında kullanılan mansub isim",
         "fields": {
-          "meaning": "De, dahi, ayrıca"
+          "meaning": "De, dahi, ayrıca",
+          "irab": "Fetha ile mansub mef'ûl-i mutlak"
         }
       }
     },
@@ -378,7 +439,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ن ح و"
+          "root": "ن ح و",
+          "meaning": "Şunun gibi",
+          "irab": "Zamme ile merfû",
+          "role": "Haber veya muzaf",
+          "construction": "Muzaf"
         }
       }
     },
@@ -389,10 +454,13 @@
       "analysis": {
         "kind": "Fiil + zamir",
         "fields": {
-          "root": "ج م ع",
           "conjugation": "Fiil-i mâzi, malûm",
           "person": "1. şahıs, tekil",
-          "transitivity": "Müteaddi"
+          "root": "ج م ع",
+          "pattern": "فَعَلَ",
+          "transitivity": "Müteaddi",
+          "pronoun": "تُ",
+          "referent": "Mütekellim"
         }
       }
     },
@@ -405,7 +473,8 @@
         "kind": "Cins isim",
         "fields": {
           "role": "Mef‘ûlün bih",
-          "irab": "Fetha ile mansub"
+          "irab": "Fetha ile mansub",
+          "wordForm": "Cem-i kıllet/cins ismi ve marife"
         }
       }
     },
@@ -419,7 +488,11 @@
           "root": "ج م ع",
           "bab": "Sülâsî mezîd, ifti‘âl babı",
           "pattern": "اِفْتَعَلَ",
-          "meaning": "Mutâvaat sonucunu gösterir."
+          "meaning": "Mutâvaat sonucunu gösterir.",
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "transitivity": "Lazım"
         }
       }
     },
@@ -431,8 +504,10 @@
       "analysis": {
         "kind": "İşaret ismi",
         "fields": {
-          "referent": "Develer",
-          "role": "Fâil yerinde kullanılmış işaret"
+          "referent": "Develer (الإبل)",
+          "role": "Fâil",
+          "irab": "Mahallen merfû",
+          "wordForm": "İşaret ismi"
         }
       }
     },
@@ -444,8 +519,9 @@
       "analysis": {
         "kind": "Cins isim",
         "fields": {
-          "role": "Bedel/açıklayıcı unsur",
-          "irab": "Zamme ile merfû"
+          "role": "Bedel",
+          "irab": "Zamme ile merfû",
+          "wordForm": "Cem-i kıllet/cins ismi ve marife"
         }
       }
     }

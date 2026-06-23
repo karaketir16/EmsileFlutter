@@ -13,7 +13,9 @@
         "kind": "İsim",
         "fields": {
           "root": "ب و ب",
-          "role": "Mübtedâ"
+          "wordForm": "Müfred ve marife",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -27,7 +29,9 @@
         "kind": "Sıfat",
         "fields": {
           "root": "خ م س",
-          "role": "الْبَابُ kelimesinin sıfatı"
+          "wordForm": "Sıra sayısı, müfred ve marife",
+          "role": "الْبَابُ kelimesinin sıfatı",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -39,7 +43,11 @@
         "kind": "Vezin",
         "fields": {
           "bab": "Sülâsî mezîd iki harf, tefâ‘ul babı",
-          "morphology": "Başta tâ, fâ ile ayn arasında elif ziyadelidir."
+          "morphology": "Başta tâ, fâ ile ayn arasında elif ziyadelidir.",
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "pattern": "تَفَاعَلَ",
+          "hiddenPronoun": "هُوَ"
         }
       }
     },
@@ -51,7 +59,11 @@
         "kind": "Vezin",
         "fields": {
           "bab": "Tefâ‘ul babı",
-          "conjugation": "Fiil-i muzâri, malûm"
+          "morphology": "Bu babın muzâri ölçüsüdür.",
+          "conjugation": "Fiil-i muzâri, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "pattern": "يَتَفَاعَلُ",
+          "hiddenPronoun": "هُوَ"
         }
       }
     },
@@ -65,7 +77,8 @@
         "fields": {
           "bab": "Tefâ‘ul babı",
           "pattern": "تَفَاعُل",
-          "morphology": "Masdar"
+          "morphology": "Masdar",
+          "irab": "Fetha ile mansub"
         }
       }
     },
@@ -78,7 +91,14 @@
         "kind": "İsim + zamir",
         "fields": {
           "root": "و ز ن",
-          "meaning": "Bu vezne oturan örnek fiil"
+          "pattern": "مَفْعُول",
+          "morphology": "İsm-i mef‘ûl",
+          "meaning": "Bu vezne oturan örnek fiil",
+          "pronoun": "هُ",
+          "referent": "Tefâ‘ul babı",
+          "role": "Mübtedâ",
+          "construction": "Muzaf",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -92,7 +112,10 @@
           "root": "ب ع د",
           "bab": "Sülâsî mezîd, tefâ‘ul babı",
           "pattern": "تَفَاعَلَ",
-          "conjugation": "Fiil-i mâzi, malûm"
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "transitivity": "Lazım"
         }
       }
     },
@@ -106,7 +129,11 @@
           "root": "ب ع د",
           "bab": "Sülâsî mezîd, tefâ‘ul babı",
           "pattern": "يَتَفَاعَلُ",
-          "conjugation": "Fiil-i muzâri, malûm"
+          "conjugation": "Fiil-i muzâri, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "transitivity": "Lazım",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -121,7 +148,9 @@
           "root": "ب ع د",
           "bab": "Sülâsî mezîd, tefâ‘ul babı",
           "pattern": "تَفَاعُل",
-          "morphology": "Masdar"
+          "morphology": "Masdar",
+          "irab": "Fetha ile mansub",
+          "wordForm": "Müfred ve nekre"
         }
       }
     },
@@ -134,7 +163,13 @@
         "kind": "Bağlaç + isim + zamir",
         "fields": {
           "root": "ع ل م",
-          "meaning": "Babı diğer bablardan ayıran lafzî özellik"
+          "wordForm": "Müfred, muzaf ve merfû",
+          "pronoun": "هُ",
+          "referent": "Tefâ‘ul babı",
+          "meaning": "Babı diğer bablardan ayıran lafzî özellik",
+          "role": "Mübtedâ",
+          "construction": "Muzaf",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -146,7 +181,8 @@
       "analysis": {
         "kind": "Harf",
         "fields": {
-          "morphology": "Masdariyye ve nasb harfi"
+          "morphology": "Masdariyye ve nasb harfi",
+          "effect": "Muzâri fiili nasb eder."
         }
       }
     },
@@ -159,7 +195,10 @@
         "kind": "Nâkıs fiil",
         "fields": {
           "root": "ك و ن",
-          "nasb": "أَنْ sebebiyle mansub"
+          "conjugation": "Fiil-i muzâri, nâkıs fiil, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "nasb": "أَنْ sebebiyle mansub",
+          "irab": "Fetha ile mansub"
         }
       }
     },
@@ -172,7 +211,12 @@
         "kind": "İsim + zamir",
         "fields": {
           "root": "م ض ي",
-          "morphology": "Fiil-i mâzi adı"
+          "morphology": "Fiil-i mâzi adı",
+          "role": "يَكُونَ fiilinin ismi",
+          "pronoun": "هِ",
+          "referent": "Bu baba giren fiil",
+          "irab": "Zamme takdir edilerek merfû",
+          "construction": "Muzaf"
         }
       }
     },
@@ -184,7 +228,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Üzerine, üzere"
+          "meaning": "Üzerine, üzere",
+          "syntax": "Harf-i cer"
         }
       }
     },
@@ -196,7 +241,10 @@
       "analysis": {
         "kind": "Sayı",
         "fields": {
-          "numberType": "Aded"
+          "numberType": "Aded",
+          "role": "Mecrûr isim",
+          "irab": "Kesra ile mecrûr",
+          "construction": "Muzaf"
         }
       }
     },
@@ -208,7 +256,10 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "singular": "حَرْف"
+          "singular": "حَرْف",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Cem-i mükesser ve nekre"
         }
       }
     },
@@ -221,7 +272,11 @@
         "kind": "Harf-i cer + masdar",
         "fields": {
           "root": "ز ي د",
-          "meaning": "Asıl harflere eklenen harf"
+          "morphology": "Masdar",
+          "meaning": "Asıl harflere eklenen harf",
+          "irab": "Kesra ile mecrûr",
+          "role": "Câr-mecrûr",
+          "construction": "Muzaf"
         }
       }
     },
@@ -233,7 +288,9 @@
       "analysis": {
         "kind": "Harf adı",
         "fields": {
-          "role": "Muzafun ileyh"
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -245,7 +302,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "“-de/-da”"
+          "meaning": "“-de/-da”",
+          "syntax": "Harf-i cer"
         }
       }
     },
@@ -257,7 +315,12 @@
       "analysis": {
         "kind": "İsim + zamir",
         "fields": {
-          "role": "فِي harfiyle mecrûr"
+          "root": "أ و ل",
+          "role": "Mecrûr isim",
+          "pronoun": "هِ",
+          "referent": "Mâzi fiil",
+          "irab": "Kesra ile mecrûr",
+          "construction": "Muzaf"
         }
       }
     },
@@ -269,7 +332,9 @@
       "analysis": {
         "kind": "Bağlaç + harf adı",
         "fields": {
-          "role": "التَّاءِ kelimesine atıf"
+          "role": "Atfedilen isim",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -281,7 +346,10 @@
       "analysis": {
         "kind": "Zarf",
         "fields": {
-          "meaning": "İki şeyin arası"
+          "meaning": "İki şeyin arası",
+          "irab": "Fetha ile mansub zarf",
+          "role": "Mekân zarfı",
+          "construction": "Muzaf"
         }
       }
     },
@@ -293,7 +361,9 @@
       "analysis": {
         "kind": "Harf adı",
         "fields": {
-          "term": "Fâü’l-fiil"
+          "term": "Fâü’l-fiil: kökün birinci harfi",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -305,7 +375,9 @@
       "analysis": {
         "kind": "Bağlaç + harf adı",
         "fields": {
-          "term": "Aynü’l-fiil"
+          "term": "Aynü’l-fiil: kökün ikinci harfi",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -317,7 +389,13 @@
       "analysis": {
         "kind": "Bağlaç + masdar + zamir",
         "fields": {
-          "meaning": "Babın mana işlevi"
+          "root": "ب ن ي",
+          "pronoun": "هُ",
+          "referent": "Tefâ‘ul babı",
+          "meaning": "Babın mana işlevi",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû",
+          "construction": "Muzaf"
         }
       }
     },
@@ -331,7 +409,11 @@
         "fields": {
           "root": "ش ر ك",
           "pattern": "مُفَاعَلَة",
-          "meaning": "Fiilin birden fazla taraf arasında gerçekleşmesi"
+          "morphology": "Masdar",
+          "meaning": "Fiilin birden fazla taraf arasında gerçekleşmesi",
+          "irab": "Kesra ile mecrûr",
+          "role": "Haber",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -343,7 +425,10 @@
       "analysis": {
         "kind": "Zarf",
         "fields": {
-          "meaning": "İki şeyin arası"
+          "meaning": "İki şeyin arası",
+          "irab": "Fetha ile mansub zarf",
+          "role": "Mekân zarfı",
+          "construction": "Muzaf"
         }
       }
     },
@@ -355,7 +440,10 @@
       "analysis": {
         "kind": "Sayı ismi",
         "fields": {
-          "numberType": "Tesniye"
+          "numberType": "Tesniye",
+          "role": "Muzafun ileyh",
+          "irab": "Yâ ile mecrûr",
+          "wordForm": "Tesniye ve marife"
         }
       }
     },
@@ -369,7 +457,9 @@
         "kind": "Bağlaç + ism-i fâil",
         "fields": {
           "root": "ص ع د",
-          "meaning": "İkiden yukarı olanları da kapsar."
+          "meaning": "Yukarıya doğru, daha fazlası",
+          "irab": "Fetha ile mansub hâl",
+          "wordForm": "Müfred ve nekre"
         }
       }
     },
@@ -381,7 +471,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "م ث ل"
+          "root": "م ث ل",
+          "wordForm": "Müfred ve muzaf",
+          "irab": "Zamme ile merfû",
+          "role": "Mübtedâ",
+          "construction": "Muzaf"
         }
       }
     },
@@ -394,7 +488,12 @@
         "kind": "Masdar",
         "fields": {
           "root": "ش ر ك",
-          "role": "Muzafun ileyh"
+          "derivedFrom": "شَارَكَ يُشَارِكُ",
+          "bab": "Sülâsî mezîd, müfâ‘ale babı",
+          "pattern": "مُفَاعَلَة",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -406,7 +505,10 @@
       "analysis": {
         "kind": "Zarf",
         "fields": {
-          "meaning": "İki şeyin arası"
+          "meaning": "İki şeyin arası",
+          "irab": "Fetha ile mansub zarf",
+          "role": "Mekân zarfı",
+          "construction": "Muzaf"
         }
       }
     },
@@ -418,7 +520,10 @@
       "analysis": {
         "kind": "Sayı ismi",
         "fields": {
-          "numberType": "Tesniye"
+          "numberType": "Tesniye",
+          "role": "Muzafun ileyh",
+          "irab": "Yâ ile mecrûr",
+          "wordForm": "Tesniye ve marife"
         }
       }
     },
@@ -431,7 +536,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ن ح و"
+          "root": "ن ح و",
+          "meaning": "Şunun gibi",
+          "irab": "Zamme ile merfû",
+          "role": "Haber veya muzaf",
+          "construction": "Muzaf"
         }
       }
     },
@@ -444,7 +553,11 @@
         "fields": {
           "root": "ب ع د",
           "bab": "Sülâsî mezîd, tefâ‘ul babı",
-          "pattern": "تَفَاعَلَ"
+          "pattern": "تَفَاعَلَ",
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "transitivity": "Lazım"
         }
       }
     },
@@ -456,7 +569,9 @@
       "analysis": {
         "kind": "Özel isim",
         "fields": {
-          "role": "Fâil"
+          "role": "Fâil",
+          "irab": "Zamme ile merfû",
+          "wordForm": "Müfred, müzekker ve marife (özel isim)"
         }
       }
     },
@@ -468,7 +583,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Ayrılma/uzaklaşma bildirir."
+          "meaning": "Ayrılma/uzaklaşma bildirir.",
+          "syntax": "Harf-i cer"
         }
       }
     },
@@ -480,7 +596,9 @@
       "analysis": {
         "kind": "Özel isim",
         "fields": {
-          "role": "عَنْ harfiyle mecrûr"
+          "role": "Mecrûr isim",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred, müzekker ve marife (özel isim)"
         }
       }
     },
@@ -492,7 +610,11 @@
       "analysis": {
         "kind": "Bağlaç + isim",
         "fields": {
-          "root": "م ث ل"
+          "root": "م ث ل",
+          "wordForm": "Müfred ve muzaf",
+          "irab": "Zamme ile merfû",
+          "role": "Mübtedâ",
+          "construction": "Muzaf"
         }
       }
     },
@@ -504,7 +626,13 @@
       "analysis": {
         "kind": "Masdar",
         "fields": {
-          "root": "ش ر ك"
+          "root": "ش ر ك",
+          "derivedFrom": "شَارَكَ يُشَارِكُ",
+          "bab": "Sülâsî mezîd, müfâ‘ale babı",
+          "pattern": "مُفَاعَلَة",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -516,7 +644,10 @@
       "analysis": {
         "kind": "Zarf",
         "fields": {
-          "meaning": "İki şeyin arası"
+          "meaning": "İki şeyin arası",
+          "irab": "Fetha ile mansub zarf",
+          "role": "Mekân zarfı",
+          "construction": "Muzaf"
         }
       }
     },
@@ -528,7 +659,10 @@
       "analysis": {
         "kind": "Sayı ismi",
         "fields": {
-          "numberType": "Tesniye"
+          "numberType": "Tesniye",
+          "role": "Muzafun ileyh",
+          "irab": "Yâ ile mecrûr",
+          "wordForm": "Tesniye ve marife"
         }
       }
     },
@@ -541,7 +675,9 @@
         "kind": "Bağlaç + ism-i fâil",
         "fields": {
           "root": "ص ع د",
-          "meaning": "İkiden yukarı olanları da kapsar."
+          "meaning": "Yukarıya doğru, daha fazlası",
+          "irab": "Fetha ile mansub hâl",
+          "wordForm": "Müfred ve nekre"
         }
       }
     },
@@ -554,7 +690,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ن ح و"
+          "root": "ن ح و",
+          "meaning": "Şunun gibi",
+          "irab": "Zamme ile merfû",
+          "role": "Haber veya muzaf",
+          "construction": "Muzaf"
         }
       }
     },
@@ -568,7 +708,11 @@
           "root": "ص ل ح",
           "bab": "Sülâsî mezîd, tefâ‘ul babı",
           "pattern": "تَفَاعَلَ",
-          "meaning": "Çok taraflı müşareket örneği"
+          "meaning": "Çok taraflı ortaklaşa barışma",
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "transitivity": "Lazım"
         }
       }
     },
@@ -581,7 +725,8 @@
         "kind": "İsim",
         "fields": {
           "role": "Fâil",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "wordForm": "Topluluk ismi ve marife"
         }
       }
     }

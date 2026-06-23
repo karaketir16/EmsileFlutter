@@ -80,7 +80,12 @@
             "label": "قَدْ",
             "value": "Muzâri fiille burada ihtimal ve bazen manası verir."
           }
-        ]
+        ],
+        "fields": {
+          "structure": "وَ atıf harfi, قَدْ ise ihtilal/taklil bildiren harftir.",
+          "meaning": "Ve bazen, bazen de",
+          "effect": "Muzari fiilin başına gelerek ihtimal/azlık bildirir, amel etmez."
+        }
       }
     },
     {
@@ -129,7 +134,8 @@
         "fields": {
           "root": "م ث ل",
           "wordForm": "Müfred ve muzaf",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "role": "Mübteda"
         }
       }
     },
@@ -196,7 +202,9 @@
         "kind": "Özel isim",
         "fields": {
           "role": "Fâil",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "root": "ز ي د",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -209,7 +217,9 @@
         "kind": "Özel isim",
         "fields": {
           "role": "Birinci mef‘ûlün bih",
-          "irab": "Fetha ile mansub"
+          "irab": "Fetha ile mansub",
+          "root": "ع م ر",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -239,7 +249,8 @@
         "fields": {
           "root": "م ث ل",
           "wordForm": "Müfred ve muzaf",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "role": "Mübteda"
         }
       }
     },
@@ -300,7 +311,9 @@
         "kind": "Özel isim",
         "fields": {
           "role": "Fâil",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "root": "ز ي د",
+          "wordForm": "Müfred ve marife"
         }
       }
     }

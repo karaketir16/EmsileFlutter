@@ -132,7 +132,9 @@
           "pattern": "فَعَالَة",
           "wordForm": "Müfred, muzaf ve merfû",
           "pronoun": "هُ: üçüncü baba döner.",
-          "meaning": "Babı diğer bablardan ayıran lafzî özellik"
+          "meaning": "Babı diğer bablardan ayıran lafzî özellik",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         },
         "details": [
           {
@@ -456,7 +458,10 @@
         "kind": "Bağlaç + zamir",
         "fields": {
           "pronoun": "هِيَ: 3. şahıs, müennes, tekil",
-          "referent": "حُرُوفِ الْحَلْقِ kelimesine döner."
+          "referent": "حُرُوفِ الْحَلْقِ kelimesine döner.",
+          "meaning": "Ve onlar / Ve o harfler",
+          "syntax": "Mübtedâ",
+          "irab": "Mahallen merfû"
         },
         "details": [
           {
@@ -491,7 +496,9 @@
         "kind": "İsim / Harf adı",
         "fields": {
           "meaning": "Ha harfi",
-          "role": "Bedel"
+          "role": "Bedel",
+          "wordForm": "Müfred ve marife",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -503,7 +510,10 @@
       "analysis": {
         "kind": "Bağlaç + isim",
         "fields": {
-          "meaning": "Ve Hı harfi"
+          "meaning": "Ve Hı harfi",
+          "wordForm": "Müfred ve marife",
+          "role": "Atıf ile matuf",
+          "irab": "Zamme ile merfû"
         },
         "details": [
           {
@@ -521,7 +531,10 @@
       "analysis": {
         "kind": "Bağlaç + isim",
         "fields": {
-          "meaning": "Ve Ayn harfi"
+          "meaning": "Ve Ayn harfi",
+          "wordForm": "Müfred ve marife",
+          "role": "Atıf ile matuf",
+          "irab": "Zamme ile merfû"
         },
         "details": [
           {
@@ -539,7 +552,10 @@
       "analysis": {
         "kind": "Bağlaç + isim",
         "fields": {
-          "meaning": "Ve Gayn harfi"
+          "meaning": "Ve Gayn harfi",
+          "wordForm": "Müfred ve marife",
+          "role": "Atıf ile matuf",
+          "irab": "Zamme ile merfû"
         },
         "details": [
           {
@@ -557,7 +573,10 @@
       "analysis": {
         "kind": "Bağlaç + isim",
         "fields": {
-          "meaning": "Ve He harfi"
+          "meaning": "Ve He harfi",
+          "wordForm": "Müfred ve marife",
+          "role": "Atıf ile matuf",
+          "irab": "Zamme ile merfû"
         },
         "details": [
           {
@@ -576,7 +595,10 @@
       "analysis": {
         "kind": "Bağlaç + isim",
         "fields": {
-          "meaning": "Ve Hemze"
+          "meaning": "Ve Hemze",
+          "wordForm": "Müfred ve marife",
+          "role": "Atıf ile matuf",
+          "irab": "Zamme ile merfû"
         },
         "details": [
           {

@@ -12,7 +12,10 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ن و ع"
+          "root": "ن و ع",
+          "wordForm": "Müfred ve marife",
+          "irab": "Zamme ile merfû",
+          "role": "Mübtedâ"
         }
       }
     },
@@ -24,7 +27,10 @@
       "analysis": {
         "kind": "Sıfat",
         "fields": {
-          "wordForm": "Sıra sayısı"
+          "root": "ث ن ي",
+          "wordForm": "Sıra sayısı, müfred ve marife",
+          "irab": "Zamme takdir edilerek merfû",
+          "role": "النَّوْعُ kelimesinin sıfatı"
         }
       }
     },
@@ -36,7 +42,11 @@
       "analysis": {
         "kind": "Bağlaç + zamir",
         "fields": {
-          "referent": "İkinci çeşit"
+          "pronoun": "هُوَ",
+          "referent": "İkinci çeşit (النوع الثاني)",
+          "role": "Mübtedâ",
+          "irab": "Mahallen merfû",
+          "wordForm": "Müfred, müzekker ve marife (zamir)"
         }
       }
     },
@@ -48,7 +58,10 @@
       "analysis": {
         "kind": "İsm-i mevsûl",
         "fields": {
-          "meaning": "Tanım kurar"
+          "meaning": "İsm-i mevsûl",
+          "role": "Haber",
+          "irab": "Mahallen merfû",
+          "wordForm": "Marife"
         }
       }
     },
@@ -60,7 +73,13 @@
       "analysis": {
         "kind": "Meçhul fiil",
         "fields": {
-          "root": "ز ي د"
+          "root": "ز ي د",
+          "conjugation": "Fiil-i mâzi, meçhul",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "نائب فاعل",
+          "transitivity": "Lazım",
+          "baseForm": "زَادَ يَزِيدُ",
+          "meaning": "Artırıldı, eklendi"
         }
       }
     },
@@ -72,7 +91,10 @@
       "analysis": {
         "kind": "Harf + zamir",
         "fields": {
-          "referent": "Fiil"
+          "pronoun": "هِ",
+          "referent": "Ziyade yapılan fiil",
+          "irab": "Mahallen mecrûr",
+          "role": "Câr-mecrûr, zarf-ı müstekar"
         }
       }
     },
@@ -84,7 +106,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "numberType": "Tesniye"
+          "singular": "حَرْف",
+          "numberType": "Tesniye",
+          "irab": "Elif ile merfû",
+          "role": "Nâib-i fâil",
+          "wordForm": "Tesniye ve nekre"
         }
       }
     },
@@ -96,7 +122,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Üzerine"
+          "meaning": "Üzerine, -e",
+          "syntax": "Harf-i cer"
         }
       }
     },
@@ -108,7 +135,10 @@
       "analysis": {
         "kind": "Nisbet ismi",
         "fields": {
-          "term": "Üç harfli fiil"
+          "term": "Üç harfli fiil",
+          "morphology": "Nisbet ismi",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -120,7 +150,11 @@
       "analysis": {
         "kind": "Bağlaç + zamir",
         "fields": {
-          "referent": "Bu çeşit"
+          "pronoun": "هُوَ",
+          "referent": "İkinci çeşit (النوع الثاني)",
+          "role": "Mübtedâ",
+          "irab": "Mahallen merfû",
+          "wordForm": "Müfred, müzekker ve marife (zamir)"
         }
       }
     },
@@ -132,7 +166,10 @@
       "analysis": {
         "kind": "Sayı",
         "fields": {
-          "numberType": "Aded"
+          "numberType": "Müfred sayı",
+          "role": "Haber",
+          "irab": "Zamme ile merfû",
+          "construction": "Muzaf"
         }
       }
     },
@@ -145,7 +182,10 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "singular": "بَاب"
+          "singular": "بَاب",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Cem-i mükesser ve nekre"
         }
       }
     }

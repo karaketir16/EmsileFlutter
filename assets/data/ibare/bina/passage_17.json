@@ -33,8 +33,9 @@
           "derivedFrom": "عَدَّى يُعَدِّي",
           "pattern": "تَفْعِلَة",
           "morphology": "Masdar",
-          "meaning": "Fiilin etkisinin mef‘ûle geçmesi",
-          "irab": "Kesra ile mecrûr"
+          "meaning": "Fiilin etkisinin nesneye geçmesi",
+          "irab": "Kesra ile mecrûr",
+          "bab": "Sülâsî mezîd, tef‘îl babı"
         }
       }
     },
@@ -66,7 +67,12 @@
             "label": "قَدْ",
             "value": "Muzâri fiille burada ihtimal ve bazen manası verir."
           }
-        ]
+        ],
+        "fields": {
+          "structure": "وَ atıf harfi, قَدْ ise ihtilal/taklil bildiren harftir.",
+          "meaning": "Ve bazen, bazen de",
+          "effect": "Muzari fiilin başına gelerek ihtimal/azlık bildirir, amel etmez."
+        }
       }
     },
     {
@@ -112,7 +118,8 @@
         "fields": {
           "root": "م ث ل",
           "wordForm": "Müfred ve muzaf",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "role": "Mübteda"
         }
       }
     },
@@ -128,7 +135,9 @@
           "derivedFrom": "تَعَدَّى يَتَعَدَّى",
           "pattern": "مُتَفَعِّل",
           "role": "Muzafun ileyh",
-          "irab": "Kesra takdir edilerek mecrûr"
+          "irab": "Kesra takdir edilerek mecrûr",
+          "bab": "Sülâsî mezîd, tefa‘‘ul babı",
+          "morphology": "İsm-i fâil"
         }
       }
     },
@@ -173,7 +182,9 @@
         "kind": "Özel isim",
         "fields": {
           "role": "Fâil",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "root": "ز ي د",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -186,7 +197,9 @@
         "kind": "Özel isim",
         "fields": {
           "role": "Mef‘ûlün bih",
-          "irab": "Fetha ile mansub"
+          "irab": "Fetha ile mansub",
+          "root": "ع م ر",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -200,7 +213,8 @@
         "fields": {
           "root": "م ث ل",
           "wordForm": "Müfred ve muzaf",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "role": "Mübteda"
         }
       }
     },
@@ -216,7 +230,8 @@
           "derivedFrom": "لَزِمَ يَلْزَمُ",
           "pattern": "فَاعِل",
           "role": "Muzafun ileyh",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "morphology": "İsm-i fâil"
         }
       }
     },

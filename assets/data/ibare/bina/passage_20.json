@@ -137,7 +137,8 @@
           "root": "ق ت ل",
           "bab": "Sülâsî mezîd, müfâ‘ale babı",
           "pattern": "فَاعَلَ",
-          "meaning": "Çoğunlukla iki taraflı fiil manası taşır."
+          "meaning": "Çoğunlukla iki taraflı fiil manası taşır.",
+          "transitivity": "Müteaddi"
         }
       }
     },
@@ -153,7 +154,8 @@
           "hiddenPronoun": "هُوَ",
           "root": "ق ت ل",
           "bab": "Sülâsî mezîd, müfâ‘ale babı",
-          "pattern": "يُفَاعِلُ"
+          "pattern": "يُفَاعِلُ",
+          "transitivity": "Müteaddi"
         }
       }
     },
@@ -182,7 +184,8 @@
           "root": "ق ت ل",
           "pattern": "فِعَال",
           "morphology": "Alternatif masdar",
-          "irab": "Fetha ile mansub"
+          "irab": "Fetha ile mansub",
+          "bab": "Sülâsî mezîd, müfâ‘ale babı"
         }
       }
     },
@@ -197,7 +200,8 @@
           "root": "ق ت ل",
           "pattern": "فِيعَال",
           "morphology": "Alternatif masdar",
-          "irab": "Fetha ile mansub"
+          "irab": "Fetha ile mansub",
+          "bab": "Sülâsî mezîd, müfâ‘ale babı"
         }
       }
     },
@@ -241,7 +245,8 @@
           "conjugation": "Fiil-i muzâri, nâkıs fiil",
           "person": "3. şahıs, müzekker, tekil",
           "nasb": "أَنْ sebebiyle mansub",
-          "root": "ك و ن"
+          "root": "ك و ن",
+          "baseForm": "كَانَ يَكُونُ"
         }
       }
     },
@@ -269,7 +274,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Üzerine, üzere"
+          "meaning": "Üzerine, üzere",
+          "structure": "Cer harfidir."
         }
       }
     },
@@ -283,7 +289,9 @@
         "fields": {
           "numberType": "Aded",
           "role": "أَحْرُفٍ kelimesinin sayı unsuru",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "root": "ر ب ع",
+          "wordForm": "Müfred, müzekker ve muzaf"
         }
       }
     },
@@ -297,7 +305,9 @@
         "fields": {
           "singular": "حَرْف",
           "role": "Sayılan unsur",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "root": "ح ر ف",
+          "wordForm": "Cemi, nekire"
         }
       }
     },
@@ -326,7 +336,9 @@
         "kind": "Harf adı",
         "fields": {
           "role": "Muzafun ileyh",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "root": "أ ل ف",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -339,7 +351,8 @@
         "kind": "Zarf",
         "fields": {
           "meaning": "İki şeyin arası",
-          "irab": "Fetha ile mansub zarf"
+          "irab": "Fetha ile mansub zarf",
+          "root": "ب ي ن"
         }
       }
     },
@@ -353,7 +366,9 @@
         "fields": {
           "term": "Fâü’l-fiil: kökün birinci harfi",
           "role": "بَيْنَ zarfına bağlı unsur",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "root": "ف أ و",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -367,7 +382,8 @@
         "fields": {
           "term": "Aynü’l-fiil: kökün ikinci harfi",
           "role": "الْفَاءِ kelimesine atıf",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "structure": "وَ atıf harfidir."
         }
       }
     }

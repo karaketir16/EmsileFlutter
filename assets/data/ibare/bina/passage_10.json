@@ -30,7 +30,10 @@
         "kind": "Zarf anlamında kullanılan mansub isim",
         "fields": {
           "meaning": "De, dahi, ayrıca",
-          "irab": "Fetha ile mansubdur."
+          "irab": "Fetha ile mansubdur.",
+          "root": "أ ي ض",
+          "pattern": "فَعْل",
+          "morphology": "Masdar"
         }
       }
     },
@@ -75,6 +78,10 @@
       "gloss": "Ve bazen",
       "analysis": {
         "kind": "Bağlaç + harf",
+        "fields": {
+          "meaning": "Ve bazen / kimi zaman",
+          "morphology": "Atıf harfi (vav) ve ihtimal/taklil bildiren harf (kad)"
+        },
         "details": [
           {
             "label": "قَدْ",
@@ -190,7 +197,8 @@
         "kind": "Özel isim",
         "fields": {
           "role": "Fâil",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "wordForm": "Müfred, müzekker ve marife"
         }
       }
     },
@@ -280,7 +288,8 @@
         "kind": "Özel isim",
         "fields": {
           "role": "Fâil",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "wordForm": "Müfred, müzekker ve marife"
         }
       }
     }

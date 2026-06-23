@@ -16,7 +16,8 @@
           "derivedFrom": "بَنَى يَبْنِي",
           "pattern": "فِعَال",
           "pronoun": "هُ: tef‘îl babına döner.",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "meaning": "Babın hangi işlev için kullanıldığı"
         }
       }
     },
@@ -46,8 +47,9 @@
       "analysis": {
         "kind": "Bağlaç + zamir",
         "fields": {
-          "pronoun": "هُوَ: teksir manasına döner.",
-          "role": "Yeni açıklama cümlesinin mübtedâsı"
+          "pronoun": "هُوَ: o (teksir)",
+          "role": "Mübteda",
+          "structure": "وَ atıf, هُوَ ise munfasıl zamirdir."
         }
       }
     },
@@ -59,7 +61,8 @@
       "analysis": {
         "kind": "Harf",
         "fields": {
-          "meaning": "Muzâri fiille burada ihtimal ve çeşitlilik bildirir."
+          "meaning": "Muzâri fiille ihtimal/azlık, bazen de pekiştirme ifade eder.",
+          "structure": "Taklil/ihtimal harfidir."
         }
       }
     },
@@ -87,7 +90,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "“-de/-da”"
+          "meaning": "“-de/-da”",
+          "structure": "Cer harfidir."
         }
       }
     },
@@ -101,8 +105,9 @@
         "fields": {
           "root": "ف ع ل",
           "role": "فِي harfiyle mecrûr",
-          "meaning": "Teksirin bizzat fiil yapma sayısında olması",
-          "irab": "Kesra ile mecrûr"
+          "meaning": "Teksirin fiilin oluş biçiminde/kendisinde olması",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -134,7 +139,8 @@
           "root": "ط و ف",
           "bab": "Sülâsî mezîd, tef‘îl babı",
           "pattern": "فَعَّلَ",
-          "meaning": "Fiilde teksir: tavaf fiilinin çok yapılması"
+          "meaning": "Fiilde teksir: Kâbe’yi çokça tavaf etti.",
+          "transitivity": "Müteaddi"
         }
       }
     },
@@ -147,7 +153,9 @@
         "kind": "Özel isim",
         "fields": {
           "role": "Fâil",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "root": "ز ي د",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -160,7 +168,9 @@
         "kind": "Özel isim",
         "fields": {
           "role": "Mef‘ûlün bih",
-          "irab": "Fetha ile mansub"
+          "irab": "Fetha ile mansub",
+          "root": "ك ع ب",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -176,7 +186,12 @@
             "label": "قَدْ",
             "value": "Aynı teksir manasının başka yere bağlanabileceğini bildirir."
           }
-        ]
+        ],
+        "fields": {
+          "structure": "وَ atıf harfi, قَدْ ise ihtilal/taklil bildiren harftir.",
+          "meaning": "Ve bazen, bazen de",
+          "effect": "Muzari fiilin başına gelerek ihtimal/azlık bildirir, amel etmez."
+        }
       }
     },
     {
@@ -190,7 +205,8 @@
           "conjugation": "Fiil-i muzâri, nâkıs fiil",
           "person": "3. şahıs, müzekker, tekil",
           "hiddenPronoun": "هُوَ",
-          "root": "ك و ن"
+          "root": "ك و ن",
+          "baseForm": "كَانَ يَكُونُ"
         }
       }
     },
@@ -202,7 +218,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "“-de/-da”"
+          "meaning": "“-de/-da”",
+          "structure": "Cer harfidir."
         }
       }
     },
@@ -216,8 +233,9 @@
         "fields": {
           "root": "ف ع ل",
           "role": "فِي harfiyle mecrûr",
-          "meaning": "Teksirin işi yapan varlığın çokluğunda olması",
-          "irab": "Kesra ile mecrûr"
+          "meaning": "Teksirin işi yapan fâilde olması",
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife, ism-i fâil"
         }
       }
     },
@@ -247,7 +265,10 @@
           "root": "م و ت",
           "bab": "Sülâsî mezîd, tef‘îl babı",
           "pattern": "فَعَّلَ",
-          "meaning": "Fâilde teksir: PDF örneği, çok sayıda devenin telef olmasını gösterir."
+          "meaning": "Fâilde teksir: PDF örneği, çok sayıda devenin telef olmasını gösterir.",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "transitivity": "Lazım/Müteaddi"
         }
       }
     },
@@ -260,7 +281,9 @@
         "kind": "Cins isim",
         "fields": {
           "role": "Fâil",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "root": "أ ب ل",
+          "wordForm": "Cemi veya cins isim"
         }
       }
     },
@@ -276,7 +299,12 @@
             "label": "قَدْ",
             "value": "Üçüncü teksir türüne geçiş yapar."
           }
-        ]
+        ],
+        "fields": {
+          "structure": "وَ atıf harfi, قَدْ ise ihtilal/taklil bildiren harftir.",
+          "meaning": "Ve bazen, bazen de",
+          "effect": "Muzari fiilin başına gelerek ihtimal/azlık bildirir, amel etmez."
+        }
       }
     },
     {
@@ -289,7 +317,9 @@
         "fields": {
           "conjugation": "Fiil-i muzâri, nâkıs fiil",
           "person": "3. şahıs, müzekker, tekil",
-          "root": "ك و ن"
+          "root": "ك و ن",
+          "hiddenPronoun": "هُوَ",
+          "baseForm": "كَانَ يَكُونُ"
         }
       }
     },
@@ -301,7 +331,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "“-de/-da”"
+          "meaning": "“-de/-da”",
+          "structure": "Cer harfidir."
         }
       }
     },
@@ -317,7 +348,8 @@
           "pattern": "مَفْعُول",
           "role": "فِي harfiyle mecrûr",
           "meaning": "Teksirin etkilenen nesnenin çokluğunda olması",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred ve marife, ism-i mef‘ûl"
         }
       }
     },
@@ -349,7 +381,8 @@
           "root": "غ ل ق",
           "bab": "Sülâsî mezîd, tef‘îl babı",
           "pattern": "فَعَّلَ",
-          "meaning": "Mef‘ûlde teksir: kapatılan nesnelerin çok olması"
+          "meaning": "Mef‘ûlde teksir: kapatılan nesnelerin çok olması",
+          "transitivity": "Müteaddi"
         }
       }
     },
@@ -362,7 +395,9 @@
         "kind": "Özel isim",
         "fields": {
           "role": "Fâil",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "root": "ز ي د",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -376,7 +411,8 @@
         "fields": {
           "root": "ب و ب",
           "role": "Mef‘ûlün bih",
-          "irab": "Fetha ile mansub"
+          "irab": "Fetha ile mansub",
+          "wordForm": "Müfred ve marife"
         },
         "details": [
           {

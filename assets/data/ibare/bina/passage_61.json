@@ -12,6 +12,7 @@
       "analysis": {
         "kind": "Bağlaç + taksim edatı",
         "fields": {
+          "morphology": "Atıf harfi + taksim edatı",
           "meaning": "Son kısmı başlatır"
         }
       }
@@ -24,6 +25,11 @@
       "analysis": {
         "kind": "Terim",
         "fields": {
+          "root": "ه م ز",
+          "pattern": "مَفْعُول",
+          "wordForm": "İsm-i mef‘ûl, müfred, nekre",
+          "role": "Atfedilen haber",
+          "irab": "Zamme ile merfû",
           "term": "Asıl harflerinden biri hemze olan fiil"
         }
       }
@@ -36,7 +42,10 @@
       "analysis": {
         "kind": "Bağlaç + zamir",
         "fields": {
-          "referent": "مهموز"
+          "pronoun": "هُوَ: 3. şahıs, müzekker, tekil",
+          "referent": "مهموز",
+          "role": "Mübteda",
+          "irab": "Mahallen merfûdur."
         }
       }
     },
@@ -48,6 +57,9 @@
       "analysis": {
         "kind": "İsm-i mevsûl",
         "fields": {
+          "wordForm": "Tekil, müzekker, ism-i mevsûl",
+          "role": "وَهُوَ mübtedasının haberi",
+          "irab": "Mahallen merfûdur.",
           "referent": "Mehmûz fiil"
         }
       }
@@ -60,7 +72,13 @@
       "analysis": {
         "kind": "Nâkıs fiil",
         "fields": {
-          "root": "ك و ن"
+          "conjugation": "Fiil-i muzâri, nâkıs",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "root": "ك و ن",
+          "baseForm": "كَانَ يَكُونُ",
+          "pattern": "يَفْعُلُ",
+          "irab": "Dammeli muzâri fiil"
         }
       }
     },
@@ -72,6 +90,10 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
+          "wordForm": "Müfred, muzaf, merfû",
+          "role": "يَكُونُ fiilinin ismi",
+          "irab": "Zamme ile merfû",
+          "construction": "Muzaf",
           "meaning": "Bir"
         }
       }
@@ -84,7 +106,15 @@
       "analysis": {
         "kind": "İsim + zamir",
         "fields": {
-          "singular": "حَرْف"
+          "structure": "حُرُوف ismi ile هِ zamirinin birleşimidir.",
+          "singular": "حَرْفٌ",
+          "root": "ح ر ف",
+          "pattern": "فُعُول",
+          "wordForm": "Cem-i mükesser, muzaf",
+          "pronoun": "هِ: 3. şahıs, müzekker, tekil",
+          "referent": "Fiil",
+          "role": "أَحَدُ kelimesinin muzafun ileyhi",
+          "irab": "Kesra ile mecrurdur."
         }
       }
     },
@@ -96,7 +126,11 @@
       "analysis": {
         "kind": "Sıfat",
         "fields": {
-          "meaning": "Kelimenin kökünden olan"
+          "root": "أ ص ل",
+          "wordForm": "Nisbet ismi, müfred, marife",
+          "role": "حُرُوفِهِ kelimesinin sıfatı",
+          "irab": "Kesra ile mecrurdur.",
+          "meaning": "Kelimenin kökünden olan asıl harfler"
         }
       }
     },
@@ -108,7 +142,10 @@
       "analysis": {
         "kind": "Harf adı",
         "fields": {
-          "term": "Hemze"
+          "root": "ه م ز",
+          "wordForm": "Müfred, nekre, mansub",
+          "role": "يَكُونُ fiilinin haberi",
+          "irab": "Fetha ile mansubdur."
         }
       }
     },
@@ -121,7 +158,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ن ح و"
+          "root": "ن ح و",
+          "wordForm": "Müfred, muzaf",
+          "role": "Bedel veya haber",
+          "irab": "Zamme ile merfû",
+          "construction": "Muzaf"
         }
       }
     },
@@ -132,7 +173,13 @@
       "analysis": {
         "kind": "Fiil",
         "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
           "root": "أ خ ذ",
+          "bab": "Sülâsî mücerred 1. bab",
+          "pattern": "فَعَلَ",
+          "transitivity": "Müteaddi",
           "term": "Mehmûzü’l-fâ"
         }
       }
@@ -145,8 +192,15 @@
       "analysis": {
         "kind": "Bağlaç + fiil",
         "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
           "root": "س أ ل",
-          "term": "Mehmûzü’l-ayn"
+          "bab": "Sülâsî mücerred 3. bab",
+          "pattern": "فَعَلَ",
+          "transitivity": "Müteaddi",
+          "term": "Mehmûzü’l-ayn",
+          "syntax": "Atıf + fiil"
         }
       }
     },
@@ -159,8 +213,15 @@
       "analysis": {
         "kind": "Bağlaç + fiil",
         "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
           "root": "ق ر أ",
-          "term": "Mehmûzü’l-lâm"
+          "bab": "Sülâsî mücerred 3. bab",
+          "pattern": "فَعَلَ",
+          "transitivity": "Müteaddi",
+          "term": "Mehmûzü’l-lâm",
+          "syntax": "Atıf + fiil"
         }
       }
     },
@@ -172,7 +233,9 @@
       "analysis": {
         "kind": "Bağlaç + şart edatı",
         "fields": {
-          "meaning": "Şart başlatır"
+          "morphology": "Şart harfi",
+          "meaning": "Şart cümlesi başlatır",
+          "syntax": "Atıf + şart harfi"
         }
       }
     },
@@ -184,7 +247,12 @@
       "analysis": {
         "kind": "Nâkıs fiil",
         "fields": {
-          "root": "ك و ن"
+          "conjugation": "Fiil-i mâzi, nâkıs",
+          "person": "3. şahıs, müennes, tekil",
+          "hiddenPronoun": "هِيَ",
+          "root": "ك و ن",
+          "baseForm": "كَانَ يَكُونُ",
+          "pattern": "فَعَلَتْ"
         }
       }
     },
@@ -196,7 +264,10 @@
       "analysis": {
         "kind": "Harf adı",
         "fields": {
-          "term": "Hemze"
+          "root": "ه م ز",
+          "wordForm": "Müfred, marife, merfû",
+          "role": "كَانَتِ nâkıs fiilinin ismi",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -208,7 +279,9 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Karşılığında"
+          "morphology": "Cer harfi",
+          "meaning": "Bulunma, zarfiyet",
+          "effect": "Sonrasını mecrur yapar."
         }
       }
     },
@@ -220,7 +293,13 @@
       "analysis": {
         "kind": "Masdar",
         "fields": {
-          "root": "ق ب ل"
+          "root": "ق ب ل",
+          "derivedFrom": "قَابَلَ يُقَابِلُ",
+          "pattern": "مُفَاعَلَة",
+          "wordForm": "Müfred, muzaf, mecrur",
+          "role": "فِي ile mecrur",
+          "irab": "Kesra ile mecrurdur.",
+          "construction": "Muzaf"
         }
       }
     },
@@ -232,6 +311,11 @@
       "analysis": {
         "kind": "Harf adı + zamir",
         "fields": {
+          "structure": "فَاء ismi ile هِ zamirinin birleşimidir.",
+          "pronoun": "هِ: 3. şahıs, müzekker, tekil",
+          "referent": "Fiil",
+          "role": "مُقَابَلَةِ kelimesinin muzafun ileyhi",
+          "irab": "Kesra ile mecrurdur.",
           "term": "Fâü’l-fiil"
         }
       }
@@ -244,7 +328,13 @@
       "analysis": {
         "kind": "Meçhul fiil",
         "fields": {
-          "root": "س م و"
+          "conjugation": "Fiil-i muzâri, meçhûl",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "root": "س م و",
+          "baseForm": "سَمَّى يُسَمِّي",
+          "pattern": "يُفَعَّلُ",
+          "irab": "Mukadder zamme ile merfûdur."
         }
       }
     },
@@ -256,7 +346,12 @@
       "analysis": {
         "kind": "Terim",
         "fields": {
-          "term": "Hemzeli"
+          "root": "ه م ز",
+          "pattern": "مَفْعُول",
+          "wordForm": "İsm-i mef‘ûl, müfred, muzaf, mansub",
+          "role": "يُسَمَّى fiilinin ikinci mef'ûlü",
+          "irab": "Fetha ile mansubdur.",
+          "construction": "Muzaf"
         }
       }
     },
@@ -268,7 +363,9 @@
       "analysis": {
         "kind": "Harf adı",
         "fields": {
-          "term": "Mehmûzü’l-fâ"
+          "wordForm": "Müfred, marife, mecrur",
+          "role": "مَهْمُوزَ kelimesinin muzafun ileyhi",
+          "irab": "Kesra ile mecrurdur."
         }
       }
     },
@@ -281,7 +378,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ن ح و"
+          "root": "ن ح و",
+          "wordForm": "Müfred, muzaf",
+          "role": "Bedel veya haber",
+          "irab": "Zamme ile merfû",
+          "construction": "Muzaf"
         }
       }
     },
@@ -292,7 +393,13 @@
       "analysis": {
         "kind": "Fiil",
         "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
           "root": "أ خ ذ",
+          "bab": "Sülâsî mücerred 1. bab",
+          "pattern": "فَعَلَ",
+          "transitivity": "Müteaddi",
           "term": "Mehmûzü’l-fâ"
         }
       }
@@ -305,7 +412,9 @@
       "analysis": {
         "kind": "Bağlaç + şart edatı",
         "fields": {
-          "meaning": "İkinci şart"
+          "morphology": "Şart harfi",
+          "meaning": "Şart cümlesi",
+          "syntax": "Atıf + şart harfi"
         }
       }
     },
@@ -317,7 +426,12 @@
       "analysis": {
         "kind": "Nâkıs fiil",
         "fields": {
-          "root": "ك و ن"
+          "conjugation": "Fiil-i mâzi, nâkıs",
+          "person": "3. şahıs, müennes, tekil",
+          "hiddenPronoun": "هِيَ",
+          "root": "ك و ن",
+          "baseForm": "كَانَ يَكُونُ",
+          "pattern": "فَعَلَتْ"
         }
       }
     },
@@ -329,7 +443,10 @@
       "analysis": {
         "kind": "Harf adı",
         "fields": {
-          "term": "Hemze"
+          "root": "ه م ز",
+          "wordForm": "Müfred, marife, merfû",
+          "role": "كَانَتِ nâkıs fiilinin ismi",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -341,7 +458,9 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Karşılığında"
+          "morphology": "Cer harfi",
+          "meaning": "Bulunma, zarfiyet",
+          "effect": "Sonrasını mecrur yapar."
         }
       }
     },
@@ -353,7 +472,13 @@
       "analysis": {
         "kind": "Masdar",
         "fields": {
-          "root": "ق ب ل"
+          "root": "ق ب ل",
+          "derivedFrom": "قَابَلَ يُقَابِلُ",
+          "pattern": "مُفَاعَلَة",
+          "wordForm": "Müfred, muzaf, mecrur",
+          "role": "فِي ile mecrur",
+          "irab": "Kesra ile mecrurdur.",
+          "construction": "Muzaf"
         }
       }
     },
@@ -365,6 +490,11 @@
       "analysis": {
         "kind": "Harf adı + zamir",
         "fields": {
+          "structure": "عَيْن ismi ile هِ zamirinin birleşimidir.",
+          "pronoun": "هِ: 3. şahıs, müzekker, tekil",
+          "referent": "Fiil",
+          "role": "مُقَابَلَةِ kelimesinin muzafun ileyhi",
+          "irab": "Kesra ile mecrurdur.",
           "term": "Aynü’l-fiil"
         }
       }
@@ -377,7 +507,13 @@
       "analysis": {
         "kind": "Meçhul fiil",
         "fields": {
-          "root": "س م و"
+          "conjugation": "Fiil-i muzâri, meçhûl",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "root": "س م و",
+          "baseForm": "سَمَّى يُسَمِّي",
+          "pattern": "يُفَعَّلُ",
+          "irab": "Mukadder zamme ile merfûdur."
         }
       }
     },
@@ -389,7 +525,12 @@
       "analysis": {
         "kind": "Terim",
         "fields": {
-          "term": "Hemzeli"
+          "root": "ه م ز",
+          "pattern": "مَفْعُول",
+          "wordForm": "İsm-i mef‘ûl, müfred, muzaf, mansub",
+          "role": "يُسَمَّى fiilinin ikinci mef'ûlü",
+          "irab": "Fetha ile mansubdur.",
+          "construction": "Muzaf"
         }
       }
     },
@@ -401,7 +542,9 @@
       "analysis": {
         "kind": "Harf adı",
         "fields": {
-          "term": "Mehmûzü’l-ayn"
+          "wordForm": "Müfred, marife, mecrur",
+          "role": "مَهْمُوزَ kelimesinin muzafun ileyhi",
+          "irab": "Kesra ile mecrurdur."
         }
       }
     },
@@ -414,7 +557,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ن ح و"
+          "root": "ن ح و",
+          "wordForm": "Müfred, muzaf",
+          "role": "Bedel veya haber",
+          "irab": "Zamme ile merfû",
+          "construction": "Muzaf"
         }
       }
     },
@@ -425,7 +572,13 @@
       "analysis": {
         "kind": "Fiil",
         "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
           "root": "س أ ل",
+          "bab": "Sülâsî mücerred 3. bab",
+          "pattern": "فَعَلَ",
+          "transitivity": "Müteaddi",
           "term": "Mehmûzü’l-ayn"
         }
       }
@@ -438,7 +591,9 @@
       "analysis": {
         "kind": "Bağlaç + şart edatı",
         "fields": {
-          "meaning": "Üçüncü şart"
+          "morphology": "Şart harfi",
+          "meaning": "Şart cümlesi",
+          "syntax": "Atıf + şart harfi"
         }
       }
     },
@@ -450,7 +605,12 @@
       "analysis": {
         "kind": "Nâkıs fiil",
         "fields": {
-          "root": "ك و ن"
+          "conjugation": "Fiil-i mâzi, nâkıs",
+          "person": "3. şahıs, müennes, tekil",
+          "hiddenPronoun": "هِيَ",
+          "root": "ك و ن",
+          "baseForm": "كَانَ يَكُونُ",
+          "pattern": "فَعَلَتْ"
         }
       }
     },
@@ -462,7 +622,10 @@
       "analysis": {
         "kind": "Harf adı",
         "fields": {
-          "term": "Hemze"
+          "root": "ه م ز",
+          "wordForm": "Müfred, marife, merfû",
+          "role": "كَانَتِ nâkıs fiilinin ismi",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -474,7 +637,9 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Karşılığında"
+          "morphology": "Cer harfi",
+          "meaning": "Bulunma, zarfiyet",
+          "effect": "Sonrasını mecrur yapar."
         }
       }
     },
@@ -486,7 +651,13 @@
       "analysis": {
         "kind": "Masdar",
         "fields": {
-          "root": "ق ب ل"
+          "root": "ق ب ل",
+          "derivedFrom": "قَابَلَ يُقَابِلُ",
+          "pattern": "مُفَاعَلَة",
+          "wordForm": "Müfred, muzaf, mecrur",
+          "role": "فِي ile mecrur",
+          "irab": "Kesra ile mecrurdur.",
+          "construction": "Muzaf"
         }
       }
     },
@@ -498,6 +669,11 @@
       "analysis": {
         "kind": "Harf adı + zamir",
         "fields": {
+          "structure": "لَام ismi ile هِ zamirinin birleşimidir.",
+          "pronoun": "هِ: 3. şahıs, müzekker, tekil",
+          "referent": "Fiil",
+          "role": "مُقَابَلَةِ kelimesinin muzafun ileyhi",
+          "irab": "Kesra ile mecrurdur.",
           "term": "Lâmü’l-fiil"
         }
       }
@@ -510,7 +686,13 @@
       "analysis": {
         "kind": "Meçhul fiil",
         "fields": {
-          "root": "س م و"
+          "conjugation": "Fiil-i muzâri, meçhûl",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "root": "س م و",
+          "baseForm": "سَمَّى يُسَمِّي",
+          "pattern": "يُفَعَّلُ",
+          "irab": "Mukadder zamme ile merfûdur."
         }
       }
     },
@@ -522,7 +704,12 @@
       "analysis": {
         "kind": "Terim",
         "fields": {
-          "term": "Hemzeli"
+          "root": "ه م ز",
+          "pattern": "مَفْعُول",
+          "wordForm": "İsm-i mef‘ûl, müfred, muzaf, mansub",
+          "role": "يُسَمَّى fiilinin ikinci mef'ûlü",
+          "irab": "Fetha ile mansubdur.",
+          "construction": "Muzaf"
         }
       }
     },
@@ -534,7 +721,9 @@
       "analysis": {
         "kind": "Harf adı",
         "fields": {
-          "term": "Mehmûzü’l-lâm"
+          "wordForm": "Müfred, marife, mecrur",
+          "role": "مَهْمُوزَ kelimesinin muzafun ileyhi",
+          "irab": "Kesra ile mecrurdur."
         }
       }
     },
@@ -547,7 +736,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ن ح و"
+          "root": "ن ح و",
+          "wordForm": "Müfred, muzaf",
+          "role": "Bedel veya haber",
+          "irab": "Zamme ile merfû",
+          "construction": "Muzaf"
         }
       }
     },
@@ -558,7 +751,13 @@
       "analysis": {
         "kind": "Fiil",
         "fields": {
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
           "root": "ق ر أ",
+          "bab": "Sülâsî mücerred 3. bab",
+          "pattern": "فَعَلَ",
+          "transitivity": "Müteaddi",
           "term": "Mehmûzü’l-lâm"
         }
       }
@@ -571,7 +770,14 @@
       "analysis": {
         "kind": "Bağlaç + meçhul fiil",
         "fields": {
-          "root": "ق و ل"
+          "conjugation": "Fiil-i muzâri, meçhûl",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "root": "ق و ل",
+          "baseForm": "قَالَ يَقُولُ",
+          "pattern": "يُفْعَلُ",
+          "irab": "Dammeli muzâri fiil",
+          "syntax": "Atıf + fiil"
         }
       }
     },
@@ -583,7 +789,11 @@
       "analysis": {
         "kind": "Harf-i cer + işaret ismi",
         "fields": {
-          "referent": "Kısımlar"
+          "structure": "لِ harf-i cer, هَذِهِ işaret ismidir.",
+          "wordForm": "Müennes, tekil, işaret ismi",
+          "role": "لِ ile mecrur",
+          "irab": "Mahallen mecrurdur.",
+          "referent": "Geçen kısımlar"
         }
       }
     },
@@ -595,7 +805,12 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "singular": "قِسْم"
+          "singular": "قِسْمٌ",
+          "root": "ق س م",
+          "pattern": "أَفْعَال",
+          "wordForm": "Cem-i mükesser, marife",
+          "role": "هَذِهِ işaret isminden bedel",
+          "irab": "Kesra ile mecrurdur."
         }
       }
     },
@@ -607,7 +822,10 @@
       "analysis": {
         "kind": "Sayı",
         "fields": {
-          "numberType": "Aded"
+          "wordForm": "Sayı, marife",
+          "role": "الْأَقْسَامِ kelimesinin sıfatı",
+          "irab": "Kesra ile mecrurdur.",
+          "numberType": "Asıl sayı"
         }
       }
     },
@@ -619,8 +837,16 @@
       "analysis": {
         "kind": "Fiil + zamir",
         "fields": {
+          "structure": "يَجْمَعُ fiili ile هَا zamirinin birleşimidir.",
+          "conjugation": "Fiil-i muzâri, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
           "root": "ج م ع",
-          "referent": "Yedi kısım"
+          "baseForm": "جَمَعَ يَجْمَعُ",
+          "pattern": "يَفْعُلُ",
+          "pronoun": "هَا: 3. şahıs, müennes, tekil",
+          "referent": "Yedi kısım",
+          "irab": "Dammeli muzâri fiil"
         }
       }
     },
@@ -632,6 +858,9 @@
       "analysis": {
         "kind": "İşaret ismi",
         "fields": {
+          "wordForm": "Müzekker, tekil, işaret ismi",
+          "role": "يَجْمَعُ fiilinin fâili",
+          "irab": "Mahallen merfûdur.",
           "referent": "Beyit"
         }
       }
@@ -645,31 +874,36 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ب ي ت"
+          "root": "ب ي ت",
+          "wordForm": "Müfred, marife, merfû",
+          "role": "هَذَا işaret isminden bedel",
+          "irab": "Zamme ile merfû"
         }
       }
     },
     {
       "id": "p61_t54",
       "arabic": "صَحِيحِسْتْ",
-      "printedArabic": "صحيحست",
       "gloss": "Sahihtir",
       "analysis": {
         "kind": "Farsça birleşik nazım parçası",
         "fields": {
-          "term": "Sahih fiil + Farsça است"
+          "morphology": "Farsça birleşik kelime",
+          "meaning": "Sahihtir",
+          "term": "Sahih fiil + Farsça ist"
         }
       }
     },
     {
       "id": "p61_t55",
       "arabic": "مِثَالِسْتْ",
-      "printedArabic": "مثالست",
       "gloss": "Misâldir",
       "analysis": {
         "kind": "Farsça birleşik nazım parçası",
         "fields": {
-          "term": "Misâl fiil + Farsça است"
+          "morphology": "Farsça birleşik kelime",
+          "meaning": "Misâldir",
+          "term": "Misâl fiil + Farsça ist"
         }
       }
     },
@@ -681,6 +915,10 @@
       "analysis": {
         "kind": "Nazım parçası",
         "fields": {
+          "root": "ض ع ف",
+          "pattern": "مُفَعَّل",
+          "wordForm": "İsm-i mef‘ûl, müfred, nekre",
+          "irab": "Zamme ile merfû",
           "term": "Mudâaf fiil"
         }
       }
@@ -692,6 +930,9 @@
       "analysis": {
         "kind": "Nazım parçası",
         "fields": {
+          "root": "ل ف ف",
+          "wordForm": "Müfred, nekre",
+          "irab": "Zamme ile merfû",
           "term": "Lefîf fiil"
         }
       }
@@ -703,6 +944,9 @@
       "analysis": {
         "kind": "Nazım parçası",
         "fields": {
+          "root": "ن ق ص",
+          "wordForm": "Müfred, nekre",
+          "irab": "Zamme ile merfû",
           "term": "Nâkıs fiil"
         }
       }
@@ -714,6 +958,10 @@
       "analysis": {
         "kind": "Nazım parçası",
         "fields": {
+          "root": "ه م ز",
+          "pattern": "مَفْعُول",
+          "wordForm": "İsm-i mef‘ûl, müfred, nekre",
+          "irab": "Zamme ile merfû",
           "term": "Mehmûz fiil"
         }
       }
@@ -726,6 +974,9 @@
       "analysis": {
         "kind": "Nazım parçası",
         "fields": {
+          "root": "ج و ف",
+          "wordForm": "Müfred, nekre",
+          "irab": "Zamme ile merfû",
           "term": "Ecvaf fiil"
         }
       }
@@ -738,7 +989,10 @@
       "analysis": {
         "kind": "Lafza-i celâl",
         "fields": {
-          "role": "Mübteda"
+          "structure": "وَ atıf/istînâf harfi, اللَّه ise lafza-i celâldir.",
+          "wordForm": "Müfred, marife, merfû",
+          "role": "Mübteda",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -750,7 +1004,14 @@
       "analysis": {
         "kind": "Bağlaç + isim + zamir",
         "fields": {
-          "root": "ر س ل"
+          "structure": "رَسُول ismi ile هُ zamirinin birleşimidir.",
+          "root": "ر س ل",
+          "pattern": "فَعُول",
+          "wordForm": "Müfred, muzaf, merfû",
+          "pronoun": "هُ: 3. şahıs, müzekker, tekil",
+          "referent": "Allah",
+          "role": "Mübtedaya atfedilmiştir.",
+          "irab": "Zamme ile merfûdur."
         }
       }
     },
@@ -762,7 +1023,11 @@
       "analysis": {
         "kind": "İsm-i tafdil",
         "fields": {
-          "root": "ع ل م"
+          "root": "ع ل م",
+          "pattern": "أَعْلَم",
+          "wordForm": "İsm-i tafdil, müfred, müzekker",
+          "role": "Mübtedanın haberi",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -775,7 +1040,11 @@
       "analysis": {
         "kind": "Harf-i cer + isim",
         "fields": {
-          "root": "ص و ب"
+          "structure": "بِ harf-i cer, الصَّوَابِ mecrûr isimdir.",
+          "root": "ص و ب",
+          "wordForm": "Müfred, marife, mecrur",
+          "role": "بِ ile mecrur",
+          "irab": "Kesra ile mecrurdur."
         }
       }
     },
@@ -787,7 +1056,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ن ه ي"
+          "root": "ن ه ي",
+          "pattern": "فِعَالَة",
+          "wordForm": "Müfred, marife, merfû",
+          "role": "Haber (mahzuf mübtedanın haberi)",
+          "irab": "Zamme ile merfû"
         }
       }
     }

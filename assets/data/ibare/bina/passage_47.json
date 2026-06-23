@@ -13,7 +13,12 @@
         "kind": "İsim",
         "fields": {
           "root": "ل ح ق",
-          "term": "Eklenen bablar"
+          "derivedFrom": "أَلْحَقَ يُلْحِقُ",
+          "morphology": "İsm-i mef‘ûl çoğulu",
+          "wordForm": "Cem-i müennes sâlim, muzaf",
+          "singular": "مُلْحَقٌ",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -25,7 +30,11 @@
       "analysis": {
         "kind": "Nisbet ismi",
         "fields": {
-          "term": "Dört harfli"
+          "root": "ر ب ع",
+          "wordForm": "Nisbet ismi, müfred, marife",
+          "term": "Dört harfli",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -37,7 +46,13 @@
       "analysis": {
         "kind": "Sıfat",
         "fields": {
-          "term": "Ziyadeli"
+          "root": "ز ي د",
+          "derivedFrom": "زَادَ يَزِيدُ",
+          "morphology": "İsm-i mef‘ûl",
+          "wordForm": "Müfred, marife",
+          "term": "Ziyadeli",
+          "role": "الرُّبَاعِيِّ kelimesinin sıfatı",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -49,7 +64,10 @@
       "analysis": {
         "kind": "Bağlaç + sayı",
         "fields": {
-          "numberType": "Aded"
+          "wordForm": "Müfred, müennes",
+          "numberType": "Asıl sayı (beş)",
+          "role": "Yeni cümlenin mübtedâsı",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -61,7 +79,9 @@
       "analysis": {
         "kind": "Harf + zamir",
         "fields": {
-          "referent": "Bablar"
+          "pronoun": "هَا: 3. şahıs, müennes, tekil",
+          "referent": "Mülhak bablar (مُلْحَقَات)",
+          "irab": "Zamir mahallen mecrûrdur."
         }
       }
     },
@@ -73,7 +93,11 @@
       "analysis": {
         "kind": "Harf-i cer + isim",
         "fields": {
-          "root": "ل ح ق"
+          "root": "ل ح ق",
+          "derivedFrom": "أَلْحَقَ يُلْحِقُ",
+          "morphology": "İsm-i mef‘ûl, muzaf",
+          "role": "لِ harf-i cerriyle mecrûr",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -85,7 +109,11 @@
         "kind": "Fiil örneği",
         "fields": {
           "root": "د ح ر ج",
-          "pattern": "تَفَعْلَلَ"
+          "bab": "Rubâî mezîd bir harf",
+          "pattern": "تَفَعْلَلَ",
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ"
         }
       }
     }

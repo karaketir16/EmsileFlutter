@@ -13,7 +13,11 @@
         "kind": "İsim",
         "fields": {
           "singular": "تَابِع",
-          "meaning": "Ardından gelen"
+          "meaning": "Ardından gelen",
+          "root": "ت ب ع",
+          "wordForm": "Cem‘-i mükesser, muzaf",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -25,7 +29,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ل ح ق"
+          "root": "ل ح ق",
+          "singular": "مُلْحَق",
+          "wordForm": "Cem‘-i müennes sâlim, muzaf",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -37,7 +45,11 @@
       "analysis": {
         "kind": "Nisbet ismi",
         "fields": {
-          "term": "Dört harfli"
+          "term": "Dört harfli",
+          "root": "ر ب ع",
+          "wordForm": "Nisbet ismi, müfred ve marife",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -49,7 +61,11 @@
       "analysis": {
         "kind": "Sıfat",
         "fields": {
-          "term": "Ziyadeli"
+          "term": "Ziyadeli",
+          "root": "ز ي د",
+          "wordForm": "Müfred, marife",
+          "role": "الرُّبَاعِيِّ sıfatı",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -61,7 +77,10 @@
       "analysis": {
         "kind": "Bağlaç + sayı",
         "fields": {
-          "numberType": "Tesniye"
+          "numberType": "Asıl sayı",
+          "wordForm": "Tesniye",
+          "role": "Matuf",
+          "irab": "Elif ile merfû"
         }
       }
     },
@@ -73,7 +92,10 @@
       "analysis": {
         "kind": "Harf-i cer + isim",
         "fields": {
-          "root": "ل ح ق"
+          "root": "ل ح ق",
+          "wordForm": "Müfred, muzaf",
+          "role": "لِ ile mecrûr",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -85,7 +107,9 @@
         "kind": "Fiil örneği",
         "fields": {
           "root": "ح ر ج م",
-          "pattern": "اِفْعَنْلَلَ"
+          "pattern": "اِفْعَنْلَلَ",
+          "wordForm": "Fiil örneği",
+          "meaning": "Toplandı, kalabalıklaştı"
         }
       }
     }

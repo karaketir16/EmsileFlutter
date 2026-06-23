@@ -215,7 +215,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Üzerine, üzere"
+          "meaning": "Üzerine, üzere",
+          "structure": "Cer harfidir."
         }
       }
     },
@@ -229,7 +230,9 @@
         "fields": {
           "numberType": "Aded",
           "role": "أَحْرُفٍ kelimesinin sayı unsuru",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "root": "ر ب ع",
+          "wordForm": "Müfred, müzekker ve muzaf"
         }
       }
     },
@@ -243,7 +246,9 @@
         "fields": {
           "singular": "حَرْف",
           "role": "Sayılan unsur",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "root": "ح ر ف",
+          "wordForm": "Cemi, nekire"
         }
       }
     },
@@ -271,9 +276,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "wordForm": "Nekre ve müfred",
-          "role": "Ziyade edilen unsur",
-          "irab": "Kesra ile mecrûr"
+          "wordForm": "Müfred, nekire ve mecrûr",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr",
+          "root": "ح ر ف",
+          "singular": "حَرْف"
         }
       }
     },
@@ -285,9 +292,11 @@
       "analysis": {
         "kind": "Sıfat",
         "fields": {
-          "numberType": "Sayı sıfatı",
+          "numberType": "Aded",
           "role": "حَرْفٍ kelimesinin sıfatı",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "root": "و ح د",
+          "wordForm": "Müfred ve mecrûr"
         }
       }
     },
@@ -300,7 +309,8 @@
         "kind": "Zarf",
         "fields": {
           "meaning": "İki şeyin arası",
-          "irab": "Fetha ile mansub zarf"
+          "irab": "Fetha ile mansub zarf",
+          "root": "ب ي ن"
         }
       }
     },
@@ -314,7 +324,9 @@
         "fields": {
           "term": "Fâü’l-fiil: kökün birinci harfi",
           "role": "بَيْنَ zarfına bağlı unsur",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "root": "ف أ و",
+          "wordForm": "Müfred ve marife"
         }
       }
     },
@@ -328,7 +340,8 @@
         "fields": {
           "term": "Aynü’l-fiil: kökün ikinci harfi",
           "role": "الْفَاءِ kelimesine atıf",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "structure": "وَ atıf harfidir."
         }
       }
     },
@@ -340,7 +353,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Cins ve kaynak bildirir."
+          "meaning": "-den/-dan",
+          "structure": "Cer harfidir."
         }
       }
     },
@@ -367,9 +381,10 @@
       "analysis": {
         "kind": "Harf adı",
         "fields": {
-          "term": "Aynü’l-fiil",
+          "term": "Aynü’l-fiil: kökün ikinci harfi",
           "role": "Muzafun ileyh",
-          "irab": "Kesra ile mecrûr"
+          "irab": "Kesra ile mecrûr",
+          "wordForm": "Müfred, muzaf"
         }
       }
     },

@@ -79,7 +79,9 @@
           "pattern": "مَفْعُول",
           "morphology": "İsm-i mef‘ûl",
           "meaning": "Bu vezne oturan örnek fiil",
-          "pronoun": "هُ: altıncı baba döner."
+          "pronoun": "هُ: altıncı baba döner.",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -130,7 +132,9 @@
           "pattern": "فَعَالَة",
           "wordForm": "Müfred, muzaf ve merfû",
           "pronoun": "هُ: altıncı baba döner.",
-          "meaning": "Babı diğer bablardan ayıran lafzî özellik"
+          "meaning": "Babı diğer bablardan ayıran lafzî özellik",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },

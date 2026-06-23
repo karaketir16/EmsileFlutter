@@ -12,7 +12,10 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ن و ع"
+          "root": "ن و ع",
+          "wordForm": "Müfred ve marife",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -25,7 +28,10 @@
       "analysis": {
         "kind": "Sıfat",
         "fields": {
-          "wordForm": "Sıra sayısı"
+          "root": "ث ل ث",
+          "wordForm": "Sıra sayısı, müfred ve marife",
+          "role": "النوع kelimesinin sıfatı",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -37,7 +43,10 @@
       "analysis": {
         "kind": "Bağlaç + zamir",
         "fields": {
-          "referent": "Üçüncü çeşit"
+          "pronoun": "هُوَ: 3. şahıs, müzekker, tekil",
+          "referent": "Üçüncü çeşit",
+          "role": "Yeni cümlenin mübtedası",
+          "irab": "Mahallen merfûdur."
         }
       }
     },
@@ -49,7 +58,9 @@
       "analysis": {
         "kind": "İsm-i mevsûl",
         "fields": {
-          "meaning": "Tanım kurar"
+          "meaning": "Müşterek ism-i mevsûl",
+          "role": "Mübtedânın (هُوَ) haberi",
+          "irab": "Mahallen merfûdur."
         }
       }
     },
@@ -61,7 +72,13 @@
       "analysis": {
         "kind": "Meçhul fiil",
         "fields": {
-          "root": "ز ي د"
+          "root": "ز ي د",
+          "conjugation": "Fiil-i mâzi, meçhul",
+          "person": "3. şahıs, müzekker, tekil",
+          "bab": "Sülâsî mücerred 2. bab",
+          "pattern": "فُعِلَ",
+          "transitivity": "Lâzım",
+          "syntax": "Sıla cümlesinin fiili"
         }
       }
     },
@@ -73,7 +90,9 @@
       "analysis": {
         "kind": "Harf + zamir",
         "fields": {
-          "referent": "Fiil"
+          "pronoun": "هُ: 3. şahıs, müzekker, tekil",
+          "referent": "Mevsûl olan “mâ” kelimesine döner.",
+          "irab": "Mahallen mecrûr"
         }
       }
     },
@@ -85,19 +104,27 @@
       "analysis": {
         "kind": "Sayı",
         "fields": {
-          "numberType": "Aded"
+          "numberType": "Asıl sayı, muzaf",
+          "tamyiz": "أَحْرُفٍ",
+          "role": "زِيدَ fiilinin nâib-i fâili",
+          "irab": "Zamme ile merfû"
         }
       }
     },
     {
       "id": "p28_t8",
       "arabic": "أَحْرُفٍ",
+      "printedArabic": "أحref",
       "printedArabic": "أحرف",
       "gloss": "Harf",
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "singular": "حَرْف"
+          "root": "ح ر ف",
+          "singular": "حَرْفٌ",
+          "wordForm": "Cem-i mükesser (kıllet), muzafun ileyh",
+          "role": "Sayı tamyizi",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -109,19 +136,25 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Üzerine"
+          "meaning": "“-in üzerine”",
+          "effect": "Sonrasındaki ismi mecrûr yapar."
         }
       }
     },
     {
       "id": "p28_t10",
       "arabic": "الثُّلَاثِيِّ",
+      "printedArabic": "الثلاثi",
+      "printedArabic": "الثلاثi",
       "printedArabic": "الثلاثي",
       "gloss": "Sülâsînin",
       "analysis": {
         "kind": "Nisbet ismi",
         "fields": {
-          "term": "Üç harfli fiil"
+          "root": "ث ل ث",
+          "wordForm": "Nisbet ismi, müfred ve marife",
+          "term": "Üç harfli fiil",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -133,7 +166,10 @@
       "analysis": {
         "kind": "Bağlaç + zamir",
         "fields": {
-          "referent": "Bu çeşit"
+          "pronoun": "هُوَ: 3. şahıs, müzekker, tekil",
+          "referent": "Bu çeşit sülâsî mezîd fiil",
+          "role": "Yeni cümlenin mübtedası",
+          "irab": "Mahallen merfûdur."
         }
       }
     },
@@ -145,7 +181,10 @@
       "analysis": {
         "kind": "Sayı",
         "fields": {
-          "numberType": "Aded"
+          "numberType": "Asıl sayı, muzaf",
+          "tamyiz": "أَبْوَابٍ",
+          "role": "Mübtedânın (وَهُوَ) haberi",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -158,7 +197,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "singular": "بَاب"
+          "root": "ب و ب",
+          "singular": "بَابٌ",
+          "wordForm": "Cem-i mükesser, muzafun ileyh",
+          "role": "Sayı tamyizi",
+          "irab": "Kesra ile mecrûr"
         }
       }
     }

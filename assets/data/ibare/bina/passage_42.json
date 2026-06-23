@@ -12,7 +12,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "singular": "نَوْع"
+          "root": "ن و ع",
+          "wordForm": "Cem-i mükesser (kırık çoğul), muzaf",
+          "singular": "نَوْعٌ",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -24,7 +28,11 @@
       "analysis": {
         "kind": "Nisbet ismi",
         "fields": {
-          "term": "Dört harfli"
+          "root": "ر ب ع",
+          "wordForm": "Nisbet ismi, müfred, marife",
+          "term": "Dört harfli",
+          "role": "Muzafun ileyh",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -36,7 +44,13 @@
       "analysis": {
         "kind": "Sıfat",
         "fields": {
-          "term": "Ziyadeli"
+          "root": "ز ي د",
+          "derivedFrom": "زَادَ يَزِيدُ",
+          "morphology": "İsm-i mef‘ûl",
+          "wordForm": "Müfred, marife",
+          "term": "Ziyadeli",
+          "role": "الرُّبَاعِيِّ kelimesinin sıfatı",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -48,7 +62,10 @@
       "analysis": {
         "kind": "Bağlaç + sayı",
         "fields": {
-          "numberType": "Aded"
+          "wordForm": "Müfred, müennes",
+          "numberType": "Asıl sayı (üç)",
+          "role": "Yeni cümlenin mübtedâsı",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -60,7 +77,9 @@
       "analysis": {
         "kind": "Harf + zamir",
         "fields": {
-          "referent": "Otuz beş bab"
+          "pronoun": "هَا: 3. şahıs, müennes, tekil",
+          "referent": "Otuz beş bab (أَبْوَاب)",
+          "irab": "Zamir mahallen mecrûrdur."
         }
       }
     },
@@ -72,7 +91,9 @@
       "analysis": {
         "kind": "Harf-i cer + ism-i mevsûl",
         "fields": {
-          "meaning": "Aitlik bildirir"
+          "structure": "لِ harf-i cerri ve مَا ism-i mevsûlü",
+          "meaning": "Aitlik ve mevsûliyet bildirir.",
+          "irab": "مَا ism-i mevsûlü mahallen mecrûrdur."
         }
       }
     },
@@ -84,7 +105,13 @@
       "analysis": {
         "kind": "Fiil",
         "fields": {
-          "root": "ز ي د"
+          "conjugation": "Fiil-i mâzi, malûm",
+          "person": "3. şahıs, müzekker, tekil",
+          "hiddenPronoun": "هُوَ",
+          "root": "ز ي د",
+          "baseForm": "زَادَ يَزِيدُ",
+          "transitivity": "Lâzım",
+          "syntax": "Sıla cümlesinin fiili"
         }
       }
     },
@@ -96,7 +123,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Üzerine"
+          "morphology": "Harf-i cer",
+          "meaning": "Üzerine, -e karşı"
         }
       }
     },
@@ -108,7 +136,10 @@
       "analysis": {
         "kind": "Nisbet ismi",
         "fields": {
-          "term": "Dört harfli"
+          "root": "ر ب ع",
+          "wordForm": "Nisbet ismi, müfred, marife",
+          "term": "Dört harfli kelime",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -120,7 +151,12 @@
       "analysis": {
         "kind": "Sıfat",
         "fields": {
-          "term": "Ziyadesiz"
+          "root": "ج ر د",
+          "derivedFrom": "جَرَّدَ يُجَرِّدُ",
+          "morphology": "İsm-i mef‘ûl",
+          "term": "Yalın, ziyadesiz",
+          "role": "الرُّبَاعِيِّ kelimesinin sıfatı",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -132,7 +168,10 @@
       "analysis": {
         "kind": "Bağlaç + zamir",
         "fields": {
-          "referent": "Rubâî mezîd"
+          "pronoun": "هُوَ: 3. şahıs, müzekker, tekil",
+          "referent": "Rubâî mezîd (الرُّبَاعِيِّ الْمَزِيدِ)",
+          "role": "Mübtedâ",
+          "irab": "Zamir mahallen merfûdur."
         }
       }
     },
@@ -144,7 +183,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Kısımlara ayrılma"
+          "morphology": "Harf-i cer",
+          "meaning": "İlişkinlik, -e dair, üzere"
         }
       }
     },
@@ -157,7 +197,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "numberType": "Tesniye"
+          "root": "ن و ع",
+          "wordForm": "Tesniye (ikil), nekre",
+          "numberType": "İkil (tesniye)",
+          "role": "Mecrûr isim",
+          "irab": "Ya ile mecrûrdur."
         }
       }
     },
@@ -169,7 +213,10 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "root": "ن و ع"
+          "root": "ن و ع",
+          "wordForm": "Müfred, marife",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -182,7 +229,10 @@
       "analysis": {
         "kind": "Sıfat",
         "fields": {
-          "wordForm": "Sıra sayısı"
+          "root": "أ و ل",
+          "wordForm": "Sıra sayısı, müfred, marife",
+          "role": "النَّوْعُ kelimesinin sıfatı",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -194,7 +244,10 @@
       "analysis": {
         "kind": "Bağlaç + zamir",
         "fields": {
-          "referent": "Birinci çeşit"
+          "pronoun": "هُوَ: 3. şahıs, müzekker, tekil",
+          "referent": "Birinci çeşit (النَّوْعُ الْأَوَّلُ)",
+          "role": "Mübtedâ",
+          "irab": "Zamir mahallen merfûdur."
         }
       }
     },
@@ -206,7 +259,10 @@
       "analysis": {
         "kind": "İsm-i mevsûl",
         "fields": {
-          "meaning": "Tanım kurar"
+          "morphology": "İsm-i mevsûl",
+          "meaning": "Şey ki (mevsûliyet bildirir)",
+          "role": "Haber",
+          "irab": "Mahallen merfûdur."
         }
       }
     },
@@ -218,7 +274,12 @@
       "analysis": {
         "kind": "Meçhul fiil",
         "fields": {
-          "root": "ز ي د"
+          "conjugation": "Fiil-i mâzi, meçhul",
+          "person": "3. şahıs, müzekker, tekil",
+          "root": "ز ي د",
+          "baseForm": "زِيدَ يُزَادُ",
+          "transitivity": "Meçhul",
+          "syntax": "Sıla cümlesinin fiili"
         }
       }
     },
@@ -230,7 +291,10 @@
       "analysis": {
         "kind": "Harf + zamir",
         "fields": {
-          "referent": "Fiil"
+          "structure": "فِي harf-i cerri ve هِ zamiri",
+          "pronoun": "هِ: 3. şahıs, müzekker, tekil",
+          "referent": "Mevsûl olan مَا edatına döner.",
+          "irab": "Zamir mahallen mecrûrdur."
         }
       }
     },
@@ -242,7 +306,10 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "singular": "حَرْف"
+          "wordForm": "Müfred, nekre",
+          "singular": "حَرْفٌ",
+          "role": "زِيدَ meçhul fiilinin nâib-i fâili",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -254,7 +321,11 @@
       "analysis": {
         "kind": "Sayı",
         "fields": {
-          "numberType": "Aded"
+          "root": "و ح د",
+          "wordForm": "Müfred, nekre",
+          "numberType": "Sayı sıfatı (tek)",
+          "role": "حَرْفٌ kelimesinin sıfatı",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -266,7 +337,8 @@
       "analysis": {
         "kind": "Harf-i cer",
         "fields": {
-          "meaning": "Üzerine"
+          "morphology": "Harf-i cer",
+          "meaning": "-in üzerine"
         }
       }
     },
@@ -278,7 +350,10 @@
       "analysis": {
         "kind": "Nisbet ismi",
         "fields": {
-          "term": "Dört harfli"
+          "root": "ر ب ع",
+          "wordForm": "Nisbet ismi, müfred, marife",
+          "term": "Dört harfli kelime",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -290,7 +365,12 @@
       "analysis": {
         "kind": "Sıfat",
         "fields": {
-          "term": "Ziyadesiz"
+          "root": "ج ر د",
+          "derivedFrom": "جَرَّدَ يُجَرِّدُ",
+          "morphology": "İsm-i mef‘ûl",
+          "term": "Yalın, ziyadesiz",
+          "role": "الرُّبَاعِيِّ kelimesinin sıfatı",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -302,7 +382,10 @@
       "analysis": {
         "kind": "Bağlaç + zamir",
         "fields": {
-          "referent": "Bu çeşit"
+          "pronoun": "هُوَ: 3. şahıs, müzekker, tekil",
+          "referent": "Birinci çeşit (النَّوْعُ الْأَوَّلُ)",
+          "role": "Mübtedâ",
+          "irab": "Zamir mahallen merfûdur."
         }
       }
     },
@@ -314,7 +397,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "singular": "بَاب"
+          "root": "ب و ب",
+          "wordForm": "Müfred, nekre, muzaf",
+          "singular": "بَابٌ",
+          "role": "Haber",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -326,7 +413,11 @@
       "analysis": {
         "kind": "Sayı",
         "fields": {
-          "numberType": "Aded"
+          "root": "و ح د",
+          "wordForm": "Müfred, nekre",
+          "numberType": "Sayı sıfatı (tek)",
+          "role": "بَابٌ kelimesinin sıfatı",
+          "irab": "Zamme ile merfû"
         }
       }
     }

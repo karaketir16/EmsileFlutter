@@ -15,7 +15,9 @@
         "fields": {
           "root": "ن ح و",
           "meaning": "Örnek vermek için kullanılır.",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "wordForm": "Müfred ve muzaf",
+          "role": "Haber (başında mahzuf mübtedâ vardır)"
         }
       }
     },
@@ -45,7 +47,8 @@
         "kind": "Özel isim",
         "fields": {
           "role": "Fâil",
-          "irab": "Zamme ile merfû"
+          "irab": "Zamme ile merfû",
+          "wordForm": "Müfred, müzekker ve marife"
         }
       }
     }

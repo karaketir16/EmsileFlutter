@@ -12,7 +12,9 @@
       "analysis": {
         "kind": "Bağlaç + sayı",
         "fields": {
-          "numberType": "Aded"
+          "numberType": "Asıl sayı",
+          "role": "Mübtedâ",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -24,7 +26,9 @@
       "analysis": {
         "kind": "Harf + zamir",
         "fields": {
-          "referent": "Otuz beş bab"
+          "pronoun": "هَا: 3. şahıs, müennes, tekil",
+          "referent": "Otuz beş bab",
+          "irab": "Zamir mahallen mecrurdur."
         }
       }
     },
@@ -36,7 +40,11 @@
       "analysis": {
         "kind": "Harf-i cer + nisbet ismi",
         "fields": {
-          "term": "Dört harfli fiil"
+          "root": "ر ب ع",
+          "wordForm": "Nisbet ismi, müfred ve marife",
+          "term": "Dört harfli fiil",
+          "role": "Mübtedânın (وَوَاحِدٌ) haberi (şibh-i cümle)",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -48,7 +56,16 @@
       "analysis": {
         "kind": "Sıfat",
         "fields": {
-          "term": "Ziyadesiz"
+          "root": "ج ر د",
+          "derivedFrom": "جَرَّدَ يُجَرِّdü",
+          "derivedFrom": "جَرَّdَ يُجَرِّdُ",
+          "derivedFrom": "جَرَّدَ يُجَرِّدُ",
+          "bab": "Sülâsî mezîd, tef‘îl babı",
+          "pattern": "مُفَعَّل",
+          "morphology": "İsm-i mef‘ûl",
+          "meaning": "Ziyadesiz, bütün harfleri kök",
+          "role": "الرُّبَاعِيِّ kelimesinin sıfatı",
+          "irab": "Kesra ile mecrûr"
         }
       }
     },
@@ -60,7 +77,10 @@
       "analysis": {
         "kind": "Bağlaç + zamir",
         "fields": {
-          "referent": "Rubâî mücerred"
+          "pronoun": "هُوَ: 3. şahıs, müzekker, tekil",
+          "referent": "Rubâî mücerred",
+          "role": "Yeni cümlenin mübtedası",
+          "irab": "Mahallen merfûdur."
         }
       }
     },
@@ -72,7 +92,11 @@
       "analysis": {
         "kind": "İsim",
         "fields": {
-          "singular": "بَاب"
+          "root": "ب و ب",
+          "singular": "بَابٌ",
+          "wordForm": "Müfred ve nekre",
+          "role": "Mübtedânın (وَهُوَ) haberi",
+          "irab": "Zamme ile merfû"
         }
       }
     },
@@ -84,7 +108,9 @@
       "analysis": {
         "kind": "Sayı",
         "fields": {
-          "numberType": "Aded"
+          "numberType": "Asıl sayı",
+          "role": "بَابٌ kelimesinin sıfatı",
+          "irab": "Zamme ile merfû"
         }
       }
     }
