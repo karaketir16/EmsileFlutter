@@ -78,7 +78,7 @@ class IbareToken {
       printedArabic != null && printedArabic != arabic;
 
   String displayArabic(bool showHarakat) =>
-      '${showHarakat ? arabic : printedArabic ?? arabic}$punctuation';
+      '${_preferFathatanOnAlif(showHarakat ? arabic : printedArabic ?? arabic)}$punctuation';
 
   factory IbareToken.fromJson(Map<String, dynamic> json) {
     final analysis =
@@ -252,12 +252,14 @@ class IbareSection {
     required this.title,
     required this.passages,
     this.description,
+    this.pageBreakAfter = false,
   });
 
   final String id;
   final int order;
   final String title;
   final String? description;
+  final bool pageBreakAfter;
   final List<IbarePassage> passages;
 
   factory IbareSection.fromJson(Map<String, dynamic> json) {
@@ -272,6 +274,7 @@ class IbareSection {
       order: json['order'] as int,
       title: json['title'] as String,
       description: json['description'] as String?,
+      pageBreakAfter: (json['pageBreakAfter'] as bool?) ?? false,
       passages: passages,
     );
   }
@@ -365,3 +368,5 @@ void _requireUnique(Iterable<String> values, String field) {
     }
   }
 }
+
+String _preferFathatanOnAlif(String value) => value.replaceAll('ًا', 'اً');

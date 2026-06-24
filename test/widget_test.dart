@@ -72,7 +72,7 @@ void main() {
       (token) => token.arabic == 'بَابًا',
     );
     expect(numberedSentence.displayArabic(false), 'باباً،');
-    expect(numberedSentence.displayArabic(true), 'بَابًا،');
+    expect(numberedSentence.displayArabic(true), 'بَاباً،');
 
     final alametuhu = binaBook.passages[2].tokens.firstWhere(
       (token) => token.arabic == 'وَعَلَامَتُهُ',
@@ -416,18 +416,27 @@ void main() {
 
     expect(find.text('Giriş'), findsOneWidget);
     expect(find.text('Birinci Bab'), findsOneWidget);
-    expect(find.text('1-5 / ${binaBook.passages.length}'), findsOneWidget);
-    expect(find.text('Harekeler'), findsNWidgets(5));
+    expect(find.text('İkinci Bab'), findsOneWidget);
+    expect(find.text('1-6 / ${binaBook.passages.length}'), findsNWidgets(2));
+    expect(find.text('Harekeler'), findsNWidgets(6));
 
-    await tester.tap(find.byKey(const ValueKey('ibare_next_page')));
+    await tester.tap(find.byKey(const ValueKey('ibare_next_page_top')));
     await tester.pumpAndSettle();
 
-    expect(find.text('6-10 / ${binaBook.passages.length}'), findsOneWidget);
-    expect(find.text('Harekeler'), findsNWidgets(5));
+    expect(find.text('7-14 / ${binaBook.passages.length}'), findsNWidgets(2));
+    expect(find.text('Üçüncü Bab'), findsOneWidget);
+    expect(find.text('Altıncı Bab'), findsOneWidget);
+    expect(find.text('Harekeler'), findsNWidgets(8));
 
-    await tester.tap(find.byKey(const ValueKey('ibare_prev_page')));
+    await tester.ensureVisible(
+      find.byKey(const ValueKey('ibare_prev_page_bottom')),
+    );
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('ibare_prev_page_bottom')));
     await tester.pumpAndSettle();
 
+    await tester.ensureVisible(find.byKey(const ValueKey('harakat_passage_1')));
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('harakat_passage_1')));
     await tester.pumpAndSettle();
 
@@ -449,6 +458,32 @@ void main() {
 
     expect(find.text('Kırık Mana'), findsOneWidget);
     expect(find.text('Toparlanmış Mana'), findsOneWidget);
+
+    await tester.tap(find.byTooltip('Geri'));
+    await tester.pumpAndSettle();
+
+    for (var i = 0; i < 3; i++) {
+      await tester.ensureVisible(
+        find.byKey(const ValueKey('ibare_next_page_top')),
+      );
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('ibare_next_page_top')));
+      await tester.pumpAndSettle();
+    }
+
+    await tester.ensureVisible(find.byKey(const ValueKey('overview_p27_t46')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('overview_p27_t46')));
+    await tester.pumpAndSettle();
+
+    await tester.ensureVisible(
+      find.byKey(const ValueKey('ibare_next_page_top')),
+    );
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('ibare_next_page_top')));
+    await tester.pumpAndSettle();
+
+    expect(find.text('28-32 / ${binaBook.passages.length}'), findsNWidgets(2));
   });
 
   testWidgets('lesson detail renders muhtelife table entries', (
@@ -556,6 +591,7 @@ void main() {
     );
     expect(find.textContaining('github.com/karaketir16'), findsOneWidget);
     expect(find.textContaining('arapcadiyari.blogspot.com'), findsOneWidget);
+    expect(find.textContaining('x.com/habbazzade'), findsOneWidget);
   });
 
   // ── Conjugation interactions ────────────────────────────────────────────────

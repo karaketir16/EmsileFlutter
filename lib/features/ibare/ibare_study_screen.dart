@@ -61,54 +61,58 @@ class IbareBookScreen extends StatefulWidget {
 }
 
 class _IbareBookScreenState extends State<IbareBookScreen> {
-  static const _pageSize = 5;
+  final _topKey = GlobalKey();
 
   int _page = 0;
+
+  void _setPage(int page) {
+    setState(() => _page = page);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final context = _topKey.currentContext;
+      if (context == null) return;
+      Scrollable.ensureVisible(
+        context,
+        duration: const Duration(milliseconds: 220),
+        curve: Curves.easeOut,
+      );
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     final book = widget.book;
     final passages = book.passages;
-    final totalPages = (passages.length / _pageSize).ceil();
-    final start = _page * _pageSize;
-    final pagePassages = passages.skip(start).take(_pageSize).toSet();
+    final pages = _ibarePages(book.sections);
+    final visibleSections = pages[_page];
+    final pagePassages = {
+      for (final section in visibleSections) ...section.passages,
+    };
+    final start = passages.indexOf(pagePassages.first);
 
     return _StudyScaffold(
       title: book.shortTitle,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          InfoPanel(title: book.title, body: book.description),
+          KeyedSubtree(
+            key: _topKey,
+            child: InfoPanel(title: book.title, body: book.description),
+          ),
           const SizedBox(height: 18),
-          Row(
-            children: [
-              Expanded(
-                child: Text(
-                  '${start + 1}-${start + pagePassages.length} / ${passages.length}',
-                  style: Theme.of(context).textTheme.titleMedium,
-                ),
-              ),
-              IconButton(
-                key: const ValueKey('ibare_prev_page'),
-                onPressed: _page == 0 ? null : () => setState(() => _page--),
-                tooltip: 'Önceki sayfa',
-                icon: const Icon(Icons.chevron_left),
-              ),
-              Text('${_page + 1}/$totalPages'),
-              IconButton(
-                key: const ValueKey('ibare_next_page'),
-                onPressed: _page >= totalPages - 1
-                    ? null
-                    : () => setState(() => _page++),
-                tooltip: 'Sonraki sayfa',
-                icon: const Icon(Icons.chevron_right),
-              ),
-            ],
+          _IbarePageControls(
+            start: start,
+            shown: pagePassages.length,
+            total: passages.length,
+            page: _page,
+            totalPages: pages.length,
+            onPrevious: _page == 0 ? null : () => _setPage(_page - 1),
+            onNext: _page >= pages.length - 1
+                ? null
+                : () => _setPage(_page + 1),
           ),
           const SizedBox(height: 10),
-          for (final section in book.sections) ...[
-            if (section.passages.any(pagePassages.contains) &&
-                section.title.isNotEmpty) ...[
+          for (final section in visibleSections) ...[
+            if (section.title.isNotEmpty) ...[
               Text(
                 section.title,
                 style: Theme.of(context).textTheme.titleLarge,
@@ -124,6 +128,7 @@ class _IbareBookScreenState extends State<IbareBookScreen> {
               pagePassages.contains,
             )) ...[
               _PassageOverviewCard(
+                key: ValueKey(passage.id),
                 passage: passage,
                 onOpen: () => Navigator.of(context).push(
                   MaterialPageRoute<void>(
@@ -138,14 +143,95 @@ class _IbareBookScreenState extends State<IbareBookScreen> {
             ],
             const SizedBox(height: 10),
           ],
+          _IbarePageControls(
+            start: start,
+            shown: pagePassages.length,
+            total: passages.length,
+            page: _page,
+            totalPages: pages.length,
+            onPrevious: _page == 0 ? null : () => _setPage(_page - 1),
+            onNext: _page >= pages.length - 1
+                ? null
+                : () => _setPage(_page + 1),
+            keyPrefix: 'bottom',
+          ),
         ],
       ),
     );
   }
 }
 
+List<List<IbareSection>> _ibarePages(List<IbareSection> sections) {
+  final pages = <List<IbareSection>>[];
+  var page = <IbareSection>[];
+  for (final section in sections) {
+    page.add(section);
+    if (section.pageBreakAfter) {
+      pages.add(page);
+      page = <IbareSection>[];
+    }
+  }
+  if (page.isNotEmpty) {
+    pages.add(page);
+  }
+  return pages;
+}
+
+class _IbarePageControls extends StatelessWidget {
+  const _IbarePageControls({
+    required this.start,
+    required this.shown,
+    required this.total,
+    required this.page,
+    required this.totalPages,
+    required this.onPrevious,
+    required this.onNext,
+    this.keyPrefix = 'top',
+  });
+
+  final int start;
+  final int shown;
+  final int total;
+  final int page;
+  final int totalPages;
+  final VoidCallback? onPrevious;
+  final VoidCallback? onNext;
+  final String keyPrefix;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Expanded(
+          child: Text(
+            '${start + 1}-${start + shown} / $total',
+            style: Theme.of(context).textTheme.titleMedium,
+          ),
+        ),
+        IconButton(
+          key: ValueKey('ibare_prev_page_$keyPrefix'),
+          onPressed: onPrevious,
+          tooltip: 'Önceki sayfa',
+          icon: const Icon(Icons.chevron_left),
+        ),
+        Text('${page + 1}/$totalPages'),
+        IconButton(
+          key: ValueKey('ibare_next_page_$keyPrefix'),
+          onPressed: onNext,
+          tooltip: 'Sonraki sayfa',
+          icon: const Icon(Icons.chevron_right),
+        ),
+      ],
+    );
+  }
+}
+
 class _PassageOverviewCard extends StatefulWidget {
-  const _PassageOverviewCard({required this.passage, required this.onOpen});
+  const _PassageOverviewCard({
+    required this.passage,
+    required this.onOpen,
+    super.key,
+  });
 
   final IbarePassage passage;
   final VoidCallback onOpen;

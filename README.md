@@ -81,3 +81,6 @@ npm run visual-check
 
 İçerik hazırlanırken Zafer ESEN'in Emsile Ders Notu'ndan faydalanılmıştır:
 [Arapça Diyarı](https://arapcadiyari.blogspot.com)
+
+[Habbazzade'nin Arapça derslerinden](https://x.com/habbazzade)
+faydalanılmıştır.

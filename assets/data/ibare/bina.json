@@ -30,7 +30,8 @@
       "passages": [
         "assets/data/ibare/bina/passage_5.json",
         "assets/data/ibare/bina/passage_6.json"
-      ]
+      ],
+      "pageBreakAfter": true
     },
     {
       "id": "ucuncu_bab",
@@ -66,7 +67,8 @@
       "passages": [
         "assets/data/ibare/bina/passage_13.json",
         "assets/data/ibare/bina/passage_14.json"
-      ]
+      ],
+      "pageBreakAfter": true
     },
     {
       "id": "mezid_bir_harf_birinci_bab",
@@ -94,7 +96,8 @@
       "passages": [
         "assets/data/ibare/bina/passage_20.json",
         "assets/data/ibare/bina/passage_21.json"
-      ]
+      ],
+      "pageBreakAfter": true
     },
     {
       "id": "mezid_iki_harf",
@@ -107,7 +110,8 @@
         "assets/data/ibare/bina/passage_25.json",
         "assets/data/ibare/bina/passage_26.json",
         "assets/data/ibare/bina/passage_27.json"
-      ]
+      ],
+      "pageBreakAfter": true
     },
     {
       "id": "mezid_uc_harf",
@@ -119,7 +123,8 @@
         "assets/data/ibare/bina/passage_30.json",
         "assets/data/ibare/bina/passage_31.json",
         "assets/data/ibare/bina/passage_32.json"
-      ]
+      ],
+      "pageBreakAfter": true
     },
     {
       "id": "rubai_mucerred",
@@ -142,7 +147,8 @@
         "assets/data/ibare/bina/passage_39.json",
         "assets/data/ibare/bina/passage_40.json",
         "assets/data/ibare/bina/passage_41.json"
-      ]
+      ],
+      "pageBreakAfter": true
     },
     {
       "id": "rubai_mezid",
@@ -170,7 +176,8 @@
         "assets/data/ibare/bina/passage_53.json",
         "assets/data/ibare/bina/passage_54.json",
         "assets/data/ibare/bina/passage_55.json"
-      ]
+      ],
+      "pageBreakAfter": true
     },
     {
       "id": "fiil_taksimleri",
